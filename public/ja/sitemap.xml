@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/docs/go-global6/go-global-admin-console/go-global-admin-console/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/introduction/go-global-no/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/upgrading-go-global/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/administering-user-accounts/untitled/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/introduction/go-global-no-1/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/go-globalhosutonoinsutru/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/go-global-admin-console/apurikshonno/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/administering-user-accounts/yz-purofuiruno/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/introduction/go-global-noshisutemu/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/running-the-30-day-trial-version/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/go-global-admin-console/sesshontopurosesuno/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/administering-user-accounts/nettowkupurintno/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/go-global-admin-console/sekyuritiopushon/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/hosutonoshisutemuhenowebfairunoinsutru/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/introduction/no/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/go-global-admin-console/go-globalraisensuno/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/iis-websbwoshitenodirekutorikarawebfairuwohosutosuru/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/apache-httpsbawoshitago-globalno/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/configuring-go-global-to-use-a-central-license-server/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/redundant-license-servers/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/license-servers-in-a-relay-server-environment/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/kuraudonoraisensusba/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/administering-user-accounts/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/kuraiantokbdosapto/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/configuring-the-host/tma/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/go-global-admin-console/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/news/</loc>
+    <lastmod>2018-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/releases/</loc>
+    <lastmod>2018-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="/no/docs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="/docs/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/2018/10/06/easy-documentation-with-docsy/</loc>
+    <lastmod>2018-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-10-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="/no/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/2018/10/06/the-second-blog-post/</loc>
+    <lastmod>2018-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2018/01/04/another-great-release/</loc>
+    <lastmod>2018-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/index.json</loc>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+  </url>
+  
+  <url>
+    <loc>/community/</loc>
+  </url>
+  
+  <url>
+    <loc>/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="/no/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="/search/"
+                />
+  </url>
+  
+</urlset>
