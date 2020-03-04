@@ -54,7 +54,7 @@ id = "UA-00000000-0"
 [languages]
 [languages.ja]
 title = "kitASP Docs"
-description = "きっとエイエズピー document"
+description = "きっとエイエスピー document"
 languageName ="Japanese"
 # Weight used for sorting.
 weight = 1
