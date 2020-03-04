@@ -74,16 +74,6 @@
 				
 				
 				
-				<a class="nav-link" href="/about/" ><span>About</span></a>
-			</li>
-			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
 				<a class="nav-link" href="/docs/" ><span>Documentation</span></a>
 			</li>
 			
@@ -134,7 +124,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.c2a25ce855e974b3f1593da897a8f915eedb850ee240bce66ddfd379a4f904a8e740286a877a34cf4d9dacafc49c2e312bb6b41d2882f2da97c256a93206476d.json"
+  data-offline-search-index-json-src="/offline-search-index.619cf1f03b38f5545c5a09eee1221d3e65f9d39973ec0aac882624b7665d3f31271afd6c33bcf13ca825c91748b7cfb40d175a4db78b0332b1813d22427f5118.json"
   data-offline-search-base-href="/"
 >
 
@@ -214,7 +204,7 @@
         <small class="text-white">&copy; 2020 The Docsy Authors All Rights Reserved</small>
         <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank">プライバシーポリシー</a></small>
 	
-		<p class="mt-2"><a href="/about/">About Goldydocs</a></p>
+		<p class="mt-2"><a href="/about/"></a></p>
 	
       </div>
     </div>
