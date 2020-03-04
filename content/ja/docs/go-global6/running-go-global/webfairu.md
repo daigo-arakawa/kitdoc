@@ -1,4 +1,9 @@
-# Webファイル
++++
+title = "Webファイル"
+description = ""
+weight = 9
++++
+
 
 GO-Globalホストのセットアップは、C:\Program Files\GraphOn\GO-Global\Webの下にGO-Global Webファイルをインストールします。インストール中にMicrosoftインターネットインフォメーションサービス(IIS)が検出されると、GO-Global Webファイルを指す仮想ディレクトリがIISに作成されます。IISが利用できない場合、管理者は指定されたWebサーバー上でGO-Global Webフォルダの内容を手動でホストする必要があります。
 

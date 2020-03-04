@@ -1,4 +1,8 @@
-# GO-Globalのアンインストール
++++
+title = "GO-Globalのアンインストール"
+description = ""
+weight = 10
++++
 
 GO-Globalのアンインストール方法はプラットフォームとブラウザによって異なります。
 

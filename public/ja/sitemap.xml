@@ -14,11 +14,22 @@
   
   <url>
     <loc>/docs/go-global6/running-go-global/go-global-app/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-global6/introduction/go-global-no/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/load-balancing/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/mobile-app-toolbar-editor/mobile-app-toolbar-editor/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
@@ -37,7 +48,18 @@
   </url>
   
   <url>
+    <loc>/docs/go-global6/advanced-topics/go-globalhosutopafmansukaunta/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/mobile-app-toolbar-editor/custom-toolbarsno/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/running-go-global/go-global-web-app/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
@@ -62,11 +84,17 @@
   
   <url>
     <loc>/docs/go-global6/running-go-global/go-global-appwoshitawebapurikshonno/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-global6/introduction/go-global-noshisutemu/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/mobile-app-toolbar-editor/logfairu/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
@@ -82,6 +110,16 @@
   <url>
     <loc>/docs/go-global6/administering-user-accounts/nettowkupurintno/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/saptono/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/kuraiantono/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
@@ -111,6 +149,12 @@
   
   <url>
     <loc>/docs/go-global6/running-go-global/mac-os-x-app/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/purintadoraibahenoakusesuwosuru/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
@@ -120,6 +164,17 @@
   
   <url>
     <loc>/docs/go-global6/running-go-global/go-globalsuttoappuparamta/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/purintano/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/running-go-global/logonhtmlpjino/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
@@ -128,13 +183,48 @@
   </url>
   
   <url>
+    <loc>/docs/go-global6/advanced-topics/purintaapuretto/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/configuring-the-host/redundant-license-servers/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
   </url>
   
   <url>
+    <loc>/docs/go-global6/running-go-global/urlparamtano/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/kuraiantokurippubdo/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/configuring-the-host/license-servers-in-a-relay-server-environment/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/running-go-global/webfairu/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/kuraiantosaundo/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/running-go-global/go-globalnoaninsutru/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/kuraiantonoshiriaruptotopararerupto/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
@@ -158,13 +248,73 @@
   </url>
   
   <url>
+    <loc>/docs/go-global6/running-go-global/automatic-client-updates/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/kuraiantonofairuakusesu/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/configuring-the-host/tma/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
   </url>
   
   <url>
+    <loc>/docs/go-global6/advanced-topics/go-globalsesshonnono/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/mappingusaretadoraibu/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/maruchimonita/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/fontcontrastpuropatiwosuru/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/wonisuru/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/go-global-admin-console/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/untitled/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/apurikshonsukuriputonosapto/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/untitled-1/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/purokishinotonneringu/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/ipv6nosapto/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
@@ -184,6 +334,7 @@
   
   <url>
     <loc>/docs/go-global6/running-go-global/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
@@ -194,6 +345,46 @@
   <url>
     <loc>/blog/releases/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/sumtokdonosapto/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/pafmansunochningu/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/sairentoinsutru/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/logfairu/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/saptorikuesutowizdosrw/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/mobile-app-toolbar-editor/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/kuraiantodebaisu/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global6/advanced-topics/</loc>
+    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
   </url>
   
   <url>
@@ -209,181 +400,6 @@
   <url>
     <loc>/blog/2018/01/04/another-great-release/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/apurikshonsukuriputonosapto/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/fontcontrastpuropatiwosuru/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/go-globalhosutopafmansukaunta/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/go-globalsesshonnono/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/ipv6nosapto/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/kuraiantodebaisu/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/kuraiantokurippubdo/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/kuraiantono/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/kuraiantonofairuakusesu/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/kuraiantonoshiriaruptotopararerupto/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/kuraiantosaundo/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/load-balancing/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/logfairu/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/mappingusaretadoraibu/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/maruchimonita/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/pafmansunochningu/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/purintaapuretto/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/purintadoraibahenoakusesuwosuru/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/purintano/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/purokishinotonneringu/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/sairentoinsutru/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/saptono/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/saptorikuesutowizdosrw/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/sumtokdonosapto/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/untitled-1/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/untitled/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/advanced-topics/wonisuru/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/mobile-app-toolbar-editor/custom-toolbarsno/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/mobile-app-toolbar-editor/logfairu/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/mobile-app-toolbar-editor/mobile-app-toolbar-editor/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/running-go-global/automatic-client-updates/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/running-go-global/go-globalnoaninsutru/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/running-go-global/logonhtmlpjino/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/running-go-global/urlparamtano/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/running-go-global/webfairu/</loc>
-    <priority>0</priority>
   </url>
   
   <url>

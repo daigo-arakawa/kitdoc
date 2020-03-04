@@ -317,80 +317,7 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[G
     </item>
     
     <item>
-      <title>Docs: </title>
-      <link>/docs/go-global6/running-go-global/automatic-client-updates/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/running-go-global/automatic-client-updates/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;automatic-client-updates&#34;&gt;Automatic Client Updates&lt;/h1&gt;
-&lt;p&gt;Administrators can configure GO-Global to automatically update the GO-Global Client when users connect to a GO-Global Host that is running a newer version.&lt;/p&gt;
-&lt;h3 id=&#34;to-enable-automatic-client-updates&#34;&gt;To enable Automatic client updates&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Install the GO-Global Client on client computers using the go-global.windows.exe program. (The Automatic client update feature is only available for Windows computers.)&lt;/li&gt;
-&lt;li&gt;From the Admin Console, click Tools | Host Options.&lt;/li&gt;
-&lt;li&gt;Click the Client Access tab.&lt;/li&gt;
-&lt;li&gt;Enable Automatically update clients.&lt;/li&gt;
-&lt;li&gt;Click OK.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Mac and Linux users can download the updated version of GO-Global by connecting to the GOGlobal logon page (e.g., &lt;a href=&#34;http://hostname/goglobal/logon.html&#34;&gt;http://hostname/goglobal/logon.html&lt;/a&gt;) and installing the full GO-Global App.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/5-10-1.png&#34; alt=&#34;5-10-1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;When Automatically update clients is selected in the Admin Console and a user signs in to the host from a Windows computer, GO-Global compares the version of the GO-Global App installed on the client computer to the version in the Updates directory on the Host. If the files in the Updates directory are newer, GO-Global copies the newer files to a temporary directory on the client computer. Then, when GO-Global closes, the GO-Global Update Client service installs the new files so they can be used in subsequent GO-Global sessions. Users will be updated on the screen when the new updates have completed installing.&lt;/p&gt;
-&lt;p&gt;In summary, a new version of GO-Global will be installed via the update client service when the following conditions are met:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Automatically update clients is enabled in the Admin Console.&lt;/li&gt;
-&lt;li&gt;The GO-Global Update Client service is installed and enabled on the client computer.&lt;/li&gt;
-&lt;li&gt;A newer version of the client is available in the Updates directory on the host.&lt;/li&gt;
-&lt;li&gt;All of the files in the new version have been downloaded to the client computer.&lt;/li&gt;
-&lt;li&gt;The user has signed out of his or her GO-Global Client session.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The default location for the Updates folder is C:\Program Files\GraphOn\GO-Global\Updates which is defined in the registry key: HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GOGlobal\Updates.&lt;/p&gt;
-&lt;p&gt;Users are not required to perform any upgrade tasks. They can, however, prevent updates from being installed by disabling the GO-Global Update Client service on the client computer.&lt;/p&gt;
-&lt;h3 id=&#34;to-disable-the-go-global-update-client-service&#34;&gt;To disable the GO-Global Update Client service&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Right-click My Computer.&lt;/li&gt;
-&lt;li&gt;Click Manage.&lt;/li&gt;
-&lt;li&gt;Click Computer Management | Services and Applications | Services.&lt;/li&gt;
-&lt;li&gt;Select GO-Global Update Client.&lt;/li&gt;
-&lt;li&gt;Click Properties.&lt;/li&gt;
-&lt;li&gt;Under Startup type, select Disabled.&lt;/li&gt;
-&lt;li&gt;Click Stop.&lt;/li&gt;
-&lt;li&gt;Click OK.&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: </title>
-      <link>/docs/go-global6/running-go-global/go-globalnoaninsutru/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/running-go-global/go-globalnoaninsutru/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;go-globalのアンインストール&#34;&gt;GO-Globalのアンインストール&lt;/h1&gt;
-&lt;p&gt;GO-Globalのアンインストール方法はプラットフォームとブラウザによって異なります。&lt;/p&gt;
-&lt;h3 id=&#34;windowsのgo-globalクライアントをアンインストールする方法&#34;&gt;WindowsのGO-Globalクライアントをアンインストールする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;コントロールパネルを開きます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;プログラムと機能&lt;/strong&gt;をダブルクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GO-Globalクライアント&lt;/strong&gt;を選択します。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;削除&lt;/strong&gt;をクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;削除&lt;/strong&gt;をクリックします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;ユーザがGO-Globalのスクロール速度が遅い場合は、ホストのスムーズスクロールオプションを無効にしてみてください。Internet Explorerで、[ツール]メニューから[ツール]をクリックします。インターネット設定、詳細設定タブをクリックします。[設定]ボックスの[閲覧]で、[スムーズスクロールを使用する]を無効にします。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: </title>
+      <title>Docs: logon.htmlページの変更</title>
       <link>/docs/go-global6/running-go-global/logonhtmlpjino/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -398,8 +325,7 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[G
       <description>
         
         
-        &lt;h1 id=&#34;logonhtmlページの変更&#34;&gt;logon.htmlページの変更&lt;/h1&gt;
-&lt;p&gt;GO-GlobalをWebブラウザから実行している場合は、GO-Globalのlogon.htmlページを編集して起動パラメータを指定できます。&lt;/p&gt;
+        &lt;p&gt;GO-GlobalをWebブラウザから実行している場合は、GO-Globalのlogon.htmlページを編集して起動パラメータを指定できます。&lt;/p&gt;
 &lt;h3 id=&#34;logonhtmlページの変更方法&#34;&gt;logon.htmlページの変更方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;HTMLエディタでlogon.htmlを開きます。&lt;/li&gt;
@@ -449,7 +375,7 @@ controlArgs.set([ &amp;quot;embed&amp;quot;, &amp;quot;true&amp;quot; ]);
     </item>
     
     <item>
-      <title>Docs: </title>
+      <title>Docs: URLパラメータの指定</title>
       <link>/docs/go-global6/running-go-global/urlparamtano/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -457,8 +383,7 @@ controlArgs.set([ &amp;quot;embed&amp;quot;, &amp;quot;true&amp;quot; ]);
       <description>
         
         
-        &lt;h1 id=&#34;urlパラメータの指定&#34;&gt;URLパラメータの指定&lt;/h1&gt;
-&lt;p&gt;URLに起動パラメータを追加して指定することもできます。&lt;/p&gt;
+        &lt;p&gt;URLに起動パラメータを追加して指定することもできます。&lt;/p&gt;
 &lt;h3 id=&#34;urlパラメータの指定方法&#34;&gt;URLパラメータの指定方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Webブラウザの[Location]ボックスに、http://に続けてホスト名とGO-Globalディレクトリを入力します。例:http://hostname/goglobal&lt;/li&gt;
@@ -470,7 +395,7 @@ controlArgs.set([ &amp;quot;embed&amp;quot;, &amp;quot;true&amp;quot; ]);
     </item>
     
     <item>
-      <title>Docs: </title>
+      <title>Docs: Webファイル</title>
       <link>/docs/go-global6/running-go-global/webfairu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -478,13 +403,83 @@ controlArgs.set([ &amp;quot;embed&amp;quot;, &amp;quot;true&amp;quot; ]);
       <description>
         
         
-        &lt;h1 id=&#34;webファイル&#34;&gt;Webファイル&lt;/h1&gt;
-&lt;p&gt;GO-Globalホストのセットアップは、C:\Program Files\GraphOn\GO-Global\Webの下にGO-Global Webファイルをインストールします。インストール中にMicrosoftインターネットインフォメーションサービス(IIS)が検出されると、GO-Global Webファイルを指す仮想ディレクトリがIISに作成されます。IISが利用できない場合、管理者は指定されたWebサーバー上でGO-Global Webフォルダの内容を手動でホストする必要があります。&lt;/p&gt;
+        &lt;p&gt;GO-Globalホストのセットアップは、C:\Program Files\GraphOn\GO-Global\Webの下にGO-Global Webファイルをインストールします。インストール中にMicrosoftインターネットインフォメーションサービス(IIS)が検出されると、GO-Global Webファイルを指す仮想ディレクトリがIISに作成されます。IISが利用できない場合、管理者は指定されたWebサーバー上でGO-Global Webフォルダの内容を手動でホストする必要があります。&lt;/p&gt;
 &lt;p&gt;管理者はHTMLページを編集してデフォルトオプションを変更したり、どのクライアントをユーザが利用できるようにしたりするかを制限できます。インストール中、初期Webページはlogon.htmlに設定されます。Webブラウザからホストにアクセスするユーザは、次のURLにアクセスする必要があります。http:// hostname/go-global/&lt;/p&gt;
 &lt;p&gt;GO-Globalは自動的にユーザのプラットフォームとブラウザを検出し、適切なGO-Globalクライアントを起動します。allclients.htmlページには、どのクライアントオペレーティングシステムが検出されても、すべてのGO-Globalクライアントが一覧表示されます。&lt;/p&gt;
 &lt;p&gt;Windowsを実行している管理者は、GO-Globalのシングルユーザ版またはAll Users版のいずれかをダウンロードしてインストールできます。シングルユーザ版(go-global.exe)では、現在ログインしているユーザに対してのみGO-Global Appがインストールされます。全ユーザー版(go-global.windows.exe)では、マシン上のすべてのユーザに対してGO-Global Appがインストールされます。&lt;/p&gt;
 &lt;h2 id=&#34;クライアントウィンドウのサイズ変更&#34;&gt;クライアントウィンドウのサイズ変更&lt;/h2&gt;
 &lt;p&gt;コマンドライン引数–fを使用すると、コマンドライン引数–geometryを使用してクライアントウィンドウのサイズを変更できます。コマンドラインに-geometryを指定しないと、クライアントウィンドウは最大化されます。GO-Globalをルーズウィンドウモードで実行した場合、-geometryは効果がありません。クライアントウィンドウのサイズを変更するには、GO-Globalクライアント実行可能ファイルに–geometryを追加し、その後に目的の幅と高さを続けます。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GO-Globalのアンインストール</title>
+      <link>/docs/go-global6/running-go-global/go-globalnoaninsutru/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/running-go-global/go-globalnoaninsutru/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalのアンインストール方法はプラットフォームとブラウザによって異なります。&lt;/p&gt;
+&lt;h3 id=&#34;windowsのgo-globalクライアントをアンインストールする方法&#34;&gt;WindowsのGO-Globalクライアントをアンインストールする方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;コントロールパネルを開きます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;プログラムと機能&lt;/strong&gt;をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GO-Globalクライアント&lt;/strong&gt;を選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;削除&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;削除&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ユーザがGO-Globalのスクロール速度が遅い場合は、ホストのスムーズスクロールオプションを無効にしてみてください。Internet Explorerで、[ツール]メニューから[ツール]をクリックします。インターネット設定、詳細設定タブをクリックします。[設定]ボックスの[閲覧]で、[スムーズスクロールを使用する]を無効にします。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Automatic Client Updates</title>
+      <link>/docs/go-global6/running-go-global/automatic-client-updates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/running-go-global/automatic-client-updates/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Administrators can configure GO-Global to automatically update the GO-Global Client when users connect to a GO-Global Host that is running a newer version.&lt;/p&gt;
+&lt;h3 id=&#34;to-enable-automatic-client-updates&#34;&gt;To enable Automatic client updates&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Install the GO-Global Client on client computers using the go-global.windows.exe program. (The Automatic client update feature is only available for Windows computers.)&lt;/li&gt;
+&lt;li&gt;From the Admin Console, click Tools | Host Options.&lt;/li&gt;
+&lt;li&gt;Click the Client Access tab.&lt;/li&gt;
+&lt;li&gt;Enable Automatically update clients.&lt;/li&gt;
+&lt;li&gt;Click OK.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Mac and Linux users can download the updated version of GO-Global by connecting to the GOGlobal logon page (e.g., &lt;a href=&#34;http://hostname/goglobal/logon.html&#34;&gt;http://hostname/goglobal/logon.html&lt;/a&gt;) and installing the full GO-Global App.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/5-10-1.png&#34; alt=&#34;5-10-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When Automatically update clients is selected in the Admin Console and a user signs in to the host from a Windows computer, GO-Global compares the version of the GO-Global App installed on the client computer to the version in the Updates directory on the Host. If the files in the Updates directory are newer, GO-Global copies the newer files to a temporary directory on the client computer. Then, when GO-Global closes, the GO-Global Update Client service installs the new files so they can be used in subsequent GO-Global sessions. Users will be updated on the screen when the new updates have completed installing.&lt;/p&gt;
+&lt;p&gt;In summary, a new version of GO-Global will be installed via the update client service when the following conditions are met:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatically update clients is enabled in the Admin Console.&lt;/li&gt;
+&lt;li&gt;The GO-Global Update Client service is installed and enabled on the client computer.&lt;/li&gt;
+&lt;li&gt;A newer version of the client is available in the Updates directory on the host.&lt;/li&gt;
+&lt;li&gt;All of the files in the new version have been downloaded to the client computer.&lt;/li&gt;
+&lt;li&gt;The user has signed out of his or her GO-Global Client session.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The default location for the Updates folder is C:\Program Files\GraphOn\GO-Global\Updates which is defined in the registry key: HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GOGlobal\Updates.&lt;/p&gt;
+&lt;p&gt;Users are not required to perform any upgrade tasks. They can, however, prevent updates from being installed by disabling the GO-Global Update Client service on the client computer.&lt;/p&gt;
+&lt;h3 id=&#34;to-disable-the-go-global-update-client-service&#34;&gt;To disable the GO-Global Update Client service&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Right-click My Computer.&lt;/li&gt;
+&lt;li&gt;Click Manage.&lt;/li&gt;
+&lt;li&gt;Click Computer Management | Services and Applications | Services.&lt;/li&gt;
+&lt;li&gt;Select GO-Global Update Client.&lt;/li&gt;
+&lt;li&gt;Click Properties.&lt;/li&gt;
+&lt;li&gt;Under Startup type, select Disabled.&lt;/li&gt;
+&lt;li&gt;Click Stop.&lt;/li&gt;
+&lt;li&gt;Click OK.&lt;/li&gt;
+&lt;/ol&gt;
 
       </description>
     </item>

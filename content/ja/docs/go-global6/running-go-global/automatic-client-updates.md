@@ -1,4 +1,8 @@
-# Automatic Client Updates
++++
+title = "Automatic Client Updates"
+description = ""
+weight = 11
++++
 
 Administrators can configure GO-Global to automatically update the GO-Global Client when users connect to a GO-Global Host that is running a newer version.
 

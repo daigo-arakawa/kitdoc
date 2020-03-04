@@ -1,4 +1,8 @@
-# Logファイル
++++
+title = "Logファイル"
+description = ""
+weight = 3
++++
 
 ロギングが有効になっていると、Mobile App ConsoleはC:\ProgramData\GraphOn\GO-Global\MobileAppLogsディレクトリに格納されているログファイルにメッセージを記録します。ログ記録は、Mobile App Consoleの[Log ]パネルで有効または無効にできます。 ロギングはデフォルトで無効になっています。
 

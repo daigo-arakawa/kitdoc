@@ -1,4 +1,8 @@
-# Mobile App Toolbar Editor
++++
+title = "Mobile App Toolbar Editor"
+description = ""
+weight = 1
++++
 
 ## Mobile App Toolbar Editor
 

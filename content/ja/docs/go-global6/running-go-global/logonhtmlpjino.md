@@ -1,4 +1,8 @@
-# logon.htmlページの変更
++++
+title = "logon.htmlページの変更"
+description = ""
+weight = 7
++++
 
 GO-GlobalをWebブラウザから実行している場合は、GO-Globalのlogon.htmlページを編集して起動パラメータを指定できます。
 
