@@ -1,13 +1,16 @@
 +++
 title = "Upgrading GO-Global"
-description = "ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"
+description = ""
 weight = 1
 +++
 
->本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。
-
->GO-Global version5から6へのアップグレード手順は以下の技術ノートを参照ください。
+{{% alert title="Note" color="info" %}}
+本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。
+{{% /alert %}}
+{{% alert title="Note" color="warning" %}}
+GO-Global version5から6へのアップグレード手順は以下の技術ノートを参照ください。
 技術ノート KGTN 2019061901　技術ノート KGTN 2019071702
+{{% /alert %}}
 
 Before upgrading to version 6, you must upgrade the GO-Global license(s) by submitting a License Change Request via the [GraphOn portal](https://www.graphon.com/). The version 6 host installer will not upgrade a computer that does not have a version 6 GO-Global license. After signing in to the portal, click License Management then click License Change Request and complete the form.
 

@@ -22,13 +22,21 @@
       <description>
         
         
-        &lt;blockquote&gt;
-&lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Global version5から6へのアップグレード手順は以下の技術ノートを参照ください。
-技術ノート KGTN 2019061901　技術ノート KGTN 2019071702&lt;/p&gt;
-&lt;/blockquote&gt;
+        &lt;p&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+GO-Global version5から6へのアップグレード手順は以下の技術ノートを参照ください。
+技術ノート KGTN 2019061901　技術ノート KGTN 2019071702
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;Before upgrading to version 6, you must upgrade the GO-Global license(s) by submitting a License Change Request via the &lt;a href=&#34;https://www.graphon.com/&#34;&gt;GraphOn portal&lt;/a&gt;. The version 6 host installer will not upgrade a computer that does not have a version 6 GO-Global license. After signing in to the portal, click License Management then click License Change Request and complete the form.&lt;/p&gt;
 &lt;p&gt;After submitting the License Change Request form, a version 6 GO-Global license will be sent via email. Place the new license file in the directory where the existing version 5 license file is stored. (The default license folder for GO-Global version 5 is C:\Program Files\GraphOn\GO-Global\Programs.)&lt;/p&gt;
 &lt;p&gt;Remove all version 5 licenses from the Programs directory. Then restart the &lt;strong&gt;GO-Global License Manager.&lt;/strong&gt;&lt;/p&gt;
@@ -48,15 +56,15 @@
     
     <item>
       <title>Docs: GO-Globalホストのインストール</title>
-      <link>/docs/go-global6/configuring-the-host/go-globalhosutonoinsutru/</link>
+      <link>/docs/go-global6/configuring-the-host/installing-the-go-global-host/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/configuring-the-host/go-globalhosutonoinsutru/</guid>
+      <guid>/docs/go-global6/configuring-the-host/installing-the-go-global-host/</guid>
       <description>
         
         
         &lt;p&gt;GO-Globalは自己解凍型の実行ファイルとして配布されており、gg-host.exeをダブルクリックしてインストールすることができます。ホストセットアッププログラムを実行するときは、コンピュータの管理者グループのメンバであるアカウントにログインする必要があります。&lt;/p&gt;
-&lt;p&gt;デフォルトでは、GO-Globalホストのセットアップは、すべての &lt;strong&gt;ホスト&lt;/strong&gt;のコアコンポーネント、 &lt;strong&gt;Web&lt;/strong&gt;コンポーネント(ブラウザログオン用にホストを設定するために必要なすべてのファイルを含む)、および &lt;strong&gt;Licensing&lt;/strong&gt;コンポーネントをインストールします。 **[Customize]**ボタンをクリックして、インストールしたくないコンポーネントを選択解除することで、インストールをカスタマイズできます。それ以外の場合は、 **[Install]**ボタンをクリックしてください。&lt;/p&gt;
+&lt;p&gt;デフォルトでは、GO-Globalホストのセットアップは、すべての &lt;strong&gt;ホスト&lt;/strong&gt;のコアコンポーネント、 &lt;strong&gt;Web&lt;/strong&gt;コンポーネント(ブラウザログオン用にホストを設定するために必要なすべてのファイルを含む)、および &lt;strong&gt;Licensing&lt;/strong&gt;コンポーネントをインストールします。 [&lt;strong&gt;Customize&lt;/strong&gt;]ボタンをクリックして、インストールしたくないコンポーネントを選択解除することで、インストールをカスタマイズできます。それ以外の場合は、 [&lt;strong&gt;Install&lt;/strong&gt;]ボタンをクリックしてください。&lt;/p&gt;
 &lt;p&gt;GO-Globalを有効にするには、 &lt;strong&gt;GO-Globalライセンスファイルをデフォルトのライセンスフォルダ&lt;/strong&gt; C:\ Program Files\GraphOn\GO-Global\Licensingにコピーします。ライセンスサーバを使用するようにGO-Globalを設定するには、&lt;a href=&#34;https://app.gitbook.com/@kitasp-goglobal/s/kitasp-documentaion/go-global-6/configuring-the-host/configuring-go-global-to-use-a-central-license-server&#34;&gt;セントラルライセンスサーバを使用するためのGO-Global&lt;/a&gt;の構成を参照してください。&lt;/p&gt;
 &lt;p&gt;後でライセンスファイルをコピーすることを選択した場合は、ファイルをコピーした後にGO-Global License Managerを再起動し、次にGO-Global Application Publishing Serviceを再起動する必要があります。&lt;/p&gt;
 &lt;h3 id=&#34;go-global-license-managerを再起動する方法&#34;&gt;GO-Global License Managerを再起動する方法&lt;/h3&gt;
@@ -77,7 +85,7 @@
 &lt;p&gt;Administrators：フルコントロール、Users：読み取りと実行、SYSTEM：フルコントロール 次のエラーメッセージがログファイルに表示される場合は、ライセンスファイルに対する権限が正しくない可能性があります。 &lt;em&gt;FlexLM code #-1; FlexLM text : Cannot find license file.The license files(or license server system network addresses)attempted are listed below.Use LM_LICENSE_FILE to use a different license file,or contact your software provider for a license file.)&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;2つのGO-Globalライセンスを組み合わせるとき、または同じGO-Globalホストで2つの別々のライセンスを使用するときは、ライセンスファイル内のホスト名は大文字と小文字が区別され、同一である必要があります。&lt;/p&gt;
-&lt;p&gt;GO-Globalホストの起動設定を行う場合は、リストからGO-Global Application Publishing Serviceを選択して、 **[起動]**ボタンをクリックしてください。GO-Globalホストに適用したいオプションを選択します。&lt;/p&gt;
+&lt;p&gt;GO-Globalホストの起動設定を行う場合は、リストからGO-Global Application Publishing Serviceを選択して、 [&lt;strong&gt;起動&lt;/strong&gt;]ボタンをクリックしてください。GO-Globalホストに適用したいオプションを選択します。&lt;/p&gt;
 
       </description>
     </item>
@@ -132,10 +140,10 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     
     <item>
       <title>Docs: ホスト以外のシステムへのWebファイルのインストール</title>
-      <link>/docs/go-global6/configuring-the-host/hosutonoshisutemuhenowebfairunoinsutru/</link>
+      <link>/docs/go-global6/configuring-the-host/installing-the-web-files-on-a-system-other-than-the-host/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/configuring-the-host/hosutonoshisutemuhenowebfairunoinsutru/</guid>
+      <guid>/docs/go-global6/configuring-the-host/installing-the-web-files-on-a-system-other-than-the-host/</guid>
       <description>
         
         
@@ -152,10 +160,10 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     
     <item>
       <title>Docs: IIS Webサーバーを使用して、既定のディレクトリ以外からWebファイルをホストする</title>
-      <link>/docs/go-global6/configuring-the-host/iis-websbwoshitenodirekutorikarawebfairuwohosutosuru/</link>
+      <link>/docs/go-global6/configuring-the-host/iis-web-server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/configuring-the-host/iis-websbwoshitenodirekutorikarawebfairuwohosutosuru/</guid>
+      <guid>/docs/go-global6/configuring-the-host/iis-web-server/</guid>
       <description>
         
         
@@ -176,10 +184,10 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     
     <item>
       <title>Docs: Apache HTTPサーバを介したGO-Globalの実行</title>
-      <link>/docs/go-global6/configuring-the-host/apache-httpsbawoshitago-globalno/</link>
+      <link>/docs/go-global6/configuring-the-host/running-go-global-through-apache-http-server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/configuring-the-host/apache-httpsbawoshitago-globalno/</guid>
+      <guid>/docs/go-global6/configuring-the-host/running-go-global-through-apache-http-server/</guid>
       <description>
         
         
@@ -386,10 +394,10 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
     
     <item>
       <title>Docs: クラウド環境のライセンスサーバ</title>
-      <link>/docs/go-global6/configuring-the-host/kuraudonoraisensusba/</link>
+      <link>/docs/go-global6/configuring-the-host/license-servers-in-cloud-environments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/configuring-the-host/kuraudonoraisensusba/</guid>
+      <guid>/docs/go-global6/configuring-the-host/license-servers-in-cloud-environments/</guid>
       <description>
         
         
@@ -418,10 +426,10 @@ EC2コンソールのナビゲーションペインから、[ネットワーク�
     
     <item>
       <title>Docs: 自動クライアントキーボードサポート</title>
-      <link>/docs/go-global6/configuring-the-host/kuraiantokbdosapto/</link>
+      <link>/docs/go-global6/configuring-the-host/automatic-client-keyboard-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/configuring-the-host/kuraiantokbdosapto/</guid>
+      <guid>/docs/go-global6/configuring-the-host/automatic-client-keyboard-support/</guid>
       <description>
         
         
@@ -433,10 +441,10 @@ EC2コンソールのナビゲーションペインから、[ネットワーク�
     
     <item>
       <title>Docs: テーマ</title>
-      <link>/docs/go-global6/configuring-the-host/tma/</link>
+      <link>/docs/go-global6/configuring-the-host/themes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/configuring-the-host/tma/</guid>
+      <guid>/docs/go-global6/configuring-the-host/themes/</guid>
       <description>
         
         

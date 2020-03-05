@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: GO-Globalの概要</title>
-      <link>/docs/go-global6/introduction/go-global-no/</link>
+      <link>/docs/go-global6/introduction/introducing-go-global/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/introduction/go-global-no/</guid>
+      <guid>/docs/go-global6/introduction/introducing-go-global/</guid>
       <description>
         
         
@@ -30,10 +30,10 @@
     
     <item>
       <title>Docs: GO-Globalの機能</title>
-      <link>/docs/go-global6/introduction/go-global-no-1/</link>
+      <link>/docs/go-global6/introduction/go-global-features/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/introduction/go-global-no-1/</guid>
+      <guid>/docs/go-global6/introduction/go-global-features/</guid>
       <description>
         
         
@@ -72,10 +72,10 @@
     
     <item>
       <title>Docs: GO-Globalのシステム要件</title>
-      <link>/docs/go-global6/introduction/go-global-noshisutemu/</link>
+      <link>/docs/go-global6/introduction/system-requirements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/introduction/go-global-noshisutemu/</guid>
+      <guid>/docs/go-global6/introduction/system-requirements/</guid>
       <description>
         
         
@@ -129,10 +129,10 @@
     
     <item>
       <title>Docs: 既知の制限事項</title>
-      <link>/docs/go-global6/introduction/no/</link>
+      <link>/docs/go-global6/introduction/known-limitations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/introduction/no/</guid>
+      <guid>/docs/go-global6/introduction/known-limitations/</guid>
       <description>
         
         

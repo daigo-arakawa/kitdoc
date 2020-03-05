@@ -96,10 +96,10 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[G
     
     <item>
       <title>Docs: GO-Globalの概要</title>
-      <link>/docs/go-global6/introduction/go-global-no/</link>
+      <link>/docs/go-global6/introduction/introducing-go-global/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/introduction/go-global-no/</guid>
+      <guid>/docs/go-global6/introduction/introducing-go-global/</guid>
       <description>
         
         
@@ -287,13 +287,21 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
       <description>
         
         
-        &lt;blockquote&gt;
-&lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Global version5から6へのアップグレード手順は以下の技術ノートを参照ください。
-技術ノート KGTN 2019061901　技術ノート KGTN 2019071702&lt;/p&gt;
-&lt;/blockquote&gt;
+        &lt;p&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+GO-Global version5から6へのアップグレード手順は以下の技術ノートを参照ください。
+技術ノート KGTN 2019061901　技術ノート KGTN 2019071702
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;Before upgrading to version 6, you must upgrade the GO-Global license(s) by submitting a License Change Request via the &lt;a href=&#34;https://www.graphon.com/&#34;&gt;GraphOn portal&lt;/a&gt;. The version 6 host installer will not upgrade a computer that does not have a version 6 GO-Global license. After signing in to the portal, click License Management then click License Change Request and complete the form.&lt;/p&gt;
 &lt;p&gt;After submitting the License Change Request form, a version 6 GO-Global license will be sent via email. Place the new license file in the directory where the existing version 5 license file is stored. (The default license folder for GO-Global version 5 is C:\Program Files\GraphOn\GO-Global\Programs.)&lt;/p&gt;
 &lt;p&gt;Remove all version 5 licenses from the Programs directory. Then restart the &lt;strong&gt;GO-Global License Manager.&lt;/strong&gt;&lt;/p&gt;
@@ -313,10 +321,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: ユーザーアカウントの管理</title>
-      <link>/docs/go-global6/administering-user-accounts/untitled/</link>
+      <link>/docs/go-global6/administering-user-accounts/administering-user-accounts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/administering-user-accounts/untitled/</guid>
+      <guid>/docs/go-global6/administering-user-accounts/administering-user-accounts/</guid>
       <description>
         
         
@@ -338,10 +346,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs:  GO-Globalホストパフォーマンスカウンタ</title>
-      <link>/docs/go-global6/advanced-topics/go-globalhosutopafmansukaunta/</link>
+      <link>/docs/go-global6/advanced-topics/go-global-host-performance-counters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/go-globalhosutopafmansukaunta/</guid>
+      <guid>/docs/go-global6/advanced-topics/go-global-host-performance-counters/</guid>
       <description>
         
         
@@ -369,10 +377,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: Custom Toolbarsの作成</title>
-      <link>/docs/go-global6/mobile-app-toolbar-editor/custom-toolbarsno/</link>
+      <link>/docs/go-global6/mobile-app-toolbar-editor/creating-custom-toolbars/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/mobile-app-toolbar-editor/custom-toolbarsno/</guid>
+      <guid>/docs/go-global6/mobile-app-toolbar-editor/creating-custom-toolbars/</guid>
       <description>
         
         
@@ -492,10 +500,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: GO-Globalの機能</title>
-      <link>/docs/go-global6/introduction/go-global-no-1/</link>
+      <link>/docs/go-global6/introduction/go-global-features/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/introduction/go-global-no-1/</guid>
+      <guid>/docs/go-global6/introduction/go-global-features/</guid>
       <description>
         
         
@@ -534,15 +542,15 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: GO-Globalホストのインストール</title>
-      <link>/docs/go-global6/configuring-the-host/go-globalhosutonoinsutru/</link>
+      <link>/docs/go-global6/configuring-the-host/installing-the-go-global-host/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/configuring-the-host/go-globalhosutonoinsutru/</guid>
+      <guid>/docs/go-global6/configuring-the-host/installing-the-go-global-host/</guid>
       <description>
         
         
         &lt;p&gt;GO-Globalは自己解凍型の実行ファイルとして配布されており、gg-host.exeをダブルクリックしてインストールすることができます。ホストセットアッププログラムを実行するときは、コンピュータの管理者グループのメンバであるアカウントにログインする必要があります。&lt;/p&gt;
-&lt;p&gt;デフォルトでは、GO-Globalホストのセットアップは、すべての &lt;strong&gt;ホスト&lt;/strong&gt;のコアコンポーネント、 &lt;strong&gt;Web&lt;/strong&gt;コンポーネント(ブラウザログオン用にホストを設定するために必要なすべてのファイルを含む)、および &lt;strong&gt;Licensing&lt;/strong&gt;コンポーネントをインストールします。 **[Customize]**ボタンをクリックして、インストールしたくないコンポーネントを選択解除することで、インストールをカスタマイズできます。それ以外の場合は、 **[Install]**ボタンをクリックしてください。&lt;/p&gt;
+&lt;p&gt;デフォルトでは、GO-Globalホストのセットアップは、すべての &lt;strong&gt;ホスト&lt;/strong&gt;のコアコンポーネント、 &lt;strong&gt;Web&lt;/strong&gt;コンポーネント(ブラウザログオン用にホストを設定するために必要なすべてのファイルを含む)、および &lt;strong&gt;Licensing&lt;/strong&gt;コンポーネントをインストールします。 [&lt;strong&gt;Customize&lt;/strong&gt;]ボタンをクリックして、インストールしたくないコンポーネントを選択解除することで、インストールをカスタマイズできます。それ以外の場合は、 [&lt;strong&gt;Install&lt;/strong&gt;]ボタンをクリックしてください。&lt;/p&gt;
 &lt;p&gt;GO-Globalを有効にするには、 &lt;strong&gt;GO-Globalライセンスファイルをデフォルトのライセンスフォルダ&lt;/strong&gt; C:\ Program Files\GraphOn\GO-Global\Licensingにコピーします。ライセンスサーバを使用するようにGO-Globalを設定するには、&lt;a href=&#34;https://app.gitbook.com/@kitasp-goglobal/s/kitasp-documentaion/go-global-6/configuring-the-host/configuring-go-global-to-use-a-central-license-server&#34;&gt;セントラルライセンスサーバを使用するためのGO-Global&lt;/a&gt;の構成を参照してください。&lt;/p&gt;
 &lt;p&gt;後でライセンスファイルをコピーすることを選択した場合は、ファイルをコピーした後にGO-Global License Managerを再起動し、次にGO-Global Application Publishing Serviceを再起動する必要があります。&lt;/p&gt;
 &lt;h3 id=&#34;go-global-license-managerを再起動する方法&#34;&gt;GO-Global License Managerを再起動する方法&lt;/h3&gt;
@@ -563,17 +571,17 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
 &lt;p&gt;Administrators：フルコントロール、Users：読み取りと実行、SYSTEM：フルコントロール 次のエラーメッセージがログファイルに表示される場合は、ライセンスファイルに対する権限が正しくない可能性があります。 &lt;em&gt;FlexLM code #-1; FlexLM text : Cannot find license file.The license files(or license server system network addresses)attempted are listed below.Use LM_LICENSE_FILE to use a different license file,or contact your software provider for a license file.)&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;2つのGO-Globalライセンスを組み合わせるとき、または同じGO-Globalホストで2つの別々のライセンスを使用するときは、ライセンスファイル内のホスト名は大文字と小文字が区別され、同一である必要があります。&lt;/p&gt;
-&lt;p&gt;GO-Globalホストの起動設定を行う場合は、リストからGO-Global Application Publishing Serviceを選択して、 **[起動]**ボタンをクリックしてください。GO-Globalホストに適用したいオプションを選択します。&lt;/p&gt;
+&lt;p&gt;GO-Globalホストの起動設定を行う場合は、リストからGO-Global Application Publishing Serviceを選択して、 [&lt;strong&gt;起動&lt;/strong&gt;]ボタンをクリックしてください。GO-Globalホストに適用したいオプションを選択します。&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: アプリケーションの管理</title>
-      <link>/docs/go-global6/go-global-admin-console/apurikshonno/</link>
+      <link>/docs/go-global6/go-global-admin-console/managing-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/go-global-admin-console/apurikshonno/</guid>
+      <guid>/docs/go-global6/go-global-admin-console/managing-applications/</guid>
       <description>
         
         
@@ -727,10 +735,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: ユーザプロファイルの設定</title>
-      <link>/docs/go-global6/administering-user-accounts/yz-purofuiruno/</link>
+      <link>/docs/go-global6/administering-user-accounts/setting-up-user-profiles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/administering-user-accounts/yz-purofuiruno/</guid>
+      <guid>/docs/go-global6/administering-user-accounts/setting-up-user-profiles/</guid>
       <description>
         
         
@@ -750,10 +758,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: GO-Global Appを利用したWebアプリケーションの実行</title>
-      <link>/docs/go-global6/running-go-global/go-global-appwoshitawebapurikshonno/</link>
+      <link>/docs/go-global6/running-go-global/running-the-go-global-web-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/running-go-global/go-global-appwoshitawebapurikshonno/</guid>
+      <guid>/docs/go-global6/running-go-global/running-the-go-global-web-app/</guid>
       <description>
         
         
@@ -786,10 +794,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: GO-Globalのシステム要件</title>
-      <link>/docs/go-global6/introduction/go-global-noshisutemu/</link>
+      <link>/docs/go-global6/introduction/system-requirements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/introduction/go-global-noshisutemu/</guid>
+      <guid>/docs/go-global6/introduction/system-requirements/</guid>
       <description>
         
         
@@ -843,10 +851,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: Logファイル</title>
-      <link>/docs/go-global6/mobile-app-toolbar-editor/logfairu/</link>
+      <link>/docs/go-global6/mobile-app-toolbar-editor/log-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/mobile-app-toolbar-editor/logfairu/</guid>
+      <guid>/docs/go-global6/mobile-app-toolbar-editor/log-files/</guid>
       <description>
         
         
@@ -911,10 +919,10 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     
     <item>
       <title>Docs: セッションとプロセスの管理</title>
-      <link>/docs/go-global6/go-global-admin-console/sesshontopurosesuno/</link>
+      <link>/docs/go-global6/go-global-admin-console/managing-sessions-and-processes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/go-global-admin-console/sesshontopurosesuno/</guid>
+      <guid>/docs/go-global6/go-global-admin-console/managing-sessions-and-processes/</guid>
       <description>
         
         
@@ -964,10 +972,10 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     
     <item>
       <title>Docs: ネットワークプリンタの設定</title>
-      <link>/docs/go-global6/administering-user-accounts/nettowkupurintno/</link>
+      <link>/docs/go-global6/administering-user-accounts/setting-up-a-network-printer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/administering-user-accounts/nettowkupurintno/</guid>
+      <guid>/docs/go-global6/administering-user-accounts/setting-up-a-network-printer/</guid>
       <description>
         
         
@@ -988,10 +996,10 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     
     <item>
       <title>Docs: 委任サポートの構成要件</title>
-      <link>/docs/go-global6/advanced-topics/saptono/</link>
+      <link>/docs/go-global6/advanced-topics/configuration-requirements-for-delegation-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/saptono/</guid>
+      <guid>/docs/go-global6/advanced-topics/configuration-requirements-for-delegation-support/</guid>
       <description>
         
         
@@ -1028,11 +1036,51 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     </item>
     
     <item>
-      <title>Docs: クライアントの印刷処理</title>
-      <link>/docs/go-global6/advanced-topics/kuraiantono/</link>
+      <title>Docs: Mac OS X App</title>
+      <link>/docs/go-global6/running-go-global/mac-os-x-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/kuraiantono/</guid>
+      <guid>/docs/go-global6/running-go-global/mac-os-x-app/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-GlobalのMac OS X Appは、ネイティブのMac OS X環境とシームレスに統合できる軽量のアプリケーションです。最新のMac OS X APIを使用するように全面的に書き直され、インストールの簡素化、サウンドサポート、マルチモニタサポート、およびMac OS X Gatekeeperサポートを提供します。これにより、マルウェアから保護され、インターネットからダウンロードされたアプリケーションが不正に動作します。&lt;/p&gt;
+&lt;h3 id=&#34;mac-os-x-appのインストール方法&#34;&gt;Mac OS X Appのインストール方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;web browserを起動します。&lt;/li&gt;
+&lt;li&gt;Locationボックスに、http://に続けてホスト名とGO-Globalクライアントのインストールファイルを入力します。たとえば、http://host/goglobal/clients.htmlです。&lt;/li&gt;
+&lt;li&gt;指示に従ってgg-client.mac.dmgをダウンロードしてインストールします。&lt;/li&gt;
+&lt;li&gt;gg-client.mac.dmgを開き、GO-Global.appをアプリケーションにドラッグします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;mac-os-x-appの起動方法&#34;&gt;Mac OS X Appの起動方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;メニューバーから[ Go | Applications ]の順にクリックします。&lt;/li&gt;
+&lt;li&gt;GO-GlobalをダブルクリックをしてGO-Globalを起動します。&lt;/li&gt;
+&lt;li&gt;[Connection]ダイアログにホストアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;[Sign In]ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;**[User Name]**ボックスにネットワークユーザ名を入力します。&lt;/li&gt;
+&lt;li&gt;**[Password]**ボックスにネットワークユーザのパスワードを入力します。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mac OS X Appをアンインストールするには、GO-Global.appをアプリケーションからゴミ箱にドラッグします。&lt;/p&gt;
+&lt;h3 id=&#34;mac-os-x-appで起動パラメータを使用する方法&#34;&gt;Mac OS X Appで起動パラメータを使用する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;ターミナルを起動します。&lt;/li&gt;
+&lt;li&gt;/Applications/GO-Global.app/Contents/MacOS/ とディレクトリを変更します。&lt;/li&gt;
+&lt;li&gt;./GO-Globalとスタートパラーメータを入力します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;例：./GO-Global –h 196.125.101.222 –ac all –hp 443&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: クライアントの印刷処理</title>
+      <link>/docs/go-global6/advanced-topics/client-printing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/advanced-topics/client-printing/</guid>
       <description>
         
         
@@ -1054,10 +1102,10 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     
     <item>
       <title>Docs: セキュリティオプション</title>
-      <link>/docs/go-global6/go-global-admin-console/sekyuritiopushon/</link>
+      <link>/docs/go-global6/go-global-admin-console/managing-go-global-licenses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/go-global-admin-console/sekyuritiopushon/</guid>
+      <guid>/docs/go-global6/go-global-admin-console/managing-go-global-licenses/</guid>
       <description>
         
         
@@ -1123,10 +1171,10 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     
     <item>
       <title>Docs: ホスト以外のシステムへのWebファイルのインストール</title>
-      <link>/docs/go-global6/configuring-the-host/hosutonoshisutemuhenowebfairunoinsutru/</link>
+      <link>/docs/go-global6/configuring-the-host/installing-the-web-files-on-a-system-other-than-the-host/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/configuring-the-host/hosutonoshisutemuhenowebfairunoinsutru/</guid>
+      <guid>/docs/go-global6/configuring-the-host/installing-the-web-files-on-a-system-other-than-the-host/</guid>
       <description>
         
         
@@ -1143,10 +1191,10 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     
     <item>
       <title>Docs: 既知の制限事項</title>
-      <link>/docs/go-global6/introduction/no/</link>
+      <link>/docs/go-global6/introduction/known-limitations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/introduction/no/</guid>
+      <guid>/docs/go-global6/introduction/known-limitations/</guid>
       <description>
         
         
@@ -1183,242 +1231,11 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     </item>
     
     <item>
-      <title>Docs: GO-Globalライセンスの管理</title>
-      <link>/docs/go-global6/go-global-admin-console/go-globalraisensuno/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/go-global-admin-console/go-globalraisensuno/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Admin Consoleには、ホストで利用可能なすべてのGO-Globalライセンスが一覧表示され、各ライセンスの製品コード、座席数、有効期限、ステータスなどが表示されます。有効期限が近づいているとき、ライセンスとサポート契約が期限切れになったときにGO-Globalは管理者に警告します。&lt;/p&gt;
-&lt;h3 id=&#34;ライセンスの表示方法&#34;&gt;ライセンスの表示方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Admin Consoleで、GO-Globalホストのリストから適切なホストを選択します。&lt;/li&gt;
-&lt;li&gt;[License]タブをクリックします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;各ライセンスについて、次の情報が表示されます。&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Status&lt;/td&gt;
-&lt;td&gt;A license status can be listed as Active, Expired, Expires soon, Maint. Expired, Maint. Expires soon, Old version, Revoked, and Trial.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;License Master ID&lt;/td&gt;
-&lt;td&gt;GraphOn’s record of the license (e.g., LIC-122689)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Product Code:&lt;/td&gt;
-&lt;td&gt;28-digit alphanumeric code that appears in the license file, uniquely identifies the license, and is used for secure transactions (e.g., 171205182219607CJs4ndny07Auu)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;License ID&lt;/td&gt;
-&lt;td&gt;Unique, encoded alphanumeric ID representing the license file (e.g., GHPc7u with license file GHPc7u.lic)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Seats&lt;/td&gt;
-&lt;td&gt;The number of concurrent users the license allows. If there are no restrictions, seats will be unlimited.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Expiration Date&lt;/td&gt;
-&lt;td&gt;The date the license expires (a trial license, in most cases). When a license does not have an expiration date, the expiration date is listed as “permanent.”&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Maint. Expiration Date&lt;/td&gt;
-&lt;td&gt;The date the Support contract expires.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Features&lt;/td&gt;
-&lt;td&gt;Type of license (e.g., session or strong encryption)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Version&lt;/td&gt;
-&lt;td&gt;The license’s GO-Global version number (e.g., 5.0 and 6.0)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;License Server&lt;/td&gt;
-&lt;td&gt;The name of the license server that the host is using&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;選択した列に応じて、ライセンスはアルファベット順に昇順でソートされます。列見出しをクリックして降順に並べ替えます。&lt;/p&gt;
-&lt;p&gt;[License]タブの下部に、選択したコンピュータに対して一覧表示されているすべての有効なライセンスの合計シート数が表示されます。リストに表示されているライセンスから現在チェックアウトされているシートの数である使用中のシート数も表示されます。選択したコンピュータおよび同じライセンスを使用している他のGO-Globalホストからチェックアウトされたライセンスも含まれます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/4-4-1.png&#34; alt=&#34;4-4-1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Session Licenseは、ホスト上で1人以上のユーザがGO-Globalセッションを開始することを許可する、GO-Globalホストが利用できるライセンスです。&lt;/p&gt;
-&lt;p&gt;強力な暗号化ライセンスは別のライセンスファイルで提供され、次の追加の暗号化アルゴリズムを提供します : 128ビットRC4、168ビット3DES、256ビットAES。強力な暗号化ライセンスはサーバごとのライセンスであり、同時ユーザ数には基づいていません。強力な暗号化ライセンスを取得するには、KitASP販売窓口にお問い合わせください。&lt;/p&gt;
-&lt;p&gt;有効なGO-Globalサポート契約を結んでいるお客様は、ライセンスを取得したホストで発生した問題に対する技術サポートを受けることができます。サポート契約が期限切れになると([Maint. Expiration Date]列に表示)、重要なGO-Global Updatesのみをホストにインストールできます。重要ではないGO-Global Updatesはインストールできず、顧客はサポートを要求する資格がありません。有効期限警告は、有効期限の30日前に表示され始め、7日に1回表示されます。[Don&amp;rsquo;t display this message again.]このメッセージを再度表示しないをオンにすると、有効期限の警告を無効にすることができます。&lt;/p&gt;
-&lt;p&gt;GO-Globalホストで利用可能ないずれかのライセンスのサポート契約の期限が切れた後にGO-Global Updateがリリースされた場合は、ホストにアップデートをインストールするためにサポート契約を更新する必要があります。すべてではなく一部のライセンスのサポート契約の期限が切れた後にアップデートがリリースされた場合は、期限切れのサポート契約のあるライセンスを削除するか、期限切れのサポート契約を更新することができます。&lt;/p&gt;
-&lt;p&gt;サポート契約を更新するには、KitASP販売窓口に連絡してください。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Globalホストが利用できるライセンスのサポート契約の有効期限がGO-Globalホストのビルド日より早い場合、Application Publishing Serviceは実行されません。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;GO-Globalのトライアルライセンスでは、ライセンスマスターID、ライセンスID、およびメンテナンス有効期限が適用外として表示されます。[Expiration Date]列は、トライアルが機能しなくなる日を示します。試用ライセンスの有効期限が切れると、ユーザはそのコンピュータでGO-Globalを実行できなくなります。&lt;/p&gt;
-&lt;p&gt;ライセンスが失効として表示されている場合、そのライセンスは無効であり、システムから削除する必要があります。また、Application Publishing Serviceを再起動する必要があります。さらに支援が必要な場合は、KitASP技術支援センターにお問い合わせください。ライセンスがOld versionと表示されている場合、そのライセンスのバージョンは、ホストが要求しているライセンスバージョンよりも古いものです。それがホスト上の唯一のライセンスである場合は、アップグレードする必要があります。他のライセンスが機能するため削除する必要はありません。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;ライセンスの一覧を更新するには、右クリックして[更新]を選択するか、キーボードのF5キーを押します。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;GO-Globalライセンスの詳細については、Appendixを参照してください。&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: IIS Webサーバーを使用して、既定のディレクトリ以外からWebファイルをホストする</title>
-      <link>/docs/go-global6/configuring-the-host/iis-websbwoshitenodirekutorikarawebfairuwohosutosuru/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/configuring-the-host/iis-websbwoshitenodirekutorikarawebfairuwohosutosuru/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Microsoft IIS Webサーバを使用して、既定のgoglobalディレクトリ以外からGO-Global Webファイルをホストできます。&lt;/p&gt;
-&lt;h3 id=&#34;既定のディレクトリ以外からwebファイルをホストする方法&#34;&gt;既定のディレクトリ以外からWebファイルをホストする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Webサーバの C:\inetpub\wwwroot\にディレクトリを作成し、ユーザに表示したいディレクトリに呼び出します。たとえば、C:\inetpub\wwwroot\Webのフォルダを作成します。&lt;/li&gt;
-&lt;li&gt;GO-GlobalホストからC:\Program files\GraphOn\GO-Global\Webディレクトリの内容を新しいディレクトリにコピーします。&lt;/li&gt;
-&lt;li&gt;IISマネージャを開き、[サイト]に移動します。既定のWebサイト **[既定のWebサイト]**を右クリックし、 **[仮想ディレクトリの追加]**をクリックします。&lt;/li&gt;
-&lt;li&gt;手順1で作成したディレクトリと同じエイリアスを指定し、手順2でファイルをコピーしたディレクトリを &lt;strong&gt;物理パス&lt;/strong&gt;に指定します。たとえば、C:\inetpub\wwwroot\Webです。&lt;/li&gt;
-&lt;li&gt;新しい仮想ディレクトリをクリックします。次に &lt;strong&gt;MIMEタイプ&lt;/strong&gt;をダブルクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;追加&lt;/strong&gt;をクリックします。 &lt;strong&gt;File name extension&lt;/strong&gt;ボックスに.memを入力します。[MIMEの種類]ボックスにapplication/octet-streamと入力します。次に &lt;strong&gt;OK&lt;/strong&gt;をクリックします。&lt;/li&gt;
-&lt;li&gt;IISの設定が正しいことを確認するには、ブラウザを開き、GO-Globalホストに接続するためのURLを入力します(例 : &lt;strong&gt;http://hostname/web/logon.html&lt;/strong&gt;)。(hostnameはあなたのGO-Globalホストの名前です。webはIISで作成した仮想ディレクトリの名前です。)&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Mac OS X App</title>
-      <link>/docs/go-global6/running-go-global/mac-os-x-app/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/running-go-global/mac-os-x-app/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-GlobalのMac OS X Appは、ネイティブのMac OS X環境とシームレスに統合できる軽量のアプリケーションです。最新のMac OS X APIを使用するように全面的に書き直され、インストールの簡素化、サウンドサポート、マルチモニタサポート、およびMac OS X Gatekeeperサポートを提供します。これにより、マルウェアから保護され、インターネットからダウンロードされたアプリケーションが不正に動作します。&lt;/p&gt;
-&lt;h3 id=&#34;mac-os-x-appのインストール方法&#34;&gt;Mac OS X Appのインストール方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;web browserを起動します。&lt;/li&gt;
-&lt;li&gt;Locationボックスに、http://に続けてホスト名とGO-Globalクライアントのインストールファイルを入力します。たとえば、http://host/goglobal/clients.htmlです。&lt;/li&gt;
-&lt;li&gt;指示に従ってgg-client.mac.dmgをダウンロードしてインストールします。&lt;/li&gt;
-&lt;li&gt;gg-client.mac.dmgを開き、GO-Global.appをアプリケーションにドラッグします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;mac-os-x-appの起動方法&#34;&gt;Mac OS X Appの起動方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;メニューバーから[ Go | Applications ]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;GO-GlobalをダブルクリックをしてGO-Globalを起動します。&lt;/li&gt;
-&lt;li&gt;[Connection]ダイアログにホストアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;[Sign In]ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザ名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにネットワークユーザのパスワードを入力します。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Mac OS X Appをアンインストールするには、GO-Global.appをアプリケーションからゴミ箱にドラッグします。&lt;/p&gt;
-&lt;h3 id=&#34;mac-os-x-appで起動パラメータを使用する方法&#34;&gt;Mac OS X Appで起動パラメータを使用する方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;ターミナルを起動します。&lt;/li&gt;
-&lt;li&gt;/Applications/GO-Global.app/Contents/MacOS/ とディレクトリを変更します。&lt;/li&gt;
-&lt;li&gt;./GO-Globalとスタートパラーメータを入力します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;例：./GO-Global –h 196.125.101.222 –ac all –hp 443&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: プリンタドライバへのアクセスを指定する</title>
-      <link>/docs/go-global6/advanced-topics/purintadoraibahenoakusesuwosuru/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/advanced-topics/purintadoraibahenoakusesuwosuru/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-Globalは、次のソースからプリンタドライバを入手できます。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;**Universal Printer Driver:**GO-Globalには、任意のクライアントプリンタに印刷できる &lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;が含まれています。このオプションを有効にすると、ユニバーサルプリンタドライバを使用してクライアントプリンタを設定できます。&lt;/li&gt;
-&lt;li&gt;**Windows Printer Drivers:**既にインストールされているネイティブドライバを使用してプリンタを構成できるようにするには、 &lt;strong&gt;Windowsプリンタドライバ&lt;/strong&gt;オプションを有効にします。GO-GlobalがMicrosoft Windowsに付属のネイティブプリンタドライバを自動的にインストールできるようにするには、 *&lt;em&gt;自動的にドライバをインストールします。&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;または &lt;strong&gt;Windowsプリンタドライバ&lt;/strong&gt;が有効になっていない場合、プリンタは設定されず、クライアントの印刷は無効になります。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;のみが有効な場合、ユニバーサルプリンタドライバのみがプリンタドライバとして使用されます。ネイティブドライバは使用されません。これがデフォルト設定です。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Windowsプリンタドライバオプション&lt;/strong&gt;のみが有効な場合、GO-Globalホストにインストールされているネイティブプリンタドライバのみが使用されます。プリンタのネイティブドライバがインストールされていない場合、そのプリンタは設定されません。 &lt;strong&gt;Windowsプリンタドライバ&lt;/strong&gt;と &lt;strong&gt;ドライバの自動インストール&lt;/strong&gt;を有効にすると、ホストにインストールされているネイティブプリンタドライバまたはWindowsに含まれているプリンタドライバのみが使用されます。プリンタのネイティブドライバがインストールされておらず、Windowsに含まれていない場合、そのプリンタは設定されません。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;と &lt;strong&gt;Windowsプリンタドライバ&lt;/strong&gt;の両方が有効になっていて、プリンタのネイティブドライバがホストにインストールされている場合は、プリンタのネイティブドライバがプリンタの設定に使用されます。ホストにインストールされていない場合、プリンタはユニバーサルプリンタドライバを使用するように設定されています。&lt;/p&gt;
-&lt;p&gt;ユニバーサルプリンタドライバは、Windows、Linux、およびMac OS Xでサポートされています。ユニバーサルプリンタドライバで印刷する場合、ユーザ(またはグループ)はTempディレクトリにフルアクセスする必要があります。&lt;/p&gt;
-&lt;p&gt;ユニバーサルプリンタドライバを有効にすると、 &lt;strong&gt;Preview PDF&lt;/strong&gt;というプリンタが各セッションで構成されます。このプリンタに印刷されたドキュメントは自動的に.pdfファイルに変換され、クライアントコンピュータに表示されます。ユーザは、自由に文書を保存、印刷、電子メールで送信できます。ユニバーサルプリンタドライバのPDF変換機能を使用するには、Adobe ReaderなどのPDFリーダーがクライアントコンピュータに必要です&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;は標準の印刷プロパティダイアログを使用し、他のドライバが提供するより高度な印刷オプションのいくつかを提供しないかもしれません。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;管理者は、 &lt;strong&gt;Host Option&lt;/strong&gt;ダイアログを使用して、プリンタドライバソースへのアクセスを設定します。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/7-5-1.png&#34; alt=&#34;7-5-1&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;プリンタドライバへのアクセスの指定方法&#34;&gt;プリンタドライバへのアクセスの指定方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Admin Consoleで、 **[All Hosts]**の一覧から目的のホストを選択します。&lt;/li&gt;
-&lt;li&gt;[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Printers]**チェックボックスをクリックします。
-5.
-目的のドライバソースの横にあるチェックボックスをクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;クライアント側の印刷は、デフォルトで有効になっています。管理者は、Admin Consoleの「 &lt;strong&gt;Host Options&lt;/strong&gt;」ダイアログを使用してクライアント側の印刷を無効にします。&lt;/p&gt;
-&lt;h3 id=&#34;クライアントプリンタのサポートの無効方法&#34;&gt;クライアントプリンタのサポートの無効方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Admin Consoleで、[**All Hosts]**の一覧から目的のホストを選択します。&lt;/li&gt;
-&lt;li&gt;[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;と &lt;strong&gt;Windowsプリンタドライバ&lt;/strong&gt;を無効にします。これらのオプションのいずれも選択されていない場合、クライアントの印刷は無効になります。&lt;/li&gt;
-&lt;li&gt;[**OK]**をクリックします。&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Apache HTTPサーバを介したGO-Globalの実行</title>
-      <link>/docs/go-global6/configuring-the-host/apache-httpsbawoshitago-globalno/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/configuring-the-host/apache-httpsbawoshitago-globalno/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Apache HTTP Server 2.4 WebサービスがGO-Globalホストにインストールされている場合、ユーザはWebブラウザを使ってクライアントマシンから接続できます。&lt;/p&gt;
-&lt;p&gt;IISがインストールされている場合は、Apacheをダウンロードする前に &lt;strong&gt;World Wide Web発行サービス&lt;/strong&gt;を停止して無効にする必要があります。 **[サービス]**から、 **[World Wide Web発行サービス]**を右クリックして **[プロパティ]**を選択します。 **[プロパティ]**ダイアログで、 **[スタートアップの種類]**ドロップダウンメニューから **[無効]**を選択し、 **[停止]**ボタンをクリックします。OKをクリックしてください。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.apachelounge.com/download/&#34;&gt;http://www.apachelounge.com/download/&lt;/a&gt;にアクセスして最新バージョンをダウンロードしてください。GraphOnによってテストされたバージョンは &lt;strong&gt;httpd-2.4.29-Win64-VC15.zip&lt;/strong&gt;でした。&lt;/li&gt;
-&lt;li&gt;C ++再配布可能なVisual Studio 2017をダウンロードしてインストールします。GraphOnによってテストされたバージョンは、次のリンクからダウンロードできます。&lt;a href=&#34;https://aka.ms/vs/15/release/VC_redis.x64.exe&#34;&gt;https://aka.ms/vs/15/release/VC_redis.x64.exe&lt;/a&gt;​&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;httpd-2.4.29-Win64-VC15.zip&lt;/strong&gt;をC:\Apache24ディレクトリのGO-Globalホストに抽出します。&lt;/li&gt;
-&lt;li&gt;[ スタート | すべてのプログラム | アクセサリー | コマンドプロンプト ]の順にクリックします。コマンドプロンプトを右クリックし、管理者として実行します。&lt;/li&gt;
-&lt;li&gt;**[コマンドプロンプト]**ウィンドウで、次のように入力します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;cd C:\Apache24\binhttpd -k installhttpd -k start
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;まだ開いていない場合は、ファイアウォールでポート80を開く必要があります。SSLが実行されている場合は、ポート443が開いていることを確認してください。
-6. C :\Apache24\binを開き、 &lt;strong&gt;ApacheMonitor.exe&lt;/strong&gt;を実行します。システムトレイからApache Monitorを開き、サービスが開始されたことを確認します。
-7. C:\Apache24\htdocsを開き、goglobalという名前のディレクトリを作成します。
-8. C:\Program files\GraphOn\GO-Global\Webの内容をC:\Apache24\htdocs\goglobalディレクトリにコピーします。
-9. GO-Globalホスト上でブラウザを開き、 &lt;strong&gt;http://localhost/goglobal/logon.html&lt;/strong&gt;にアクセスしてセッションを開始します。&lt;/p&gt;
-&lt;p&gt;GO-Globalのバージョン番号には、ソフトウェアのメジャーバージョン、マイナーバージョン、サービスパックバージョン、ビルド番号が含まれています。たとえば、バージョン6.1.2.37894では、6がメジャーバージョン、1がマイナーバージョン、2がサービスパックバージョン、そして37897がビルド番号です。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GraphOnがGO-Globalへのメジャーアップグレードをリリースすると、メジャーバージョン番号が増えます。メジャーアップグレードには、通常、重要な新機能または変更された機能や機能、ユーザインターフェイスの変更、またはアーキテクチャの変更が含まれます。GraphOnがGO-Globalへのマイナーアップグレードをリリースすると、マイナーバージョン番号が増えます。マイナアップグレードには、一般的にマイナーな機能追加や変更、バグ修正とセキュリティ改善が含まれます。GraphOnがGO-GlobalにService Packをリリースすると、Service Packのバージョン番号が増えます。サービスパックには一般にバグ修正が含まれており、新しいプラットフォームのサポートとマイナーな機能強化が含まれている場合があります。ビルド番号はすべてのGO-Globalリリースで増加しています。ビルド番号だけが増えたリリースがパッチです。パッチには通常、セキュリティ上の問題、互換性の問題、および製品の問題に対する修正が含まれています。たとえば、パッチにはGO-Globalが最新リリースのMicrosoft Windows上で動作することを可能にする変更が含まれているかもしれません。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: GO-Globalスタートアップパラメータ</title>
-      <link>/docs/go-global6/running-go-global/go-globalsuttoappuparamta/</link>
+      <link>/docs/go-global6/running-go-global/go-global-startup-parameters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/running-go-global/go-globalsuttoappuparamta/</guid>
+      <guid>/docs/go-global6/running-go-global/go-global-startup-parameters/</guid>
       <description>
         
         
@@ -1556,11 +1373,202 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     </item>
     
     <item>
-      <title>Docs: プリンタの構成</title>
-      <link>/docs/go-global6/advanced-topics/purintano/</link>
+      <title>Docs: GO-Globalライセンスの管理</title>
+      <link>/docs/go-global6/go-global-admin-console/monitoring-host-activity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/purintano/</guid>
+      <guid>/docs/go-global6/go-global-admin-console/monitoring-host-activity/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Admin Consoleには、ホストで利用可能なすべてのGO-Globalライセンスが一覧表示され、各ライセンスの製品コード、座席数、有効期限、ステータスなどが表示されます。有効期限が近づいているとき、ライセンスとサポート契約が期限切れになったときにGO-Globalは管理者に警告します。&lt;/p&gt;
+&lt;h3 id=&#34;ライセンスの表示方法&#34;&gt;ライセンスの表示方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Admin Consoleで、GO-Globalホストのリストから適切なホストを選択します。&lt;/li&gt;
+&lt;li&gt;[License]タブをクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;各ライセンスについて、次の情報が表示されます。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Status&lt;/td&gt;
+&lt;td&gt;A license status can be listed as Active, Expired, Expires soon, Maint. Expired, Maint. Expires soon, Old version, Revoked, and Trial.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;License Master ID&lt;/td&gt;
+&lt;td&gt;GraphOn’s record of the license (e.g., LIC-122689)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Product Code:&lt;/td&gt;
+&lt;td&gt;28-digit alphanumeric code that appears in the license file, uniquely identifies the license, and is used for secure transactions (e.g., 171205182219607CJs4ndny07Auu)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;License ID&lt;/td&gt;
+&lt;td&gt;Unique, encoded alphanumeric ID representing the license file (e.g., GHPc7u with license file GHPc7u.lic)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Seats&lt;/td&gt;
+&lt;td&gt;The number of concurrent users the license allows. If there are no restrictions, seats will be unlimited.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Expiration Date&lt;/td&gt;
+&lt;td&gt;The date the license expires (a trial license, in most cases). When a license does not have an expiration date, the expiration date is listed as “permanent.”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Maint. Expiration Date&lt;/td&gt;
+&lt;td&gt;The date the Support contract expires.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Features&lt;/td&gt;
+&lt;td&gt;Type of license (e.g., session or strong encryption)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Version&lt;/td&gt;
+&lt;td&gt;The license’s GO-Global version number (e.g., 5.0 and 6.0)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;License Server&lt;/td&gt;
+&lt;td&gt;The name of the license server that the host is using&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;選択した列に応じて、ライセンスはアルファベット順に昇順でソートされます。列見出しをクリックして降順に並べ替えます。&lt;/p&gt;
+&lt;p&gt;[License]タブの下部に、選択したコンピュータに対して一覧表示されているすべての有効なライセンスの合計シート数が表示されます。リストに表示されているライセンスから現在チェックアウトされているシートの数である使用中のシート数も表示されます。選択したコンピュータおよび同じライセンスを使用している他のGO-Globalホストからチェックアウトされたライセンスも含まれます。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/4-4-1.png&#34; alt=&#34;4-4-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Session Licenseは、ホスト上で1人以上のユーザがGO-Globalセッションを開始することを許可する、GO-Globalホストが利用できるライセンスです。&lt;/p&gt;
+&lt;p&gt;強力な暗号化ライセンスは別のライセンスファイルで提供され、次の追加の暗号化アルゴリズムを提供します : 128ビットRC4、168ビット3DES、256ビットAES。強力な暗号化ライセンスはサーバごとのライセンスであり、同時ユーザ数には基づいていません。強力な暗号化ライセンスを取得するには、KitASP販売窓口にお問い合わせください。&lt;/p&gt;
+&lt;p&gt;有効なGO-Globalサポート契約を結んでいるお客様は、ライセンスを取得したホストで発生した問題に対する技術サポートを受けることができます。サポート契約が期限切れになると([Maint. Expiration Date]列に表示)、重要なGO-Global Updatesのみをホストにインストールできます。重要ではないGO-Global Updatesはインストールできず、顧客はサポートを要求する資格がありません。有効期限警告は、有効期限の30日前に表示され始め、7日に1回表示されます。[Don&amp;rsquo;t display this message again.]このメッセージを再度表示しないをオンにすると、有効期限の警告を無効にすることができます。&lt;/p&gt;
+&lt;p&gt;GO-Globalホストで利用可能ないずれかのライセンスのサポート契約の期限が切れた後にGO-Global Updateがリリースされた場合は、ホストにアップデートをインストールするためにサポート契約を更新する必要があります。すべてではなく一部のライセンスのサポート契約の期限が切れた後にアップデートがリリースされた場合は、期限切れのサポート契約のあるライセンスを削除するか、期限切れのサポート契約を更新することができます。&lt;/p&gt;
+&lt;p&gt;サポート契約を更新するには、KitASP販売窓口に連絡してください。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GO-Globalホストが利用できるライセンスのサポート契約の有効期限がGO-Globalホストのビルド日より早い場合、Application Publishing Serviceは実行されません。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;GO-Globalのトライアルライセンスでは、ライセンスマスターID、ライセンスID、およびメンテナンス有効期限が適用外として表示されます。[Expiration Date]列は、トライアルが機能しなくなる日を示します。試用ライセンスの有効期限が切れると、ユーザはそのコンピュータでGO-Globalを実行できなくなります。&lt;/p&gt;
+&lt;p&gt;ライセンスが失効として表示されている場合、そのライセンスは無効であり、システムから削除する必要があります。また、Application Publishing Serviceを再起動する必要があります。さらに支援が必要な場合は、KitASP技術支援センターにお問い合わせください。ライセンスがOld versionと表示されている場合、そのライセンスのバージョンは、ホストが要求しているライセンスバージョンよりも古いものです。それがホスト上の唯一のライセンスである場合は、アップグレードする必要があります。他のライセンスが機能するため削除する必要はありません。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ライセンスの一覧を更新するには、右クリックして[更新]を選択するか、キーボードのF5キーを押します。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;GO-Globalライセンスの詳細については、Appendixを参照してください。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: IIS Webサーバーを使用して、既定のディレクトリ以外からWebファイルをホストする</title>
+      <link>/docs/go-global6/configuring-the-host/iis-web-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/configuring-the-host/iis-web-server/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Microsoft IIS Webサーバを使用して、既定のgoglobalディレクトリ以外からGO-Global Webファイルをホストできます。&lt;/p&gt;
+&lt;h3 id=&#34;既定のディレクトリ以外からwebファイルをホストする方法&#34;&gt;既定のディレクトリ以外からWebファイルをホストする方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Webサーバの C:\inetpub\wwwroot\にディレクトリを作成し、ユーザに表示したいディレクトリに呼び出します。たとえば、C:\inetpub\wwwroot\Webのフォルダを作成します。&lt;/li&gt;
+&lt;li&gt;GO-GlobalホストからC:\Program files\GraphOn\GO-Global\Webディレクトリの内容を新しいディレクトリにコピーします。&lt;/li&gt;
+&lt;li&gt;IISマネージャを開き、[サイト]に移動します。既定のWebサイト **[既定のWebサイト]**を右クリックし、 **[仮想ディレクトリの追加]**をクリックします。&lt;/li&gt;
+&lt;li&gt;手順1で作成したディレクトリと同じエイリアスを指定し、手順2でファイルをコピーしたディレクトリを &lt;strong&gt;物理パス&lt;/strong&gt;に指定します。たとえば、C:\inetpub\wwwroot\Webです。&lt;/li&gt;
+&lt;li&gt;新しい仮想ディレクトリをクリックします。次に &lt;strong&gt;MIMEタイプ&lt;/strong&gt;をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;追加&lt;/strong&gt;をクリックします。 &lt;strong&gt;File name extension&lt;/strong&gt;ボックスに.memを入力します。[MIMEの種類]ボックスにapplication/octet-streamと入力します。次に &lt;strong&gt;OK&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;li&gt;IISの設定が正しいことを確認するには、ブラウザを開き、GO-Globalホストに接続するためのURLを入力します(例 : &lt;strong&gt;http://hostname/web/logon.html&lt;/strong&gt;)。(hostnameはあなたのGO-Globalホストの名前です。webはIISで作成した仮想ディレクトリの名前です。)&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: プリンタドライバへのアクセスを指定する</title>
+      <link>/docs/go-global6/advanced-topics/designating-access-to-printer-drivers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/advanced-topics/designating-access-to-printer-drivers/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalは、次のソースからプリンタドライバを入手できます。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;**Universal Printer Driver:**GO-Globalには、任意のクライアントプリンタに印刷できる &lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;が含まれています。このオプションを有効にすると、ユニバーサルプリンタドライバを使用してクライアントプリンタを設定できます。&lt;/li&gt;
+&lt;li&gt;**Windows Printer Drivers:**既にインストールされているネイティブドライバを使用してプリンタを構成できるようにするには、 &lt;strong&gt;Windowsプリンタドライバ&lt;/strong&gt;オプションを有効にします。GO-GlobalがMicrosoft Windowsに付属のネイティブプリンタドライバを自動的にインストールできるようにするには、 *&lt;em&gt;自動的にドライバをインストールします。&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;または &lt;strong&gt;Windowsプリンタドライバ&lt;/strong&gt;が有効になっていない場合、プリンタは設定されず、クライアントの印刷は無効になります。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;のみが有効な場合、ユニバーサルプリンタドライバのみがプリンタドライバとして使用されます。ネイティブドライバは使用されません。これがデフォルト設定です。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windowsプリンタドライバオプション&lt;/strong&gt;のみが有効な場合、GO-Globalホストにインストールされているネイティブプリンタドライバのみが使用されます。プリンタのネイティブドライバがインストールされていない場合、そのプリンタは設定されません。 &lt;strong&gt;Windowsプリンタドライバ&lt;/strong&gt;と &lt;strong&gt;ドライバの自動インストール&lt;/strong&gt;を有効にすると、ホストにインストールされているネイティブプリンタドライバまたはWindowsに含まれているプリンタドライバのみが使用されます。プリンタのネイティブドライバがインストールされておらず、Windowsに含まれていない場合、そのプリンタは設定されません。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;と &lt;strong&gt;Windowsプリンタドライバ&lt;/strong&gt;の両方が有効になっていて、プリンタのネイティブドライバがホストにインストールされている場合は、プリンタのネイティブドライバがプリンタの設定に使用されます。ホストにインストールされていない場合、プリンタはユニバーサルプリンタドライバを使用するように設定されています。&lt;/p&gt;
+&lt;p&gt;ユニバーサルプリンタドライバは、Windows、Linux、およびMac OS Xでサポートされています。ユニバーサルプリンタドライバで印刷する場合、ユーザ(またはグループ)はTempディレクトリにフルアクセスする必要があります。&lt;/p&gt;
+&lt;p&gt;ユニバーサルプリンタドライバを有効にすると、 &lt;strong&gt;Preview PDF&lt;/strong&gt;というプリンタが各セッションで構成されます。このプリンタに印刷されたドキュメントは自動的に.pdfファイルに変換され、クライアントコンピュータに表示されます。ユーザは、自由に文書を保存、印刷、電子メールで送信できます。ユニバーサルプリンタドライバのPDF変換機能を使用するには、Adobe ReaderなどのPDFリーダーがクライアントコンピュータに必要です&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;は標準の印刷プロパティダイアログを使用し、他のドライバが提供するより高度な印刷オプションのいくつかを提供しないかもしれません。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;管理者は、 &lt;strong&gt;Host Option&lt;/strong&gt;ダイアログを使用して、プリンタドライバソースへのアクセスを設定します。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/7-5-1.png&#34; alt=&#34;7-5-1&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;プリンタドライバへのアクセスの指定方法&#34;&gt;プリンタドライバへのアクセスの指定方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Admin Consoleで、 **[All Hosts]**の一覧から目的のホストを選択します。&lt;/li&gt;
+&lt;li&gt;[Tools | Host Options]の順にクリックします。&lt;/li&gt;
+&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
+&lt;li&gt;**[Printers]**チェックボックスをクリックします。
+5.
+目的のドライバソースの横にあるチェックボックスをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;クライアント側の印刷は、デフォルトで有効になっています。管理者は、Admin Consoleの「 &lt;strong&gt;Host Options&lt;/strong&gt;」ダイアログを使用してクライアント側の印刷を無効にします。&lt;/p&gt;
+&lt;h3 id=&#34;クライアントプリンタのサポートの無効方法&#34;&gt;クライアントプリンタのサポートの無効方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Admin Consoleで、[**All Hosts]**の一覧から目的のホストを選択します。&lt;/li&gt;
+&lt;li&gt;[Tools | Host Options]の順にクリックします。&lt;/li&gt;
+&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;と &lt;strong&gt;Windowsプリンタドライバ&lt;/strong&gt;を無効にします。これらのオプションのいずれも選択されていない場合、クライアントの印刷は無効になります。&lt;/li&gt;
+&lt;li&gt;[**OK]**をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Apache HTTPサーバを介したGO-Globalの実行</title>
+      <link>/docs/go-global6/configuring-the-host/running-go-global-through-apache-http-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/configuring-the-host/running-go-global-through-apache-http-server/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Apache HTTP Server 2.4 WebサービスがGO-Globalホストにインストールされている場合、ユーザはWebブラウザを使ってクライアントマシンから接続できます。&lt;/p&gt;
+&lt;p&gt;IISがインストールされている場合は、Apacheをダウンロードする前に &lt;strong&gt;World Wide Web発行サービス&lt;/strong&gt;を停止して無効にする必要があります。 **[サービス]**から、 **[World Wide Web発行サービス]**を右クリックして **[プロパティ]**を選択します。 **[プロパティ]**ダイアログで、 **[スタートアップの種類]**ドロップダウンメニューから **[無効]**を選択し、 **[停止]**ボタンをクリックします。OKをクリックしてください。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.apachelounge.com/download/&#34;&gt;http://www.apachelounge.com/download/&lt;/a&gt;にアクセスして最新バージョンをダウンロードしてください。GraphOnによってテストされたバージョンは &lt;strong&gt;httpd-2.4.29-Win64-VC15.zip&lt;/strong&gt;でした。&lt;/li&gt;
+&lt;li&gt;C ++再配布可能なVisual Studio 2017をダウンロードしてインストールします。GraphOnによってテストされたバージョンは、次のリンクからダウンロードできます。&lt;a href=&#34;https://aka.ms/vs/15/release/VC_redis.x64.exe&#34;&gt;https://aka.ms/vs/15/release/VC_redis.x64.exe&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;httpd-2.4.29-Win64-VC15.zip&lt;/strong&gt;をC:\Apache24ディレクトリのGO-Globalホストに抽出します。&lt;/li&gt;
+&lt;li&gt;[ スタート | すべてのプログラム | アクセサリー | コマンドプロンプト ]の順にクリックします。コマンドプロンプトを右クリックし、管理者として実行します。&lt;/li&gt;
+&lt;li&gt;**[コマンドプロンプト]**ウィンドウで、次のように入力します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;cd C:\Apache24\binhttpd -k installhttpd -k start
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;まだ開いていない場合は、ファイアウォールでポート80を開く必要があります。SSLが実行されている場合は、ポート443が開いていることを確認してください。
+6. C :\Apache24\binを開き、 &lt;strong&gt;ApacheMonitor.exe&lt;/strong&gt;を実行します。システムトレイからApache Monitorを開き、サービスが開始されたことを確認します。
+7. C:\Apache24\htdocsを開き、goglobalという名前のディレクトリを作成します。
+8. C:\Program files\GraphOn\GO-Global\Webの内容をC:\Apache24\htdocs\goglobalディレクトリにコピーします。
+9. GO-Globalホスト上でブラウザを開き、 &lt;strong&gt;http://localhost/goglobal/logon.html&lt;/strong&gt;にアクセスしてセッションを開始します。&lt;/p&gt;
+&lt;p&gt;GO-Globalのバージョン番号には、ソフトウェアのメジャーバージョン、マイナーバージョン、サービスパックバージョン、ビルド番号が含まれています。たとえば、バージョン6.1.2.37894では、6がメジャーバージョン、1がマイナーバージョン、2がサービスパックバージョン、そして37897がビルド番号です。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GraphOnがGO-Globalへのメジャーアップグレードをリリースすると、メジャーバージョン番号が増えます。メジャーアップグレードには、通常、重要な新機能または変更された機能や機能、ユーザインターフェイスの変更、またはアーキテクチャの変更が含まれます。GraphOnがGO-Globalへのマイナーアップグレードをリリースすると、マイナーバージョン番号が増えます。マイナアップグレードには、一般的にマイナーな機能追加や変更、バグ修正とセキュリティ改善が含まれます。GraphOnがGO-GlobalにService Packをリリースすると、Service Packのバージョン番号が増えます。サービスパックには一般にバグ修正が含まれており、新しいプラットフォームのサポートとマイナーな機能強化が含まれている場合があります。ビルド番号はすべてのGO-Globalリリースで増加しています。ビルド番号だけが増えたリリースがパッチです。パッチには通常、セキュリティ上の問題、互換性の問題、および製品の問題に対する修正が含まれています。たとえば、パッチにはGO-Globalが最新リリースのMicrosoft Windows上で動作することを可能にする変更が含まれているかもしれません。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: プリンタの構成</title>
+      <link>/docs/go-global6/advanced-topics/printer-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/advanced-topics/printer-configuration/</guid>
       <description>
         
         
@@ -1580,10 +1588,10 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
     
     <item>
       <title>Docs: logon.htmlページの変更</title>
-      <link>/docs/go-global6/running-go-global/logonhtmlpjino/</link>
+      <link>/docs/go-global6/running-go-global/modifying-the-logon-html-page/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/running-go-global/logonhtmlpjino/</guid>
+      <guid>/docs/go-global6/running-go-global/modifying-the-logon-html-page/</guid>
       <description>
         
         
@@ -1701,10 +1709,10 @@ HOSTID=ANY&lt;/p&gt;
     
     <item>
       <title>Docs: プリンタアプレット</title>
-      <link>/docs/go-global6/advanced-topics/purintaapuretto/</link>
+      <link>/docs/go-global6/advanced-topics/printers-applet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/purintaapuretto/</guid>
+      <guid>/docs/go-global6/advanced-topics/printers-applet/</guid>
       <description>
         
         
@@ -2067,10 +2075,10 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
     
     <item>
       <title>Docs: URLパラメータの指定</title>
-      <link>/docs/go-global6/running-go-global/urlparamtano/</link>
+      <link>/docs/go-global6/running-go-global/specifying-url-parameters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/running-go-global/urlparamtano/</guid>
+      <guid>/docs/go-global6/running-go-global/specifying-url-parameters/</guid>
       <description>
         
         
@@ -2087,10 +2095,10 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
     
     <item>
       <title>Docs: クライアントクリップボード</title>
-      <link>/docs/go-global6/advanced-topics/kuraiantokurippubdo/</link>
+      <link>/docs/go-global6/advanced-topics/client-clipboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/kuraiantokurippubdo/</guid>
+      <guid>/docs/go-global6/advanced-topics/client-clipboard/</guid>
       <description>
         
         
@@ -2103,6 +2111,31 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
 &lt;li&gt;**[Clipboard]**チェックボックスをクリックします。&lt;/li&gt;
 &lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;] をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GO-Globalのアンインストール</title>
+      <link>/docs/go-global6/running-go-global/uninstalling-go-global/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/running-go-global/uninstalling-go-global/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalのアンインストール方法はプラットフォームとブラウザによって異なります。&lt;/p&gt;
+&lt;h3 id=&#34;windowsのgo-globalクライアントをアンインストールする方法&#34;&gt;WindowsのGO-Globalクライアントをアンインストールする方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;コントロールパネルを開きます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;プログラムと機能&lt;/strong&gt;をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GO-Globalクライアント&lt;/strong&gt;を選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;削除&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;削除&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ユーザがGO-Globalのスクロール速度が遅い場合は、ホストのスムーズスクロールオプションを無効にしてみてください。Internet Explorerで、[ツール]メニューから[ツール]をクリックします。インターネット設定、詳細設定タブをクリックします。[設定]ボックスの[閲覧]で、[スムーズスクロールを使用する]を無効にします。&lt;/p&gt;
+&lt;/blockquote&gt;
 
       </description>
     </item>
@@ -2137,10 +2170,10 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
     
     <item>
       <title>Docs: Webファイル</title>
-      <link>/docs/go-global6/running-go-global/webfairu/</link>
+      <link>/docs/go-global6/running-go-global/web-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/running-go-global/webfairu/</guid>
+      <guid>/docs/go-global6/running-go-global/web-files/</guid>
       <description>
         
         
@@ -2156,10 +2189,10 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
     
     <item>
       <title>Docs: クライアントサウンド</title>
-      <link>/docs/go-global6/advanced-topics/kuraiantosaundo/</link>
+      <link>/docs/go-global6/advanced-topics/client-sound/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/kuraiantosaundo/</guid>
+      <guid>/docs/go-global6/advanced-topics/client-sound/</guid>
       <description>
         
         
@@ -2173,104 +2206,6 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
 &lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;サウンドカードをホストに取り付ける必要があります。スピーカはホストには必要ありません。クライアントサウンドは、WindowsとMac OS X Appでサポートされています。クライアントマシンにはサウンドカードとスピーカが必要です。オーディオサポートはデフォルトで無効になっています。&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: GO-Globalのアンインストール</title>
-      <link>/docs/go-global6/running-go-global/go-globalnoaninsutru/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/running-go-global/go-globalnoaninsutru/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-Globalのアンインストール方法はプラットフォームとブラウザによって異なります。&lt;/p&gt;
-&lt;h3 id=&#34;windowsのgo-globalクライアントをアンインストールする方法&#34;&gt;WindowsのGO-Globalクライアントをアンインストールする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;コントロールパネルを開きます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;プログラムと機能&lt;/strong&gt;をダブルクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GO-Globalクライアント&lt;/strong&gt;を選択します。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;削除&lt;/strong&gt;をクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;削除&lt;/strong&gt;をクリックします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;ユーザがGO-Globalのスクロール速度が遅い場合は、ホストのスムーズスクロールオプションを無効にしてみてください。Internet Explorerで、[ツール]メニューから[ツール]をクリックします。インターネット設定、詳細設定タブをクリックします。[設定]ボックスの[閲覧]で、[スムーズスクロールを使用する]を無効にします。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: クライアントのシリアルポートとパラレルポート</title>
-      <link>/docs/go-global6/advanced-topics/kuraiantonoshiriaruptotopararerupto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/advanced-topics/kuraiantonoshiriaruptotopararerupto/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-Globalは、ホスト上で実行されているアプリケーションがクライアントマシンのシリアルポートとパラレルポートにアクセスすることを可能にします。シリアルポートとパラレルポートはデフォルトで無効になっています。クライアントのシリアルポートとパラレルポートへのアクセスは、Windowsでのみサポートされています。&lt;/p&gt;
-&lt;h3 id=&#34;シリアルポートとパラレルポートを有効にする方法&#34;&gt;シリアルポートとパラレルポートを有効にする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Admin Consoleで、 **[All Hosts]**のリストから目的のホストを選択します。&lt;/li&gt;
-&lt;li&gt;[Tools | Host Options]にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[シリアルとパラレルポート]**チェックボックスをクリックします。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;クライアントシリアルポートとパラレルポートでは、セッションプロセスにGO-Globalライブラリをロードする必要があります。 これは、プロセスの起動に影響を与えたり、一部のプロセスをGO-Globalと互換性を持たせたり、中断/再開操作中に致命的な結果を招く可能性があります。 高度なセッションプロセス設定については、このガイドの高度なセッションプロセス設定を参照してください。&lt;/p&gt;
-&lt;p&gt;※高度なセッションプロセス設定については推奨設定はございません。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: クラウド環境のライセンスサーバ</title>
-      <link>/docs/go-global6/configuring-the-host/kuraudonoraisensusba/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/configuring-the-host/kuraudonoraisensusba/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-Globalライセンスファイルは、GO-Global License Managerサービスが実行されているコンピュータのMACアドレスにバインドされています。Amazon Webサービス(AWS)などのクラウド環境では、仮想コンピュータのMACアドレスが変わる可能性があります。GO-Global License Managerサービスを実行しているコンピュータのMACアドレスが変更されると、サービスはライセンスをチェックアウトできなくなり、GO-Globalセッションは開始できなくなります。これを防ぐには、GO-Global License Managerサービスを実行している仮想コンピュータを、固定のMACアドレスを持つように構成する必要があります。AWS環境では、固定Elastic IPアドレス(EIP)と固定MACアドレスを使用してElastic Network Interface(ENI)を作成し、そのENIをGO-Global License Managerサービスを実行している仮想コンピュータ(EC2インスタンス)に接続することでこれを実行できます。&lt;/p&gt;
-&lt;h3 id=&#34;awsでeipとeniを作成しec2インスタンスにアタッチする方法&#34;&gt;AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Elastic IP(EIP)を作成する&lt;/strong&gt;
-EC2コンソールのナビゲーションペインから、[ネットワークとセキュリティ | セキュリティ]の順にクリックします。[Elastic IP]をクリックし、[新しいアドレスを割り当てる]を選択します。 詳細については、AWS EIPのドキュメントを参照してください。: &lt;a href=&#34;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html&#34;&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html&lt;/a&gt;​&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Elastic Network Interfaceを作成する(ENI)&lt;/strong&gt;
-2.1 EC2コンソールのナビゲーションペインから[Network Interfaces]を選択します。
-2.2 [ネットワークインターフェイスの作成]をクリックします。
-2.3 説明を入力し、適切なアベイラビリティーゾーンからサブネットを選択します。
-2.4 プライベートIPを自動割り当てのままにします。
-2.5 ファイアウォールルールを含むセキュリティグループを選択してください。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。&lt;/strong&gt;
-3.1 EIPとENIを作成したら、[Network Interface | アクション| IPアドレスの管理] の順に選択します。
-3.2 ステップ1で作成したEIPをENIに割り当てます。 詳細については、AWS ENIのドキュメントを参照してください。: &lt;a href=&#34;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&#34;&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&lt;/a&gt;​&lt;/li&gt;
-&lt;li&gt;GO-Global License Managerサービスを実行しているインスタンスにENIを添付します。
-4.1 ECインスタンスから、GO-Global License Managerサービスを実行しているインスタンスを選択し、[アクション | ネットワーキング | ネットワークインターフェイス]の順に選択します。
-4.2 手順2で作成したENIを選択します。使用できない場合は、別のAWSインスタンスに添付されているか、インスタンスとは異なるアベイラビリティーゾーンに作成されている可能性があります。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じアベイラビリティーゾーンにある必要があります。 Amazon Virtual Private Cloud（VPC）を介して、アベイラビリティーゾーンでサブネットを使用するか、アベイラビリティーゾーンでカスタムサブネットを作成できます。&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: 自動クライアントキーボードサポート</title>
-      <link>/docs/go-global6/configuring-the-host/kuraiantokbdosapto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/configuring-the-host/kuraiantokbdosapto/</guid>
-      <description>
-        
-        
-        &lt;p&gt;自動クライアントキーボード機能を使用すると、管理者はGO-Globalホストを設定して自動的に任意のクライアントキーボードを操作できます。ユーザは、クライアントデバイスのローカルキーボード切り替え機能とクライアントのIME(Input Method Editor)を使用して、キーボードをその場で切り替えることができます。GO-Globalホストにキーボードレイアウトをインストールしたり、GO-Globalクライアントにキーボードマッピングファイルをインストールしたりする必要はありません。&lt;/p&gt;
-&lt;p&gt;自動クライアントキーボードはデフォルトで有効になっています。自動クライアントキーボードを無効にし、クライアントキーボードを処理するための従来の方法を有効にする手順は、&lt;a href=&#34;https://gitbook.kitasp.com/go-global-6/appendix&#34;&gt;Appendix&lt;/a&gt;に記載されています。&lt;/p&gt;
 
       </description>
     </item>
@@ -2322,11 +2257,69 @@ EC2コンソールのナビゲーションペインから、[ネットワーク�
     </item>
     
     <item>
-      <title>Docs: クライアントのファイルアクセス</title>
-      <link>/docs/go-global6/advanced-topics/kuraiantonofairuakusesu/</link>
+      <title>Docs: クライアントのシリアルポートとパラレルポート</title>
+      <link>/docs/go-global6/advanced-topics/client-serial-and-parallel-ports/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/kuraiantonofairuakusesu/</guid>
+      <guid>/docs/go-global6/advanced-topics/client-serial-and-parallel-ports/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalは、ホスト上で実行されているアプリケーションがクライアントマシンのシリアルポートとパラレルポートにアクセスすることを可能にします。シリアルポートとパラレルポートはデフォルトで無効になっています。クライアントのシリアルポートとパラレルポートへのアクセスは、Windowsでのみサポートされています。&lt;/p&gt;
+&lt;h3 id=&#34;シリアルポートとパラレルポートを有効にする方法&#34;&gt;シリアルポートとパラレルポートを有効にする方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Admin Consoleで、 **[All Hosts]**のリストから目的のホストを選択します。&lt;/li&gt;
+&lt;li&gt;[Tools | Host Options]にクリックします。&lt;/li&gt;
+&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
+&lt;li&gt;**[シリアルとパラレルポート]**チェックボックスをクリックします。&lt;/li&gt;
+&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;クライアントシリアルポートとパラレルポートでは、セッションプロセスにGO-Globalライブラリをロードする必要があります。 これは、プロセスの起動に影響を与えたり、一部のプロセスをGO-Globalと互換性を持たせたり、中断/再開操作中に致命的な結果を招く可能性があります。 高度なセッションプロセス設定については、このガイドの高度なセッションプロセス設定を参照してください。&lt;/p&gt;
+&lt;p&gt;※高度なセッションプロセス設定については推奨設定はございません。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: クラウド環境のライセンスサーバ</title>
+      <link>/docs/go-global6/configuring-the-host/license-servers-in-cloud-environments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/configuring-the-host/license-servers-in-cloud-environments/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalライセンスファイルは、GO-Global License Managerサービスが実行されているコンピュータのMACアドレスにバインドされています。Amazon Webサービス(AWS)などのクラウド環境では、仮想コンピュータのMACアドレスが変わる可能性があります。GO-Global License Managerサービスを実行しているコンピュータのMACアドレスが変更されると、サービスはライセンスをチェックアウトできなくなり、GO-Globalセッションは開始できなくなります。これを防ぐには、GO-Global License Managerサービスを実行している仮想コンピュータを、固定のMACアドレスを持つように構成する必要があります。AWS環境では、固定Elastic IPアドレス(EIP)と固定MACアドレスを使用してElastic Network Interface(ENI)を作成し、そのENIをGO-Global License Managerサービスを実行している仮想コンピュータ(EC2インスタンス)に接続することでこれを実行できます。&lt;/p&gt;
+&lt;h3 id=&#34;awsでeipとeniを作成しec2インスタンスにアタッチする方法&#34;&gt;AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Elastic IP(EIP)を作成する&lt;/strong&gt;
+EC2コンソールのナビゲーションペインから、[ネットワークとセキュリティ | セキュリティ]の順にクリックします。[Elastic IP]をクリックし、[新しいアドレスを割り当てる]を選択します。 詳細については、AWS EIPのドキュメントを参照してください。: &lt;a href=&#34;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html&#34;&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Elastic Network Interfaceを作成する(ENI)&lt;/strong&gt;
+2.1 EC2コンソールのナビゲーションペインから[Network Interfaces]を選択します。
+2.2 [ネットワークインターフェイスの作成]をクリックします。
+2.3 説明を入力し、適切なアベイラビリティーゾーンからサブネットを選択します。
+2.4 プライベートIPを自動割り当てのままにします。
+2.5 ファイアウォールルールを含むセキュリティグループを選択してください。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。&lt;/strong&gt;
+3.1 EIPとENIを作成したら、[Network Interface | アクション| IPアドレスの管理] の順に選択します。
+3.2 ステップ1で作成したEIPをENIに割り当てます。 詳細については、AWS ENIのドキュメントを参照してください。: &lt;a href=&#34;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&#34;&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;GO-Global License Managerサービスを実行しているインスタンスにENIを添付します。
+4.1 ECインスタンスから、GO-Global License Managerサービスを実行しているインスタンスを選択し、[アクション | ネットワーキング | ネットワークインターフェイス]の順に選択します。
+4.2 手順2で作成したENIを選択します。使用できない場合は、別のAWSインスタンスに添付されているか、インスタンスとは異なるアベイラビリティーゾーンに作成されている可能性があります。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じアベイラビリティーゾーンにある必要があります。 Amazon Virtual Private Cloud（VPC）を介して、アベイラビリティーゾーンでサブネットを使用するか、アベイラビリティーゾーンでカスタムサブネットを作成できます。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: クライアントのファイルアクセス</title>
+      <link>/docs/go-global6/advanced-topics/client-file-access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/advanced-topics/client-file-access/</guid>
       <description>
         
         
@@ -2388,11 +2381,45 @@ EC2コンソールのナビゲーションペインから、[ネットワーク�
     </item>
     
     <item>
-      <title>Docs: テーマ</title>
-      <link>/docs/go-global6/configuring-the-host/tma/</link>
+      <title>Docs: 自動クライアントキーボードサポート</title>
+      <link>/docs/go-global6/configuring-the-host/automatic-client-keyboard-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/configuring-the-host/tma/</guid>
+      <guid>/docs/go-global6/configuring-the-host/automatic-client-keyboard-support/</guid>
+      <description>
+        
+        
+        &lt;p&gt;自動クライアントキーボード機能を使用すると、管理者はGO-Globalホストを設定して自動的に任意のクライアントキーボードを操作できます。ユーザは、クライアントデバイスのローカルキーボード切り替え機能とクライアントのIME(Input Method Editor)を使用して、キーボードをその場で切り替えることができます。GO-Globalホストにキーボードレイアウトをインストールしたり、GO-Globalクライアントにキーボードマッピングファイルをインストールしたりする必要はありません。&lt;/p&gt;
+&lt;p&gt;自動クライアントキーボードはデフォルトで有効になっています。自動クライアントキーボードを無効にし、クライアントキーボードを処理するための従来の方法を有効にする手順は、&lt;a href=&#34;https://gitbook.kitasp.com/go-global-6/appendix&#34;&gt;Appendix&lt;/a&gt;に記載されています。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GO-Globalセッションの最大色数の指定</title>
+      <link>/docs/go-global6/advanced-topics/specifying-the-maximum-color-depth-for-go-global-sessions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/advanced-topics/specifying-the-maximum-color-depth-for-go-global-sessions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalセッションの色深度(または色品質)は、アプリケーションによっては画像の品質に影響を与える可能性があります。GO-Globalセッションは、最大値までクライアントシステムの色深度で実行されます。デフォルトでは、最大深度は1ピクセルあたり16ビットに設定されています。&lt;/p&gt;
+&lt;p&gt;GO-Globalセッションの最大色数を増減するには、ショートカットからGO-Globalを実行するときに–mxオプションを使用します。最大色数は、次のように-mx 32、-mx 24、-mx 16、-mx 8と指定できます。GO-Globalセッションは、-mxオプションの最小値とクライアントシステムの色数を使用します。たとえば、GO-Globalセッションを1ピクセルあたり32ビットで実行するには、-mx 32をコマンドラインに追加し、クライアントシステムを1ピクセルあたり32ビットで実行する必要があります。&lt;/p&gt;
+&lt;p&gt;例:&amp;ldquo;C:\Program Files\GraphOn\GO-Global\Client\gg-client.exe&amp;rdquo; -mx 32&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/7-14-1.png&#34; alt=&#34;7-14-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;ハイパーリンクからGO-Globalを実行するときは、maxbppパラメータを8、16、24、32の値で使用します。次の例では、ハイパーリンクは最大色数を1ピクセルあたり24ビットに設定します。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://hostname/goglobal/logon.html?maxbpp=24&#34;&gt;http://hostname/goglobal/logon.html?maxbpp=24&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: テーマ</title>
+      <link>/docs/go-global6/configuring-the-host/themes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/configuring-the-host/themes/</guid>
       <description>
         
         
@@ -2421,30 +2448,11 @@ i. **[ビジュアルスタイルへのパス]**で、パスを入力します�
     </item>
     
     <item>
-      <title>Docs: GO-Globalセッションの最大色数の指定</title>
-      <link>/docs/go-global6/advanced-topics/go-globalsesshonnono/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/advanced-topics/go-globalsesshonnono/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-Globalセッションの色深度(または色品質)は、アプリケーションによっては画像の品質に影響を与える可能性があります。GO-Globalセッションは、最大値までクライアントシステムの色深度で実行されます。デフォルトでは、最大深度は1ピクセルあたり16ビットに設定されています。&lt;/p&gt;
-&lt;p&gt;GO-Globalセッションの最大色数を増減するには、ショートカットからGO-Globalを実行するときに–mxオプションを使用します。最大色数は、次のように-mx 32、-mx 24、-mx 16、-mx 8と指定できます。GO-Globalセッションは、-mxオプションの最小値とクライアントシステムの色数を使用します。たとえば、GO-Globalセッションを1ピクセルあたり32ビットで実行するには、-mx 32をコマンドラインに追加し、クライアントシステムを1ピクセルあたり32ビットで実行する必要があります。&lt;/p&gt;
-&lt;p&gt;例:&amp;ldquo;C:\Program Files\GraphOn\GO-Global\Client\gg-client.exe&amp;rdquo; -mx 32&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/7-14-1.png&#34; alt=&#34;7-14-1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;ハイパーリンクからGO-Globalを実行するときは、maxbppパラメータを8、16、24、32の値で使用します。次の例では、ハイパーリンクは最大色数を1ピクセルあたり24ビットに設定します。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://hostname/goglobal/logon.html?maxbpp=24&#34;&gt;http://hostname/goglobal/logon.html?maxbpp=24&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: マッピングされたドライブ</title>
-      <link>/docs/go-global6/advanced-topics/mappingusaretadoraibu/</link>
+      <link>/docs/go-global6/advanced-topics/mapped-drives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/mappingusaretadoraibu/</guid>
+      <guid>/docs/go-global6/advanced-topics/mapped-drives/</guid>
       <description>
         
         

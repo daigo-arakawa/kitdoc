@@ -1,12 +1,39 @@
-<div class="xPrevNextLink">
-  {{ with .NextInSection }}
-    <div class="xPrevNextLink_prev">
-      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-    </div>
+{{ if .Parent }}
+  {{/* まずは同じ階層のセクションとページから prev と next を決める */}}
+  {{ $p := .Parent }}
+  {{ $sections := $p.Sections }}
+  {{ $pages := (cond $p.IsHome (where $.Site.RegularPages "Section" "") $p.Pages) }}
+  {{ range (union $sections $pages) }}
+    {{ if eq . $ }}
+      {{ $.Scratch.Set "found" true }}
+    {{ else }}
+      {{ if $.Scratch.Get "found" }}
+        {{ if not ($.Scratch.Get "next") }}
+          {{/* Set "next" entry as just after the current page. */}}
+          {{ $.Scratch.Set "next" . }}
+        {{ end }}
+      {{ else }}
+        {{/* Update "prev" entry until the current page is found. */}}
+        {{ $.Scratch.Set "prev" . }}
+      {{ end }}
+    {{ end }}
   {{ end }}
-  {{ with .PrevInSection }}
-    <div class="xPrevNextLink_next">
-      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+
+  {{/* 見つかった prev と next のリンクを表示 */}}
+
+  <div class="xPrevNextLink">
+    {{- with ($.Scratch.Get "prev") -}}
+
+      <div class="xPrevNextLink_prev">
+        <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+      </div>
+    {{- end -}}
+    {{- with ($.Scratch.Get "next") -}}
+  
+      <div class="xPrevNextLink_next">
+        <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+      </div>
+    {{- end -}}
     </div>
-  {{ end }}
-</div>
+  
+{{ end }}

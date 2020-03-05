@@ -12601,6 +12601,93 @@ readers do not read off random characters that represent icons */
     border-style: solid;
     border-color: #403F4C; }
 
+/* 前ページ、次ページへのリンク */
+.xPrevNextLink::after {
+  /* float による回り込みの解除 */
+  display: block;
+  content: "";
+  clear: both; }
+
+.xPrevNextLink_prev {
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  border: 2px solid #447fff;
+  background: #fff;
+  color: #447fff;
+  font-weight: bold;
+  padding: 0.5em 1em 0.5em 2em;
+  line-height: 1.4;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.xPrevNextLink_prev::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  margin-top: -6px;
+  transform: rotate(225deg);
+  border-top: 2px solid #447fff;
+  border-right: 2px solid #447fff;
+  transition: left 0.3s; }
+
+.xPrevNextLink_prev:hover {
+  color: #447fff; }
+
+.xPrevNextLink_prev:hover::after {
+  border-color: #447fff;
+  left: 7px; }
+
+.xPrevNextLink_prev:active, .xPrevNextLink_prev:focus {
+  opacity: 0.8; }
+
+.xPrevNextLink_next {
+  float: right;
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  border: 2px solid #447fff;
+  background: #fff;
+  color: #447fff;
+  font-weight: bold;
+  padding: 0.5em 2em 0.5em 1em;
+  line-height: 1.4;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.xPrevNextLink_next::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -6px;
+  transform: rotate(45deg);
+  border-top: 2px solid #447fff;
+  border-right: 2px solid #447fff;
+  transition: right 0.3s; }
+
+.xPrevNextLink_next:hover {
+  color: #447fff; }
+
+.xPrevNextLink_next:hover::after {
+  border-color: #447fff;
+  right: 7px; }
+
+.xPrevNextLink_next:active, .xPrevNextLink_next:focus {
+  opacity: 0.8; }
+
 footer {
   min-height: 150px; }
   @media (max-width: 991.98px) {

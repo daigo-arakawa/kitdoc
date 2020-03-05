@@ -162,10 +162,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs:  GO-Globalホストパフォーマンスカウンタ</title>
-      <link>/docs/go-global6/advanced-topics/go-globalhosutopafmansukaunta/</link>
+      <link>/docs/go-global6/advanced-topics/go-global-host-performance-counters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/go-globalhosutopafmansukaunta/</guid>
+      <guid>/docs/go-global6/advanced-topics/go-global-host-performance-counters/</guid>
       <description>
         
         
@@ -193,10 +193,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: 委任サポートの構成要件</title>
-      <link>/docs/go-global6/advanced-topics/saptono/</link>
+      <link>/docs/go-global6/advanced-topics/configuration-requirements-for-delegation-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/saptono/</guid>
+      <guid>/docs/go-global6/advanced-topics/configuration-requirements-for-delegation-support/</guid>
       <description>
         
         
@@ -234,10 +234,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: クライアントの印刷処理</title>
-      <link>/docs/go-global6/advanced-topics/kuraiantono/</link>
+      <link>/docs/go-global6/advanced-topics/client-printing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/kuraiantono/</guid>
+      <guid>/docs/go-global6/advanced-topics/client-printing/</guid>
       <description>
         
         
@@ -259,10 +259,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: プリンタドライバへのアクセスを指定する</title>
-      <link>/docs/go-global6/advanced-topics/purintadoraibahenoakusesuwosuru/</link>
+      <link>/docs/go-global6/advanced-topics/designating-access-to-printer-drivers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/purintadoraibahenoakusesuwosuru/</guid>
+      <guid>/docs/go-global6/advanced-topics/designating-access-to-printer-drivers/</guid>
       <description>
         
         
@@ -307,10 +307,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: プリンタの構成</title>
-      <link>/docs/go-global6/advanced-topics/purintano/</link>
+      <link>/docs/go-global6/advanced-topics/printer-configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/purintano/</guid>
+      <guid>/docs/go-global6/advanced-topics/printer-configuration/</guid>
       <description>
         
         
@@ -330,10 +330,10 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     
     <item>
       <title>Docs: プリンタアプレット</title>
-      <link>/docs/go-global6/advanced-topics/purintaapuretto/</link>
+      <link>/docs/go-global6/advanced-topics/printers-applet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/purintaapuretto/</guid>
+      <guid>/docs/go-global6/advanced-topics/printers-applet/</guid>
       <description>
         
         
@@ -609,10 +609,10 @@ For example:
     
     <item>
       <title>Docs: クライアントクリップボード</title>
-      <link>/docs/go-global6/advanced-topics/kuraiantokurippubdo/</link>
+      <link>/docs/go-global6/advanced-topics/client-clipboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/kuraiantokurippubdo/</guid>
+      <guid>/docs/go-global6/advanced-topics/client-clipboard/</guid>
       <description>
         
         
@@ -631,10 +631,10 @@ For example:
     
     <item>
       <title>Docs: クライアントサウンド</title>
-      <link>/docs/go-global6/advanced-topics/kuraiantosaundo/</link>
+      <link>/docs/go-global6/advanced-topics/client-sound/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/kuraiantosaundo/</guid>
+      <guid>/docs/go-global6/advanced-topics/client-sound/</guid>
       <description>
         
         
@@ -654,10 +654,10 @@ For example:
     
     <item>
       <title>Docs: クライアントのシリアルポートとパラレルポート</title>
-      <link>/docs/go-global6/advanced-topics/kuraiantonoshiriaruptotopararerupto/</link>
+      <link>/docs/go-global6/advanced-topics/client-serial-and-parallel-ports/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/kuraiantonoshiriaruptotopararerupto/</guid>
+      <guid>/docs/go-global6/advanced-topics/client-serial-and-parallel-ports/</guid>
       <description>
         
         
@@ -680,10 +680,10 @@ For example:
     
     <item>
       <title>Docs: クライアントのファイルアクセス</title>
-      <link>/docs/go-global6/advanced-topics/kuraiantonofairuakusesu/</link>
+      <link>/docs/go-global6/advanced-topics/client-file-access/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/kuraiantonofairuakusesu/</guid>
+      <guid>/docs/go-global6/advanced-topics/client-file-access/</guid>
       <description>
         
         
@@ -746,10 +746,10 @@ For example:
     
     <item>
       <title>Docs: GO-Globalセッションの最大色数の指定</title>
-      <link>/docs/go-global6/advanced-topics/go-globalsesshonnono/</link>
+      <link>/docs/go-global6/advanced-topics/specifying-the-maximum-color-depth-for-go-global-sessions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/go-globalsesshonnono/</guid>
+      <guid>/docs/go-global6/advanced-topics/specifying-the-maximum-color-depth-for-go-global-sessions/</guid>
       <description>
         
         
@@ -765,10 +765,10 @@ For example:
     
     <item>
       <title>Docs: マッピングされたドライブ</title>
-      <link>/docs/go-global6/advanced-topics/mappingusaretadoraibu/</link>
+      <link>/docs/go-global6/advanced-topics/mapped-drives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/mappingusaretadoraibu/</guid>
+      <guid>/docs/go-global6/advanced-topics/mapped-drives/</guid>
       <description>
         
         
@@ -781,10 +781,10 @@ For example:
     
     <item>
       <title>Docs: マルチモニタのサポート</title>
-      <link>/docs/go-global6/advanced-topics/maruchimonita/</link>
+      <link>/docs/go-global6/advanced-topics/multi-monitor-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/maruchimonita/</guid>
+      <guid>/docs/go-global6/advanced-topics/multi-monitor-support/</guid>
       <description>
         
         
@@ -814,11 +814,29 @@ For example:
     </item>
     
     <item>
-      <title>Docs: fontContrastプロパティを変更する</title>
-      <link>/docs/go-global6/advanced-topics/fontcontrastpuropatiwosuru/</link>
+      <title>Docs: 画像圧縮を無効にする</title>
+      <link>/docs/go-global6/advanced-topics/disabling-image-compression/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/fontcontrastpuropatiwosuru/</guid>
+      <guid>/docs/go-global6/advanced-topics/disabling-image-compression/</guid>
+      <description>
+        
+        
+        &lt;p&gt;デフォルトでは、GO-Globalはすべての画像を1画像あたり最大256色に圧縮します。その結果、複雑な画像は鮮明さを失う可能性があります。GO-Globalクライアントで画像圧縮を無効にするには、次のようにショートカットに-qt 0を追加します。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;C:\Program Files\GraphOn\GO-Global\Client\gg-client.exe&amp;rdquo; -qt 0&lt;/p&gt;
+&lt;p&gt;ハイパーリンクからGO-Globalを実行する場合は、quantizeパラメータをfalseに設定してイメージ圧縮を無効にします&lt;/p&gt;
+&lt;p&gt;設定例: &lt;a href=&#34;http://hostname/goglobal/logon.html?quantize=false&#34;&gt;http://hostname/goglobal/logon.html?quantize=false&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;画像圧縮の機能を無効にすると、GO-Globalホストから送信されるデータの帯域幅が大幅に増加する可能性があるので注意して下さい。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: fontContrastプロパティを変更する</title>
+      <link>/docs/go-global6/advanced-topics/modifying-the-fontcontrast-property/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/advanced-topics/modifying-the-fontcontrast-property/</guid>
       <description>
         
         
@@ -843,29 +861,11 @@ For example:
     </item>
     
     <item>
-      <title>Docs: 画像圧縮を無効にする</title>
-      <link>/docs/go-global6/advanced-topics/wonisuru/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/advanced-topics/wonisuru/</guid>
-      <description>
-        
-        
-        &lt;p&gt;デフォルトでは、GO-Globalはすべての画像を1画像あたり最大256色に圧縮します。その結果、複雑な画像は鮮明さを失う可能性があります。GO-Globalクライアントで画像圧縮を無効にするには、次のようにショートカットに-qt 0を追加します。&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;C:\Program Files\GraphOn\GO-Global\Client\gg-client.exe&amp;rdquo; -qt 0&lt;/p&gt;
-&lt;p&gt;ハイパーリンクからGO-Globalを実行する場合は、quantizeパラメータをfalseに設定してイメージ圧縮を無効にします&lt;/p&gt;
-&lt;p&gt;設定例: &lt;a href=&#34;http://hostname/goglobal/logon.html?quantize=false&#34;&gt;http://hostname/goglobal/logon.html?quantize=false&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;画像圧縮の機能を無効にすると、GO-Globalホストから送信されるデータの帯域幅が大幅に増加する可能性があるので注意して下さい。&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: クライアントコンピュータの名前を取得する</title>
-      <link>/docs/go-global6/advanced-topics/untitled/</link>
+      <link>/docs/go-global6/advanced-topics/obtaining-the-name-of-the-client-computer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/untitled/</guid>
+      <guid>/docs/go-global6/advanced-topics/obtaining-the-name-of-the-client-computer/</guid>
       <description>
         
         
@@ -893,10 +893,10 @@ For example:
     
     <item>
       <title>Docs: アプリケーションスクリプトのサポート</title>
-      <link>/docs/go-global6/advanced-topics/apurikshonsukuriputonosapto/</link>
+      <link>/docs/go-global6/advanced-topics/application-script-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/apurikshonsukuriputonosapto/</guid>
+      <guid>/docs/go-global6/advanced-topics/application-script-support/</guid>
       <description>
         
         
@@ -931,10 +931,10 @@ b. アプリケーションスクリプトのアイコンをダブルクリッ�
     
     <item>
       <title>Docs: Advanced Session Process Configuration</title>
-      <link>/docs/go-global6/advanced-topics/untitled-1/</link>
+      <link>/docs/go-global6/advanced-topics/advanced-session-process-configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/untitled-1/</guid>
+      <guid>/docs/go-global6/advanced-topics/advanced-session-process-configuration/</guid>
       <description>
         
         
@@ -1037,10 +1037,10 @@ b. アプリケーションスクリプトのアイコンをダブルクリッ�
     
     <item>
       <title>Docs: プロキシのトンネリング</title>
-      <link>/docs/go-global6/advanced-topics/purokishinotonneringu/</link>
+      <link>/docs/go-global6/advanced-topics/proxy-tunneling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/purokishinotonneringu/</guid>
+      <guid>/docs/go-global6/advanced-topics/proxy-tunneling/</guid>
       <description>
         
         
@@ -1075,10 +1075,10 @@ b. アプリケーションスクリプトのアイコンをダブルクリッ�
     
     <item>
       <title>Docs: IPv6のサポート</title>
-      <link>/docs/go-global6/advanced-topics/ipv6nosapto/</link>
+      <link>/docs/go-global6/advanced-topics/support-for-internet-protocol-version-6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/ipv6nosapto/</guid>
+      <guid>/docs/go-global6/advanced-topics/support-for-internet-protocol-version-6/</guid>
       <description>
         
         
@@ -1097,10 +1097,10 @@ b. アプリケーションスクリプトのアイコンをダブルクリッ�
     
     <item>
       <title>Docs: スマートカードのサポート</title>
-      <link>/docs/go-global6/advanced-topics/sumtokdonosapto/</link>
+      <link>/docs/go-global6/advanced-topics/smart-card-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/sumtokdonosapto/</guid>
+      <guid>/docs/go-global6/advanced-topics/smart-card-support/</guid>
       <description>
         
         
@@ -1118,10 +1118,10 @@ b. アプリケーションスクリプトのアイコンをダブルクリッ�
     
     <item>
       <title>Docs: パフォーマンスの自動調整</title>
-      <link>/docs/go-global6/advanced-topics/pafmansunochningu/</link>
+      <link>/docs/go-global6/advanced-topics/performance-auto-tuning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/pafmansunochningu/</guid>
+      <guid>/docs/go-global6/advanced-topics/performance-auto-tuning/</guid>
       <description>
         
         
@@ -1150,10 +1150,10 @@ b. アプリケーションスクリプトのアイコンをダブルクリッ�
     
     <item>
       <title>Docs: サイレントインストール</title>
-      <link>/docs/go-global6/advanced-topics/sairentoinsutru/</link>
+      <link>/docs/go-global6/advanced-topics/silent-installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/sairentoinsutru/</guid>
+      <guid>/docs/go-global6/advanced-topics/silent-installation/</guid>
       <description>
         
         
@@ -1187,10 +1187,10 @@ b. アプリケーションスクリプトのアイコンをダブルクリッ�
     
     <item>
       <title>Docs: Logファイル</title>
-      <link>/docs/go-global6/advanced-topics/logfairu/</link>
+      <link>/docs/go-global6/advanced-topics/log-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/logfairu/</guid>
+      <guid>/docs/go-global6/advanced-topics/log-files/</guid>
       <description>
         
         
@@ -1269,10 +1269,10 @@ b. アプリケーションスクリプトのアイコンをダブルクリッ�
     
     <item>
       <title>Docs: サポートリクエストウィザード(SRW)</title>
-      <link>/docs/go-global6/advanced-topics/saptorikuesutowizdosrw/</link>
+      <link>/docs/go-global6/advanced-topics/support-request-wizard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/saptorikuesutowizdosrw/</guid>
+      <guid>/docs/go-global6/advanced-topics/support-request-wizard/</guid>
       <description>
         
         
@@ -1287,10 +1287,10 @@ b. アプリケーションスクリプトのアイコンをダブルクリッ�
     
     <item>
       <title>Docs: 高解像度クライアントデバイス</title>
-      <link>/docs/go-global6/advanced-topics/kuraiantodebaisu/</link>
+      <link>/docs/go-global6/advanced-topics/high-resolution-client-devices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/advanced-topics/kuraiantodebaisu/</guid>
+      <guid>/docs/go-global6/advanced-topics/high-resolution-client-devices/</guid>
       <description>
         
         
