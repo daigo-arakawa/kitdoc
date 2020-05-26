@@ -1,0 +1,286 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kitASP Docs – GO-Global5</title>
+    <link>/docs/go-global5/</link>
+    <description>Recent content in GO-Global5 on kitASP Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/go-global5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: GO-Globalの概要</title>
+      <link>/docs/go-global5/go-global-no/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/go-global-no/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: サーバーの設定</title>
+      <link>/docs/go-global5/sbano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/sbano/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: ユーザーアカウントの管理</title>
+      <link>/docs/go-global5/yzaakauntono/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/yzaakauntono/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Customer Manager</title>
+      <link>/docs/go-global5/cluster-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/cluster-manager/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GO-Globalの実行</title>
+      <link>/docs/go-global5/go-global-clientno/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/go-global-clientno/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 上級者用トピック</title>
+      <link>/docs/go-global5/topikku-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/topikku-1/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>/docs/go-global5/cluster-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/cluster-manager/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;cluster-manager&#34;&gt;Cluster Manager&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/cluster-manager&#34;&gt;Cluster Manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/apurikshonno-2&#34;&gt;アプリケーションの管理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/sesshontopurosesuno&#34;&gt;セッションとプロセスの管理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/sekyurite-opushon&#34;&gt;セキュリティオプション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/untitled-10&#34;&gt;パスワードの変更&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/sesshonno-1&#34;&gt;セッションの再接続&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/untitled-13&#34;&gt;共有アカウント&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/untitled-12&#34;&gt;クライアントのタイムゾーン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/untitled-11&#34;&gt;サーバ活動の監視&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/untitled-20&#34;&gt;セッション起動オプション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/untitled-23&#34;&gt;セッションのシャットダウンオプション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/automatic-host-updates&#34;&gt;Automatic Host Updates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/untitled-27&#34;&gt;クライアントマシンからのGO-Globalホストの管理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager/untitled-26&#34;&gt;Cluster Managerのキーボードショートカット&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>/docs/go-global5/go-global-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/go-global-5/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;go-global-5&#34;&gt;GO-Global 5&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-no&#34;&gt;概要&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/sbano&#34;&gt;サーバの設定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/yzaakauntono&#34;&gt;ユーザアカウントの管理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/cluster-manager&#34;&gt;Cluster Manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-clientno&#34;&gt;GO-Globalの実行&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1&#34;&gt;上級者用トピック&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>/docs/go-global5/go-global-clientno.html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/go-global-clientno.html/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;go-globalの実行&#34;&gt;GO-Globalの実行&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-clientno/go-globalno&#34;&gt;GO-Globalの実行&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-clientno/web-akusesu-no-go-global-server-no&#34;&gt;WebブラウザからGO-Globalを起動する&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-clientno/go-global-suttoappuparamta&#34;&gt;GO-Global スタートアップパラメータ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-clientno/chromewo&#34;&gt;Chrome拡張機能を実行&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-clientno/go-globalnoaninsutru&#34;&gt;GO-Globalのアンインストール&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-clientno/automatic-client-updates&#34;&gt;Automatic Client Updates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-clientno/updating-the-activex-control-and-the-plug-in&#34;&gt;Updating the ActiveX Control and the Plug-in&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>/docs/go-global5/go-global-no/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/go-global-no/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;概要&#34;&gt;概要&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-no/go-global-no&#34;&gt;GO-Global の概要&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-no/xin-neng&#34;&gt;新機能&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-no/geng-lv&#34;&gt;変更履歴&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-no/go-global-no-1&#34;&gt;GO-Global の機能&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/go-global-no/shisutemu&#34;&gt;システム要件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>/docs/go-global5/sbano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/sbano/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;サーバの設定&#34;&gt;サーバの設定&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/sbano/untitled&#34;&gt;GO-Globalホストのインストール&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/sbano/burauza-roguonno-go-global-server-no&#34;&gt;Webクライアント用のGO-Globalホストの設定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/sbano/go-global-webpjino&#34;&gt;GO-Global Webページの変更&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/sbano/go-global-server-noshisutemuheno-web-fuirunoinsutru&#34;&gt;GO-Globalホスト以外のシステムへのWebファイルのインストール&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/sbano/raisensu-sba&#34;&gt;Redundant License Servers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/sbano/raisensu-sbawosurutameno-go-global-no&#34;&gt;Configuring GO-Global to use a Central License Server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/sbano/kuraianto-kbdoime-saptono&#34;&gt;クライアントキーボード/IME 用サポートの設定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/sbano/kbdotoimenoinsutru&#34;&gt;キーボードとIMEの追加インストール&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/sbano/tma&#34;&gt;テーマ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>/docs/go-global5/topikku-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/topikku-1/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;上級者用トピック&#34;&gt;上級者用トピック&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/topikku&#34;&gt;Load Balancing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/go-global-server-pafumansu-kaunta&#34;&gt;GO-Globalホストパフォーマンスカウンタ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/saptono&#34;&gt;委任サポートの設定要件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/untitled-1&#34;&gt;クライアントの印刷処理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/purintadoraibahenoakusesuno&#34;&gt;プリンタドライバへのアクセスの指定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/purintano&#34;&gt;プリンタの構成&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/purintaapuretto&#34;&gt;プリンタアプレット&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/deforutopurintano&#34;&gt;デフォルトプリンタの設定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/purintawosuru&#34;&gt;プリンタ設定を編集する&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/tesutopjiwosuru&#34;&gt;テストページを印刷する&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/purintanodoraibawo&#34;&gt;プリンタのドライバを変更&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/purintnorisetto&#34;&gt;プリンター設定のリセット&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/purintdoraibumappingu&#34;&gt;プリンタードライブマッピング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/kuraianto-purintanokasutamaizu&#34;&gt;クライアントプリンタ名のカスタマイズ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/kurippubdonosapto&#34;&gt;クリップボードのサポート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/kuraiantonosaundo&#34;&gt;クライアントのサウンド&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/shiriaru-ptooyobiparareru-pto&#34;&gt;シリアルポートおよびパラレルポート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/kuraiantonofuiru-akusesu&#34;&gt;クライアントのファイルアクセス&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/mappingusaretadoraibu&#34;&gt;マッピングされたドライブ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/maruchimonita&#34;&gt;マルチモニタ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/no-2&#34;&gt;最大色深度の設定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/no-1&#34;&gt;画像圧縮の無効化&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/kuraianto-konpytano&#34;&gt;クライアントコンピュータ名の取得&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/apurikshon-sukuriputonosapto&#34;&gt;アプリケーションスクリプトのサポート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/nasesshonpurosesu&#34;&gt;Advanced Session Process Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/purokishinotonneringu&#34;&gt;プロキシのトンネリング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/ipv6nosapto&#34;&gt;IPv6のサポート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/smart-cardnosapto&#34;&gt;Smart cardのサポート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/paenosaptowonisuru&#34;&gt;PAEのサポートを有効にする&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/pafumansu&#34;&gt;パフォーマンス自動調整&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/automatic-windows-update-and-hotfix-compatibility&#34;&gt;Automatic Windows Update and Hotfix Compatibility&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/sairentoinsutru&#34;&gt;サイレントインストール&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/logfuiru&#34;&gt;Logファイル&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/support-request-wizard&#34;&gt;Support Request Wizard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/topikku-1/dpisukringu&#34;&gt;DPIスケーリング&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>/docs/go-global5/yzaakauntono/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/yzaakauntono/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;ユーザアカウントの管理&#34;&gt;ユーザアカウントの管理&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/yzaakauntono/yza-akauntono&#34;&gt;ユーザアカウントの管理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/yzaakauntono/yza-purofuiruno&#34;&gt;ユーザプロファイルの設定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitbook.kitasp.com/go-global-5/yzaakauntono/untitled&#34;&gt;ネットワークプリンタの設定&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

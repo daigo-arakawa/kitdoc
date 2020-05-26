@@ -1,7 +1,7 @@
 +++
 title = "URLパラメータの指定"
 description = ""
-weight = 8
+weight = 7
 +++
 
 URLに起動パラメータを追加して指定することもできます。

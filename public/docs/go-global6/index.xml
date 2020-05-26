@@ -104,5 +104,31 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: APPENDIX</title>
+      <link>/docs/go-global6/appendix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/appendix/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: TIPS</title>
+      <link>/docs/go-global6/technote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/technote/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>

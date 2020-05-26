@@ -3,9 +3,11 @@
 title: "Documentation"
 linkTitle: "Documentation"
 weight: 20
+alwaysopen: false
 menu:
   main:
     weight: 20
+    
 ---
 
 kitASP docsは株式会社きっとエイエスピーで取り扱っている各種製品についてのドキュメントサービスになります。
