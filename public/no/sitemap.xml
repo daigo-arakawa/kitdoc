@@ -18,6 +18,21 @@
   </url>
   
   <url>
+    <loc>/no/</loc>
+    <lastmod>2020-03-03T14:08:37+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="/no/"
+                />
+  </url>
+  
+  <url>
     <loc>/no/docs/cloud-computing/tutorials/the-math-of-microservices-detailed-spec/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
   </url>
@@ -300,36 +315,6 @@
   <url>
     <loc>/no/docs/big-data/the-math-of-monographs-how-does-it-work/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/no/search/</loc>
-    <lastmod>2020-03-03T14:08:37+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="no"
-                href="/no/search/"
-                />
-  </url>
-  
-  <url>
-    <loc>/no/</loc>
-    <lastmod>2020-03-03T14:08:37+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="no"
-                href="/no/"
-                />
   </url>
   
 </urlset>

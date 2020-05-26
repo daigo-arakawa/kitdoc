@@ -31,7 +31,7 @@ OpenSSLツールキットと相互運用性のある認証局の作成および�
  dependent hostで、ネイティブのWindowsクライアントを実行します。 **[マイコンピュータ]**を右クリックします。 **[エクスプローラ]**をクリックします。 \GO-Global\Programsディレクトリを表示します。 gg-client.exeをダブルクリックします。 Admin Consoleで指定されたrelay serverの名前を入力します。 relay serverのSSL証明書が、CAによって署名され、dependent hostで認識される有効な証明書の場合、 **[Security Alert]**ダイアログは表示されません。 **[Security Alert]**ダイアログが表示された場合、dependent hostは、relay serverに接続できません。  CAキーと証明書の作成 認証局(CA)を作成するには、まずRSA秘密鍵を生成する必要があります。この鍵が悪用されると、不明なホストを承認ホストとする偽の証明書が作成される恐れがあるため、この鍵は必ず秘密にしておく必要があります。認証局の整合性を維持することが非常に重要です。CAキーを作成するには、次のコマンドを使用します。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/appendix/creating-your-own-certificate-authority/" />
-<meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="独自の認証局の作成">
 <meta itemprop="description" content="独自の認証局の作成 多数のGO-Globalホストが稼動するサイトでは、独自の認証局を作成し、この認証局から各サーバの証明書に署名して、その証明書を各クライアントにインストールすることができます。この方法なら、信頼されていない認証局に関する警告が表示されることはなく、サイトの各サーバにサードパーティ製の証明書を取得する必要もありません。
 OpenSSLツールキットと相互運用性のある認証局の作成および管理を支援するサードパーティ製のアプリケーションとシステムは多数あります。これらのツールでは、GO-Globalで使用できる署名付きサーバ証明書を修正作業は不要で生成できます。
@@ -41,7 +41,7 @@ OpenSSLツールキットと相互運用性のある認証局の作成および�
  信頼されたサーバ証明書を従属ホストにインポートする 信頼されたサーバ証明書をdependent hostにインポートするには、Microsoft管理コンソールにポリシーを追加します。これは自己証明書を使用する場合にのみ必要です。
  dependent hostで、[スタート | ファイル名を指定して実行]の順にクリックします。[名前]ボックス内に mmcと入力します。Microsoft Management Console が開きます。 [コンソール |スナップインの追加と削除]の順にクリックして、 **[追加]**をクリックします。 [利用できるスタンドアロンスナップイン]の一覧から [証明書]を選択して、[追加]をクリックします。 **[証明書スナップイン]**ダイアログで[コンピュータアカウント]を選択し、 **[次へ]**をクリックします。 **[コンピュータの選択]**ダイアログで、[ローカルコンピュータ]を選択します。[完了]をクリックします。 **[スタンドアロンスナップインの追加]**ダイアログを閉じます。 **[スナップインの追加と削除]**ダイアログに戻り、 **[証明書(ローカルコンピュータ)]**をクリックします。 **[OK]**をクリックします。 [コンソールルート]から **[証明書(ローカルコンピュータ)]**を展開します。 [信頼されたルート証明機関] をクリックします。右の枠内にある **[証明書]**を右クリックします。 [すべてのタスク |インポート]の順に選択します。証明書 ca.certを表示します。  サーバキーと証明書のファイル(server.key、server.crtなど)は同じベースファイル名を使用し、GO-Globalホストの同じディレクトリに配置する必要があります。dependent hostにはSSL証明書は必要ありませんが、指定されたrelay serverには、CAによって署名され、dependent hostで認識される有効なSSL証明書が必要です。これらの条件が満たされているかどうかは、以下の方法で確認できます。
  dependent hostで、ネイティブのWindowsクライアントを実行します。 **[マイコンピュータ]**を右クリックします。 **[エクスプローラ]**をクリックします。 \GO-Global\Programsディレクトリを表示します。 gg-client.exeをダブルクリックします。 Admin Consoleで指定されたrelay serverの名前を入力します。 relay serverのSSL証明書が、CAによって署名され、dependent hostで認識される有効な証明書の場合、 **[Security Alert]**ダイアログは表示されません。 **[Security Alert]**ダイアログが表示された場合、dependent hostは、relay serverに接続できません。  CAキーと証明書の作成 認証局(CA)を作成するには、まずRSA秘密鍵を生成する必要があります。この鍵が悪用されると、不明なホストを承認ホストとする偽の証明書が作成される恐れがあるため、この鍵は必ず秘密にしておく必要があります。認証局の整合性を維持することが非常に重要です。CAキーを作成するには、次のコマンドを使用します。">
-
+<meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
 <meta itemprop="wordCount" content="421">
 
 
@@ -125,11 +125,11 @@ OpenSSLツールキットと相互運用性のある認証局の作成および�
 				
 
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	Japanese
+	6.0.1
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="/no/">Norsk</a>
+	<a class="dropdown-item" href="/no/">5.0.2</a>
 	
 </div>
 			</li>
@@ -146,7 +146,7 @@ OpenSSLツールキットと相互運用性のある認証局の作成および�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.36ea447da32a045c70670c8aa6d04ab98d8f181d9242003da6b4d4fb08c2d3945f67ee2f5e697f452e86ab6ec659f0f0742436533a94c06ae25364619d903c90.json"
+  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
   data-offline-search-base-href="/"
 >
 
@@ -155,7 +155,7 @@ OpenSSLツールキットと相互運用性のある認証局の作成および�
 
     </header>
     <div class="container-fluid td-outer">
-      <div class="td-main">
+      <div class="td-main main-docs">
         <div class="row flex-xl-nowrap">
           <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             
@@ -163,8 +163,8 @@ OpenSSLツールキットと相互運用性のある認証局の作成および�
 
 
 
+
 <div id="td-sidebar-menu" class="td-sidebar__inner">
-  
   <form class="td-sidebar__search d-flex align-items-center">
     
 
@@ -176,7 +176,7 @@ OpenSSLツールキットと相互運用性のある認証局の作成および�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.36ea447da32a045c70670c8aa6d04ab98d8f181d9242003da6b4d4fb08c2d3945f67ee2f5e697f452e86ab6ec659f0f0742436533a94c06ae25364619d903c90.json"
+  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
   data-offline-search-base-href="/"
 >
 
@@ -184,21 +184,18 @@ OpenSSLツールキットと相互運用性のある認証局の作成および�
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
-  
   <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
     
     <div class="nav-item dropdown d-block d-lg-none">
-      
-
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	Japanese
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	6.0.1
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="/no/">Norsk</a>
-	
 </div>
+
     </div>
+    
     
     
 
@@ -271,7 +268,7 @@ OpenSSLツールキットと相互運用性のある認証局の作成および�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6introductionknown-limitations" href="/docs/go-global6/introduction/known-limitations/">既知の制限事項</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6introductioninstall-kn" href="/docs/go-global6/introduction/install-kn/">既知の制限事項</a>
       
       
     </li>
@@ -1695,9 +1692,6 @@ OpenSSLツールキットと相互運用性のある認証局の作成および�
 
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
-            
-  
-
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	<ol class="breadcrumb spb-1">
 		
@@ -1967,7 +1961,7 @@ Email Address:CA の担当者に証明書に関する問い合わせを送信す
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 26, 2020: <a  href="https://github.com/google/docsy-example/commit/50889830a56565416c75a2ac0721eef7ee0cf423">gg5 (5088983)</a>
 </div>
 </div>
 

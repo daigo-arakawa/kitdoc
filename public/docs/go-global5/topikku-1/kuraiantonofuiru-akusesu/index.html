@@ -29,7 +29,7 @@
 クライアントのドライブ文字を固定値で増分する方法  Cluster Manager で、[Tools | Server Options]の順にクリックします。 **[Client Access]**タブをクリックします。 クライアントの **[Drives]**を有効にします。 [Increment by: ___ **letters]**をクリックします。 編集フィールドに、オフセットとなる 1 以上の数字を入力します。 **[OK]**をクリックします。  たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global5/topikku-1/kuraiantonofuiru-akusesu/" />
-<meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="クライアントのファイルアクセス GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの **[Open]**および **[Save as]**ダイアログボックス内にクライアントドライブが一覧表示されます。この時、「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))
 これらのダイアログボックスでは、クライアントドライブとホストドライブの両方の一覧が表示されます。デフォルトでクライアントドライブのサポートは無効になっています。
@@ -37,7 +37,7 @@
 クライアントドライブの再マッピング クライアントの[Drives]機能を有効にしてGO-Globalセッションでアプリケーションを実行する場合、GO-Globalで、ドライブ文字とクライアントおよびホストコンピュータのドライブ間で1対1のマッピングが存在することを確認する必要があります。クライアントのドライブとホストのドライブに同じドライブ文字が割り当てられている場合、GO-Globalでドライブのどちらかに新しいドライブ文字を割り当てる必要があります。クライアントドライブは、指定したドライブ文字から順番にリストするか、指定した値でドライブ文字を増分する方法で再マッピングできます。
 クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法  Cluster Managerで、[Tools | Host Options]の順にクリックします。 **[Client Access]**タブをクリックします。 3. クライアントの **[Drives]**を有効にします。 [Assign consecutive letters starting at: ___ **]**をクリックします。 編集フィールドに、シーケンスの始まりのドライブ文字を入力します。 **[OK]**をクリックします。  たとえば、クライアントコンピュータにA、C、D、およびHのドライブがあり、開始点がドライブ文字Mに設定されている場合、クライアントのドライブはそれぞれM、N、O、およびPに再マップされます。ドライブにすでに割り当てられている場合は、次に使用可能な文字が使用されます。この機能はデフォルトで無効になっています。有効にすると、デフォルトのドライブ名はMです。
 クライアントのドライブ文字を固定値で増分する方法  Cluster Manager で、[Tools | Server Options]の順にクリックします。 **[Client Access]**タブをクリックします。 クライアントの **[Drives]**を有効にします。 [Increment by: ___ **letters]**をクリックします。 編集フィールドに、オフセットとなる 1 以上の数字を入力します。 **[OK]**をクリックします。  たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。">
-
+<meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
 <meta itemprop="wordCount" content="100">
 
 
@@ -119,11 +119,11 @@
 				
 
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	Japanese
+	6.0.1
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="/no/">Norsk</a>
+	<a class="dropdown-item" href="/no/">5.0.2</a>
 	
 </div>
 			</li>
@@ -140,7 +140,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.36ea447da32a045c70670c8aa6d04ab98d8f181d9242003da6b4d4fb08c2d3945f67ee2f5e697f452e86ab6ec659f0f0742436533a94c06ae25364619d903c90.json"
+  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
   data-offline-search-base-href="/"
 >
 
@@ -149,7 +149,7 @@
 
     </header>
     <div class="container-fluid td-outer">
-      <div class="td-main">
+      <div class="td-main main-docs">
         <div class="row flex-xl-nowrap">
           <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             
@@ -157,8 +157,8 @@
 
 
 
+
 <div id="td-sidebar-menu" class="td-sidebar__inner">
-  
   <form class="td-sidebar__search d-flex align-items-center">
     
 
@@ -170,7 +170,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.36ea447da32a045c70670c8aa6d04ab98d8f181d9242003da6b4d4fb08c2d3945f67ee2f5e697f452e86ab6ec659f0f0742436533a94c06ae25364619d903c90.json"
+  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
   data-offline-search-base-href="/"
 >
 
@@ -178,21 +178,18 @@
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
-  
   <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
     
     <div class="nav-item dropdown d-block d-lg-none">
-      
-
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	Japanese
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	6.0.1
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="/no/">Norsk</a>
-	
 </div>
+
     </div>
+    
     
     
 
@@ -265,7 +262,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6introductionknown-limitations" href="/docs/go-global6/introduction/known-limitations/">既知の制限事項</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6introductioninstall-kn" href="/docs/go-global6/introduction/install-kn/">既知の制限事項</a>
       
       
     </li>
@@ -1702,9 +1699,6 @@
 
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
-            
-  
-
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	<ol class="breadcrumb spb-1">
 		
@@ -2106,7 +2100,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 26, 2020: <a  href="https://github.com/google/docsy-example/commit/50889830a56565416c75a2ac0721eef7ee0cf423">gg5 (5088983)</a>
 </div>
 </div>
 

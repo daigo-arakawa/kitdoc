@@ -29,7 +29,7 @@ PrinterNameFormatストリング内の％以外の特殊文字はトークンで
 許可されていない12文字があります。! , = / : * ? &quot; &lt; &gt; and |." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/" />
-<meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="クライアントプリンタ名のカスタマイズ GO-Globalは、クライアントマシンに設定されている各プリンタについて、ホストにプリンタをインストールします。これらのプリンタはプロキシプリンタと呼ばれ、GO-Global経由で印刷するときにユーザに表示されるプリンタです。複数のユーザがGO-Globalホストに接続するので、これらのプリンタは、ユーザが自分のプリンタだけを見ることができるようにフィルタリングする必要があります。これには、各プリンタに一意の識別子を割り当てる必要があります。
 レジストリを通じて、管理者はこれらのプロキシプリンタ名の形式を指定し、ユーザ名、クライアントコンピュータのIPアドレス、クライアントマシン名などの情報を含めることができます。 PrinterNameFormatレジストリキーは、GO-Globalセッションの開始後に作成されます。
@@ -37,7 +37,7 @@ PrinterNameFormatストリング内の％以外の特殊文字はトークンで
    トークン 説明 例     %U ユーザ名 Wilson   %I クライアントの IP アドレス 192.168.100.147   %M クライアントの MAC アドレス 001122334455   %C クライアントのマシン名 HRWorkstation   %S サーバのマシン名 Server1    クライアント プリンタ名のカスタマイズ方法  レジストリエディタ(regedit.exe)を実行します。 レジストリエディタで、 HKEY_LOCAL_MACHINEキーを展開します。 PrinterNameFormatキーを見つけます。[HKLM\Software\GraphOn\GO-Global\AppServer \PrinterNameFormat] [PrinterNameFormat]を右クリックして、[Modify]を選択します。 [値のデータ]フィールドに、1つまたは複数のクライアントプリンタカスタマイズトークンを入力します。 レジストリエディタを終了します。  PrinterNameFormatキーは、デフォルトで(from ％C)に設定されています。上記の例を使用すると、プリンタ名は次のようになります。PrinterName (from HRWorkstation)
 PrinterNameFormatストリング内の％以外の特殊文字はトークンではないため、文字通りに使用されます。
 許可されていない12文字があります。! , = / : * ? &quot; &lt; &gt; and |.">
-
+<meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
 <meta itemprop="wordCount" content="54">
 
 
@@ -119,11 +119,11 @@ PrinterNameFormatストリング内の％以外の特殊文字はトークンで
 				
 
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	Japanese
+	6.0.1
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="/no/">Norsk</a>
+	<a class="dropdown-item" href="/no/">5.0.2</a>
 	
 </div>
 			</li>
@@ -140,7 +140,7 @@ PrinterNameFormatストリング内の％以外の特殊文字はトークンで
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.36ea447da32a045c70670c8aa6d04ab98d8f181d9242003da6b4d4fb08c2d3945f67ee2f5e697f452e86ab6ec659f0f0742436533a94c06ae25364619d903c90.json"
+  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
   data-offline-search-base-href="/"
 >
 
@@ -149,7 +149,7 @@ PrinterNameFormatストリング内の％以外の特殊文字はトークンで
 
     </header>
     <div class="container-fluid td-outer">
-      <div class="td-main">
+      <div class="td-main main-docs">
         <div class="row flex-xl-nowrap">
           <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             
@@ -157,8 +157,8 @@ PrinterNameFormatストリング内の％以外の特殊文字はトークンで
 
 
 
+
 <div id="td-sidebar-menu" class="td-sidebar__inner">
-  
   <form class="td-sidebar__search d-flex align-items-center">
     
 
@@ -170,7 +170,7 @@ PrinterNameFormatストリング内の％以外の特殊文字はトークンで
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.36ea447da32a045c70670c8aa6d04ab98d8f181d9242003da6b4d4fb08c2d3945f67ee2f5e697f452e86ab6ec659f0f0742436533a94c06ae25364619d903c90.json"
+  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
   data-offline-search-base-href="/"
 >
 
@@ -178,21 +178,18 @@ PrinterNameFormatストリング内の％以外の特殊文字はトークンで
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
-  
   <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
     
     <div class="nav-item dropdown d-block d-lg-none">
-      
-
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	Japanese
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	6.0.1
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="/no/">Norsk</a>
-	
 </div>
+
     </div>
+    
     
     
 
@@ -265,7 +262,7 @@ PrinterNameFormatストリング内の％以外の特殊文字はトークンで
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6introductionknown-limitations" href="/docs/go-global6/introduction/known-limitations/">既知の制限事項</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6introductioninstall-kn" href="/docs/go-global6/introduction/install-kn/">既知の制限事項</a>
       
       
     </li>
@@ -1690,9 +1687,6 @@ PrinterNameFormatストリング内の％以外の特殊文字はトークンで
 
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
-            
-  
-
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	<ol class="breadcrumb spb-1">
 		
@@ -2091,7 +2085,7 @@ PrinterNameFormatストリング内の％以外の特殊文字はトークンで
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 26, 2020: <a  href="https://github.com/google/docsy-example/commit/50889830a56565416c75a2ac0721eef7ee0cf423">gg5 (5088983)</a>
 </div>
 </div>
 

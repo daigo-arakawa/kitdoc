@@ -1,5 +1,6 @@
-+++
-title = "概要"
-description = "List the child pages of a page"
-weight =1
-+++
+---
+title: "概要"
+linkTitle: ""
+weight: 1
+type: "docs"
+---

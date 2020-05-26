@@ -1,7 +1,7 @@
 +++
 title = "システム要件"
 description = ""
-weight= 4
+weight= 5
 +++
 
 ## GO-Global Server

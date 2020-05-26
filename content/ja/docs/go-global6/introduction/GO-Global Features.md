@@ -1,8 +1,9 @@
-+++
-title = "GO-Globalの機能"
-description = ""
-weight = 2
-+++
+---
+title: "GO-Globalの機能"
+linkTitle: ""
+weight: 2
+type: "docs"
+---
 
 * **ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス**: GO-Globalでは、ネットワーク、リモートダイヤルアップ、Webへのリモートアクセスを介して、GO-Globalホスト上で動作する32ビットおよび64ビットのWindowsアプリケーションへのアクセスを実現します。
 * **プラットフォーム間の互換性** : GO-Globalにより、実質的に任意のクライアントプラットフォームから、任意のWindowsアプリケーションへのアクセスが実現します。Macintosh、Windows、LinuxなどのデスクトップコンピュータおよびiOSとAndroidのモバイルデバイスから実行できます。GO-Globalを介して展開されたWindowsベースのアプリケーションは、クライアントプラットフォームに関係なく、まるでWindowsオペレーティングシステム上で稼働しているような操作性や機能性を提供します。

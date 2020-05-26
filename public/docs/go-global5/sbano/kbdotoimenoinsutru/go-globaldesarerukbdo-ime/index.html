@@ -27,13 +27,13 @@ GO-Globalが使用する2番目の識別子はレイアウトテキスト文字�
 HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ 00000409 Layout File = KBDUS.DLL Layout Text = USHKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ E0010411 Ime File = name81.name Layout File = Kbdjpn.dll Layout Text = Japanese Input System（MS-IME2002）   環境変数 説明     GGW_KBD_FILE 使用するマッピングファイルの完全修飾パスの指定に使用されます。指定すると、他のあらゆるファイル名パスの取得方法に優先します。例 : Linuxの場合 GGW_KBD_FILE=/home/someuser/KeyMappingFiles/MyCustomKeyMappingFile.kmfと指定すると、正しいファイルがロードされます。このファイルが見つからない場合は、us.kbm キーボードマッピングファイルの内部バージョンが使用されます。   GGW_KBD_FILE_ROOT キーボードマッピングファイルへのルートパス名の指定に使用されます。キーボードマッピングファイルを含むkbdディレクトリは、このディレクトリに置きます。例:Linuxの場合、GGW_KBD_FILE_ROOT=/home/someuserと指定すれば、/home/someuser/kbd/xxx." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global5/sbano/kbdotoimenoinsutru/go-globaldesarerukbdo-ime/" />
-<meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="GO-Globalで使用されるキーボード/ IME識別子">
 <meta itemprop="description" content="GO-Globalは、まとめてGO-Global Input Identifier(GGII)と呼ばれる2つの識別子を使用して、セッションのキーボード/IMEを指定します。最初のキーボードレイアウトです。これらは、WindowsオペレーティングシステムがキーボードドライバとIMEプログラムをロードするために使用する8桁の文字列識別子です。これらはロケールIDと似ていますが、最後の4桁は通常、キーボードでサポートされている言語の4桁のロケールIDと一致します。IMEを指定するキーボードレイアウトは、通常「E」で始まります。使用可能なキーボードレイアウトの一覧は、[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ Keyboard\Layouts]キーの下のレジストリに表示されます。
 GO-Globalが使用する2番目の識別子はレイアウトテキスト文字列です。これは、各キーボードレイアウトレジストリキーのレジストリ値です。これらの文字列は、入力言語を追加するときにキーボードレイアウト/IMEの下のドロップダウンボックスに表示されます。次の例では、最初のキーボードレイアウトGGIIは00000409、レイアウトテキストGGIIはUSです。2番目の例では、キーボードレイアウトGGIIがE0010411で、レイアウトテキストGGIIが日本語入力システム(MS-IME2002)です。
 例：
 HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ 00000409 Layout File = KBDUS.DLL Layout Text = USHKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ E0010411 Ime File = name81.name Layout File = Kbdjpn.dll Layout Text = Japanese Input System（MS-IME2002）   環境変数 説明     GGW_KBD_FILE 使用するマッピングファイルの完全修飾パスの指定に使用されます。指定すると、他のあらゆるファイル名パスの取得方法に優先します。例 : Linuxの場合 GGW_KBD_FILE=/home/someuser/KeyMappingFiles/MyCustomKeyMappingFile.kmfと指定すると、正しいファイルがロードされます。このファイルが見つからない場合は、us.kbm キーボードマッピングファイルの内部バージョンが使用されます。   GGW_KBD_FILE_ROOT キーボードマッピングファイルへのルートパス名の指定に使用されます。キーボードマッピングファイルを含むkbdディレクトリは、このディレクトリに置きます。例:Linuxの場合、GGW_KBD_FILE_ROOT=/home/someuserと指定すれば、/home/someuser/kbd/xxx.">
-
+<meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
 <meta itemprop="wordCount" content="66">
 
 
@@ -113,11 +113,11 @@ HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ 0
 				
 
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	Japanese
+	6.0.1
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="/no/">Norsk</a>
+	<a class="dropdown-item" href="/no/">5.0.2</a>
 	
 </div>
 			</li>
@@ -134,7 +134,7 @@ HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ 0
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.36ea447da32a045c70670c8aa6d04ab98d8f181d9242003da6b4d4fb08c2d3945f67ee2f5e697f452e86ab6ec659f0f0742436533a94c06ae25364619d903c90.json"
+  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
   data-offline-search-base-href="/"
 >
 
@@ -143,7 +143,7 @@ HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ 0
 
     </header>
     <div class="container-fluid td-outer">
-      <div class="td-main">
+      <div class="td-main main-docs">
         <div class="row flex-xl-nowrap">
           <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             
@@ -151,8 +151,8 @@ HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ 0
 
 
 
+
 <div id="td-sidebar-menu" class="td-sidebar__inner">
-  
   <form class="td-sidebar__search d-flex align-items-center">
     
 
@@ -164,7 +164,7 @@ HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ 0
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.36ea447da32a045c70670c8aa6d04ab98d8f181d9242003da6b4d4fb08c2d3945f67ee2f5e697f452e86ab6ec659f0f0742436533a94c06ae25364619d903c90.json"
+  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
   data-offline-search-base-href="/"
 >
 
@@ -172,21 +172,18 @@ HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ 0
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
-  
   <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
     
     <div class="nav-item dropdown d-block d-lg-none">
-      
-
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	Japanese
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	6.0.1
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="/no/">Norsk</a>
-	
 </div>
+
     </div>
+    
     
     
 
@@ -259,7 +256,7 @@ HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ 0
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6introductionknown-limitations" href="/docs/go-global6/introduction/known-limitations/">既知の制限事項</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6introductioninstall-kn" href="/docs/go-global6/introduction/install-kn/">既知の制限事項</a>
       
       
     </li>
@@ -1674,9 +1671,6 @@ HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Control \ Keyboard Layouts \ 0
 
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
-            
-  
-
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
 	<ol class="breadcrumb spb-1">
 		
@@ -1864,7 +1858,7 @@ Layout Text = Japanese Input System（MS-IME2002）
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 26, 2020: <a  href="https://github.com/google/docsy-example/commit/50889830a56565416c75a2ac0721eef7ee0cf423">gg5 (5088983)</a>
 </div>
 </div>
 

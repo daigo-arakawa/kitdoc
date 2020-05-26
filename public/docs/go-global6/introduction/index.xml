@@ -129,14 +129,14 @@
     
     <item>
       <title>Docs: 既知の制限事項</title>
-      <link>/docs/go-global6/introduction/known-limitations/</link>
+      <link>/docs/go-global6/introduction/install-kn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/introduction/known-limitations/</guid>
+      <guid>/docs/go-global6/introduction/install-kn/</guid>
       <description>
         
         
-        &lt;p&gt;以下はGO-Globalの既知の制限事項です。&lt;/p&gt;
+        &lt;h2 id=&#34;以下はgo-globalの既知の制限事項です&#34;&gt;以下はGO-Globalの既知の制限事項です。&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;GO-Globalは、グループポリシーログオンまたはログオフスクリプトをサポートしません。&lt;/li&gt;
 &lt;li&gt;MicrosoftのVBScriptは、バッチファイルで実行されない限り、ログオンスクリプトとしてはサポートされていません。&lt;/li&gt;

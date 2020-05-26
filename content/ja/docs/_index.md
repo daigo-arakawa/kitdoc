@@ -1,9 +1,7 @@
-
 ---
 title: "Documentation"
 linkTitle: "Documentation"
 weight: 20
-alwaysopen: false
 menu:
   main:
     weight: 20
@@ -12,7 +10,7 @@ menu:
 
 kitASP docsは株式会社きっとエイエスピーで取り扱っている各種製品についてのドキュメントサービスになります。
 
-### GraphOn
+## GraphOn
 * GO-Global for Windows 6
 * GO-Global for Windows 5
 * Deployment Guide(準備中)

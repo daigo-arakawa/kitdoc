@@ -1,9 +1,9 @@
-+++
-title = "GO-Globalのシステム要件"
-description = "GO-Globalホスト"
-weight = 3
-+++
-
+---
+title: "GO-Globalのシステム要件"
+linkTitle: ""
+weight: 3
+type: "docs"
+---
 # GO-Globalホスト
 
 GO-Globalホストは、以下のWindowsオペレーティングシステムをサポートします。
