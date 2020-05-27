@@ -1,4 +1,10 @@
-# Smart cardのサポート
+---
+title: "Smart cardのサポート"
+linkTitle: ""
+weight: 28
+type: "docs"
+---
+
 
 GO-Globalは、Smart cardの文書署名とSmart card認証のサポートを提供します。これらの機能は、Windowsクライアントでのみサポートされています。
 

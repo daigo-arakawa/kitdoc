@@ -327,6 +327,104 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[G
     
     <item>
       <title>Docs: Load Balancing</title>
+      <link>/docs/go-global5/topikku-1/topikku/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/topikku-1/topikku/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。負荷分散設定を行いたい場合はkitASP作成の拡張パッケージGGEasyMonitorの項を参照ください。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Load balancing allows GO-Global sessions to be distributed across multiple hosts. Load balancing is required when the host resource requirements for a deployment exceed the capacity of a single host computer. Load balancing is done automatically and is transparent to the user. GOGlobal can also be used with any third party TCP/IP based load-balancing service.&lt;/p&gt;
+&lt;h3 id=&#34;load-balancing-requirements&#34;&gt;Load Balancing Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A GO-Global Host must be installed on each of the hosts in the cluster.&lt;/li&gt;
+&lt;li&gt;For Web deployment, if the load balancer is balancing connections to both the Web server (e.g., port 80) and the GO-Global Host (e.g., port 491), each of the GO-Global Hosts in the cluster must have a Web server running and the Web server home directory should contain the GO-Global Web files. If the load balancer is only balancing connections to the GO-Global Host, the GO-Global Web files do not need to be located on each GOGlobal Host. Web files can be installed on the machine running the Web server.&lt;/li&gt;
+&lt;li&gt;If an application saves any user specific settings in the registry, (e.g., Corel WordPerfect, Microsoft Word, etc.) we strongly recommend that users operate with roaming profiles rather than local profiles. Since there is no way of predicting which server the user will actually be logged onto in a balanced server farm, working with roaming profiles is the only way to ensure that user specific settings are available to the user at all times.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A GO-Global Host can be configured to operate as an independent host, a dependent host, or as a relay server. Please note that a relay server cannot be an application host. When setting up a load-balanced relay server configuration, GraphOn recommends using a license server. For more information, see the following sections from Chapter 2: &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/~/edit/drafts/-L_fpq0Q-h3OMQTw08rI/go-global-5/sbano/raisensu-sbawosurutameno-go-global-no&#34;&gt;&lt;strong&gt;Configuring GOGlobal to use a Central License Server&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;,&lt;/strong&gt; &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/~/drafts/-L_fpq0Q-h3OMQTw08rI/primary/go-global-5/sbano/raisensu-sba/sba-3-no&#34;&gt;&lt;strong&gt;Three-Server Redundancy&lt;/strong&gt;&lt;/a&gt;, and &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/go-global-5/sbano/raisensu-sba/raisensu-fuiruno&#34;&gt;&lt;strong&gt;License-File List Redundancy.&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;​&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;independent-hosts&#34;&gt;Independent Hosts&lt;/h2&gt;
+&lt;p&gt;Independent hosts are GO-Global Hosts that do not interact with other GO-Global Hosts running on the network. Independent hosts appear in the Cluster Manager on the first level of the GO-Global Hosts tree view as an independent node. The GO-Global setup program configures GO-Global Hosts to operate as independent hosts. GO-Global clients can connect to independent hosts directly by specifying the name or IP address of the server in the &lt;strong&gt;Connection&lt;/strong&gt; dialog or the location box of a Web browser. Clients can also connect to independent hosts through a third party network load balancer that distributes client connections among several servers. However, session reconnect is not supported in the latter configuration and must be disabled.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GO-Global Hosts&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-1-1.png&#34; alt=&#34;6-1-1&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;relay-servers&#34;&gt;Relay Servers&lt;/h2&gt;
+&lt;p&gt;A relay server is a GO-Global Host that provides centralized control over one or more GO-Global Hosts. Relay servers maintain client connections and distribute GO-Global sessions across a set of load-balanced application hosts. Relay servers appear in the Cluster Manager on the first level of the list of All Hosts as nodes with one or more dependent hosts.&lt;/p&gt;
+&lt;h3 id=&#34;to-configure-a-go-global-host-to-operate-as-a-relay-server&#34;&gt;To configure a GO-Global Host to operate as a relay server&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the desired host from the list of &lt;strong&gt;All Hosts.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click Tools | Host Options.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;General&lt;/strong&gt;tab.&lt;/li&gt;
+&lt;li&gt;Type the name or IP address of the computer in the &lt;strong&gt;Relay server&lt;/strong&gt; box.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;OK.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;A message box is displayed indicating that the change will not take effect until the &lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; on the relay server has been restarted. Click OK.&lt;/li&gt;
+&lt;li&gt;Stop and restart the &lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; from the Services option in the Control Panel.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After configuring a host to run as a relay server with one or more dependent hosts, GO-Global load-balances client connections and ensures that sessions start successfully. If a session fails to start on the selected host, the relay server selects another host and tries again until it finds one that can support the session.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When setting up a relay server environment, be sure the same &lt;strong&gt;Log Folder&lt;/strong&gt; path for the relay server exists on the dependent hosts. Otherwise, the &lt;strong&gt;Sign In&lt;/strong&gt; dialog will not appear when users attempt to sign in to GO-Global. Create a log directory on the C: drive of each relay server (e.g., C:\Data\APS_LOGS) or use C:\Program Files\GraphOn\GO-Global\Log which already exists on the dependent host.&lt;/p&gt;
+&lt;p&gt;Make sure this same path exists on the dependent host. In addition to changing the &lt;strong&gt;Log Folder&lt;/strong&gt; path in the Cluster Manger, the \Log\Codes and \Log\Templates directories must be copied to the new location.&lt;/p&gt;
+&lt;p&gt;When a relay server is selected in the Cluster Manager, the number of processes running on all dependent hosts is not listed in the Cluster Manager&amp;rsquo;s status bar.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A relay server requires a minimum of 512 MB of RAM. For most deployments and for best results, 1 GB with a multiprocessor server is recommended. Depending on the number of dependent hosts attached to the relay server, more RAM may be required. Memory and CPU requirements for the dependent hosts are determined by the applications that are published and the number of users accessing the system. In general, a dependent host can support 12 &amp;ldquo;heavy&amp;rdquo; users/500 MHz CPU and 25 &amp;ldquo;light&amp;rdquo; users/500 MHz CPU. (&amp;ldquo;Heavy&amp;rdquo; is defined as a user running one or more large applications with continuous user interaction. &amp;ldquo;Light&amp;rdquo; is defined as a user running one application with intermittent user interaction.)&lt;/p&gt;
+&lt;h2 id=&#34;dependent-hosts&#34;&gt;Dependent Hosts&lt;/h2&gt;
+&lt;p&gt;A dependent host is a GO-Global Host that is connected to a relay server. GO-Global clients cannot connect directly to dependent hosts. Instead, they connect to the associated relay server, and the relay server selects one of the connected servers to host the session.&lt;/p&gt;
+&lt;h3 id=&#34;to-configure-a-go-global-host-to-operate-as-a-dependent-host&#34;&gt;To configure a GO-Global Host to operate as a dependent host&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the desired host from the list of &lt;strong&gt;All Hosts.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click Tools | Host Options.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;General&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;Type the name or IP address of the relay server in &lt;strong&gt;Relay server&lt;/strong&gt; edit box.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;OK.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;A message box is displayed indicating that the change will not take effect until the &lt;strong&gt;Application Publishing Service&lt;/strong&gt; has been restarted. Click &lt;strong&gt;OK.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Stop and restart the &lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; from the Services option in the Control Panel.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When the Application Publishing Service is restarted, the dependent host will appear beneath the relay server in the Cluster Manager&amp;rsquo;s list of GO-Global Hosts. A dependent host with a yellow x indicates that the host has been &amp;ldquo;orphaned;&amp;rdquo; in other words, that its relay server has gone down. If a host&amp;rsquo;s icon has a red X, the administrator does not have administrative rights on the host. If the host&amp;rsquo;s icon has a red X and is grayed out, the host is no longer running the Application Publishing Service or it has been turned off. In either case, the administrator is unable to access that host from the Cluster Manager.&lt;/p&gt;
+&lt;p&gt;Users are authenticated on dependent hosts, not on relay servers. As a result, dependent hosts can be located on a different network than their associated relay server. For example, dependent hosts can be located behind a firewall on an internal, Active Directory network, and the associated relay server can be located in a demilitarized zone (DMZ) that is outside the firewall. If &lt;strong&gt;Integrated Windows authentication&lt;/strong&gt; is used, clients and dependent hosts must be located on the same domain, but the relay server can be located on a different domain.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We recommend installing the same set of applications on each dependent host and using the same installation path.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;administering-relay-servers-and-dependent-hosts-on-different-networks&#34;&gt;Administering Relay Servers and Dependent Hosts on Different Networks&lt;/h2&gt;
+&lt;p&gt;When a user starts the Cluster Manager on a relay server or a dependent host, the Cluster Manager connects to the relay server and attempts to authenticate the user using Integrated Windows authentication. If the Cluster Manager is running on a dependent host and the associated relay server is located on a different network, a message such as the following is displayed:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Failed to log you on to Server8. This computer (Server4) and Server 8 may be located on different networks. Would you like to log onto Server 8 and administer it remotely?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Clicking &lt;strong&gt;No&lt;/strong&gt;will return you to the &lt;strong&gt;All Hosts&lt;/strong&gt; node of the Cluster Manager. Clicking &lt;strong&gt;Yes&lt;/strong&gt; will initiate a special remote administration session on the relay server as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The Cluster Manager on the dependent host starts the GO-Global Client.&lt;/li&gt;
+&lt;li&gt;The client connects to the relay server and starts a session. The &lt;strong&gt;Sign In&lt;/strong&gt;dialog is displayed to the user.&lt;/li&gt;
+&lt;li&gt;The user signs in, specifying the user name and password of an account that is a member of the Administrators group on the relay server.&lt;/li&gt;
+&lt;li&gt;The Cluster Manager starts on the relay server. The user can now administer the relay server and all of its dependent hosts.&lt;/li&gt;
+&lt;li&gt;A maximum of two administration sessions can run on the relay server at any given time, regardless of the &lt;strong&gt;Maximum sessions on this host&lt;/strong&gt; setting in the Cluster Manager and regardless of license restrictions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dependent hosts inherit their list of published applications, server settings, and user settings from the relay server. Applications must be installed in the same directory on all dependent hosts. Applications do not need to be installed on the relay server. When a GO-Global Host is connected to a relay server all of its server settings are synchronized with those of the relay server. When any changes are made to the relay server&amp;rsquo;s settings, they are also made to &lt;strong&gt;All Hosts&lt;/strong&gt; connected to that relay server. The only settings that are allowed to vary are the maximum number of sessions and the name of the relay server. All other settings in the &lt;strong&gt;Host Options&lt;/strong&gt; and &lt;strong&gt;Application Properties&lt;/strong&gt; dialogs are grayed out and cannot be modified.&lt;/p&gt;
+&lt;p&gt;When setting up a relay server, if an application is installed but not published on the dependent host, you will need to publish the application on the relay server through the Cluster Manager. For example, if Adobe Reader 7.0 is installed on the dependent host at C:\Program Files\Adobe\Acrobat 7.0\Reader\AcroRd32.exe, open the Cluster Manager on the relay server and type this path location in the &lt;strong&gt;Executable Path&lt;/strong&gt; box in the &lt;strong&gt;Add Application&lt;/strong&gt; dialog.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before publishing an item on a mapped drive, verify that the drive is mapped to the same drive letter and location on the dependent hosts as it is on the relay server.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;host-selection&#34;&gt;Host Selection&lt;/h2&gt;
+&lt;p&gt;When a client connects to a relay server, the relay server attempts to start a session on the dependent host that has the lowest number of running sessions as a percentage of the maximum number of sessions allowed for the host.&lt;/p&gt;
+&lt;p&gt;If the session fails to start on the selected host, the relay server successively attempts to start the session on other available hosts until it finds one that can support the session. If there are no available hosts (i.e., if the number of running sessions on All Hosts equals the maximum number allowed), the following message is displayed to the user:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-1-2.png&#34; alt=&#34;6-1-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Otherwise, if the session cannot be started on any of the available hosts, the following message is displayed to the user:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-1-3.png&#34; alt=&#34;6-1-3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In a relay server setting, GO-Global checks the maximum sessions settings on the relay server and its dependent hosts. The maximum sessions value on the relay server is the maximum number of sessions that can be run concurrently on all dependent hosts assigned to that relay server. To modify the Maximum sessions on this host setting, open the Cluster Manager on the host, click Host Options | Session Startup.&lt;/p&gt;
+&lt;h2 id=&#34;relay-server-failure-recovery&#34;&gt;Relay Server Failure Recovery&lt;/h2&gt;
+&lt;p&gt;On Windows hosts, the Application Publishing Service can be configured to automatically restart if the service fails. If a relay server fails, clients are disconnected but sessions continue to run on the GO-Global Hosts that were connected to the relay server. These servers will attempt to reconnect to the relay server every 15 seconds. When a dependent host reconnects to the relay server, it re-adds its sessions to the relay server and restores any state information associated with the disconnected sessions. Clients are then able to sign back in and resume their sessions. Clients do not automatically attempt to reconnect to the relay server.&lt;/p&gt;
+&lt;p&gt;In order to provide higher service availability, a failover server can be configured for the GOGlobal relay server using the Microsoft Cluster Service. In this configuration, if the relay server fails for any reason, the failover server immediately takes the place of the failed server. Application hosts automatically reconnect to the failover server, and users will generally be able to log on and reconnect to their disconnected sessions within 1-2 minutes of the relay server failure.&lt;/p&gt;
+&lt;h3 id=&#34;relay-server-in-a-dmz&#34;&gt;Relay Server in a DMZ&lt;/h3&gt;
+&lt;p&gt;A relay server in a DMZ can be separated from its dependent application servers by a firewall, with the following requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The dependent application server must be able to connect to the relay server from behind the firewall. Please note that the reverse is not required. The relay server does not need to be able to connect to the dependent application server.&lt;/li&gt;
+&lt;li&gt;The client must be able to connect to the relay server in the DMZ.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When a session starts on a dependent application server, the dependent application server opens a connection to the relay server. When the relay server receives data from the session&amp;rsquo;s clients, it forwards the data to the session over this connection. Similarly, when the relay server receives data from the session over this connection, it forwards the data to the session&amp;rsquo;s clients.&lt;/p&gt;
+&lt;p&gt;The relay server generally has two network interfaces: one that is accessible from clients outside the DMZ, and one that is accessible from dependent application servers behind the firewall.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Load Balancing</title>
       <link>/docs/go-global6/advanced-topics/load-balancing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -853,6 +951,37 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
 &lt;/blockquote&gt;
 &lt;p&gt;2つのGO-Globalライセンスを組み合わせるとき、または同じGO-Globalホストで2つの別々のライセンスを使用するときは、ライセンスファイル内のホスト名は大文字と小文字が区別され、同一である必要があります。&lt;/p&gt;
 &lt;p&gt;GO-Globalホストの起動設定を行う場合は、リストからGO-Global Application Publishing Serviceを選択して、 [&lt;strong&gt;起動&lt;/strong&gt;]ボタンをクリックしてください。GO-Globalホストに適用したいオプションを選択します。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GO-Globalホストパフォーマンスカウンタ</title>
+      <link>/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/</guid>
+      <description>
+        
+        
+        &lt;p&gt;WindowsパフォーマンスモニタにGO-Globalホストパフォーマンスカウンタを加えて、アクティブなセッション数やホストに接続しているクライアント数を追跡できます。また、パフォーマンスカウンタを追加することにより、中継サーバに接続しているホストの数を追跡したり、各ホスト上で実行可能なセッションの最大数を確認することも可能になります。&lt;/p&gt;
+&lt;p&gt;GO-Globalホストパフォーマンスカウンタにより、システム管理者は GO-Globalホストへのネットワークアクセスが可能な任意のマシンからホストの活動を監視できます。リモート操作でパフォーマンスを監視するには、Remote Registry Service (Regsvc.exe) を有効にする必要があります。&lt;/p&gt;
+&lt;h3 id=&#34;go-globalサーバパフォーマンスカウンタをパフォーマンスモニタに追加する方法&#34;&gt;GO-Globalサーバパフォーマンスカウンタをパフォーマンスモニタに追加する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[スタート | プログラム | 管理ツール | パフォーマンス]の順にクリックします。&lt;/li&gt;
+&lt;li&gt;+ボタンをクリックして、カウンタを追加します。&lt;/li&gt;
+&lt;li&gt;**[パフォーマンス オブジェクト]**項目で **[GO-Global Server]**を選択し、クリックします。&lt;/li&gt;
+&lt;li&gt;**[一覧からカウンタを選ぶ]**項目で目的のカウンタ(Active Sessions、Client Connections、Maximum Sessions、Server Connections)をクリックして、 **[追加]**をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-1.png&#34; alt=&#34;6-2-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;GO-Globalホストパフォーマンスカウンタ を以下に示します。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Client Connections&lt;/strong&gt; － 独立したホストまたは中継サーバ上のクライアント接続の総数。この値は、依存ホストでは常に 0 です。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Server Connections&lt;/strong&gt;－ 中継サーバーに接続している依存ホストの総数。この値は、独立ホストまたは依存ホストでは常に 0 です。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Active Sessions&lt;/strong&gt; － 独立したホストまたは依存ホストの場合、これはホスト上で実行されているセッションの数です。中継サーバの場合、これは接続されているすべての依存ホストでホストされているセッションの総数です。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Maximum Sessions&lt;/strong&gt; － Cluster Managerの **[Host Options]**ダイアログで設定した &lt;strong&gt;セッションの最大数&lt;/strong&gt;を表示します。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-2.png&#34; alt=&#34;6-2-2&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -2208,6 +2337,48 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
     </item>
     
     <item>
+      <title>Docs: 委任サポートの設定要件</title>
+      <link>/docs/go-global5/topikku-1/saptono/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/topikku-1/saptono/</guid>
+      <description>
+        
+        
+        &lt;p&gt;第4章で説明したように、統合Windows認証を &lt;strong&gt;ホストのキャッシュパスワード&lt;/strong&gt;なしで使用すると、一部のネットワークリソースにアクセスするためにWindows委任が必要になる場合があります。 たとえば、委任が有効になっていないと、グループポリシーが正しく適用されないことがあります。&lt;/p&gt;
+&lt;p&gt;委任サポートの構成要件は次のとおりです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;委任には、Kerberos認証プロトコルとActive Directoryドメインが必要です。どちらもWindows 2000 で初めて採用された機能です。&lt;/li&gt;
+&lt;li&gt;Domain Name System(DNS)サーバは、Service Location (SRV)リソースレコードをサポートしている必要があります。また、DNSサーバはDNSダイナミック更新をサポートしていることが推奨されています。DNSダイナミック更新プロトコルがサポートされていない場合は、システム管理者は、ドメインコントローラで作成されDNSサーバによって保存されたレコードを手動で設定する必要があります。Windows 2000以降で提供されているDNSサービスは、これらの要件をサポートしています。&lt;/li&gt;
+&lt;li&gt;GO-Globalクライアント、GO-Globalホスト、および電子メールやデータベースなどなんらかのバックエンドサービスをホストしているコンピュータは、Kerberosをサポートしている必要があります。Kerberosは、Windows 2000以降を稼動しているシステムの、Windows 2000以降の Active Directoryドメインでサポートされます。&lt;/li&gt;
+&lt;li&gt;クライアントのユーザーアカウントは、GO-Global Application Publishing Serviceによる委任をサポートしている必要があります。 &lt;strong&gt;Active Directoryユーザーとコンピュータ&lt;/strong&gt;の管理コンソールで、ユーザーを選択して **[アクション | プロパティ]**の順にクリックします。 &lt;strong&gt;アカウントタブ&lt;/strong&gt;をクリックします。 [アカウントオプション]リストボックスを下にスクロールして、 **[アカウントが機密で委任できない]**オプションが無効になっていることを確認します。 **[アカウントは委任に対して信頼されている]**オプションを有効にします。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-3-1.png&#34; alt=&#34;6-3-1&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows Server 2008の[プロパティ]ダイアログに[委任]タブが表示されない場合、これは仕様によるものです。[委任]タブは、サービスアカウントに対してサービスプリンシパル名(SPN)が作成された後にのみ表示されます。昇格したコマンドプロンプトで、&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;setspn -A HTTP / intranet.domain.local DOMAIN\Account
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;を実行します。Active DirectoryでDOMAIN\Accountを検索します。 **[委任]**タブが[プロパティ]ダイアログに表示されます。 **[このユーザを任意のサービスへの委任に対して信頼する]**を選択します(Kerberosのみ)。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-3-2.png&#34; alt=&#34;6-3-2&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GO-Globalホストには、ユーザのアカウントを他のコンピュータに委任する権限が必要です。 **[Active Directory ユーザーとコンピュータ]**管理コンソールでコンピュータを選択し、 **[ アクション | プロパティ ]**の順にクリックします。プロパティ[委任]タブをクリックします。 **[任意のサービスへの委任に対してコンピュータを信頼する]**を有効にします **(Kerberos)。**これらの委任権限を適用するには、GO-Global Application Publishing Serviceをローカルシステムアカウントで実行するように設定する必要があります。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-3-3.png&#34; alt=&#34;6-3-3&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Active Directory内の任意のサービス(Kerberosのみ)への **[コンピュータを委任に対して信頼する]**を有効にしたら、委任を有効にするためにGO-Globalホストを再起動する必要があります。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt;のService Principle Name(SPN)をActive Directoryに登録できるようにする必要があります。GO-Global Application Publishing Serviceは、サービスが再実行されるたびにこれを試みます。 &lt;strong&gt;setspn.exe&lt;/strong&gt;ユーティリティ(Microsoft Resource Kitに収録。Microsoft からも個別にダウンロード可能)を使用して、SPNが正しく設定されているかどうかを確認できます。下の図は、setspn.exeをGO-Globalホストで実行したときに表示されるコマンドウィンドウです。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-3-4.png&#34; alt=&#34;6-3-4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;adlab-ggserverを、GO-Globalホストのコンピュータ名に置き換えます。{54094C05-F977-4987-BFC9-E8B90E088973} Globally Unique Identifier(GUID)は、GO-Global Application Publishing Serviceが {54094C05-F977-4987-BFC9-E8B90E088973}/adlab-ggserver.adlab.graphon.com SPNを作成するときに使用します。&lt;/p&gt;
+&lt;p&gt;次のコマンドウィンドウは、GO-Globalホストで &lt;strong&gt;setspn.exe&lt;/strong&gt;を実行したときに表示される出力画面で、ネットワーク設定にエラーがあることを示しています。上述のすべての要件が満たされている場合、この画面は表示されません。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-3-5.png&#34; alt=&#34;6-3-5&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: 自動クライアントキーボードサポート</title>
       <link>/docs/go-global5/sbano/kbdotoimenoinsutru/kuraiantokbdosapto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2332,94 +2503,6 @@ C:\ProgramData\GraphOn (On Windows 2008).
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;自動ホストアップデート :&lt;/strong&gt; 管理者はGO-Globalホストアップデートで自動的にダウンロードしてインストールするようにGO-Globalホストを設定できます。管理者は自動的にインストールされる更新プログラムの種類を制御できます。 GO-Globalは、必須、推奨、オプションのホストアップデートをサポートします。&lt;/li&gt;
 &lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: GO-Globalホスト以外のシステムへのWebファイルのインストール</title>
-      <link>/docs/go-global5/sbano/go-global-server-noshisutemuheno-web-fuirunoinsutru/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global5/sbano/go-global-server-noshisutemuheno-web-fuirunoinsutru/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-Global Webファイルは、GO-Globalホスト以外のシステムにもインストールできます。&lt;/p&gt;
-&lt;h3 id=&#34;go-globalホスト以外のシステムにwebファイルをインストールする方法&#34;&gt;GO-Globalホスト以外のシステムにWebファイルをインストールする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;\Program Files\GraphOn\GO-Global\Webディレクトリの内容を目的のWebサーバにコピーします。&lt;/li&gt;
-&lt;li&gt;Webサーバー上のlogon.htmlページを編集して、hostnameの代わりにGO-Globalホストのアドレスを挿入して、以下のステートメントを追加します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;if (host.length == 0)
-{
-host=&amp;quot;hostname&amp;quot;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Mac OS X App</title>
-      <link>/docs/go-global6/running-go-global/mac-os-x-app/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/running-go-global/mac-os-x-app/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-GlobalのMac OS X Appは、ネイティブのMac OS X環境とシームレスに統合できる軽量のアプリケーションです。最新のMac OS X APIを使用するように全面的に書き直され、インストールの簡素化、サウンドサポート、マルチモニタサポート、およびMac OS X Gatekeeperサポートを提供します。これにより、マルウェアから保護され、インターネットからダウンロードされたアプリケーションが不正に動作します。&lt;/p&gt;
-&lt;h3 id=&#34;mac-os-x-appのインストール方法&#34;&gt;Mac OS X Appのインストール方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;web browserを起動します。&lt;/li&gt;
-&lt;li&gt;Locationボックスに、http://に続けてホスト名とGO-Globalクライアントのインストールファイルを入力します。たとえば、http://host/goglobal/clients.htmlです。&lt;/li&gt;
-&lt;li&gt;指示に従ってgg-client.mac.dmgをダウンロードしてインストールします。&lt;/li&gt;
-&lt;li&gt;gg-client.mac.dmgを開き、GO-Global.appをアプリケーションにドラッグします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;mac-os-x-appの起動方法&#34;&gt;Mac OS X Appの起動方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;メニューバーから[ Go | Applications ]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;GO-GlobalをダブルクリックをしてGO-Globalを起動します。&lt;/li&gt;
-&lt;li&gt;[Connection]ダイアログにホストアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;[Sign In]ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザ名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにネットワークユーザのパスワードを入力します。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Mac OS X Appをアンインストールするには、GO-Global.appをアプリケーションからゴミ箱にドラッグします。&lt;/p&gt;
-&lt;h3 id=&#34;mac-os-x-appで起動パラメータを使用する方法&#34;&gt;Mac OS X Appで起動パラメータを使用する方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;ターミナルを起動します。&lt;/li&gt;
-&lt;li&gt;/Applications/GO-Global.app/Contents/MacOS/ とディレクトリを変更します。&lt;/li&gt;
-&lt;li&gt;./GO-Globalとスタートパラーメータを入力します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;例：./GO-Global –h 196.125.101.222 –ac all –hp 443&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: クライアントの印刷処理</title>
-      <link>/docs/go-global6/advanced-topics/client-printing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/advanced-topics/client-printing/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-Globalは、すべてのクライアントでクライアント側の印刷をサポートします。デフォルトでは、GO-Globalは、ユーザがGO-Globalホストにサインインすると、クライアントのデフォルトプリンタ情報を自動的に検出します。これには、デフォルトのプリンタのポートとプリンタドライバが含まれます。プリンタドライバがGO-Globalホストにインストールされていない場合、GO-Globalはドライバを見つけて自動的にインストールしようとします。&lt;/p&gt;
-&lt;p&gt;GO-Globalホスト上でアプリケーションを実行すると、ネットワークプリンタやコンピュータに直接接続されているプリンタ(シリアルポート、パラレルポート、USBポートなど)で印刷できます。&lt;/p&gt;
-&lt;p&gt;管理者は、 &lt;strong&gt;-ac&lt;/strong&gt;および &lt;strong&gt;printerconfig&lt;/strong&gt;のGO-Global起動パラメータを使用して、使用可能なプリンタを制御できます。&lt;/p&gt;
-&lt;p&gt;ショートカットからGO-Globalを実行する場合は、GO-Globalホスト上で実行されているアプリケーションから&amp;quot;all&amp;rdquo;、&amp;ldquo;none&amp;rdquo;、&amp;ldquo;default&amp;quot;を指定して-acパラメータを使用します。例えば全てのプリンタを使用できるようにするには、ターゲットを次のように指定してショートカットを作成します。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;quot;C：¥Program Files¥GraphOn¥GO-Global¥Client¥gg-client.exe&amp;quot; -ac all
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;と指定したターゲットでショートカットを作成します。&lt;/p&gt;
-&lt;p&gt;同様に、ハイパーリンクからGO-Globalを実行する場合は、 &lt;strong&gt;printerconfig&lt;/strong&gt;パラメータに &amp;ldquo;all&amp;rdquo;、 &amp;ldquo;none&amp;rdquo;、 &amp;ldquo;default&amp;quot;を指定します。たとえば、次のハイパーリンクを使用すると、すべてのプリンタが使用可能になります。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;http://hostname/goglobal/logon.html?printerconfig=all
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;オプションを指定しない場合、GO-Globalは自動的にユーザのデフォルトプリンタのみを設定します。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;クライアントプリンタを設定するには、 &lt;strong&gt;印刷スプーラサービス&lt;/strong&gt;がGO-Globalホスト上で実行されている必要があります。&lt;/p&gt;
-&lt;/blockquote&gt;
 
       </description>
     </item>

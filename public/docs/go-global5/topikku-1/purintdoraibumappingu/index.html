@@ -20,8 +20,8 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>kitASP Docs</title><meta property="og:title" content="" />
-<meta property="og:description" content="プリンタードライブマッピング 管理者は、MappedPrinterDrivers.xmlを編集してプリンタドライバをマップできます。 ほとんどのGO-Global展開では、管理者はこのファイルを編集する必要はありません。 これは、ホストのドライバ名がクライアントの名前と完全に一致しない場合、または管理者がネイティブドライバを上書きしてクライアントに別のプリンタドライバまたはユニバーサルプリンタドライバを使用させたい場合に使用するドライバを指定するために使用されます。
+<title>プリンタードライブマッピング | kitASP Docs</title><meta property="og:title" content="プリンタードライブマッピング" />
+<meta property="og:description" content="管理者は、MappedPrinterDrivers.xmlを編集してプリンタドライバをマップできます。 ほとんどのGO-Global展開では、管理者はこのファイルを編集する必要はありません。 これは、ホストのドライバ名がクライアントの名前と完全に一致しない場合、または管理者がネイティブドライバを上書きしてクライアントに別のプリンタドライバまたはユニバーサルプリンタドライバを使用させたい場合に使用するドライバを指定するために使用されます。
 別のプリンタドライバを指定する方法  C:¥ProgramData¥GraphOnまたはC:¥Documents and Settings¥All Users¥Application Data¥GraphOnでMappedPrinterDrivers.xmlを探します。 ワードパッドでファイルを開き、クライアントプリンタドライバの名前を検索します。  &lt;property id=&quot;HP LaserJet 2100 Series PS&quot; type=&quot;STRING&quot;&gt; &lt;value&gt;HP LaserJet 2100 Series PS&lt;/value&gt; &lt;/property&gt;3.値フィールドからドライバ名を削除します。上記の例では、HP LaserJet 2100 Series PSを削除し、 目的のプリンタドライバと交換します。 4. ファイルを保存してください。この変更は、次にユーザがGO-Globalセッションを開始したときに有効になります。 上記の例ではがクライアントで使用されているドライバです。
 HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきドライバです。
 マッピングプリンタドライバを使用して、プリンタにユニバーサルプリンタドライバを使用させることもできます。
@@ -30,21 +30,21 @@ HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきド
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global5/topikku-1/purintdoraibumappingu/" />
 <meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
-<meta itemprop="name" content="">
-<meta itemprop="description" content="プリンタードライブマッピング 管理者は、MappedPrinterDrivers.xmlを編集してプリンタドライバをマップできます。 ほとんどのGO-Global展開では、管理者はこのファイルを編集する必要はありません。 これは、ホストのドライバ名がクライアントの名前と完全に一致しない場合、または管理者がネイティブドライバを上書きしてクライアントに別のプリンタドライバまたはユニバーサルプリンタドライバを使用させたい場合に使用するドライバを指定するために使用されます。
+<meta itemprop="name" content="プリンタードライブマッピング">
+<meta itemprop="description" content="管理者は、MappedPrinterDrivers.xmlを編集してプリンタドライバをマップできます。 ほとんどのGO-Global展開では、管理者はこのファイルを編集する必要はありません。 これは、ホストのドライバ名がクライアントの名前と完全に一致しない場合、または管理者がネイティブドライバを上書きしてクライアントに別のプリンタドライバまたはユニバーサルプリンタドライバを使用させたい場合に使用するドライバを指定するために使用されます。
 別のプリンタドライバを指定する方法  C:¥ProgramData¥GraphOnまたはC:¥Documents and Settings¥All Users¥Application Data¥GraphOnでMappedPrinterDrivers.xmlを探します。 ワードパッドでファイルを開き、クライアントプリンタドライバの名前を検索します。  &lt;property id=&quot;HP LaserJet 2100 Series PS&quot; type=&quot;STRING&quot;&gt; &lt;value&gt;HP LaserJet 2100 Series PS&lt;/value&gt; &lt;/property&gt;3.値フィールドからドライバ名を削除します。上記の例では、HP LaserJet 2100 Series PSを削除し、 目的のプリンタドライバと交換します。 4. ファイルを保存してください。この変更は、次にユーザがGO-Globalセッションを開始したときに有効になります。 上記の例ではがクライアントで使用されているドライバです。
 HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきドライバです。
 マッピングプリンタドライバを使用して、プリンタにユニバーサルプリンタドライバを使用させることもできます。
 プリンタにユニバーサルプリンタドライバの使用を強制する方法  C:¥ProgramData¥GraphOnまたはC:¥Documents and Settings¥All Users¥Application Data¥GraphOnでMappedPrinterDrivers.xmlを探します。 ワードパッドでファイルを開き、クライアントプリンタドライバの名前を検索します。  &lt;property id=&quot;HP LaserJet 2100 Series PS&quot; type=&quot;STRING&quot;&gt; &lt;value&gt;HP LaserJet 2100 Series PS&lt;/value&gt; &lt;/property&gt;3.値フィールドからドライバ名を削除します。上記の例では、HP LaserJet 2100 Series PSを削除し、それをユニバーサルリモートプリンタに置き換えます。
 &lt;property id=&quot;HP LaserJet 2100 Series PS&quot; type=&quot;STRING&quot;&gt; &lt;value&gt;Universal Remote Printer&lt;/value&gt; &lt;/property&gt;　4.">
 <meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
-<meta itemprop="wordCount" content="143">
+<meta itemprop="wordCount" content="142">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="プリンタードライブマッピング 管理者は、MappedPrinterDrivers.xmlを編集してプリンタドライバをマップできます。 ほとんどのGO-Global展開では、管理者はこのファイルを編集する必要はありません。 これは、ホストのドライバ名がクライアントの名前と完全に一致しない場合、または管理者がネイティブドライバを上書きしてクライアントに別のプリンタドライバまたはユニバーサルプリンタドライバを使用させたい場合に使用するドライバを指定するために使用されます。
+<meta name="twitter:title" content="プリンタードライブマッピング"/>
+<meta name="twitter:description" content="管理者は、MappedPrinterDrivers.xmlを編集してプリンタドライバをマップできます。 ほとんどのGO-Global展開では、管理者はこのファイルを編集する必要はありません。 これは、ホストのドライバ名がクライアントの名前と完全に一致しない場合、または管理者がネイティブドライバを上書きしてクライアントに別のプリンタドライバまたはユニバーサルプリンタドライバを使用させたい場合に使用するドライバを指定するために使用されます。
 別のプリンタドライバを指定する方法  C:¥ProgramData¥GraphOnまたはC:¥Documents and Settings¥All Users¥Application Data¥GraphOnでMappedPrinterDrivers.xmlを探します。 ワードパッドでファイルを開き、クライアントプリンタドライバの名前を検索します。  &lt;property id=&quot;HP LaserJet 2100 Series PS&quot; type=&quot;STRING&quot;&gt; &lt;value&gt;HP LaserJet 2100 Series PS&lt;/value&gt; &lt;/property&gt;3.値フィールドからドライバ名を削除します。上記の例では、HP LaserJet 2100 Series PSを削除し、 目的のプリンタドライバと交換します。 4. ファイルを保存してください。この変更は、次にユーザがGO-Globalセッションを開始したときに有効になります。 上記の例ではがクライアントで使用されているドライバです。
 HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきドライバです。
 マッピングプリンタドライバを使用して、プリンタにユニバーサルプリンタドライバを使用させることもできます。
@@ -70,7 +70,7 @@ HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきド
   crossorigin="anonymous"></script>
 
 
-    <title>kitASP Docs</title>
+    <title>プリンタードライブマッピング | kitASP Docs</title>
   </head>
   <body class="td-page">
     <header>
@@ -140,7 +140,7 @@ HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきド
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
+  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
   data-offline-search-base-href="/"
 >
 
@@ -170,7 +170,7 @@ HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきド
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
+  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
   data-offline-search-base-href="/"
 >
 
@@ -1374,211 +1374,211 @@ HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきド
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1apurikshon-sukuriputonosapto" href="/docs/go-global5/topikku-1/apurikshon-sukuriputonosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1topikku" href="/docs/go-global5/topikku-1/topikku/">Load Balancing</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1automatic-windows-update-and-hotfix-compatibility" href="/docs/go-global5/topikku-1/automatic-windows-update-and-hotfix-compatibility/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1go-global-server-pafumansu-kaunta" href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/">GO-Globalホストパフォーマンスカウンタ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1deforutopurintano" href="/docs/go-global5/topikku-1/deforutopurintano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1saptono" href="/docs/go-global5/topikku-1/saptono/">委任サポートの設定要件</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1dpisukringu" href="/docs/go-global5/topikku-1/dpisukringu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1untitled-1" href="/docs/go-global5/topikku-1/untitled-1/">クライアントの印刷処理</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1go-global-server-pafumansu-kaunta" href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintadoraibahenoakusesuno" href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/">プリンタドライバへのアクセスの指定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1ipv6nosapto" href="/docs/go-global5/topikku-1/ipv6nosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintano" href="/docs/go-global5/topikku-1/purintano/">プリンタの構成</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-konpytano" href="/docs/go-global5/topikku-1/kuraianto-konpytano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintaapuretto" href="/docs/go-global5/topikku-1/purintaapuretto/">プリンタアプレット</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-purintanokasutamaizu" href="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1deforutopurintano" href="/docs/go-global5/topikku-1/deforutopurintano/">デフォルトプリンタの設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonofuiru-akusesu" href="/docs/go-global5/topikku-1/kuraiantonofuiru-akusesu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintawosuru" href="/docs/go-global5/topikku-1/purintawosuru/">プリンタ設定を編集する</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonosaundo" href="/docs/go-global5/topikku-1/kuraiantonosaundo/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1tesutopjiwosuru" href="/docs/go-global5/topikku-1/tesutopjiwosuru/">テストページを印刷する</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kurippubdonosapto" href="/docs/go-global5/topikku-1/kurippubdonosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintanodoraibawo" href="/docs/go-global5/topikku-1/purintanodoraibawo/">プリンタのドライバを変更</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1logfuiru" href="/docs/go-global5/topikku-1/logfuiru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintnorisetto" href="/docs/go-global5/topikku-1/purintnorisetto/">プリンター設定のリセット</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1mappingusaretadoraibu" href="/docs/go-global5/topikku-1/mappingusaretadoraibu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global5topikku-1purintdoraibumappingu" href="/docs/go-global5/topikku-1/purintdoraibumappingu/">プリンタードライブマッピング</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1maruchimonita" href="/docs/go-global5/topikku-1/maruchimonita/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-purintanokasutamaizu" href="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/">クライアントプリンタ名のカスタマイズ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1nasesshonpurosesu" href="/docs/go-global5/topikku-1/nasesshonpurosesu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kurippubdonosapto" href="/docs/go-global5/topikku-1/kurippubdonosapto/">クリップボードのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-1" href="/docs/go-global5/topikku-1/no-1/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonosaundo" href="/docs/go-global5/topikku-1/kuraiantonosaundo/">クライアントのサウンド</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-2" href="/docs/go-global5/topikku-1/no-2/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1shiriaru-ptooyobiparareru-pto" href="/docs/go-global5/topikku-1/shiriaru-ptooyobiparareru-pto/">シリアルポートおよびパラレルポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1paenosaptowonisuru" href="/docs/go-global5/topikku-1/paenosaptowonisuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonofuiru-akusesu" href="/docs/go-global5/topikku-1/kuraiantonofuiru-akusesu/">クライアントのファイルアクセス</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1pafumansu" href="/docs/go-global5/topikku-1/pafumansu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1mappingusaretadoraibu" href="/docs/go-global5/topikku-1/mappingusaretadoraibu/">マッピングされたドライブ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintaapuretto" href="/docs/go-global5/topikku-1/purintaapuretto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1maruchimonita" href="/docs/go-global5/topikku-1/maruchimonita/">マルチモニタ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintadoraibahenoakusesuno" href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-2" href="/docs/go-global5/topikku-1/no-2/">最大色深度の設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintano" href="/docs/go-global5/topikku-1/purintano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-1" href="/docs/go-global5/topikku-1/no-1/">画像圧縮の無効化</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintanodoraibawo" href="/docs/go-global5/topikku-1/purintanodoraibawo/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-konpytano" href="/docs/go-global5/topikku-1/kuraianto-konpytano/">クライアントコンピュータ名の取得</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintawosuru" href="/docs/go-global5/topikku-1/purintawosuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1apurikshon-sukuriputonosapto" href="/docs/go-global5/topikku-1/apurikshon-sukuriputonosapto/">アプリケーションスクリプトのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global5topikku-1purintdoraibumappingu" href="/docs/go-global5/topikku-1/purintdoraibumappingu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1nasesshonpurosesu" href="/docs/go-global5/topikku-1/nasesshonpurosesu/">Advanced Session Process Configuration</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintnorisetto" href="/docs/go-global5/topikku-1/purintnorisetto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purokishinotonneringu" href="/docs/go-global5/topikku-1/purokishinotonneringu/">プロキシのトンネリング</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purokishinotonneringu" href="/docs/go-global5/topikku-1/purokishinotonneringu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1ipv6nosapto" href="/docs/go-global5/topikku-1/ipv6nosapto/">IPv6のサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1sairentoinsutru" href="/docs/go-global5/topikku-1/sairentoinsutru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1smart-cardnosapto" href="/docs/go-global5/topikku-1/smart-cardnosapto/">Smart cardのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1saptono" href="/docs/go-global5/topikku-1/saptono/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1paenosaptowonisuru" href="/docs/go-global5/topikku-1/paenosaptowonisuru/">PAEのサポートを有効にする</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1shiriaru-ptooyobiparareru-pto" href="/docs/go-global5/topikku-1/shiriaru-ptooyobiparareru-pto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1pafumansu" href="/docs/go-global5/topikku-1/pafumansu/">パフォーマンス自動調整</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1smart-cardnosapto" href="/docs/go-global5/topikku-1/smart-cardnosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1automatic-windows-update-and-hotfix-compatibility" href="/docs/go-global5/topikku-1/automatic-windows-update-and-hotfix-compatibility/">Automatic Windows Update and Hotfix Compatibility</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1support-request-wizard" href="/docs/go-global5/topikku-1/support-request-wizard/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1sairentoinsutru" href="/docs/go-global5/topikku-1/sairentoinsutru/">サイレントインストール</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1tesutopjiwosuru" href="/docs/go-global5/topikku-1/tesutopjiwosuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1logfuiru" href="/docs/go-global5/topikku-1/logfuiru/">Logファイル</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1topikku" href="/docs/go-global5/topikku-1/topikku/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1support-request-wizard" href="/docs/go-global5/topikku-1/support-request-wizard/">Support Request Wizard</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1untitled-1" href="/docs/go-global5/topikku-1/untitled-1/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1dpisukringu" href="/docs/go-global5/topikku-1/dpisukringu/">DPIスケーリング</a>
       
       
     </li>
@@ -1661,7 +1661,7 @@ HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきド
 
 
 <a href="https://github.com/google/docsy-example/edit/master/content/ja/docs/go-global5/topikku-1/purintdoraibumappingu.md" target="_blank"><i class="fa fa-edit fa-fw"></i> ページの編集</a>
-<a href="https://github.com/google/docsy-example/issues/new?title=" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
+<a href="https://github.com/google/docsy-example/issues/new?title=%e3%83%97%e3%83%aa%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%89%e3%83%a9%e3%82%a4%e3%83%96%e3%83%9e%e3%83%83%e3%83%94%e3%83%b3%e3%82%b0" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
 
 
 <a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> プロジェクトのissueを作成</a>
@@ -1728,7 +1728,7 @@ HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきド
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/go-global5/topikku-1/purintdoraibumappingu/"></a>
+	<a href="/docs/go-global5/topikku-1/purintdoraibumappingu/">プリンタードライブマッピング</a>
 </li>
 
 	</ol>
@@ -1736,10 +1736,9 @@ HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきド
 
             
 <div class="td-content">
-	<h1></h1>
+	<h1>プリンタードライブマッピング</h1>
 	
-	<h1 id="プリンタードライブマッピング">プリンタードライブマッピング</h1>
-<p>管理者は、MappedPrinterDrivers.xmlを編集してプリンタドライバをマップできます。 ほとんどのGO-Global展開では、管理者はこのファイルを編集する必要はありません。 これは、ホストのドライバ名がクライアントの名前と完全に一致しない場合、または管理者がネイティブドライバを上書きしてクライアントに別のプリンタドライバまたはユニバーサルプリンタドライバを使用させたい場合に使用するドライバを指定するために使用されます。</p>
+	<p>管理者は、MappedPrinterDrivers.xmlを編集してプリンタドライバをマップできます。 ほとんどのGO-Global展開では、管理者はこのファイルを編集する必要はありません。 これは、ホストのドライバ名がクライアントの名前と完全に一致しない場合、または管理者がネイティブドライバを上書きしてクライアントに別のプリンタドライバまたはユニバーサルプリンタドライバを使用させたい場合に使用するドライバを指定するために使用されます。</p>
 <h3 id="別のプリンタドライバを指定する方法">別のプリンタドライバを指定する方法</h3>
 <ol>
 <li>C:¥ProgramData¥GraphOnまたはC:¥Documents and Settings¥All Users¥Application Data¥GraphOnでMappedPrinterDrivers.xmlを探します。</li>
@@ -1890,90 +1889,6 @@ HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきド
   
     
       
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
     
   
     
@@ -1981,6 +1896,78 @@ HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきド
         
           
           
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
         
       
     
@@ -2043,9 +2030,9 @@ HP LaserJet 2100 Series PSは、ホスト上でマッピングされるべきド
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
-        <a href="/docs/go-global5/topikku-1/purintawosuru/"></a>
+        <a href="/docs/go-global5/topikku-1/purintnorisetto/">プリンター設定のリセット</a>
       </div><div class="xPrevNextLink_next">
-        <a href="/docs/go-global5/topikku-1/purintnorisetto/"></a>
+        <a href="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/">クライアントプリンタ名のカスタマイズ</a>
       </div></div>
   
 

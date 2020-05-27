@@ -1,4 +1,9 @@
-# Load Balancing
+---
+title: "Load Balancing"
+linkTitle: ""
+weight: 1
+type: "docs"
+---
 
 >本項目の設定は推奨設定ではございませんのでご注意ください。負荷分散設定を行いたい場合はkitASP作成の拡張パッケージGGEasyMonitorの項を参照ください。
 

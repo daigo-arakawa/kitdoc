@@ -20,27 +20,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>kitASP Docs</title><meta property="og:title" content="" />
-<meta property="og:description" content="GO-Globalホストパフォーマンスカウンタ WindowsパフォーマンスモニタにGO-Globalホストパフォーマンスカウンタを加えて、アクティブなセッション数やホストに接続しているクライアント数を追跡できます。また、パフォーマンスカウンタを追加することにより、中継サーバに接続しているホストの数を追跡したり、各ホスト上で実行可能なセッションの最大数を確認することも可能になります。
+<title>GO-Globalホストパフォーマンスカウンタ | kitASP Docs</title><meta property="og:title" content="GO-Globalホストパフォーマンスカウンタ" />
+<meta property="og:description" content="WindowsパフォーマンスモニタにGO-Globalホストパフォーマンスカウンタを加えて、アクティブなセッション数やホストに接続しているクライアント数を追跡できます。また、パフォーマンスカウンタを追加することにより、中継サーバに接続しているホストの数を追跡したり、各ホスト上で実行可能なセッションの最大数を確認することも可能になります。
 GO-Globalホストパフォーマンスカウンタにより、システム管理者は GO-Globalホストへのネットワークアクセスが可能な任意のマシンからホストの活動を監視できます。リモート操作でパフォーマンスを監視するには、Remote Registry Service (Regsvc.exe) を有効にする必要があります。
 GO-Globalサーバパフォーマンスカウンタをパフォーマンスモニタに追加する方法  [スタート | プログラム | 管理ツール | パフォーマンス]の順にクリックします。 &#43;ボタンをクリックして、カウンタを追加します。 **[パフォーマンス オブジェクト]**項目で **[GO-Global Server]**を選択し、クリックします。 **[一覧からカウンタを選ぶ]**項目で目的のカウンタ(Active Sessions、Client Connections、Maximum Sessions、Server Connections)をクリックして、 **[追加]**をクリックします。  GO-Globalホストパフォーマンスカウンタ を以下に示します。
  Client Connections － 独立したホストまたは中継サーバ上のクライアント接続の総数。この値は、依存ホストでは常に 0 です。 Server Connections－ 中継サーバーに接続している依存ホストの総数。この値は、独立ホストまたは依存ホストでは常に 0 です。 Active Sessions － 独立したホストまたは依存ホストの場合、これはホスト上で実行されているセッションの数です。中継サーバの場合、これは接続されているすべての依存ホストでホストされているセッションの総数です。 Maximum Sessions － Cluster Managerの **[Host Options]**ダイアログで設定した セッションの最大数を表示します。  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/" />
 <meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
-<meta itemprop="name" content="">
-<meta itemprop="description" content="GO-Globalホストパフォーマンスカウンタ WindowsパフォーマンスモニタにGO-Globalホストパフォーマンスカウンタを加えて、アクティブなセッション数やホストに接続しているクライアント数を追跡できます。また、パフォーマンスカウンタを追加することにより、中継サーバに接続しているホストの数を追跡したり、各ホスト上で実行可能なセッションの最大数を確認することも可能になります。
+<meta itemprop="name" content="GO-Globalホストパフォーマンスカウンタ">
+<meta itemprop="description" content="WindowsパフォーマンスモニタにGO-Globalホストパフォーマンスカウンタを加えて、アクティブなセッション数やホストに接続しているクライアント数を追跡できます。また、パフォーマンスカウンタを追加することにより、中継サーバに接続しているホストの数を追跡したり、各ホスト上で実行可能なセッションの最大数を確認することも可能になります。
 GO-Globalホストパフォーマンスカウンタにより、システム管理者は GO-Globalホストへのネットワークアクセスが可能な任意のマシンからホストの活動を監視できます。リモート操作でパフォーマンスを監視するには、Remote Registry Service (Regsvc.exe) を有効にする必要があります。
 GO-Globalサーバパフォーマンスカウンタをパフォーマンスモニタに追加する方法  [スタート | プログラム | 管理ツール | パフォーマンス]の順にクリックします。 &#43;ボタンをクリックして、カウンタを追加します。 **[パフォーマンス オブジェクト]**項目で **[GO-Global Server]**を選択し、クリックします。 **[一覧からカウンタを選ぶ]**項目で目的のカウンタ(Active Sessions、Client Connections、Maximum Sessions、Server Connections)をクリックして、 **[追加]**をクリックします。  GO-Globalホストパフォーマンスカウンタ を以下に示します。
  Client Connections － 独立したホストまたは中継サーバ上のクライアント接続の総数。この値は、依存ホストでは常に 0 です。 Server Connections－ 中継サーバーに接続している依存ホストの総数。この値は、独立ホストまたは依存ホストでは常に 0 です。 Active Sessions － 独立したホストまたは依存ホストの場合、これはホスト上で実行されているセッションの数です。中継サーバの場合、これは接続されているすべての依存ホストでホストされているセッションの総数です。 Maximum Sessions － Cluster Managerの **[Host Options]**ダイアログで設定した セッションの最大数を表示します。  ">
 <meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
-<meta itemprop="wordCount" content="52">
+<meta itemprop="wordCount" content="51">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="GO-Globalホストパフォーマンスカウンタ WindowsパフォーマンスモニタにGO-Globalホストパフォーマンスカウンタを加えて、アクティブなセッション数やホストに接続しているクライアント数を追跡できます。また、パフォーマンスカウンタを追加することにより、中継サーバに接続しているホストの数を追跡したり、各ホスト上で実行可能なセッションの最大数を確認することも可能になります。
+<meta name="twitter:title" content="GO-Globalホストパフォーマンスカウンタ"/>
+<meta name="twitter:description" content="WindowsパフォーマンスモニタにGO-Globalホストパフォーマンスカウンタを加えて、アクティブなセッション数やホストに接続しているクライアント数を追跡できます。また、パフォーマンスカウンタを追加することにより、中継サーバに接続しているホストの数を追跡したり、各ホスト上で実行可能なセッションの最大数を確認することも可能になります。
 GO-Globalホストパフォーマンスカウンタにより、システム管理者は GO-Globalホストへのネットワークアクセスが可能な任意のマシンからホストの活動を監視できます。リモート操作でパフォーマンスを監視するには、Remote Registry Service (Regsvc.exe) を有効にする必要があります。
 GO-Globalサーバパフォーマンスカウンタをパフォーマンスモニタに追加する方法  [スタート | プログラム | 管理ツール | パフォーマンス]の順にクリックします。 &#43;ボタンをクリックして、カウンタを追加します。 **[パフォーマンス オブジェクト]**項目で **[GO-Global Server]**を選択し、クリックします。 **[一覧からカウンタを選ぶ]**項目で目的のカウンタ(Active Sessions、Client Connections、Maximum Sessions、Server Connections)をクリックして、 **[追加]**をクリックします。  GO-Globalホストパフォーマンスカウンタ を以下に示します。
  Client Connections － 独立したホストまたは中継サーバ上のクライアント接続の総数。この値は、依存ホストでは常に 0 です。 Server Connections－ 中継サーバーに接続している依存ホストの総数。この値は、独立ホストまたは依存ホストでは常に 0 です。 Active Sessions － 独立したホストまたは依存ホストの場合、これはホスト上で実行されているセッションの数です。中継サーバの場合、これは接続されているすべての依存ホストでホストされているセッションの総数です。 Maximum Sessions － Cluster Managerの **[Host Options]**ダイアログで設定した セッションの最大数を表示します。  "/>
@@ -64,7 +64,7 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
   crossorigin="anonymous"></script>
 
 
-    <title>kitASP Docs</title>
+    <title>GO-Globalホストパフォーマンスカウンタ | kitASP Docs</title>
   </head>
   <body class="td-page">
     <header>
@@ -134,7 +134,7 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
+  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
   data-offline-search-base-href="/"
 >
 
@@ -164,7 +164,7 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
+  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
   data-offline-search-base-href="/"
 >
 
@@ -1368,211 +1368,211 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1apurikshon-sukuriputonosapto" href="/docs/go-global5/topikku-1/apurikshon-sukuriputonosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1topikku" href="/docs/go-global5/topikku-1/topikku/">Load Balancing</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1automatic-windows-update-and-hotfix-compatibility" href="/docs/go-global5/topikku-1/automatic-windows-update-and-hotfix-compatibility/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global5topikku-1go-global-server-pafumansu-kaunta" href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/">GO-Globalホストパフォーマンスカウンタ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1deforutopurintano" href="/docs/go-global5/topikku-1/deforutopurintano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1saptono" href="/docs/go-global5/topikku-1/saptono/">委任サポートの設定要件</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1dpisukringu" href="/docs/go-global5/topikku-1/dpisukringu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1untitled-1" href="/docs/go-global5/topikku-1/untitled-1/">クライアントの印刷処理</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global5topikku-1go-global-server-pafumansu-kaunta" href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintadoraibahenoakusesuno" href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/">プリンタドライバへのアクセスの指定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1ipv6nosapto" href="/docs/go-global5/topikku-1/ipv6nosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintano" href="/docs/go-global5/topikku-1/purintano/">プリンタの構成</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-konpytano" href="/docs/go-global5/topikku-1/kuraianto-konpytano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintaapuretto" href="/docs/go-global5/topikku-1/purintaapuretto/">プリンタアプレット</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-purintanokasutamaizu" href="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1deforutopurintano" href="/docs/go-global5/topikku-1/deforutopurintano/">デフォルトプリンタの設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonofuiru-akusesu" href="/docs/go-global5/topikku-1/kuraiantonofuiru-akusesu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintawosuru" href="/docs/go-global5/topikku-1/purintawosuru/">プリンタ設定を編集する</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonosaundo" href="/docs/go-global5/topikku-1/kuraiantonosaundo/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1tesutopjiwosuru" href="/docs/go-global5/topikku-1/tesutopjiwosuru/">テストページを印刷する</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kurippubdonosapto" href="/docs/go-global5/topikku-1/kurippubdonosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintanodoraibawo" href="/docs/go-global5/topikku-1/purintanodoraibawo/">プリンタのドライバを変更</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1logfuiru" href="/docs/go-global5/topikku-1/logfuiru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintnorisetto" href="/docs/go-global5/topikku-1/purintnorisetto/">プリンター設定のリセット</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1mappingusaretadoraibu" href="/docs/go-global5/topikku-1/mappingusaretadoraibu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintdoraibumappingu" href="/docs/go-global5/topikku-1/purintdoraibumappingu/">プリンタードライブマッピング</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1maruchimonita" href="/docs/go-global5/topikku-1/maruchimonita/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-purintanokasutamaizu" href="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/">クライアントプリンタ名のカスタマイズ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1nasesshonpurosesu" href="/docs/go-global5/topikku-1/nasesshonpurosesu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kurippubdonosapto" href="/docs/go-global5/topikku-1/kurippubdonosapto/">クリップボードのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-1" href="/docs/go-global5/topikku-1/no-1/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonosaundo" href="/docs/go-global5/topikku-1/kuraiantonosaundo/">クライアントのサウンド</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-2" href="/docs/go-global5/topikku-1/no-2/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1shiriaru-ptooyobiparareru-pto" href="/docs/go-global5/topikku-1/shiriaru-ptooyobiparareru-pto/">シリアルポートおよびパラレルポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1paenosaptowonisuru" href="/docs/go-global5/topikku-1/paenosaptowonisuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonofuiru-akusesu" href="/docs/go-global5/topikku-1/kuraiantonofuiru-akusesu/">クライアントのファイルアクセス</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1pafumansu" href="/docs/go-global5/topikku-1/pafumansu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1mappingusaretadoraibu" href="/docs/go-global5/topikku-1/mappingusaretadoraibu/">マッピングされたドライブ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintaapuretto" href="/docs/go-global5/topikku-1/purintaapuretto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1maruchimonita" href="/docs/go-global5/topikku-1/maruchimonita/">マルチモニタ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintadoraibahenoakusesuno" href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-2" href="/docs/go-global5/topikku-1/no-2/">最大色深度の設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintano" href="/docs/go-global5/topikku-1/purintano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-1" href="/docs/go-global5/topikku-1/no-1/">画像圧縮の無効化</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintanodoraibawo" href="/docs/go-global5/topikku-1/purintanodoraibawo/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-konpytano" href="/docs/go-global5/topikku-1/kuraianto-konpytano/">クライアントコンピュータ名の取得</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintawosuru" href="/docs/go-global5/topikku-1/purintawosuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1apurikshon-sukuriputonosapto" href="/docs/go-global5/topikku-1/apurikshon-sukuriputonosapto/">アプリケーションスクリプトのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintdoraibumappingu" href="/docs/go-global5/topikku-1/purintdoraibumappingu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1nasesshonpurosesu" href="/docs/go-global5/topikku-1/nasesshonpurosesu/">Advanced Session Process Configuration</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintnorisetto" href="/docs/go-global5/topikku-1/purintnorisetto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purokishinotonneringu" href="/docs/go-global5/topikku-1/purokishinotonneringu/">プロキシのトンネリング</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purokishinotonneringu" href="/docs/go-global5/topikku-1/purokishinotonneringu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1ipv6nosapto" href="/docs/go-global5/topikku-1/ipv6nosapto/">IPv6のサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1sairentoinsutru" href="/docs/go-global5/topikku-1/sairentoinsutru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1smart-cardnosapto" href="/docs/go-global5/topikku-1/smart-cardnosapto/">Smart cardのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1saptono" href="/docs/go-global5/topikku-1/saptono/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1paenosaptowonisuru" href="/docs/go-global5/topikku-1/paenosaptowonisuru/">PAEのサポートを有効にする</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1shiriaru-ptooyobiparareru-pto" href="/docs/go-global5/topikku-1/shiriaru-ptooyobiparareru-pto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1pafumansu" href="/docs/go-global5/topikku-1/pafumansu/">パフォーマンス自動調整</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1smart-cardnosapto" href="/docs/go-global5/topikku-1/smart-cardnosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1automatic-windows-update-and-hotfix-compatibility" href="/docs/go-global5/topikku-1/automatic-windows-update-and-hotfix-compatibility/">Automatic Windows Update and Hotfix Compatibility</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1support-request-wizard" href="/docs/go-global5/topikku-1/support-request-wizard/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1sairentoinsutru" href="/docs/go-global5/topikku-1/sairentoinsutru/">サイレントインストール</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1tesutopjiwosuru" href="/docs/go-global5/topikku-1/tesutopjiwosuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1logfuiru" href="/docs/go-global5/topikku-1/logfuiru/">Logファイル</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1topikku" href="/docs/go-global5/topikku-1/topikku/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1support-request-wizard" href="/docs/go-global5/topikku-1/support-request-wizard/">Support Request Wizard</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1untitled-1" href="/docs/go-global5/topikku-1/untitled-1/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1dpisukringu" href="/docs/go-global5/topikku-1/dpisukringu/">DPIスケーリング</a>
       
       
     </li>
@@ -1655,7 +1655,7 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
 
 
 <a href="https://github.com/google/docsy-example/edit/master/content/ja/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta.md" target="_blank"><i class="fa fa-edit fa-fw"></i> ページの編集</a>
-<a href="https://github.com/google/docsy-example/issues/new?title=" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
+<a href="https://github.com/google/docsy-example/issues/new?title=GO-Global%e3%83%9b%e3%82%b9%e3%83%88%e3%83%91%e3%83%95%e3%82%a9%e3%83%bc%e3%83%9e%e3%83%b3%e3%82%b9%e3%82%ab%e3%82%a6%e3%83%b3%e3%82%bf" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
 
 
 <a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> プロジェクトのissueを作成</a>
@@ -1719,7 +1719,7 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/"></a>
+	<a href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/">GO-Globalホストパフォーマンスカウンタ</a>
 </li>
 
 	</ol>
@@ -1727,10 +1727,9 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
 
             
 <div class="td-content">
-	<h1></h1>
+	<h1>GO-Globalホストパフォーマンスカウンタ</h1>
 	
-	<h1 id="go-globalホストパフォーマンスカウンタ">GO-Globalホストパフォーマンスカウンタ</h1>
-<p>WindowsパフォーマンスモニタにGO-Globalホストパフォーマンスカウンタを加えて、アクティブなセッション数やホストに接続しているクライアント数を追跡できます。また、パフォーマンスカウンタを追加することにより、中継サーバに接続しているホストの数を追跡したり、各ホスト上で実行可能なセッションの最大数を確認することも可能になります。</p>
+	<p>WindowsパフォーマンスモニタにGO-Globalホストパフォーマンスカウンタを加えて、アクティブなセッション数やホストに接続しているクライアント数を追跡できます。また、パフォーマンスカウンタを追加することにより、中継サーバに接続しているホストの数を追跡したり、各ホスト上で実行可能なセッションの最大数を確認することも可能になります。</p>
 <p>GO-Globalホストパフォーマンスカウンタにより、システム管理者は GO-Globalホストへのネットワークアクセスが可能な任意のマシンからホストの活動を監視できます。リモート操作でパフォーマンスを監視するには、Remote Registry Service (Regsvc.exe) を有効にする必要があります。</p>
 <h3 id="go-globalサーバパフォーマンスカウンタをパフォーマンスモニタに追加する方法">GO-Globalサーバパフォーマンスカウンタをパフォーマンスモニタに追加する方法</h3>
 <ol>
@@ -1765,27 +1764,6 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
   
     
       
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
     
   
     
@@ -1793,6 +1771,24 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
         
           
           
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
         
       
     
@@ -1975,9 +1971,9 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
-        <a href="/docs/go-global5/topikku-1/dpisukringu/"></a>
+        <a href="/docs/go-global5/topikku-1/topikku/">Load Balancing</a>
       </div><div class="xPrevNextLink_next">
-        <a href="/docs/go-global5/topikku-1/ipv6nosapto/"></a>
+        <a href="/docs/go-global5/topikku-1/saptono/">委任サポートの設定要件</a>
       </div></div>
   
 

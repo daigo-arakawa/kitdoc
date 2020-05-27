@@ -1,4 +1,10 @@
-# Automatic Windows Update and Hotfix Compatibility
+---
+title: "Automatic Windows Update and Hotfix Compatibility"
+linkTitle: ""
+weight: 31
+type: "docs"
+---
+
 
 >KitASPではこの設定を推奨しておりません。弊社から案内しています、Windows Update情報をご参照ください。
 

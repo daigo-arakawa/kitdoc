@@ -1,4 +1,9 @@
-# Logファイル
+---
+title: "Logファイル"
+linkTitle: ""
+weight: 33
+type: "docs"
+---
 
 GO-Globalホストはログファイルを作成して、GO-Global自身および一定のGO-Globalプロセスのパフォーマンス情報を記録します。GraphOn Technical Supportは、このデータを使用して、起こり得る問題の診断と修正を行います。特に、特定のマシンや特定のアプリケーションでのみ再発し得るエラーに対して有効です。
 

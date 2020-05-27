@@ -1,4 +1,10 @@
-# Advanced Session Process Configuration
+---
+title: "Advanced Session Process Configuration"
+linkTitle: ""
+weight: 25
+type: "docs"
+---
+
 
 >この項目はKitASPでのサポート項目ではございません
 

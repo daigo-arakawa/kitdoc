@@ -20,8 +20,8 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>kitASP Docs</title><meta property="og:title" content="" />
-<meta property="og:description" content="プロキシのトンネリング HTTP CONNECTメソッドを介したプロキシトンネリングでは、プロキシサーバを介してインターネットにアクセスするユーザは、次の条件が満たされたときにインターネット上のGO-Globalホストに接続できます。
+<title>プロキシのトンネリング | kitASP Docs</title><meta property="og:title" content="プロキシのトンネリング" />
+<meta property="og:description" content="HTTP CONNECTメソッドを介したプロキシトンネリングでは、プロキシサーバを介してインターネットにアクセスするユーザは、次の条件が満たされたときにインターネット上のGO-Globalホストに接続できます。
  ユーザはWindowsコンピュータ上でGO-Globalクライアントを実行している。 プロキシサーバのアドレスとポートが、クライアントコンピュータの[インターネットオプション]に保存されている。 GO-Globalホストが設定されているポートへのHTTP CONNECTメソッドのトンネルで、Rapid-X Protocol(RXP)接続を受け入れられるように、プロキシサーバが設定されている。  HTTP CONNECTメソッドによるプロキシのトンネリング Windowsコンピュータ上のユーザがGO-Globalホストとの直接接続を確立できず、クライアントコンピュータが[インターネットオプション]でプロキシサーバを使用するように設定されている場合、クライアントは GO-GlobalホストとのHTTP CONNECTメソッドトンネルの確立を試みます。
  クライアントコンピュータの **[インターネットオプション]**で指定されたアドレスとポートを使用してプロキシサーバに接続します。 プロキシサーバにCONNECT要求(CONNECT address:port HTTP/1.0)を送信します。addressとport は、それぞれGO-GlobalホストのIPアドレスと、ホストがRXP接続を受け入れるポート(デフォルトでは491)です。 プロキシサーバからの応答を読み取ります。 プロキシサーバの応答に、以下のように応答します。 a.Basic認証が必要な場合、GO-Globalはユーザにユーザ名とパスワードの入力を求め、手順2を繰り返します。ここではユーザの資格情報を提供します。 b.要求に失敗すると、以下のメッセージが表示されます。「Failed to connect to serverAddress via the proxy server at proxyAddress.(proxyAddressのプロキシサーバからserverAddressに接続できませんでした)[reason for failure (失敗の理由)] c. 要求に成功すると、GO-GlobalはRXP接続を初期化し、セッションを開始します。  ポート 443を使用してHTTP CONNECTメソッドトンネルを許可する方法  ポート443での接続を受け入れるようにGO-Globalホストを設定します。 ホストへのアクセスに使用するWebページでポート443を指定します。 必要に応じて、ポート80(HTTP)およびポート443(HTTPS)でGO-Globalホストへの接続を許可するようにプロキシサーバを設定します。  GO-GlobalホストとそのWebページの設定を完了すると、上述の3つの要件を満たすユーザはホストに接続できます。ショートカットを使用するユーザは、コマンド行に -hp 引数と 443を追加する必要があります(例: &ldquo;..\ggclient.exe&rdquo; -h server -hp 443)。そうしなければ、これらのユーザはGO-Globalにログオンできません。
  GO-Globalクライアントは、ポート443のトラフィックがHTTPSかどうかを確認するように設定されているプロキシサーバからGO-Globalホストに接続することはできません。
@@ -30,21 +30,21 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global5/topikku-1/purokishinotonneringu/" />
 <meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
-<meta itemprop="name" content="">
-<meta itemprop="description" content="プロキシのトンネリング HTTP CONNECTメソッドを介したプロキシトンネリングでは、プロキシサーバを介してインターネットにアクセスするユーザは、次の条件が満たされたときにインターネット上のGO-Globalホストに接続できます。
+<meta itemprop="name" content="プロキシのトンネリング">
+<meta itemprop="description" content="HTTP CONNECTメソッドを介したプロキシトンネリングでは、プロキシサーバを介してインターネットにアクセスするユーザは、次の条件が満たされたときにインターネット上のGO-Globalホストに接続できます。
  ユーザはWindowsコンピュータ上でGO-Globalクライアントを実行している。 プロキシサーバのアドレスとポートが、クライアントコンピュータの[インターネットオプション]に保存されている。 GO-Globalホストが設定されているポートへのHTTP CONNECTメソッドのトンネルで、Rapid-X Protocol(RXP)接続を受け入れられるように、プロキシサーバが設定されている。  HTTP CONNECTメソッドによるプロキシのトンネリング Windowsコンピュータ上のユーザがGO-Globalホストとの直接接続を確立できず、クライアントコンピュータが[インターネットオプション]でプロキシサーバを使用するように設定されている場合、クライアントは GO-GlobalホストとのHTTP CONNECTメソッドトンネルの確立を試みます。
  クライアントコンピュータの **[インターネットオプション]**で指定されたアドレスとポートを使用してプロキシサーバに接続します。 プロキシサーバにCONNECT要求(CONNECT address:port HTTP/1.0)を送信します。addressとport は、それぞれGO-GlobalホストのIPアドレスと、ホストがRXP接続を受け入れるポート(デフォルトでは491)です。 プロキシサーバからの応答を読み取ります。 プロキシサーバの応答に、以下のように応答します。 a.Basic認証が必要な場合、GO-Globalはユーザにユーザ名とパスワードの入力を求め、手順2を繰り返します。ここではユーザの資格情報を提供します。 b.要求に失敗すると、以下のメッセージが表示されます。「Failed to connect to serverAddress via the proxy server at proxyAddress.(proxyAddressのプロキシサーバからserverAddressに接続できませんでした)[reason for failure (失敗の理由)] c. 要求に成功すると、GO-GlobalはRXP接続を初期化し、セッションを開始します。  ポート 443を使用してHTTP CONNECTメソッドトンネルを許可する方法  ポート443での接続を受け入れるようにGO-Globalホストを設定します。 ホストへのアクセスに使用するWebページでポート443を指定します。 必要に応じて、ポート80(HTTP)およびポート443(HTTPS)でGO-Globalホストへの接続を許可するようにプロキシサーバを設定します。  GO-GlobalホストとそのWebページの設定を完了すると、上述の3つの要件を満たすユーザはホストに接続できます。ショートカットを使用するユーザは、コマンド行に -hp 引数と 443を追加する必要があります(例: &ldquo;..\ggclient.exe&rdquo; -h server -hp 443)。そうしなければ、これらのユーザはGO-Globalにログオンできません。
  GO-Globalクライアントは、ポート443のトラフィックがHTTPSかどうかを確認するように設定されているプロキシサーバからGO-Globalホストに接続することはできません。
 プロキシサーバでは、GO-Globalは基本認証のみをサポートします。
  ">
 <meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
-<meta itemprop="wordCount" content="55">
+<meta itemprop="wordCount" content="54">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="プロキシのトンネリング HTTP CONNECTメソッドを介したプロキシトンネリングでは、プロキシサーバを介してインターネットにアクセスするユーザは、次の条件が満たされたときにインターネット上のGO-Globalホストに接続できます。
+<meta name="twitter:title" content="プロキシのトンネリング"/>
+<meta name="twitter:description" content="HTTP CONNECTメソッドを介したプロキシトンネリングでは、プロキシサーバを介してインターネットにアクセスするユーザは、次の条件が満たされたときにインターネット上のGO-Globalホストに接続できます。
  ユーザはWindowsコンピュータ上でGO-Globalクライアントを実行している。 プロキシサーバのアドレスとポートが、クライアントコンピュータの[インターネットオプション]に保存されている。 GO-Globalホストが設定されているポートへのHTTP CONNECTメソッドのトンネルで、Rapid-X Protocol(RXP)接続を受け入れられるように、プロキシサーバが設定されている。  HTTP CONNECTメソッドによるプロキシのトンネリング Windowsコンピュータ上のユーザがGO-Globalホストとの直接接続を確立できず、クライアントコンピュータが[インターネットオプション]でプロキシサーバを使用するように設定されている場合、クライアントは GO-GlobalホストとのHTTP CONNECTメソッドトンネルの確立を試みます。
  クライアントコンピュータの **[インターネットオプション]**で指定されたアドレスとポートを使用してプロキシサーバに接続します。 プロキシサーバにCONNECT要求(CONNECT address:port HTTP/1.0)を送信します。addressとport は、それぞれGO-GlobalホストのIPアドレスと、ホストがRXP接続を受け入れるポート(デフォルトでは491)です。 プロキシサーバからの応答を読み取ります。 プロキシサーバの応答に、以下のように応答します。 a.Basic認証が必要な場合、GO-Globalはユーザにユーザ名とパスワードの入力を求め、手順2を繰り返します。ここではユーザの資格情報を提供します。 b.要求に失敗すると、以下のメッセージが表示されます。「Failed to connect to serverAddress via the proxy server at proxyAddress.(proxyAddressのプロキシサーバからserverAddressに接続できませんでした)[reason for failure (失敗の理由)] c. 要求に成功すると、GO-GlobalはRXP接続を初期化し、セッションを開始します。  ポート 443を使用してHTTP CONNECTメソッドトンネルを許可する方法  ポート443での接続を受け入れるようにGO-Globalホストを設定します。 ホストへのアクセスに使用するWebページでポート443を指定します。 必要に応じて、ポート80(HTTP)およびポート443(HTTPS)でGO-Globalホストへの接続を許可するようにプロキシサーバを設定します。  GO-GlobalホストとそのWebページの設定を完了すると、上述の3つの要件を満たすユーザはホストに接続できます。ショートカットを使用するユーザは、コマンド行に -hp 引数と 443を追加する必要があります(例: &ldquo;..\ggclient.exe&rdquo; -h server -hp 443)。そうしなければ、これらのユーザはGO-Globalにログオンできません。
  GO-Globalクライアントは、ポート443のトラフィックがHTTPSかどうかを確認するように設定されているプロキシサーバからGO-Globalホストに接続することはできません。
@@ -70,7 +70,7 @@
   crossorigin="anonymous"></script>
 
 
-    <title>kitASP Docs</title>
+    <title>プロキシのトンネリング | kitASP Docs</title>
   </head>
   <body class="td-page">
     <header>
@@ -140,7 +140,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
+  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
   data-offline-search-base-href="/"
 >
 
@@ -170,7 +170,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
+  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
   data-offline-search-base-href="/"
 >
 
@@ -1374,211 +1374,211 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1apurikshon-sukuriputonosapto" href="/docs/go-global5/topikku-1/apurikshon-sukuriputonosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1topikku" href="/docs/go-global5/topikku-1/topikku/">Load Balancing</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1automatic-windows-update-and-hotfix-compatibility" href="/docs/go-global5/topikku-1/automatic-windows-update-and-hotfix-compatibility/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1go-global-server-pafumansu-kaunta" href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/">GO-Globalホストパフォーマンスカウンタ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1deforutopurintano" href="/docs/go-global5/topikku-1/deforutopurintano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1saptono" href="/docs/go-global5/topikku-1/saptono/">委任サポートの設定要件</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1dpisukringu" href="/docs/go-global5/topikku-1/dpisukringu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1untitled-1" href="/docs/go-global5/topikku-1/untitled-1/">クライアントの印刷処理</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1go-global-server-pafumansu-kaunta" href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintadoraibahenoakusesuno" href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/">プリンタドライバへのアクセスの指定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1ipv6nosapto" href="/docs/go-global5/topikku-1/ipv6nosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintano" href="/docs/go-global5/topikku-1/purintano/">プリンタの構成</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-konpytano" href="/docs/go-global5/topikku-1/kuraianto-konpytano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintaapuretto" href="/docs/go-global5/topikku-1/purintaapuretto/">プリンタアプレット</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-purintanokasutamaizu" href="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1deforutopurintano" href="/docs/go-global5/topikku-1/deforutopurintano/">デフォルトプリンタの設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonofuiru-akusesu" href="/docs/go-global5/topikku-1/kuraiantonofuiru-akusesu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintawosuru" href="/docs/go-global5/topikku-1/purintawosuru/">プリンタ設定を編集する</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonosaundo" href="/docs/go-global5/topikku-1/kuraiantonosaundo/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1tesutopjiwosuru" href="/docs/go-global5/topikku-1/tesutopjiwosuru/">テストページを印刷する</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kurippubdonosapto" href="/docs/go-global5/topikku-1/kurippubdonosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintanodoraibawo" href="/docs/go-global5/topikku-1/purintanodoraibawo/">プリンタのドライバを変更</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1logfuiru" href="/docs/go-global5/topikku-1/logfuiru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintnorisetto" href="/docs/go-global5/topikku-1/purintnorisetto/">プリンター設定のリセット</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1mappingusaretadoraibu" href="/docs/go-global5/topikku-1/mappingusaretadoraibu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintdoraibumappingu" href="/docs/go-global5/topikku-1/purintdoraibumappingu/">プリンタードライブマッピング</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1maruchimonita" href="/docs/go-global5/topikku-1/maruchimonita/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-purintanokasutamaizu" href="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/">クライアントプリンタ名のカスタマイズ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1nasesshonpurosesu" href="/docs/go-global5/topikku-1/nasesshonpurosesu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kurippubdonosapto" href="/docs/go-global5/topikku-1/kurippubdonosapto/">クリップボードのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-1" href="/docs/go-global5/topikku-1/no-1/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonosaundo" href="/docs/go-global5/topikku-1/kuraiantonosaundo/">クライアントのサウンド</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-2" href="/docs/go-global5/topikku-1/no-2/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1shiriaru-ptooyobiparareru-pto" href="/docs/go-global5/topikku-1/shiriaru-ptooyobiparareru-pto/">シリアルポートおよびパラレルポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1paenosaptowonisuru" href="/docs/go-global5/topikku-1/paenosaptowonisuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonofuiru-akusesu" href="/docs/go-global5/topikku-1/kuraiantonofuiru-akusesu/">クライアントのファイルアクセス</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1pafumansu" href="/docs/go-global5/topikku-1/pafumansu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1mappingusaretadoraibu" href="/docs/go-global5/topikku-1/mappingusaretadoraibu/">マッピングされたドライブ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintaapuretto" href="/docs/go-global5/topikku-1/purintaapuretto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1maruchimonita" href="/docs/go-global5/topikku-1/maruchimonita/">マルチモニタ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintadoraibahenoakusesuno" href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-2" href="/docs/go-global5/topikku-1/no-2/">最大色深度の設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintano" href="/docs/go-global5/topikku-1/purintano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-1" href="/docs/go-global5/topikku-1/no-1/">画像圧縮の無効化</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintanodoraibawo" href="/docs/go-global5/topikku-1/purintanodoraibawo/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-konpytano" href="/docs/go-global5/topikku-1/kuraianto-konpytano/">クライアントコンピュータ名の取得</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintawosuru" href="/docs/go-global5/topikku-1/purintawosuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1apurikshon-sukuriputonosapto" href="/docs/go-global5/topikku-1/apurikshon-sukuriputonosapto/">アプリケーションスクリプトのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintdoraibumappingu" href="/docs/go-global5/topikku-1/purintdoraibumappingu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1nasesshonpurosesu" href="/docs/go-global5/topikku-1/nasesshonpurosesu/">Advanced Session Process Configuration</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintnorisetto" href="/docs/go-global5/topikku-1/purintnorisetto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global5topikku-1purokishinotonneringu" href="/docs/go-global5/topikku-1/purokishinotonneringu/">プロキシのトンネリング</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global5topikku-1purokishinotonneringu" href="/docs/go-global5/topikku-1/purokishinotonneringu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1ipv6nosapto" href="/docs/go-global5/topikku-1/ipv6nosapto/">IPv6のサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1sairentoinsutru" href="/docs/go-global5/topikku-1/sairentoinsutru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1smart-cardnosapto" href="/docs/go-global5/topikku-1/smart-cardnosapto/">Smart cardのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1saptono" href="/docs/go-global5/topikku-1/saptono/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1paenosaptowonisuru" href="/docs/go-global5/topikku-1/paenosaptowonisuru/">PAEのサポートを有効にする</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1shiriaru-ptooyobiparareru-pto" href="/docs/go-global5/topikku-1/shiriaru-ptooyobiparareru-pto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1pafumansu" href="/docs/go-global5/topikku-1/pafumansu/">パフォーマンス自動調整</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1smart-cardnosapto" href="/docs/go-global5/topikku-1/smart-cardnosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1automatic-windows-update-and-hotfix-compatibility" href="/docs/go-global5/topikku-1/automatic-windows-update-and-hotfix-compatibility/">Automatic Windows Update and Hotfix Compatibility</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1support-request-wizard" href="/docs/go-global5/topikku-1/support-request-wizard/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1sairentoinsutru" href="/docs/go-global5/topikku-1/sairentoinsutru/">サイレントインストール</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1tesutopjiwosuru" href="/docs/go-global5/topikku-1/tesutopjiwosuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1logfuiru" href="/docs/go-global5/topikku-1/logfuiru/">Logファイル</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1topikku" href="/docs/go-global5/topikku-1/topikku/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1support-request-wizard" href="/docs/go-global5/topikku-1/support-request-wizard/">Support Request Wizard</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1untitled-1" href="/docs/go-global5/topikku-1/untitled-1/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1dpisukringu" href="/docs/go-global5/topikku-1/dpisukringu/">DPIスケーリング</a>
       
       
     </li>
@@ -1661,7 +1661,7 @@
 
 
 <a href="https://github.com/google/docsy-example/edit/master/content/ja/docs/go-global5/topikku-1/purokishinotonneringu.md" target="_blank"><i class="fa fa-edit fa-fw"></i> ページの編集</a>
-<a href="https://github.com/google/docsy-example/issues/new?title=" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
+<a href="https://github.com/google/docsy-example/issues/new?title=%e3%83%97%e3%83%ad%e3%82%ad%e3%82%b7%e3%81%ae%e3%83%88%e3%83%b3%e3%83%8d%e3%83%aa%e3%83%b3%e3%82%b0" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
 
 
 <a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> プロジェクトのissueを作成</a>
@@ -1726,7 +1726,7 @@
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/go-global5/topikku-1/purokishinotonneringu/"></a>
+	<a href="/docs/go-global5/topikku-1/purokishinotonneringu/">プロキシのトンネリング</a>
 </li>
 
 	</ol>
@@ -1734,10 +1734,9 @@
 
             
 <div class="td-content">
-	<h1></h1>
+	<h1>プロキシのトンネリング</h1>
 	
-	<h1 id="プロキシのトンネリング">プロキシのトンネリング</h1>
-<p>HTTP CONNECTメソッドを介したプロキシトンネリングでは、プロキシサーバを介してインターネットにアクセスするユーザは、次の条件が満たされたときにインターネット上のGO-Globalホストに接続できます。</p>
+	<p>HTTP CONNECTメソッドを介したプロキシトンネリングでは、プロキシサーバを介してインターネットにアクセスするユーザは、次の条件が満たされたときにインターネット上のGO-Globalホストに接続できます。</p>
 <ul>
 <li>ユーザはWindowsコンピュータ上でGO-Globalクライアントを実行している。</li>
 <li>プロキシサーバのアドレスとポートが、クライアントコンピュータの[インターネットオプション]に保存されている。</li>
@@ -1947,13 +1946,6 @@
   
     
       
-        
-        
-      
-    
-  
-    
-      
     
   
     
@@ -1961,6 +1953,12 @@
         
           
           
+        
+      
+    
+  
+    
+      
         
       
     
@@ -2011,9 +2009,9 @@
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
-        <a href="/docs/go-global5/topikku-1/purintnorisetto/"></a>
+        <a href="/docs/go-global5/topikku-1/nasesshonpurosesu/">Advanced Session Process Configuration</a>
       </div><div class="xPrevNextLink_next">
-        <a href="/docs/go-global5/topikku-1/sairentoinsutru/"></a>
+        <a href="/docs/go-global5/topikku-1/ipv6nosapto/">IPv6のサポート</a>
       </div></div>
   
 

@@ -1,4 +1,10 @@
-# PAEのサポートを有効にする
+---
+title: "PAEのサポートを有効にする"
+linkTitle: ""
+weight: 29
+type: "docs"
+---
+
 
 Windows Server 2008では、GO-GlobalはPhysical Addressing Extension(PAE)を介して4GBを超えるメモリをサポートします。
 

@@ -20,8 +20,8 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>kitASP Docs</title><meta property="og:title" content="" />
-<meta property="og:description" content="プリンタの構成 GO-Globalクライアントがホストに接続すると、 プロキシプリンタが自動的にホスト上に作成され、クライアントプリンタに印刷するためのインタフェースとして機能します。プロキシプリンタは、GO-Globalセッションで実行されているアプリケーションとクライアントプリンタ間のブリッジとしてGO-Globalがホスト上に設定するプリンタです。プロキシプリンタは自動または手動で設定できます。 プロキシプリンタを設定する場合は、ネイティブプリンタドライバが優先されます。
+<title>プリンタの構成 | kitASP Docs</title><meta property="og:title" content="プリンタの構成" />
+<meta property="og:description" content="GO-Globalクライアントがホストに接続すると、 プロキシプリンタが自動的にホスト上に作成され、クライアントプリンタに印刷するためのインタフェースとして機能します。プロキシプリンタは、GO-Globalセッションで実行されているアプリケーションとクライアントプリンタ間のブリッジとしてGO-Globalがホスト上に設定するプリンタです。プロキシプリンタは自動または手動で設定できます。 プロキシプリンタを設定する場合は、ネイティブプリンタドライバが優先されます。
 プロキシプリンタを設定する場合は、ネイティブプリンタドライバが推奨されます(使用可能で、設定によって使用可能な場合)。ネイティブドライバが利用できないとき、代わりに ユニバーサルプリンタドライバが使用できます。
 管理者がプロキシプリンタを作成するときに使用するプリンタドライバを管理する方法はいくつかあります。クライアントプリンタからの設定は、プロキシプリンタにも反映されます。セッションが終了すると、セッションのプロキシプリンタは削除されます。セッションが切断されても、プロキシプリンタは削除されません。システム上のすべてのプロキシプリンタは、Application Publishing Serviceの起動時に削除されます。
 プロキシプリンタが設定されている場合、ネイティブプリンタドライバを選択するときの優先順位の階層があります。Windowsプリンタドライバオプションがクラスタマネージャで無効になっている場合、この階層は適用されません。
@@ -30,21 +30,21 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global5/topikku-1/purintano/" />
 <meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
-<meta itemprop="name" content="">
-<meta itemprop="description" content="プリンタの構成 GO-Globalクライアントがホストに接続すると、 プロキシプリンタが自動的にホスト上に作成され、クライアントプリンタに印刷するためのインタフェースとして機能します。プロキシプリンタは、GO-Globalセッションで実行されているアプリケーションとクライアントプリンタ間のブリッジとしてGO-Globalがホスト上に設定するプリンタです。プロキシプリンタは自動または手動で設定できます。 プロキシプリンタを設定する場合は、ネイティブプリンタドライバが優先されます。
+<meta itemprop="name" content="プリンタの構成">
+<meta itemprop="description" content="GO-Globalクライアントがホストに接続すると、 プロキシプリンタが自動的にホスト上に作成され、クライアントプリンタに印刷するためのインタフェースとして機能します。プロキシプリンタは、GO-Globalセッションで実行されているアプリケーションとクライアントプリンタ間のブリッジとしてGO-Globalがホスト上に設定するプリンタです。プロキシプリンタは自動または手動で設定できます。 プロキシプリンタを設定する場合は、ネイティブプリンタドライバが優先されます。
 プロキシプリンタを設定する場合は、ネイティブプリンタドライバが推奨されます(使用可能で、設定によって使用可能な場合)。ネイティブドライバが利用できないとき、代わりに ユニバーサルプリンタドライバが使用できます。
 管理者がプロキシプリンタを作成するときに使用するプリンタドライバを管理する方法はいくつかあります。クライアントプリンタからの設定は、プロキシプリンタにも反映されます。セッションが終了すると、セッションのプロキシプリンタは削除されます。セッションが切断されても、プロキシプリンタは削除されません。システム上のすべてのプロキシプリンタは、Application Publishing Serviceの起動時に削除されます。
 プロキシプリンタが設定されている場合、ネイティブプリンタドライバを選択するときの優先順位の階層があります。Windowsプリンタドライバオプションがクラスタマネージャで無効になっている場合、この階層は適用されません。
 ネイティブドライバは次の順序で選択されます。
  プリンタアプレットプリンタアプレットでユーザーが手動でプリンタドライバを選択すると、他のすべてのドライバ選択方法よりも優先されます。 マップされたプリンタドライバMappedPrinterDrivers.xmlには、各ドライバに使用できるドライバ名のリストが含まれています。このファイルはApplication Publishing Serviceによって生成されますが、管理者が手動で編集することもできます。 クライアントドライバ名クライアントにインストールされているドライバの正確な名前のドライバが、プロキシプリンタの設定に使用されます。  ">
 <meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
-<meta itemprop="wordCount" content="16">
+<meta itemprop="wordCount" content="15">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="プリンタの構成 GO-Globalクライアントがホストに接続すると、 プロキシプリンタが自動的にホスト上に作成され、クライアントプリンタに印刷するためのインタフェースとして機能します。プロキシプリンタは、GO-Globalセッションで実行されているアプリケーションとクライアントプリンタ間のブリッジとしてGO-Globalがホスト上に設定するプリンタです。プロキシプリンタは自動または手動で設定できます。 プロキシプリンタを設定する場合は、ネイティブプリンタドライバが優先されます。
+<meta name="twitter:title" content="プリンタの構成"/>
+<meta name="twitter:description" content="GO-Globalクライアントがホストに接続すると、 プロキシプリンタが自動的にホスト上に作成され、クライアントプリンタに印刷するためのインタフェースとして機能します。プロキシプリンタは、GO-Globalセッションで実行されているアプリケーションとクライアントプリンタ間のブリッジとしてGO-Globalがホスト上に設定するプリンタです。プロキシプリンタは自動または手動で設定できます。 プロキシプリンタを設定する場合は、ネイティブプリンタドライバが優先されます。
 プロキシプリンタを設定する場合は、ネイティブプリンタドライバが推奨されます(使用可能で、設定によって使用可能な場合)。ネイティブドライバが利用できないとき、代わりに ユニバーサルプリンタドライバが使用できます。
 管理者がプロキシプリンタを作成するときに使用するプリンタドライバを管理する方法はいくつかあります。クライアントプリンタからの設定は、プロキシプリンタにも反映されます。セッションが終了すると、セッションのプロキシプリンタは削除されます。セッションが切断されても、プロキシプリンタは削除されません。システム上のすべてのプロキシプリンタは、Application Publishing Serviceの起動時に削除されます。
 プロキシプリンタが設定されている場合、ネイティブプリンタドライバを選択するときの優先順位の階層があります。Windowsプリンタドライバオプションがクラスタマネージャで無効になっている場合、この階層は適用されません。
@@ -70,7 +70,7 @@
   crossorigin="anonymous"></script>
 
 
-    <title>kitASP Docs</title>
+    <title>プリンタの構成 | kitASP Docs</title>
   </head>
   <body class="td-page">
     <header>
@@ -140,7 +140,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
+  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
   data-offline-search-base-href="/"
 >
 
@@ -170,7 +170,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.87fa5834d1078dec66564f03799fe022e73e6a4c7597ba1f6b3645fcd383f0312b699d968b29d6c34177f23f238aa624962bbb74201f53bba114ccbc805b5f26.json"
+  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
   data-offline-search-base-href="/"
 >
 
@@ -1374,211 +1374,211 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1apurikshon-sukuriputonosapto" href="/docs/go-global5/topikku-1/apurikshon-sukuriputonosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1topikku" href="/docs/go-global5/topikku-1/topikku/">Load Balancing</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1automatic-windows-update-and-hotfix-compatibility" href="/docs/go-global5/topikku-1/automatic-windows-update-and-hotfix-compatibility/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1go-global-server-pafumansu-kaunta" href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/">GO-Globalホストパフォーマンスカウンタ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1deforutopurintano" href="/docs/go-global5/topikku-1/deforutopurintano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1saptono" href="/docs/go-global5/topikku-1/saptono/">委任サポートの設定要件</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1dpisukringu" href="/docs/go-global5/topikku-1/dpisukringu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1untitled-1" href="/docs/go-global5/topikku-1/untitled-1/">クライアントの印刷処理</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1go-global-server-pafumansu-kaunta" href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintadoraibahenoakusesuno" href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/">プリンタドライバへのアクセスの指定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1ipv6nosapto" href="/docs/go-global5/topikku-1/ipv6nosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global5topikku-1purintano" href="/docs/go-global5/topikku-1/purintano/">プリンタの構成</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-konpytano" href="/docs/go-global5/topikku-1/kuraianto-konpytano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintaapuretto" href="/docs/go-global5/topikku-1/purintaapuretto/">プリンタアプレット</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-purintanokasutamaizu" href="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1deforutopurintano" href="/docs/go-global5/topikku-1/deforutopurintano/">デフォルトプリンタの設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonofuiru-akusesu" href="/docs/go-global5/topikku-1/kuraiantonofuiru-akusesu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintawosuru" href="/docs/go-global5/topikku-1/purintawosuru/">プリンタ設定を編集する</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonosaundo" href="/docs/go-global5/topikku-1/kuraiantonosaundo/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1tesutopjiwosuru" href="/docs/go-global5/topikku-1/tesutopjiwosuru/">テストページを印刷する</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kurippubdonosapto" href="/docs/go-global5/topikku-1/kurippubdonosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintanodoraibawo" href="/docs/go-global5/topikku-1/purintanodoraibawo/">プリンタのドライバを変更</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1logfuiru" href="/docs/go-global5/topikku-1/logfuiru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintnorisetto" href="/docs/go-global5/topikku-1/purintnorisetto/">プリンター設定のリセット</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1mappingusaretadoraibu" href="/docs/go-global5/topikku-1/mappingusaretadoraibu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintdoraibumappingu" href="/docs/go-global5/topikku-1/purintdoraibumappingu/">プリンタードライブマッピング</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1maruchimonita" href="/docs/go-global5/topikku-1/maruchimonita/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-purintanokasutamaizu" href="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/">クライアントプリンタ名のカスタマイズ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1nasesshonpurosesu" href="/docs/go-global5/topikku-1/nasesshonpurosesu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kurippubdonosapto" href="/docs/go-global5/topikku-1/kurippubdonosapto/">クリップボードのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-1" href="/docs/go-global5/topikku-1/no-1/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonosaundo" href="/docs/go-global5/topikku-1/kuraiantonosaundo/">クライアントのサウンド</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-2" href="/docs/go-global5/topikku-1/no-2/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1shiriaru-ptooyobiparareru-pto" href="/docs/go-global5/topikku-1/shiriaru-ptooyobiparareru-pto/">シリアルポートおよびパラレルポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1paenosaptowonisuru" href="/docs/go-global5/topikku-1/paenosaptowonisuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonofuiru-akusesu" href="/docs/go-global5/topikku-1/kuraiantonofuiru-akusesu/">クライアントのファイルアクセス</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1pafumansu" href="/docs/go-global5/topikku-1/pafumansu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1mappingusaretadoraibu" href="/docs/go-global5/topikku-1/mappingusaretadoraibu/">マッピングされたドライブ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintaapuretto" href="/docs/go-global5/topikku-1/purintaapuretto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1maruchimonita" href="/docs/go-global5/topikku-1/maruchimonita/">マルチモニタ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintadoraibahenoakusesuno" href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-2" href="/docs/go-global5/topikku-1/no-2/">最大色深度の設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global5topikku-1purintano" href="/docs/go-global5/topikku-1/purintano/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-1" href="/docs/go-global5/topikku-1/no-1/">画像圧縮の無効化</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintanodoraibawo" href="/docs/go-global5/topikku-1/purintanodoraibawo/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-konpytano" href="/docs/go-global5/topikku-1/kuraianto-konpytano/">クライアントコンピュータ名の取得</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintawosuru" href="/docs/go-global5/topikku-1/purintawosuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1apurikshon-sukuriputonosapto" href="/docs/go-global5/topikku-1/apurikshon-sukuriputonosapto/">アプリケーションスクリプトのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintdoraibumappingu" href="/docs/go-global5/topikku-1/purintdoraibumappingu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1nasesshonpurosesu" href="/docs/go-global5/topikku-1/nasesshonpurosesu/">Advanced Session Process Configuration</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintnorisetto" href="/docs/go-global5/topikku-1/purintnorisetto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purokishinotonneringu" href="/docs/go-global5/topikku-1/purokishinotonneringu/">プロキシのトンネリング</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purokishinotonneringu" href="/docs/go-global5/topikku-1/purokishinotonneringu/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1ipv6nosapto" href="/docs/go-global5/topikku-1/ipv6nosapto/">IPv6のサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1sairentoinsutru" href="/docs/go-global5/topikku-1/sairentoinsutru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1smart-cardnosapto" href="/docs/go-global5/topikku-1/smart-cardnosapto/">Smart cardのサポート</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1saptono" href="/docs/go-global5/topikku-1/saptono/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1paenosaptowonisuru" href="/docs/go-global5/topikku-1/paenosaptowonisuru/">PAEのサポートを有効にする</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1shiriaru-ptooyobiparareru-pto" href="/docs/go-global5/topikku-1/shiriaru-ptooyobiparareru-pto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1pafumansu" href="/docs/go-global5/topikku-1/pafumansu/">パフォーマンス自動調整</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1smart-cardnosapto" href="/docs/go-global5/topikku-1/smart-cardnosapto/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1automatic-windows-update-and-hotfix-compatibility" href="/docs/go-global5/topikku-1/automatic-windows-update-and-hotfix-compatibility/">Automatic Windows Update and Hotfix Compatibility</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1support-request-wizard" href="/docs/go-global5/topikku-1/support-request-wizard/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1sairentoinsutru" href="/docs/go-global5/topikku-1/sairentoinsutru/">サイレントインストール</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1tesutopjiwosuru" href="/docs/go-global5/topikku-1/tesutopjiwosuru/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1logfuiru" href="/docs/go-global5/topikku-1/logfuiru/">Logファイル</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1topikku" href="/docs/go-global5/topikku-1/topikku/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1support-request-wizard" href="/docs/go-global5/topikku-1/support-request-wizard/">Support Request Wizard</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1untitled-1" href="/docs/go-global5/topikku-1/untitled-1/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1dpisukringu" href="/docs/go-global5/topikku-1/dpisukringu/">DPIスケーリング</a>
       
       
     </li>
@@ -1661,7 +1661,7 @@
 
 
 <a href="https://github.com/google/docsy-example/edit/master/content/ja/docs/go-global5/topikku-1/purintano.md" target="_blank"><i class="fa fa-edit fa-fw"></i> ページの編集</a>
-<a href="https://github.com/google/docsy-example/issues/new?title=" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
+<a href="https://github.com/google/docsy-example/issues/new?title=%e3%83%97%e3%83%aa%e3%83%b3%e3%82%bf%e3%81%ae%e6%a7%8b%e6%88%90" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
 
 
 <a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> プロジェクトのissueを作成</a>
@@ -1715,7 +1715,7 @@
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/go-global5/topikku-1/purintano/"></a>
+	<a href="/docs/go-global5/topikku-1/purintano/">プリンタの構成</a>
 </li>
 
 	</ol>
@@ -1723,10 +1723,9 @@
 
             
 <div class="td-content">
-	<h1></h1>
+	<h1>プリンタの構成</h1>
 	
-	<h1 id="プリンタの構成">プリンタの構成</h1>
-<p>GO-Globalクライアントがホストに接続すると、 <strong>プロキシプリンタ</strong>が自動的にホスト上に作成され、クライアントプリンタに印刷するためのインタフェースとして機能します。プロキシプリンタは、GO-Globalセッションで実行されているアプリケーションとクライアントプリンタ間のブリッジとしてGO-Globalがホスト上に設定するプリンタです。プロキシプリンタは自動または手動で設定できます。 プロキシプリンタを設定する場合は、ネイティブプリンタドライバが優先されます。</p>
+	<p>GO-Globalクライアントがホストに接続すると、 <strong>プロキシプリンタ</strong>が自動的にホスト上に作成され、クライアントプリンタに印刷するためのインタフェースとして機能します。プロキシプリンタは、GO-Globalセッションで実行されているアプリケーションとクライアントプリンタ間のブリッジとしてGO-Globalがホスト上に設定するプリンタです。プロキシプリンタは自動または手動で設定できます。 プロキシプリンタを設定する場合は、ネイティブプリンタドライバが優先されます。</p>
 <p>プロキシプリンタを設定する場合は、ネイティブプリンタドライバが推奨されます(使用可能で、設定によって使用可能な場合)。ネイティブドライバが利用できないとき、代わりに <strong>ユニバーサルプリンタドライバ</strong>が使用できます。</p>
 <p>管理者がプロキシプリンタを作成するときに使用するプリンタドライバを管理する方法はいくつかあります。クライアントプリンタからの設定は、プロキシプリンタにも反映されます。セッションが終了すると、セッションのプロキシプリンタは削除されます。セッションが切断されても、プロキシプリンタは削除されません。システム上のすべてのプロキシプリンタは、Application Publishing Serviceの起動時に削除されます。</p>
 <p>プロキシプリンタが設定されている場合、ネイティブプリンタドライバを選択するときの優先順位の階層があります。Windowsプリンタドライバオプションがクラスタマネージャで無効になっている場合、この階層は適用されません。</p>
@@ -1781,118 +1780,6 @@
   
     
       
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
-        
-        
-      
-    
-  
-    
-      
     
   
     
@@ -1900,6 +1787,102 @@
         
           
           
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
         
       
     
@@ -1980,9 +1963,9 @@
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
-        <a href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/"></a>
+        <a href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/">プリンタドライバへのアクセスの指定</a>
       </div><div class="xPrevNextLink_next">
-        <a href="/docs/go-global5/topikku-1/purintanodoraibawo/"></a>
+        <a href="/docs/go-global5/topikku-1/purintaapuretto/">プリンタアプレット</a>
       </div></div>
   
 

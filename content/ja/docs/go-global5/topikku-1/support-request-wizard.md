@@ -1,5 +1,9 @@
-# Support Request Wizard
-
+---
+title: "Support Request Wizard"
+linkTitle: ""
+weight: 34
+type: "docs"
+---
 >この項目はKitASPでのサポート項目ではございません
 
 The GO-Global Host includes a Support Request Wizard that gathers log files and information about the host that can be sent to technical support. Administrators can run the Support Request Wizard from the Cluster Manager by clicking Help | Support Request Wizard or via the Start menu by clicking Programs | GraphOn GO-Global 5 | Tools | Support Request Wizard.
