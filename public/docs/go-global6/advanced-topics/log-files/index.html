@@ -25,9 +25,9 @@
 全てのログファイルは、クライアントマシン関連でもホストマシン関連でも、GO-Globalホスト上のLog フォルダ(例：D:\Program Files\GraphOn\GO-Global\Log)に保存されます。Logフォルダには、 Backup、 Codes、 Templatesの3つのサブフォルダがあります。これらのサブフォルダを削除しないよう注意してください。GO-Globalのメッセージは、接頭語 aps の後にApplication Publishing Serviceが開始された日付と時刻(ミリ秒未満は四捨五入)が続く形でログファイルに記録されます(例: aps_2013-04-04_09-55-47-636.html)。Application Publishing Serviceが開始されるたびに、新しいログファイルが作成されます。最新の日時スタンプのログファイルに、現行または最後の Application Publishing Serviceインスタンスでのメッセージが含まれています。
 GO-Globalの実行時に検出された問題は、ログファイルのエントリとして記述されています。各エントリは、項目番号と日時スタンプによって固有識別された、イベントやプログラムエラーの説明です。 GraphOn Technical Supportは、この情報を利用して、障害の原因を判断し解決策を決定します。
 また、ログファイルのエントリにはメッセージ識別用の接頭語がついています。それにより、関連する個別ユーザのセッションやアプリケーションが判断できます。イベントが特定セッションのコンテキスト内で発生した場合、そのセッション名がメッセージの最初に表示されます(例:SuzyG on Server1)。イベントがApplication Publishing Serviceへの接続(クライアントまたはアプリケーションからの接続)のコンテキスト内で発生した場合、その接続プロセスの名称(例: pw(1244))がメッセージの接頭語に含まれます。この例(pw(1244))の場合、Program Windowプロセスと Application Publishing Service間の接続中に障害が発生しています。1244は、そのイベントが発生したプロセスのIDです。メッセージの最初に接続名apsが含まれている場合、そのイベントは Application Publishing Service で発生していますが、他のプロセスとの接続には関係ありません。
-Logファイルの新規保存場所の選択 デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Admin Consoleの **[Host Options]**ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。
+Logファイルの新規保存場所の選択 デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Admin Consoleの [Host Options]ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。
  Logファイルの新規保存場所を選択する方法
- Admin Consoleで、[Tools | Hosts Options]の順にクリックします。 **[Log]**をクリックします。 **[Folder]**編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。  Logファイルの保存場所としてリモートシステムのパスを指定することはできません。すなわち、UNCパスやマップされたネットワークドライブを[Folder]ボックスで指定すると、&ldquo;Please specify a usable Windows folder where log files may be written.&rdquo; というエラーメッセージが表示されます。
+ Admin Consoleで、[Tools | Hosts Options]の順にクリックします。 [Log]をクリックします。 [Folder]編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。  Logファイルの保存場所としてリモートシステムのパスを指定することはできません。すなわち、UNCパスやマップされたネットワークドライブを[Folder]ボックスで指定すると、&ldquo;Please specify a usable Windows folder where log files may be written.&rdquo; というエラーメッセージが表示されます。
  Backupフォルダと既存のLogファイルを、 Templatesおよび Codesサブフォルダと一緒に新規保存場所に移動してください。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/advanced-topics/log-files/" />
@@ -37,9 +37,9 @@ Logファイルの新規保存場所の選択 デフォルトでは、Logファ�
 全てのログファイルは、クライアントマシン関連でもホストマシン関連でも、GO-Globalホスト上のLog フォルダ(例：D:\Program Files\GraphOn\GO-Global\Log)に保存されます。Logフォルダには、 Backup、 Codes、 Templatesの3つのサブフォルダがあります。これらのサブフォルダを削除しないよう注意してください。GO-Globalのメッセージは、接頭語 aps の後にApplication Publishing Serviceが開始された日付と時刻(ミリ秒未満は四捨五入)が続く形でログファイルに記録されます(例: aps_2013-04-04_09-55-47-636.html)。Application Publishing Serviceが開始されるたびに、新しいログファイルが作成されます。最新の日時スタンプのログファイルに、現行または最後の Application Publishing Serviceインスタンスでのメッセージが含まれています。
 GO-Globalの実行時に検出された問題は、ログファイルのエントリとして記述されています。各エントリは、項目番号と日時スタンプによって固有識別された、イベントやプログラムエラーの説明です。 GraphOn Technical Supportは、この情報を利用して、障害の原因を判断し解決策を決定します。
 また、ログファイルのエントリにはメッセージ識別用の接頭語がついています。それにより、関連する個別ユーザのセッションやアプリケーションが判断できます。イベントが特定セッションのコンテキスト内で発生した場合、そのセッション名がメッセージの最初に表示されます(例:SuzyG on Server1)。イベントがApplication Publishing Serviceへの接続(クライアントまたはアプリケーションからの接続)のコンテキスト内で発生した場合、その接続プロセスの名称(例: pw(1244))がメッセージの接頭語に含まれます。この例(pw(1244))の場合、Program Windowプロセスと Application Publishing Service間の接続中に障害が発生しています。1244は、そのイベントが発生したプロセスのIDです。メッセージの最初に接続名apsが含まれている場合、そのイベントは Application Publishing Service で発生していますが、他のプロセスとの接続には関係ありません。
-Logファイルの新規保存場所の選択 デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Admin Consoleの **[Host Options]**ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。
+Logファイルの新規保存場所の選択 デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Admin Consoleの [Host Options]ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。
  Logファイルの新規保存場所を選択する方法
- Admin Consoleで、[Tools | Hosts Options]の順にクリックします。 **[Log]**をクリックします。 **[Folder]**編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。  Logファイルの保存場所としてリモートシステムのパスを指定することはできません。すなわち、UNCパスやマップされたネットワークドライブを[Folder]ボックスで指定すると、&ldquo;Please specify a usable Windows folder where log files may be written.&rdquo; というエラーメッセージが表示されます。
+ Admin Consoleで、[Tools | Hosts Options]の順にクリックします。 [Log]をクリックします。 [Folder]編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。  Logファイルの保存場所としてリモートシステムのパスを指定することはできません。すなわち、UNCパスやマップされたネットワークドライブを[Folder]ボックスで指定すると、&ldquo;Please specify a usable Windows folder where log files may be written.&rdquo; というエラーメッセージが表示されます。
  Backupフォルダと既存のLogファイルを、 Templatesおよび Codesサブフォルダと一緒に新規保存場所に移動してください。">
 <meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
 <meta itemprop="wordCount" content="169">
@@ -52,9 +52,9 @@ Logファイルの新規保存場所の選択 デフォルトでは、Logファ�
 全てのログファイルは、クライアントマシン関連でもホストマシン関連でも、GO-Globalホスト上のLog フォルダ(例：D:\Program Files\GraphOn\GO-Global\Log)に保存されます。Logフォルダには、 Backup、 Codes、 Templatesの3つのサブフォルダがあります。これらのサブフォルダを削除しないよう注意してください。GO-Globalのメッセージは、接頭語 aps の後にApplication Publishing Serviceが開始された日付と時刻(ミリ秒未満は四捨五入)が続く形でログファイルに記録されます(例: aps_2013-04-04_09-55-47-636.html)。Application Publishing Serviceが開始されるたびに、新しいログファイルが作成されます。最新の日時スタンプのログファイルに、現行または最後の Application Publishing Serviceインスタンスでのメッセージが含まれています。
 GO-Globalの実行時に検出された問題は、ログファイルのエントリとして記述されています。各エントリは、項目番号と日時スタンプによって固有識別された、イベントやプログラムエラーの説明です。 GraphOn Technical Supportは、この情報を利用して、障害の原因を判断し解決策を決定します。
 また、ログファイルのエントリにはメッセージ識別用の接頭語がついています。それにより、関連する個別ユーザのセッションやアプリケーションが判断できます。イベントが特定セッションのコンテキスト内で発生した場合、そのセッション名がメッセージの最初に表示されます(例:SuzyG on Server1)。イベントがApplication Publishing Serviceへの接続(クライアントまたはアプリケーションからの接続)のコンテキスト内で発生した場合、その接続プロセスの名称(例: pw(1244))がメッセージの接頭語に含まれます。この例(pw(1244))の場合、Program Windowプロセスと Application Publishing Service間の接続中に障害が発生しています。1244は、そのイベントが発生したプロセスのIDです。メッセージの最初に接続名apsが含まれている場合、そのイベントは Application Publishing Service で発生していますが、他のプロセスとの接続には関係ありません。
-Logファイルの新規保存場所の選択 デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Admin Consoleの **[Host Options]**ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。
+Logファイルの新規保存場所の選択 デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Admin Consoleの [Host Options]ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。
  Logファイルの新規保存場所を選択する方法
- Admin Consoleで、[Tools | Hosts Options]の順にクリックします。 **[Log]**をクリックします。 **[Folder]**編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。  Logファイルの保存場所としてリモートシステムのパスを指定することはできません。すなわち、UNCパスやマップされたネットワークドライブを[Folder]ボックスで指定すると、&ldquo;Please specify a usable Windows folder where log files may be written.&rdquo; というエラーメッセージが表示されます。
+ Admin Consoleで、[Tools | Hosts Options]の順にクリックします。 [Log]をクリックします。 [Folder]編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。  Logファイルの保存場所としてリモートシステムのパスを指定することはできません。すなわち、UNCパスやマップされたネットワークドライブを[Folder]ボックスで指定すると、&ldquo;Please specify a usable Windows folder where log files may be written.&rdquo; というエラーメッセージが表示されます。
  Backupフォルダと既存のLogファイルを、 Templatesおよび Codesサブフォルダと一緒に新規保存場所に移動してください。"/>
 
 
@@ -146,7 +146,7 @@ Logファイルの新規保存場所の選択 デフォルトでは、Logファ�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
+  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
   data-offline-search-base-href="/"
 >
 
@@ -176,7 +176,7 @@ Logファイルの新規保存場所の選択 デフォルトでは、Logファ�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
+  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
   data-offline-search-base-href="/"
 >
 
@@ -891,19 +891,19 @@ Logファイルの新規保存場所の選択 デフォルトでは、Logファ�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixe382afe383a9e382a4e382a2e383b3e38388e382ade383bce3839be38299e383bce38388e38299_ime-e794a8e382b5e3839be3829ae383bce38388e381aee8a8ade5ae9a-kitasp-docshtml" href="/docs/go-global6/appendix/%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_ime-%E7%94%A8%E3%82%B5%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A-kitasp-docs.html/">クライアントキーボード/IME 用サポートの設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixkuraiantokbdowonisuru" href="/docs/go-global6/appendix/kuraiantokbdowonisuru/">自動クライアントキーボードを無効にする方法</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixe382ade383bce3839be38299e383bce38388e38299e381a8imee381aee8bfbde58aa0e382a4e383b3e382b9e38388e383bce383ab-kitasp-docshtml" href="/docs/go-global6/appendix/%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%81%A8ime%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-kitasp-docs.html/">キーボードとIMEの追加インストール</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixkuraiantokbdooyobimatahaimenosaptono" href="/docs/go-global6/appendix/kuraiantokbdooyobimatahaimenosaptono/">クライアントキーボード/IME 用サポートの設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixe887aae58b95e382afe383a9e382a4e382a2e383b3e38388e382ade383bce3839be38299e383bce38388e38299e38292e784a1e58ab9e381abe38199e3828b-kitasp-docshtml" href="/docs/go-global6/appendix/%E8%87%AA%E5%8B%95%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B-kitasp-docs.html/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixkbdotoimenoinsutru" href="/docs/go-global6/appendix/kbdotoimenoinsutru/">キーボードとIMEの追加インストール</a>
       
       
     </li>
@@ -1831,13 +1831,13 @@ Logファイルの新規保存場所の選択 デフォルトでは、Logファ�
 <p>GO-Globalの実行時に検出された問題は、ログファイルのエントリとして記述されています。各エントリは、項目番号と日時スタンプによって固有識別された、イベントやプログラムエラーの説明です。 GraphOn Technical Supportは、この情報を利用して、障害の原因を判断し解決策を決定します。</p>
 <p>また、ログファイルのエントリにはメッセージ識別用の接頭語がついています。それにより、関連する個別ユーザのセッションやアプリケーションが判断できます。イベントが特定セッションのコンテキスト内で発生した場合、そのセッション名がメッセージの最初に表示されます(例:SuzyG on Server1)。イベントがApplication Publishing Serviceへの接続(クライアントまたはアプリケーションからの接続)のコンテキスト内で発生した場合、その接続プロセスの名称(例: pw(1244))がメッセージの接頭語に含まれます。この例(pw(1244))の場合、Program Windowプロセスと Application Publishing Service間の接続中に障害が発生しています。1244は、そのイベントが発生したプロセスのIDです。メッセージの最初に接続名apsが含まれている場合、そのイベントは Application Publishing Service で発生していますが、他のプロセスとの接続には関係ありません。</p>
 <h2 id="logファイルの新規保存場所の選択">Logファイルの新規保存場所の選択</h2>
-<p>デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Admin Consoleの **[Host Options]**ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。</p>
+<p>デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Admin Consoleの [<strong>Host Options</strong>]ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。</p>
 <h3 id="heading"></h3>
 <p>Logファイルの新規保存場所を選択する方法</p>
 <ol>
 <li>Admin Consoleで、[Tools | Hosts Options]の順にクリックします。</li>
-<li>**[Log]**をクリックします。</li>
-<li>**[Folder]**編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。</li>
+<li>[<strong>Log</strong>]をクリックします。</li>
+<li>[<strong>Folder</strong>]編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。</li>
 </ol>
 <p>Logファイルの保存場所としてリモートシステムのパスを指定することはできません。すなわち、UNCパスやマップされたネットワークドライブを[Folder]ボックスで指定すると、&ldquo;Please specify a usable Windows folder where log files may be written.&rdquo; というエラーメッセージが表示されます。</p>
 <blockquote>
@@ -1854,9 +1854,9 @@ Logファイルの新規保存場所の選択 デフォルトでは、Logファ�
 </code></pre><h3 id="出力レベルの設定方法">出力レベルの設定方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools | Hosts Options]の順にクリックします。</li>
-<li>**[Log]**をクリックします。</li>
-<li>**[Output level]**ボックスに上記の数値の 1 つを入力します。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>Log</strong>]をクリックします。</li>
+<li>[<strong>Output level</strong>]ボックスに上記の数値の 1 つを入力します。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 </ol>
 <blockquote>
 <p>Logの出力レベルを 5 または 6 に設定した場合、ホストで生成されるLogファイルの容量は非常に大きくなるため、パフォーマンスや拡張性に悪影響が出る場合があります。したがって、GraphOn社や代理店から特別な指示がない限り、Logの出力レベルをまたは6設定すべきではありません。</p>
@@ -1867,22 +1867,22 @@ Logファイルの新規保存場所の選択 デフォルトでは、Logファ�
 <h3 id="logファイルの削除方法">Logファイルの削除方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools | Hosts Options]の順にクリックします。</li>
-<li>**[Log]**をクリックします。</li>
-<li>**[Maintenance]**のところで **[Delete]**を選択します。</li>
+<li>[<strong>Log</strong>]をクリックします。</li>
+<li>[<strong>Maintenance</strong>]のところで [<strong>Delete</strong>]を選択します。</li>
 <li>削除するまでのLogファイルの保存期間を指定します(日単位)。</li>
 <li>Logファイルのサイズがどのくらいに達したら削除するか指定します(MB 単位)。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 <li><strong>GO-Global Application Publishing Service</strong>を再起動します。</li>
 </ol>
-<p><img src="/img/7-25-1.png" alt="7-25-1"></p>
+<p><img src="/images/7-25-1.png" alt="7-25-1"></p>
 <h3 id="logファイルのバックアップ方法">Logファイルのバックアップ方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools | Hosts Options]の順にクリックします。</li>
-<li>**[Log]**をクリックします。</li>
+<li>[<strong>Log</strong>]をクリックします。</li>
 <li>[Maintenance]のところで [Back up]を選択します。</li>
 <li>どのくらいの時間が経過したらログファイルをLogフォルダのBackupサブディレクトリに移動するか指定します (日単位)。</li>
 <li>ログファイルがどのくらいの容量に達したらLogフォルダのBackupサブディレクトリに移動するか指定します(MB 単位)。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 <li>GO-Global Application Publishing Serviceを再起動します。</li>
 </ol>
 <p>Application Publishing Serviceは30分ごと、および開始されるたびに、 <strong>Log</strong>フォルダ から指定した保存期間またはサイズに達したファイルを探し出します。その後、それらのファイルを削除するか、Logフォルダ内の <strong>Backup</strong>サブディレクトリに移動します。ログファイルの整理中に、現行のログファイルが指定の保存期間またはサイズに達したら、Application Publishing Serviceはそのログファイルを閉じて、新規作成したログファイルをインストールします。</p>

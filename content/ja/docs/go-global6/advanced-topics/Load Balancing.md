@@ -23,7 +23,7 @@ Independent hosts are GO-Global Hosts that do not interact with other GO-Global 
 
 ## **GO-Global Hosts**
 
-![7-1-1](/img/7-1-1.png) 
+![7-1-1](/images/7-1-1.png) 
 
 ## Relay Servers
 
@@ -132,7 +132,7 @@ The relay server generally has two network interfaces: one that is accessible fr
 
 The diagram below illustrates the recommended configuration for providing access to hosts on an internal network. The arrows show the direction in which the connections are made. Hosts connect to the relay server, not the other way around. As a result, the internal firewall does not need to allow any connections from the DMZ to the internal network. With this configuration, neither machines on the internet nor machines in the DMZ can connect directly to the hosts on the internal network. It is a highly secure configuration.
 
-![7-1-2](/img/7-1-2.png) 
+![7-1-2](/images/7-1-2.png) 
 
 ## Relay Server Failure Recovery
 
@@ -170,7 +170,7 @@ The Application Publishing Service can be configured to automatically restart if
 
 In this configuration, if the primary relay server fails for any reason, dependent hosts and clients automatically reconnect to the failover server and users are generally reconnected to their sessions within 1-2 minutes of the primary relay server failure. This is illustrated in the diagram below.
 
-![7-1-3(/img/7-1-3.png) 
+![7-1-3(/images/7-1-3.png) 
 
 If users' sessions fail to reconnect automatically, increase the value of the autoreconnect parameter in client URLs, web pages and shortcuts to a number greater than 5 (the default).
 

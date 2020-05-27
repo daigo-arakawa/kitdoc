@@ -100,26 +100,26 @@
 &lt;p&gt;信頼されたサーバ証明書をdependent hostにインポートするには、Microsoft管理コンソールにポリシーを追加します。これは自己証明書を使用する場合にのみ必要です。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;dependent hostで、[スタート | ファイル名を指定して実行]の順にクリックします。[名前]ボックス内に &lt;strong&gt;mmc&lt;/strong&gt;と入力します。Microsoft Management Console が開きます。&lt;/li&gt;
-&lt;li&gt;[コンソール |スナップインの追加と削除]の順にクリックして、 **[追加]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[コンソール |スナップインの追加と削除]の順にクリックして、 [&lt;strong&gt;追加&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;[利用できるスタンドアロンスナップイン]の一覧から [証明書]を選択して、[追加]をクリックします。&lt;/li&gt;
-&lt;li&gt;**[証明書スナップイン]**ダイアログで[コンピュータアカウント]を選択し、 **[次へ]**をクリックします。&lt;/li&gt;
-&lt;li&gt;**[コンピュータの選択]**ダイアログで、[ローカルコンピュータ]を選択します。[完了]をクリックします。&lt;/li&gt;
-&lt;li&gt;**[スタンドアロンスナップインの追加]**ダイアログを閉じます。&lt;/li&gt;
-&lt;li&gt;**[スナップインの追加と削除]**ダイアログに戻り、 **[証明書(ローカルコンピュータ)]**をクリックします。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
-&lt;li&gt;[コンソールルート]から **[証明書(ローカルコンピュータ)]**を展開します。 &lt;strong&gt;[信頼されたルート証明機関]&lt;/strong&gt; をクリックします。右の枠内にある **[証明書]**を右クリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;証明書スナップイン&lt;/strong&gt;]ダイアログで[コンピュータアカウント]を選択し、 [&lt;strong&gt;次へ&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;コンピュータの選択&lt;/strong&gt;]ダイアログで、[ローカルコンピュータ]を選択します。[完了]をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;スタンドアロンスナップインの追加&lt;/strong&gt;]ダイアログを閉じます。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;スナップインの追加と削除&lt;/strong&gt;]ダイアログに戻り、 [&lt;strong&gt;証明書(ローカルコンピュータ)&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;[コンソールルート]から [&lt;strong&gt;証明書(ローカルコンピュータ)&lt;/strong&gt;]を展開します。 [&lt;strong&gt;信頼されたルート証明機関&lt;/strong&gt;] をクリックします。右の枠内にある [&lt;strong&gt;証明書&lt;/strong&gt;]を右クリックします。&lt;/li&gt;
 &lt;li&gt;[すべてのタスク |インポート]の順に選択します。証明書 &lt;strong&gt;ca.cert&lt;/strong&gt;を表示します。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/8-4-1.png&#34; alt=&#34;8-4-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/8-4-1.png&#34; alt=&#34;8-4-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;サーバキーと証明書のファイル(server.key、server.crtなど)は同じベースファイル名を使用し、GO-Globalホストの同じディレクトリに配置する必要があります。dependent hostにはSSL証明書は必要ありませんが、指定されたrelay serverには、CAによって署名され、dependent hostで認識される有効なSSL証明書が必要です。これらの条件が満たされているかどうかは、以下の方法で確認できます。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;dependent hostで、ネイティブのWindowsクライアントを実行します。&lt;/li&gt;
-&lt;li&gt;**[マイコンピュータ]**を右クリックします。&lt;/li&gt;
-&lt;li&gt;**[エクスプローラ]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;マイコンピュータ&lt;/strong&gt;]を右クリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;エクスプローラ&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;\GO-Global\Programsディレクトリを表示します。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;gg-client.exe&lt;/strong&gt;をダブルクリックします。&lt;/li&gt;
 &lt;li&gt;Admin Consoleで指定されたrelay serverの名前を入力します。&lt;/li&gt;
-&lt;li&gt;relay serverのSSL証明書が、CAによって署名され、dependent hostで認識される有効な証明書の場合、 **[Security Alert]**ダイアログは表示されません。 **[Security Alert]**ダイアログが表示された場合、dependent hostは、relay serverに接続できません。&lt;/li&gt;
+&lt;li&gt;relay serverのSSL証明書が、CAによって署名され、dependent hostで認識される有効な証明書の場合、 [&lt;strong&gt;Security Alert&lt;/strong&gt;]ダイアログは表示されません。 [&lt;strong&gt;Security Alert&lt;/strong&gt;]ダイアログが表示された場合、dependent hostは、relay serverに接続できません。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;caキーと証明書の作成&#34;&gt;CAキーと証明書の作成&lt;/h2&gt;
 &lt;p&gt;認証局(CA)を作成するには、まずRSA秘密鍵を生成する必要があります。この鍵が悪用されると、不明なホストを承認ホストとする偽の証明書が作成される恐れがあるため、この鍵は必ず秘密にしておく必要があります。認証局の整合性を維持することが非常に重要です。CAキーを作成するには、次のコマンドを使用します。&lt;/p&gt;
@@ -188,11 +188,36 @@ Email Address:CA の担当者に証明書に関する問い合わせを送信す
     </item>
     
     <item>
-      <title>Docs: クライアントキーボード/IME 用サポートの設定</title>
-      <link>/docs/go-global6/appendix/%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_ime-%E7%94%A8%E3%82%B5%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A-kitasp-docs.html/</link>
+      <title>Docs: 自動クライアントキーボードを無効にする方法</title>
+      <link>/docs/go-global6/appendix/kuraiantokbdowonisuru/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/appendix/%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_ime-%E7%94%A8%E3%82%B5%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A-kitasp-docs.html/</guid>
+      <guid>/docs/go-global6/appendix/kuraiantokbdowonisuru/</guid>
+      <description>
+        
+        
+        &lt;p&gt;自動クライアントキーボードを使用すると、管理者はGO-Globalホストを任意のクライアントキーボードで自動的に機能するように設定できます。この機能はデフォルトで有効になっていますが、HostProperties.xmlファイルを編集して無効にすることができます。&lt;/p&gt;
+&lt;h3 id=&#34;自動クライアントキーボードを無効にする方法&#34;&gt;自動クライアントキーボードを無効にする方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;HostProperties.xmlファイルを探します(例：C:\ProgramData\GraphOn\GO-Global)&lt;/li&gt;
+&lt;li&gt;ワードパッドでHostProperties.xmlを開き、ClientSideIMEEnabledプロパティを探します。&lt;/li&gt;
+&lt;li&gt;ClientSideIMEEnabledプロパティをfalseに設定します。&lt;/li&gt;
+&lt;li&gt;ファイルを保存してください。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;自動クライアントキーボードがHostProperties.xmlで無効になっている場合でも、次のようにユーザーごとに有効にできます。&lt;/p&gt;
+&lt;p&gt;クライアントショートカットに-kb ClientSideIMEを追加します。&lt;/p&gt;
+&lt;p&gt;たとえば、Windowsクライアントの場合：&amp;ldquo;C:\Program Files\GraphOn\GO-Global\Client\gg-client.exe&amp;rdquo; -kb ClientSideIME&lt;/p&gt;
+&lt;p&gt;または、GO-GlobalがWebブラウザから実行されている場合は、logon.htmlページを参照するハイパーリンクに次の引数を追加します。&amp;amp;keyboard = ClientSideIME たとえば、&lt;a href=&#34;http://hostname/goglobal/logon.html?direct=true&amp;amp;keyboard=ClientSideIME&#34;&gt;http://hostname/goglobal/logon.html?direct=true&amp;amp;keyboard=ClientSideIME&lt;/a&gt;のようになります。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: クライアントキーボード/IME 用サポートの設定</title>
+      <link>/docs/go-global6/appendix/kuraiantokbdooyobimatahaimenosaptono/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/appendix/kuraiantokbdooyobimatahaimenosaptono/</guid>
       <description>
         
         
@@ -204,10 +229,10 @@ Email Address:CA の担当者に証明書に関する問い合わせを送信す
     
     <item>
       <title>Docs: キーボードとIMEの追加インストール</title>
-      <link>/docs/go-global6/appendix/%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%81%A8ime%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-kitasp-docs.html/</link>
+      <link>/docs/go-global6/appendix/kbdotoimenoinsutru/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/appendix/%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%81%A8ime%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-kitasp-docs.html/</guid>
+      <guid>/docs/go-global6/appendix/kbdotoimenoinsutru/</guid>
       <description>
         
         
@@ -469,32 +494,6 @@ Layout Text = Japanese Input System（MS-IME2002）
 &lt;p&gt;サインインダイアログが表示されているときは、ユーザは入力ロケールを切り替えることができません。 GO-Global &lt;strong&gt;ホスト&lt;/strong&gt;のデフォルト言語の入力ロケールが使用されます。&lt;/p&gt;
 &lt;p&gt;Windowsクライアントでは、サーバベースのアプリケーションの選択された入力ロケールは、クライアントコンピュータのシステムトレイに表示されません。&lt;/p&gt;
 &lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: </title>
-      <link>/docs/go-global6/appendix/%E8%87%AA%E5%8B%95%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B-kitasp-docs.html/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/appendix/%E8%87%AA%E5%8B%95%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B-kitasp-docs.html/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;自動クライアントキーボードを無効にする方法&#34;&gt;自動クライアントキーボードを無効にする方法&lt;/h1&gt;
-&lt;p&gt;自動クライアントキーボードを使用すると、管理者はGO-Globalホストを任意のクライアントキーボードで自動的に機能するように設定できます。この機能はデフォルトで有効になっていますが、HostProperties.xmlファイルを編集して無効にすることができます。&lt;/p&gt;
-&lt;h3 id=&#34;自動クライアントキーボードを無効にする方法-1&#34;&gt;自動クライアントキーボードを無効にする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;HostProperties.xmlファイルを探します(例：C:\ProgramData\GraphOn\GO-Global)&lt;/li&gt;
-&lt;li&gt;ワードパッドでHostProperties.xmlを開き、ClientSideIMEEnabledプロパティを探します。&lt;/li&gt;
-&lt;li&gt;ClientSideIMEEnabledプロパティをfalseに設定します。&lt;/li&gt;
-&lt;li&gt;ファイルを保存してください。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;自動クライアントキーボードがHostProperties.xmlで無効になっている場合でも、次のようにユーザーごとに有効にできます。&lt;/p&gt;
-&lt;p&gt;クライアントショートカットに-kb ClientSideIMEを追加します。&lt;/p&gt;
-&lt;p&gt;たとえば、Windowsクライアントの場合：&amp;ldquo;C:\Program Files\GraphOn\GO-Global\Client\gg-client.exe&amp;rdquo; -kb ClientSideIME&lt;/p&gt;
-&lt;p&gt;または、GO-GlobalがWebブラウザから実行されている場合は、logon.htmlページを参照するハイパーリンクに次の引数を追加します。&amp;amp;keyboard = ClientSideIME たとえば、&lt;a href=&#34;http://hostname/goglobal/logon.html?direct=true&amp;amp;keyboard=ClientSideIME&#34;&gt;http://hostname/goglobal/logon.html?direct=true&amp;amp;keyboard=ClientSideIME&lt;/a&gt;のようになります。&lt;/p&gt;
 
       </description>
     </item>

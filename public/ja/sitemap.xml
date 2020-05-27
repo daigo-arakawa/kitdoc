@@ -4,7 +4,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/go-global-admin-console/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -34,7 +34,7 @@
   
   <url>
     <loc>/docs/go-global6/running-go-global/go-global-app/</loc>
-    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -69,7 +69,7 @@
   
   <url>
     <loc>/docs/go-global6/mobile-app-toolbar-editor/mobile-app-toolbar-editor/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -104,12 +104,12 @@
   
   <url>
     <loc>/docs/go-global6/mobile-app-toolbar-editor/creating-custom-toolbars/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-global6/running-go-global/go-global-web-app/</loc>
-    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -159,7 +159,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/managing-applications/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -194,7 +194,7 @@
   
   <url>
     <loc>/docs/go-global6/running-go-global/running-the-go-global-web-app/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -229,7 +229,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/managing-sessions-and-processes/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -239,7 +239,7 @@
   
   <url>
     <loc>/docs/go-global6/administering-user-accounts/setting-up-a-network-printer/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -299,12 +299,12 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/monitoring-host-activity/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-global6/running-go-global/mac-os-x-app/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -354,7 +354,7 @@
   
   <url>
     <loc>/docs/go-global6/running-go-global/go-global-startup-parameters/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -379,7 +379,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/managing-go-global-licenses/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -403,6 +403,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global6/appendix/kuraiantokbdowonisuru/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/configuring-the-host/running-go-global-through-apache-http-server/</loc>
     <lastmod>2020-05-27T16:35:56+09:00</lastmod>
   </url>
@@ -418,8 +422,7 @@
   </url>
   
   <url>
-    <loc>/docs/go-global6/appendix/%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_ime-%E7%94%A8%E3%82%B5%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A-kitasp-docs.html/</loc>
-    <lastmod>2020-05-26T13:46:18+09:00</lastmod>
+    <loc>/docs/go-global6/appendix/kuraiantokbdooyobimatahaimenosaptono/</loc>
   </url>
   
   <url>
@@ -444,6 +447,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/saretasbano/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -457,8 +461,7 @@
   </url>
   
   <url>
-    <loc>/docs/go-global6/appendix/%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%81%A8ime%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-kitasp-docs.html/</loc>
-    <lastmod>2020-05-26T13:46:18+09:00</lastmod>
+    <loc>/docs/go-global6/appendix/kbdotoimenoinsutru/</loc>
   </url>
   
   <url>
@@ -473,6 +476,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/pasuwdono/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -517,6 +521,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/sesshonno/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -536,6 +541,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/kuraiantonotaimuzn/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -560,11 +566,12 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/akaunto/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-global6/running-go-global/automatic-client-updates/</loc>
-    <lastmod>2020-03-05T15:26:56+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -584,6 +591,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/sesshonnoopushon/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -598,6 +606,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/hosutono/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -612,6 +621,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/sesshonnoshattoopushon/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -641,6 +651,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/windows-compatibility-assurance/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -665,6 +676,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/go-global-updates/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -674,6 +686,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/kuraiantomashinkaranogo-globalhosutono/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -688,6 +701,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/admin-consolenokbdoshtokatto/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -707,7 +721,7 @@
   
   <url>
     <loc>/docs/go-global6/go-global-admin-console/</loc>
-    <lastmod>2020-03-03T14:08:37+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -777,7 +791,7 @@
   
   <url>
     <loc>/docs/go-global6/running-go-global/</loc>
-    <lastmod>2020-03-04T09:47:29+09:00</lastmod>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -977,11 +991,6 @@
   
   <url>
     <loc>/docs/go-global5/yzaakauntono/yza-purofuiruno/fuiru-akusesuno/</loc>
-    <lastmod>2020-05-26T13:46:18+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/go-global6/appendix/%E8%87%AA%E5%8B%95%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B-kitasp-docs.html/</loc>
     <lastmod>2020-05-26T13:46:18+09:00</lastmod>
   </url>
   

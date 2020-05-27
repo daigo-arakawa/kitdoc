@@ -24,7 +24,7 @@
 <meta property="og:description" content="ディスプレイを拡大縮小するように設定されている高解像度クライアントデバイス上でGO-Global Appを実行すると、GO-Global Appは、セッションで実行されているアプリケーションのテキストとコントロールが、クライアントデバイスでローカルに実行されているアプリケーションのテキストとコントロールと同じサイズになるように、GO-Globalセッションのグラフィカル出力を拡大しようとします。たとえば、クライアントコンピュータが表示を200％拡大するように設定されている場合、GO-Global Appはホストから受信したグラフィックスコマンド(テキスト文字や画像など)を200％拡大します。
 クライアントが画像やテキストなどのグラフィックオブジェクトを引き伸ばすとき、それらの品質はオブジェクトが100％で描画されるときほど良くありません。たとえば、テキスト文字の端は、引き伸ばしたときほど滑らかではありません。文字がブロック状またはぼやけて見えることがあります。高解像度の画面(ディスプレイの拡大縮小が最も頻繁に有効になっている場合)では、これらの効果は通常あまり目立ちません。高解像度の画面（ディスプレイの拡大縮小が最も頻繁に有効になっている場合）では、これらの効果は通常あまり目立ちません。 ただし、低解像度の画面では、特に表示倍率が125％などの整数でない値に設定されている場合、影響が非常に顕著になります。 これらの影響が顕著な場合は、GO-Globalのスケーリング機能を次のように無効にすることができます。
  クライアントがショートカットから実行する時は、クライアントのコマンドラインに-clientdpi 0を追加します。 クライアントがブラウザから実行されている場合は、URLに＆clientdpi = falseを追加します。 すべてのユーザーに対してホスト上の機能を無効にするには、ホスト上のHostProperties.xmlファイルのClientDPIScalingEnabledプロパティの値を「true」から「false」に変更します。  GO-Globalのスケーリング機能が無効になっていると、GO-Globalはホスト上のコントロールパネルのディスプレイアプレットでユーザに指定されたスケールファクタを使用してセッションをレンダリングします。この構成では、管理者は、表示アプレットをユーザに公開することによってユーザにDPI設定の変更を許可することができます。
-表示アプレットをユーザに公開する方法  ホスト上のコンソールに管理者としてサインインします。 表示アプレットへのショートカットを作成します。 a.[スタート | コントロール]の順にクリックしてます。 b. **[表示]**を右クリックします。 ショートカットがデスクトップに追加されます。 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。 ユーザにショートカットを公開する。 a.Admin Consoleを実行し、 **[Application | Add]**の順にクリックします b. **[Display Name]**フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 c. [Executable Path]フィールドにexplorer.exeへのパス(例：C:\Windows\explorer.exe)を入力します。 d. [Command-Line Options]フィールドに、手順2で作成したショートカットのパスを入力します。(例C:\Users\Public\Desktop\Display.lnk)。 e. **[OK]**をクリックします。  " />
+表示アプレットをユーザに公開する方法  ホスト上のコンソールに管理者としてサインインします。 表示アプレットへのショートカットを作成します。 a.[スタート | コントロール]の順にクリックしてます。 b. [表示]を右クリックします。 ショートカットがデスクトップに追加されます。 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。 ユーザにショートカットを公開する。 a.Admin Consoleを実行し、 [Application | Add]の順にクリックします b. [Display Name]フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 c. [Executable Path]フィールドにexplorer.exeへのパス(例：C:\Windows\explorer.exe)を入力します。 d. [Command-Line Options]フィールドに、手順2で作成したショートカットのパスを入力します。(例C:\Users\Public\Desktop\Display.lnk)。 e. [OK]をクリックします。  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/advanced-topics/high-resolution-client-devices/" />
 <meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
@@ -32,7 +32,7 @@
 <meta itemprop="description" content="ディスプレイを拡大縮小するように設定されている高解像度クライアントデバイス上でGO-Global Appを実行すると、GO-Global Appは、セッションで実行されているアプリケーションのテキストとコントロールが、クライアントデバイスでローカルに実行されているアプリケーションのテキストとコントロールと同じサイズになるように、GO-Globalセッションのグラフィカル出力を拡大しようとします。たとえば、クライアントコンピュータが表示を200％拡大するように設定されている場合、GO-Global Appはホストから受信したグラフィックスコマンド(テキスト文字や画像など)を200％拡大します。
 クライアントが画像やテキストなどのグラフィックオブジェクトを引き伸ばすとき、それらの品質はオブジェクトが100％で描画されるときほど良くありません。たとえば、テキスト文字の端は、引き伸ばしたときほど滑らかではありません。文字がブロック状またはぼやけて見えることがあります。高解像度の画面(ディスプレイの拡大縮小が最も頻繁に有効になっている場合)では、これらの効果は通常あまり目立ちません。高解像度の画面（ディスプレイの拡大縮小が最も頻繁に有効になっている場合）では、これらの効果は通常あまり目立ちません。 ただし、低解像度の画面では、特に表示倍率が125％などの整数でない値に設定されている場合、影響が非常に顕著になります。 これらの影響が顕著な場合は、GO-Globalのスケーリング機能を次のように無効にすることができます。
  クライアントがショートカットから実行する時は、クライアントのコマンドラインに-clientdpi 0を追加します。 クライアントがブラウザから実行されている場合は、URLに＆clientdpi = falseを追加します。 すべてのユーザーに対してホスト上の機能を無効にするには、ホスト上のHostProperties.xmlファイルのClientDPIScalingEnabledプロパティの値を「true」から「false」に変更します。  GO-Globalのスケーリング機能が無効になっていると、GO-Globalはホスト上のコントロールパネルのディスプレイアプレットでユーザに指定されたスケールファクタを使用してセッションをレンダリングします。この構成では、管理者は、表示アプレットをユーザに公開することによってユーザにDPI設定の変更を許可することができます。
-表示アプレットをユーザに公開する方法  ホスト上のコンソールに管理者としてサインインします。 表示アプレットへのショートカットを作成します。 a.[スタート | コントロール]の順にクリックしてます。 b. **[表示]**を右クリックします。 ショートカットがデスクトップに追加されます。 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。 ユーザにショートカットを公開する。 a.Admin Consoleを実行し、 **[Application | Add]**の順にクリックします b. **[Display Name]**フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 c. [Executable Path]フィールドにexplorer.exeへのパス(例：C:\Windows\explorer.exe)を入力します。 d. [Command-Line Options]フィールドに、手順2で作成したショートカットのパスを入力します。(例C:\Users\Public\Desktop\Display.lnk)。 e. **[OK]**をクリックします。  ">
+表示アプレットをユーザに公開する方法  ホスト上のコンソールに管理者としてサインインします。 表示アプレットへのショートカットを作成します。 a.[スタート | コントロール]の順にクリックしてます。 b. [表示]を右クリックします。 ショートカットがデスクトップに追加されます。 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。 ユーザにショートカットを公開する。 a.Admin Consoleを実行し、 [Application | Add]の順にクリックします b. [Display Name]フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 c. [Executable Path]フィールドにexplorer.exeへのパス(例：C:\Windows\explorer.exe)を入力します。 d. [Command-Line Options]フィールドに、手順2で作成したショートカットのパスを入力します。(例C:\Users\Public\Desktop\Display.lnk)。 e. [OK]をクリックします。  ">
 <meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
 <meta itemprop="wordCount" content="42">
 
@@ -43,7 +43,7 @@
 <meta name="twitter:description" content="ディスプレイを拡大縮小するように設定されている高解像度クライアントデバイス上でGO-Global Appを実行すると、GO-Global Appは、セッションで実行されているアプリケーションのテキストとコントロールが、クライアントデバイスでローカルに実行されているアプリケーションのテキストとコントロールと同じサイズになるように、GO-Globalセッションのグラフィカル出力を拡大しようとします。たとえば、クライアントコンピュータが表示を200％拡大するように設定されている場合、GO-Global Appはホストから受信したグラフィックスコマンド(テキスト文字や画像など)を200％拡大します。
 クライアントが画像やテキストなどのグラフィックオブジェクトを引き伸ばすとき、それらの品質はオブジェクトが100％で描画されるときほど良くありません。たとえば、テキスト文字の端は、引き伸ばしたときほど滑らかではありません。文字がブロック状またはぼやけて見えることがあります。高解像度の画面(ディスプレイの拡大縮小が最も頻繁に有効になっている場合)では、これらの効果は通常あまり目立ちません。高解像度の画面（ディスプレイの拡大縮小が最も頻繁に有効になっている場合）では、これらの効果は通常あまり目立ちません。 ただし、低解像度の画面では、特に表示倍率が125％などの整数でない値に設定されている場合、影響が非常に顕著になります。 これらの影響が顕著な場合は、GO-Globalのスケーリング機能を次のように無効にすることができます。
  クライアントがショートカットから実行する時は、クライアントのコマンドラインに-clientdpi 0を追加します。 クライアントがブラウザから実行されている場合は、URLに＆clientdpi = falseを追加します。 すべてのユーザーに対してホスト上の機能を無効にするには、ホスト上のHostProperties.xmlファイルのClientDPIScalingEnabledプロパティの値を「true」から「false」に変更します。  GO-Globalのスケーリング機能が無効になっていると、GO-Globalはホスト上のコントロールパネルのディスプレイアプレットでユーザに指定されたスケールファクタを使用してセッションをレンダリングします。この構成では、管理者は、表示アプレットをユーザに公開することによってユーザにDPI設定の変更を許可することができます。
-表示アプレットをユーザに公開する方法  ホスト上のコンソールに管理者としてサインインします。 表示アプレットへのショートカットを作成します。 a.[スタート | コントロール]の順にクリックしてます。 b. **[表示]**を右クリックします。 ショートカットがデスクトップに追加されます。 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。 ユーザにショートカットを公開する。 a.Admin Consoleを実行し、 **[Application | Add]**の順にクリックします b. **[Display Name]**フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 c. [Executable Path]フィールドにexplorer.exeへのパス(例：C:\Windows\explorer.exe)を入力します。 d. [Command-Line Options]フィールドに、手順2で作成したショートカットのパスを入力します。(例C:\Users\Public\Desktop\Display.lnk)。 e. **[OK]**をクリックします。  "/>
+表示アプレットをユーザに公開する方法  ホスト上のコンソールに管理者としてサインインします。 表示アプレットへのショートカットを作成します。 a.[スタート | コントロール]の順にクリックしてます。 b. [表示]を右クリックします。 ショートカットがデスクトップに追加されます。 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。 ユーザにショートカットを公開する。 a.Admin Consoleを実行し、 [Application | Add]の順にクリックします b. [Display Name]フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 c. [Executable Path]フィールドにexplorer.exeへのパス(例：C:\Windows\explorer.exe)を入力します。 d. [Command-Line Options]フィールドに、手順2で作成したショートカットのパスを入力します。(例C:\Users\Public\Desktop\Display.lnk)。 e. [OK]をクリックします。  "/>
 
 
 
@@ -134,7 +134,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
+  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
   data-offline-search-base-href="/"
 >
 
@@ -164,7 +164,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
+  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
   data-offline-search-base-href="/"
 >
 
@@ -879,19 +879,19 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixe382afe383a9e382a4e382a2e383b3e38388e382ade383bce3839be38299e383bce38388e38299_ime-e794a8e382b5e3839be3829ae383bce38388e381aee8a8ade5ae9a-kitasp-docshtml" href="/docs/go-global6/appendix/%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_ime-%E7%94%A8%E3%82%B5%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A-kitasp-docs.html/">クライアントキーボード/IME 用サポートの設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixkuraiantokbdowonisuru" href="/docs/go-global6/appendix/kuraiantokbdowonisuru/">自動クライアントキーボードを無効にする方法</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixe382ade383bce3839be38299e383bce38388e38299e381a8imee381aee8bfbde58aa0e382a4e383b3e382b9e38388e383bce383ab-kitasp-docshtml" href="/docs/go-global6/appendix/%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%81%A8ime%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-kitasp-docs.html/">キーボードとIMEの追加インストール</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixkuraiantokbdooyobimatahaimenosaptono" href="/docs/go-global6/appendix/kuraiantokbdooyobimatahaimenosaptono/">クライアントキーボード/IME 用サポートの設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixe887aae58b95e382afe383a9e382a4e382a2e383b3e38388e382ade383bce3839be38299e383bce38388e38299e38292e784a1e58ab9e381abe38199e3828b-kitasp-docshtml" href="/docs/go-global6/appendix/%E8%87%AA%E5%8B%95%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B-kitasp-docs.html/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixkbdotoimenoinsutru" href="/docs/go-global6/appendix/kbdotoimenoinsutru/">キーボードとIMEの追加インストール</a>
       
       
     </li>
@@ -1814,13 +1814,13 @@
 <li>ホスト上のコンソールに管理者としてサインインします。</li>
 <li>表示アプレットへのショートカットを作成します。 
 a.[<strong>スタート | コントロール</strong>]の順にクリックしてます。
-b. **[表示]**を右クリックします。 ショートカットがデスクトップに追加されます。 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。</li>
+b. [<strong>表示</strong>]を右クリックします。 ショートカットがデスクトップに追加されます。 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。</li>
 <li>ユーザにショートカットを公開する。
-a.Admin Consoleを実行し、 **[Application | Add]**の順にクリックします 
-b. **[Display Name]**フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 
+a.Admin Consoleを実行し、 [<strong>Application | Add</strong>]の順にクリックします 
+b. [<strong>Display Name</strong>]フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 
 c. [<strong>Executable Path</strong>]フィールドにexplorer.exeへのパス(例：C:\Windows\explorer.exe)を入力します。 
 d. [<strong>Command-Line Options</strong>]フィールドに、手順2で作成したショートカットのパスを入力します。(例C:\Users\Public\Desktop\Display.lnk)。 
-e. **[OK]**をクリックします。</li>
+e. [<strong>OK</strong>]をクリックします。</li>
 </ol>
 
 	

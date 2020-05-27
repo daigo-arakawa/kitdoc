@@ -21,22 +21,22 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>クライアントのファイルアクセス | kitASP Docs</title><meta property="og:title" content="クライアントのファイルアクセス" />
-<meta property="og:description" content="GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの **[Open]**および **[Save as]**ダイアログボックス内にクライアントドライブが一覧表示されます。この「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))
+<meta property="og:description" content="GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの [Open]および [Save as]ダイアログボックス内にクライアントドライブが一覧表示されます。この「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))
 これらのダイアログボックスでは、クライアントドライブとホストドライブの両方の一覧が表示されます。デフォルトでクライアントドライブのサポートは無効になっています。
-クライアントドライブのサポートを有効にする方法  Admin Consoleで、 **[All Hosts]**の一覧から目的のホストを選択します。 [Tools | Host Options]の順にクリックします。 **[Client Access]**タブをクリックします。 **[Drives]**チェックボックスをクリックします。 **[OK]**をクリックします。  GO-Globalは、ユーザがUSBドライブにアクセスできます。フロッピーディスク、CD-ROM、DVD-ROMなどのリムーバブルドライブはクライアントドライブとしてサポートされていません。
+クライアントドライブのサポートを有効にする方法  Admin Consoleで、 [All Hosts]の一覧から目的のホストを選択します。 [Tools | Host Options]の順にクリックします。 [Client Access]タブをクリックします。 [Drives]チェックボックスをクリックします。 [OK]をクリックします。  GO-Globalは、ユーザがUSBドライブにアクセスできます。フロッピーディスク、CD-ROM、DVD-ROMなどのリムーバブルドライブはクライアントドライブとしてサポートされていません。
 クライアントドライブの再マッピング クライアントの[Drives]機能を有効にしてGO-Globalセッションでアプリケーションを実行する場合、GO-Globalで、ドライブ文字とクライアントおよびホストコンピュータのドライブ間で1対1のマッピングが存在することを確認する必要があります。クライアントのドライブとホストのドライブに同じドライブ文字が割り当てられている場合、GO-Globalでドライブのどちらかに新しいドライブ文字を割り当てる必要があります。クライアントドライブは、指定したドライブ文字から順番にリストするか、指定した値でドライブ文字を増分する方法で再マッピングできます。
-クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 **[Client Access]**タブをクリックします。 3. クライアントの **[Drives]**を有効にします。 [Assign consecutive letters starting at: ___ **]**をクリックします。 編集フィールドに、シーケンスの始まりのドライブ文字を入力します。 **[OK]**をクリックします。  たとえば、クライアントコンピュータにA、C、D、およびHのドライブがあり、開始点がドライブ文字Mに設定されている場合、クライアントのドライブはそれぞれM、N、O、およびPに再マップされます。ドライブにすでに割り当てられている場合は、次に使用可能な文字が使用されます。この機能はデフォルトで無効になっています。有効にすると、デフォルトのドライブ名はMです。
-クライアントのドライブ文字を固定値で増分する方法  Admin Console で、[Tools | Server Options]の順にクリックします。 **[Client Access]**タブをクリックします。 クライアントの **[Drives]**を有効にします。 [Increment by: ___ **letters]**をクリックします。 編集フィールドに、オフセットとなる 1 以上の数字を入力します。 **[OK]**をクリックします。  たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。" />
+クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Client Access]タブをクリックします。 3. クライアントの [Drives]を有効にします。 [Assign consecutive letters starting at: ___ ****]をクリックします。 編集フィールドに、シーケンスの始まりのドライブ文字を入力します。 [OK]をクリックします。  たとえば、クライアントコンピュータにA、C、D、およびHのドライブがあり、開始点がドライブ文字Mに設定されている場合、クライアントのドライブはそれぞれM、N、O、およびPに再マップされます。ドライブにすでに割り当てられている場合は、次に使用可能な文字が使用されます。この機能はデフォルトで無効になっています。有効にすると、デフォルトのドライブ名はMです。
+クライアントのドライブ文字を固定値で増分する方法  Admin Console で、[Tools | Server Options]の順にクリックします。 [Client Access]タブをクリックします。 クライアントの [Drives]を有効にします。 [Increment by: ___ letters]をクリックします。 編集フィールドに、オフセットとなる 1 以上の数字を入力します。 [OK]をクリックします。  たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/advanced-topics/client-file-access/" />
 <meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="クライアントのファイルアクセス">
-<meta itemprop="description" content="GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの **[Open]**および **[Save as]**ダイアログボックス内にクライアントドライブが一覧表示されます。この「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))
+<meta itemprop="description" content="GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの [Open]および [Save as]ダイアログボックス内にクライアントドライブが一覧表示されます。この「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))
 これらのダイアログボックスでは、クライアントドライブとホストドライブの両方の一覧が表示されます。デフォルトでクライアントドライブのサポートは無効になっています。
-クライアントドライブのサポートを有効にする方法  Admin Consoleで、 **[All Hosts]**の一覧から目的のホストを選択します。 [Tools | Host Options]の順にクリックします。 **[Client Access]**タブをクリックします。 **[Drives]**チェックボックスをクリックします。 **[OK]**をクリックします。  GO-Globalは、ユーザがUSBドライブにアクセスできます。フロッピーディスク、CD-ROM、DVD-ROMなどのリムーバブルドライブはクライアントドライブとしてサポートされていません。
+クライアントドライブのサポートを有効にする方法  Admin Consoleで、 [All Hosts]の一覧から目的のホストを選択します。 [Tools | Host Options]の順にクリックします。 [Client Access]タブをクリックします。 [Drives]チェックボックスをクリックします。 [OK]をクリックします。  GO-Globalは、ユーザがUSBドライブにアクセスできます。フロッピーディスク、CD-ROM、DVD-ROMなどのリムーバブルドライブはクライアントドライブとしてサポートされていません。
 クライアントドライブの再マッピング クライアントの[Drives]機能を有効にしてGO-Globalセッションでアプリケーションを実行する場合、GO-Globalで、ドライブ文字とクライアントおよびホストコンピュータのドライブ間で1対1のマッピングが存在することを確認する必要があります。クライアントのドライブとホストのドライブに同じドライブ文字が割り当てられている場合、GO-Globalでドライブのどちらかに新しいドライブ文字を割り当てる必要があります。クライアントドライブは、指定したドライブ文字から順番にリストするか、指定した値でドライブ文字を増分する方法で再マッピングできます。
-クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 **[Client Access]**タブをクリックします。 3. クライアントの **[Drives]**を有効にします。 [Assign consecutive letters starting at: ___ **]**をクリックします。 編集フィールドに、シーケンスの始まりのドライブ文字を入力します。 **[OK]**をクリックします。  たとえば、クライアントコンピュータにA、C、D、およびHのドライブがあり、開始点がドライブ文字Mに設定されている場合、クライアントのドライブはそれぞれM、N、O、およびPに再マップされます。ドライブにすでに割り当てられている場合は、次に使用可能な文字が使用されます。この機能はデフォルトで無効になっています。有効にすると、デフォルトのドライブ名はMです。
-クライアントのドライブ文字を固定値で増分する方法  Admin Console で、[Tools | Server Options]の順にクリックします。 **[Client Access]**タブをクリックします。 クライアントの **[Drives]**を有効にします。 [Increment by: ___ **letters]**をクリックします。 編集フィールドに、オフセットとなる 1 以上の数字を入力します。 **[OK]**をクリックします。  たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。">
+クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Client Access]タブをクリックします。 3. クライアントの [Drives]を有効にします。 [Assign consecutive letters starting at: ___ ****]をクリックします。 編集フィールドに、シーケンスの始まりのドライブ文字を入力します。 [OK]をクリックします。  たとえば、クライアントコンピュータにA、C、D、およびHのドライブがあり、開始点がドライブ文字Mに設定されている場合、クライアントのドライブはそれぞれM、N、O、およびPに再マップされます。ドライブにすでに割り当てられている場合は、次に使用可能な文字が使用されます。この機能はデフォルトで無効になっています。有効にすると、デフォルトのドライブ名はMです。
+クライアントのドライブ文字を固定値で増分する方法  Admin Console で、[Tools | Server Options]の順にクリックします。 [Client Access]タブをクリックします。 クライアントの [Drives]を有効にします。 [Increment by: ___ letters]をクリックします。 編集フィールドに、オフセットとなる 1 以上の数字を入力します。 [OK]をクリックします。  たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。">
 <meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
 <meta itemprop="wordCount" content="99">
 
@@ -44,12 +44,12 @@
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="クライアントのファイルアクセス"/>
-<meta name="twitter:description" content="GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの **[Open]**および **[Save as]**ダイアログボックス内にクライアントドライブが一覧表示されます。この「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))
+<meta name="twitter:description" content="GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの [Open]および [Save as]ダイアログボックス内にクライアントドライブが一覧表示されます。この「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))
 これらのダイアログボックスでは、クライアントドライブとホストドライブの両方の一覧が表示されます。デフォルトでクライアントドライブのサポートは無効になっています。
-クライアントドライブのサポートを有効にする方法  Admin Consoleで、 **[All Hosts]**の一覧から目的のホストを選択します。 [Tools | Host Options]の順にクリックします。 **[Client Access]**タブをクリックします。 **[Drives]**チェックボックスをクリックします。 **[OK]**をクリックします。  GO-Globalは、ユーザがUSBドライブにアクセスできます。フロッピーディスク、CD-ROM、DVD-ROMなどのリムーバブルドライブはクライアントドライブとしてサポートされていません。
+クライアントドライブのサポートを有効にする方法  Admin Consoleで、 [All Hosts]の一覧から目的のホストを選択します。 [Tools | Host Options]の順にクリックします。 [Client Access]タブをクリックします。 [Drives]チェックボックスをクリックします。 [OK]をクリックします。  GO-Globalは、ユーザがUSBドライブにアクセスできます。フロッピーディスク、CD-ROM、DVD-ROMなどのリムーバブルドライブはクライアントドライブとしてサポートされていません。
 クライアントドライブの再マッピング クライアントの[Drives]機能を有効にしてGO-Globalセッションでアプリケーションを実行する場合、GO-Globalで、ドライブ文字とクライアントおよびホストコンピュータのドライブ間で1対1のマッピングが存在することを確認する必要があります。クライアントのドライブとホストのドライブに同じドライブ文字が割り当てられている場合、GO-Globalでドライブのどちらかに新しいドライブ文字を割り当てる必要があります。クライアントドライブは、指定したドライブ文字から順番にリストするか、指定した値でドライブ文字を増分する方法で再マッピングできます。
-クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 **[Client Access]**タブをクリックします。 3. クライアントの **[Drives]**を有効にします。 [Assign consecutive letters starting at: ___ **]**をクリックします。 編集フィールドに、シーケンスの始まりのドライブ文字を入力します。 **[OK]**をクリックします。  たとえば、クライアントコンピュータにA、C、D、およびHのドライブがあり、開始点がドライブ文字Mに設定されている場合、クライアントのドライブはそれぞれM、N、O、およびPに再マップされます。ドライブにすでに割り当てられている場合は、次に使用可能な文字が使用されます。この機能はデフォルトで無効になっています。有効にすると、デフォルトのドライブ名はMです。
-クライアントのドライブ文字を固定値で増分する方法  Admin Console で、[Tools | Server Options]の順にクリックします。 **[Client Access]**タブをクリックします。 クライアントの **[Drives]**を有効にします。 [Increment by: ___ **letters]**をクリックします。 編集フィールドに、オフセットとなる 1 以上の数字を入力します。 **[OK]**をクリックします。  たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。"/>
+クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Client Access]タブをクリックします。 3. クライアントの [Drives]を有効にします。 [Assign consecutive letters starting at: ___ ****]をクリックします。 編集フィールドに、シーケンスの始まりのドライブ文字を入力します。 [OK]をクリックします。  たとえば、クライアントコンピュータにA、C、D、およびHのドライブがあり、開始点がドライブ文字Mに設定されている場合、クライアントのドライブはそれぞれM、N、O、およびPに再マップされます。ドライブにすでに割り当てられている場合は、次に使用可能な文字が使用されます。この機能はデフォルトで無効になっています。有効にすると、デフォルトのドライブ名はMです。
+クライアントのドライブ文字を固定値で増分する方法  Admin Console で、[Tools | Server Options]の順にクリックします。 [Client Access]タブをクリックします。 クライアントの [Drives]を有効にします。 [Increment by: ___ letters]をクリックします。 編集フィールドに、オフセットとなる 1 以上の数字を入力します。 [OK]をクリックします。  たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。"/>
 
 
 
@@ -140,7 +140,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
+  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
   data-offline-search-base-href="/"
 >
 
@@ -170,7 +170,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
+  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
   data-offline-search-base-href="/"
 >
 
@@ -885,19 +885,19 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixe382afe383a9e382a4e382a2e383b3e38388e382ade383bce3839be38299e383bce38388e38299_ime-e794a8e382b5e3839be3829ae383bce38388e381aee8a8ade5ae9a-kitasp-docshtml" href="/docs/go-global6/appendix/%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_ime-%E7%94%A8%E3%82%B5%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A-kitasp-docs.html/">クライアントキーボード/IME 用サポートの設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixkuraiantokbdowonisuru" href="/docs/go-global6/appendix/kuraiantokbdowonisuru/">自動クライアントキーボードを無効にする方法</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixe382ade383bce3839be38299e383bce38388e38299e381a8imee381aee8bfbde58aa0e382a4e383b3e382b9e38388e383bce383ab-kitasp-docshtml" href="/docs/go-global6/appendix/%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%81%A8ime%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-kitasp-docs.html/">キーボードとIMEの追加インストール</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixkuraiantokbdooyobimatahaimenosaptono" href="/docs/go-global6/appendix/kuraiantokbdooyobimatahaimenosaptono/">クライアントキーボード/IME 用サポートの設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixe887aae58b95e382afe383a9e382a4e382a2e383b3e38388e382ade383bce3839be38299e383bce38388e38299e38292e784a1e58ab9e381abe38199e3828b-kitasp-docshtml" href="/docs/go-global6/appendix/%E8%87%AA%E5%8B%95%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%AD%E3%83%BC%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B-kitasp-docs.html/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6appendixkbdotoimenoinsutru" href="/docs/go-global6/appendix/kbdotoimenoinsutru/">キーボードとIMEの追加インストール</a>
       
       
     </li>
@@ -1819,16 +1819,16 @@
 <div class="td-content">
 	<h1>クライアントのファイルアクセス</h1>
 	
-	<p>GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの **[Open]**および **[Save as]**ダイアログボックス内にクライアントドライブが一覧表示されます。この「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))</p>
-<p><img src="/img/7-11-1.png" alt="7-11-1"></p>
+	<p>GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの [<strong>Open</strong>]および [<strong>Save as</strong>]ダイアログボックス内にクライアントドライブが一覧表示されます。この「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))</p>
+<p><img src="/images/7-11-1.png" alt="7-11-1"></p>
 <p>これらのダイアログボックスでは、クライアントドライブとホストドライブの両方の一覧が表示されます。デフォルトでクライアントドライブのサポートは無効になっています。</p>
 <h3 id="クライアントドライブのサポートを有効にする方法">クライアントドライブのサポートを有効にする方法</h3>
 <ol>
-<li>Admin Consoleで、 **[All Hosts]**の一覧から目的のホストを選択します。</li>
+<li>Admin Consoleで、 [<strong>All Hosts</strong>]の一覧から目的のホストを選択します。</li>
 <li>[Tools | Host Options]の順にクリックします。</li>
-<li>**[Client Access]**タブをクリックします。</li>
-<li>**[Drives]**チェックボックスをクリックします。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>Client Access</strong>]タブをクリックします。</li>
+<li>[<strong>Drives</strong>]チェックボックスをクリックします。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 </ol>
 <p>GO-Globalは、ユーザがUSBドライブにアクセスできます。フロッピーディスク、CD-ROM、DVD-ROMなどのリムーバブルドライブはクライアントドライブとしてサポートされていません。</p>
 <h2 id="クライアントドライブの再マッピング">クライアントドライブの再マッピング</h2>
@@ -1836,22 +1836,22 @@
 <h3 id="クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法">クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools | Host Options]の順にクリックします。</li>
-<li>**[Client Access]**タブをクリックします。
+<li>[<strong>Client Access</strong>]タブをクリックします。
 3.
-クライアントの **[Drives]**を有効にします。</li>
-<li><strong>[Assign consecutive letters starting at:</strong> <strong>___</strong> **]**をクリックします。</li>
+クライアントの [<strong>Drives</strong>]を有効にします。</li>
+<li>[<strong>Assign consecutive letters starting at:</strong> <strong>___</strong> ****]をクリックします。</li>
 <li>編集フィールドに、シーケンスの始まりのドライブ文字を入力します。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 </ol>
 <p>たとえば、クライアントコンピュータにA、C、D、およびHのドライブがあり、開始点がドライブ文字Mに設定されている場合、クライアントのドライブはそれぞれM、N、O、およびPに再マップされます。ドライブにすでに割り当てられている場合は、次に使用可能な文字が使用されます。この機能はデフォルトで無効になっています。有効にすると、デフォルトのドライブ名はMです。</p>
 <h3 id="クライアントのドライブ文字を固定値で増分する方法">クライアントのドライブ文字を固定値で増分する方法</h3>
 <ol>
 <li>Admin Console で、[Tools | Server Options]の順にクリックします。</li>
-<li>**[Client Access]**タブをクリックします。</li>
-<li>クライアントの **[Drives]**を有効にします。</li>
-<li><strong>[Increment by:</strong> <strong>___</strong> **letters]**をクリックします。</li>
+<li>[<strong>Client Access</strong>]タブをクリックします。</li>
+<li>クライアントの [<strong>Drives</strong>]を有効にします。</li>
+<li>[<strong>Increment by:</strong> <strong>___</strong> <strong>letters</strong>]をクリックします。</li>
 <li>編集フィールドに、オフセットとなる 1 以上の数字を入力します。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 </ol>
 <p>たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。</p>
 <h2 id="クライアントドライブを非表示にする">クライアントドライブを非表示にする</h2>
@@ -1859,10 +1859,10 @@
 <h3 id="1-つ以上のサーバドライブを非表示にする方法">1 つ以上のサーバドライブを非表示にする方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools | Host Options]の順にクリックします。</li>
-<li>**[Client Access]**タブをクリックします。</li>
-<li>クライアントの **[Drives]**を有効にします。</li>
-<li>**[Hide]**ボックスに、非表示にするクライアントドライブ文字を入力します。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>Client Access</strong>]タブをクリックします。</li>
+<li>クライアントの [<strong>Drives</strong>]を有効にします。</li>
+<li>[<strong>Hide</strong>]ボックスに、非表示にするクライアントドライブ文字を入力します。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 </ol>
 <p>デフォルトでは、すべてのクライアントドライブがマッピングされます。[Hide]ボックスでは、ドライブを任意の順序で指定できます。Linux Client または Mac OS X Clientでクライアントドライブを非表示にする場合は、ルートドライブとフロッピードライブに加えて、ユーザのホームディレクトリが次のようにマッピングされます。例:)</p>
 <ul>
