@@ -37,7 +37,7 @@ AES-256ビット暗号化とVPN製品で使用されている暗号化との違�
 GO-Globalはエンドツーエンドの暗号化をサポートしていますか？ GO-Globalは、independent hostとクライアントの間でエンドツーエンドの暗号化を使用します。GO-Globalが1つ以上のdependent hostを持つrelay serverとして動作するように設定されている場合、GO-Globalはリンク暗号化を提供します。具体的には、relay server上のApplication Publishing Serviceは、クライアントから受信したデータを復号化し、そのデータをdependent hostに転送する前に再暗号化します。同様に、dependent hostから受信したデータを復号化し、クライアントに転送する前に再暗号化します。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/technote/technote205/" />
-<meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-28T01:18:07+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="暗号化に関するFAQ GO-Globalには暗号化機能があります。それは管理者が2つの異なる暗号化方法の1つを使用してGO-Globalホストとそのクライアントの間で転送されるデータを暗号化することを可能にします。
 管理者がAdmin ConsoleでTCP転送を選択すると、クライアントとホスト間で非対称RSAアルゴリズムを使用して56ビットのDESキーが交換されます。RSAキーは512ビットです。
@@ -53,7 +53,7 @@ SSLトランスポートが選択されると、GO-GlobalはOpenSSLを使用し�
 SSLキー暗号強度(1028ビットまたは2048ビット)は、Admin Consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか？ SSL証明書内の非対称鍵および鍵ファイル(1024ビットまたは2048ビット)は、暗号化および復号化に使用される対称鍵(56ビット、256ビットなど)の暗号化および復号化にのみ使用されます。選択した暗号を使用したセッションのデータは常に、[Host Options]ダイアログの[Security]タブの[Encryption]ドロップダウンで指定されたキーの長さと暗号を使用して暗号化および復号化されます。
 AES-256ビット暗号化とVPN製品で使用されている暗号化との違いは何ですか？ AES-256ビット暗号化は、VPN製品で一般的に使用されています。 AES-256は、最も機密性の高い機密文書およびデータを保護するために安全性の高い環境で使用される最も一般的な対称アルゴリズムです。
 GO-Globalはエンドツーエンドの暗号化をサポートしていますか？ GO-Globalは、independent hostとクライアントの間でエンドツーエンドの暗号化を使用します。GO-Globalが1つ以上のdependent hostを持つrelay serverとして動作するように設定されている場合、GO-Globalはリンク暗号化を提供します。具体的には、relay server上のApplication Publishing Serviceは、クライアントから受信したデータを復号化し、そのデータをdependent hostに転送する前に再暗号化します。同様に、dependent hostから受信したデータを復号化し、クライアントに転送する前に再暗号化します。">
-<meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
+<meta itemprop="dateModified" content="2020-05-28T01:18:07&#43;09:00" />
 <meta itemprop="wordCount" content="33">
 
 
@@ -164,7 +164,7 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.3d9eb018583aeca374f4316c78e4835dfbb487452a31e3839be31308f0f59b9c2f3bf98c3454280e74e89a017a6fa966bfd2b58eddd148ca3bfa5e2a79852fe2.json"
+  data-offline-search-index-json-src="/offline-search-index.7711f00b8f4d78d20aeaa7db3ded919bb2268369fa885c3eaf0b41b76772934d916711f5fcdd233edd63b8b3259a2742ffea4611f5db15cdc3e6a27055a4e6bd.json"
   data-offline-search-base-href="/"
 >
 
@@ -194,7 +194,7 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.3d9eb018583aeca374f4316c78e4835dfbb487452a31e3839be31308f0f59b9c2f3bf98c3454280e74e89a017a6fa966bfd2b58eddd148ca3bfa5e2a79852fe2.json"
+  data-offline-search-index-json-src="/offline-search-index.7711f00b8f4d78d20aeaa7db3ded919bb2268369fa885c3eaf0b41b76772934d916711f5fcdd233edd63b8b3259a2742ffea4611f5db15cdc3e6a27055a4e6bd.json"
   data-offline-search-base-href="/"
 >
 
@@ -1683,48 +1683,6 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
 
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manager" href="/docs/go-global5/cluster-manager/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-5" href="/docs/go-global5/go-global-5/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnohtml" href="/docs/go-global5/go-global-clientno.html/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-no" href="/docs/go-global5/go-global-no/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbano" href="/docs/go-global5/sbano/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1" href="/docs/go-global5/topikku-1/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5yzaakauntono" href="/docs/go-global5/yzaakauntono/"></a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -2038,7 +1996,7 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 26, 2020: <a  href="https://github.com/google/docsy-example/commit/50889830a56565416c75a2ac0721eef7ee0cf423">gg5 (50889830)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 28, 2020: <a  href="https://github.com/google/docsy-example/commit/79c4d1030c471d9a5d4ef0e7a9e7a6f2c0da79e4">gg5-1 (79c4d103)</a>
 </div>
 </div>
 
