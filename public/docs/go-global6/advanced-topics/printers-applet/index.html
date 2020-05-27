@@ -34,7 +34,7 @@
  プログラムウィンドウから[File | Printer]の順にクリックします。 リストから目的のプリンタを選択します。 ドライバボタンをクリックしてプリンタドライバの選択ダイアログを開き、GO-Globalホストマシンに現在インストールされているドライバを一覧表示します。 新しいドライバを選択して[OK]をクリックします。これで、プリンタは新しいドライバで設定されました。  ユニバーサルプリンタドライバのみがクラスタマネージャでドライバソースとして指定されている場合、ユーザはドライバを変更できません。ユーザはGO-GlobalのPreview PDFプリンタまたはサーバベースのプリンタのドライバを変更できません。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/advanced-topics/printers-applet/" />
-<meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-28T00:50:53+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="プリンタアプレット">
 <meta itemprop="description" content="GO-Globalのプリンタアプレットを使うと、プリンタの追加と削除、プリンタのプロパティの編集、デフォルトプリンタの設定、プリンタドライバの選択、テストページの印刷ができます。プリンタアプレットはプログラムウィンドウからアクセスできます。構成されているすべてのクライアントプリンタと、ユーザがアクセスできるすべてのホストプリンタが一覧表示されます。プリンタのリストは、-acパラメータとprinterconfigパラメータだけでなく、Admin Consoleのプリンタドライバ設定によっても異なります。
 プリンタアプレットのアイコンについては後述します。
@@ -47,7 +47,7 @@
 プリンタ設定を編集する方法  プログラムウィンドウから[File | Printer]の順にクリックします。 リストから目的のプリンタを選択します。 ボタンをクリックします。 必要に応じてプロパティを編集し、 **[OK]**をクリックします。  テストページの印刷 ユーザは、プリンタアプレットからテストページを印刷して、プリンタが正しく設定されていることを確認し、プリンタがグラフィックとテキストを正しく印刷しているかどうかを確認できます。テストページには、プリンタ名、モデル、ドライバソフトウェアのバージョンなどの情報も表示されます。これは、プリンタの問題のトラブルシューティングに役立つ場合があります。
 テストページを印刷する方法  プログラムウィンドウから[File | Printer]の順にクリックします。 リストから目的のプリンタを選択します。 Test Pageボタンをクリックします。  プリンタドライバの変更 プリンタアプレットを通じて、ユーザは自分のプリンタ用に異なるドライバを選択できます。これは、ドライバが正しく機能していない場合や、ユーザがネイティブドライバとユニバーサルプリンタドライバを切り替えたい場合に便利です。
  プログラムウィンドウから[File | Printer]の順にクリックします。 リストから目的のプリンタを選択します。 ドライバボタンをクリックしてプリンタドライバの選択ダイアログを開き、GO-Globalホストマシンに現在インストールされているドライバを一覧表示します。 新しいドライバを選択して[OK]をクリックします。これで、プリンタは新しいドライバで設定されました。  ユニバーサルプリンタドライバのみがクラスタマネージャでドライバソースとして指定されている場合、ユーザはドライバを変更できません。ユーザはGO-GlobalのPreview PDFプリンタまたはサーバベースのプリンタのドライバを変更できません。">
-<meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
+<meta itemprop="dateModified" content="2020-05-28T00:50:53&#43;09:00" />
 <meta itemprop="wordCount" content="425">
 
 
@@ -155,7 +155,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
+  data-offline-search-index-json-src="/offline-search-index.3d9eb018583aeca374f4316c78e4835dfbb487452a31e3839be31308f0f59b9c2f3bf98c3454280e74e89a017a6fa966bfd2b58eddd148ca3bfa5e2a79852fe2.json"
   data-offline-search-base-href="/"
 >
 
@@ -185,7 +185,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
+  data-offline-search-index-json-src="/offline-search-index.3d9eb018583aeca374f4316c78e4835dfbb487452a31e3839be31308f0f59b9c2f3bf98c3454280e74e89a017a6fa966bfd2b58eddd148ca3bfa5e2a79852fe2.json"
   data-offline-search-base-href="/"
 >
 
@@ -2390,7 +2390,7 @@ For example:
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 March 5, 2020: <a  href="https://github.com/google/docsy-example/commit/05e264dd78f754815bb14e641c43bb5ad8752bc7">page (05e264dd)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 28, 2020: <a  href="https://github.com/google/docsy-example/commit/a585a5b1589bad5061cb885d999bd8a4978eb796">gg6-3 (a585a5b1)</a>
 </div>
 </div>
 

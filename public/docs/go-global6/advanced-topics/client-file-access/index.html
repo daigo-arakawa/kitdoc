@@ -29,7 +29,7 @@
 クライアントのドライブ文字を固定値で増分する方法  Admin Console で、[Tools | Server Options]の順にクリックします。 [Client Access]タブをクリックします。 クライアントの [Drives]を有効にします。 [Increment by: ___ letters]をクリックします。 編集フィールドに、オフセットとなる 1 以上の数字を入力します。 [OK]をクリックします。  たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/advanced-topics/client-file-access/" />
-<meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-28T00:50:53+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="クライアントのファイルアクセス">
 <meta itemprop="description" content="GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの [Open]および [Save as]ダイアログボックス内にクライアントドライブが一覧表示されます。この「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))
 これらのダイアログボックスでは、クライアントドライブとホストドライブの両方の一覧が表示されます。デフォルトでクライアントドライブのサポートは無効になっています。
@@ -37,7 +37,7 @@
 クライアントドライブの再マッピング クライアントの[Drives]機能を有効にしてGO-Globalセッションでアプリケーションを実行する場合、GO-Globalで、ドライブ文字とクライアントおよびホストコンピュータのドライブ間で1対1のマッピングが存在することを確認する必要があります。クライアントのドライブとホストのドライブに同じドライブ文字が割り当てられている場合、GO-Globalでドライブのどちらかに新しいドライブ文字を割り当てる必要があります。クライアントドライブは、指定したドライブ文字から順番にリストするか、指定した値でドライブ文字を増分する方法で再マッピングできます。
 クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Client Access]タブをクリックします。 3. クライアントの [Drives]を有効にします。 [Assign consecutive letters starting at: ___ ****]をクリックします。 編集フィールドに、シーケンスの始まりのドライブ文字を入力します。 [OK]をクリックします。  たとえば、クライアントコンピュータにA、C、D、およびHのドライブがあり、開始点がドライブ文字Mに設定されている場合、クライアントのドライブはそれぞれM、N、O、およびPに再マップされます。ドライブにすでに割り当てられている場合は、次に使用可能な文字が使用されます。この機能はデフォルトで無効になっています。有効にすると、デフォルトのドライブ名はMです。
 クライアントのドライブ文字を固定値で増分する方法  Admin Console で、[Tools | Server Options]の順にクリックします。 [Client Access]タブをクリックします。 クライアントの [Drives]を有効にします。 [Increment by: ___ letters]をクリックします。 編集フィールドに、オフセットとなる 1 以上の数字を入力します。 [OK]をクリックします。  たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。">
-<meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
+<meta itemprop="dateModified" content="2020-05-28T00:50:53&#43;09:00" />
 <meta itemprop="wordCount" content="99">
 
 
@@ -140,7 +140,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
+  data-offline-search-index-json-src="/offline-search-index.3d9eb018583aeca374f4316c78e4835dfbb487452a31e3839be31308f0f59b9c2f3bf98c3454280e74e89a017a6fa966bfd2b58eddd148ca3bfa5e2a79852fe2.json"
   data-offline-search-base-href="/"
 >
 
@@ -170,7 +170,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
+  data-offline-search-index-json-src="/offline-search-index.3d9eb018583aeca374f4316c78e4835dfbb487452a31e3839be31308f0f59b9c2f3bf98c3454280e74e89a017a6fa966bfd2b58eddd148ca3bfa5e2a79852fe2.json"
   data-offline-search-base-href="/"
 >
 
@@ -2125,7 +2125,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 March 5, 2020: <a  href="https://github.com/google/docsy-example/commit/05e264dd78f754815bb14e641c43bb5ad8752bc7">page (05e264dd)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 28, 2020: <a  href="https://github.com/google/docsy-example/commit/a585a5b1589bad5061cb885d999bd8a4978eb796">gg6-3 (a585a5b1)</a>
 </div>
 </div>
 

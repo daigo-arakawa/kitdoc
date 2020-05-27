@@ -52,7 +52,7 @@ Application Publishing Serviceは、プロキシプリンタを作成すると�
 
 プロセスの手順は次のとおりです。
 
-![9-201-1](/img/9-201-1.png)
+![9-201-1](/images/9-201-1.png)
 
 1. アプリケーションは印刷ジョブを開始し、Windows APIを呼び出してドキュメントをプリンタにレンダリングします。
 2. Microsoft PostScriptプリンタドライバは、アプリケーションのグラフィックコマンドをPostScript(PS)に変換し、PostScriptデータをプリントスプーラのプロキシプリンタのポートに送信します。

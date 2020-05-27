@@ -24,7 +24,7 @@
 <meta property="og:description" content="共有アカウントは、GO-Globalセッションを開始するために複数のユーザが同じアカウントを使用しているときに指定する必要があります。共有アカウントでGO-Globalにサインインしたユーザは、切断してからGO-Globalに再接続することはできません。これにより、ユーザは他のユーザのセッションに再接続できなくなります。
 共有アカウントでGO-Globalホストにログオンすると、Cluster ManagerのDisconnected sessions terminateオプションは無視され、動作はHostProperties.xmlファイルのSessionTimeoutBrokenConnectionプロパティによって決まります。(HostProperties.xmlは、Windows 2003の場合はC : \Documents and Settings\All Users\Application Data\GraphOnに、Windows 2008の場合はC : \ProgramData\GraphOnにあります)。
 このプロパティの値が0に設定されている場合、セッションはただちに終了します。値が0より大きい場合、セッションは中断され、指定された分数の間サーバ上で実行されたままになります。後者の場合、セッションを開始したユーザだけが中断されたセッションに再接続できます。デフォルトでは、SessionTimeoutBrokenConnectionは0分に設定されています。
-共有アカウントの指定方法  [Tools | Host Options]の順にクリックします。 **[General]**タブをクリックします。 **[共有アカウント]**編集ボックスに共有アカウントのユーザ名を入力します。複数の共有アカウントが必要な場合は、アカウントのユーザ名をセミコロンで区切ります。 **[OK]**をクリックします。  そのユーザが自分のセッションから切断されている間に管理者が既存のユーザ名を共有アカウントとして指定した場合、そのセッションは終了制限に達するまでサーバ上で実行されたままになります。その後セッションは終了します。共有アカウントを指定する前に、そのアカウントを使用している接続または切断されたセッションがないことをCluster Managerで確認してください。
+共有アカウントの指定方法  [Tools | Host Options]の順にクリックします。 [General]タブをクリックします。 [共有アカウント]編集ボックスに共有アカウントのユーザ名を入力します。複数の共有アカウントが必要な場合は、アカウントのユーザ名をセミコロンで区切ります。 [OK]をクリックします。  そのユーザが自分のセッションから切断されている間に管理者が既存のユーザ名を共有アカウントとして指定した場合、そのセッションは終了制限に達するまでサーバ上で実行されたままになります。その後セッションは終了します。共有アカウントを指定する前に、そのアカウントを使用している接続または切断されたセッションがないことをCluster Managerで確認してください。
 GO-Globalは、共有アカウントに対するドメイン名(NORTH\johngなど)の使用をサポートしていません。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global5/cluster-manager/untitled-13/" />
@@ -33,7 +33,7 @@ GO-Globalは、共有アカウントに対するドメイン名(NORTH\johngな�
 <meta itemprop="description" content="共有アカウントは、GO-Globalセッションを開始するために複数のユーザが同じアカウントを使用しているときに指定する必要があります。共有アカウントでGO-Globalにサインインしたユーザは、切断してからGO-Globalに再接続することはできません。これにより、ユーザは他のユーザのセッションに再接続できなくなります。
 共有アカウントでGO-Globalホストにログオンすると、Cluster ManagerのDisconnected sessions terminateオプションは無視され、動作はHostProperties.xmlファイルのSessionTimeoutBrokenConnectionプロパティによって決まります。(HostProperties.xmlは、Windows 2003の場合はC : \Documents and Settings\All Users\Application Data\GraphOnに、Windows 2008の場合はC : \ProgramData\GraphOnにあります)。
 このプロパティの値が0に設定されている場合、セッションはただちに終了します。値が0より大きい場合、セッションは中断され、指定された分数の間サーバ上で実行されたままになります。後者の場合、セッションを開始したユーザだけが中断されたセッションに再接続できます。デフォルトでは、SessionTimeoutBrokenConnectionは0分に設定されています。
-共有アカウントの指定方法  [Tools | Host Options]の順にクリックします。 **[General]**タブをクリックします。 **[共有アカウント]**編集ボックスに共有アカウントのユーザ名を入力します。複数の共有アカウントが必要な場合は、アカウントのユーザ名をセミコロンで区切ります。 **[OK]**をクリックします。  そのユーザが自分のセッションから切断されている間に管理者が既存のユーザ名を共有アカウントとして指定した場合、そのセッションは終了制限に達するまでサーバ上で実行されたままになります。その後セッションは終了します。共有アカウントを指定する前に、そのアカウントを使用している接続または切断されたセッションがないことをCluster Managerで確認してください。
+共有アカウントの指定方法  [Tools | Host Options]の順にクリックします。 [General]タブをクリックします。 [共有アカウント]編集ボックスに共有アカウントのユーザ名を入力します。複数の共有アカウントが必要な場合は、アカウントのユーザ名をセミコロンで区切ります。 [OK]をクリックします。  そのユーザが自分のセッションから切断されている間に管理者が既存のユーザ名を共有アカウントとして指定した場合、そのセッションは終了制限に達するまでサーバ上で実行されたままになります。その後セッションは終了します。共有アカウントを指定する前に、そのアカウントを使用している接続または切断されたセッションがないことをCluster Managerで確認してください。
 GO-Globalは、共有アカウントに対するドメイン名(NORTH\johngなど)の使用をサポートしていません。">
 <meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
 <meta itemprop="wordCount" content="27">
@@ -45,7 +45,7 @@ GO-Globalは、共有アカウントに対するドメイン名(NORTH\johngな�
 <meta name="twitter:description" content="共有アカウントは、GO-Globalセッションを開始するために複数のユーザが同じアカウントを使用しているときに指定する必要があります。共有アカウントでGO-Globalにサインインしたユーザは、切断してからGO-Globalに再接続することはできません。これにより、ユーザは他のユーザのセッションに再接続できなくなります。
 共有アカウントでGO-Globalホストにログオンすると、Cluster ManagerのDisconnected sessions terminateオプションは無視され、動作はHostProperties.xmlファイルのSessionTimeoutBrokenConnectionプロパティによって決まります。(HostProperties.xmlは、Windows 2003の場合はC : \Documents and Settings\All Users\Application Data\GraphOnに、Windows 2008の場合はC : \ProgramData\GraphOnにあります)。
 このプロパティの値が0に設定されている場合、セッションはただちに終了します。値が0より大きい場合、セッションは中断され、指定された分数の間サーバ上で実行されたままになります。後者の場合、セッションを開始したユーザだけが中断されたセッションに再接続できます。デフォルトでは、SessionTimeoutBrokenConnectionは0分に設定されています。
-共有アカウントの指定方法  [Tools | Host Options]の順にクリックします。 **[General]**タブをクリックします。 **[共有アカウント]**編集ボックスに共有アカウントのユーザ名を入力します。複数の共有アカウントが必要な場合は、アカウントのユーザ名をセミコロンで区切ります。 **[OK]**をクリックします。  そのユーザが自分のセッションから切断されている間に管理者が既存のユーザ名を共有アカウントとして指定した場合、そのセッションは終了制限に達するまでサーバ上で実行されたままになります。その後セッションは終了します。共有アカウントを指定する前に、そのアカウントを使用している接続または切断されたセッションがないことをCluster Managerで確認してください。
+共有アカウントの指定方法  [Tools | Host Options]の順にクリックします。 [General]タブをクリックします。 [共有アカウント]編集ボックスに共有アカウントのユーザ名を入力します。複数の共有アカウントが必要な場合は、アカウントのユーザ名をセミコロンで区切ります。 [OK]をクリックします。  そのユーザが自分のセッションから切断されている間に管理者が既存のユーザ名を共有アカウントとして指定した場合、そのセッションは終了制限に達するまでサーバ上で実行されたままになります。その後セッションは終了します。共有アカウントを指定する前に、そのアカウントを使用している接続または切断されたセッションがないことをCluster Managerで確認してください。
 GO-Globalは、共有アカウントに対するドメイン名(NORTH\johngなど)の使用をサポートしていません。"/>
 
 
@@ -137,7 +137,7 @@ GO-Globalは、共有アカウントに対するドメイン名(NORTH\johngな�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
+  data-offline-search-index-json-src="/offline-search-index.3d9eb018583aeca374f4316c78e4835dfbb487452a31e3839be31308f0f59b9c2f3bf98c3454280e74e89a017a6fa966bfd2b58eddd148ca3bfa5e2a79852fe2.json"
   data-offline-search-base-href="/"
 >
 
@@ -167,7 +167,7 @@ GO-Globalは、共有アカウントに対するドメイン名(NORTH\johngな�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
+  data-offline-search-index-json-src="/offline-search-index.3d9eb018583aeca374f4316c78e4835dfbb487452a31e3839be31308f0f59b9c2f3bf98c3454280e74e89a017a6fa966bfd2b58eddd148ca3bfa5e2a79852fe2.json"
   data-offline-search-base-href="/"
 >
 
@@ -1800,13 +1800,13 @@ GO-Globalは、共有アカウントに対するドメイン名(NORTH\johngな�
 <h3 id="共有アカウントの指定方法">共有アカウントの指定方法</h3>
 <ol>
 <li>[Tools | Host Options]の順にクリックします。</li>
-<li>**[General]**タブをクリックします。</li>
-<li>**[共有アカウント]**編集ボックスに共有アカウントのユーザ名を入力します。複数の共有アカウントが必要な場合は、アカウントのユーザ名をセミコロンで区切ります。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>General</strong>]タブをクリックします。</li>
+<li>[<strong>共有アカウント</strong>]編集ボックスに共有アカウントのユーザ名を入力します。複数の共有アカウントが必要な場合は、アカウントのユーザ名をセミコロンで区切ります。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 </ol>
 <p>そのユーザが自分のセッションから切断されている間に管理者が既存のユーザ名を共有アカウントとして指定した場合、そのセッションは終了制限に達するまでサーバ上で実行されたままになります。その後セッションは終了します。共有アカウントを指定する前に、そのアカウントを使用している接続または切断されたセッションがないことをCluster Managerで確認してください。</p>
 <p>GO-Globalは、共有アカウントに対するドメイン名(NORTH\johngなど)の使用をサポートしていません。</p>
-<p><img src="/img/4-7-1.png" alt="4-7-1"></p>
+<p><img src="/image5/4-7-1.png" alt="4-7-1"></p>
 
 	
 		

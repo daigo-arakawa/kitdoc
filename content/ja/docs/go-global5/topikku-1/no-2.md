@@ -12,7 +12,7 @@ GO-Globalセッションの最大色数を増減するには、ショートカ�
 
 例:"C:\Program Files\GraphOn\GO-Global\Client\gg-client.exe" -mx 32
 
-![6-21-1](/img/6-21-1.png) 
+![6-21-1](/image5/6-21-1.png) 
 
 ハイパーリンクからGO-Globalを実行するときは、maxbppパラメータを8、16、24、32の値で使用します。次の例では、ハイパーリンクは最大色数を1ピクセルあたり24ビットに設定します。
 

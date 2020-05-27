@@ -68,7 +68,7 @@ rm -rf ~/.mozilla/plugins/libnpg.so ~/.mozilla/plugins/libpbr.so > ~/.mozilla/ g
   2. **詳細情報**をクリックします。
   3. **削除**をクリックします。
 
-ActiveX Controlの再インストールや実行がうまくいかない場合は、ブラウザのキャッシュを削除してください。これには、Internet Explorer を起動して [ツール | インターネットオプション] の順にクリックします。 **[General]**タブをクリックして、 **[Temporary Internet Files]**の下にある **[Delete Files]**をクリックします。その後、コマンドプロンプトウィンドウで、コンフリクトを起こしているディレクトリがないか確認します。
+ActiveX Controlの再インストールや実行がうまくいかない場合は、ブラウザのキャッシュを削除してください。これには、Internet Explorer を起動して [ツール | インターネットオプション] の順にクリックします。 [**General**]タブをクリックして、 [**Temporary Internet Files**]の下にある [**Delete Files**]をクリックします。その後、コマンドプロンプトウィンドウで、コンフリクトを起こしているディレクトリがないか確認します。
 
 ### コンフリクトを起こしているディレクトリの確認方法
 

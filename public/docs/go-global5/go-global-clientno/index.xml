@@ -36,12 +36,12 @@
 &lt;ol&gt;
 &lt;li&gt;GO-Globalメニューオプションを選択します。&lt;/li&gt;
 &lt;li&gt;Windowsでは、Windowsタスクバーの &lt;strong&gt;スタート&lt;/strong&gt;ボタンをクリックし、[Programs | GraphOn GO-Global 5 | GO-Global Client] の順に選択します。&lt;/li&gt;
-&lt;li&gt;Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、 **[GO-Global]**をクリックします。&lt;/li&gt;
-&lt;li&gt;Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[GO-Global]**をダブルクリックします。&lt;/li&gt;
-&lt;li&gt;**[Connection]**ダイアログ内にホストのアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;**[Connect]**をクリックします。[**Sign In]**ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、 [&lt;strong&gt;GO-Global&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;Mac OS Xでは、[移動]メニューから[Applications]を選択し、 [&lt;strong&gt;GO-Global&lt;/strong&gt;]をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログ内にホストのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。[&lt;strong&gt;Sign In&lt;/strong&gt;]ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;User Name&lt;/strong&gt;]ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Password&lt;/strong&gt;]ボックスにパスワードを入力します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;GO-Globalは、ログオンプロセスをシャットダウンする前に、ユーザーに無効なログオン試行を3回許可します。&lt;/p&gt;
@@ -50,18 +50,18 @@
 &lt;h3 id=&#34;windowsコンピュータにgo-global-hostへのショートカットを作成する方法&#34;&gt;WindowsコンピュータにGO-Global Hostへのショートカットを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;上記のいずれかの方法でGO-Globalを起動します。&lt;/li&gt;
-&lt;li&gt;**[Connection]**ダイアログにサーバのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログにサーバのアドレスを入力します。&lt;/li&gt;
 &lt;li&gt;[Create desktop shortcut to this host]チェックボックスをオンにします。&lt;/li&gt;
-&lt;li&gt;**[Connect]**をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/5-1-1.png&#34; alt=&#34;5-1-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/5-1-1.png&#34; alt=&#34;5-1-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;上記の方法に加えて、コンソールウィンドウからGO-Globalを実行することもできます。&lt;/p&gt;
 &lt;h3 id=&#34;コンソールウィンドウからgo-globalを実行する方法&#34;&gt;コンソールウィンドウからGO-Globalを実行する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;コンソールウィンドウを開きます。&lt;/li&gt;
 &lt;li&gt;gg-clientと入力します。&lt;/li&gt;
-&lt;li&gt;**[Connection]**ダイアログにホストのアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;**[Connect]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログにホストのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
@@ -394,7 +394,7 @@ Mac
 &lt;li&gt;&lt;strong&gt;詳細情報&lt;/strong&gt;をクリックします。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;削除&lt;/strong&gt;をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;ActiveX Controlの再インストールや実行がうまくいかない場合は、ブラウザのキャッシュを削除してください。これには、Internet Explorer を起動して [ツール | インターネットオプション] の順にクリックします。 **[General]**タブをクリックして、 **[Temporary Internet Files]**の下にある **[Delete Files]**をクリックします。その後、コマンドプロンプトウィンドウで、コンフリクトを起こしているディレクトリがないか確認します。&lt;/p&gt;
+&lt;p&gt;ActiveX Controlの再インストールや実行がうまくいかない場合は、ブラウザのキャッシュを削除してください。これには、Internet Explorer を起動して [ツール | インターネットオプション] の順にクリックします。 [&lt;strong&gt;General&lt;/strong&gt;]タブをクリックして、 [&lt;strong&gt;Temporary Internet Files&lt;/strong&gt;]の下にある [&lt;strong&gt;Delete Files&lt;/strong&gt;]をクリックします。その後、コマンドプロンプトウィンドウで、コンフリクトを起こしているディレクトリがないか確認します。&lt;/p&gt;
 &lt;h3 id=&#34;コンフリクトを起こしているディレクトリの確認方法&#34;&gt;コンフリクトを起こしているディレクトリの確認方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;コマンドプロンプトウィンドウを開きます。&lt;/li&gt;

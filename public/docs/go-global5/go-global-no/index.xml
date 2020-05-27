@@ -46,15 +46,15 @@
 &lt;li&gt;gg-client.firefox.exe: Firefox 用のアドオン&lt;/li&gt;
 &lt;li&gt;gg-client.ie.exe: 従来のActiveX クライアントに相当 これらのインストーラは%LOCALAPPDATA%\GraphOn\GO-Global\Clientディレクトリにクライアントの実行ファイルをインストールします。アドオンのインストール完了後にブラウザを再起動すると、以下のようなURL(サンプル)を介してGGサーバーへアクセス出来るようになります。 &lt;a href=&#34;http:/???/logon.html?host=192.168.102.30&amp;amp;user=Administrator&amp;amp;password=myPass&#34;&gt;http://???/logon.html?host=192.168.102.30&amp;amp;user=Administrator&amp;amp;password=myPas&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/1-2-1.png&#34; alt=&#34;1-2-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/1-2-1.png&#34; alt=&#34;1-2-1&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Windows テーマ対応 Windows 7 またはそれ以降のクライアント環境で、サーバ側で指定されたテーマでアプリケーションが表示されるようになりました。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/1-2-2.png&#34; alt=&#34;1-2-2&#34;&gt; &lt;img src=&#34;/img/1-2-3.png&#34; alt=&#34;1-2-3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/1-2-2.png&#34; alt=&#34;1-2-2&#34;&gt; &lt;img src=&#34;/image5/1-2-3.png&#34; alt=&#34;1-2-3&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;ホスト環境として Windows 10 feature release version 1803のサポート 高解像度ディスプレイ対応 クライアント側の文字等のサイズ設定が、GG上で動作するアプリケーションにも反映されるようになりました(DPIスケーリング)。下記の例では、拡大表示(テキスト等)の設定が、バージョン5.0のみに反映されています。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/1-2-4.png&#34; alt=&#34;1-2-4&#34;&gt;&lt;img src=&#34;/img/1-2-5.png&#34; alt=&#34;1-2-5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/1-2-4.png&#34; alt=&#34;1-2-4&#34;&gt;&lt;img src=&#34;/image5/1-2-5.png&#34; alt=&#34;1-2-5&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Windows デスクトップのサポート Windows デスクトップ(スタートメニューやタスクバーなど)にアクセス出来るようになりました。Windows デスクトップにアクセスするには、以下のパラメタを追加して下さい。&lt;/li&gt;
 &lt;/ol&gt;
@@ -62,11 +62,11 @@
 &lt;li&gt;コマンドライン： -desktop&lt;/li&gt;
 &lt;li&gt;アドオン： &amp;amp;desktop=true セッションの切断は、セッションのウインドウ(デスクトップの枠)を閉じて下さい。セッションの終了は、デスクトップで「ログオフ」または「サインアウト」処理を行って下さい。 管理者は、設定ファイルHostProperties.xml中のAllowDesktopプロパティにfalseを指定することで、このWindows デスクトップ機能を無効にすることが出来ます (既定値はfalseです)。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/1-2-6.png&#34; alt=&#34;1-2-6&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/1-2-6.png&#34; alt=&#34;1-2-6&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;オーディオ機能の改良 Windowsの環境で、セッション毎に仮想オーディオディバイスがサポートされました。これにより、メールに添付されたmp3 形式の音声ファイル等を再生することが可能になりました。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/1-2-7.png&#34; alt=&#34;1-2-7&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/1-2-7.png&#34; alt=&#34;1-2-7&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;自動セッション再接続機能 クライアントのパラメタに自動セッション再接続機能が追加されました。下記のパラメタを指定することで、ネットワーク障害等によりサーバ～クライアント間でセッションが切断された時に、自動的にサスペンド状態にあるセッションに所定回数だけ(xで回数を指定)再接続を試みます。再接続の試行時に、下記の再接続ダイアログは表示されません。&lt;/li&gt;
 &lt;/ol&gt;
@@ -74,15 +74,15 @@
 &lt;li&gt;コマンドライン： -autoreconnect x&lt;/li&gt;
 &lt;li&gt;アドオン： &amp;amp;autoreconnect=x&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/1-2-8.png&#34; alt=&#34;1-2-8&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/1-2-8.png&#34; alt=&#34;1-2-8&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;通信品質監視機能 サーバ～クライアント間の通信 「品質」 を監視する機能が追加されました。この機能により一時的なネットワークの遅延やサーバやクライアントの過負荷による遅延等に関する情報もAPS ログに記録されますので、障害解析等を効率的に行えるようになります。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/1-2-9.png&#34; alt=&#34;1-2-9&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/1-2-9.png&#34; alt=&#34;1-2-9&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;クライアント側ログファイル 従来のクライアントではクライアントのログをサーバ側に保存していましたが、接続障害等が発生した場合に情報が記録されないという問題がありました。GGH5.Xのクライアントでは、 %APPDATA%¥GraphOn¥Logs ディレクトリにログファイルを作成するようになりました。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/1-2-10.png&#34; alt=&#34;1-2-10&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/1-2-10.png&#34; alt=&#34;1-2-10&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -241,22 +241,22 @@
         
         &lt;h2 id=&#34;go-global-server&#34;&gt;GO-Global Server&lt;/h2&gt;
 &lt;p&gt;GO-Globalホストの稼働には、以下の Windowsオペレーティングシステムのいずれかが必要です。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Windows 10&lt;/strong&gt;*&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windows 10&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Professional Edition(64-bit)&lt;/li&gt;
 &lt;li&gt;Enterprise Edition(64-bit)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Windows 8.1&lt;/strong&gt;*&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windows 8.1&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Professional Edition(64-bit)&lt;/li&gt;
 &lt;li&gt;Enterprise Edition(64-bit)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Windows 8&lt;/strong&gt;*&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windows 8&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Professional Edition(64-bit)&lt;/li&gt;
 &lt;li&gt;Enterprise Edition(64-bit)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Windows 7 with Service Pack 1&lt;/strong&gt;*&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windows 7 with Service Pack 1&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Professional Edition(64-bit)&lt;/li&gt;
 &lt;li&gt;Ultimate Edition(64-bit)&lt;/li&gt;

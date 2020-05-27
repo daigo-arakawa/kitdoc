@@ -8,22 +8,22 @@ weight= 5
 
 GO-Globalホストの稼働には、以下の Windowsオペレーティングシステムのいずれかが必要です。
 
-**Windows 10***
+**Windows 10**
 
 * Professional Edition(64-bit)
 * Enterprise Edition(64-bit)
 
-**Windows 8.1***
+**Windows 8.1**
 
 * Professional Edition(64-bit)
 * Enterprise Edition(64-bit)
 
-**Windows 8***
+**Windows 8**
 
 * Professional Edition(64-bit)
 * Enterprise Edition(64-bit)
 
-**Windows 7 with Service Pack 1***
+**Windows 7 with Service Pack 1**
 
 * Professional Edition(64-bit)
 * Ultimate Edition(64-bit)

@@ -17,11 +17,11 @@ GO-GlobalクライアントがWindows以外のOSで実行されている場合�
 1. サーバ上のコンソールに管理者としてサインインします。
 2. 表示アプレットへのショートカットを作成します。 
 a.[**スタート | コントロール**]の順にクリックしてます。
-b. **[表示]**を右クリックします。 ショートカットがデスクトップに追加されます。
+b. [**表示**]を右クリックします。 ショートカットがデスクトップに追加されます。
 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。
 3. ユーザにショートカットを公開する 
-a. **Cluster Manager**を実行し、 **[Application | Add]**の順にクリックします。 
-b. **[Display Name]**フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 
+a. **Cluster Manager**を実行し、 [**Application | Add**]の順にクリックします。 
+b. [**Display Name**]フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 
 c. [**Executable Path**]フィールドにexplorer.exeへのパス(例：C:\Windows\explorer.exe)を入力します。 
 d. [**Command-Line Options**]フィールドに、手順2で作成したショートカットのパスを入力します。(例C:\Users\Public\Desktop\Display.lnk)。 
-e. **[OK]**をクリックします。
+e. [**OK**]をクリックします。

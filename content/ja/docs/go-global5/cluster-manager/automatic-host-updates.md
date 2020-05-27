@@ -9,7 +9,7 @@ weight = 12
 
 Administrators can configure GO-Global hosts to automatically download and install GO-Global updates using the Cluster Manager's Updates tab.
 
-![4-12-1](/img/4-12-1.png)
+![4-12-1](/image5/4-12-1.png)
 
 ## Specifying the Types of GO-Global Updates to Download and Install
 

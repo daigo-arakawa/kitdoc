@@ -28,14 +28,14 @@
 次のコマンドウィンドウは、GO-Globalホストで setspn." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/advanced-topics/configuration-requirements-for-delegation-support/" />
-<meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-28T00:50:53+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="委任サポートの構成要件">
 <meta itemprop="description" content="第4章で説明したように、統合Windows認証を ホストのキャッシュパスワードなしで使用すると、一部のネットワークリソースにアクセスするためにWindows委任が必要になる場合があります。たとえば、委任が有効になっていないと、グループポリシーが正しく適用されないことがあります。
 委任サポートの構成要件は次のとおりです。
  委任には、Kerberos認証プロトコルとActive Directoryドメインが必要です。 ドメインネームシステム(DNS)サーバは、サービスロケーション(SRV)リソースレコードをサポートする必要があります。 また、DNSサーバがDNS動的更新をサポートすることをお勧めします。 DNS動的更新プロトコルがないと、管理者はドメインコントローラによって作成され、DNSサーバによって保存されたレコードを手動で構成する必要があります。Windows 2000以降で提供されるDNSサービスは、これら両方の要件をサポートしています。 GO-Globalクライアント、GO-Globalホスト、および電子メールやデータベースなどのバックエンドサービスをホストしているコンピュータは、Kerberosをサポートしている必要があります。 クライアントのユーザーアカウントは、GO-Global Application Publishing Serviceによる委任をサポートしている必要があります。Active Directoryユーザとコンピュータの管理コンソールで、ユーザを選択して[アクション | コンピュータ]の順にクリックします。プロパティアカウントタブをクリックします。[アカウントオプション]リストボックスを下にスクロールして、[アカウントが機密で委任できない]オプションが無効になっていることを確認します。[アカウントは委任に対して信頼されている]オプションを有効にします。   Windows Server 2008の[プロパティ]ダイアログに[委任]タブが表示されない場合は、これは仕様によるものです。[委任]タブは、サービスアカウント名(SPN)がユーザアカウントに対して作成された後にのみ表示されます。昇格したコマンドプロンプトで、以下を実行します。Active DirectoryでDOMAIN Accountを検索します。[委任]タブが[プロパティ]ダイアログに表示されます。[任意のサービスへの委任でこのユーザを信頼する]を選択します(Kerberosのみ)。  setspn -A HTTP / intranet.domain.local DOMAIN\Account GO-Globalホストは、ユーザのアカウントを他のコンピュータに委任する権限を持っている必要があります。Active Directoryユーザとコンピュータの管理コンソールで、コンピュータを選択して[アクション]メニューから[アクション]をクリックします。プロパティ[委任]タブをクリックします。[任意のサービスへの委任に対してコンピュータを信頼する]を有効にします(Kerberos)。これらの委任権限を適用するには、GO-Global Application Publishing Serviceをローカルシステムアカウントで実行するように構成する必要があります。   Active Directory内の任意のサービス(Kerberosのみ)への [コンピュータを委任に対して信頼する]を有効にしたら、委任を有効にするためにGO-Globalホストを再起動する必要があります。
   GO-Global Application Publishing ServiceのService Principle Name(SPN)をActive Directoryに登録できるようにする必要があります。GO-Global Application Publishing Serviceは、サービスが再実行されるたびにこれを試みます。 setspn.exeユーティリティ(Microsoft Resource Kitに収録。Microsoft からも個別にダウンロード可能)を使用して、SPNが正しく設定されているかどうかを確認できます。下の図は、setspn.exeをGO-Globalホストで実行したときに表示されるコマンドウィンドウです。  adlab-ggserverを、GO-Globalホストのコンピュータ名に置き換えます。{54094C05-F977-4987-BFC9-E8B90E088973} Globally Unique Identifier(GUID)は、GO-Global Application Publishing Serviceが {54094C05-F977-4987-BFC9-E8B90E088973}/adlab-ggserver.adlab.graphon.com SPNを作成するときに使用します。
 次のコマンドウィンドウは、GO-Globalホストで setspn.">
-<meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
+<meta itemprop="dateModified" content="2020-05-28T00:50:53&#43;09:00" />
 <meta itemprop="wordCount" content="61">
 
 
@@ -137,7 +137,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
+  data-offline-search-index-json-src="/offline-search-index.3d9eb018583aeca374f4316c78e4835dfbb487452a31e3839be31308f0f59b9c2f3bf98c3454280e74e89a017a6fa966bfd2b58eddd148ca3bfa5e2a79852fe2.json"
   data-offline-search-base-href="/"
 >
 
@@ -167,7 +167,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1e6b7e57690a76e39c49a9dff4ba1ac3b1857a53331c1bfa607736285b31878fcbb3da2bea8aad54c8a3eafc77c8bda4d00c45987de64a29b7c5d8f41c74cc3b.json"
+  data-offline-search-index-json-src="/offline-search-index.3d9eb018583aeca374f4316c78e4835dfbb487452a31e3839be31308f0f59b9c2f3bf98c3454280e74e89a017a6fa966bfd2b58eddd148ca3bfa5e2a79852fe2.json"
   data-offline-search-base-href="/"
 >
 
@@ -2067,7 +2067,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 March 5, 2020: <a  href="https://github.com/google/docsy-example/commit/05e264dd78f754815bb14e641c43bb5ad8752bc7">page (05e264dd)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 28, 2020: <a  href="https://github.com/google/docsy-example/commit/a585a5b1589bad5061cb885d999bd8a4978eb796">gg6-3 (a585a5b1)</a>
 </div>
 </div>
 

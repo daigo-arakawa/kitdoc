@@ -4,7 +4,7 @@
 
 以下の図は、GO-Global App(iOS上で実行)とホストが同じLAN上にある場合の通信を示しています。 ユーザデータグラムプロトコル(UDP)通信はGO-Globalがネットワーク上にあるホストを自動的に発見するために使用されます。
 
-![9-167-1](/img/9-167-1.png) 
+![9-167-1](/images/9-167-1.png) 
 
 ### Communication with a Relay Server
 

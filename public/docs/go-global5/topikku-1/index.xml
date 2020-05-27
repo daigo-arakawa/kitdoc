@@ -346,7 +346,7 @@
 &lt;li&gt;プログラムウィンドウから[File | Printer]の順にクリックします。&lt;/li&gt;
 &lt;li&gt;リストから目的のプリンタを選択します。&lt;/li&gt;
 &lt;li&gt;ボタンをクリックします。&lt;/li&gt;
-&lt;li&gt;必要に応じてプロパティを編集し、 **[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;必要に応じてプロパティを編集し、 [&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
@@ -752,7 +752,7 @@
         &lt;p&gt;GO-Globalセッションの色深度(または色品質)は、アプリケーションによっては画像の品質に影響を与える可能性があります。GO-Globalセッションは、最大値までクライアントシステムの色深度で実行されます。デフォルトでは、最大深度は1ピクセルあたり16ビットに設定されています。&lt;/p&gt;
 &lt;p&gt;GO-Globalセッションの最大色数を増減するには、ショートカットからGO-Globalを実行するときに–mxオプションを使用します。最大色数は、次のように-mx 32、-mx 24、-mx 16、-mx 8と指定できます。GO-Globalセッションは、-mxオプションの最小値とクライアントシステムの色数を使用します。たとえば、GO-Globalセッションを1ピクセルあたり32ビットで実行するには、-mx 32をコマンドラインに追加し、クライアントシステムを1ピクセルあたり32ビットで実行する必要があります。&lt;/p&gt;
 &lt;p&gt;例:&amp;ldquo;C:\Program Files\GraphOn\GO-Global\Client\gg-client.exe&amp;rdquo; -mx 32&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-21-1.png&#34; alt=&#34;6-21-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-21-1.png&#34; alt=&#34;6-21-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;ハイパーリンクからGO-Globalを実行するときは、maxbppパラメータを8、16、24、32の値で使用します。次の例では、ハイパーリンクは最大色数を1ピクセルあたり24ビットに設定します。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://hostname/goglobal/logon.html?maxbpp=24&#34;&gt;http://hostname/goglobal/logon.html?maxbpp=24&lt;/a&gt;&lt;/p&gt;
 
@@ -980,7 +980,7 @@ Kernel32!GetEnvironmentVariableA/W()&lt;/p&gt;
 &lt;li&gt;管理者は、ホスト名、IPv4アドレス、またはIPv6アドレスを使用して、Cluster Managerで中継ホストを指定できます。&lt;/li&gt;
 &lt;li&gt;ユーザは、ホスト名、IPv4アドレス、またはIPv6アドレスを使用してGO-Globalホストに接続できます。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-27-1.png&#34; alt=&#34;6-27-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-27-1.png&#34; alt=&#34;6-27-1&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1240,14 +1240,14 @@ Kernel32!GetEnvironmentVariableA/W()&lt;/p&gt;
 &lt;li&gt;サーバ上のコンソールに管理者としてサインインします。&lt;/li&gt;
 &lt;li&gt;表示アプレットへのショートカットを作成します。 
 a.[&lt;strong&gt;スタート | コントロール&lt;/strong&gt;]の順にクリックしてます。
-b. **[表示]**を右クリックします。 ショートカットがデスクトップに追加されます。
+b. [&lt;strong&gt;表示&lt;/strong&gt;]を右クリックします。 ショートカットがデスクトップに追加されます。
 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。&lt;/li&gt;
 &lt;li&gt;ユーザにショートカットを公開する 
-a. &lt;strong&gt;Cluster Manager&lt;/strong&gt;を実行し、 **[Application | Add]**の順にクリックします。 
-b. **[Display Name]**フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 
+a. &lt;strong&gt;Cluster Manager&lt;/strong&gt;を実行し、 [&lt;strong&gt;Application | Add&lt;/strong&gt;]の順にクリックします。 
+b. [&lt;strong&gt;Display Name&lt;/strong&gt;]フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 
 c. [&lt;strong&gt;Executable Path&lt;/strong&gt;]フィールドにexplorer.exeへのパス(例：C:\Windows\explorer.exe)を入力します。 
 d. [&lt;strong&gt;Command-Line Options&lt;/strong&gt;]フィールドに、手順2で作成したショートカットのパスを入力します。(例C:\Users\Public\Desktop\Display.lnk)。 
-e. **[OK]**をクリックします。&lt;/li&gt;
+e. [&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
