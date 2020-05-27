@@ -1,7 +1,7 @@
 +++
 title = "GO-Globalライセンスの管理"
-description = "Admin Consoleには、ホストで利用可能なすべてのGO-Globalライセンスが一覧表示され、各ライセンスの製品コード、座席数、有効期限、ステータスなどが表示されます。"
-weight = 5
+description = ""
+weight = 4
 +++
 
 

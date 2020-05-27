@@ -22,18 +22,20 @@
       <description>
         
         
-        &lt;p&gt;デスクトップ上の[Admin Console]アイコンをダブルクリックします。&lt;/p&gt;
+        &lt;p&gt;Admin Consoleにより、クライアントのGO-Globalホストへのアクセスを管理、監視、制御できます。Admin Consoleには、GO-Globalホストにログオンしているユーザの一覧、そのユーザが実行中のアプリケーション、そのアプリケーションが起動された時刻が表示されます。Admin Consoleを使用すれば、アプリケーションの追加と削除、ユーザセッションの終了、ホスト上で実行中の処理の終了など、さまざまな管理タスクを実行できます。&lt;/p&gt;
+&lt;h3 id=&#34;admin-consoleへのアクセス方法&#34;&gt;Admin Consoleへのアクセス方法&lt;/h3&gt;
+&lt;p&gt;デスクトップ上の[Admin Console]アイコンをダブルクリックします。&lt;/p&gt;
 &lt;p&gt;－または－&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Windowsタスクバーの **[スタート]**ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;Windowsタスクバーの &lt;strong&gt;スタート&lt;/strong&gt;ボタンをクリックします。&lt;/li&gt;
 &lt;li&gt;[GraphOn GO-Global | Admin Console] の順にクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Admin Consoleの左パネルには、Application Publishing Serviceを実行しているネットワーク上のホストの一覧が表示されます。デフォルトでAdmin Consoleは、各自のマシン上で稼働中のホストの情報を表示します。他のホストへ接続してそのホストの情報を閲覧するには、GO-Globalホストの一覧からホスト名をクリックします。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/4-1-1.png&#34; alt=&#34;4-1-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/4-1-2.png&#34; alt=&#34;4-1-2&#34;&gt;&lt;/p&gt;
 &lt;p&gt;ホストのアイコンに赤色のXが付いている場合は、システム管理者にそのホストの管理権限がないことを示します。ホストに赤色のXが付いていて、かつ灰色表示になっている場合は、そのホストで Application Publishing Serviceが実行されていないか、ホストが停止していることを示しています。どちらの場合も、システム管理者はAdmin Consoleを介してホストにアクセスすることはできません。&lt;/p&gt;
 &lt;p&gt;Admin Console左パネル内の**[All Hosts]**アイコンをクリックすれば、ネットワーク上で実行中の全セッションの一覧を確認できます。これで、個別のホストに接続しなくても、アクティブなGO-Globalセッションを確認できます。また、特定のセッションを実行しているホストを検索するのにも便利です。&lt;/p&gt;
 &lt;p&gt;Admin Consoleから個々のGO-Globalホストにアクセスするためには、そのホストの管理者グループに属している必要があります。ホストの管理権限がなければ、アプリケーションの追加や処理の終了などを行うことはできません。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/4-1-2.png&#34; alt=&#34;4-1-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/4-1-1.png&#34; alt=&#34;4-1-1&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -201,13 +203,13 @@ Layout Text = Japanese Input System（MS-IME2002）
 &lt;ol&gt;
 &lt;li&gt;GO-Globalメニューオプションを選択します。
 a. Windowsでは、Windowsタスクバーの &lt;strong&gt;スタート&lt;/strong&gt;ボタンをクリックし、[Programs | GO-Global ]の順に選択します。
-b. Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、 **[GO-Global]**をクリックします。
-c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[GO-Global]**をダブルクリックします。&lt;/li&gt;
-&lt;li&gt;**[Connection]**ダイアログ内にホストのアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;**[Connect]**をクリックします。[**Sign In]**ダイアログが表示されたら、次の情報を入力します。
+b. Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、 [&lt;strong&gt;GO-Global&lt;/strong&gt;]をクリックします。
+c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 [&lt;strong&gt;GO-Global&lt;/strong&gt;]をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログ内にホストのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。[&lt;strong&gt;Sign In&lt;/strong&gt;]ダイアログが表示されたら、次の情報を入力します。
 &lt;ul&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;User Name&lt;/strong&gt;]ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Password&lt;/strong&gt;]ボックスにパスワードを入力します。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -218,9 +220,9 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[G
 &lt;h3 id=&#34;windowsコンピュータにgo-globalホストへのショートカットを作成する方法&#34;&gt;WindowsコンピュータにGO-Globalホストへのショートカットを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;上記のいずれかの方法でGO-Globalを起動します。&lt;/li&gt;
-&lt;li&gt;**[Connection]**ダイアログにサーバのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログにサーバのアドレスを入力します。&lt;/li&gt;
 &lt;li&gt;[Create desktop shortcut to this host]チェックボックスをオンにします。&lt;/li&gt;
-&lt;li&gt;**[Connect]**をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;windows上でgo-globalのショートカットを作成する方法&#34;&gt;Windows上でGO-Globalのショートカットを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
@@ -583,7 +585,7 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
 &lt;p&gt;Mobile App Toolbar Editorは、アプリケーションがモバイルデバイスからアクセスされたときに表示されるツールバーボタンとメニューを定義するために使用されます。ボタンとメニュー項目の両方がアプリケーション下部のツールバーに表示されます。メニュー項目には、メインツールバーのすぐ上の別のツールバーに表示されるサブメニュー項目を含めることができます。&lt;/p&gt;
 &lt;h3 id=&#34;mobile-app-toolbar-editorの起動方法&#34;&gt;Mobile App Toolbar Editorの起動方法&lt;/h3&gt;
 &lt;p&gt;Programs | GraphOn GO-Global | Mobile App Console の順にクリックします。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-1-1.png&#34; alt=&#34;6-1-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/6-1-1.png&#34; alt=&#34;6-1-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Admin Consoleで公開されているアプリケーションが一覧表示され、それぞれがデフォルトのツールバーを使用するように設定されます。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Add、Edit、Remove、Duplicateボタンはカスタムツールバーにのみ適用され、アプリケーションには適用されません。 たとえば、[Remove]ボタンをクリックすると、選択したアプリケーションからカスタムツールバーが削除されます。 アプリケーションはAdmin Consoleで公開されたままになり、ユーザは引き続き利用できるようになります。&lt;/p&gt;
@@ -772,9 +774,9 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
         
         
         &lt;p&gt;ショートカットキーを確認するために、カスタムツールバーを作成しているアプリケーションのメニューを確認します。すべてのアプリケーションには独自のショートカットがあり、一方で機能するショートカットは他方で機能しない可能性があります。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-1.png&#34; alt=&#34;6-2-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/6-2-1.png&#34; alt=&#34;6-2-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Microsoft Wordやワードパッドなどのツールバーがあるアプリケーションでは、[]タブで[Alt] + [H]をクリックして使用可能なショートカットを表示します。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-2.png&#34; alt=&#34;6-2-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/6-2-2.png&#34; alt=&#34;6-2-2&#34;&gt;&lt;/p&gt;
 &lt;p&gt;カスタムツールバーを作成するための次の手順では、ワードパッドをサンプルアプリケーションとして使用します。&lt;/p&gt;
 &lt;h3 id=&#34;ボタンの追加方法&#34;&gt;ボタンの追加方法&lt;/h3&gt;
 &lt;ol&gt;
@@ -786,7 +788,7 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
 &lt;li&gt;[Apply]をクリックします。このボタンは、モバイルクライアントデバイスのアプリケーションのツールバーに表示されます。ボタンやメニュー項目を追加し続けることも、[Custom Toolbars List]ボタンをクリックして別のアプリケーションにツールバーやメニュー項目を追加することもできます。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;次の例では、切り取り(Ctrl + X)、コピー(Ctrl + C)、貼り付け(Ctrl + V)、閉じる(Shift + F4)のボタンがカスタムツールバーに追加されています。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-3.png&#34; alt=&#34;6-2-3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/6-2-3.png&#34; alt=&#34;6-2-3&#34;&gt;&lt;/p&gt;
 &lt;p&gt;メニュー項目はツールバーボタンに似ていますが、最大3つのサブメニュー項目を持つことができます。&lt;/p&gt;
 &lt;h3 id=&#34;メニューアイテムの追加方法&#34;&gt;メニューアイテムの追加方法&lt;/h3&gt;
 &lt;ol&gt;
@@ -796,7 +798,7 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
 &lt;li&gt;[Add]をクリックします。&lt;/li&gt;
 &lt;li&gt;[Apply]をクリックします。このメニュー項目は、クライアントデバイスのアプリケーションのツールバーに表示されます。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-4.png&#34; alt=&#34;6-2-4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/6-2-4.png&#34; alt=&#34;6-2-4&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;メニューにボタンを追加する方法&#34;&gt;メニューにボタンを追加する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;ツールバーリストからメニュー項目を強調表示して、[Add Button]をクリックします。&lt;/li&gt;
@@ -806,7 +808,7 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
 &lt;li&gt;[Apply]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;次の例では、写真、図面、およびオブジェクトを挿入するためのボタンを含む[]メニューが作成されました。ショートカットキーを使用してワードパッドにオブジェクトを挿入するには、ユーザはAlt + H、次にOをクリックします。適切なショートカットキーを使用して、ツールバーエディタでオブジェクトのサブメニューボタンを作成します。モバイルデバイスのユーザは、カスタムツールバーの[Object]ボタンをクリックして、オブジェクトをドキュメントに挿入できます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-5.png&#34; alt=&#34;6-2-5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/6-2-5.png&#34; alt=&#34;6-2-5&#34;&gt;&lt;/p&gt;
 &lt;p&gt;メニューレベルごとに最大10項目、ボタンあたり最大5つのショートカットを追加できます。&lt;/p&gt;
 &lt;h3 id=&#34;ツールバーボタンとメニュー項目の編集の方法&#34;&gt;ツールバーボタンとメニュー項目の編集の方法&lt;/h3&gt;
 &lt;ol&gt;
@@ -815,16 +817,16 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
 &lt;li&gt;新しいショートカットを入力してください。&lt;/li&gt;
 &lt;li&gt;[Save]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-6.png&#34; alt=&#34;6-2-6&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/6-2-6.png&#34; alt=&#34;6-2-6&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;ボタンまたはメニュー項目を上下に移動する方法&#34;&gt;ボタンまたはメニュー項目を上下に移動する方法&lt;/h3&gt;
 &lt;p&gt;ツールバーリストの項目を強調表示して、[Move up]または[Move down]ボタンをクリックします。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-7.png&#34; alt=&#34;6-2-7&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/6-2-7.png&#34; alt=&#34;6-2-7&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;ボタンまたはメニュー項目を削除する方法&#34;&gt;ボタンまたはメニュー項目を削除する方法&lt;/h3&gt;
 &lt;p&gt;ツールバーリストの項目を強調表示して、[delete]ボタンをクリックします。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-8.png&#34; alt=&#34;6-2-8&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/6-2-8.png&#34; alt=&#34;6-2-8&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;デフォルトのツールバーに戻す方法&#34;&gt;デフォルトのツールバーに戻す方法&lt;/h3&gt;
 &lt;p&gt;デフォルト設定ボタンをクリックします。これにより、カスタムツールバー設定が削除されます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-9.png&#34; alt=&#34;6-2-9&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/6-2-9.png&#34; alt=&#34;6-2-9&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションの子プログラム用のカスタムツールバーを追加する方法&#34;&gt;アプリケーションの子プログラム用のカスタムツールバーを追加する方法&lt;/h3&gt;
 &lt;p&gt;Admin Consoleで公開されたアプリケーションの中には、アプリケーションのタスクのサブセットを実行する1つ以上の子プログラムを起動するものがあります。場合によっては、アプリケーションの主な機能が未公開の子プログラムによって提供されることがあります。このような場合、[Add]ボタンを使用して子プログラムのツールバーを追加したり、[Duplicate]ボタンを使用して既存のツールバーを子プログラムにコピーしたりできます。&lt;/p&gt;
 &lt;h3 id=&#34;子プロセス用のツールバーを作成する方法&#34;&gt;子プロセス用のツールバーを作成する方法&lt;/h3&gt;
@@ -843,7 +845,7 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
 &lt;/ol&gt;
 &lt;h3 id=&#34;カスタムツールバーの表示&#34;&gt;カスタムツールバーの表示&lt;/h3&gt;
 &lt;p&gt;モバイルデバイスでGO-Global Appを開いて作成したツールバーボタンを表示できます。たとえば、ワードパッドを起動すると、画面下部にカスタムツールバーボタンが表示されます。[Insert]をタップしてサブメニューを開きます。Xをタップしてサブメニューを閉じます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-10.png&#34; alt=&#34;6-2-10&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/6-2-10.png&#34; alt=&#34;6-2-10&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;ツールバーディレクトリの変更&#34;&gt;ツールバーディレクトリの変更&lt;/h3&gt;
 &lt;p&gt;ツールバーファイルはデフォルトでC:\ProgramData\GraphOn\GO-Global\MobileAppSettingsディレクトリに格納されています。GO-Globalホストが複数ある場合は、ツールバーを共有ネットワークディレクトリに保存し、すべてのホストで同じツールバーファイルを使用できます。&lt;/p&gt;
 &lt;h3 id=&#34;ツールバーが格納されているディレクトリを変更する方法&#34;&gt;ツールバーが格納されているディレクトリを変更する方法&lt;/h3&gt;
@@ -865,17 +867,16 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
       <description>
         
         
-        &lt;h1 id=&#34;go-global-web-app&#34;&gt;GO-Global Web App&lt;/h1&gt;
-&lt;p&gt;JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。&lt;/p&gt;
+        &lt;p&gt;JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。&lt;/p&gt;
 &lt;h2 id=&#34;go-global-web-appの起動&#34;&gt;GO-Global Web Appの起動&lt;/h2&gt;
 &lt;p&gt;GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Google Chrome、Apple Safariなどの一般的なWebブラウザから実行できます。&lt;/p&gt;
 &lt;h3 id=&#34;webブラウザからgo-globalを起動方法&#34;&gt;WebブラウザからGO-Globalを起動方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
 &lt;li&gt;[Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false&lt;/li&gt;
-&lt;li&gt;**[Sign In]**ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Sign In&lt;/strong&gt;]ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;User Name&lt;/strong&gt;]ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Password&lt;/strong&gt;]ボックスにパスワードを入力します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;[Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1268,11 +1269,11 @@ d. 貼り付けたテキストの &lt;strong&gt;AllowCreateSessionOnConnect&lt;/
 &lt;p&gt;アプリケーションはAdmin Consoleを使って公開されます。Admin Consoleを介してアプリケーションを公開するときに、アプリケーションの起動方法を制御する起動パラメータを指定できます。Interactive Quick Start Guideを実行するときは、プロンプトに従ってアプリケーションを公開してください。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションを公開する方法&#34;&gt;アプリケーションを公開する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;**[All Hosts]**の一覧から、目的のホストを選択します。&lt;/li&gt;
-&lt;li&gt;**[Applications]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Add]**ボタンをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Location]**ボックスの横にある **[Browse]**ボタンをクリックして、アプリケーションの実行可能ファイルを見つけて選択します。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;All Hosts&lt;/strong&gt;]の一覧から、目的のホストを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Add&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Location&lt;/strong&gt;]ボックスの横にある [&lt;strong&gt;Browse&lt;/strong&gt;]ボタンをクリックして、アプリケーションの実行可能ファイルを見つけて選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/images/4-2-1.png&#34; alt=&#34;4-2-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;デフォルトでは、ブラウズダイアログはPROGRAMDATA\Microsoft\Windows\Start Menu\Programsディレクトリに開きます。最初のアプリケーションを公開した後、ダイアログが最後に公開されたアプリケーションのディレクトリで開きます。&lt;/p&gt;
@@ -1326,14 +1327,14 @@ d. 貼り付けたテキストの &lt;strong&gt;AllowCreateSessionOnConnect&lt;/
 &lt;li&gt;[Yes]をクリックして確定します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;アプリケーションの複製&#34;&gt;アプリケーションの複製&lt;/h2&gt;
-&lt;p&gt;アプリケーションの複製では、選択された登録済みアプリケーションの完全なコピーが作成されます。これは、同一のアプリケーションを異なるユーザやグループに対してさまざまな形で利用可能にする場合に便利です。たとえば、 **[Sign In]**ダイアログを表示しないコマンド行オプション付きの1つのバージョンのアプリケーションと、クライアントにサインインを要求するコマンド行オプションのない別のバージョンのアプリケーションを登録できます。アプリケーションを複製する場合には、新しい表示名を選択する必要があります。&lt;/p&gt;
+&lt;p&gt;アプリケーションの複製では、選択された登録済みアプリケーションの完全なコピーが作成されます。これは、同一のアプリケーションを異なるユーザやグループに対してさまざまな形で利用可能にする場合に便利です。たとえば、 &lt;strong&gt;Sign In&lt;/strong&gt;ダイアログを表示しないコマンド行オプション付きの1つのバージョンのアプリケーションと、クライアントにサインインを要求するコマンド行オプションのない別のバージョンのアプリケーションを登録できます。アプリケーションを複製する場合には、新しい表示名を選択する必要があります。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションの複製方法&#34;&gt;アプリケーションの複製方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;**[Installed Applications]**の一覧から複製するアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧から複製するアプリケーションを選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Applications | Duplicate]の順にクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;－または－&lt;/p&gt;
-&lt;p&gt;[Installed Applications]の一覧の右側にある **[Duplicate]**ボタンをクリックします。&lt;/p&gt;
+&lt;p&gt;[Installed Applications]の一覧の右側にある[&lt;strong&gt;Duplicate&lt;/strong&gt;]ボタンをクリックします。&lt;/p&gt;
 &lt;h2 id=&#34;アプリケーション名の変更-1&#34;&gt;アプリケーション名の変更&lt;/h2&gt;
 &lt;p&gt;アプリケーションに割り当てる表示名は、エンドユーザのProgram Windowに表示されます。アプリケーションの表示名は常時変更可能です。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションの表示名の変更方法&#34;&gt;アプリケーションの表示名の変更方法&lt;/h3&gt;
@@ -1342,41 +1343,41 @@ d. 貼り付けたテキストの &lt;strong&gt;AllowCreateSessionOnConnect&lt;/
 &lt;li&gt;[Tools | Applications | Rename]の順にクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;－または－&lt;/p&gt;
-&lt;p&gt;　　[Installed Applications]の一覧の右側にある[**Rename]**ボタンをクリックします。
+&lt;p&gt;　　[Installed Applications]の一覧の右側にある[&lt;strong&gt;Rename&lt;/strong&gt;]ボタンをクリックします。
 　　
 3. [Rename Application]ダイアログの[New]ボックスに名前を入力します。&lt;/p&gt;
 &lt;h2 id=&#34;アプリケーションのプロパティの編集&#34;&gt;アプリケーションのプロパティの編集&lt;/h2&gt;
 &lt;p&gt;アプリケーションが公開されたら、いつでもアプリケーションのプロパティを編集できます。たとえば、アプリケーションのスタートアップ状態、実行可能ファイルの場所、アプリケーションを起動するフォルダの編集が可能です。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションのプロパティの編集方法&#34;&gt;アプリケーションのプロパティの編集方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;**[Applications]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Installed Applications]**の一覧からアプリケーションを選択します。&lt;/li&gt;
-&lt;li&gt;**[Properties]**ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧からアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Properties&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
 &lt;li&gt;以下のいずれかの操作を行います&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;**[Executable Path]**ボックス内に、新しいパス名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Start Directory]**ボックス内に、アプリケーションを起動するディレクトリのフルパス名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Command-Line Options]**ボックス内に、そのアプリケーション用のスタートアップパラメータを入力します。&lt;/li&gt;
-&lt;li&gt;[**Display Name]**ボックス内に、そのアプリケーションの新しい表示名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Startup State]**セクションで、そのアプリケーションの起動モード(Maximized、Minimized、Normal)を選択します。&lt;/li&gt;
-&lt;li&gt;[**Icon]**ボタンをクリックして、新しいアプリケーションアイコンを検索します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Executable Path&lt;/strong&gt;]ボックス内に、新しいパス名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Start Directory&lt;/strong&gt;]ボックス内に、アプリケーションを起動するディレクトリのフルパス名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Command-Line Options&lt;/strong&gt;]ボックス内に、そのアプリケーション用のスタートアップパラメータを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Display Name&lt;/strong&gt;]ボックス内に、そのアプリケーションの新しい表示名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Startup State&lt;/strong&gt;]セクションで、そのアプリケーションの起動モード(Maximized、Minimized、Normal)を選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Icon&lt;/strong&gt;]ボタンをクリックして、新しいアプリケーションアイコンを検索します。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/images/4-2-3.png&#34; alt=&#34;4-2-3&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;アプリケーションの削除&#34;&gt;アプリケーションの削除&lt;/h2&gt;
 &lt;p&gt;GO-Globalで展開したアプリケーションは、Admin Consoleで削除します。Admin Consoleでアプリケーションを削除しても、ホストからは削除されません。GO-Globalクライアントがそのアプリケーションにアクセスできなくなるだけです。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションの削除方法&#34;&gt;アプリケーションの削除方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;**[Applications]**タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
 &lt;li&gt;[Installed Applications]の一覧から削除するアプリケーションを選択します。&lt;/li&gt;
-&lt;li&gt;**[Remove]**ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Remove&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;－または－&lt;/p&gt;
 &lt;p&gt;　　[Tools | Applications | Remove]の順にクリックします。&lt;/p&gt;
 &lt;p&gt;Admin Consoleでインストール済みアプリケーションを削除する時に、あるユーザがそのアプリケーションを実行していた場合、そのユーザのセッションは中断されません。しかし、そのユーザがそのアプリケーションを終了すると、そのアプリケーションは利用不可能になり、Program Window内にアイコンは表示されません。&lt;/p&gt;
-&lt;p&gt;Admin Consoleへのアプリケーションの登録が完了すると、 **[Installed Applications]**の一覧にそのアプリケーション名とパス名が表示されます。カラムのタイトルをクリックすると、一覧内の項目を昇順または降順で並べ替えできます。Admin Console内の一覧はすべて、この方法で並べ替えできます。&lt;/p&gt;
+&lt;p&gt;Admin Consoleへのアプリケーションの登録が完了すると、 [&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧にそのアプリケーション名とパス名が表示されます。カラムのタイトルをクリックすると、一覧内の項目を昇順または降順で並べ替えできます。Admin Console内の一覧はすべて、この方法で並べ替えできます。&lt;/p&gt;
 &lt;p&gt;ODBCデータソースを使用するアプリケーションを設定する場合は、GO-Globalクライアントがそのデータソースへアクセスできるよう、ODBCドライバをシステムDSNs(データソース名)として設定する必要があります。データソースに関する詳細情報は、Windows ODBC Data Source Administratorのオンラインヘルプを参照してください。&lt;/p&gt;
-&lt;p&gt;アクセス制限により、Admin ConsoleではUNCフォーマットで指定されたパス(例 : \Machine Name\Folder Name&amp;hellip;)、またはマッピングされたネットワークドライブ上にあるパスの有効性を検証できません。公開された項目のExecutable PathまたはStart Directoryが、マッピングされたドライブを含むか、UNCパスで指定されている場合、Admin Consoleでは、それが有効であるか否かに関わらず、その指定パスを受け付けます。パスが無効な場合、またはクライアントユーザが指定された実行可能ファイルやフォルダへのアクセス権を持たない場合、公開された項目はProgram Windowに表示されません。その項目を選択して、 **[Properties]**ボタンをクリックします。そこで、その項目の[Executable Path]または [Start Directory]を更新します。その項目がアンインストールまたは新規の場所に移動されていると、Application Publishing Serviceが再開された後には、Admin Console内に表示されません。&lt;/p&gt;
+&lt;p&gt;アクセス制限により、Admin ConsoleではUNCフォーマットで指定されたパス(例 : \Machine Name\Folder Name&amp;hellip;)、またはマッピングされたネットワークドライブ上にあるパスの有効性を検証できません。公開された項目のExecutable PathまたはStart Directoryが、マッピングされたドライブを含むか、UNCパスで指定されている場合、Admin Consoleでは、それが有効であるか否かに関わらず、その指定パスを受け付けます。パスが無効な場合、またはクライアントユーザが指定された実行可能ファイルやフォルダへのアクセス権を持たない場合、公開された項目はProgram Windowに表示されません。その項目を選択して、 [&lt;strong&gt;Properties&lt;/strong&gt;]ボタンをクリックします。そこで、その項目の[Executable Path]または [Start Directory]を更新します。その項目がアンインストールまたは新規の場所に移動されていると、Application Publishing Serviceが再開された後には、Admin Console内に表示されません。&lt;/p&gt;
 &lt;p&gt;Admin Consoleでは、UNCフォーマットで指定された、またはマッピングされたドライブにある任意の項目のパスに対するグループやユーザの設定は表示できません。これが当てはまる場合、任意のアプリケーションやファイルに対して、Cluster Managerの[Application Users/Groups]画面に「User/Group settings not available.(ユーザ/グループ設定は利用できません)」というメッセージが表示されます。&lt;/p&gt;
 &lt;p&gt;マッピングされたドライブ上に存在はしていてもGO-Globalでの利用ライセンスが供与されていない項目をAdmin Console内で公開すると、その項目のアイコンがProgram Windowに表示されます。しかし、ユーザはその項目をオープンすることはできず、起動するとエラーメッセージが表示されます。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1385,21 +1386,21 @@ d. 貼り付けたテキストの &lt;strong&gt;AllowCreateSessionOnConnect&lt;/
 &lt;h2 id=&#34;ユーザやグループに対するアプリケーション起動パラメータの割り当て&#34;&gt;ユーザやグループに対するアプリケーション起動パラメータの割り当て&lt;/h2&gt;
 &lt;p&gt;Admin Consoleでは、ネットワーク上またはローカルマシン上のユーザやグループに対するアプリケーションの実行方法を指定するパラメータの割り当てが可能です。ユーザやグループに対して設定されたパラメータは、ユーザやグループがそのアプリケーションを起動する度に適用されます。個人に対して設定されたアプリケーション起動パラメータは、グループやアプリケーションに対して設定されたパラメータより優先されます。クライアントがGO-Globalを介してアプリケーションを起動すると、Program Windowは、まず個別ユーザに対して割り当てられた起動パラメータを確認します。何もパラメータが割り当てられていない場合は、Program Windowがシステムから取得した順に、そのユーザが属するグループの一覧を確認します。または、Program Windowは、そのアプリケーションに割り当てられている一般的な起動パラメータを検索します。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;**[About GraphOn GO-Global]**ボックスで、ユーザが割り当てられているグループ、システムにおけるそのグループ一覧の順序を確認できます。&lt;/p&gt;
+&lt;p&gt;[&lt;strong&gt;About GraphOn GO-Global&lt;/strong&gt;]ボックスで、ユーザが割り当てられているグループ、システムにおけるそのグループ一覧の順序を確認できます。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;ユーザやグループ用のファイルアクセス許可は、サーバのWindows NTファイルシステム(NTFS)セキュリティ設定によって制御されます。ファイルアクセス許可は、Admin Consoleを通して設定することはできません。[Installed Applications]一覧からアプリケーションを選択すると、そのファイルやアプリケーション対してNTFSで指定されたユーザのアクセス許可が、[Application Users/Groups]一覧に表示されます。次に、特定のユーザやグループに対するアプリケーションのプロパティを編集できます。ファイルアクセス許可はNTFSで初期化されたドライブ上でのみ設定可能です。&lt;/p&gt;
 &lt;h3 id=&#34;ユーザまたはグループに対するアプリケーション起動パラメータの割り当て方法&#34;&gt;ユーザまたはグループに対するアプリケーション起動パラメータの割り当て方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;**[Applications]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Installed Applications]**の一覧からアプリケーションを選択します。&lt;/li&gt;
-&lt;li&gt;**[Application Users/Groups]**の一覧からユーザまたはグループを選択します。&lt;/li&gt;
-&lt;li&gt;**[Properties]**ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧からアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Application Users/Groups&lt;/strong&gt;]の一覧からユーザまたはグループを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Properties&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
 &lt;li&gt;以下のいずれかの操作を行います。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;**[Start Directory]**ボックス内に、アプリケーションを起動するディレクトリ内のフル パス名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Startup State]**セクションで、そのアプリケーションの起動モード (Maximized、Minimized、Normal) を選択します。&lt;/li&gt;
-&lt;li&gt;**[Command-Line Options]**ボックス内に、そのアプリケーションの起動時に使用するコマンド行引数を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Start Directory&lt;/strong&gt;]ボックス内に、アプリケーションを起動するディレクトリ内のフル パス名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Startup State&lt;/strong&gt;]セクションで、そのアプリケーションの起動モード (Maximized、Minimized、Normal) を選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Command-Line Options&lt;/strong&gt;]ボックス内に、そのアプリケーションの起動時に使用するコマンド行引数を入力します。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/images/4-2-4.png&#34; alt=&#34;4-2-4&#34;&gt;&lt;/p&gt;
 
@@ -1604,8 +1605,7 @@ d. 貼り付けたテキストの &lt;strong&gt;AllowCreateSessionOnConnect&lt;/
       <description>
         
         
-        &lt;h1 id=&#34;go-global-appを使用したwebアプリケーションの実行&#34;&gt;GO-Global Appを使用したWebアプリケーションの実行&lt;/h1&gt;
-&lt;p&gt;GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global Appをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global Appをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。&lt;/p&gt;
+        &lt;p&gt;GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global Appをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global Appをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。&lt;/p&gt;
 &lt;p&gt;GO-Globalは、GO-Global Appのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;useApp　　useApp = trueの場合、Webアプリケーションは完全なGO-Global Appを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global Appを起動しようとしません。 デフォルトでuseApp = trueです。&lt;/li&gt;
@@ -2115,15 +2115,15 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
 &lt;p&gt;ユーザのセッションを終了すると、そのユーザが実行中のGO-Global展開アプリケーションがすべて終了し、そのユーザはGO-Globalホストからログオフします。&lt;/p&gt;
 &lt;h3 id=&#34;セッションの終了方法&#34;&gt;セッションの終了方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;**[Sessions]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Sessions Name]**カラムから、終了するセッションを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Sessions&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Sessions Name&lt;/strong&gt;]カラムから、終了するセッションを選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Sessions | Terminate]の順にクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;プロセスの終了&#34;&gt;プロセスの終了&lt;/h2&gt;
 &lt;p&gt;プロセスとは、GO-Globalホスト上で実行中の処理で、クライアントによって起動されたものを示します。たとえば、クライアントが実行しているアプリケーションはプロセスです。実行中の各アプリケーションには、Windowsタスクマネージャ内で固有名とプロセスIDが割り当てられます。これらのプロセス名とIDは、Admin Console内で複製されます。システム管理者は、Admin Consoleで任意のプロセスを終了できます。&lt;/p&gt;
 &lt;h3 id=&#34;プロセスの終了方法&#34;&gt;プロセスの終了方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;**[Processes]**タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Processes&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
 &lt;li&gt;終了するプロセス(1つまたは複数)を選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Processes | Terminate]の順にクリックします｡&lt;/li&gt;
 &lt;/ol&gt;
@@ -2134,17 +2134,18 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
 &lt;p&gt;セッションシャドーウイング機能により、単一のセッションおよびそのアプリケーションを複数ユーザが閲覧/制御できます。これにより、テクニカルサポート担当者やシステム管理者は、顧客やユーザに対しリモート操作によるサポートを提供できます。セッションシャドーウイングは、ライブ環境でのコラボレーション作業にも活用可能です。 実行中のGO-Globalセッションに接続できるのは管理者のみですが、その場合でも、セッションを実行しているユーザのアクセス許可が必要です。&lt;/p&gt;
 &lt;h3 id=&#34;セッションシャドーウイング方法&#34;&gt;セッションシャドーウイング方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;**[Sessions]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Sessions Name]**カラムから、シャドーウイングするセッションを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Sessions&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Sessions Name&lt;/strong&gt;]カラムから、シャドーウイングするセッションを選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Sessions | Connect]の順にクリックします｡&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;ーまたはー&lt;/p&gt;
-&lt;p&gt;**[Sessions Name]**カラムで、シャドーウイングするセッションを右クリックします。&lt;/p&gt;
+&lt;p&gt;[&lt;strong&gt;Sessions Name&lt;/strong&gt;]カラムで、シャドーウイングするセッションを右クリックします。&lt;/p&gt;
 &lt;p&gt;セッションを選択すると、そのセッションを実行しているユーザに対して、次のようなメッセージが表示されます。ここでは「GerryD」がシステム管理者のユーザ名です。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/4-3-1.png&#34; alt=&#34;4-3-1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;ユーザが **[Yes]**をクリックしてセッションへのアクセスを許可すると、即座に接続が確立され、GO-Global クライアントのセッションが新しいウィンドウで表示されます。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/4-3-1.png&#34; alt=&#34;4-3-1&#34;&gt;
+4-3-2
+ユーザが [&lt;strong&gt;Yes&lt;/strong&gt;]をクリックしてセッションへのアクセスを許可すると、即座に接続が確立され、GO-Global クライアントのセッションが新しいウィンドウで表示されます。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/4-3-2.png&#34; alt=&#34;4-3-2&#34;&gt;&lt;/p&gt;
-&lt;p&gt;ユーザが **[No]**をクリックしてアクセスを拒否すると、ホストに次のメッセージが表示されます。&lt;/p&gt;
+&lt;p&gt;ユーザが [&lt;strong&gt;No&lt;/strong&gt;]をクリックしてアクセスを拒否すると、ホストに次のメッセージが表示されます。&lt;/p&gt;
 &lt;p&gt;セッションが切断されているとき、セッションがシャットダウンされようとしている、またはシャットダウンプロセスにあるとき、ユーザが1分以内に応答を返さなかったときも、セッションシャドーウイングは拒否されます。また、GO-Globalの通信障害時にも接続は拒否されます。&lt;/p&gt;
 &lt;p&gt;Admin Consoleの [Sessions]タブには、セッションに接続しているクライアントの数が表示されます。その[Connected Clients]カラムに2以上の値が表示されている場合、そのセッションはシャドーウイングされています。切断済みのセッションでは、接続しているクライアント数は0です。セッションから切断してシャドーウイングを終了するには、そのセッションが表示されているフレーム画面を閉じてください。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2191,12 +2192,12 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
 &lt;p&gt;GO-Globalホストにポートを追加する方法&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;[スタート | 設定 | プリンタ] の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[プリンターの追加]**をダブルクリックします。&lt;/li&gt;
-&lt;li&gt;ローカル プリンタを選択し、 **[次へ]**をクリックします。&lt;/li&gt;
-&lt;li&gt;[新しいポートの作成] をクリックし、種類として[Standard TCP/IP Port]を選択します。[次へ] をクリックしま す。&lt;/li&gt;
-&lt;li&gt;[ポート名] ダイアログボックスに、プリンターの UNC パス（\PRINTSERVER\LASERPRINTER など）またはプリンタ の IP アドレスを入力します。&lt;/li&gt;
-&lt;li&gt;左側でプリンタの製造元を選択し、右側でプリンタのモデルを選択するか、 **[ディスク使用]**をクリックします。&lt;/li&gt;
-&lt;li&gt;[プリンターの追加]ウィザードの指示に従って、適切なプリンタドライバをインストールします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;プリンターの追加&lt;/strong&gt;をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;ローカル プリンタを選択し、 &lt;strong&gt;次へ&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;新しいポートの作成&lt;/strong&gt;をクリックし、種類として[Standard TCP/IP Port]を選択します&lt;strong&gt;次へ&lt;/strong&gt;をクリックしま す。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ポート名&lt;/strong&gt;ダイアログボックスに、プリンターの UNC パス（\PRINTSERVER\LASERPRINTER など）またはプリンタ の IP アドレスを入力します。&lt;/li&gt;
+&lt;li&gt;左側でプリンタの製造元を選択し、右側でプリンタのモデルを選択するか、 &lt;strong&gt;ディスク使用&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;プリンターの追加&lt;/strong&gt;ウィザードの指示に従って、適切なプリンタドライバをインストールします。&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>

@@ -25,11 +25,11 @@
 AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP(EIP)を作成する EC2コンソールのナビゲーションペインから、[ネットワークとセキュリティ | セキュリティ]の順にクリックします。[Elastic IP]をクリックし、[新しいアドレスを割り当てる]を選択します。 詳細については、AWS EIPのドキュメントを参照してください。: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html​ Elastic Network Interfaceを作成する(ENI) 2.1 EC2コンソールのナビゲーションペインから[Network Interfaces]を選択します。 2.2 [ネットワークインターフェイスの作成]をクリックします。 2.3 説明を入力し、適切なアベイラビリティーゾーンからサブネットを選択します。 2.4 プライベートIPを自動割り当てのままにします。 2.5 ファイアウォールルールを含むセキュリティグループを選択してください。 Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。 3.1 EIPとENIを作成したら、[Network Interface | アクション| IPアドレスの管理] の順に選択します。 3.2 ステップ1で作成したEIPをENIに割り当てます。 詳細については、AWS ENIのドキュメントを参照してください。: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html​ GO-Global License Managerサービスを実行しているインスタンスにENIを添付します。 4.1 ECインスタンスから、GO-Global License Managerサービスを実行しているインスタンスを選択し、[アクション | ネットワーキング | ネットワークインターフェイス]の順に選択します。 4.2 手順2で作成したENIを選択します。使用できない場合は、別のAWSインスタンスに添付されているか、インスタンスとは異なるアベイラビリティーゾーンに作成されている可能性があります。 NoteENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じアベイラビリティーゾーンにある必要があります。 Amazon Virtual Private Cloud（VPC）を介して、アベイラビリティーゾーンでサブネットを使用するか、アベイラビリティーゾーンでカスタムサブネットを作成できます。  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/configuring-the-host/license-servers-in-cloud-environments/" />
-<meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-27T16:35:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="クラウド環境のライセンスサーバ">
 <meta itemprop="description" content="GO-Globalライセンスファイルは、GO-Global License Managerサービスが実行されているコンピュータのMACアドレスにバインドされています。Amazon Webサービス(AWS)などのクラウド環境では、仮想コンピュータのMACアドレスが変わる可能性があります。GO-Global License Managerサービスを実行しているコンピュータのMACアドレスが変更されると、サービスはライセンスをチェックアウトできなくなり、GO-Globalセッションは開始できなくなります。これを防ぐには、GO-Global License Managerサービスを実行している仮想コンピュータを、固定のMACアドレスを持つように構成する必要があります。AWS環境では、固定Elastic IPアドレス(EIP)と固定MACアドレスを使用してElastic Network Interface(ENI)を作成し、そのENIをGO-Global License Managerサービスを実行している仮想コンピュータ(EC2インスタンス)に接続することでこれを実行できます。
 AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP(EIP)を作成する EC2コンソールのナビゲーションペインから、[ネットワークとセキュリティ | セキュリティ]の順にクリックします。[Elastic IP]をクリックし、[新しいアドレスを割り当てる]を選択します。 詳細については、AWS EIPのドキュメントを参照してください。: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html​ Elastic Network Interfaceを作成する(ENI) 2.1 EC2コンソールのナビゲーションペインから[Network Interfaces]を選択します。 2.2 [ネットワークインターフェイスの作成]をクリックします。 2.3 説明を入力し、適切なアベイラビリティーゾーンからサブネットを選択します。 2.4 プライベートIPを自動割り当てのままにします。 2.5 ファイアウォールルールを含むセキュリティグループを選択してください。 Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。 3.1 EIPとENIを作成したら、[Network Interface | アクション| IPアドレスの管理] の順に選択します。 3.2 ステップ1で作成したEIPをENIに割り当てます。 詳細については、AWS ENIのドキュメントを参照してください。: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html​ GO-Global License Managerサービスを実行しているインスタンスにENIを添付します。 4.1 ECインスタンスから、GO-Global License Managerサービスを実行しているインスタンスを選択し、[アクション | ネットワーキング | ネットワークインターフェイス]の順に選択します。 4.2 手順2で作成したENIを選択します。使用できない場合は、別のAWSインスタンスに添付されているか、インスタンスとは異なるアベイラビリティーゾーンに作成されている可能性があります。 NoteENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じアベイラビリティーゾーンにある必要があります。 Amazon Virtual Private Cloud（VPC）を介して、アベイラビリティーゾーンでサブネットを使用するか、アベイラビリティーゾーンでカスタムサブネットを作成できます。  ">
-<meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
+<meta itemprop="dateModified" content="2020-05-27T16:35:56&#43;09:00" />
 <meta itemprop="wordCount" content="74">
 
 
@@ -128,7 +128,7 @@ AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
+  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
   data-offline-search-base-href="/"
 >
 
@@ -158,7 +158,7 @@ AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
+  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
   data-offline-search-base-href="/"
 >
 
@@ -433,13 +433,85 @@ AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemonitoring-host-activity" href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemanaging-go-global-licenses" href="/docs/go-global6/go-global-admin-console/managing-go-global-licenses/">セキュリティオプション</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemonitoring-host-activity" href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesaretasbano" href="/docs/go-global6/go-global-admin-console/saretasbano/">信頼されたサーバ証明書の取得</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolepasuwdono" href="/docs/go-global6/go-global-admin-console/pasuwdono/">パスワードの変更</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonno" href="/docs/go-global6/go-global-admin-console/sesshonno/">セッションの再接続</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolekuraiantonotaimuzn" href="/docs/go-global6/go-global-admin-console/kuraiantonotaimuzn/">クライアントのタイムゾーン</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consoleakaunto" href="/docs/go-global6/go-global-admin-console/akaunto/">共有アカウント</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonnoopushon" href="/docs/go-global6/go-global-admin-console/sesshonnoopushon/">セッションの起動オプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolehosutono" href="/docs/go-global6/go-global-admin-console/hosutono/">ホストの活動監視</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonnoshattoopushon" href="/docs/go-global6/go-global-admin-console/sesshonnoshattoopushon/">セッションのシャットオプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolewindows-compatibility-assurance" href="/docs/go-global6/go-global-admin-console/windows-compatibility-assurance/">Windows Compatibility Assurance</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolego-global-updates" href="/docs/go-global6/go-global-admin-console/go-global-updates/">GO-Global Updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolekuraiantomashinkaranogo-globalhosutono" href="/docs/go-global6/go-global-admin-console/kuraiantomashinkaranogo-globalhosutono/">クライアントマシンからのGO-Globalホストの管理</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consoleadmin-consolenokbdoshtokatto" href="/docs/go-global6/go-global-admin-console/admin-consolenokbdoshtokatto/">Admin Consoleのキーボードショートカット</a>
       
       
     </li>
@@ -1910,7 +1982,7 @@ ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Gl
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 March 5, 2020: <a  href="https://github.com/google/docsy-example/commit/05e264dd78f754815bb14e641c43bb5ad8752bc7">page (05e264dd)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 27, 2020: <a  href="https://github.com/google/docsy-example/commit/1ae5f0648fe7605973c553c0a458f2d99beb4b77">gg6-1 (1ae5f064)</a>
 </div>
 </div>
 

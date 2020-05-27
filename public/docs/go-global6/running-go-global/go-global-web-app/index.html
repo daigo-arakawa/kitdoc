@@ -21,30 +21,30 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>GO-Global Web App | kitASP Docs</title><meta property="og:title" content="GO-Global Web App" />
-<meta property="og:description" content="GO-Global Web App JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。
+<meta property="og:description" content="JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。
 GO-Global Web Appの起動 GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Google Chrome、Apple Safariなどの一般的なWebブラウザから実行できます。
-WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false **[Sign In]**ダイアログが表示されたら、次の情報を入力します。 **[User Name]**ボックスにネットワークユーザー名を入力します。 **[Password]**ボックスにパスワードを入力します。  [Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。
+WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false [Sign In]ダイアログが表示されたら、次の情報を入力します。 [User Name]ボックスにネットワークユーザー名を入力します。 [Password]ボックスにパスワードを入力します。  [Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。
  デフォルトでは、GO-Globalは自動的にフルGO-Global Appをダウンロードして実行しようとします。 ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global Appをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。
  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/running-go-global/go-global-web-app/" />
 <meta property="article:modified_time" content="2020-03-04T09:47:29+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="GO-Global Web App">
-<meta itemprop="description" content="GO-Global Web App JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。
+<meta itemprop="description" content="JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。
 GO-Global Web Appの起動 GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Google Chrome、Apple Safariなどの一般的なWebブラウザから実行できます。
-WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false **[Sign In]**ダイアログが表示されたら、次の情報を入力します。 **[User Name]**ボックスにネットワークユーザー名を入力します。 **[Password]**ボックスにパスワードを入力します。  [Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。
+WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false [Sign In]ダイアログが表示されたら、次の情報を入力します。 [User Name]ボックスにネットワークユーザー名を入力します。 [Password]ボックスにパスワードを入力します。  [Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。
  デフォルトでは、GO-Globalは自動的にフルGO-Global Appをダウンロードして実行しようとします。 ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global Appをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。
  ">
 <meta itemprop="dateModified" content="2020-03-04T09:47:29&#43;09:00" />
-<meta itemprop="wordCount" content="43">
+<meta itemprop="wordCount" content="40">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="GO-Global Web App"/>
-<meta name="twitter:description" content="GO-Global Web App JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。
+<meta name="twitter:description" content="JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。
 GO-Global Web Appの起動 GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Google Chrome、Apple Safariなどの一般的なWebブラウザから実行できます。
-WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false **[Sign In]**ダイアログが表示されたら、次の情報を入力します。 **[User Name]**ボックスにネットワークユーザー名を入力します。 **[Password]**ボックスにパスワードを入力します。  [Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。
+WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false [Sign In]ダイアログが表示されたら、次の情報を入力します。 [User Name]ボックスにネットワークユーザー名を入力します。 [Password]ボックスにパスワードを入力します。  [Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。
  デフォルトでは、GO-Globalは自動的にフルGO-Global Appをダウンロードして実行しようとします。 ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global Appをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。
  "/>
 
@@ -137,7 +137,7 @@ WebブラウザからGO-Globalを起動方法  Webブラウザを起動します
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
+  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
   data-offline-search-base-href="/"
 >
 
@@ -167,7 +167,7 @@ WebブラウザからGO-Globalを起動方法  Webブラウザを起動します
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
+  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
   data-offline-search-base-href="/"
 >
 
@@ -442,13 +442,85 @@ WebブラウザからGO-Globalを起動方法  Webブラウザを起動します
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemonitoring-host-activity" href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemanaging-go-global-licenses" href="/docs/go-global6/go-global-admin-console/managing-go-global-licenses/">セキュリティオプション</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemonitoring-host-activity" href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesaretasbano" href="/docs/go-global6/go-global-admin-console/saretasbano/">信頼されたサーバ証明書の取得</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolepasuwdono" href="/docs/go-global6/go-global-admin-console/pasuwdono/">パスワードの変更</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonno" href="/docs/go-global6/go-global-admin-console/sesshonno/">セッションの再接続</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolekuraiantonotaimuzn" href="/docs/go-global6/go-global-admin-console/kuraiantonotaimuzn/">クライアントのタイムゾーン</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consoleakaunto" href="/docs/go-global6/go-global-admin-console/akaunto/">共有アカウント</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonnoopushon" href="/docs/go-global6/go-global-admin-console/sesshonnoopushon/">セッションの起動オプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolehosutono" href="/docs/go-global6/go-global-admin-console/hosutono/">ホストの活動監視</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonnoshattoopushon" href="/docs/go-global6/go-global-admin-console/sesshonnoshattoopushon/">セッションのシャットオプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolewindows-compatibility-assurance" href="/docs/go-global6/go-global-admin-console/windows-compatibility-assurance/">Windows Compatibility Assurance</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolego-global-updates" href="/docs/go-global6/go-global-admin-console/go-global-updates/">GO-Global Updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolekuraiantomashinkaranogo-globalhosutono" href="/docs/go-global6/go-global-admin-console/kuraiantomashinkaranogo-globalhosutono/">クライアントマシンからのGO-Globalホストの管理</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consoleadmin-consolenokbdoshtokatto" href="/docs/go-global6/go-global-admin-console/admin-consolenokbdoshtokatto/">Admin Consoleのキーボードショートカット</a>
       
       
     </li>
@@ -1732,17 +1804,16 @@ WebブラウザからGO-Globalを起動方法  Webブラウザを起動します
 <div class="td-content">
 	<h1>GO-Global Web App</h1>
 	
-	<h1 id="go-global-web-app">GO-Global Web App</h1>
-<p>JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。</p>
+	<p>JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。</p>
 <h2 id="go-global-web-appの起動">GO-Global Web Appの起動</h2>
 <p>GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Google Chrome、Apple Safariなどの一般的なWebブラウザから実行できます。</p>
 <h3 id="webブラウザからgo-globalを起動方法">WebブラウザからGO-Globalを起動方法</h3>
 <ol>
 <li>Webブラウザを起動します。</li>
 <li>[Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false</li>
-<li>**[Sign In]**ダイアログが表示されたら、次の情報を入力します。</li>
-<li>**[User Name]**ボックスにネットワークユーザー名を入力します。</li>
-<li>**[Password]**ボックスにパスワードを入力します。</li>
+<li>[<strong>Sign In</strong>]ダイアログが表示されたら、次の情報を入力します。</li>
+<li>[<strong>User Name</strong>]ボックスにネットワークユーザー名を入力します。</li>
+<li>[<strong>Password</strong>]ボックスにパスワードを入力します。</li>
 </ol>
 <p>[Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。</p>
 <blockquote>

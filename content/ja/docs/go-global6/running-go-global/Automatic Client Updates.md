@@ -16,7 +16,7 @@ Administrators can configure GO-Global to automatically update the GO-Global Cli
 
 Mac and Linux users can download the updated version of GO-Global by connecting to the GOGlobal logon page (e.g., [http://hostname/goglobal/logon.html](http://hostname/goglobal/logon.html)) and installing the full GO-Global App.
 
-![5-10-1](/img/5-10-1.png) 
+![5-10-1](/images/5-10-1.png) 
 
 When Automatically update clients is selected in the Admin Console and a user signs in to the host from a Windows computer, GO-Global compares the version of the GO-Global App installed on the client computer to the version in the Updates directory on the Host. If the files in the Updates directory are newer, GO-Global copies the newer files to a temporary directory on the client computer. Then, when GO-Global closes, the GO-Global Update Client service installs the new files so they can be used in subsequent GO-Global sessions. Users will be updated on the screen when the new updates have completed installing.
 

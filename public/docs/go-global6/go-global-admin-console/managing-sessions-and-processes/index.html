@@ -21,20 +21,59 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>セッションとプロセスの管理 | kitASP Docs</title><meta property="og:title" content="セッションとプロセスの管理" />
-<meta property="og:description" content="システム管理者は、以下に説明するように、Admin Consoleを介して、セッションの暗号化とシャドウイング、プロセスとセッションの終了を行うことができます。a" />
+<meta property="og:description" content="システム管理者は、以下に説明するように、Admin Consoleを介して、セッションの暗号化とシャドウイング、プロセスとセッションの終了を行うことができます。
+セッションの終了 ユーザのセッションを終了すると、そのユーザが実行中のGO-Global展開アプリケーションがすべて終了し、そのユーザはGO-Globalホストからログオフします。
+セッションの終了方法  [Sessions]タブをクリックします。 [Sessions Name]カラムから、終了するセッションを選択します。 [Tools | Sessions | Terminate]の順にクリックします。  プロセスの終了 プロセスとは、GO-Globalホスト上で実行中の処理で、クライアントによって起動されたものを示します。たとえば、クライアントが実行しているアプリケーションはプロセスです。実行中の各アプリケーションには、Windowsタスクマネージャ内で固有名とプロセスIDが割り当てられます。これらのプロセス名とIDは、Admin Console内で複製されます。システム管理者は、Admin Consoleで任意のプロセスを終了できます。
+プロセスの終了方法  [Processes]タブをクリックします。 終了するプロセス(1つまたは複数)を選択します。 [Tools | Processes | Terminate]の順にクリックします｡   ユーザにアプリケーションを終了する時間を与えずに、セッションやプロセスを終了すると、データが失われる場合があります。
+ セッションシャドーウイング セッションシャドーウイング機能により、単一のセッションおよびそのアプリケーションを複数ユーザが閲覧/制御できます。これにより、テクニカルサポート担当者やシステム管理者は、顧客やユーザに対しリモート操作によるサポートを提供できます。セッションシャドーウイングは、ライブ環境でのコラボレーション作業にも活用可能です。 実行中のGO-Globalセッションに接続できるのは管理者のみですが、その場合でも、セッションを実行しているユーザのアクセス許可が必要です。
+セッションシャドーウイング方法  [Sessions]タブをクリックします。 [Sessions Name]カラムから、シャドーウイングするセッションを選択します。 [Tools | Sessions | Connect]の順にクリックします｡  ーまたはー
+[Sessions Name]カラムで、シャドーウイングするセッションを右クリックします。
+セッションを選択すると、そのセッションを実行しているユーザに対して、次のようなメッセージが表示されます。ここでは「GerryD」がシステム管理者のユーザ名です。
+4-3-2 ユーザが [Yes]をクリックしてセッションへのアクセスを許可すると、即座に接続が確立され、GO-Global クライアントのセッションが新しいウィンドウで表示されます。
+ユーザが [No]をクリックしてアクセスを拒否すると、ホストに次のメッセージが表示されます。
+セッションが切断されているとき、セッションがシャットダウンされようとしている、またはシャットダウンプロセスにあるとき、ユーザが1分以内に応答を返さなかったときも、セッションシャドーウイングは拒否されます。また、GO-Globalの通信障害時にも接続は拒否されます。
+Admin Consoleの [Sessions]タブには、セッションに接続しているクライアントの数が表示されます。その[Connected Clients]カラムに2以上の値が表示されている場合、そのセッションはシャドーウイングされています。切断済みのセッションでは、接続しているクライアント数は0です。セッションから切断してシャドーウイングを終了するには、そのセッションが表示されているフレーム画面を閉じてください。
+ GO-Globalセッションがシャドーウイングされているとき、ホストのカーソルはセッションが終了するまでクライアント上に留まります。セッションのシャドーウイングが終了しても動きません。
+ " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/go-global-admin-console/managing-sessions-and-processes/" />
 <meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="セッションとプロセスの管理">
-<meta itemprop="description" content="システム管理者は、以下に説明するように、Admin Consoleを介して、セッションの暗号化とシャドウイング、プロセスとセッションの終了を行うことができます。a">
+<meta itemprop="description" content="システム管理者は、以下に説明するように、Admin Consoleを介して、セッションの暗号化とシャドウイング、プロセスとセッションの終了を行うことができます。
+セッションの終了 ユーザのセッションを終了すると、そのユーザが実行中のGO-Global展開アプリケーションがすべて終了し、そのユーザはGO-Globalホストからログオフします。
+セッションの終了方法  [Sessions]タブをクリックします。 [Sessions Name]カラムから、終了するセッションを選択します。 [Tools | Sessions | Terminate]の順にクリックします。  プロセスの終了 プロセスとは、GO-Globalホスト上で実行中の処理で、クライアントによって起動されたものを示します。たとえば、クライアントが実行しているアプリケーションはプロセスです。実行中の各アプリケーションには、Windowsタスクマネージャ内で固有名とプロセスIDが割り当てられます。これらのプロセス名とIDは、Admin Console内で複製されます。システム管理者は、Admin Consoleで任意のプロセスを終了できます。
+プロセスの終了方法  [Processes]タブをクリックします。 終了するプロセス(1つまたは複数)を選択します。 [Tools | Processes | Terminate]の順にクリックします｡   ユーザにアプリケーションを終了する時間を与えずに、セッションやプロセスを終了すると、データが失われる場合があります。
+ セッションシャドーウイング セッションシャドーウイング機能により、単一のセッションおよびそのアプリケーションを複数ユーザが閲覧/制御できます。これにより、テクニカルサポート担当者やシステム管理者は、顧客やユーザに対しリモート操作によるサポートを提供できます。セッションシャドーウイングは、ライブ環境でのコラボレーション作業にも活用可能です。 実行中のGO-Globalセッションに接続できるのは管理者のみですが、その場合でも、セッションを実行しているユーザのアクセス許可が必要です。
+セッションシャドーウイング方法  [Sessions]タブをクリックします。 [Sessions Name]カラムから、シャドーウイングするセッションを選択します。 [Tools | Sessions | Connect]の順にクリックします｡  ーまたはー
+[Sessions Name]カラムで、シャドーウイングするセッションを右クリックします。
+セッションを選択すると、そのセッションを実行しているユーザに対して、次のようなメッセージが表示されます。ここでは「GerryD」がシステム管理者のユーザ名です。
+4-3-2 ユーザが [Yes]をクリックしてセッションへのアクセスを許可すると、即座に接続が確立され、GO-Global クライアントのセッションが新しいウィンドウで表示されます。
+ユーザが [No]をクリックしてアクセスを拒否すると、ホストに次のメッセージが表示されます。
+セッションが切断されているとき、セッションがシャットダウンされようとしている、またはシャットダウンプロセスにあるとき、ユーザが1分以内に応答を返さなかったときも、セッションシャドーウイングは拒否されます。また、GO-Globalの通信障害時にも接続は拒否されます。
+Admin Consoleの [Sessions]タブには、セッションに接続しているクライアントの数が表示されます。その[Connected Clients]カラムに2以上の値が表示されている場合、そのセッションはシャドーウイングされています。切断済みのセッションでは、接続しているクライアント数は0です。セッションから切断してシャドーウイングを終了するには、そのセッションが表示されているフレーム画面を閉じてください。
+ GO-Globalセッションがシャドーウイングされているとき、ホストのカーソルはセッションが終了するまでクライアント上に留まります。セッションのシャドーウイングが終了しても動きません。
+ ">
 <meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
-<meta itemprop="wordCount" content="53">
+<meta itemprop="wordCount" content="54">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="セッションとプロセスの管理"/>
-<meta name="twitter:description" content="システム管理者は、以下に説明するように、Admin Consoleを介して、セッションの暗号化とシャドウイング、プロセスとセッションの終了を行うことができます。a"/>
+<meta name="twitter:description" content="システム管理者は、以下に説明するように、Admin Consoleを介して、セッションの暗号化とシャドウイング、プロセスとセッションの終了を行うことができます。
+セッションの終了 ユーザのセッションを終了すると、そのユーザが実行中のGO-Global展開アプリケーションがすべて終了し、そのユーザはGO-Globalホストからログオフします。
+セッションの終了方法  [Sessions]タブをクリックします。 [Sessions Name]カラムから、終了するセッションを選択します。 [Tools | Sessions | Terminate]の順にクリックします。  プロセスの終了 プロセスとは、GO-Globalホスト上で実行中の処理で、クライアントによって起動されたものを示します。たとえば、クライアントが実行しているアプリケーションはプロセスです。実行中の各アプリケーションには、Windowsタスクマネージャ内で固有名とプロセスIDが割り当てられます。これらのプロセス名とIDは、Admin Console内で複製されます。システム管理者は、Admin Consoleで任意のプロセスを終了できます。
+プロセスの終了方法  [Processes]タブをクリックします。 終了するプロセス(1つまたは複数)を選択します。 [Tools | Processes | Terminate]の順にクリックします｡   ユーザにアプリケーションを終了する時間を与えずに、セッションやプロセスを終了すると、データが失われる場合があります。
+ セッションシャドーウイング セッションシャドーウイング機能により、単一のセッションおよびそのアプリケーションを複数ユーザが閲覧/制御できます。これにより、テクニカルサポート担当者やシステム管理者は、顧客やユーザに対しリモート操作によるサポートを提供できます。セッションシャドーウイングは、ライブ環境でのコラボレーション作業にも活用可能です。 実行中のGO-Globalセッションに接続できるのは管理者のみですが、その場合でも、セッションを実行しているユーザのアクセス許可が必要です。
+セッションシャドーウイング方法  [Sessions]タブをクリックします。 [Sessions Name]カラムから、シャドーウイングするセッションを選択します。 [Tools | Sessions | Connect]の順にクリックします｡  ーまたはー
+[Sessions Name]カラムで、シャドーウイングするセッションを右クリックします。
+セッションを選択すると、そのセッションを実行しているユーザに対して、次のようなメッセージが表示されます。ここでは「GerryD」がシステム管理者のユーザ名です。
+4-3-2 ユーザが [Yes]をクリックしてセッションへのアクセスを許可すると、即座に接続が確立され、GO-Global クライアントのセッションが新しいウィンドウで表示されます。
+ユーザが [No]をクリックしてアクセスを拒否すると、ホストに次のメッセージが表示されます。
+セッションが切断されているとき、セッションがシャットダウンされようとしている、またはシャットダウンプロセスにあるとき、ユーザが1分以内に応答を返さなかったときも、セッションシャドーウイングは拒否されます。また、GO-Globalの通信障害時にも接続は拒否されます。
+Admin Consoleの [Sessions]タブには、セッションに接続しているクライアントの数が表示されます。その[Connected Clients]カラムに2以上の値が表示されている場合、そのセッションはシャドーウイングされています。切断済みのセッションでは、接続しているクライアント数は0です。セッションから切断してシャドーウイングを終了するには、そのセッションが表示されているフレーム画面を閉じてください。
+ GO-Globalセッションがシャドーウイングされているとき、ホストのカーソルはセッションが終了するまでクライアント上に留まります。セッションのシャドーウイングが終了しても動きません。
+ "/>
 
 
 
@@ -125,7 +164,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
+  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
   data-offline-search-base-href="/"
 >
 
@@ -155,7 +194,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
+  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
   data-offline-search-base-href="/"
 >
 
@@ -430,13 +469,85 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemonitoring-host-activity" href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemanaging-go-global-licenses" href="/docs/go-global6/go-global-admin-console/managing-go-global-licenses/">セキュリティオプション</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemonitoring-host-activity" href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesaretasbano" href="/docs/go-global6/go-global-admin-console/saretasbano/">信頼されたサーバ証明書の取得</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolepasuwdono" href="/docs/go-global6/go-global-admin-console/pasuwdono/">パスワードの変更</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonno" href="/docs/go-global6/go-global-admin-console/sesshonno/">セッションの再接続</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolekuraiantonotaimuzn" href="/docs/go-global6/go-global-admin-console/kuraiantonotaimuzn/">クライアントのタイムゾーン</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consoleakaunto" href="/docs/go-global6/go-global-admin-console/akaunto/">共有アカウント</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonnoopushon" href="/docs/go-global6/go-global-admin-console/sesshonnoopushon/">セッションの起動オプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolehosutono" href="/docs/go-global6/go-global-admin-console/hosutono/">ホストの活動監視</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonnoshattoopushon" href="/docs/go-global6/go-global-admin-console/sesshonnoshattoopushon/">セッションのシャットオプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolewindows-compatibility-assurance" href="/docs/go-global6/go-global-admin-console/windows-compatibility-assurance/">Windows Compatibility Assurance</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolego-global-updates" href="/docs/go-global6/go-global-admin-console/go-global-updates/">GO-Global Updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolekuraiantomashinkaranogo-globalhosutono" href="/docs/go-global6/go-global-admin-console/kuraiantomashinkaranogo-globalhosutono/">クライアントマシンからのGO-Globalホストの管理</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consoleadmin-consolenokbdoshtokatto" href="/docs/go-global6/go-global-admin-console/admin-consolenokbdoshtokatto/">Admin Consoleのキーボードショートカット</a>
       
       
     </li>
@@ -1729,21 +1840,21 @@
             
 <div class="td-content">
 	<h1>セッションとプロセスの管理</h1>
-	<div class="lead">システム管理者は、以下に説明するように、Admin Consoleを介して、セッションの暗号化とシャドウイング、プロセスとセッションの終了を行うことができます。a</div>
+	
 	<p>システム管理者は、以下に説明するように、Admin Consoleを介して、セッションの暗号化とシャドウイング、プロセスとセッションの終了を行うことができます。</p>
 <h2 id="セッションの終了">セッションの終了</h2>
 <p>ユーザのセッションを終了すると、そのユーザが実行中のGO-Global展開アプリケーションがすべて終了し、そのユーザはGO-Globalホストからログオフします。</p>
 <h3 id="セッションの終了方法">セッションの終了方法</h3>
 <ol>
-<li>**[Sessions]**タブをクリックします。</li>
-<li>**[Sessions Name]**カラムから、終了するセッションを選択します。</li>
+<li>[<strong>Sessions</strong>]タブをクリックします。</li>
+<li>[<strong>Sessions Name</strong>]カラムから、終了するセッションを選択します。</li>
 <li>[Tools | Sessions | Terminate]の順にクリックします。</li>
 </ol>
 <h2 id="プロセスの終了">プロセスの終了</h2>
 <p>プロセスとは、GO-Globalホスト上で実行中の処理で、クライアントによって起動されたものを示します。たとえば、クライアントが実行しているアプリケーションはプロセスです。実行中の各アプリケーションには、Windowsタスクマネージャ内で固有名とプロセスIDが割り当てられます。これらのプロセス名とIDは、Admin Console内で複製されます。システム管理者は、Admin Consoleで任意のプロセスを終了できます。</p>
 <h3 id="プロセスの終了方法">プロセスの終了方法</h3>
 <ol>
-<li>**[Processes]**タブをクリックします。</li>
+<li>[<strong>Processes</strong>]タブをクリックします。</li>
 <li>終了するプロセス(1つまたは複数)を選択します。</li>
 <li>[Tools | Processes | Terminate]の順にクリックします｡</li>
 </ol>
@@ -1754,17 +1865,18 @@
 <p>セッションシャドーウイング機能により、単一のセッションおよびそのアプリケーションを複数ユーザが閲覧/制御できます。これにより、テクニカルサポート担当者やシステム管理者は、顧客やユーザに対しリモート操作によるサポートを提供できます。セッションシャドーウイングは、ライブ環境でのコラボレーション作業にも活用可能です。 実行中のGO-Globalセッションに接続できるのは管理者のみですが、その場合でも、セッションを実行しているユーザのアクセス許可が必要です。</p>
 <h3 id="セッションシャドーウイング方法">セッションシャドーウイング方法</h3>
 <ol>
-<li>**[Sessions]**タブをクリックします。</li>
-<li>**[Sessions Name]**カラムから、シャドーウイングするセッションを選択します。</li>
+<li>[<strong>Sessions</strong>]タブをクリックします。</li>
+<li>[<strong>Sessions Name</strong>]カラムから、シャドーウイングするセッションを選択します。</li>
 <li>[Tools | Sessions | Connect]の順にクリックします｡</li>
 </ol>
 <p>ーまたはー</p>
-<p>**[Sessions Name]**カラムで、シャドーウイングするセッションを右クリックします。</p>
+<p>[<strong>Sessions Name</strong>]カラムで、シャドーウイングするセッションを右クリックします。</p>
 <p>セッションを選択すると、そのセッションを実行しているユーザに対して、次のようなメッセージが表示されます。ここでは「GerryD」がシステム管理者のユーザ名です。</p>
-<p><img src="/images/4-3-1.png" alt="4-3-1"></p>
-<p>ユーザが **[Yes]**をクリックしてセッションへのアクセスを許可すると、即座に接続が確立され、GO-Global クライアントのセッションが新しいウィンドウで表示されます。</p>
+<p><img src="/images/4-3-1.png" alt="4-3-1">
+4-3-2
+ユーザが [<strong>Yes</strong>]をクリックしてセッションへのアクセスを許可すると、即座に接続が確立され、GO-Global クライアントのセッションが新しいウィンドウで表示されます。</p>
 <p><img src="/images/4-3-2.png" alt="4-3-2"></p>
-<p>ユーザが **[No]**をクリックしてアクセスを拒否すると、ホストに次のメッセージが表示されます。</p>
+<p>ユーザが [<strong>No</strong>]をクリックしてアクセスを拒否すると、ホストに次のメッセージが表示されます。</p>
 <p>セッションが切断されているとき、セッションがシャットダウンされようとしている、またはシャットダウンプロセスにあるとき、ユーザが1分以内に応答を返さなかったときも、セッションシャドーウイングは拒否されます。また、GO-Globalの通信障害時にも接続は拒否されます。</p>
 <p>Admin Consoleの [Sessions]タブには、セッションに接続しているクライアントの数が表示されます。その[Connected Clients]カラムに2以上の値が表示されている場合、そのセッションはシャドーウイングされています。切断済みのセッションでは、接続しているクライアント数は0です。セッションから切断してシャドーウイングを終了するには、そのセッションが表示されているフレーム画面を閉じてください。</p>
 <blockquote>
@@ -1811,13 +1923,85 @@
       
     
   
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
 
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
         <a href="/docs/go-global6/go-global-admin-console/managing-applications/">アプリケーションの管理</a>
       </div><div class="xPrevNextLink_next">
-        <a href="/docs/go-global6/go-global-admin-console/managing-go-global-licenses/">セキュリティオプション</a>
+        <a href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
       </div></div>
   
 

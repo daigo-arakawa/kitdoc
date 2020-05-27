@@ -76,12 +76,12 @@
 &lt;p&gt;GO-Globalホストにポートを追加する方法&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;[スタート | 設定 | プリンタ] の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[プリンターの追加]**をダブルクリックします。&lt;/li&gt;
-&lt;li&gt;ローカル プリンタを選択し、 **[次へ]**をクリックします。&lt;/li&gt;
-&lt;li&gt;[新しいポートの作成] をクリックし、種類として[Standard TCP/IP Port]を選択します。[次へ] をクリックしま す。&lt;/li&gt;
-&lt;li&gt;[ポート名] ダイアログボックスに、プリンターの UNC パス（\PRINTSERVER\LASERPRINTER など）またはプリンタ の IP アドレスを入力します。&lt;/li&gt;
-&lt;li&gt;左側でプリンタの製造元を選択し、右側でプリンタのモデルを選択するか、 **[ディスク使用]**をクリックします。&lt;/li&gt;
-&lt;li&gt;[プリンターの追加]ウィザードの指示に従って、適切なプリンタドライバをインストールします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;プリンターの追加&lt;/strong&gt;をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;ローカル プリンタを選択し、 &lt;strong&gt;次へ&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;新しいポートの作成&lt;/strong&gt;をクリックし、種類として[Standard TCP/IP Port]を選択します&lt;strong&gt;次へ&lt;/strong&gt;をクリックしま す。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ポート名&lt;/strong&gt;ダイアログボックスに、プリンターの UNC パス（\PRINTSERVER\LASERPRINTER など）またはプリンタ の IP アドレスを入力します。&lt;/li&gt;
+&lt;li&gt;左側でプリンタの製造元を選択し、右側でプリンタのモデルを選択するか、 &lt;strong&gt;ディスク使用&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;プリンターの追加&lt;/strong&gt;ウィザードの指示に従って、適切なプリンタドライバをインストールします。&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>

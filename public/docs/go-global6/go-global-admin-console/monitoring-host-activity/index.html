@@ -21,12 +21,16 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>GO-Globalライセンスの管理 | kitASP Docs</title><meta property="og:title" content="GO-Globalライセンスの管理" />
-<meta property="og:description" content="Admin Consoleには、ホストで利用可能なすべてのGO-Globalライセンスが一覧表示され、各ライセンスの製品コード、座席数、有効期限、ステータスなどが表示されます。" />
+<meta property="og:description" content="Admin Consoleには、ホストで利用可能なすべてのGO-Globalライセンスが一覧表示され、各ライセンスの製品コード、座席数、有効期限、ステータスなどが表示されます。有効期限が近づいているとき、ライセンスとサポート契約が期限切れになったときにGO-Globalは管理者に警告します。
+ライセンスの表示方法  Admin Consoleで、GO-Globalホストのリストから適切なホストを選択します。 [License]タブをクリックします。  各ライセンスについて、次の情報が表示されます。
+   Column Description     Status A license status can be listed as Active, Expired, Expires soon, Maint. Expired, Maint. Expires soon, Old version, Revoked, and Trial.   License Master ID GraphOn’s record of the license (e.g., LIC-122689)   Product Code: 28-digit alphanumeric code that appears in the license file, uniquely identifies the license, and is used for secure transactions (e." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/go-global-admin-console/monitoring-host-activity/" />
 <meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="GO-Globalライセンスの管理">
-<meta itemprop="description" content="Admin Consoleには、ホストで利用可能なすべてのGO-Globalライセンスが一覧表示され、各ライセンスの製品コード、座席数、有効期限、ステータスなどが表示されます。">
+<meta itemprop="description" content="Admin Consoleには、ホストで利用可能なすべてのGO-Globalライセンスが一覧表示され、各ライセンスの製品コード、座席数、有効期限、ステータスなどが表示されます。有効期限が近づいているとき、ライセンスとサポート契約が期限切れになったときにGO-Globalは管理者に警告します。
+ライセンスの表示方法  Admin Consoleで、GO-Globalホストのリストから適切なホストを選択します。 [License]タブをクリックします。  各ライセンスについて、次の情報が表示されます。
+   Column Description     Status A license status can be listed as Active, Expired, Expires soon, Maint. Expired, Maint. Expires soon, Old version, Revoked, and Trial.   License Master ID GraphOn’s record of the license (e.g., LIC-122689)   Product Code: 28-digit alphanumeric code that appears in the license file, uniquely identifies the license, and is used for secure transactions (e.">
 <meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
 <meta itemprop="wordCount" content="198">
 
@@ -34,7 +38,9 @@
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="GO-Globalライセンスの管理"/>
-<meta name="twitter:description" content="Admin Consoleには、ホストで利用可能なすべてのGO-Globalライセンスが一覧表示され、各ライセンスの製品コード、座席数、有効期限、ステータスなどが表示されます。"/>
+<meta name="twitter:description" content="Admin Consoleには、ホストで利用可能なすべてのGO-Globalライセンスが一覧表示され、各ライセンスの製品コード、座席数、有効期限、ステータスなどが表示されます。有効期限が近づいているとき、ライセンスとサポート契約が期限切れになったときにGO-Globalは管理者に警告します。
+ライセンスの表示方法  Admin Consoleで、GO-Globalホストのリストから適切なホストを選択します。 [License]タブをクリックします。  各ライセンスについて、次の情報が表示されます。
+   Column Description     Status A license status can be listed as Active, Expired, Expires soon, Maint. Expired, Maint. Expires soon, Old version, Revoked, and Trial.   License Master ID GraphOn’s record of the license (e.g., LIC-122689)   Product Code: 28-digit alphanumeric code that appears in the license file, uniquely identifies the license, and is used for secure transactions (e."/>
 
 
 
@@ -125,7 +131,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
+  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
   data-offline-search-base-href="/"
 >
 
@@ -155,7 +161,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
+  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
   data-offline-search-base-href="/"
 >
 
@@ -430,13 +436,85 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global6go-global-admin-consolemonitoring-host-activity" href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemanaging-go-global-licenses" href="/docs/go-global6/go-global-admin-console/managing-go-global-licenses/">セキュリティオプション</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global6go-global-admin-consolemonitoring-host-activity" href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesaretasbano" href="/docs/go-global6/go-global-admin-console/saretasbano/">信頼されたサーバ証明書の取得</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolepasuwdono" href="/docs/go-global6/go-global-admin-console/pasuwdono/">パスワードの変更</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonno" href="/docs/go-global6/go-global-admin-console/sesshonno/">セッションの再接続</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolekuraiantonotaimuzn" href="/docs/go-global6/go-global-admin-console/kuraiantonotaimuzn/">クライアントのタイムゾーン</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consoleakaunto" href="/docs/go-global6/go-global-admin-console/akaunto/">共有アカウント</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonnoopushon" href="/docs/go-global6/go-global-admin-console/sesshonnoopushon/">セッションの起動オプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolehosutono" href="/docs/go-global6/go-global-admin-console/hosutono/">ホストの活動監視</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonnoshattoopushon" href="/docs/go-global6/go-global-admin-console/sesshonnoshattoopushon/">セッションのシャットオプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolewindows-compatibility-assurance" href="/docs/go-global6/go-global-admin-console/windows-compatibility-assurance/">Windows Compatibility Assurance</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolego-global-updates" href="/docs/go-global6/go-global-admin-console/go-global-updates/">GO-Global Updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolekuraiantomashinkaranogo-globalhosutono" href="/docs/go-global6/go-global-admin-console/kuraiantomashinkaranogo-globalhosutono/">クライアントマシンからのGO-Globalホストの管理</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consoleadmin-consolenokbdoshtokatto" href="/docs/go-global6/go-global-admin-console/admin-consolenokbdoshtokatto/">Admin Consoleのキーボードショートカット</a>
       
       
     </li>
@@ -1709,7 +1787,7 @@
             
 <div class="td-content">
 	<h1>GO-Globalライセンスの管理</h1>
-	<div class="lead">Admin Consoleには、ホストで利用可能なすべてのGO-Globalライセンスが一覧表示され、各ライセンスの製品コード、座席数、有効期限、ステータスなどが表示されます。</div>
+	
 	<p>Admin Consoleには、ホストで利用可能なすべてのGO-Globalライセンスが一覧表示され、各ライセンスの製品コード、座席数、有効期限、ステータスなどが表示されます。有効期限が近づいているとき、ライセンスとサポート契約が期限切れになったときにGO-Globalは管理者に警告します。</p>
 <h3 id="ライセンスの表示方法">ライセンスの表示方法</h3>
 <ol>
@@ -1815,12 +1893,86 @@
   
     
       
+    
+  
+    
+      
         
+          
+          
         
       
     
   
     
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
       
     
   
@@ -1828,6 +1980,8 @@
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
+        <a href="/docs/go-global6/go-global-admin-console/managing-sessions-and-processes/">セッションとプロセスの管理</a>
+      </div><div class="xPrevNextLink_next">
         <a href="/docs/go-global6/go-global-admin-console/managing-go-global-licenses/">セキュリティオプション</a>
       </div></div>
   

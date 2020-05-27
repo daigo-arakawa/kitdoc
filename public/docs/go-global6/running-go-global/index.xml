@@ -36,13 +36,13 @@
 &lt;ol&gt;
 &lt;li&gt;GO-Globalメニューオプションを選択します。
 a. Windowsでは、Windowsタスクバーの &lt;strong&gt;スタート&lt;/strong&gt;ボタンをクリックし、[Programs | GO-Global ]の順に選択します。
-b. Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、 **[GO-Global]**をクリックします。
-c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[GO-Global]**をダブルクリックします。&lt;/li&gt;
-&lt;li&gt;**[Connection]**ダイアログ内にホストのアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;**[Connect]**をクリックします。[**Sign In]**ダイアログが表示されたら、次の情報を入力します。
+b. Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、 [&lt;strong&gt;GO-Global&lt;/strong&gt;]をクリックします。
+c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 [&lt;strong&gt;GO-Global&lt;/strong&gt;]をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログ内にホストのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。[&lt;strong&gt;Sign In&lt;/strong&gt;]ダイアログが表示されたら、次の情報を入力します。
 &lt;ul&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;User Name&lt;/strong&gt;]ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Password&lt;/strong&gt;]ボックスにパスワードを入力します。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -53,9 +53,9 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[G
 &lt;h3 id=&#34;windowsコンピュータにgo-globalホストへのショートカットを作成する方法&#34;&gt;WindowsコンピュータにGO-Globalホストへのショートカットを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;上記のいずれかの方法でGO-Globalを起動します。&lt;/li&gt;
-&lt;li&gt;**[Connection]**ダイアログにサーバのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログにサーバのアドレスを入力します。&lt;/li&gt;
 &lt;li&gt;[Create desktop shortcut to this host]チェックボックスをオンにします。&lt;/li&gt;
-&lt;li&gt;**[Connect]**をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;windows上でgo-globalのショートカットを作成する方法&#34;&gt;Windows上でGO-Globalのショートカットを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
@@ -78,17 +78,16 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[G
       <description>
         
         
-        &lt;h1 id=&#34;go-global-web-app&#34;&gt;GO-Global Web App&lt;/h1&gt;
-&lt;p&gt;JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。&lt;/p&gt;
+        &lt;p&gt;JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。 さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。 Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。&lt;/p&gt;
 &lt;h2 id=&#34;go-global-web-appの起動&#34;&gt;GO-Global Web Appの起動&lt;/h2&gt;
 &lt;p&gt;GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Google Chrome、Apple Safariなどの一般的なWebブラウザから実行できます。&lt;/p&gt;
 &lt;h3 id=&#34;webブラウザからgo-globalを起動方法&#34;&gt;WebブラウザからGO-Globalを起動方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
 &lt;li&gt;[Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false&lt;/li&gt;
-&lt;li&gt;**[Sign In]**ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Sign In&lt;/strong&gt;]ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;User Name&lt;/strong&gt;]ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Password&lt;/strong&gt;]ボックスにパスワードを入力します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;[Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -107,8 +106,7 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[G
       <description>
         
         
-        &lt;h1 id=&#34;go-global-appを使用したwebアプリケーションの実行&#34;&gt;GO-Global Appを使用したWebアプリケーションの実行&lt;/h1&gt;
-&lt;p&gt;GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global Appをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global Appをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。&lt;/p&gt;
+        &lt;p&gt;GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global Appをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global Appをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。&lt;/p&gt;
 &lt;p&gt;GO-Globalは、GO-Global Appのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;useApp　　useApp = trueの場合、Webアプリケーションは完全なGO-Global Appを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global Appを起動しようとしません。 デフォルトでuseApp = trueです。&lt;/li&gt;
@@ -159,8 +157,8 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[G
 &lt;li&gt;[Sign In]ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザ名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにネットワークユーザのパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;User Name&lt;/strong&gt;]ボックスにネットワークユーザ名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Password&lt;/strong&gt;]ボックスにネットワークユーザのパスワードを入力します。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Mac OS X Appをアンインストールするには、GO-Global.appをアプリケーションからゴミ箱にドラッグします。&lt;/p&gt;
 &lt;h3 id=&#34;mac-os-x-appで起動パラメータを使用する方法&#34;&gt;Mac OS X Appで起動パラメータを使用する方法&lt;/h3&gt;
@@ -310,7 +308,7 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 **[G
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;*ログオンHTMLページでホストが指定されていない場合、GO-Globalはログオンファイルのダウンロード元のマシンを検出し、そのホストに接続します。 **[Connection]**ダイアログは表示されず、ユーザには **[Sign In]**ダイアログのみが表示されます。&lt;/p&gt;
+&lt;p&gt;*ログオンHTMLページでホストが指定されていない場合、GO-Globalはログオンファイルのダウンロード元のマシンを検出し、そのホストに接続します。 [&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログは表示されず、ユーザには [&lt;strong&gt;Sign In&lt;/strong&gt;]ダイアログのみが表示されます。&lt;/p&gt;
 &lt;p&gt;host = &amp;ldquo;？&amp;ldquo;の場合ユーザはホストのアドレスの入力を求められます。アプリケーションが指定されていない場合は、Program Windowsが開きます。&lt;/p&gt;
 
       </description>
@@ -457,7 +455,7 @@ controlArgs.set([ &amp;quot;embed&amp;quot;, &amp;quot;true&amp;quot; ]);
 &lt;li&gt;Click OK.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Mac and Linux users can download the updated version of GO-Global by connecting to the GOGlobal logon page (e.g., &lt;a href=&#34;http://hostname/goglobal/logon.html&#34;&gt;http://hostname/goglobal/logon.html&lt;/a&gt;) and installing the full GO-Global App.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/5-10-1.png&#34; alt=&#34;5-10-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/5-10-1.png&#34; alt=&#34;5-10-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;When Automatically update clients is selected in the Admin Console and a user signs in to the host from a Windows computer, GO-Global compares the version of the GO-Global App installed on the client computer to the version in the Updates directory on the Host. If the files in the Updates directory are newer, GO-Global copies the newer files to a temporary directory on the client computer. Then, when GO-Global closes, the GO-Global Update Client service installs the new files so they can be used in subsequent GO-Global sessions. Users will be updated on the screen when the new updates have completed installing.&lt;/p&gt;
 &lt;p&gt;In summary, a new version of GO-Global will be installed via the update client service when the following conditions are met:&lt;/p&gt;
 &lt;ul&gt;

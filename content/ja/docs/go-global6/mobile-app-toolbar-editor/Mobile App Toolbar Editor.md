@@ -12,7 +12,7 @@ Mobile App Toolbar Editorは、アプリケーションがモバイルデバイ�
 
 Programs | GraphOn GO-Global | Mobile App Console の順にクリックします。
 
-![6-1-1](/img/6-1-1.png) 
+![6-1-1](/images/6-1-1.png) 
 
 Admin Consoleで公開されているアプリケーションが一覧表示され、それぞれがデフォルトのツールバーを使用するように設定されます。
 

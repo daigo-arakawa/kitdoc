@@ -21,12 +21,28 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>セキュリティオプション | kitASP Docs</title><meta property="og:title" content="セキュリティオプション" />
-<meta property="og:description" content="システム管理者は、[Host Options]ダイアログの[Security]タブを使用して、クライアントとGO-Globalホスト間の通信の転送モードとクライアントとホスト間で転送されるデータの暗号化レベルを選択できます。" />
+<meta property="og:description" content="システム管理者は、[Host Options]ダイアログの[Security]タブを使用して、クライアントとGO-Globalホスト間の通信の転送モードとクライアントとホスト間で転送されるデータの暗号化レベルを選択できます。また、ホストのポート設定を修正したり、統合Windows認証やパスワードのキャッシュを有効にすることも可能です。
+SSL転送の選択 GO-Globalは、WindowsとGO-Globalホスト間の通信方法として、Transmission Control Protocol(TCP)と Secure Socket Layer(SSL)の両方をサポートしています。SSL転送を選択する場合は、SSL証明書ファイルを指定する必要があります。SSL証明書は、GO-Globalのクライアントとホスト間での安全な通信のために必要です。証明書は、VerisignやThawteなどの信頼されている認証局(CA)から入手できます。また、独自に認証局を作成して、その認証局からサーバ証明書に署名することもできます。ワイルドカードSSL証明書もサポートされます。詳細については、信頼できる証明書からの証明書の取得または独自の認証局の作成を参照してください。
+SSL転送を選択する方法  Admin で、[Tools | Host Options]の順にクリックします。 [Security]タブをクリックします。 [Transport]の一覧で、SSLを選択します。 [SSL Certificate]ボックスにサーバの証明書ファイルへのパスを入力します。 [OK]をクリックします。  サーバポート設定の変更 ユーザがファイアウォールやルーターを介してGO-Globalにアクセスするためには、システム管理者が Application Publishing Service 用のホストポート設定を変更する必要があります。Application Publishing Serviceの実行には専用ポートが必要です。同じポートで別のサービスを実行するとコンフリクトが起きる場合があります。TCPとSSLのデフォルトのポート番号はどちらも491です。
+サーバポート設定の変更方法  [All Hosts]の一覧から、目的のホストを選択します。 [Tools | Host Options]の順にクリックします。 [Security]タブをクリックします。 [Port]ボックスに新しいポート番号を入力します。 [OK]をクリックします。   HTTPS接続を受け入れるように設定されたコンピュータにWebサーバがない場合にのみ、ポートを443に設定できます。GO-Global Application Publishing Serviceがポート443での接続を許可する必要がある場合(たとえば、プロキシサーバを介した接続を許可する場合)、Webサーバは別のコンピュータで実行する必要があります。
+ ホストポートの設定を変更したら、GO-Globalハイパーリンクからportパラメータを変更する必要があります。portパラメータに続けて新しいポート番号を使用します。 例えば、 http://hostname/goglobal/logon.html?port=1667
+ショートカットからGO-Globalを実行しているユーザは、ショートカットに-hp引数(新しいポート番号が続く)を追加する必要があります。たとえば、&ldquo;C:\Program Files\GraphOn\GOGlobal\Client\gg-client.exe&rdquo; -h server1 -hp 1667のようになります。
+ポート番号は、GO-Globalにログオンしたときに [Connection]ダイアログで指定することも可能です。この場合は、 [Host address]ボックス内に、ホスト名またはIPアドレス、コロン、ポート番号の順に入力します。(例 : server1:1667)。IPv6アドレスを指定する場合は、ホストのIPアドレスをブラケットで囲ってください。たとえば[fe80::29c:29ff:fe95:519a]:491というように指定します。
+どちらの方法でも新しいポート番号が指定されていない場合、ユーザはGO-Globalにサインインできません。
+ ホストポートを変更した後、デフォルトポート491以外のポートでクライアント印刷を機能させるには、 Print Spoolerサービスと GO-Global Application Publishingサービスを再起動する必要があります。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/go-global-admin-console/managing-go-global-licenses/" />
 <meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="セキュリティオプション">
-<meta itemprop="description" content="システム管理者は、[Host Options]ダイアログの[Security]タブを使用して、クライアントとGO-Globalホスト間の通信の転送モードとクライアントとホスト間で転送されるデータの暗号化レベルを選択できます。">
+<meta itemprop="description" content="システム管理者は、[Host Options]ダイアログの[Security]タブを使用して、クライアントとGO-Globalホスト間の通信の転送モードとクライアントとホスト間で転送されるデータの暗号化レベルを選択できます。また、ホストのポート設定を修正したり、統合Windows認証やパスワードのキャッシュを有効にすることも可能です。
+SSL転送の選択 GO-Globalは、WindowsとGO-Globalホスト間の通信方法として、Transmission Control Protocol(TCP)と Secure Socket Layer(SSL)の両方をサポートしています。SSL転送を選択する場合は、SSL証明書ファイルを指定する必要があります。SSL証明書は、GO-Globalのクライアントとホスト間での安全な通信のために必要です。証明書は、VerisignやThawteなどの信頼されている認証局(CA)から入手できます。また、独自に認証局を作成して、その認証局からサーバ証明書に署名することもできます。ワイルドカードSSL証明書もサポートされます。詳細については、信頼できる証明書からの証明書の取得または独自の認証局の作成を参照してください。
+SSL転送を選択する方法  Admin で、[Tools | Host Options]の順にクリックします。 [Security]タブをクリックします。 [Transport]の一覧で、SSLを選択します。 [SSL Certificate]ボックスにサーバの証明書ファイルへのパスを入力します。 [OK]をクリックします。  サーバポート設定の変更 ユーザがファイアウォールやルーターを介してGO-Globalにアクセスするためには、システム管理者が Application Publishing Service 用のホストポート設定を変更する必要があります。Application Publishing Serviceの実行には専用ポートが必要です。同じポートで別のサービスを実行するとコンフリクトが起きる場合があります。TCPとSSLのデフォルトのポート番号はどちらも491です。
+サーバポート設定の変更方法  [All Hosts]の一覧から、目的のホストを選択します。 [Tools | Host Options]の順にクリックします。 [Security]タブをクリックします。 [Port]ボックスに新しいポート番号を入力します。 [OK]をクリックします。   HTTPS接続を受け入れるように設定されたコンピュータにWebサーバがない場合にのみ、ポートを443に設定できます。GO-Global Application Publishing Serviceがポート443での接続を許可する必要がある場合(たとえば、プロキシサーバを介した接続を許可する場合)、Webサーバは別のコンピュータで実行する必要があります。
+ ホストポートの設定を変更したら、GO-Globalハイパーリンクからportパラメータを変更する必要があります。portパラメータに続けて新しいポート番号を使用します。 例えば、 http://hostname/goglobal/logon.html?port=1667
+ショートカットからGO-Globalを実行しているユーザは、ショートカットに-hp引数(新しいポート番号が続く)を追加する必要があります。たとえば、&ldquo;C:\Program Files\GraphOn\GOGlobal\Client\gg-client.exe&rdquo; -h server1 -hp 1667のようになります。
+ポート番号は、GO-Globalにログオンしたときに [Connection]ダイアログで指定することも可能です。この場合は、 [Host address]ボックス内に、ホスト名またはIPアドレス、コロン、ポート番号の順に入力します。(例 : server1:1667)。IPv6アドレスを指定する場合は、ホストのIPアドレスをブラケットで囲ってください。たとえば[fe80::29c:29ff:fe95:519a]:491というように指定します。
+どちらの方法でも新しいポート番号が指定されていない場合、ユーザはGO-Globalにサインインできません。
+ ホストポートを変更した後、デフォルトポート491以外のポートでクライアント印刷を機能させるには、 Print Spoolerサービスと GO-Global Application Publishingサービスを再起動する必要があります。">
 <meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
 <meta itemprop="wordCount" content="106">
 
@@ -34,7 +50,15 @@
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="セキュリティオプション"/>
-<meta name="twitter:description" content="システム管理者は、[Host Options]ダイアログの[Security]タブを使用して、クライアントとGO-Globalホスト間の通信の転送モードとクライアントとホスト間で転送されるデータの暗号化レベルを選択できます。"/>
+<meta name="twitter:description" content="システム管理者は、[Host Options]ダイアログの[Security]タブを使用して、クライアントとGO-Globalホスト間の通信の転送モードとクライアントとホスト間で転送されるデータの暗号化レベルを選択できます。また、ホストのポート設定を修正したり、統合Windows認証やパスワードのキャッシュを有効にすることも可能です。
+SSL転送の選択 GO-Globalは、WindowsとGO-Globalホスト間の通信方法として、Transmission Control Protocol(TCP)と Secure Socket Layer(SSL)の両方をサポートしています。SSL転送を選択する場合は、SSL証明書ファイルを指定する必要があります。SSL証明書は、GO-Globalのクライアントとホスト間での安全な通信のために必要です。証明書は、VerisignやThawteなどの信頼されている認証局(CA)から入手できます。また、独自に認証局を作成して、その認証局からサーバ証明書に署名することもできます。ワイルドカードSSL証明書もサポートされます。詳細については、信頼できる証明書からの証明書の取得または独自の認証局の作成を参照してください。
+SSL転送を選択する方法  Admin で、[Tools | Host Options]の順にクリックします。 [Security]タブをクリックします。 [Transport]の一覧で、SSLを選択します。 [SSL Certificate]ボックスにサーバの証明書ファイルへのパスを入力します。 [OK]をクリックします。  サーバポート設定の変更 ユーザがファイアウォールやルーターを介してGO-Globalにアクセスするためには、システム管理者が Application Publishing Service 用のホストポート設定を変更する必要があります。Application Publishing Serviceの実行には専用ポートが必要です。同じポートで別のサービスを実行するとコンフリクトが起きる場合があります。TCPとSSLのデフォルトのポート番号はどちらも491です。
+サーバポート設定の変更方法  [All Hosts]の一覧から、目的のホストを選択します。 [Tools | Host Options]の順にクリックします。 [Security]タブをクリックします。 [Port]ボックスに新しいポート番号を入力します。 [OK]をクリックします。   HTTPS接続を受け入れるように設定されたコンピュータにWebサーバがない場合にのみ、ポートを443に設定できます。GO-Global Application Publishing Serviceがポート443での接続を許可する必要がある場合(たとえば、プロキシサーバを介した接続を許可する場合)、Webサーバは別のコンピュータで実行する必要があります。
+ ホストポートの設定を変更したら、GO-Globalハイパーリンクからportパラメータを変更する必要があります。portパラメータに続けて新しいポート番号を使用します。 例えば、 http://hostname/goglobal/logon.html?port=1667
+ショートカットからGO-Globalを実行しているユーザは、ショートカットに-hp引数(新しいポート番号が続く)を追加する必要があります。たとえば、&ldquo;C:\Program Files\GraphOn\GOGlobal\Client\gg-client.exe&rdquo; -h server1 -hp 1667のようになります。
+ポート番号は、GO-Globalにログオンしたときに [Connection]ダイアログで指定することも可能です。この場合は、 [Host address]ボックス内に、ホスト名またはIPアドレス、コロン、ポート番号の順に入力します。(例 : server1:1667)。IPv6アドレスを指定する場合は、ホストのIPアドレスをブラケットで囲ってください。たとえば[fe80::29c:29ff:fe95:519a]:491というように指定します。
+どちらの方法でも新しいポート番号が指定されていない場合、ユーザはGO-Globalにサインインできません。
+ ホストポートを変更した後、デフォルトポート491以外のポートでクライアント印刷を機能させるには、 Print Spoolerサービスと GO-Global Application Publishingサービスを再起動する必要があります。"/>
 
 
 
@@ -125,7 +149,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
+  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
   data-offline-search-base-href="/"
 >
 
@@ -155,7 +179,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
+  data-offline-search-index-json-src="/offline-search-index.497ccc4afbc49ce5a04e6be99b58d72b8a16ff3fa00ba1ed94bc8b1a8c65106022ce3bd7ed83c06d3ffa01f12ee74427105d5428aa2348dee9642b718de8dab0.json"
   data-offline-search-base-href="/"
 >
 
@@ -430,13 +454,85 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemonitoring-host-activity" href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global6go-global-admin-consolemanaging-go-global-licenses" href="/docs/go-global6/go-global-admin-console/managing-go-global-licenses/">セキュリティオプション</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolemonitoring-host-activity" href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesaretasbano" href="/docs/go-global6/go-global-admin-console/saretasbano/">信頼されたサーバ証明書の取得</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolepasuwdono" href="/docs/go-global6/go-global-admin-console/pasuwdono/">パスワードの変更</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonno" href="/docs/go-global6/go-global-admin-console/sesshonno/">セッションの再接続</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolekuraiantonotaimuzn" href="/docs/go-global6/go-global-admin-console/kuraiantonotaimuzn/">クライアントのタイムゾーン</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consoleakaunto" href="/docs/go-global6/go-global-admin-console/akaunto/">共有アカウント</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonnoopushon" href="/docs/go-global6/go-global-admin-console/sesshonnoopushon/">セッションの起動オプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolehosutono" href="/docs/go-global6/go-global-admin-console/hosutono/">ホストの活動監視</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolesesshonnoshattoopushon" href="/docs/go-global6/go-global-admin-console/sesshonnoshattoopushon/">セッションのシャットオプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolewindows-compatibility-assurance" href="/docs/go-global6/go-global-admin-console/windows-compatibility-assurance/">Windows Compatibility Assurance</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolego-global-updates" href="/docs/go-global6/go-global-admin-console/go-global-updates/">GO-Global Updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consolekuraiantomashinkaranogo-globalhosutono" href="/docs/go-global6/go-global-admin-console/kuraiantomashinkaranogo-globalhosutono/">クライアントマシンからのGO-Globalホストの管理</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6go-global-admin-consoleadmin-consolenokbdoshtokatto" href="/docs/go-global6/go-global-admin-console/admin-consolenokbdoshtokatto/">Admin Consoleのキーボードショートカット</a>
       
       
     </li>
@@ -1734,27 +1830,27 @@
             
 <div class="td-content">
 	<h1>セキュリティオプション</h1>
-	<div class="lead">システム管理者は、[Host Options]ダイアログの[Security]タブを使用して、クライアントとGO-Globalホスト間の通信の転送モードとクライアントとホスト間で転送されるデータの暗号化レベルを選択できます。</div>
+	
 	<p>システム管理者は、[Host Options]ダイアログの[Security]タブを使用して、クライアントとGO-Globalホスト間の通信の転送モードとクライアントとホスト間で転送されるデータの暗号化レベルを選択できます。また、ホストのポート設定を修正したり、統合Windows認証やパスワードのキャッシュを有効にすることも可能です。</p>
 <h2 id="ssl転送の選択">SSL転送の選択</h2>
 <p>GO-Globalは、WindowsとGO-Globalホスト間の通信方法として、Transmission Control Protocol(TCP)と Secure Socket Layer(SSL)の両方をサポートしています。SSL転送を選択する場合は、SSL証明書ファイルを指定する必要があります。SSL証明書は、GO-Globalのクライアントとホスト間での安全な通信のために必要です。証明書は、VerisignやThawteなどの信頼されている認証局(CA)から入手できます。また、独自に認証局を作成して、その認証局からサーバ証明書に署名することもできます。ワイルドカードSSL証明書もサポートされます。詳細については、信頼できる証明書からの証明書の取得または独自の認証局の作成を参照してください。</p>
 <h3 id="ssl転送を選択する方法">SSL転送を選択する方法</h3>
 <ol>
 <li>Admin で、[Tools | Host Options]の順にクリックします。</li>
-<li>**[Security]**タブをクリックします。</li>
-<li>**[Transport]**の一覧で、SSLを選択します。</li>
-<li>**[SSL Certificate]**ボックスにサーバの証明書ファイルへのパスを入力します。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>Security</strong>]タブをクリックします。</li>
+<li>[<strong>Transport</strong>]の一覧で、SSLを選択します。</li>
+<li>[<strong>SSL Certificate</strong>]ボックスにサーバの証明書ファイルへのパスを入力します。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 </ol>
 <h2 id="サーバポート設定の変更">サーバポート設定の変更</h2>
 <p>ユーザがファイアウォールやルーターを介してGO-Globalにアクセスするためには、システム管理者が Application Publishing Service 用のホストポート設定を変更する必要があります。Application Publishing Serviceの実行には専用ポートが必要です。同じポートで別のサービスを実行するとコンフリクトが起きる場合があります。TCPとSSLのデフォルトのポート番号はどちらも491です。</p>
 <h3 id="サーバポート設定の変更方法">サーバポート設定の変更方法</h3>
 <ol>
-<li>**[All Hosts]**の一覧から、目的のホストを選択します。</li>
+<li>[<strong>All Hosts</strong>]の一覧から、目的のホストを選択します。</li>
 <li>[Tools | Host Options]の順にクリックします。</li>
-<li>**[Security]**タブをクリックします。</li>
-<li>**[Port]**ボックスに新しいポート番号を入力します。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>Security</strong>]タブをクリックします。</li>
+<li>[<strong>Port</strong>]ボックスに新しいポート番号を入力します。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 </ol>
 <blockquote>
 <p>HTTPS接続を受け入れるように設定されたコンピュータにWebサーバがない場合にのみ、ポートを443に設定できます。GO-Global Application Publishing Serviceがポート443での接続を許可する必要がある場合(たとえば、プロキシサーバを介した接続を許可する場合)、Webサーバは別のコンピュータで実行する必要があります。</p>
@@ -1762,7 +1858,7 @@
 <p><img src="/images/4-5-1.png" alt="4-5-1"></p>
 <p>ホストポートの設定を変更したら、GO-Globalハイパーリンクからportパラメータを変更する必要があります。portパラメータに続けて新しいポート番号を使用します。 例えば、 http://hostname/goglobal/logon.html?port=1667</p>
 <p>ショートカットからGO-Globalを実行しているユーザは、ショートカットに-hp引数(新しいポート番号が続く)を追加する必要があります。たとえば、&ldquo;C:\Program Files\GraphOn\GOGlobal\Client\gg-client.exe&rdquo; -h server1 -hp 1667のようになります。</p>
-<p>ポート番号は、GO-Globalにログオンしたときに **[Connection]**ダイアログで指定することも可能です。この場合は、 **[Host address]**ボックス内に、ホスト名またはIPアドレス、コロン、ポート番号の順に入力します。(例 : server1:1667)。IPv6アドレスを指定する場合は、ホストのIPアドレスをブラケットで囲ってください。たとえば[fe80::29c:29ff:fe95:519a]:491というように指定します。</p>
+<p>ポート番号は、GO-Globalにログオンしたときに [<strong>Connection</strong>]ダイアログで指定することも可能です。この場合は、 [<strong>Host address</strong>]ボックス内に、ホスト名またはIPアドレス、コロン、ポート番号の順に入力します。(例 : server1:1667)。IPv6アドレスを指定する場合は、ホストのIPアドレスをブラケットで囲ってください。たとえば[fe80::29c:29ff:fe95:519a]:491というように指定します。</p>
 <p>どちらの方法でも新しいポート番号が指定されていない場合、ユーザはGO-Globalにサインインできません。</p>
 <blockquote>
 <p>ホストポートを変更した後、デフォルトポート491以外のポートでクライアント印刷を機能させるには、 <strong>Print Spooler</strong>サービスと <strong>GO-Global Application Publishing</strong>サービスを再起動する必要があります。</p>
@@ -1772,9 +1868,9 @@
 <h3 id="サーバセッションの暗号化方法">サーバセッションの暗号化方法</h3>
 <ol>
 <li>[Tools | Host Options] の順にクリックします。</li>
-<li>**[Security]**タブをクリックします。</li>
-<li>**[Encryption]**の一覧から、暗号化レベルを選択します。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>Security</strong>]タブをクリックします。</li>
+<li>[<strong>Encryption</strong>]の一覧から、暗号化レベルを選択します。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 </ol>
 <p>暗号化を有効にすると、その後のGO-Globalセッションがすべて暗号化されます。暗号化を有効に設定した時点ですでに実行中のセッションは暗号化されないままです。ただし、GO-Globalホストに次にログオンした時には、そのセッションは暗号化されます。セッションを暗号化するには、ユーザは一度GO-Globalホストからログオフし、再びログオンする必要があります。</p>
 <p>暗号化が有効になっていると、そのGO-Globalホストへのすべての接続は、管理コンソール、クライアント、および依存ホストからの接続を含め、選択された転送および暗号化アルゴリズムを使用します。中継サーバを使用する場合、GO-Globalはリンクの暗号化を提供します。具体的には、中継サーバ上のApplication Publishing Serviceは、クライアントから受信したデータを復号化し、そのデータを依存ホストに転送する前に再暗号化します。同様に、依存ホストから受信したデータを復号化し、クライアントに転送する前に再暗号化します。</p>
@@ -1784,11 +1880,11 @@
 <h3 id="接続がセキュリティで保護されていることをユーザに通知する方法">接続がセキュリティで保護されていることをユーザに通知する方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools | Host Options]の順にクリックします。</li>
-<li>**[Security]**タブをクリックします。</li>
-<li>**[Transport]**の一覧で、SSLを選択します。</li>
-<li>**[SSL Certificate]**ボックスにサーバの証明書ファイルへのパスを入力します。</li>
+<li>[<strong>Security</strong>]タブをクリックします。</li>
+<li>[<strong>Transport</strong>]の一覧で、SSLを選択します。</li>
+<li>[<strong>SSL Certificate</strong>]ボックスにサーバの証明書ファイルへのパスを入力します。</li>
 <li>[Notify users when connections are secure]オプションをクリックします。</li>
-<li>**[OK]**をクリックします。</li>
+<li>[<strong>OK</strong>]をクリックします。</li>
 </ol>
 <p><img src="/images/4-5-3.png" alt="4-5-3"></p>
 
@@ -1822,6 +1918,13 @@
   
     
       
+        
+        
+      
+    
+  
+    
+      
     
   
     
@@ -1829,6 +1932,72 @@
         
           
           
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
         
       
     
@@ -1837,9 +2006,9 @@
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
-        <a href="/docs/go-global6/go-global-admin-console/managing-sessions-and-processes/">セッションとプロセスの管理</a>
-      </div><div class="xPrevNextLink_next">
         <a href="/docs/go-global6/go-global-admin-console/monitoring-host-activity/">GO-Globalライセンスの管理</a>
+      </div><div class="xPrevNextLink_next">
+        <a href="/docs/go-global6/go-global-admin-console/saretasbano/">信頼されたサーバ証明書の取得</a>
       </div></div>
   
 
