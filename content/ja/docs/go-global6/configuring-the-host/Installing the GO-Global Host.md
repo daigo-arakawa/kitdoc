@@ -1,6 +1,6 @@
 +++
 title = "GO-Globalホストのインストール"
-description = "ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"
+description = ""
 weight = 2
 +++
 

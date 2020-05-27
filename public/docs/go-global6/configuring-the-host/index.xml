@@ -49,7 +49,13 @@ GO-Global version5から6へのアップグレード手順は以下の技術ノ�
 &lt;p&gt;Restarting the License Manager will not affect existing sessions running on the GO-Global Host.&lt;/p&gt;
 &lt;p&gt;After restarting the License Manager, run the version 6 GO-Global host installer by doubleclicking gg-host.exe.&lt;/p&gt;
 &lt;p&gt;When upgrading to version 6, you will be prompted to restart the computer two times. The host installer will resume automatically after restarting. As part of the installation process, existing versions of GO-Global are removed, but Registry settings and files are saved.These files can be found in the &lt;strong&gt;Program Files\GraphOn\GO-Global.backup&lt;/strong&gt;folder and in the Registry at HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GO-Global.backup. The installer also moves the new license file(s) from the Programs directory to the Licensing directory.&lt;/p&gt;
-&lt;p&gt;Customers will be unable to upgrade their version 5 license to version 6 if their Support contract has expired. To renew, contact your GO-Global reseller or &lt;a href=&#34;mailto:sales@graphon.com&#34;&gt;sales@graphon.com&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+Customers will be unable to upgrade their version 5 license to version 6 if their Support contract has expired. To renew, contact your GO-Global reseller or &lt;a href=&#34;mailto:sales@graphon.com&#34;&gt;sales@graphon.com&lt;/a&gt;.
+&lt;/div&gt;
+
 
       </description>
     </item>
@@ -99,7 +105,8 @@ GO-Global version5から6へのアップグレード手順は以下の技術ノ�
       <description>
         
         
-        &lt;blockquote&gt;
+        &lt;p&gt;&lt;img src=&#34;/images/2-3-1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。GO-Globalの評価を行う際にはきっとエイエスピー営業部までお問い合わせください。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;GO-Global&amp;rsquo;s 30-day trial version can be downloaded from GraphOn&amp;rsquo;s web site. The Activation Wizard runs during the GO-Global trial installation, and is accessible from the Start menu after installing the host. It configures the computer to use a GraphOn product license, then activates GO-Global on the computer. GO-Global can be activated on a computer with a trial license only once.&lt;/p&gt;
@@ -108,19 +115,27 @@ GO-Global version5から6へのアップグレード手順は以下の技術ノ�
 &lt;li&gt;When the Activation Wizard opens, follow the prompts. Sign in using your GraphOn account. Create an account if you do not have one. Then click the &lt;strong&gt;Sign in&lt;/strong&gt; button.&lt;/li&gt;
 &lt;li&gt;If applicable, select a GraphOn customer account.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Global cloud trial licenses can only be used on computers that have direct access to the internet. If a computer does not have access to the internet (e.g., if it accesses the internet via a proxy server), the Activation Wizard will notify you that GO-Global is unable to communicate with GraphOn&amp;rsquo;s online license service. If you see this message, you can request an on-premises trial license as described below.&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+GO-Global cloud trial licenses can only be used on computers that have direct access to the internet. If a computer does not have access to the internet (e.g., if it accesses the internet via a proxy server), the Activation Wizard will notify you that GO-Global is unable to communicate with GraphOn&amp;rsquo;s online license service. If you see this message, you can request an on-premises trial license as described below.
+&lt;/div&gt;
+
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Select the license you would like the computer to use. If there are no available licenses, click &lt;strong&gt;Start New Trial&lt;/strong&gt;. Specify a description for the license, then click &lt;strong&gt;OK.&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Click &lt;strong&gt;Accept&lt;/strong&gt;to accept the GO-Global License Agreement.&lt;/li&gt;
 &lt;li&gt;Click &lt;strong&gt;Activate&lt;/strong&gt; to enable GO-Global on this computer.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;After installing GO-Global and running the Activation Wizard, you must &lt;strong&gt;restart&lt;/strong&gt; the computer.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;If a license is grayed out, it is not an active license, and cannot be used.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;activating-go-global-using-an-on-premises-license&#34;&gt;Activating GO-Global using an on-premises license&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+If a license is grayed out, it is not an active license, and cannot be used.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;activating-go-global-using-an-on-premises-license&#34;&gt;Activating GO-Global using an on-premises license&lt;/h3&gt;
 &lt;p&gt;For computers without direct access to the internet, or if a cloud trial license cannot be established, GraphOn will generate an on-premises, Flexera-based trial license, which will be sent via email.&lt;/p&gt;
 &lt;h3 id=&#34;to-activate-go-global-using-an-on-premises-license&#34;&gt;To activate GO-Global using an on-premises license&lt;/h3&gt;
 &lt;ol&gt;
@@ -153,7 +168,10 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
 &lt;li&gt;Webファイルをインストールすることを選択して、目的のWebサーバでホストインストーラを実行します。&lt;/li&gt;
 &lt;li&gt;Webサーバ上のlogon.htmlページを編集して、hostnameの代わりにGO-Globalホストのアドレスを挿入して、以下のステートメントを追加します。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;if (host.length == 0){host=&amp;quot;hostname&amp;quot;;}
+&lt;pre&gt;&lt;code&gt;if (host.length == 0)
+{
+host=&amp;quot;hostname&amp;quot;;
+}
 &lt;/code&gt;&lt;/pre&gt;
       </description>
     </item>
@@ -172,7 +190,7 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
 &lt;ol&gt;
 &lt;li&gt;Webサーバの C:\inetpub\wwwroot\にディレクトリを作成し、ユーザに表示したいディレクトリに呼び出します。たとえば、C:\inetpub\wwwroot\Webのフォルダを作成します。&lt;/li&gt;
 &lt;li&gt;GO-GlobalホストからC:\Program files\GraphOn\GO-Global\Webディレクトリの内容を新しいディレクトリにコピーします。&lt;/li&gt;
-&lt;li&gt;IISマネージャを開き、[サイト]に移動します。既定のWebサイト **[既定のWebサイト]**を右クリックし、 **[仮想ディレクトリの追加]**をクリックします。&lt;/li&gt;
+&lt;li&gt;IISマネージャを開き、[サイト]に移動します。既定のWebサイト &lt;strong&gt;既定のWebサイト&lt;/strong&gt;を右クリックし、 &lt;strong&gt;仮想ディレクトリの追加&lt;/strong&gt;をクリックします。&lt;/li&gt;
 &lt;li&gt;手順1で作成したディレクトリと同じエイリアスを指定し、手順2でファイルをコピーしたディレクトリを &lt;strong&gt;物理パス&lt;/strong&gt;に指定します。たとえば、C:\inetpub\wwwroot\Webです。&lt;/li&gt;
 &lt;li&gt;新しい仮想ディレクトリをクリックします。次に &lt;strong&gt;MIMEタイプ&lt;/strong&gt;をダブルクリックします。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;追加&lt;/strong&gt;をクリックします。 &lt;strong&gt;File name extension&lt;/strong&gt;ボックスに.memを入力します。[MIMEの種類]ボックスにapplication/octet-streamと入力します。次に &lt;strong&gt;OK&lt;/strong&gt;をクリックします。&lt;/li&gt;
@@ -192,15 +210,17 @@ c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/stron
         
         
         &lt;p&gt;Apache HTTP Server 2.4 WebサービスがGO-Globalホストにインストールされている場合、ユーザはWebブラウザを使ってクライアントマシンから接続できます。&lt;/p&gt;
-&lt;p&gt;IISがインストールされている場合は、Apacheをダウンロードする前に &lt;strong&gt;World Wide Web発行サービス&lt;/strong&gt;を停止して無効にする必要があります。 **[サービス]**から、 **[World Wide Web発行サービス]**を右クリックして **[プロパティ]**を選択します。 **[プロパティ]**ダイアログで、 **[スタートアップの種類]**ドロップダウンメニューから **[無効]**を選択し、 **[停止]**ボタンをクリックします。OKをクリックしてください。&lt;/p&gt;
+&lt;p&gt;IISがインストールされている場合は、Apacheをダウンロードする前に &lt;strong&gt;World Wide Web発行サービス&lt;/strong&gt;を停止して無効にする必要があります。 &lt;strong&gt;サービス&lt;/strong&gt;から、 &lt;strong&gt;World Wide Web発行サービス&lt;/strong&gt;を右クリックして &lt;strong&gt;プロパティ&lt;/strong&gt;を選択します。 &lt;strong&gt;プロパティ&lt;/strong&gt;ダイアログで、 &lt;strong&gt;スタートアップの種類&lt;/strong&gt;ドロップダウンメニューから &lt;strong&gt;無効&lt;/strong&gt;を選択し、 &lt;strong&gt;停止&lt;/strong&gt;ボタンをクリックします。OKをクリックしてください。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.apachelounge.com/download/&#34;&gt;http://www.apachelounge.com/download/&lt;/a&gt;にアクセスして最新バージョンをダウンロードしてください。GraphOnによってテストされたバージョンは &lt;strong&gt;httpd-2.4.29-Win64-VC15.zip&lt;/strong&gt;でした。&lt;/li&gt;
 &lt;li&gt;C ++再配布可能なVisual Studio 2017をダウンロードしてインストールします。GraphOnによってテストされたバージョンは、次のリンクからダウンロードできます。&lt;a href=&#34;https://aka.ms/vs/15/release/VC_redis.x64.exe&#34;&gt;https://aka.ms/vs/15/release/VC_redis.x64.exe&lt;/a&gt;​&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;httpd-2.4.29-Win64-VC15.zip&lt;/strong&gt;をC:\Apache24ディレクトリのGO-Globalホストに抽出します。&lt;/li&gt;
 &lt;li&gt;[ スタート | すべてのプログラム | アクセサリー | コマンドプロンプト ]の順にクリックします。コマンドプロンプトを右クリックし、管理者として実行します。&lt;/li&gt;
-&lt;li&gt;**[コマンドプロンプト]**ウィンドウで、次のように入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;コマンドプロンプト&lt;/strong&gt;ウィンドウで、次のように入力します。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;cd C:\Apache24\binhttpd -k installhttpd -k start
+&lt;pre&gt;&lt;code&gt;cd C:\Apache24\bin
+httpd -k install
+httpd -k start
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;まだ開いていない場合は、ファイアウォールでポート80を開く必要があります。SSLが実行されている場合は、ポート443が開いていることを確認してください。
 6. C :\Apache24\binを開き、 &lt;strong&gt;ApacheMonitor.exe&lt;/strong&gt;を実行します。システムトレイからApache Monitorを開き、サービスが開始されたことを確認します。
 7. C:\Apache24\htdocsを開き、goglobalという名前のディレクトリを作成します。
@@ -299,7 +319,7 @@ HOSTID=ANY&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The License Manager service should be disabled on secondary servers of Central License Servers and Three-Server Redundant License Servers.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;three-server-redundancy&#34;&gt;Three-Server Redundancy&lt;/h2&gt;
+&lt;h3 id=&#34;three-server-redundancy&#34;&gt;Three-Server Redundancy&lt;/h3&gt;
 &lt;p&gt;With three-server redundancy, if any two of the three license servers are up and running, a &amp;ldquo;quorum&amp;rdquo; of servers is established, and the system is functional and serves its total complement of licenses.&lt;/p&gt;
 &lt;p&gt;Three-server redundancy is designed to provide hardware failover protection only and does not provide load-balancing. This is because with three-server redundancy, only one of the three servers is &amp;ldquo;master&amp;rdquo; and capable of issuing licenses.&lt;/p&gt;
 &lt;p&gt;Following is an example of a three-server redundant license file that GraphOn supplies after registering online. You must provide the hostnames of the three GO-Global Hosts as well as the hostids (Ethernet addresses, in most cases) for each. The port of the license server (e.g., 27000) must also be appended to each server line, if it is not already listed.&lt;/p&gt;
@@ -318,7 +338,7 @@ SERVER caspian 000476BA8F74 27000
 USE_SERVER&lt;/p&gt;
 &lt;p&gt;With the second option, add each server to the environment variable, using commas to separate the servers. For example, LM_LICENSE_FILE = 27000@wilson,27000@piper,27000@caspian. Restart the GO-Global Application Publishing Service and the GO-Global License Manager on the &amp;ldquo;master&amp;rdquo; server first (wilson, in the example above), then on the secondary and tertiary servers.&lt;/p&gt;
 &lt;p&gt;We recommend running Flexera&amp;rsquo;s lmtools application to check the status of the redundant license servers once all three servers are up and running. Launch lmtools.exe and select the Server Status tab. Click on Perform Status Enquiry and verify that your servers are &amp;ldquo;UP.&amp;rdquo; You can obtain lmtools from the Licensing directory (\GO-Global\Licensing) or from the start menu. The lmtools application is included for diagnostic purposes. Any questions on its functionality should be directed to Flexera.&lt;/p&gt;
-&lt;h2 id=&#34;license-file-list-redundancy&#34;&gt;License-File List Redundancy&lt;/h2&gt;
+&lt;h3 id=&#34;license-file-list-redundancy&#34;&gt;License-File List Redundancy&lt;/h3&gt;
 &lt;p&gt;As an alternative to three-server redundancy, license-file list redundancy is available when there is limited system administration available to monitor license servers, when load-balancing is required for applications located far apart (e.g., Chicago and Tokyo), or when two or more license servers are required.&lt;/p&gt;
 &lt;p&gt;With license-file redundancy, each one of a group of license servers serves a subset of the total licenses. As such, this method does not provide true redundancy in the way three-server redundancy does.&lt;/p&gt;
 &lt;p&gt;Set the LM_LICENSE_FILE environment variable to a list of license files, where each license file points to one of the license servers. GO-Global attempts a license checkout from each server in the list, in order, until it succeeds or gets to the end of the list.&lt;/p&gt;
@@ -417,9 +437,15 @@ EC2コンソールのナビゲーションペインから、[ネットワーク�
 3.2 ステップ1で作成したEIPをENIに割り当てます。 詳細については、AWS ENIのドキュメントを参照してください。: &lt;a href=&#34;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&#34;&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&lt;/a&gt;​&lt;/li&gt;
 &lt;li&gt;GO-Global License Managerサービスを実行しているインスタンスにENIを添付します。
 4.1 ECインスタンスから、GO-Global License Managerサービスを実行しているインスタンスを選択し、[アクション | ネットワーキング | ネットワークインターフェイス]の順に選択します。
-4.2 手順2で作成したENIを選択します。使用できない場合は、別のAWSインスタンスに添付されているか、インスタンスとは異なるアベイラビリティーゾーンに作成されている可能性があります。&lt;/li&gt;
+4.2 手順2で作成したENIを選択します。使用できない場合は、別のAWSインスタンスに添付されているか、インスタンスとは異なるアベイラビリティーゾーンに作成されている可能性があります。
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じアベイラビリティーゾーンにある必要があります。 Amazon Virtual Private Cloud（VPC）を介して、アベイラビリティーゾーンでサブネットを使用するか、アベイラビリティーゾーンでカスタムサブネットを作成できます。
+&lt;/div&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じアベイラビリティーゾーンにある必要があります。 Amazon Virtual Private Cloud（VPC）を介して、アベイラビリティーゾーンでサブネットを使用するか、アベイラビリティーゾーンでカスタムサブネットを作成できます。&lt;/p&gt;
 
       </description>
     </item>
@@ -454,19 +480,26 @@ EC2コンソールのナビゲーションペインから、[ネットワーク�
 &lt;li&gt;デスクトップエクスペリエンスをインストールする(&lt;a href=&#34;http://technet.microsoft.com/en-us/library/cc742809.aspx&#34;&gt;http://technet.microsoft.com/en-us/library/cc742809.aspx&lt;/a&gt;)。&lt;/li&gt;
 &lt;li&gt;ホストを再起動したら、Themesサービスを起動します。&lt;/li&gt;
 &lt;li&gt;クラスタマネージャでグループポリシーを有効にします。
-a. クラスタマネージャで、[ツール]メニューから[ツール | ホストオプション]をクリックします。
-b. &lt;strong&gt;Session Startup&lt;/strong&gt;タブをクリックします。
-c. &lt;strong&gt;Apply Group Policy&lt;/strong&gt;を有効にする。&lt;/li&gt;
+&lt;ol&gt;
+&lt;li&gt;クラスタマネージャで、[ツール]メニューから[ツール | ホストオプション]をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Session Startup&lt;/strong&gt;タブをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Apply Group Policy&lt;/strong&gt;を有効にする。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
 &lt;li&gt;グループポリシーを介してすべてのユーザに対してテーマを有効にします。
-a. mmcを実行
-b. **[ファイル | スナップインの追加と削除&amp;hellip;]**をクリックします。
-c. &lt;strong&gt;グループポリシーオブジェクト&lt;/strong&gt;を選択
-d. &lt;strong&gt;追加&lt;/strong&gt;をクリックします。
-e. &lt;strong&gt;完了&lt;/strong&gt;をクリックします。
-f. ユーザーの構成\ポリシー\管理用テンプレート\コントロールパネル\個人用設定に移動します。
-g. **「特定のビジュアルスタイルファイルを強制するかWindows Classicを強制する」**をダブルクリックします。
-h. &lt;strong&gt;有効&lt;/strong&gt;をクリックします。
-i. **[ビジュアルスタイルへのパス]**で、パスを入力します。%windir%\resources\Themes\Aero\ aero.msstyles&lt;/li&gt;
+&lt;ol&gt;
+&lt;li&gt;mmcを実行&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ファイル&lt;/strong&gt; | &lt;strong&gt;スナップインの追加と削除&lt;/strong&gt;&amp;hellip;をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;グループポリシーオブジェクト&lt;/strong&gt;を選択&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;追加&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;完了&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;li&gt;ユーザーの構成\ポリシー\管理用テンプレート\コントロールパネル\個人用設定に移動します。&lt;/li&gt;
+&lt;li&gt;**「特定のビジュアルスタイルファイルを強制するかWindows Classicを強制する」**をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;有効&lt;/strong&gt;をクリックします。&lt;/li&gt;
+&lt;li&gt;**[ビジュアルスタイルへのパス]**で、パスを入力します。
+%windir%\resources\Themes\Aero\ aero.msstyles&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>

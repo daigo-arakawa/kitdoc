@@ -1,6 +1,6 @@
 +++
 title = "ホスト以外のシステムへのWebファイルのインストール"
-description = "ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"
+description = ""
 weight = 4
 +++
 
@@ -12,5 +12,8 @@ GO-Global Webファイルは、GO-Globalホスト以外のシステムにもイ�
 2. Webサーバ上のlogon.htmlページを編集して、hostnameの代わりにGO-Globalホストのアドレスを挿入して、以下のステートメントを追加します。
 
 ```
-if (host.length == 0){host="hostname";}
+if (host.length == 0)
+{
+host="hostname";
+}
 ```

@@ -1,5 +1,5 @@
 +++
 title = "サーバの設定"
-description = "List the child pages of a page"
+description = ""
 weight= 10
 +++

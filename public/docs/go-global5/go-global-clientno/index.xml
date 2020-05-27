@@ -82,10 +82,10 @@
 &lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
 &lt;li&gt;[Location box]ボックスに、http://に続けてホスト名とGO-Globalログオンページを入力します。例えば、&lt;a href=&#34;http://hostname/goglobal/logon.html&#34;&gt;http://hostname/goglobal/logon.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;画面の指示に従って、ブラウザにGO-Globalアドオンをインストールしてください。&lt;/li&gt;
-&lt;li&gt;**[Sign In]**ダイアログが表示されたら、次の情報を入力します。
+&lt;li&gt;&lt;strong&gt;Sign In&lt;/strong&gt;ダイアログが表示されたら、次の情報を入力します。
 &lt;ol&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;User Name&lt;/strong&gt;ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password&lt;/strong&gt;ボックスにパスワードを入力します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;

@@ -79,7 +79,7 @@
       <description>
         
         
-        &lt;h1 id=&#34;go-globalホスト&#34;&gt;GO-Globalホスト&lt;/h1&gt;
+        &lt;h3 id=&#34;go-globalホスト&#34;&gt;GO-Globalホスト&lt;/h3&gt;
 &lt;p&gt;GO-Globalホストは、以下のWindowsオペレーティングシステムをサポートします。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Windows Server 2019 : Standard または Datacenter&lt;/li&gt;
@@ -102,7 +102,7 @@
 &lt;li&gt;GO-Globalホストが必要とするメモリとCPUは、公開されるアプリケーションとシステムにアクセスするユーザ数によって決まります。通常、GO-Globalホストは、500 MHz CPUにつき12の「ヘビー ユーザ」、または25の「ライトユー ザ」をサポートできます。(「ヘビーユーザ」とは、1つ以上の大容量アプリケーションを実行して常時対話を行うユーザです。「ライトユーザ」は、1つのアプリケーションを実行して断続的に対話を行うユーザです)。&lt;/li&gt;
 &lt;li&gt;GO-Globalはラウンドトリップタイム(RTT)が500ms以下の環境をサポートします。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;go-globalクライアント&#34;&gt;GO-Globalクライアント&lt;/h1&gt;
+&lt;h3 id=&#34;go-globalクライアント&#34;&gt;GO-Globalクライアント&lt;/h3&gt;
 &lt;p&gt;ユーザは、GO-Globalクライアントをサポートする任意のコンピュータからGO-Globalホストへ接続できます。GO-Globalのクライアントは、以下のプラットフォームをサポートします。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Windows 10 : Pro と Enterprise(32-bit/64-bit)GO-Globalは、最新のWindows Updateがインストールされているコンピューターでサポートされています(該当する場合)。&lt;/li&gt;

@@ -30,4 +30,6 @@ After restarting the License Manager, run the version 6 GO-Global host installer
 
 When upgrading to version 6, you will be prompted to restart the computer two times. The host installer will resume automatically after restarting. As part of the installation process, existing versions of GO-Global are removed, but Registry settings and files are saved.These files can be found in the **Program Files\GraphOn\GO-Global.backup**folder and in the Registry at HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GO-Global.backup. The installer also moves the new license file(s) from the Programs directory to the Licensing directory.
 
+{{% alert title="Note" color="info" %}}
 Customers will be unable to upgrade their version 5 license to version 6 if their Support contract has expired. To renew, contact your GO-Global reseller or sales@graphon.com.
+{{% /alert %}}

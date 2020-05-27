@@ -21,12 +21,24 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>GO-Globalホストのインストール | kitASP Docs</title><meta property="og:title" content="GO-Globalホストのインストール" />
-<meta property="og:description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス" />
+<meta property="og:description" content="GO-Globalは自己解凍型の実行ファイルとして配布されており、gg-host.exeをダブルクリックしてインストールすることができます。ホストセットアッププログラムを実行するときは、コンピュータの管理者グループのメンバであるアカウントにログインする必要があります。
+デフォルトでは、GO-Globalホストのセットアップは、すべての ホストのコアコンポーネント、 Webコンポーネント(ブラウザログオン用にホストを設定するために必要なすべてのファイルを含む)、および Licensingコンポーネントをインストールします。 [Customize]ボタンをクリックして、インストールしたくないコンポーネントを選択解除することで、インストールをカスタマイズできます。それ以外の場合は、 [Install]ボタンをクリックしてください。
+GO-Globalを有効にするには、 GO-Globalライセンスファイルをデフォルトのライセンスフォルダ C:\ Program Files\GraphOn\GO-Global\Licensingにコピーします。ライセンスサーバを使用するようにGO-Globalを設定するには、セントラルライセンスサーバを使用するためのGO-Globalの構成を参照してください。
+後でライセンスファイルをコピーすることを選択した場合は、ファイルをコピーした後にGO-Global License Managerを再起動し、次にGO-Global Application Publishing Serviceを再起動する必要があります。
+GO-Global License Managerを再起動する方法  [コントロールパネル | 管理ツール | サービス]の順にクリックします。 サービスの一覧から GO-Global License Managerを選択します｡ 右クリックをして 再起動を選択します。  GO-Global Application Publishing Service を再起動する方法  [コントロール パネル | 管理ツール | サービス]の順にクリックします。 サービスの一覧から GO-Global Application Publishing Serviceを選択します｡ 右クリックをして 再起動を選択します。  ホストをインストールしてコンピュータを再起動したら、Webブラウザを選択してGO-Globalの Interactive Quick Start Guideを開きます。このガイドでは、admin consoleを介してアプリケーションを公開する方法と、アプリケーションへのリンクを共有する方法について説明します。 Interactive Quick Start Guideは、GO-Globalのログオンページに ?help=acを追加することでいつでも開くことができます。たとえば、 http://hostname/goglobal/?help=acのようになります。
+ ライセンスファイル(C:\Program Files\GraphOn\GO-Global\Programs*.lic)への最小アクセス権限は次のとおりです。
+Administrators：フルコントロール、Users：読み取りと実行、SYSTEM：フルコントロール 次のエラーメッセージがログファイルに表示される場合は、ライセンスファイルに対する権限が正しくない可能性があります。 FlexLM code #-1; FlexLM text : Cannot find license file." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/configuring-the-host/installing-the-go-global-host/" />
 <meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="GO-Globalホストのインストール">
-<meta itemprop="description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス">
+<meta itemprop="description" content="GO-Globalは自己解凍型の実行ファイルとして配布されており、gg-host.exeをダブルクリックしてインストールすることができます。ホストセットアッププログラムを実行するときは、コンピュータの管理者グループのメンバであるアカウントにログインする必要があります。
+デフォルトでは、GO-Globalホストのセットアップは、すべての ホストのコアコンポーネント、 Webコンポーネント(ブラウザログオン用にホストを設定するために必要なすべてのファイルを含む)、および Licensingコンポーネントをインストールします。 [Customize]ボタンをクリックして、インストールしたくないコンポーネントを選択解除することで、インストールをカスタマイズできます。それ以外の場合は、 [Install]ボタンをクリックしてください。
+GO-Globalを有効にするには、 GO-Globalライセンスファイルをデフォルトのライセンスフォルダ C:\ Program Files\GraphOn\GO-Global\Licensingにコピーします。ライセンスサーバを使用するようにGO-Globalを設定するには、セントラルライセンスサーバを使用するためのGO-Globalの構成を参照してください。
+後でライセンスファイルをコピーすることを選択した場合は、ファイルをコピーした後にGO-Global License Managerを再起動し、次にGO-Global Application Publishing Serviceを再起動する必要があります。
+GO-Global License Managerを再起動する方法  [コントロールパネル | 管理ツール | サービス]の順にクリックします。 サービスの一覧から GO-Global License Managerを選択します｡ 右クリックをして 再起動を選択します。  GO-Global Application Publishing Service を再起動する方法  [コントロール パネル | 管理ツール | サービス]の順にクリックします。 サービスの一覧から GO-Global Application Publishing Serviceを選択します｡ 右クリックをして 再起動を選択します。  ホストをインストールしてコンピュータを再起動したら、Webブラウザを選択してGO-Globalの Interactive Quick Start Guideを開きます。このガイドでは、admin consoleを介してアプリケーションを公開する方法と、アプリケーションへのリンクを共有する方法について説明します。 Interactive Quick Start Guideは、GO-Globalのログオンページに ?help=acを追加することでいつでも開くことができます。たとえば、 http://hostname/goglobal/?help=acのようになります。
+ ライセンスファイル(C:\Program Files\GraphOn\GO-Global\Programs*.lic)への最小アクセス権限は次のとおりです。
+Administrators：フルコントロール、Users：読み取りと実行、SYSTEM：フルコントロール 次のエラーメッセージがログファイルに表示される場合は、ライセンスファイルに対する権限が正しくない可能性があります。 FlexLM code #-1; FlexLM text : Cannot find license file.">
 <meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
 <meta itemprop="wordCount" content="107">
 
@@ -34,7 +46,13 @@
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="GO-Globalホストのインストール"/>
-<meta name="twitter:description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"/>
+<meta name="twitter:description" content="GO-Globalは自己解凍型の実行ファイルとして配布されており、gg-host.exeをダブルクリックしてインストールすることができます。ホストセットアッププログラムを実行するときは、コンピュータの管理者グループのメンバであるアカウントにログインする必要があります。
+デフォルトでは、GO-Globalホストのセットアップは、すべての ホストのコアコンポーネント、 Webコンポーネント(ブラウザログオン用にホストを設定するために必要なすべてのファイルを含む)、および Licensingコンポーネントをインストールします。 [Customize]ボタンをクリックして、インストールしたくないコンポーネントを選択解除することで、インストールをカスタマイズできます。それ以外の場合は、 [Install]ボタンをクリックしてください。
+GO-Globalを有効にするには、 GO-Globalライセンスファイルをデフォルトのライセンスフォルダ C:\ Program Files\GraphOn\GO-Global\Licensingにコピーします。ライセンスサーバを使用するようにGO-Globalを設定するには、セントラルライセンスサーバを使用するためのGO-Globalの構成を参照してください。
+後でライセンスファイルをコピーすることを選択した場合は、ファイルをコピーした後にGO-Global License Managerを再起動し、次にGO-Global Application Publishing Serviceを再起動する必要があります。
+GO-Global License Managerを再起動する方法  [コントロールパネル | 管理ツール | サービス]の順にクリックします。 サービスの一覧から GO-Global License Managerを選択します｡ 右クリックをして 再起動を選択します。  GO-Global Application Publishing Service を再起動する方法  [コントロール パネル | 管理ツール | サービス]の順にクリックします。 サービスの一覧から GO-Global Application Publishing Serviceを選択します｡ 右クリックをして 再起動を選択します。  ホストをインストールしてコンピュータを再起動したら、Webブラウザを選択してGO-Globalの Interactive Quick Start Guideを開きます。このガイドでは、admin consoleを介してアプリケーションを公開する方法と、アプリケーションへのリンクを共有する方法について説明します。 Interactive Quick Start Guideは、GO-Globalのログオンページに ?help=acを追加することでいつでも開くことができます。たとえば、 http://hostname/goglobal/?help=acのようになります。
+ ライセンスファイル(C:\Program Files\GraphOn\GO-Global\Programs*.lic)への最小アクセス権限は次のとおりです。
+Administrators：フルコントロール、Users：読み取りと実行、SYSTEM：フルコントロール 次のエラーメッセージがログファイルに表示される場合は、ライセンスファイルに対する権限が正しくない可能性があります。 FlexLM code #-1; FlexLM text : Cannot find license file."/>
 
 
 
@@ -125,7 +143,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
+  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
   data-offline-search-base-href="/"
 >
 
@@ -155,7 +173,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
+  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
   data-offline-search-base-href="/"
 >
 
@@ -1720,7 +1738,7 @@
             
 <div class="td-content">
 	<h1>GO-Globalホストのインストール</h1>
-	<div class="lead">ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス</div>
+	
 	<p>GO-Globalは自己解凍型の実行ファイルとして配布されており、gg-host.exeをダブルクリックしてインストールすることができます。ホストセットアッププログラムを実行するときは、コンピュータの管理者グループのメンバであるアカウントにログインする必要があります。</p>
 <p>デフォルトでは、GO-Globalホストのセットアップは、すべての <strong>ホスト</strong>のコアコンポーネント、 <strong>Web</strong>コンポーネント(ブラウザログオン用にホストを設定するために必要なすべてのファイルを含む)、および <strong>Licensing</strong>コンポーネントをインストールします。 [<strong>Customize</strong>]ボタンをクリックして、インストールしたくないコンポーネントを選択解除することで、インストールをカスタマイズできます。それ以外の場合は、 [<strong>Install</strong>]ボタンをクリックしてください。</p>
 <p>GO-Globalを有効にするには、 <strong>GO-Globalライセンスファイルをデフォルトのライセンスフォルダ</strong> C:\ Program Files\GraphOn\GO-Global\Licensingにコピーします。ライセンスサーバを使用するようにGO-Globalを設定するには、<a href="https://app.gitbook.com/@kitasp-goglobal/s/kitasp-documentaion/go-global-6/configuring-the-host/configuring-go-global-to-use-a-central-license-server">セントラルライセンスサーバを使用するためのGO-Global</a>の構成を参照してください。</p>
@@ -1898,7 +1916,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 March 5, 2020: <a  href="https://github.com/google/docsy-example/commit/05e264dd78f754815bb14e641c43bb5ad8752bc7">page (05e264d)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 March 5, 2020: <a  href="https://github.com/google/docsy-example/commit/05e264dd78f754815bb14e641c43bb5ad8752bc7">page (05e264dd)</a>
 </div>
 </div>
 

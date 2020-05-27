@@ -1,6 +1,6 @@
 +++
 title = "自動クライアントキーボードサポート"
-description = "ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"
+description = ""
 weight = 11
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "クラウド環境のライセンスサーバ"
-description = "ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"
+description = ""
 weight = 10
 +++
 
@@ -22,5 +22,6 @@ GO-Globalライセンスファイルは、GO-Global License Managerサービス�
 4. GO-Global License Managerサービスを実行しているインスタンスにENIを添付します。
         4.1 ECインスタンスから、GO-Global License Managerサービスを実行しているインスタンスを選択し、[アクション | ネットワーキング | ネットワークインターフェイス]の順に選択します。
         4.2 手順2で作成したENIを選択します。使用できない場合は、別のAWSインスタンスに添付されているか、インスタンスとは異なるアベイラビリティーゾーンに作成されている可能性があります。
-
+{{% alert title="Note" color="info" %}}
 ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じアベイラビリティーゾーンにある必要があります。 Amazon Virtual Private Cloud（VPC）を介して、アベイラビリティーゾーンでサブネットを使用するか、アベイラビリティーゾーンでカスタムサブネットを作成できます。
+{{% /alert %}}

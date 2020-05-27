@@ -628,7 +628,13 @@ GO-Global version5から6へのアップグレード手順は以下の技術ノ�
 &lt;p&gt;Restarting the License Manager will not affect existing sessions running on the GO-Global Host.&lt;/p&gt;
 &lt;p&gt;After restarting the License Manager, run the version 6 GO-Global host installer by doubleclicking gg-host.exe.&lt;/p&gt;
 &lt;p&gt;When upgrading to version 6, you will be prompted to restart the computer two times. The host installer will resume automatically after restarting. As part of the installation process, existing versions of GO-Global are removed, but Registry settings and files are saved.These files can be found in the &lt;strong&gt;Program Files\GraphOn\GO-Global.backup&lt;/strong&gt;folder and in the Registry at HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GO-Global.backup. The installer also moves the new license file(s) from the Programs directory to the Licensing directory.&lt;/p&gt;
-&lt;p&gt;Customers will be unable to upgrade their version 5 license to version 6 if their Support contract has expired. To renew, contact your GO-Global reseller or &lt;a href=&#34;mailto:sales@graphon.com&#34;&gt;sales@graphon.com&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+Customers will be unable to upgrade their version 5 license to version 6 if their Support contract has expired. To renew, contact your GO-Global reseller or &lt;a href=&#34;mailto:sales@graphon.com&#34;&gt;sales@graphon.com&lt;/a&gt;.
+&lt;/div&gt;
+
 
       </description>
     </item>
@@ -709,6 +715,8 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
         
         &lt;p&gt;GO-Globalホスト上のアプリケーションにアクセスするには、クライアントはホストマシンにサインインする必要があります。ユーザがGO-Globalクライアントを起動すると、ユーザ名、パスワード、アクセスしたいホストの名前の入力を求められます。この情報はオプションで暗号化され、GO-Globalホスト上で動作しているApplication Publishing Serviceに渡されます。その後、Application Publishing Serviceは、Windowsの標準のマルチユーザー機能を使用してログオン操作を実行します。&lt;/p&gt;
 &lt;p&gt;ユーザがホストにサインインし、ドメインが指定されていない場合、GO-Globalホストは最初にローカルマシンのアカウントを認証し、次にマシンのドメイン、最後に信頼されるドメインを認証しようとします。ユーザはこのデフォルトの動作を無効にして、[Sign In]ダイアログの[User Name]ボックスにドメイン名に続けて円記号( \ )とネットワークユーザ名を入力してドメインを指定できます。たとえば、NORTH\  johngです。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/GG6-1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/GG6-2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;ユーザのログオン完了後、GO-Global における、マルチユーザ環境でアプリケーションを安全に稼働するために必要なセキュリティ機能は、サーバのオペレーティング システムに依存します。アプリケーションをクライアントユーザーのセキュリティコンテキス ト内で実行することで、プライベートなセッションを確保します｡すべてのマシンやネットワーク リソースへのアクセスは、オペレーティ ングシステムおよび各ユーザのセッションに認められている権限によって管理されます。 ユーザは、GO-Global サーバに対話的(ローカル)にログオンできなければなりません。ローカルセキュリティポリシー、ドメイン セキュリティポリシー、およびドメインコントローラセキュリティポリシーで、ユーザにローカルログオン権限を割り当てます。 この章では、GO-Globalサーバのユーザアカウントの管理方法に関する基本情報を説明します。&lt;/p&gt;
 &lt;p&gt;GO-Globalホスト上のローカルユーザ名がドメインアカウントと同じユーザ名で、それぞれが異なるパスワードを持つ場合、GO-Globalはそれらを2つの別々のアカウントとして扱います。たとえば、次のようなシナリオを考えます。&lt;/p&gt;
 &lt;ul&gt;
@@ -1104,10 +1112,10 @@ SERVER wilson 000C29C7B953 28001
 &lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
 &lt;li&gt;[Location box]ボックスに、http://に続けてホスト名とGO-Globalログオンページを入力します。例えば、&lt;a href=&#34;http://hostname/goglobal/logon.html&#34;&gt;http://hostname/goglobal/logon.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;画面の指示に従って、ブラウザにGO-Globalアドオンをインストールしてください。&lt;/li&gt;
-&lt;li&gt;**[Sign In]**ダイアログが表示されたら、次の情報を入力します。
+&lt;li&gt;&lt;strong&gt;Sign In&lt;/strong&gt;ダイアログが表示されたら、次の情報を入力します。
 &lt;ol&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;User Name&lt;/strong&gt;ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password&lt;/strong&gt;ボックスにパスワードを入力します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -1916,7 +1924,7 @@ Mac
       <description>
         
         
-        &lt;h1 id=&#34;go-globalホスト&#34;&gt;GO-Globalホスト&lt;/h1&gt;
+        &lt;h3 id=&#34;go-globalホスト&#34;&gt;GO-Globalホスト&lt;/h3&gt;
 &lt;p&gt;GO-Globalホストは、以下のWindowsオペレーティングシステムをサポートします。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Windows Server 2019 : Standard または Datacenter&lt;/li&gt;
@@ -1939,7 +1947,7 @@ Mac
 &lt;li&gt;GO-Globalホストが必要とするメモリとCPUは、公開されるアプリケーションとシステムにアクセスするユーザ数によって決まります。通常、GO-Globalホストは、500 MHz CPUにつき12の「ヘビー ユーザ」、または25の「ライトユー ザ」をサポートできます。(「ヘビーユーザ」とは、1つ以上の大容量アプリケーションを実行して常時対話を行うユーザです。「ライトユーザ」は、1つのアプリケーションを実行して断続的に対話を行うユーザです)。&lt;/li&gt;
 &lt;li&gt;GO-Globalはラウンドトリップタイム(RTT)が500ms以下の環境をサポートします。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;go-globalクライアント&#34;&gt;GO-Globalクライアント&lt;/h1&gt;
+&lt;h3 id=&#34;go-globalクライアント&#34;&gt;GO-Globalクライアント&lt;/h3&gt;
 &lt;p&gt;ユーザは、GO-Globalクライアントをサポートする任意のコンピュータからGO-Globalホストへ接続できます。GO-Globalのクライアントは、以下のプラットフォームをサポートします。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Windows 10 : Pro と Enterprise(32-bit/64-bit)GO-Globalは、最新のWindows Updateがインストールされているコンピューターでサポートされています(該当する場合)。&lt;/li&gt;
@@ -1993,7 +2001,8 @@ Mac
       <description>
         
         
-        &lt;blockquote&gt;
+        &lt;p&gt;&lt;img src=&#34;/images/2-3-1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。GO-Globalの評価を行う際にはきっとエイエスピー営業部までお問い合わせください。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;GO-Global&amp;rsquo;s 30-day trial version can be downloaded from GraphOn&amp;rsquo;s web site. The Activation Wizard runs during the GO-Global trial installation, and is accessible from the Start menu after installing the host. It configures the computer to use a GraphOn product license, then activates GO-Global on the computer. GO-Global can be activated on a computer with a trial license only once.&lt;/p&gt;
@@ -2002,19 +2011,27 @@ Mac
 &lt;li&gt;When the Activation Wizard opens, follow the prompts. Sign in using your GraphOn account. Create an account if you do not have one. Then click the &lt;strong&gt;Sign in&lt;/strong&gt; button.&lt;/li&gt;
 &lt;li&gt;If applicable, select a GraphOn customer account.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Global cloud trial licenses can only be used on computers that have direct access to the internet. If a computer does not have access to the internet (e.g., if it accesses the internet via a proxy server), the Activation Wizard will notify you that GO-Global is unable to communicate with GraphOn&amp;rsquo;s online license service. If you see this message, you can request an on-premises trial license as described below.&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+GO-Global cloud trial licenses can only be used on computers that have direct access to the internet. If a computer does not have access to the internet (e.g., if it accesses the internet via a proxy server), the Activation Wizard will notify you that GO-Global is unable to communicate with GraphOn&amp;rsquo;s online license service. If you see this message, you can request an on-premises trial license as described below.
+&lt;/div&gt;
+
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Select the license you would like the computer to use. If there are no available licenses, click &lt;strong&gt;Start New Trial&lt;/strong&gt;. Specify a description for the license, then click &lt;strong&gt;OK.&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Click &lt;strong&gt;Accept&lt;/strong&gt;to accept the GO-Global License Agreement.&lt;/li&gt;
 &lt;li&gt;Click &lt;strong&gt;Activate&lt;/strong&gt; to enable GO-Global on this computer.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;After installing GO-Global and running the Activation Wizard, you must &lt;strong&gt;restart&lt;/strong&gt; the computer.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;If a license is grayed out, it is not an active license, and cannot be used.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;activating-go-global-using-an-on-premises-license&#34;&gt;Activating GO-Global using an on-premises license&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+If a license is grayed out, it is not an active license, and cannot be used.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;activating-go-global-using-an-on-premises-license&#34;&gt;Activating GO-Global using an on-premises license&lt;/h3&gt;
 &lt;p&gt;For computers without direct access to the internet, or if a cloud trial license cannot be established, GraphOn will generate an on-premises, Flexera-based trial license, which will be sent via email.&lt;/p&gt;
 &lt;h3 id=&#34;to-activate-go-global-using-an-on-premises-license&#34;&gt;To activate GO-Global using an on-premises license&lt;/h3&gt;
 &lt;ol&gt;

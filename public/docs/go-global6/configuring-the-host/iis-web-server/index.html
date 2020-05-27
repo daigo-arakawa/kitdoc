@@ -21,12 +21,14 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>IIS Webサーバーを使用して、既定のディレクトリ以外からWebファイルをホストする | kitASP Docs</title><meta property="og:title" content="IIS Webサーバーを使用して、既定のディレクトリ以外からWebファイルをホストする" />
-<meta property="og:description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス" />
+<meta property="og:description" content="Microsoft IIS Webサーバを使用して、既定のgoglobalディレクトリ以外からGO-Global Webファイルをホストできます。
+既定のディレクトリ以外からWebファイルをホストする方法  Webサーバの C:\inetpub\wwwroot\にディレクトリを作成し、ユーザに表示したいディレクトリに呼び出します。たとえば、C:\inetpub\wwwroot\Webのフォルダを作成します。 GO-GlobalホストからC:\Program files\GraphOn\GO-Global\Webディレクトリの内容を新しいディレクトリにコピーします。 IISマネージャを開き、[サイト]に移動します。既定のWebサイト 既定のWebサイトを右クリックし、 仮想ディレクトリの追加をクリックします。 手順1で作成したディレクトリと同じエイリアスを指定し、手順2でファイルをコピーしたディレクトリを 物理パスに指定します。たとえば、C:\inetpub\wwwroot\Webです。 新しい仮想ディレクトリをクリックします。次に MIMEタイプをダブルクリックします。 追加をクリックします。 File name extensionボックスに.memを入力します。[MIMEの種類]ボックスにapplication/octet-streamと入力します。次に OKをクリックします。 IISの設定が正しいことを確認するには、ブラウザを開き、GO-Globalホストに接続するためのURLを入力します(例 : http://hostname/web/logon.html)。(hostnameはあなたのGO-Globalホストの名前です。webはIISで作成した仮想ディレクトリの名前です。)  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/configuring-the-host/iis-web-server/" />
 <meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="IIS Webサーバーを使用して、既定のディレクトリ以外からWebファイルをホストする">
-<meta itemprop="description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス">
+<meta itemprop="description" content="Microsoft IIS Webサーバを使用して、既定のgoglobalディレクトリ以外からGO-Global Webファイルをホストできます。
+既定のディレクトリ以外からWebファイルをホストする方法  Webサーバの C:\inetpub\wwwroot\にディレクトリを作成し、ユーザに表示したいディレクトリに呼び出します。たとえば、C:\inetpub\wwwroot\Webのフォルダを作成します。 GO-GlobalホストからC:\Program files\GraphOn\GO-Global\Webディレクトリの内容を新しいディレクトリにコピーします。 IISマネージャを開き、[サイト]に移動します。既定のWebサイト 既定のWebサイトを右クリックし、 仮想ディレクトリの追加をクリックします。 手順1で作成したディレクトリと同じエイリアスを指定し、手順2でファイルをコピーしたディレクトリを 物理パスに指定します。たとえば、C:\inetpub\wwwroot\Webです。 新しい仮想ディレクトリをクリックします。次に MIMEタイプをダブルクリックします。 追加をクリックします。 File name extensionボックスに.memを入力します。[MIMEの種類]ボックスにapplication/octet-streamと入力します。次に OKをクリックします。 IISの設定が正しいことを確認するには、ブラウザを開き、GO-Globalホストに接続するためのURLを入力します(例 : http://hostname/web/logon.html)。(hostnameはあなたのGO-Globalホストの名前です。webはIISで作成した仮想ディレクトリの名前です。)  ">
 <meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
 <meta itemprop="wordCount" content="24">
 
@@ -34,7 +36,8 @@
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="IIS Webサーバーを使用して、既定のディレクトリ以外からWebファイルをホストする"/>
-<meta name="twitter:description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"/>
+<meta name="twitter:description" content="Microsoft IIS Webサーバを使用して、既定のgoglobalディレクトリ以外からGO-Global Webファイルをホストできます。
+既定のディレクトリ以外からWebファイルをホストする方法  Webサーバの C:\inetpub\wwwroot\にディレクトリを作成し、ユーザに表示したいディレクトリに呼び出します。たとえば、C:\inetpub\wwwroot\Webのフォルダを作成します。 GO-GlobalホストからC:\Program files\GraphOn\GO-Global\Webディレクトリの内容を新しいディレクトリにコピーします。 IISマネージャを開き、[サイト]に移動します。既定のWebサイト 既定のWebサイトを右クリックし、 仮想ディレクトリの追加をクリックします。 手順1で作成したディレクトリと同じエイリアスを指定し、手順2でファイルをコピーしたディレクトリを 物理パスに指定します。たとえば、C:\inetpub\wwwroot\Webです。 新しい仮想ディレクトリをクリックします。次に MIMEタイプをダブルクリックします。 追加をクリックします。 File name extensionボックスに.memを入力します。[MIMEの種類]ボックスにapplication/octet-streamと入力します。次に OKをクリックします。 IISの設定が正しいことを確認するには、ブラウザを開き、GO-Globalホストに接続するためのURLを入力します(例 : http://hostname/web/logon.html)。(hostnameはあなたのGO-Globalホストの名前です。webはIISで作成した仮想ディレクトリの名前です。)  "/>
 
 
 
@@ -125,7 +128,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
+  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
   data-offline-search-base-href="/"
 >
 
@@ -155,7 +158,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
+  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
   data-offline-search-base-href="/"
 >
 
@@ -1719,13 +1722,13 @@
             
 <div class="td-content">
 	<h1>IIS Webサーバーを使用して、既定のディレクトリ以外からWebファイルをホストする</h1>
-	<div class="lead">ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス</div>
+	
 	<p>Microsoft IIS Webサーバを使用して、既定のgoglobalディレクトリ以外からGO-Global Webファイルをホストできます。</p>
 <h3 id="既定のディレクトリ以外からwebファイルをホストする方法">既定のディレクトリ以外からWebファイルをホストする方法</h3>
 <ol>
 <li>Webサーバの C:\inetpub\wwwroot\にディレクトリを作成し、ユーザに表示したいディレクトリに呼び出します。たとえば、C:\inetpub\wwwroot\Webのフォルダを作成します。</li>
 <li>GO-GlobalホストからC:\Program files\GraphOn\GO-Global\Webディレクトリの内容を新しいディレクトリにコピーします。</li>
-<li>IISマネージャを開き、[サイト]に移動します。既定のWebサイト **[既定のWebサイト]**を右クリックし、 **[仮想ディレクトリの追加]**をクリックします。</li>
+<li>IISマネージャを開き、[サイト]に移動します。既定のWebサイト <strong>既定のWebサイト</strong>を右クリックし、 <strong>仮想ディレクトリの追加</strong>をクリックします。</li>
 <li>手順1で作成したディレクトリと同じエイリアスを指定し、手順2でファイルをコピーしたディレクトリを <strong>物理パス</strong>に指定します。たとえば、C:\inetpub\wwwroot\Webです。</li>
 <li>新しい仮想ディレクトリをクリックします。次に <strong>MIMEタイプ</strong>をダブルクリックします。</li>
 <li><strong>追加</strong>をクリックします。 <strong>File name extension</strong>ボックスに.memを入力します。[MIMEの種類]ボックスにapplication/octet-streamと入力します。次に <strong>OK</strong>をクリックします。</li>
@@ -1888,7 +1891,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 March 5, 2020: <a  href="https://github.com/google/docsy-example/commit/05e264dd78f754815bb14e641c43bb5ad8752bc7">page (05e264d)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 March 5, 2020: <a  href="https://github.com/google/docsy-example/commit/05e264dd78f754815bb14e641c43bb5ad8752bc7">page (05e264dd)</a>
 </div>
 </div>
 

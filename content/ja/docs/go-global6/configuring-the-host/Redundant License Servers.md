@@ -1,6 +1,6 @@
 +++
 title = "Redundant License Servers"
-description = "ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"
+description = ""
 weight = 8
 +++
 
@@ -17,7 +17,7 @@ GO-Global supports two methods of redundancy:
 
 >The License Manager service should be disabled on secondary servers of Central License Servers and Three-Server Redundant License Servers.
 
-## Three-Server Redundancy
+### Three-Server Redundancy
 
 With three-server redundancy, if any two of the three license servers are up and running, a "quorum" of servers is established, and the system is functional and serves its total complement of licenses.
 
@@ -46,7 +46,7 @@ With the second option, add each server to the environment variable, using comma
 
 We recommend running Flexera's lmtools application to check the status of the redundant license servers once all three servers are up and running. Launch lmtools.exe and select the Server Status tab. Click on Perform Status Enquiry and verify that your servers are "UP." You can obtain lmtools from the Licensing directory (\GO-Global\Licensing) or from the start menu. The lmtools application is included for diagnostic purposes. Any questions on its functionality should be directed to Flexera.
 
-## License-File List Redundancy
+### License-File List Redundancy
 
 As an alternative to three-server redundancy, license-file list redundancy is available when there is limited system administration available to monitor license servers, when load-balancing is required for applications located far apart (e.g., Chicago and Tokyo), or when two or more license servers are required.
 

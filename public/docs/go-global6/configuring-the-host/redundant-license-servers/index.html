@@ -21,12 +21,18 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Redundant License Servers | kitASP Docs</title><meta property="og:title" content="Redundant License Servers" />
-<meta property="og:description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス" />
+<meta property="og:description" content="本項目の設定は推奨設定ではございませんのでご注意ください。
+ Before upgradi
+If you wish to use redundant servers, select stable systems as server machines. Do not pick systems that are frequently rebooted or shut down. Redundant license server machines can be any supported GO-Global Host machines. These servers must have excellent communications on a reliable network and need to be located in the same subnet. Avoid configuring redundant servers with slow communications or dial-up links.
+GO-Global supports two methods of redundancy:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/configuring-the-host/redundant-license-servers/" />
 <meta property="article:modified_time" content="2020-03-05T15:26:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="Redundant License Servers">
-<meta itemprop="description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス">
+<meta itemprop="description" content="本項目の設定は推奨設定ではございませんのでご注意ください。
+ Before upgradi
+If you wish to use redundant servers, select stable systems as server machines. Do not pick systems that are frequently rebooted or shut down. Redundant license server machines can be any supported GO-Global Host machines. These servers must have excellent communications on a reliable network and need to be located in the same subnet. Avoid configuring redundant servers with slow communications or dial-up links.
+GO-Global supports two methods of redundancy:">
 <meta itemprop="dateModified" content="2020-03-05T15:26:56&#43;09:00" />
 <meta itemprop="wordCount" content="987">
 
@@ -34,7 +40,10 @@
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Redundant License Servers"/>
-<meta name="twitter:description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"/>
+<meta name="twitter:description" content="本項目の設定は推奨設定ではございませんのでご注意ください。
+ Before upgradi
+If you wish to use redundant servers, select stable systems as server machines. Do not pick systems that are frequently rebooted or shut down. Redundant license server machines can be any supported GO-Global Host machines. These servers must have excellent communications on a reliable network and need to be located in the same subnet. Avoid configuring redundant servers with slow communications or dial-up links.
+GO-Global supports two methods of redundancy:"/>
 
 
 
@@ -125,7 +134,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
+  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
   data-offline-search-base-href="/"
 >
 
@@ -155,7 +164,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
+  data-offline-search-index-json-src="/offline-search-index.72ef3d7472c3d407bc92cf10ff59749750776d3207b652d3e2f713ed8eb0883bb8641b02d68c7aa17975fe7a74e854185e6564c151499802d39f26fcb21c49fa.json"
   data-offline-search-base-href="/"
 >
 
@@ -1660,9 +1669,10 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#three-server-redundancy">Three-Server Redundancy</a></li>
-    <li><a href="#license-file-list-redundancy">License-File List Redundancy</a>
+    <li>
       <ul>
+        <li><a href="#three-server-redundancy">Three-Server Redundancy</a></li>
+        <li><a href="#license-file-list-redundancy">License-File List Redundancy</a></li>
         <li><a href="#license-2-for-tokyo">License 2 for tokyo:</a></li>
         <li><a href="#to-change-or-set-the-lm_license_file-variable">To change or set the LM_LICENSE_FILE variable</a></li>
       </ul>
@@ -1721,7 +1731,7 @@
             
 <div class="td-content">
 	<h1>Redundant License Servers</h1>
-	<div class="lead">ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス</div>
+	
 	<blockquote>
 <p>本項目の設定は推奨設定ではございませんのでご注意ください。</p>
 </blockquote>
@@ -1735,7 +1745,7 @@
 <blockquote>
 <p>The License Manager service should be disabled on secondary servers of Central License Servers and Three-Server Redundant License Servers.</p>
 </blockquote>
-<h2 id="three-server-redundancy">Three-Server Redundancy</h2>
+<h3 id="three-server-redundancy">Three-Server Redundancy</h3>
 <p>With three-server redundancy, if any two of the three license servers are up and running, a &ldquo;quorum&rdquo; of servers is established, and the system is functional and serves its total complement of licenses.</p>
 <p>Three-server redundancy is designed to provide hardware failover protection only and does not provide load-balancing. This is because with three-server redundancy, only one of the three servers is &ldquo;master&rdquo; and capable of issuing licenses.</p>
 <p>Following is an example of a three-server redundant license file that GraphOn supplies after registering online. You must provide the hostnames of the three GO-Global Hosts as well as the hostids (Ethernet addresses, in most cases) for each. The port of the license server (e.g., 27000) must also be appended to each server line, if it is not already listed.</p>
@@ -1754,7 +1764,7 @@ SERVER caspian 000476BA8F74 27000
 USE_SERVER</p>
 <p>With the second option, add each server to the environment variable, using commas to separate the servers. For example, LM_LICENSE_FILE = 27000@wilson,27000@piper,27000@caspian. Restart the GO-Global Application Publishing Service and the GO-Global License Manager on the &ldquo;master&rdquo; server first (wilson, in the example above), then on the secondary and tertiary servers.</p>
 <p>We recommend running Flexera&rsquo;s lmtools application to check the status of the redundant license servers once all three servers are up and running. Launch lmtools.exe and select the Server Status tab. Click on Perform Status Enquiry and verify that your servers are &ldquo;UP.&rdquo; You can obtain lmtools from the Licensing directory (\GO-Global\Licensing) or from the start menu. The lmtools application is included for diagnostic purposes. Any questions on its functionality should be directed to Flexera.</p>
-<h2 id="license-file-list-redundancy">License-File List Redundancy</h2>
+<h3 id="license-file-list-redundancy">License-File List Redundancy</h3>
 <p>As an alternative to three-server redundancy, license-file list redundancy is available when there is limited system administration available to monitor license servers, when load-balancing is required for applications located far apart (e.g., Chicago and Tokyo), or when two or more license servers are required.</p>
 <p>With license-file redundancy, each one of a group of license servers serves a subset of the total licenses. As such, this method does not provide true redundancy in the way three-server redundancy does.</p>
 <p>Set the LM_LICENSE_FILE environment variable to a list of license files, where each license file points to one of the license servers. GO-Global attempts a license checkout from each server in the list, in order, until it succeeds or gets to the end of the list.</p>
@@ -1956,7 +1966,7 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 March 5, 2020: <a  href="https://github.com/google/docsy-example/commit/05e264dd78f754815bb14e641c43bb5ad8752bc7">page (05e264d)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 March 5, 2020: <a  href="https://github.com/google/docsy-example/commit/05e264dd78f754815bb14e641c43bb5ad8752bc7">page (05e264dd)</a>
 </div>
 </div>
 
