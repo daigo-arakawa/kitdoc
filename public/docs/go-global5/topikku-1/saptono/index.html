@@ -28,14 +28,14 @@
   GO-Global Application Publishing ServiceのService Principle Name(SPN)をActive Directoryに登録できるようにする必要があります。GO-Global Application Publishing Serviceは、サービスが再実行されるたびにこれを試みます。 setspn." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global5/topikku-1/saptono/" />
-<meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-27T10:44:17+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="委任サポートの設定要件">
 <meta itemprop="description" content="第4章で説明したように、統合Windows認証を ホストのキャッシュパスワードなしで使用すると、一部のネットワークリソースにアクセスするためにWindows委任が必要になる場合があります。 たとえば、委任が有効になっていないと、グループポリシーが正しく適用されないことがあります。
 委任サポートの構成要件は次のとおりです。
  委任には、Kerberos認証プロトコルとActive Directoryドメインが必要です。どちらもWindows 2000 で初めて採用された機能です。 Domain Name System(DNS)サーバは、Service Location (SRV)リソースレコードをサポートしている必要があります。また、DNSサーバはDNSダイナミック更新をサポートしていることが推奨されています。DNSダイナミック更新プロトコルがサポートされていない場合は、システム管理者は、ドメインコントローラで作成されDNSサーバによって保存されたレコードを手動で設定する必要があります。Windows 2000以降で提供されているDNSサービスは、これらの要件をサポートしています。 GO-Globalクライアント、GO-Globalホスト、および電子メールやデータベースなどなんらかのバックエンドサービスをホストしているコンピュータは、Kerberosをサポートしている必要があります。Kerberosは、Windows 2000以降を稼動しているシステムの、Windows 2000以降の Active Directoryドメインでサポートされます。 クライアントのユーザーアカウントは、GO-Global Application Publishing Serviceによる委任をサポートしている必要があります。 Active Directoryユーザーとコンピュータの管理コンソールで、ユーザーを選択して **[アクション | プロパティ]**の順にクリックします。 アカウントタブをクリックします。 [アカウントオプション]リストボックスを下にスクロールして、 **[アカウントが機密で委任できない]**オプションが無効になっていることを確認します。 **[アカウントは委任に対して信頼されている]**オプションを有効にします。   Windows Server 2008の[プロパティ]ダイアログに[委任]タブが表示されない場合、これは仕様によるものです。[委任]タブは、サービスアカウントに対してサービスプリンシパル名(SPN)が作成された後にのみ表示されます。昇格したコマンドプロンプトで、  setspn -A HTTP / intranet.domain.local DOMAIN\Accountを実行します。Active DirectoryでDOMAIN\Accountを検索します。 **[委任]**タブが[プロパティ]ダイアログに表示されます。 **[このユーザを任意のサービスへの委任に対して信頼する]**を選択します(Kerberosのみ)。
  GO-Globalホストには、ユーザのアカウントを他のコンピュータに委任する権限が必要です。 **[Active Directory ユーザーとコンピュータ]**管理コンソールでコンピュータを選択し、 **[ アクション | プロパティ ]**の順にクリックします。プロパティ[委任]タブをクリックします。 **[任意のサービスへの委任に対してコンピュータを信頼する]**を有効にします **(Kerberos)。**これらの委任権限を適用するには、GO-Global Application Publishing Serviceをローカルシステムアカウントで実行するように設定する必要があります。   Active Directory内の任意のサービス(Kerberosのみ)への **[コンピュータを委任に対して信頼する]**を有効にしたら、委任を有効にするためにGO-Globalホストを再起動する必要があります。
   GO-Global Application Publishing ServiceのService Principle Name(SPN)をActive Directoryに登録できるようにする必要があります。GO-Global Application Publishing Serviceは、サービスが再実行されるたびにこれを試みます。 setspn.">
-<meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
+<meta itemprop="dateModified" content="2020-05-27T10:44:17&#43;09:00" />
 <meta itemprop="wordCount" content="87">
 
 
@@ -137,7 +137,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
+  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
   data-offline-search-base-href="/"
 >
 
@@ -167,7 +167,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
+  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
   data-offline-search-base-href="/"
 >
 
@@ -1312,6 +1312,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoweb-akusesu-no-go-global-server-no" href="/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/">WebブラウザからGO-Globalを起動する</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnogo-global-suttoappuparamta" href="/docs/go-global5/go-global-clientno/go-global-suttoappuparamta/">GO-Global スタートアップパラメータ</a>
       
       
@@ -1337,12 +1343,6 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoupdating-the-activex-control-and-the-plug-in" href="/docs/go-global5/go-global-clientno/updating-the-activex-control-and-the-plug-in/">Updating the ActiveX Control and the Plug-in</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoweb-akusesu-no-go-global-server-no" href="/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/"></a>
       
       
     </li>
@@ -2044,7 +2044,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 26, 2020: <a  href="https://github.com/google/docsy-example/commit/50889830a56565416c75a2ac0721eef7ee0cf423">gg5 (5088983)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 27, 2020: <a  href="https://github.com/google/docsy-example/commit/43f368814eeaa5abb54a9eecfb76279c3998d9f6">gg5 (43f3688)</a>
 </div>
 </div>
 

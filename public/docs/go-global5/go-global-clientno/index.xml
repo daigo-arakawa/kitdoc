@@ -68,6 +68,32 @@
     </item>
     
     <item>
+      <title>Docs: WebブラウザからGO-Globalを起動する</title>
+      <link>/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Apple Safariなどの一般的なWebブラウザから起動できます。&lt;/p&gt;
+&lt;h3 id=&#34;webブラウザからgo-globalを起動方法&#34;&gt;WebブラウザからGO-Globalを起動方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
+&lt;li&gt;[Location box]ボックスに、http://に続けてホスト名とGO-Globalログオンページを入力します。例えば、&lt;a href=&#34;http://hostname/goglobal/logon.html&#34;&gt;http://hostname/goglobal/logon.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;画面の指示に従って、ブラウザにGO-Globalアドオンをインストールしてください。&lt;/li&gt;
+&lt;li&gt;**[Sign In]**ダイアログが表示されたら、次の情報を入力します。
+&lt;ol&gt;
+&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: GO-Global スタートアップパラメータ</title>
       <link>/docs/go-global5/go-global-clientno/go-global-suttoappuparamta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -471,33 +497,6 @@ Mac
 &lt;blockquote&gt;
 &lt;p&gt;The Firefox Plug-in update feature does not work if you install the native Windows Client. It only works when the Web client has been installed via the Web browser page.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: </title>
-      <link>/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;webブラウザからgo-globalを起動する&#34;&gt;WebブラウザからGO-Globalを起動する&lt;/h1&gt;
-&lt;p&gt;GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Apple Safariなどの一般的なWebブラウザから起動できます。&lt;/p&gt;
-&lt;h3 id=&#34;webブラウザからgo-globalを起動方法&#34;&gt;WebブラウザからGO-Globalを起動方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
-&lt;li&gt;[Location box]ボックスに、http://に続けてホスト名とGO-Globalログオンページを入力します。例えば、&lt;a href=&#34;http://hostname/goglobal/logon.html&#34;&gt;http://hostname/goglobal/logon.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;画面の指示に従って、ブラウザにGO-Globalアドオンをインストールしてください。&lt;/li&gt;
-&lt;li&gt;**[Sign In]**ダイアログが表示されたら、次の情報を入力します。
-&lt;ol&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 
       </description>
     </item>

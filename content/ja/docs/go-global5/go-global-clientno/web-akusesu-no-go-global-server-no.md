@@ -1,4 +1,8 @@
-# WebブラウザからGO-Globalを起動する
++++
+title = "WebブラウザからGO-Globalを起動する"
+description = ""
+weight = 2
++++
 
 GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Apple Safariなどの一般的なWebブラウザから起動できます。
 

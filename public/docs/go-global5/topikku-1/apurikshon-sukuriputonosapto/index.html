@@ -27,13 +27,13 @@
  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global5/topikku-1/apurikshon-sukuriputonosapto/" />
-<meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-27T10:44:17+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="アプリケーションスクリプトのサポート">
 <meta itemprop="description" content="多くのWin32アプリケーションは、クライアントPCにインストールするように設計されており、1人のユーザだけで実行されます。アプリケーションがGO-Globalホストからデプロイされると、複数のユーザが同時にそのアプリケーションを実行できるようにする必要があり、アプリケーションが「マルチユーザ対応」でない場合は、いくつかの問題が発生する可能性があります。
 アプリケーションでのマルチユーザ配置の問題を解決する最善の方法は、アプリケーションが複数のユーザを適切にサポートするようにアプリケーションを変更することです。アプリケーションを変更できない場合は、起動前の設定とシャットダウン後のクリーンアップを実行するためにアプリケーションスクリプトを使用します。これは、アプリケーションをマルチユーザ環境で実行できるようにするために必要です。アプリケーションスクリプトを作成およびデプロイするプロセスは次のとおりです。
  以下の処理を行うバッチファイルを作成します。 ・ユーザのアプリケーション環境を準備するために必要なタスクの実行 ・アプリケーションの起動 ・アプリケーションのシャットダウン後に必要なクリーンアップタスクの実行。バッチファイルは EXITコマンドで終了します。このコマンドがない場合、CMD.EXEプロセスはシャットダウンしません。 アプリケーションスクリプトを公開します。 a. Cluster Manager を開きます。 b. [Tools | Applications | Add]の順にクリックします。 c. [Application Path]フィールドに CMD.EXE へのパスを入力します。 d. [Command Line Options]フィールドで「/K filename」を指定します。filenameは実行するバッチ ファイルのフルパスです。 e. アプリケーションの表示名を入力し、アイコンを指定します。 f. [OK]をクリックします。 アプリケーションスクリプトをテストします。 a. GO-Globalクライアントの 1 つを起動し、GO-Globalホストに接続します。 b. アプリケーションスクリプトのアイコンをダブルクリックします。アプリケーションのユーザインタフェースがクライアント画面上に表示され、アプリケーションスクリプトによって設定された環境下でアプリケーションが実行されます   GO-Globalを使用してアプリケーションスクリプトを起動すると、CMD.EXE 画面は表示されません。したがって、アプリケーションスクリプトにはユーザ入力用のプロンプトは組み込めません。
  ">
-<meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
+<meta itemprop="dateModified" content="2020-05-27T10:44:17&#43;09:00" />
 <meta itemprop="wordCount" content="42">
 
 
@@ -134,7 +134,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
+  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
   data-offline-search-base-href="/"
 >
 
@@ -164,7 +164,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
+  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
   data-offline-search-base-href="/"
 >
 
@@ -1309,6 +1309,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoweb-akusesu-no-go-global-server-no" href="/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/">WebブラウザからGO-Globalを起動する</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnogo-global-suttoappuparamta" href="/docs/go-global5/go-global-clientno/go-global-suttoappuparamta/">GO-Global スタートアップパラメータ</a>
       
       
@@ -1334,12 +1340,6 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoupdating-the-activex-control-and-the-plug-in" href="/docs/go-global5/go-global-clientno/updating-the-activex-control-and-the-plug-in/">Updating the ActiveX Control and the Plug-in</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoweb-akusesu-no-go-global-server-no" href="/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/"></a>
       
       
     </li>
@@ -2043,7 +2043,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 26, 2020: <a  href="https://github.com/google/docsy-example/commit/50889830a56565416c75a2ac0721eef7ee0cf423">gg5 (5088983)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 27, 2020: <a  href="https://github.com/google/docsy-example/commit/43f368814eeaa5abb54a9eecfb76279c3998d9f6">gg5 (43f3688)</a>
 </div>
 </div>
 

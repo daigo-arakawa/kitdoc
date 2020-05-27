@@ -27,13 +27,13 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
  Client Connections － 独立したホストまたは中継サーバ上のクライアント接続の総数。この値は、依存ホストでは常に 0 です。 Server Connections－ 中継サーバーに接続している依存ホストの総数。この値は、独立ホストまたは依存ホストでは常に 0 です。 Active Sessions － 独立したホストまたは依存ホストの場合、これはホスト上で実行されているセッションの数です。中継サーバの場合、これは接続されているすべての依存ホストでホストされているセッションの総数です。 Maximum Sessions － Cluster Managerの **[Host Options]**ダイアログで設定した セッションの最大数を表示します。  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/" />
-<meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-05-27T10:44:17+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="GO-Globalホストパフォーマンスカウンタ">
 <meta itemprop="description" content="WindowsパフォーマンスモニタにGO-Globalホストパフォーマンスカウンタを加えて、アクティブなセッション数やホストに接続しているクライアント数を追跡できます。また、パフォーマンスカウンタを追加することにより、中継サーバに接続しているホストの数を追跡したり、各ホスト上で実行可能なセッションの最大数を確認することも可能になります。
 GO-Globalホストパフォーマンスカウンタにより、システム管理者は GO-Globalホストへのネットワークアクセスが可能な任意のマシンからホストの活動を監視できます。リモート操作でパフォーマンスを監視するには、Remote Registry Service (Regsvc.exe) を有効にする必要があります。
 GO-Globalサーバパフォーマンスカウンタをパフォーマンスモニタに追加する方法  [スタート | プログラム | 管理ツール | パフォーマンス]の順にクリックします。 &#43;ボタンをクリックして、カウンタを追加します。 **[パフォーマンス オブジェクト]**項目で **[GO-Global Server]**を選択し、クリックします。 **[一覧からカウンタを選ぶ]**項目で目的のカウンタ(Active Sessions、Client Connections、Maximum Sessions、Server Connections)をクリックして、 **[追加]**をクリックします。  GO-Globalホストパフォーマンスカウンタ を以下に示します。
  Client Connections － 独立したホストまたは中継サーバ上のクライアント接続の総数。この値は、依存ホストでは常に 0 です。 Server Connections－ 中継サーバーに接続している依存ホストの総数。この値は、独立ホストまたは依存ホストでは常に 0 です。 Active Sessions － 独立したホストまたは依存ホストの場合、これはホスト上で実行されているセッションの数です。中継サーバの場合、これは接続されているすべての依存ホストでホストされているセッションの総数です。 Maximum Sessions － Cluster Managerの **[Host Options]**ダイアログで設定した セッションの最大数を表示します。  ">
-<meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
+<meta itemprop="dateModified" content="2020-05-27T10:44:17&#43;09:00" />
 <meta itemprop="wordCount" content="51">
 
 
@@ -134,7 +134,7 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
+  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
   data-offline-search-base-href="/"
 >
 
@@ -164,7 +164,7 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8a6e0d603a7a12a4ccce5b23f928dc1fa41fa4296f35c8ea8913d25077563146668adce9be3ed56d73f8d871268993176a8f4a443b631f2ae75bdcf25673c0e5.json"
+  data-offline-search-index-json-src="/offline-search-index.2c3eb881749f888e7c9b9a8bd053a927030f6566636c52aa7fe06df9c7944532c61ff76de72dfa164f6a38eca6673911ffe75a95ef05af481b9593f779586ab9.json"
   data-offline-search-base-href="/"
 >
 
@@ -1309,6 +1309,12 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoweb-akusesu-no-go-global-server-no" href="/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/">WebブラウザからGO-Globalを起動する</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnogo-global-suttoappuparamta" href="/docs/go-global5/go-global-clientno/go-global-suttoappuparamta/">GO-Global スタートアップパラメータ</a>
       
       
@@ -1334,12 +1340,6 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoupdating-the-activex-control-and-the-plug-in" href="/docs/go-global5/go-global-clientno/updating-the-activex-control-and-the-plug-in/">Updating the ActiveX Control and the Plug-in</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoweb-akusesu-no-go-global-server-no" href="/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/"></a>
       
       
     </li>
@@ -2039,7 +2039,7 @@ GO-Globalサーバパフォーマンスカウンタをパフォーマンスモ�
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 26, 2020: <a  href="https://github.com/google/docsy-example/commit/50889830a56565416c75a2ac0721eef7ee0cf423">gg5 (5088983)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 27, 2020: <a  href="https://github.com/google/docsy-example/commit/43f368814eeaa5abb54a9eecfb76279c3998d9f6">gg5 (43f3688)</a>
 </div>
 </div>
 

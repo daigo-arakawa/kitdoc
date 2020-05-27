@@ -1090,6 +1090,32 @@ SERVER wilson 000C29C7B953 28001
     </item>
     
     <item>
+      <title>Docs: WebブラウザからGO-Globalを起動する</title>
+      <link>/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Apple Safariなどの一般的なWebブラウザから起動できます。&lt;/p&gt;
+&lt;h3 id=&#34;webブラウザからgo-globalを起動方法&#34;&gt;WebブラウザからGO-Globalを起動方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
+&lt;li&gt;[Location box]ボックスに、http://に続けてホスト名とGO-Globalログオンページを入力します。例えば、&lt;a href=&#34;http://hostname/goglobal/logon.html&#34;&gt;http://hostname/goglobal/logon.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;画面の指示に従って、ブラウザにGO-Globalアドオンをインストールしてください。&lt;/li&gt;
+&lt;li&gt;**[Sign In]**ダイアログが表示されたら、次の情報を入力します。
+&lt;ol&gt;
+&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: アプリケーションの管理</title>
       <link>/docs/go-global5/cluster-manager/apurikshonno-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2458,51 +2484,6 @@ C:\ProgramData\GraphOn (On Windows 2008).
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;chrome拡張機能を実行方法&#34;&gt;Chrome拡張機能を実行方法&lt;/h3&gt;
 &lt;p&gt;http:// [サーバー名] /goglobal/logon.htmlにアクセスします。&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: GO-Globalの機能</title>
-      <link>/docs/go-global5/go-global-no/go-global-no-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global5/go-global-no/go-global-no-1/</guid>
-      <description>
-        
-        
-        &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;ネットワーク、リモートダイヤルアップ、リモートWebへのアクセス&lt;/strong&gt;: GO-Globalでは、ネットワーク、リモートダイヤルアップ、リモートWebを介して、GO-Globalホスト上で動作する32ビットおよび64ビットのWindowsアプリケーションへのアクセスを実現します。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;プラットフォーム間の互換性&lt;/strong&gt; : GO-Globalにより、実質上任意のクライアントプラットフォームから、任意のWindowsアプリケーションへのアクセスが実現します。Macintosh、Windows、Linuxなどのデスクトップコンピュータからアプリケーションを実行することができるため、ユーザは望ましい計算機環境に止まったままで作業を行うことが可能です。GO-Globalを介して展開された Windowsベースのアプリケーションは、クライアントプラットフォームに関係なく、まるで Windowsオペレーティングシステム上で稼働しているような操作性や機能性を提供します。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;クライアントのファイルアクセス&lt;/strong&gt; : GO-Globalでは、ハードディスク、マッピングされたネットワークドライブなどのクライアントドライブのシームレスな統合をサポートしています。これにより、ユーザはクライアントコンピュータ上に保存されるファイルにアクセスし、ローカル環境内にこれらのファイルを保存することが可能となります。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;サーバの監視&lt;/strong&gt; : GO-Globalでは、GO-Globalホストのリアルタイムでの監視、各クライアントとプロセスの制御、各ユーザのログアウトとシャットダウンの機能を提供しています。また、kitASPが開発した「GO-Global拡張パック」を利用することで、Webでユーザやセッションの監視を行うことも可能です。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Windowsアップデートと修正プログラムの互換性自動確認 :&lt;/strong&gt; この機能は、GO-Globalが使用する内部オペレーティングシステム変数と関数の位置を自動的に検出します。これにより、システムが起動されるたびに、Windows UpdateとHotfixがシステムにインストールされているかどうかに関係なく、ユーザーはセッションを開始して公開アプリケーションを実行できます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;セッションのシャドウイング&lt;/strong&gt; : セッションシャドウイング機能により、1つのセッションとそのアプリケーションを複数のユーザが閲覧および制御できます。この機能は、ヘルプデスク担当者やシステム管理者が、ユーザのシステム障害のトラブルシューティングやデバッグを行う際に大変有効です。セッションシャドウイングは、ライブ環境でのコラボレーション作業にも活用できます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ロードバランス&lt;/strong&gt; : ロードバランス機能(リレーサーバの設置が必要です)によって、ユーザのセッションが複数のGO-Globalホストに分散されます。ロードバランスを有効にすると、ロードバランスが有効となっているいずれかのホスト上で中断されたセッションへの再接続が可能となります。また、kitASPが開発した「GO-Global拡張パック」を利用することで、Webを利用した負荷分散処理を行うことも可能です。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;セッションの再接続&lt;/strong&gt;: セッションの再接続機能を有効にすると、GO-Globalはクライアント接続が失われてもサーバ上のクライアントセッションを維持します。ユーザが意図的にサーバから切断、またはクライアント接続がネットワーク障害によっ て切断された場合にも、そのユーザのセッションとアプリケーションは、システム管理者の指定した時間ホスト上で稼働し続 けます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;パフォーマンスカウンタ&lt;/strong&gt; : 新しいパフォーマンスカウンタをWindowsパフォーマンスモニタに追加すれば、活動中のセッション数とサーバに接続しているクライアント数を追跡できます。GO-Globalホストのパフォーマンスカウンタ機能により、システム管理者はGO-Globalホストへアクセスが可能な任意のマシンからホストのアクティビティを監視できます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;プロキシのトンネリング&lt;/strong&gt; : プロキシのトンネリングにより、ユーザはインターネット上のGO-Global ホストにプロキシサーバ環境から接続できます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;グループポリシーのサポート&lt;/strong&gt; : システム管理者は、Microsoftのグループポリシーとその拡張機能を使用して、レジストリベースのポリシー管理、スクリプトの割り当て、フォルダのリダイレクト、アプリケーションの管理、およびセキュリティオプションの指定を行えます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;SSLセキュリティ&lt;/strong&gt; : GO-Globalは、GO-Globalのクライアントとサーバ間の通信方法としてSecure Socket Layer (SSL) をサポートしています。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;タイムゾーンのリダイレクト&lt;/strong&gt; : この機能を有効にすると、GO-Globalホストに設定されているタイムゾーンではなく、クライアントで設定されているタイムゾーンで公開されたアプリケーションを利用できるようになります。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;下位互換性のあるクライアントおよびホスト&lt;/strong&gt;: ホストとクライアントのメジャーバージョンとマイナーバージョンが同じであれば、リビジョン(サービスパック)やビルド番号が異なっていても相互に接続することが可能です。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;自動ライセンス取得とインストール&lt;/strong&gt;：GO-Globalのライセンス取得ウィザードを使用すると、管理者はGraphOnライセンスサーバーからライセンスファイルを自動的に取得してインストールすることができます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;クライアントの自動アップデート機能&lt;/strong&gt; : システム管理者はクラスターマネージャーを使用して、ユーザがGO-Globalホストへ接続して来た時、それが古いバージョンのクライアントからであれば、新しいバージョンのクライアントへ自動的にバージョンアップさせることが出来ます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;クライアント印刷機能&lt;/strong&gt; : ユーザは、GO-Globalホスト上で動作するアプリケーションから、クライアントのプリンタフォルダにあるプリンタへ印刷することが出来ます。GO-Globalのユニバーサルプリンタドライバを使用することで、ほぼ全てのプリンタへ印刷することが出来ます。プリンタ固有の機能を使いたい場合は、管理者が設定を行うことで、プリンタ専用のネイティブプリンタドライバを使用するようにGOGlobalホストを設定できます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;動的な解像度調整&lt;/strong&gt; : GO-Globalはセッション再接続時に、クライアントの画面の解像度に合わせて、セッションのデスクトップのサイズを調整するようになりました。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;高解像度モニターのサポート&lt;/strong&gt; : GO-Globalは高解像度モニタをサポートします。クライアントが Windowsの環境で動作する場合、GO-Globalはクライアント側のDPIスケーリングの設定を使用します。クライアントがWindows以外の環境の場合は、ホスト側のDPIスケーリングを使用します。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;クライアント側サウンド機能&lt;/strong&gt; : Windows7またはそれ以降のクライアント環境では、GO-Globalホスト上で動作するアプリケーションからクライアントへ音を流すことが出来ます 。それよりも古いWindows環境では、PlaySound、sndPlaySound、WaveOutをサポートします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;クライアントのシリアルポートとパラレルポート :&lt;/strong&gt; GO-Globalはホスト上で実行されているアプリケーションがクライアントマシンのシリアルポートとパラレルポートにアクセスすることを可能にします。この機能はWindowsクライアントでのみサポートされています。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;スマートカード認証 :&lt;/strong&gt; GO-Globalはスマートカード文書の署名とスマートカード認証をサポートしています。これらの機能はWindowsクライアントでのみサポートされています。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Windowsテーマのサポート&lt;/strong&gt;: Windows7 またはそれ以降のクライアント環境では、GO-Globalはホスト側で設定されたテーマを使用してアプリケーションを表示します。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Windowsデスクトップのサポート&lt;/strong&gt;：GO-Globalは、デフォルトで管理者がホストから公開している特定のアプリケーションへのリモートアクセスをユーザーに提供しています。この機能ではGO-Globalホストのデスクトップ(スタートメニュー、タスクバーなど)へのリモートアクセスを提供することができます。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;デスクトップ機能はWindows2012R2でのみの提供になります。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;自動ホストアップデート :&lt;/strong&gt; 管理者はGO-Globalホストアップデートで自動的にダウンロードしてインストールするようにGO-Globalホストを設定できます。管理者は自動的にインストールされる更新プログラムの種類を制御できます。 GO-Globalは、必須、推奨、オプションのホストアップデートをサポートします。&lt;/li&gt;
-&lt;/ul&gt;
 
       </description>
     </item>
