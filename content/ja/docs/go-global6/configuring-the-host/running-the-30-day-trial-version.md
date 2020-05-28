@@ -1,6 +1,6 @@
 +++
 title = "Running the 30-Day Trial Version"
-description = "ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"
+description = ""
 weight = 3
 +++
 ![](/images/2-3-1.png)

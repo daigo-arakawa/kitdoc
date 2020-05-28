@@ -21,12 +21,14 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>テーマ | kitASP Docs</title><meta property="og:title" content="テーマ" />
-<meta property="og:description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス" />
+<meta property="og:description" content="Windows 7以降では、GO-Globalはホストで指定されているテーマを使用してアプリケーションを表示します。Windows Server 2008 R2では、Windowsのテーマはデフォルトで有効になっていません。
+Windows Server 2008 R2でテーマを有効にする方法  デスクトップエクスペリエンスをインストールする(http://technet.microsoft.com/en-us/library/cc742809.aspx)。 ホストを再起動したら、Themesサービスを起動します。 クラスタマネージャでグループポリシーを有効にします。  クラスタマネージャで、[ツール]メニューから[ツール | ホストオプション]をクリックします。 Session Startupタブをクリックします。 Apply Group Policyを有効にする。   グループポリシーを介してすべてのユーザに対してテーマを有効にします。  mmcを実行 ファイル | スナップインの追加と削除&hellip;をクリックします。 グループポリシーオブジェクトを選択 追加をクリックします。 完了をクリックします。 ユーザーの構成\ポリシー\管理用テンプレート\コントロールパネル\個人用設定に移動します。 **「特定のビジュアルスタイルファイルを強制するかWindows Classicを強制する」**をダブルクリックします。 有効をクリックします。 **[ビジュアルスタイルへのパス]**で、パスを入力します。 %windir%\resources\Themes\Aero\ aero.msstyles    " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/configuring-the-host/themes/" />
 <meta property="article:modified_time" content="2020-05-27T16:35:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="テーマ">
-<meta itemprop="description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス">
+<meta itemprop="description" content="Windows 7以降では、GO-Globalはホストで指定されているテーマを使用してアプリケーションを表示します。Windows Server 2008 R2では、Windowsのテーマはデフォルトで有効になっていません。
+Windows Server 2008 R2でテーマを有効にする方法  デスクトップエクスペリエンスをインストールする(http://technet.microsoft.com/en-us/library/cc742809.aspx)。 ホストを再起動したら、Themesサービスを起動します。 クラスタマネージャでグループポリシーを有効にします。  クラスタマネージャで、[ツール]メニューから[ツール | ホストオプション]をクリックします。 Session Startupタブをクリックします。 Apply Group Policyを有効にする。   グループポリシーを介してすべてのユーザに対してテーマを有効にします。  mmcを実行 ファイル | スナップインの追加と削除&hellip;をクリックします。 グループポリシーオブジェクトを選択 追加をクリックします。 完了をクリックします。 ユーザーの構成\ポリシー\管理用テンプレート\コントロールパネル\個人用設定に移動します。 **「特定のビジュアルスタイルファイルを強制するかWindows Classicを強制する」**をダブルクリックします。 有効をクリックします。 **[ビジュアルスタイルへのパス]**で、パスを入力します。 %windir%\resources\Themes\Aero\ aero.msstyles    ">
 <meta itemprop="dateModified" content="2020-05-27T16:35:56&#43;09:00" />
 <meta itemprop="wordCount" content="35">
 
@@ -34,7 +36,8 @@
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="テーマ"/>
-<meta name="twitter:description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"/>
+<meta name="twitter:description" content="Windows 7以降では、GO-Globalはホストで指定されているテーマを使用してアプリケーションを表示します。Windows Server 2008 R2では、Windowsのテーマはデフォルトで有効になっていません。
+Windows Server 2008 R2でテーマを有効にする方法  デスクトップエクスペリエンスをインストールする(http://technet.microsoft.com/en-us/library/cc742809.aspx)。 ホストを再起動したら、Themesサービスを起動します。 クラスタマネージャでグループポリシーを有効にします。  クラスタマネージャで、[ツール]メニューから[ツール | ホストオプション]をクリックします。 Session Startupタブをクリックします。 Apply Group Policyを有効にする。   グループポリシーを介してすべてのユーザに対してテーマを有効にします。  mmcを実行 ファイル | スナップインの追加と削除&hellip;をクリックします。 グループポリシーオブジェクトを選択 追加をクリックします。 完了をクリックします。 ユーザーの構成\ポリシー\管理用テンプレート\コントロールパネル\個人用設定に移動します。 **「特定のビジュアルスタイルファイルを強制するかWindows Classicを強制する」**をダブルクリックします。 有効をクリックします。 **[ビジュアルスタイルへのパス]**で、パスを入力します。 %windir%\resources\Themes\Aero\ aero.msstyles    "/>
 
 
 
@@ -1749,7 +1752,7 @@
             
 <div class="td-content">
 	<h1>テーマ</h1>
-	<div class="lead">ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス</div>
+	
 	<p>Windows 7以降では、GO-Globalはホストで指定されているテーマを使用してアプリケーションを表示します。Windows Server 2008 R2では、Windowsのテーマはデフォルトで有効になっていません。</p>
 <h3 id="windows-server-2008-r2でテーマを有効にする方法">Windows Server 2008 R2でテーマを有効にする方法</h3>
 <ol>

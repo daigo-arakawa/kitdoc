@@ -1,6 +1,6 @@
 +++
 title = "Apache HTTPサーバを介したGO-Globalの実行"
-description = "ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"
+description = ""
 weight = 6
 +++
 

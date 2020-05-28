@@ -1,6 +1,6 @@
 +++
 title = "テーマ"
-description = "ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"
+description = ""
 weight = 12
 +++
 

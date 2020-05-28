@@ -1,6 +1,6 @@
 +++
 title = "License Servers in a Relay Server Environment"
-description = "ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"
+description = ""
 weight = 9
 +++
 

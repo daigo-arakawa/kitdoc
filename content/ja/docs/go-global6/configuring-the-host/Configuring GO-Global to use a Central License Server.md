@@ -1,6 +1,6 @@
 +++
 title = "セントラルライセンスサーバを使用するためのGO-Globalの構成"
-description = "ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"
+description = ""
 weight = 7
 +++
 

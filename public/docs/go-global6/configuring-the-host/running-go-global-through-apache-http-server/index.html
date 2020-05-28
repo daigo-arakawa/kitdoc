@@ -21,12 +21,22 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Apache HTTPサーバを介したGO-Globalの実行 | kitASP Docs</title><meta property="og:title" content="Apache HTTPサーバを介したGO-Globalの実行" />
-<meta property="og:description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス" />
+<meta property="og:description" content="Apache HTTP Server 2.4 WebサービスがGO-Globalホストにインストールされている場合、ユーザはWebブラウザを使ってクライアントマシンから接続できます。
+IISがインストールされている場合は、Apacheをダウンロードする前に World Wide Web発行サービスを停止して無効にする必要があります。 サービスから、 World Wide Web発行サービスを右クリックして プロパティを選択します。 プロパティダイアログで、 スタートアップの種類ドロップダウンメニューから 無効を選択し、 停止ボタンをクリックします。OKをクリックしてください。
+ http://www.apachelounge.com/download/にアクセスして最新バージョンをダウンロードしてください。GraphOnによってテストされたバージョンは httpd-2.4.29-Win64-VC15.zipでした。 C &#43;&#43;再配布可能なVisual Studio 2017をダウンロードしてインストールします。GraphOnによってテストされたバージョンは、次のリンクからダウンロードできます。https://aka.ms/vs/15/release/VC_redis.x64.exe​ httpd-2.4.29-Win64-VC15.zipをC:\Apache24ディレクトリのGO-Globalホストに抽出します。 [ スタート | すべてのプログラム | アクセサリー | コマンドプロンプト ]の順にクリックします。コマンドプロンプトを右クリックし、管理者として実行します。 コマンドプロンプトウィンドウで、次のように入力します。  cd C:\Apache24\binhttpd -k installhttpd -k startまだ開いていない場合は、ファイアウォールでポート80を開く必要があります。SSLが実行されている場合は、ポート443が開いていることを確認してください。 6. C :\Apache24\binを開き、 ApacheMonitor.exeを実行します。システムトレイからApache Monitorを開き、サービスが開始されたことを確認します。 7. C:\Apache24\htdocsを開き、goglobalという名前のディレクトリを作成します。 8. C:\Program files\GraphOn\GO-Global\Webの内容をC:\Apache24\htdocs\goglobalディレクトリにコピーします。 9. GO-Globalホスト上でブラウザを開き、 http://localhost/goglobal/logon.htmlにアクセスしてセッションを開始します。
+GO-Globalのバージョン番号には、ソフトウェアのメジャーバージョン、マイナーバージョン、サービスパックバージョン、ビルド番号が含まれています。たとえば、バージョン6.1.2.37894では、6がメジャーバージョン、1がマイナーバージョン、2がサービスパックバージョン、そして37897がビルド番号です。
+ GraphOnがGO-Globalへのメジャーアップグレードをリリースすると、メジャーバージョン番号が増えます。メジャーアップグレードには、通常、重要な新機能または変更された機能や機能、ユーザインターフェイスの変更、またはアーキテクチャの変更が含まれます。GraphOnがGO-Globalへのマイナーアップグレードをリリースすると、マイナーバージョン番号が増えます。マイナアップグレードには、一般的にマイナーな機能追加や変更、バグ修正とセキュリティ改善が含まれます。GraphOnがGO-GlobalにService Packをリリースすると、Service Packのバージョン番号が増えます。サービスパックには一般にバグ修正が含まれており、新しいプラットフォームのサポートとマイナーな機能強化が含まれている場合があります。ビルド番号はすべてのGO-Globalリリースで増加しています。ビルド番号だけが増えたリリースがパッチです。パッチには通常、セキュリティ上の問題、互換性の問題、および製品の問題に対する修正が含まれています。たとえば、パッチにはGO-Globalが最新リリースのMicrosoft Windows上で動作することを可能にする変更が含まれているかもしれません。
+ " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/configuring-the-host/running-go-global-through-apache-http-server/" />
 <meta property="article:modified_time" content="2020-05-27T16:35:56+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="Apache HTTPサーバを介したGO-Globalの実行">
-<meta itemprop="description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス">
+<meta itemprop="description" content="Apache HTTP Server 2.4 WebサービスがGO-Globalホストにインストールされている場合、ユーザはWebブラウザを使ってクライアントマシンから接続できます。
+IISがインストールされている場合は、Apacheをダウンロードする前に World Wide Web発行サービスを停止して無効にする必要があります。 サービスから、 World Wide Web発行サービスを右クリックして プロパティを選択します。 プロパティダイアログで、 スタートアップの種類ドロップダウンメニューから 無効を選択し、 停止ボタンをクリックします。OKをクリックしてください。
+ http://www.apachelounge.com/download/にアクセスして最新バージョンをダウンロードしてください。GraphOnによってテストされたバージョンは httpd-2.4.29-Win64-VC15.zipでした。 C &#43;&#43;再配布可能なVisual Studio 2017をダウンロードしてインストールします。GraphOnによってテストされたバージョンは、次のリンクからダウンロードできます。https://aka.ms/vs/15/release/VC_redis.x64.exe​ httpd-2.4.29-Win64-VC15.zipをC:\Apache24ディレクトリのGO-Globalホストに抽出します。 [ スタート | すべてのプログラム | アクセサリー | コマンドプロンプト ]の順にクリックします。コマンドプロンプトを右クリックし、管理者として実行します。 コマンドプロンプトウィンドウで、次のように入力します。  cd C:\Apache24\binhttpd -k installhttpd -k startまだ開いていない場合は、ファイアウォールでポート80を開く必要があります。SSLが実行されている場合は、ポート443が開いていることを確認してください。 6. C :\Apache24\binを開き、 ApacheMonitor.exeを実行します。システムトレイからApache Monitorを開き、サービスが開始されたことを確認します。 7. C:\Apache24\htdocsを開き、goglobalという名前のディレクトリを作成します。 8. C:\Program files\GraphOn\GO-Global\Webの内容をC:\Apache24\htdocs\goglobalディレクトリにコピーします。 9. GO-Globalホスト上でブラウザを開き、 http://localhost/goglobal/logon.htmlにアクセスしてセッションを開始します。
+GO-Globalのバージョン番号には、ソフトウェアのメジャーバージョン、マイナーバージョン、サービスパックバージョン、ビルド番号が含まれています。たとえば、バージョン6.1.2.37894では、6がメジャーバージョン、1がマイナーバージョン、2がサービスパックバージョン、そして37897がビルド番号です。
+ GraphOnがGO-Globalへのメジャーアップグレードをリリースすると、メジャーバージョン番号が増えます。メジャーアップグレードには、通常、重要な新機能または変更された機能や機能、ユーザインターフェイスの変更、またはアーキテクチャの変更が含まれます。GraphOnがGO-Globalへのマイナーアップグレードをリリースすると、マイナーバージョン番号が増えます。マイナアップグレードには、一般的にマイナーな機能追加や変更、バグ修正とセキュリティ改善が含まれます。GraphOnがGO-GlobalにService Packをリリースすると、Service Packのバージョン番号が増えます。サービスパックには一般にバグ修正が含まれており、新しいプラットフォームのサポートとマイナーな機能強化が含まれている場合があります。ビルド番号はすべてのGO-Globalリリースで増加しています。ビルド番号だけが増えたリリースがパッチです。パッチには通常、セキュリティ上の問題、互換性の問題、および製品の問題に対する修正が含まれています。たとえば、パッチにはGO-Globalが最新リリースのMicrosoft Windows上で動作することを可能にする変更が含まれているかもしれません。
+ ">
 <meta itemprop="dateModified" content="2020-05-27T16:35:56&#43;09:00" />
 <meta itemprop="wordCount" content="62">
 
@@ -34,7 +44,12 @@
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Apache HTTPサーバを介したGO-Globalの実行"/>
-<meta name="twitter:description" content="ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス"/>
+<meta name="twitter:description" content="Apache HTTP Server 2.4 WebサービスがGO-Globalホストにインストールされている場合、ユーザはWebブラウザを使ってクライアントマシンから接続できます。
+IISがインストールされている場合は、Apacheをダウンロードする前に World Wide Web発行サービスを停止して無効にする必要があります。 サービスから、 World Wide Web発行サービスを右クリックして プロパティを選択します。 プロパティダイアログで、 スタートアップの種類ドロップダウンメニューから 無効を選択し、 停止ボタンをクリックします。OKをクリックしてください。
+ http://www.apachelounge.com/download/にアクセスして最新バージョンをダウンロードしてください。GraphOnによってテストされたバージョンは httpd-2.4.29-Win64-VC15.zipでした。 C &#43;&#43;再配布可能なVisual Studio 2017をダウンロードしてインストールします。GraphOnによってテストされたバージョンは、次のリンクからダウンロードできます。https://aka.ms/vs/15/release/VC_redis.x64.exe​ httpd-2.4.29-Win64-VC15.zipをC:\Apache24ディレクトリのGO-Globalホストに抽出します。 [ スタート | すべてのプログラム | アクセサリー | コマンドプロンプト ]の順にクリックします。コマンドプロンプトを右クリックし、管理者として実行します。 コマンドプロンプトウィンドウで、次のように入力します。  cd C:\Apache24\binhttpd -k installhttpd -k startまだ開いていない場合は、ファイアウォールでポート80を開く必要があります。SSLが実行されている場合は、ポート443が開いていることを確認してください。 6. C :\Apache24\binを開き、 ApacheMonitor.exeを実行します。システムトレイからApache Monitorを開き、サービスが開始されたことを確認します。 7. C:\Apache24\htdocsを開き、goglobalという名前のディレクトリを作成します。 8. C:\Program files\GraphOn\GO-Global\Webの内容をC:\Apache24\htdocs\goglobalディレクトリにコピーします。 9. GO-Globalホスト上でブラウザを開き、 http://localhost/goglobal/logon.htmlにアクセスしてセッションを開始します。
+GO-Globalのバージョン番号には、ソフトウェアのメジャーバージョン、マイナーバージョン、サービスパックバージョン、ビルド番号が含まれています。たとえば、バージョン6.1.2.37894では、6がメジャーバージョン、1がマイナーバージョン、2がサービスパックバージョン、そして37897がビルド番号です。
+ GraphOnがGO-Globalへのメジャーアップグレードをリリースすると、メジャーバージョン番号が増えます。メジャーアップグレードには、通常、重要な新機能または変更された機能や機能、ユーザインターフェイスの変更、またはアーキテクチャの変更が含まれます。GraphOnがGO-Globalへのマイナーアップグレードをリリースすると、マイナーバージョン番号が増えます。マイナアップグレードには、一般的にマイナーな機能追加や変更、バグ修正とセキュリティ改善が含まれます。GraphOnがGO-GlobalにService Packをリリースすると、Service Packのバージョン番号が増えます。サービスパックには一般にバグ修正が含まれており、新しいプラットフォームのサポートとマイナーな機能強化が含まれている場合があります。ビルド番号はすべてのGO-Globalリリースで増加しています。ビルド番号だけが増えたリリースがパッチです。パッチには通常、セキュリティ上の問題、互換性の問題、および製品の問題に対する修正が含まれています。たとえば、パッチにはGO-Globalが最新リリースのMicrosoft Windows上で動作することを可能にする変更が含まれているかもしれません。
+ "/>
 
 
 
@@ -1739,7 +1754,7 @@
             
 <div class="td-content">
 	<h1>Apache HTTPサーバを介したGO-Globalの実行</h1>
-	<div class="lead">ネットワーク、リモートダイヤルアップ、Webへのリモートアクセス</div>
+	
 	<p>Apache HTTP Server 2.4 WebサービスがGO-Globalホストにインストールされている場合、ユーザはWebブラウザを使ってクライアントマシンから接続できます。</p>
 <p>IISがインストールされている場合は、Apacheをダウンロードする前に <strong>World Wide Web発行サービス</strong>を停止して無効にする必要があります。 <strong>サービス</strong>から、 <strong>World Wide Web発行サービス</strong>を右クリックして <strong>プロパティ</strong>を選択します。 <strong>プロパティ</strong>ダイアログで、 <strong>スタートアップの種類</strong>ドロップダウンメニューから <strong>無効</strong>を選択し、 <strong>停止</strong>ボタンをクリックします。OKをクリックしてください。</p>
 <ol>
