@@ -36,7 +36,7 @@
 &lt;h2 id=&#34;independent-hosts&#34;&gt;Independent Hosts&lt;/h2&gt;
 &lt;p&gt;Independent hosts are GO-Global Hosts that do not interact with other GO-Global Hosts running on the network. Independent hosts appear in the Cluster Manager on the first level of the GO-Global Hosts tree view as an independent node. The GO-Global setup program configures GO-Global Hosts to operate as independent hosts. GO-Global clients can connect to independent hosts directly by specifying the name or IP address of the server in the &lt;strong&gt;Connection&lt;/strong&gt; dialog or the location box of a Web browser. Clients can also connect to independent hosts through a third party network load balancer that distributes client connections among several servers. However, session reconnect is not supported in the latter configuration and must be disabled.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GO-Global Hosts&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-1-1.png&#34; alt=&#34;6-1-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-1-1.png&#34; alt=&#34;6-1-1&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;relay-servers&#34;&gt;Relay Servers&lt;/h2&gt;
 &lt;p&gt;A relay server is a GO-Global Host that provides centralized control over one or more GO-Global Hosts. Relay servers maintain client connections and distribute GO-Global sessions across a set of load-balanced application hosts. Relay servers appear in the Cluster Manager on the first level of the list of All Hosts as nodes with one or more dependent hosts.&lt;/p&gt;
 &lt;h3 id=&#34;to-configure-a-go-global-host-to-operate-as-a-relay-server&#34;&gt;To configure a GO-Global Host to operate as a relay server&lt;/h3&gt;
@@ -92,9 +92,9 @@
 &lt;h2 id=&#34;host-selection&#34;&gt;Host Selection&lt;/h2&gt;
 &lt;p&gt;When a client connects to a relay server, the relay server attempts to start a session on the dependent host that has the lowest number of running sessions as a percentage of the maximum number of sessions allowed for the host.&lt;/p&gt;
 &lt;p&gt;If the session fails to start on the selected host, the relay server successively attempts to start the session on other available hosts until it finds one that can support the session. If there are no available hosts (i.e., if the number of running sessions on All Hosts equals the maximum number allowed), the following message is displayed to the user:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-1-2.png&#34; alt=&#34;6-1-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-1-2.png&#34; alt=&#34;6-1-2&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Otherwise, if the session cannot be started on any of the available hosts, the following message is displayed to the user:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-1-3.png&#34; alt=&#34;6-1-3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-1-3.png&#34; alt=&#34;6-1-3&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In a relay server setting, GO-Global checks the maximum sessions settings on the relay server and its dependent hosts. The maximum sessions value on the relay server is the maximum number of sessions that can be run concurrently on all dependent hosts assigned to that relay server. To modify the Maximum sessions on this host setting, open the Cluster Manager on the host, click Host Options | Session Startup.&lt;/p&gt;
 &lt;h2 id=&#34;relay-server-failure-recovery&#34;&gt;Relay Server Failure Recovery&lt;/h2&gt;
 &lt;p&gt;On Windows hosts, the Application Publishing Service can be configured to automatically restart if the service fails. If a relay server fails, clients are disconnected but sessions continue to run on the GO-Global Hosts that were connected to the relay server. These servers will attempt to reconnect to the relay server every 15 seconds. When a dependent host reconnects to the relay server, it re-adds its sessions to the relay server and restores any state information associated with the disconnected sessions. Clients are then able to sign back in and resume their sessions. Clients do not automatically attempt to reconnect to the relay server.&lt;/p&gt;

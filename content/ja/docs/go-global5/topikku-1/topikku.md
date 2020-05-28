@@ -23,7 +23,7 @@ Independent hosts are GO-Global Hosts that do not interact with other GO-Global 
 
 **GO-Global Hosts**
 
-![6-1-1](/img/6-1-1.png)
+![6-1-1](/image5/6-1-1.png)
 
 ## Relay Servers
 
@@ -95,11 +95,11 @@ When a client connects to a relay server, the relay server attempts to start a s
 
 If the session fails to start on the selected host, the relay server successively attempts to start the session on other available hosts until it finds one that can support the session. If there are no available hosts (i.e., if the number of running sessions on All Hosts equals the maximum number allowed), the following message is displayed to the user:
 
-![6-1-2](/img/6-1-2.png)
+![6-1-2](/image5/6-1-2.png)
 
 Otherwise, if the session cannot be started on any of the available hosts, the following message is displayed to the user:
 
-![6-1-3](/img/6-1-3.png)
+![6-1-3](/image5/6-1-3.png)
 
 In a relay server setting, GO-Global checks the maximum sessions settings on the relay server and its dependent hosts. The maximum sessions value on the relay server is the maximum number of sessions that can be run concurrently on all dependent hosts assigned to that relay server. To modify the Maximum sessions on this host setting, open the Cluster Manager on the host, click Host Options | Session Startup.
 
