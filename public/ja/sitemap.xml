@@ -19,6 +19,7 @@
   
   <url>
     <loc>/docs/go-globalrc61/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
@@ -48,6 +49,7 @@
   
   <url>
     <loc>/docs/go-globalrc61/go-global61introduction/introducinggo-global/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
@@ -57,6 +59,7 @@
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/go-globallicensing/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
@@ -106,6 +109,7 @@
   
   <url>
     <loc>/docs/go-globalrc61/go-global61introduction/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
@@ -125,7 +129,7 @@
   
   <url>
     <loc>/docs/go-global5/</loc>
-    <lastmod>2020-05-27T00:35:52+09:00</lastmod>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
@@ -135,6 +139,7 @@
   
   <url>
     <loc>/docs/go-globalrc61/go-global61introduction/go-globalfeatures/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
@@ -155,6 +160,11 @@
   <url>
     <loc>/docs/go-global6/appendix/rapidx-protocol/</loc>
     <lastmod>2020-05-26T13:46:18+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
@@ -189,6 +199,7 @@
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
@@ -228,7 +239,7 @@
   
   <url>
     <loc>/docs/go-global6/</loc>
-    <lastmod>2020-05-27T00:35:52+09:00</lastmod>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
@@ -293,6 +304,7 @@
   
   <url>
     <loc>/docs/go-globalrc61/go-global61introduction/knownlimitations/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
@@ -352,6 +364,7 @@
   
   <url>
     <loc>/docs/go-globalrc61/go-global61introduction/systemrequirements/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
@@ -1041,386 +1054,477 @@
   
   <url>
     <loc>/docs/go-globalrc61/administeringuseraccounts/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/administeringuseraccounts/administeringuseraccounts/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/advancedsessionprocessconfiguration/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/applicationscriptsupport/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/clientclipboard/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/clientfileaccess/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/clientprinting/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/clientserialandparallelports/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/clientsound/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/configurationrequirementsfordelegationsupport/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/configuringafarmhost/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/configuringafarmmanager/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/designatingaccesstoprinterdrivers/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/disablingimagecompression/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/fileopenredirection/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/go-globalhostperformancecounters/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/highresolutionclientdevices/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/loadbalancing/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/logfiles/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/mappeddrives/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/modifyingthefontcontrastproperty/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/multi-monitorsupport/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/obtainingthenameoftheclientcomputer/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/performanceauto-tuning/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/printerconfiguration/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/printersapplet/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/proxytunneling/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/silentinstallation/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/smartcarddocumentsigning/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/specifyingthemaximumcolordepthforgo-globalsessions/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/supportforinternetprotocolversion6/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/supportforthird-partyloadbalancers/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/supportrequestwizard/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/videosupport/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/appendix/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/appendix/configuringsupportforclientkeyboardsandorimes/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/appendix/disablingautomaticclientkeyboard/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/appendix/encryptionandexportationregulations/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/appendix/installingadditionalkeyboardsandimes/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/appendix/licensechangerequest/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/appendix/licensing/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/appendix/obtainingalicensefile/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/appendix/rapidxprotocolrxp/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/appendix/third-partycomponent/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/appendix/transportlayersecurity/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/automaticclientkeyboardsupport/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/cloudlicensing/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/configuringabackuplicensemanagerinacloudlicensingenvironment/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/enablinginternalandexternaluserstoopensecureconnectionstoagoglobalhost/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/installingthego-globalhost/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/licenseserversinarelayserverenvironment/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/redundantlicenseservers/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/runningthe30daytrialversion/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/runningtheactivationwizard/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/configuringthehost/upgradingfromgo-global482and50/</loc>
-  </url>
-  
-  <url>
-    <loc>/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-global61/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-global61introduction/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/brandingtheappcontrollerwebinterface/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/brandingtheprogramwindow/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/clienttimezone/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/go-globaladminconsole/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/go-globalupdates/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/keyboardshortcutsfortheadminconsole/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/managingapplications/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/managinggo-globalhostsfromclientmachines/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/managinggo-globallicenses/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/managingsessionsandprocesses/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/monitoringhostactivity/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/obtainingatrustedservercertificate/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/passwordcachingonthehost/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/securityoptions/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/sessionreconnect/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/sessionshutdownoptions/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/sessionstartupoptions/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/strongencryptioncertificatewizard/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/two-factorauthentication/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/windowscompatibilityassurance/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/mobileapptoolbareditor/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/mobileapptoolbareditor/creatingcustomtoolbars/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/mobileapptoolbareditor/logfiles/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/mobileapptoolbareditor/mobileapptoolbareditor/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/runninggo-global/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/runninggo-global/automaticclientupdates/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/runninggo-global/go-globalappcontroller/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/runninggo-global/go-globalstartupparameters/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/runninggo-global/go-globalwebapp/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/runninggo-global/macosxapp/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/runninggo-global/modifyingthelogonhtmlpage/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/runninggo-global/uninstallingappcontroller/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/go-globalrc61/runninggo-global/webfiles/</loc>
+    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
   </url>
   
   <url>

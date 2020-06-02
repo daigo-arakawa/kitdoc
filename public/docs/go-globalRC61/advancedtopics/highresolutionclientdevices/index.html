@@ -27,13 +27,13 @@
 表示アプレットをユーザに公開する方法  ホスト上のコンソールに管理者としてサインインします。 表示アプレットへのショートカットを作成します。 a.[スタート | コントロール]の順にクリックしてます。 b. **[表示]**を右クリックします。 ショートカットがデスクトップに追加されます。 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。 ユーザにショートカットを公開する。 a.Admin Consoleを実行し、 **[Application | Add]**の順にクリックします b. **[Display Name]**フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 c. [Executable Path]フィールドにexplorer.exeへのパス(例：C:\Windows\explorer.exe)を入力します。 d. [Command-Line Options]フィールドに、手順2で作成したショートカットのパスを入力します。(例C:\Users\Public\Desktop\Display.lnk)。 e. **[OK]**をクリックします。  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/advancedtopics/highresolutionclientdevices/" />
-<meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-03T00:34:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="高解像度クライアントデバイス ディスプレイを拡大縮小するように設定されている高解像度クライアントデバイス上でGO-Global AppControllerを実行すると、AppControllerは、セッションで実行されているアプリケーションのテキストとコントロールが、クライアントデバイスでローカルに実行されているアプリケーションのテキストとコントロールと同じサイズになるように、GO-Globalセッションのグラフィカル出力を拡大しようとします。たとえば、クライアントコンピュータが表示を200％拡大するように設定されている場合、AppControllerはホストから受信したグラフィックスコマンド(テキスト文字や画像など)を200％拡大します。
 クライアントが画像やテキストなどのグラフィックオブジェクトを引き伸ばすとき、それらの品質はオブジェクトが100％で描画されるときほど良くありません。たとえば、テキスト文字の端は、引き伸ばしたときほど滑らかではありません。文字がブロック状またはぼやけて見えることがあります。高解像度の画面(ディスプレイの拡大縮小が最も頻繁に有効になっている場合)では、これらの効果は通常あまり目立ちません。高解像度の画面（ディスプレイの拡大縮小が最も頻繁に有効になっている場合）では、これらの効果は通常あまり目立ちません。 ただし、低解像度の画面では、特に表示倍率が125％などの整数でない値に設定されている場合、影響が非常に顕著になります。 これらの影響が顕著な場合は、GO-Globalのスケーリング機能を次のように無効にすることができます。
  クライアントがショートカットから実行する時は、クライアントのコマンドラインに-clientdpi 0を追加します。 クライアントがブラウザから実行されている場合は、URLに＆clientdpi = falseを追加します。 すべてのユーザーに対してホスト上の機能を無効にするには、ホスト上のHostProperties.xmlファイルのClientDPIScalingEnabledプロパティの値を「true」から「false」に変更します。  GO-Globalのスケーリング機能が無効になっていると、GO-Globalはホスト上のコントロールパネルのディスプレイアプレットでユーザに指定されたスケールファクタを使用してセッションをレンダリングします。この構成では、管理者は、表示アプレットをユーザに公開することによってユーザにDPI設定の変更を許可することができます。
 表示アプレットをユーザに公開する方法  ホスト上のコンソールに管理者としてサインインします。 表示アプレットへのショートカットを作成します。 a.[スタート | コントロール]の順にクリックしてます。 b. **[表示]**を右クリックします。 ショートカットがデスクトップに追加されます。 c.ショートカットをすべてのユーザがアクセスできるディレクトリ(例：C:\Users\Public\Desktop)にドラッグします。 ユーザにショートカットを公開する。 a.Admin Consoleを実行し、 **[Application | Add]**の順にクリックします b. **[Display Name]**フィールドに「Display Setting」(または他のわかりやすい名前)と入力します。 c. [Executable Path]フィールドにexplorer.exeへのパス(例：C:\Windows\explorer.exe)を入力します。 d. [Command-Line Options]フィールドに、手順2で作成したショートカットのパスを入力します。(例C:\Users\Public\Desktop\Display.lnk)。 e. **[OK]**をクリックします。  ">
-
+<meta itemprop="dateModified" content="2020-06-03T00:34:18&#43;09:00" />
 <meta itemprop="wordCount" content="41">
 
 
@@ -134,7 +134,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7a4311a5efc78ed16c9759d4e0c8059904e0e63e78e10329b4210ae1cb8b08a7ef4119b6f3c8b29e7af66d8af64cae851490293fd4c1c4154b6580ed5d9c0086.json"
+  data-offline-search-index-json-src="/offline-search-index.881c196822e2f8d1b94a178e5300dcca5a2df03804c85e3cd91a243c355d42612e5f02f04ab8147bdf323a99828ac3f25ccd3fe7864f2fe127208fe734da5a31.json"
   data-offline-search-base-href="/"
 >
 
@@ -164,7 +164,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7a4311a5efc78ed16c9759d4e0c8059904e0e63e78e10329b4210ae1cb8b08a7ef4119b6f3c8b29e7af66d8af64cae851490293fd4c1c4154b6580ed5d9c0086.json"
+  data-offline-search-index-json-src="/offline-search-index.881c196822e2f8d1b94a178e5300dcca5a2df03804c85e3cd91a243c355d42612e5f02f04ab8147bdf323a99828ac3f25ccd3fe7864f2fe127208fe734da5a31.json"
   data-offline-search-base-href="/"
 >
 
@@ -291,6 +291,12 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostupgradingfromgo-global60to61" href="/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/">Upgrading from GO-Global 6.0 to 6.1</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostautomaticclientkeyboardsupport" href="/docs/go-globalrc61/configuringthehost/automaticclientkeyboardsupport/"></a>
       
       
@@ -358,12 +364,6 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostupgradingfromgo-global482and50" href="/docs/go-globalrc61/configuringthehost/upgradingfromgo-global482and50/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostupgradingfromgo-global60to61" href="/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/"></a>
       
       
     </li>
@@ -2847,7 +2847,7 @@ e. **[OK]**をクリックします。</li>
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 3, 2020: <a  href="https://github.com//commit/fac0d56289883b79f74235b4c979262afa236773">61-1 (fac0d562)</a>
 </div>
 </div>
 

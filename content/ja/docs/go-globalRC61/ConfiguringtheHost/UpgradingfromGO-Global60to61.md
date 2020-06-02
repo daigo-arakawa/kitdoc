@@ -1,4 +1,10 @@
-# Upgrading from GO-Global 6.0 to 6.1
+---
+title: "Upgrading from GO-Global 6.0 to 6.1"
+linkTitle: ""
+weight: 02
+type: "docs"
+---
+
 
 >本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。アップグレード手順については弊社技術支援センターまでお問い合わせください。
 

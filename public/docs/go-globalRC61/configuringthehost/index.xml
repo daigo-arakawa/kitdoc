@@ -29,6 +29,27 @@
     </item>
     
     <item>
+      <title>Docs: Upgrading from GO-Global 6.0 to 6.1</title>
+      <link>/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。アップグレード手順については弊社技術支援センターまでお問い合わせください。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Before upgrading to version 6.1, you must upgrade the GO-Global license(s) by submitting a License Change Request via the GraphOn portal. The version 6.1 host installer will not upgrade a computer that does not have a version 6.1 GO-Global license.
+After signing in to the portal, click License Management then click License Change Request and complete the form.
+After submitting the License Change Request form, a GO-Global license will be sent via email. Place the new license file in the default license directory: C:\Program Files\GraphOn\GO-Global\Licensing. Optionally remove all older licenses from the Licensing directory.
+After restarting the License Manager, run the version 6.1 GO-Global host installer by double-clicking gg-host.exe.
+When upgrading to version 6.1, you will be prompted to restart the computer. The host installer will resume automatically after restarting.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: </title>
       <link>/docs/go-globalrc61/configuringthehost/automaticclientkeyboardsupport/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -526,28 +547,6 @@ Remove all older licenses from the Programs directory. Then restart the GO-Globa
 &lt;blockquote&gt;
 &lt;p&gt;Customers will be unable to upgrade their version 5 license to version 6.1 if their Support contract has expired. To renew, contact your GO-Global reseller or &lt;a href=&#34;mailto:sales@graphon.com&#34;&gt;sales@graphon.com&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: </title>
-      <link>/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;upgrading-from-go-global-60-to-61&#34;&gt;Upgrading from GO-Global 6.0 to 6.1&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。アップグレード手順については弊社技術支援センターまでお問い合わせください。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Before upgrading to version 6.1, you must upgrade the GO-Global license(s) by submitting a License Change Request via the GraphOn portal. The version 6.1 host installer will not upgrade a computer that does not have a version 6.1 GO-Global license.
-After signing in to the portal, click License Management then click License Change Request and complete the form.
-After submitting the License Change Request form, a GO-Global license will be sent via email. Place the new license file in the default license directory: C:\Program Files\GraphOn\GO-Global\Licensing. Optionally remove all older licenses from the Licensing directory.
-After restarting the License Manager, run the version 6.1 GO-Global host installer by double-clicking gg-host.exe.
-When upgrading to version 6.1, you will be prompted to restart the computer. The host installer will resume automatically after restarting.&lt;/p&gt;
 
       </description>
     </item>

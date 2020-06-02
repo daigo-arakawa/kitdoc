@@ -29,7 +29,7 @@ Country Name:JP State:都道府県名 Locality:市区町村名 Organization:会�
 openssl x509 -inform der -in MYCERT&gt;cer -out MYCERT." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/go-globaladminconsole/obtainingatrustedservercertificate/" />
-<meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-03T00:34:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="信頼されたサーバ証明書の取得 クライアントのオペレーティングシステムによって信頼されているCAからサーバ証明書を取得する方法については、以下の情報と選択したCAのマニュアルを参照してください。CAは、証明書署名要求(CSR) を必要とします。
 CSRを生成する方法  http: //www.openssl.org/related/binaries.htmlから OpenSSLをダウンロードしま。 GO-Globalホストに OpenSSLをインストールします。 [スタート | ファイル名を指定して実行 ]の順にクリックします。 「cmd」と入力し、Enterキーを押します。 以下のコマンドを入力して、サーバの秘密鍵を生成します。OPENSSL_DIRとは、OpenSSLがインストールされているディレクトリへのパスです(たとえば、C:\openSSL)。 ​  [OPENSSL_DIR]\bin\openssl genrsa –out server.key 2048次のコマンドを入力します。  [OPENSSL_DIR]\bin\openssl req –sha256 –new –key server.key –out server.csrこのコマンドを実行すると、以下のように、証明書に含める属性の入力を求められます。
@@ -37,7 +37,7 @@ Country Name:JP State:都道府県名 Locality:市区町村名 Organization:会�
 認証局(CA)から署名された証明書ファイルが届いた時、それを server.crtというファイル名で保存してください。このファイルと上記ステップ5で生成されたファイルserver.keyをGO-Globalホスト上のシステムアカウントおよびAdministratorグループのアカウントでのみアクセス可能なフォルダへコピーしてください。この時、通常のユーザアカウントでアクセス出来ないことを必ず確認してください。最後に、Admin Consoleで署名された証明書ファイルを選択してください。
 サーバ証明書の選択方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 Securityタブをクリックします。 Transportリストの中から SSLを選択します。 **[SSL Certificate]**ボックスに、サーバの証明書(server.crtなど)ファイルへのパスを入力または参照します。 OKをクリックします。  GO-Globalは、証明書とその鍵がPEM形式であることを要求しています。第三者のCAに証明書を要求する場合、GraphOnはPEM形式で証明書を要求することをお勧めします。これが不可能で、証明書をDER形式でしか配信できない場合は、次のコマンドを使用してPEM形式に変換できます。
 openssl x509 -inform der -in MYCERT&gt;cer -out MYCERT.">
-
+<meta itemprop="dateModified" content="2020-06-03T00:34:18&#43;09:00" />
 <meta itemprop="wordCount" content="581">
 
 
@@ -140,7 +140,7 @@ openssl x509 -inform der -in MYCERT&gt;cer -out MYCERT."/>
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7a4311a5efc78ed16c9759d4e0c8059904e0e63e78e10329b4210ae1cb8b08a7ef4119b6f3c8b29e7af66d8af64cae851490293fd4c1c4154b6580ed5d9c0086.json"
+  data-offline-search-index-json-src="/offline-search-index.881c196822e2f8d1b94a178e5300dcca5a2df03804c85e3cd91a243c355d42612e5f02f04ab8147bdf323a99828ac3f25ccd3fe7864f2fe127208fe734da5a31.json"
   data-offline-search-base-href="/"
 >
 
@@ -170,7 +170,7 @@ openssl x509 -inform der -in MYCERT&gt;cer -out MYCERT."/>
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7a4311a5efc78ed16c9759d4e0c8059904e0e63e78e10329b4210ae1cb8b08a7ef4119b6f3c8b29e7af66d8af64cae851490293fd4c1c4154b6580ed5d9c0086.json"
+  data-offline-search-index-json-src="/offline-search-index.881c196822e2f8d1b94a178e5300dcca5a2df03804c85e3cd91a243c355d42612e5f02f04ab8147bdf323a99828ac3f25ccd3fe7864f2fe127208fe734da5a31.json"
   data-offline-search-base-href="/"
 >
 
@@ -297,6 +297,12 @@ openssl x509 -inform der -in MYCERT&gt;cer -out MYCERT."/>
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostupgradingfromgo-global60to61" href="/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/">Upgrading from GO-Global 6.0 to 6.1</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostautomaticclientkeyboardsupport" href="/docs/go-globalrc61/configuringthehost/automaticclientkeyboardsupport/"></a>
       
       
@@ -364,12 +370,6 @@ openssl x509 -inform der -in MYCERT&gt;cer -out MYCERT."/>
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostupgradingfromgo-global482and50" href="/docs/go-globalrc61/configuringthehost/upgradingfromgo-global482and50/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostupgradingfromgo-global60to61" href="/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/"></a>
       
       
     </li>
@@ -3067,7 +3067,7 @@ If no SSL warning dialog is displayed, but a different error message is displaye
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 3, 2020: <a  href="https://github.com//commit/fac0d56289883b79f74235b4c979262afa236773">61-1 (fac0d562)</a>
 </div>
 </div>
 

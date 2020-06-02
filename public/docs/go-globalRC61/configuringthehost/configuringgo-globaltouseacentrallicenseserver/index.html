@@ -30,7 +30,7 @@ port=&lt;port#&gt;
 例:SERVER caspian 000476BA8F74 27000DAEMON BLM port=5678INCREMENT session blm 6.0 31-dec-2020 5 99E82D1B9A64 HOSTID=ANYINCREMENT any_app blm 6." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/" />
-<meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-03T00:34:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="中央ライセンスサーバを使用するためのGO-Globalの設定 既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。中央ライセンス サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。
 GO-Global License Managerを停止する方法  [コントロールパネル | 管理ツール | サービス]をクリックします。 サービスの一覧から[GO-Global License Manager]を選択します。 [停止]ボタンをクリックします。  GO-GlobalホストでGO-Global License Managerを停止した後、中央ライセンスサーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1 はライセンスサーバの名前です。 GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:27000@LicenseServer1)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。 または GO-Globalホスト上で、GO-Globalホスト上のライセンスファイルのSERVER行の直後にUSE_SERVERを配置します。これは基本的には前述の方法と同じですが、環境変数の変更は必要ありません。
@@ -39,7 +39,7 @@ SERVER LicenseServer1 00d0b74f4023USE_SERVERファイアウォールでライ�
 port=&lt;port#&gt;
 を追加します。(特定のポート番号を手動で割り当てない限り、エフェメラルポート番号が使用されます)。
 例:SERVER caspian 000476BA8F74 27000DAEMON BLM port=5678INCREMENT session blm 6.0 31-dec-2020 5 99E82D1B9A64 HOSTID=ANYINCREMENT any_app blm 6.">
-
+<meta itemprop="dateModified" content="2020-06-03T00:34:18&#43;09:00" />
 <meta itemprop="wordCount" content="74">
 
 
@@ -143,7 +143,7 @@ port=&lt;port#&gt;
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7a4311a5efc78ed16c9759d4e0c8059904e0e63e78e10329b4210ae1cb8b08a7ef4119b6f3c8b29e7af66d8af64cae851490293fd4c1c4154b6580ed5d9c0086.json"
+  data-offline-search-index-json-src="/offline-search-index.881c196822e2f8d1b94a178e5300dcca5a2df03804c85e3cd91a243c355d42612e5f02f04ab8147bdf323a99828ac3f25ccd3fe7864f2fe127208fe734da5a31.json"
   data-offline-search-base-href="/"
 >
 
@@ -173,7 +173,7 @@ port=&lt;port#&gt;
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.7a4311a5efc78ed16c9759d4e0c8059904e0e63e78e10329b4210ae1cb8b08a7ef4119b6f3c8b29e7af66d8af64cae851490293fd4c1c4154b6580ed5d9c0086.json"
+  data-offline-search-index-json-src="/offline-search-index.881c196822e2f8d1b94a178e5300dcca5a2df03804c85e3cd91a243c355d42612e5f02f04ab8147bdf323a99828ac3f25ccd3fe7864f2fe127208fe734da5a31.json"
   data-offline-search-base-href="/"
 >
 
@@ -300,6 +300,12 @@ port=&lt;port#&gt;
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostupgradingfromgo-global60to61" href="/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/">Upgrading from GO-Global 6.0 to 6.1</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostautomaticclientkeyboardsupport" href="/docs/go-globalrc61/configuringthehost/automaticclientkeyboardsupport/"></a>
       
       
@@ -367,12 +373,6 @@ port=&lt;port#&gt;
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostupgradingfromgo-global482and50" href="/docs/go-globalrc61/configuringthehost/upgradingfromgo-global482and50/"></a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostupgradingfromgo-global60to61" href="/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/"></a>
       
       
     </li>
@@ -2297,6 +2297,13 @@ HOSTID=ANY
   
     
       
+        
+        
+      
+    
+  
+    
+      
     
   
     
@@ -2304,12 +2311,6 @@ HOSTID=ANY
         
           
           
-        
-      
-    
-  
-    
-      
         
       
     
@@ -2428,7 +2429,7 @@ HOSTID=ANY
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 3, 2020: <a  href="https://github.com//commit/fac0d56289883b79f74235b4c979262afa236773">61-1 (fac0d562)</a>
 </div>
 </div>
 
