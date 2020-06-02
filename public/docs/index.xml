@@ -252,6 +252,20 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 [&lt
     </item>
     
     <item>
+      <title>Docs: GO-Globalの概要</title>
+      <link>/docs/go-globalrc61/go-global61introduction/introducinggo-global/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/go-global61introduction/introducinggo-global/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;GO-Global&lt;/strong&gt;はシンプルで安全なアプリケーション仮想化ソリューションであり、既存のWindowsアプリケーションを企業ネットワークまたはWebに拡張します。GO-Globalを利用することで、承認された従業員、ビジネス パートナー、および顧客は、接続、場所、クライアント プラットフォーム、またはオペレーティングシステムに関係なく、どこからでもアプリケーションに安全にアクセスすることができます。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: GO-Globalホストのインストール</title>
       <link>/docs/go-global5/sbano/untitled/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -290,6 +304,21 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 [&lt
 &lt;blockquote&gt;
 &lt;p&gt;ライセンスマネージャを再起動しても、GO-Globalホスト上で実行されている既存のセッションには影響しません。&lt;/p&gt;
 &lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GO-Globalライセンス</title>
+      <link>/docs/go-globalrc61/configuringthehost/go-globallicensing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/configuringthehost/go-globallicensing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalは、同時ユーザ数に基づいた永続的なオンプレミスライセンスであるFlexeraベースのライセンスファイルを使用します。GO-Globalはv6.1で、Flexeraベースのライセンスファイルの代わりにクラウドライセンスを導入しました。クラウドライセンスでは、ライセンスサーバ、製品コード、ライセンスファイルの利用、リホスト、アップグレードの必要はありません。代わりに、管理者はホストでアクティベーションウィザードを実行し、GraphOnアカウントにサインインして、ホストで使用するライセンスを選択します。
+以下の手順では、Flexeraベースのライセンスを使用してGO-Globalをアップグレードおよびインストールする方法について説明します。クラウドライセンスと30日間トライアルの実行手順については、以下のセクションで説明します。&lt;/p&gt;
 
       </description>
     </item>
@@ -924,6 +953,55 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
 &lt;li&gt;&lt;strong&gt;Windows Compatibility Assurance&lt;/strong&gt; :「Windows 互換性保証機能」により、GraphOn社が更新プログラ ム(Windows Update)の互換性を確認するまで、更新プログラムの適用を自動的に延期することが出来ます。更新プログラムに互換性がない場合は、それらをサポートする互換アップデートのリリースおよびインストールが行われるまで、その更新プログラムはインストールされません。このプロセスを通じて、Windows互換性保証機能はGO-Globalホストが正常に機能しない非互換問題の発生を最小限に抑え、GO-Globalホストの更新プログラムを管理する管理者の負担を軽減します。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Licensing Summary&lt;/strong&gt;: Admin Console(旧Cluster Manager)に加わった新しいタブで、そのホストで使用可能なGO-Globalのライセンス情報が表示されます。各ライセンス情報で、プロダクトコード、シート数、有効期限、ステータスを確認することが出来ます。これに加え、ライセンスの有効期限が迫った場合および超過した場合は、その情報が表示されます。&lt;/li&gt;
 &lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GO-Globalの機能</title>
+      <link>/docs/go-globalrc61/go-global61introduction/go-globalfeatures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/go-global61introduction/go-globalfeatures/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ネットワークおよびウェブへのアクセス:&lt;/strong&gt; GO-Globalでは、ネットワークまたはWebアクセスを介して、GO-GlobalホストからWindowsアプリケーションへのアクセスを提供しております。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;クロスプラットフォームの互換性:&lt;/strong&gt; GO-Globalでは、事実上すべてのクライアントプラットフォームからWindowsアプリケーションにアクセスすることができます。アプリケーションは、Mac、Windows、Linuxなどのデスクトップコンピュータ、およびiOSやAndroidのモバイル デバイスから実行することができます。GO-Globalを通じて配備されたWindowsベースのアプリケーションは、クライアントプラットフォームに関係なく、Windowsオペレーティングシステム上で実行されているかのような外観、操作感、機能を有しています。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;クライアントファイルへのアクセス:&lt;/strong&gt; GO-Globalは、ハードディスクおよびマッピングされたネットワークドライブを含むクライアントドライブのシームレスな統合をサポートしています。これにより、ユーザはクライアントコンピュータに保存されているファイルにアクセスし、ローカルにファイルを保存することができます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ホストの監視:&lt;/strong&gt; GO-Globalでは、個々のGO-Globalホストのリアルタイム監視、個々のクライアントとプロセスの制御、個々のユーザのログアウトおよびシャットダウンを提供しています。kitASPが開発した「GO-Global拡張パック」を利用することで、Webでユーザやセッションの監視を行うことも可能になります。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;セッションシャドウイング:&lt;/strong&gt; セッションシャドウイング機能により、複数のユーザが単一のセッションとそのアプリケーションを表示して制御することができます。この機能により、ヘルプデスクの担当者やシステム管理者は、ユーザの問題のトラブルシューティングやデバッグを支援することができます。セッションシャドウイングは、ライブコラボレーションにも使用できます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ロードバランシング:&lt;/strong&gt; ロードバランシングは、複数のGO-Globalホストにユーザセッションを分散します。ロードバランシングが有効な場合、ユーザはロードバランシングされたホストのいずれかで実行されている切断されたセッションに再接続することができます。(※2)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;セッションの再接続:&lt;/strong&gt; セッションの再接続を有効にすると、GO-Globalはクライアント接続なしでサーバ上のクライアント セッションを維持します。ユーザがサーバから故意に切断した場合、またはネットワークの問題によりクライアントの接続が失われた場合、管理者が指定した期間、ユーザのセッションおよびアプリケーションはサーバ上で実行されたままになります。クライアントのホストへの接続が切断された場合、クライアントは自動的にホストへの再接続を試みます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;パフォーマンスカウンタ:&lt;/strong&gt; パフォーマンスカウンタをWindowsパフォーマンスモニタに追加して、アクティブなセッション数とサーバに接続されているクライアント数を追跡することができます。GO-Globalホストのパフォーマンスカウンタを使用すると、管理者はGO-Globalホストへのネットワーク アクセスを持つすべてのマシンからサーバのアクティビティを監視することができます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;プロキシトンネリング:&lt;/strong&gt; プロキシトンネリングにより、ユーザはプロキシサーバを介してインターネット上のGO-Globalホストに接続することができます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;グループポリシーのサポート:&lt;/strong&gt; Microsoftのグループポリシーとその拡張機能を使用して、管理者はレジストリベースのポリシーの管理、スクリプトの割り当て、フォルダのリダイレクト、アプリケーションの管理、セキュリティ オプションの指定を行うことができます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SSLセキュリティ:&lt;/strong&gt; GO-Globalでは、GO-Globalのクライアントとサーバ間の通信方法としてSSL（Secure Socket Layer）をサポートしております。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;タイムゾーンリダイレクト:&lt;/strong&gt; このオプションでは、GO-Globalホストで選択されているタイムゾーンに関係なく、クライアントコンピュータのタイムゾーンでGO-Globalセッションを実行することができます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;下位互換性のあるクライアントとホスト:&lt;/strong&gt; クライアントとサーバのメジャーバージョンとマイナバージョンが一致していても、リビジョン（サービス パック）またはビルド番号が一致しない場合でも、クライアントがGO-Globalホストに接続できるようになります。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;クライアント印刷:&lt;/strong&gt; ユーザは、GO-Globalホスト上で実行されているアプリケーションからクライアントアクセス可能なプリンタに印刷することができます。GO-Globalのユニバーサル プリンタドライバは、ほぼすべてのプリンタを自動的にサポートしています。高度なプリンタ固有の機能については、管理者は、ネイティブプリンタドライバを使用するようにGO-Globalホストを設定することができます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;動的なディスプレイのサイズ変更:&lt;/strong&gt; ユーザが別のデバイスからセッションに再接続した場合、またはクライアントデバイスの解像度を変更した場合、GO-Globalはセッションのデスクトップのサイズを自動的に調整します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;高解像度ディスプレイのサポート:&lt;/strong&gt; GO-Globalは高解像度ディスプレイをサポートしています。GO-GlobalクライアントをWindowsで実行する場合、GO-GlobalはクライアントコンピュータのDPI（DPI Per Inch）設定を自動的に使用します。クライアントをWindows以外のオペレーティングシステムで実行する場合、GO-Globalはホスト上のコントロールパネルのディスプレイアプレットでユーザに指定されたDPI設定を使用します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;クライアントサウンド:&lt;/strong&gt; GO-Globalホストは、GO-Globalセッションで実行されているアプリケーションからWindowsクライアントに音声出力をストリーム配信します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;クライアントのシリアルポートとパラレルポート:&lt;/strong&gt; GO-Globalでは、ホスト上で実行されているアプリケーションがクライアントマシンのシリアルポートとパラレルポートにアクセスすることができます。この機能はWindowsクライアントでのみサポートされています。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;モバイルアプリのツールバーエディタ:&lt;/strong&gt; 管理者は、Windowsアプリケーションがモバイルデバイスからアクセスされた際に、GO-Globalモバイルアプリの下部に表示されるカスタムツールバーボタンとメニューを作成することができます。カスタムツールバーは、iPad、iPhone、Androidタブレットなどのモバイルデバイスからアクセスする際のWindowsアプリケーションの操作性を大幅に向上させます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Sense:&lt;/strong&gt; GO-GlobalのMobile Sense技術により、Windowsアプリケーションはモバイルアプリケーションのように動作します。たとえば、フォーカスがあるアプリケーションウィンドウは、ユーザのデバイスの画面に合わせて自動的にサイズが調整され、Windowsアプリケーションがテキスト入力を受信できるようになると、キーボードが自動的に開きます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Windows互換性保証:&lt;/strong&gt; Windows互換性保証では、更新プログラムがGO-Globalと互換性があることをGraphOnが確認するまで、管理者はWindows更新プログラムのインストールを自動的に延期することができます。この機能をサポートするために、GraphOnはマイクロソフトのWindowsUpdateサービスを継続的に監視し、新しいアップデートがないかどうかを確認しています。Microsoftが1つまたは複数のWindowsアップデートをリリースすると、GO-Globalは、新しくリリースされたWindowsアップデートがGO-Globalと互換性があることをGraphOnが確認するまで、影響を受けるGO-GlobalホストへのすべてのWindowsアップデートのインストールを一時停止します。更新プログラムに互換性がない場合、GO-Globalは、GO-GlobalがすべてのWindows更新プログラムのリリースと互換性のある更新プログラムを自動的にダウンロードしてインストールするまで、影響を受けるホストへのすべてのWindows更新プログラムのインストールを停止します。このプロセスにより、Windows互換性保証により非互換性のリスクを最小限に抑え、管理者はGO-GlobalホストでのWindowsアップデートの管理の負担を軽減することができます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ライセンスの概要:&lt;/strong&gt; 管理コンソールのタブには、ホストで利用可能なGO-Globalのライセンスが一覧表示され、各ライセンスの製品コード、シート数、メンテナンスの有効期限、およびステータスが表示されます。また、GO-Globalは、ライセンスの有効期限が近づいている場合や期限を超えた場合に管理者に通知します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;クラウドライセンス:&lt;/strong&gt; クラウドライセンスでは、GO-GlobalのFlexeraベースのライセンスファイルに代わるシンプルで可用性の高いライセンスを提供しております。クラウドライセンスでは、ライセンスサーバ、製品コード、ライセンスファイルの再発行、再ホスト、アップグレードの必要がありません。代わりに、管理者はホストのアクティベーションウィザードを実行し、GraphOnアカウントにサインインして、そのホストで使用するライセンスを選択するだけです。管理者はいつでもライセンスからホストを追加したり削除したりできます。ライセンスの同時使用ユーザ数を増やすには、ライセンスの追加シートを購入するだけです。新しく購入したシートは、ライセンスを使用するように設定されたホストに自動的に追加されます。クラウドライセンスは永続的またはサブスクリプションで、オンプレミスおよびクラウドベースのGO-Globalホストの両方で使用できます。(※1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;サードパーティのロードバランサーとのセッション再接続のサポート:&lt;/strong&gt; サードパーティのロードバランサーを介してGO-Globalホストのクラスタに接続するユーザは、セッションを一時停止および再開し、ネットワークが中断した後にセッションに再接続できます。ユーザがサードパーティのロードバランサを介してホストに接続し、その後切断された場合、ロードバランサがユーザのセッションが実行されているホストにユーザを接続できなくても、GO-Globalは自動的にユーザをホストに再接続します。たとえば、ホストAで実行中のセッションを持つユーザが切断された場合、ユーザのGO-Global AppControllerは、ロードバランサを介してホストAへの再接続を自動的に試行します。ロードバランサがホストBへの接続をルーティングする場合、ホストBはホストAへの接続を開き、GO-Global AppControllerとホストAの間でデータを中継します。この機能は、AppControllerが実行されている場合にのみサポートされます。ユーザがAppControllerを閉じるか、プログラムウィンドウの[Disconnect]オプションを介してホストから明示的に切断した場合、ロードバランサがユーザの後続の接続をユーザのホスト以外のホストにルーティングすると、ユーザは実行中のセッションに再接続できなくなります。(※1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GO-Global Web App:&lt;/strong&gt; JavaScriptおよびHTML5で開発されたGO-Global Web Appは、インストール不要のクライアントで、ユーザはWindows、Mac、およびLinuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することができます。Webアプリでは、ローカルアプリケーションとリモートアプリケーション間のコピーアンドペースト、クライアント側のパスワードキャッシング、およびGO-GlobalのプレビューPDFプリンタを使用したローカルプリンタへの印刷をサポートしています。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GO-Global AppController：&lt;/strong&gt; GO-Global Appは、AppControllerと呼ばれるブランド化されていないカスタマイズ可能なアプリケーションとして再設計されました。 AppControllerは、GO-Globalのネイティブクライアントとブラウザアドオンの機能を、コンピュータのデスクトップ、モバイルデバイス、またはWebブラウザから起動できる単一のアプリケーションに結合します。AppControllerは簡単なインストールを提供し、顧客自身の企業ブランドでパーソナライズできます。(※2)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;強力な暗号化ウィザード：&lt;/strong&gt; Admin Consoleを使用して、管理者はGO-Globalホストの信頼できるSSL証明書を生成でき、サードパーティの認証局から証明書を購入することなく強力な暗号化とSSL/TLSセキュリティを有効にできます。(※2)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2要素認証：&lt;/strong&gt; 2要素認証は、ユーザ名とパスワードに加えて、ユーザがスマートフォンの認証アプリから6桁のコードを入力することをオプションで要求することにより、セキュリティの追加レイヤーを提供します。(※2)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ビデオサポート：&lt;/strong&gt; ビデオサポートが有効になっている場合、GO-Globalセッションで実行されているアプリケーションおよびWebブラウザは、ビデオコンテンツをGO-Globalクライアントにリダイレクトします。(※2)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;URLリダイレクト：&lt;/strong&gt; この機能により、GO-Globalユーザは、ホストのデフォルトブラウザではなく、ユーザのクライアントのデフォルトブラウザで開くWebリンクをクリックできます。これにより、ユーザはGO-Globalセッションで実行されているWebコンテンツおよびビデオに効率的にアクセスできます。(※2)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ファイルオープンリダイレクト：&lt;/strong&gt; ファイルオープンリダイレクトは、エンドユーザがクライアントで実行されているアプリケーションでホスト上のファイルを開くことができるようにすることで、エンドユーザのワークフローを合理化します。管理者は、特定のファイルタイプ(PDF、TXT、DOCXなど)の機能を有効にして、このタイプのファイルがOutlookなどのホストアプリケーションから開かれると、AutoCADやExcelなどのアプリケーションのクライアントにリダイレクトされて開かれます。(※2)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;エンドユーザーのブランド化：&lt;/strong&gt; 管理者は、Admin Consoleのブランド化ダイアログを使用して、プログラムウィンドウ、サインインダイアログ、およびAppControllerインストールページで、GraphOnのGO-Globalブランドを独自の会社名と画像に置き換えることができます。(※2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(※1)KitASPでサポートしていない機能になります。KitASPが開発した「拡張パッケージ」を利用することで、Webを利用した負荷分散処理を行うことも可能になります。
+(※2)GG6.1で追加された機能になります。&lt;/p&gt;
 
       </description>
     </item>
@@ -2418,90 +2496,6 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
 &lt;p&gt;adlab-ggserverを、GO-Globalホストのコンピュータ名に置き換えます。{54094C05-F977-4987-BFC9-E8B90E088973} Globally Unique Identifier(GUID)は、GO-Global Application Publishing Serviceが {54094C05-F977-4987-BFC9-E8B90E088973}/adlab-ggserver.adlab.graphon.com SPNを作成するときに使用します。&lt;/p&gt;
 &lt;p&gt;次のコマンドウィンドウは、GO-Globalホストで &lt;strong&gt;setspn.exe&lt;/strong&gt;を実行したときに表示される出力画面で、ネットワーク設定にエラーがあることを示しています。上述のすべての要件が満たされている場合、この画面は表示されません。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/image5/6-3-5.png&#34; alt=&#34;6-3-5&#34;&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: 自動クライアントキーボードサポート</title>
-      <link>/docs/go-global5/sbano/kbdotoimenoinsutru/kuraiantokbdosapto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global5/sbano/kbdotoimenoinsutru/kuraiantokbdosapto/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-Globalの新しい自動クライアントキーボードサポートオプションにより、管理者はGO-Globalホストを自動的に任意のクライアントキーボードで動作するように設定できます。このオプションを有効にすると、ユーザはクライアントデバイスのローカルキーボード切り替え機能を使用してキーボードをその場で切り替えることができ、クライアントのローカル入力エディター(IME)を使用することができます。この機能により、GO-Globalホストにキーボードレイアウトをインストールしたり、GO-Globalクライアントにキーボードマッピングファイルをインストールする必要がなくなりました。この機能は、Mac OS Xで埋め込みウィンドウモードで実行されている場合を除き、すべてのGO-Globalクライアントでサポートされています。&lt;/p&gt;
-&lt;p&gt;既存のGO-Globalユーザに一貫したユーザエクスペリエンスを提供するために、自動クライアントキーボードサポートオプションはデフォルトで無効になっています。ユーザごとまたはすべてのユーザに対して有効にできます。&lt;/p&gt;
-&lt;h3 id=&#34;ユーザごとに自動クライアントキーボードサポートを有効にする方法&#34;&gt;ユーザごとに自動クライアントキーボードサポートを有効にする方法&lt;/h3&gt;
-&lt;p&gt;クライアントショートカットに &lt;strong&gt;-kb ClientSideIME&lt;/strong&gt;を追加します。&lt;/p&gt;
-&lt;p&gt;たとえば、Windowsクライアントの場合：&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;C:\Program Files (x86)\GraphOn\GO-Global\Client\gg-client.exe&amp;rdquo; -kb ClientSideIME&lt;/p&gt;
-&lt;p&gt;または、GO-GlobalがWebブラウザから実行されている場合は、logon.htmlページを参照するハイパーリンクに次の引数を追加します。 &lt;strong&gt;&amp;amp;keyboard=ClientSideIME&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;すべてのユーザーに対して自動クライアントキーボードサポートを有効にする方法&#34;&gt;すべてのユーザーに対して自動クライアントキーボードサポートを有効にする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;以下のいずれかのディレクトリでHostProperties.xmlファイルを見つけます。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;C:\Documents and Settings\All Users\Application Data\GraphOn (On Windows 2003); 
-C:\ProgramData\GraphOn (On Windows 2008).
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;ワードパッドでHostProperties.xmlを開き、ClientSideIMEEnabledプロパティを探します。&lt;/li&gt;
-&lt;li&gt;ClientSideIMEEnabledプロパティをtrueに設定します。&lt;/li&gt;
-&lt;li&gt;ファイルを保存してください。&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</title>
-      <link>/docs/go-global6/technote/technote128/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/technote/technote128/</guid>
-      <description>
-        
-        
-        &lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
-&lt;p&gt;セッションごとにプロセスのインスタンスが1つだけ実行されるように、アプリケーションはセッションIDを使用することがよくあります。GO-Globalセッションは、システムのセッションIDをゼロ(0)で共有します。&lt;/p&gt;
-&lt;h3 id=&#34;解決策&#34;&gt;解決策&lt;/h3&gt;
-&lt;p&gt;システムのセッションIDではなくGO-GlobalセッションIDを必要とするアプリケーションがある場合、管理者はレジストリキーの下に実行可能ファイルの名前を追加できます。&lt;/p&gt;
-&lt;p&gt;HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GO-Global\Compatibility\ProcessIdToSessionIdのDWORD値を作成して0x00000001の値にします。&lt;/p&gt;
-&lt;p&gt;このレジストリキーの下にリストされたデータ値が0x00000001の名前のいずれかと一致する実行可能ファイルがProcessIdToSessionIdを呼び出すたびに、指定されたセッションIDバッファはセッションIDゼロ(0)ではなくGO-GlobalセッションIDで埋められます。&lt;/p&gt;
-&lt;p&gt;Windows ProcessIdToSessionId APIを呼び出すときにシステムのセッションIDではなくGO-GlobalセッションIDを取得するアプリケーションのリストにアプリケーションを追加するには、以下の手順を実行します。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;レジストリエディタ(regedit.exe)を実行します。&lt;/li&gt;
-&lt;li&gt;互換性キーを見つけます。[HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GO-Global\Compatibility]&lt;/li&gt;
-&lt;li&gt;必要に応じて、ProcessIdToSessionIdという名前のサブキーを作成します。&lt;/li&gt;
-&lt;li&gt;実行可能ファイル(example.exe)のDWORDエントリを作成します。&lt;/li&gt;
-&lt;li&gt;新しいエントリの値を0x00000001に設定します。&lt;/li&gt;
-&lt;li&gt;レジストリエディタを閉じます。&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Chrome拡張機能を実行</title>
-      <link>/docs/go-global5/go-global-clientno/chromewo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global5/go-global-clientno/chromewo/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-Global Chrome ExtensionはChromeウェブストアからインストールできます。&lt;/p&gt;
-&lt;h3 id=&#34;chrome拡張機能をインストールする方法&#34;&gt;Chrome拡張機能をインストールする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Chromeウェブストアに行き、GO-Global Chrome Extensionをダウンロードしてください。&lt;/li&gt;
-&lt;li&gt;GO-Global Windowsクライアントをインストールします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Chrome拡張機能にはGO-Global Windowsクライアントが必要です。Chrome拡張機能とWindowsクライアントは任意の順序でインストールできます。&lt;/p&gt;
-&lt;p&gt;Chrome拡張機能は、URLで指定されたコマンドラインオプションを使用してWindowsクライアントを起動するだけです。 リモートアプリケーションは常にブラウザのウィンドウの外側に表示されます。そのため、Chrome拡張機能は埋め込みオプションをサポートしません。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;chrome拡張機能を実行方法&#34;&gt;Chrome拡張機能を実行方法&lt;/h3&gt;
-&lt;p&gt;http:// [サーバー名] /goglobal/logon.htmlにアクセスします。&lt;/p&gt;
 
       </description>
     </item>

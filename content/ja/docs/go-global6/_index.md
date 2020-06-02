@@ -1,7 +1,7 @@
 ---
 title: "GO-Global6"
 linkTitle: ""
-weight: 01
+weight: 03
 type: "docs"
 ---
 
