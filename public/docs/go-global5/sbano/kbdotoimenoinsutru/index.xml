@@ -101,11 +101,11 @@ Layout Text = Japanese Input System（MS-IME2002）
 &lt;li&gt;&lt;strong&gt;詳細&lt;/strong&gt;をクリックします。&lt;/li&gt;
 &lt;li&gt;[テキストサービスと入力言語]ダイアログで、[追加]をクリックします。&lt;/li&gt;
 &lt;li&gt;入力言語の追加]ダイアログで、[入力言語]のリストを展開して[ドイツ語(ドイツ)]を選択します。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;キーボードレイアウト/ IME&lt;/strong&gt;ボックスで、これがドイツ語に変更されたことを確認します。これは物理的なキーボードがドイツ語であるべきであることを示しています。物理キーボードがドイツ語ではない場合は、適切なキーボードレイアウトを選択して **[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;キーボードレイアウト/ IME&lt;/strong&gt;ボックスで、これがドイツ語に変更されたことを確認します。これは物理的なキーボードがドイツ語であるべきであることを示しています。物理キーボードがドイツ語ではない場合は、適切なキーボードレイアウトを選択して [&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;[テキストサービスと入力言語]ダイアログで、[OK]をクリックします。&lt;/li&gt;
 &lt;li&gt;[地域と言語のオプション]ダイアログで、[詳細設定]タブをクリックします。 [現在のユーザアカウントと既定のユーザプロファイルにすべての設定を適用する]チェックボックスをオンにします。&lt;/li&gt;
-&lt;li&gt;**[デフォルトユーザー設定の変更]**メッセージを読んだ後、 **[OK]**をクリックします。&lt;/li&gt;
-&lt;li&gt;[地域と言語のオプション]ダイアログで、 **[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;デフォルトユーザー設定の変更&lt;/strong&gt;]メッセージを読んだ後、 [&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;[地域と言語のオプション]ダイアログで、 [&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;入力ロケールが正しくインストールおよび構成されていることを確認してください。&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;この対話型セッションで &lt;strong&gt;メモ帳&lt;/strong&gt;を起動します。&lt;/li&gt;
 &lt;li&gt;英語で数文字を入力してください。&lt;/li&gt;

@@ -31,9 +31,9 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Application Publishing Service&lt;/strong&gt;と &lt;strong&gt;License Manager&lt;/strong&gt;が実行中であることを確認する方法&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Windows タスクバーの **[スタート]**ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;Windows タスクバーの [&lt;strong&gt;スタート&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
 &lt;li&gt;[コントロール パネル | 管理ツール]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[サービス]**をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;サービス&lt;/strong&gt;]をダブルクリックします。&lt;/li&gt;
 &lt;li&gt;サービスの一覧から GO-Global Application Publishing Service を選択します｡&lt;/li&gt;
 &lt;li&gt;これらのサービス の状態が「開始」で、スタートアップの種類が「自動」であることを確認します。&lt;/li&gt;
 &lt;/ol&gt;
@@ -42,11 +42,11 @@
 &lt;p&gt;&lt;strong&gt;License Retrieval Wizard&lt;/strong&gt;を利用しない場合は、予め入手したライセンスファイルをGO-GlobalのインストールパスのProgramsディレクトリにコピーして下さい。中央ライセンスサーバを使用するようにGO-Globalを設定している場合は、ライセンスファイルをライセンスサーバにコピーします。詳細については、「中央ライセンスサーバを使用するためのGO-Globalの設定」の項を参照してください。ライセンス ファイルをコピーしたら、License Managerを停止して再起動する必要があります。&lt;/p&gt;
 &lt;h3 id=&#34;license-manager-の起動方法&#34;&gt;License Manager の起動方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Windowsタスクバーの **[スタート]**ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;Windowsタスクバーの [&lt;strong&gt;スタート&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
 &lt;li&gt;[コントロール パネル | 管理ツール]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[サービス]**をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;サービス&lt;/strong&gt;]をダブルクリックします。&lt;/li&gt;
 &lt;li&gt;サービスの一覧から &lt;strong&gt;GO-Global License Manager&lt;/strong&gt;を選択します。&lt;/li&gt;
-&lt;li&gt;**[スタート]**ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;スタート&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/img/2-1-1.png&#34; alt=&#34;2-1-1&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -157,7 +157,7 @@ Internet Explorer: &amp;lt;a href=&amp;quot;logon.html?direct=true&amp;quot;&amp
 &lt;h3 id=&#34;ワードパッドとwindowsエクスプローラへのリンクを含むページを作成する方法&#34;&gt;ワードパッドとWindowsエクスプローラへのリンクを含むページを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;HTMLエディタで新規または既存のWebページを開きます。&lt;/li&gt;
-&lt;li&gt;エディタの **[ハイパーリンクの挿入]**オプションをクリックします。&lt;/li&gt;
+&lt;li&gt;エディタの [&lt;strong&gt;ハイパーリンクの挿入&lt;/strong&gt;]オプションをクリックします。&lt;/li&gt;
 &lt;li&gt;ワードパッドドキュメントへのハイパーリンクを入力します。&lt;a href=&#34;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:/Program%20Files/Windows%20NT/Accessories/wordpad.exe&amp;amp;args=C:/Users/Public/Public%20Documents/welcome.rtf&#34;&gt;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:\Program Files\Windows NT\Accessories\wordpad.exe&amp;amp;args=C:\Users\Public\Public Documents\welcome.rtf&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;ハイパーリンクの表示テキストを「ようこそ」のように入力します。&lt;/li&gt;
 &lt;li&gt;Windowsエクスプローラへのリンクを作成するには、手順2〜4を繰り返します。&lt;a href=&#34;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:/Windows/System32/explorer.exe&#34;&gt;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:\Windows\System32\explorer.exe&lt;/a&gt;&lt;/li&gt;
@@ -558,14 +558,14 @@ b. &lt;strong&gt;Session Startup&lt;/strong&gt;タブをクリックします。
 c. &lt;strong&gt;Apply Group Policy&lt;/strong&gt;を有効にする。&lt;/li&gt;
 &lt;li&gt;グループポリシーを介してすべてのユーザに対してテーマを有効にします。
 a. mmcを実行
-b. **[ファイル | スナップインの追加と削除&amp;hellip;]**をクリックします。
+b. [&lt;strong&gt;ファイル | スナップインの追加と削除&amp;hellip;&lt;/strong&gt;]をクリックします。
 c. &lt;strong&gt;グループポリシーオブジェクト&lt;/strong&gt;を選択
 d. &lt;strong&gt;追加&lt;/strong&gt;をクリックします。
 e. &lt;strong&gt;完了&lt;/strong&gt;をクリックします。
 f. ユーザーの構成\ポリシー\管理用テンプレート\コントロールパネル\個人用設定に移動します。
 g. **「特定のビジュアルスタイルファイルを強制するかWindows Classicを強制する」**をダブルクリックします。
 h. &lt;strong&gt;有効&lt;/strong&gt;をクリックします。
-i. **[ビジュアルスタイルへのパス]**で、パスを入力します。%windir%\resources\Themes\Aero\ aero.msstyles&lt;/li&gt;
+i. [&lt;strong&gt;ビジュアルスタイルへのパス&lt;/strong&gt;]で、パスを入力します。%windir%\resources\Themes\Aero\ aero.msstyles&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>

@@ -126,18 +126,18 @@
 &lt;ol&gt;
 &lt;li&gt;[スタート | プログラム | 管理ツール | パフォーマンス]の順にクリックします。&lt;/li&gt;
 &lt;li&gt;+ボタンをクリックして、カウンタを追加します。&lt;/li&gt;
-&lt;li&gt;**[パフォーマンス オブジェクト]**項目で **[GO-Global Server]**を選択し、クリックします。&lt;/li&gt;
-&lt;li&gt;**[一覧からカウンタを選ぶ]**項目で目的のカウンタ(Active Sessions、Client Connections、Maximum Sessions、Server Connections)をクリックして、 **[追加]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;パフォーマンス オブジェクト&lt;/strong&gt;]項目で [&lt;strong&gt;GO-Global Server&lt;/strong&gt;]を選択し、クリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;一覧からカウンタを選ぶ&lt;/strong&gt;]項目で目的のカウンタ(Active Sessions、Client Connections、Maximum Sessions、Server Connections)をクリックして、 [&lt;strong&gt;追加&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-1.png&#34; alt=&#34;6-2-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-2-1.png&#34; alt=&#34;6-2-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;GO-Globalホストパフォーマンスカウンタ を以下に示します。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Client Connections&lt;/strong&gt; － 独立したホストまたは中継サーバ上のクライアント接続の総数。この値は、依存ホストでは常に 0 です。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Server Connections&lt;/strong&gt;－ 中継サーバーに接続している依存ホストの総数。この値は、独立ホストまたは依存ホストでは常に 0 です。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Active Sessions&lt;/strong&gt; － 独立したホストまたは依存ホストの場合、これはホスト上で実行されているセッションの数です。中継サーバの場合、これは接続されているすべての依存ホストでホストされているセッションの総数です。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Maximum Sessions&lt;/strong&gt; － Cluster Managerの **[Host Options]**ダイアログで設定した &lt;strong&gt;セッションの最大数&lt;/strong&gt;を表示します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Maximum Sessions&lt;/strong&gt; － Cluster Managerの [&lt;strong&gt;Host Options&lt;/strong&gt;]ダイアログで設定した &lt;strong&gt;セッションの最大数&lt;/strong&gt;を表示します。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-2.png&#34; alt=&#34;6-2-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-2-2.png&#34; alt=&#34;6-2-2&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -159,27 +159,27 @@
 &lt;li&gt;GO-Globalクライアント、GO-Globalホスト、および電子メールやデータベースなどなんらかのバックエンドサービスをホストしているコンピュータは、Kerberosをサポートしている必要があります。Kerberosは、Windows 2000以降を稼動しているシステムの、Windows 2000以降の Active Directoryドメインでサポートされます。&lt;/li&gt;
 &lt;li&gt;クライアントのユーザーアカウントは、GO-Global Application Publishing Serviceによる委任をサポートしている必要があります。 &lt;strong&gt;Active Directoryユーザーとコンピュータ&lt;/strong&gt;の管理コンソールで、ユーザーを選択して **[アクション | プロパティ]**の順にクリックします。 &lt;strong&gt;アカウントタブ&lt;/strong&gt;をクリックします。 [アカウントオプション]リストボックスを下にスクロールして、 **[アカウントが機密で委任できない]**オプションが無効になっていることを確認します。 **[アカウントは委任に対して信頼されている]**オプションを有効にします。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-3-1.png&#34; alt=&#34;6-3-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-3-1.png&#34; alt=&#34;6-3-1&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Windows Server 2008の[プロパティ]ダイアログに[委任]タブが表示されない場合、これは仕様によるものです。[委任]タブは、サービスアカウントに対してサービスプリンシパル名(SPN)が作成された後にのみ表示されます。昇格したコマンドプロンプトで、&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;setspn -A HTTP / intranet.domain.local DOMAIN\Account
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;を実行します。Active DirectoryでDOMAIN\Accountを検索します。 **[委任]**タブが[プロパティ]ダイアログに表示されます。 **[このユーザを任意のサービスへの委任に対して信頼する]**を選択します(Kerberosのみ)。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-3-2.png&#34; alt=&#34;6-3-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-3-2.png&#34; alt=&#34;6-3-2&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;GO-Globalホストには、ユーザのアカウントを他のコンピュータに委任する権限が必要です。 **[Active Directory ユーザーとコンピュータ]**管理コンソールでコンピュータを選択し、 **[ アクション | プロパティ ]**の順にクリックします。プロパティ[委任]タブをクリックします。 **[任意のサービスへの委任に対してコンピュータを信頼する]**を有効にします **(Kerberos)。**これらの委任権限を適用するには、GO-Global Application Publishing Serviceをローカルシステムアカウントで実行するように設定する必要があります。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-3-3.png&#34; alt=&#34;6-3-3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-3-3.png&#34; alt=&#34;6-3-3&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Active Directory内の任意のサービス(Kerberosのみ)への **[コンピュータを委任に対して信頼する]**を有効にしたら、委任を有効にするためにGO-Globalホストを再起動する必要があります。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt;のService Principle Name(SPN)をActive Directoryに登録できるようにする必要があります。GO-Global Application Publishing Serviceは、サービスが再実行されるたびにこれを試みます。 &lt;strong&gt;setspn.exe&lt;/strong&gt;ユーティリティ(Microsoft Resource Kitに収録。Microsoft からも個別にダウンロード可能)を使用して、SPNが正しく設定されているかどうかを確認できます。下の図は、setspn.exeをGO-Globalホストで実行したときに表示されるコマンドウィンドウです。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-3-4.png&#34; alt=&#34;6-3-4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-3-4.png&#34; alt=&#34;6-3-4&#34;&gt;&lt;/p&gt;
 &lt;p&gt;adlab-ggserverを、GO-Globalホストのコンピュータ名に置き換えます。{54094C05-F977-4987-BFC9-E8B90E088973} Globally Unique Identifier(GUID)は、GO-Global Application Publishing Serviceが {54094C05-F977-4987-BFC9-E8B90E088973}/adlab-ggserver.adlab.graphon.com SPNを作成するときに使用します。&lt;/p&gt;
 &lt;p&gt;次のコマンドウィンドウは、GO-Globalホストで &lt;strong&gt;setspn.exe&lt;/strong&gt;を実行したときに表示される出力画面で、ネットワーク設定にエラーがあることを示しています。上述のすべての要件が満たされている場合、この画面は表示されません。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-3-5.png&#34; alt=&#34;6-3-5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-3-5.png&#34; alt=&#34;6-3-5&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -233,10 +233,10 @@
 &lt;p&gt;管理者は、 &lt;strong&gt;Host Option&lt;/strong&gt;ダイアログを使用して、プリンタドライバソースへのアクセスを設定します。&lt;/p&gt;
 &lt;h3 id=&#34;プリンタ-ドライバへのアクセスの指定方法&#34;&gt;プリンタ ドライバへのアクセスの指定方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Cluster Manager で、 **[All Hosts]**の一覧から目的のホストを選択します。&lt;/li&gt;
+&lt;li&gt;Cluster Manager で、 [&lt;strong&gt;All Hosts&lt;/strong&gt;]の一覧から目的のホストを選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Printers]**チェックボックスをクリックします。
+&lt;li&gt;[&lt;strong&gt;Client Access&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Printers&lt;/strong&gt;]チェックボックスをクリックします。
 5.
 目的のドライバソースの横にあるチェックボックスをクリックします。&lt;/li&gt;
 &lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
@@ -244,13 +244,13 @@
 &lt;p&gt;クライアント側の印刷は、デフォルトで有効になっています。管理者は、Cluster Managerの「 &lt;strong&gt;Host Options&lt;/strong&gt;」ダイアログを使用してクライアント側の印刷を無効にします。&lt;/p&gt;
 &lt;h3 id=&#34;クライアントプリンタのサポートの無効方法&#34;&gt;クライアントプリンタのサポートの無効方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Cluster Managerで、[**All Hosts]**の一覧から目的のサーバを選択します。&lt;/li&gt;
+&lt;li&gt;Cluster Managerで、[&lt;strong&gt;All Hosts&lt;/strong&gt;]の一覧から目的のサーバを選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Client Access&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;ユニバーサルプリンタドライバ&lt;/strong&gt;と &lt;strong&gt;Windowsプリンタドライバ&lt;/strong&gt;を無効にします。これらのオプションのいずれも選択されていない場合、クライアントの印刷は無効になります。&lt;/li&gt;
-&lt;li&gt;[**OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-5-1.png&#34; alt=&#34;6-5-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-5-1.png&#34; alt=&#34;6-5-1&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -289,7 +289,7 @@
         
         &lt;p&gt;GO-Globalのプリンタアプレットを使うと、プリンタの追加と削除、プリンタのプロパティの編集、デフォルトプリンタの設定、プリンタドライバの選択、テストページの印刷ができます。プリンタアプレットはプログラムウィンドウからアクセスできます。構成されているすべてのクライアントプリンタと、ユーザがアクセスできるすべてのホストプリンタが一覧表示されます。プリンタのリストは、-acパラメータとprinterconfigパラメータだけでなく、クラスタマネージャのプリンタドライバ設定によっても異なります。&lt;/p&gt;
 &lt;p&gt;プリンタアプレットのアイコンについては後述します。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-7-1.png&#34; alt=&#34;6-7-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-7-1.png&#34; alt=&#34;6-7-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;ユーザが次回GO-Globalにサインインしたときに、プリンタアプレットで行った設定は保存されます。これらの設定はコマンドラインオプションよりも優先されます。プリンタアプレットで行ったプリンタの変更はすぐに有効になります。ユーザはセッションを再開する必要はありません。&lt;/p&gt;
 &lt;h2 id=&#34;プリンタの追加と削除&#34;&gt;プリンタの追加と削除&lt;/h2&gt;
 &lt;p&gt;プリンタは、プリンタアプレットを介して追加または削除されても、クライアントコンピュータに対して追加または削除されず、GO-Globalで使用するように設定されているプリンタのみが判断されます。&lt;/p&gt;
@@ -560,10 +560,10 @@
 &lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
 &lt;p&gt;クリップボードのサポートを有効にする方法&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Cluster Managerで、 **[All Hosts]**の一覧から目的のホストを選択します。&lt;/li&gt;
+&lt;li&gt;Cluster Managerで、 [&lt;strong&gt;All Hosts&lt;/strong&gt;]の一覧から目的のホストを選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Clipboard]**チェックボックスをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Client Access&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Clipboard&lt;/strong&gt;]チェックボックスをクリックします。&lt;/li&gt;
 &lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;] をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -583,11 +583,11 @@
 &lt;p&gt;古いオペレーティングシステムでは、GO-GlobalホストはGO-Global 4以前のバージョンでサポートされていた機能を介してクライアント上で基本的なサウンドを再生します。&lt;/p&gt;
 &lt;h3 id=&#34;クライアントのサウンドのサポートを有効にする方法&#34;&gt;クライアントのサウンドのサポートを有効にする方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Cluster Managerで、 **[All Hosts]**の一覧から目的のホストを選択します。&lt;/li&gt;
+&lt;li&gt;Cluster Managerで、 [&lt;strong&gt;All Hosts&lt;/strong&gt;]の一覧から目的のホストを選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Sound]**チェック ボックスをクリックします。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Client Access&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Sound&lt;/strong&gt;]チェック ボックスをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;サウンドカードをホストに取り付ける必要があります。スピーカはホストには必要ありません。 クライアントサウンドはWindowsクライアントでのみサポートされています。クライアントマシンにはサウンドカードとスピーカが必要です。オーディオサポートはデフォルトで無効になっています。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -633,16 +633,16 @@
       <description>
         
         
-        &lt;p&gt;GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの **[Open]**および **[Save as]**ダイアログボックス内にクライアントドライブが一覧表示されます。この時、「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-18-1.png&#34; alt=&#34;6-18-1&#34;&gt;&lt;/p&gt;
+        &lt;p&gt;GO-Globalでは、ユーザはクライアントコンピュータに保存されているファイルにアクセスして、それをローカル環境内に保存できます。アプリケーションの [&lt;strong&gt;Open&lt;/strong&gt;]および [&lt;strong&gt;Save as&lt;/strong&gt;]ダイアログボックス内にクライアントドライブが一覧表示されます。この時、「Client」プレフィックスが付いています(例:Client C (K:)、Client D (L:))&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-18-1.png&#34; alt=&#34;6-18-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;これらのダイアログボックスでは、クライアントドライブとホストドライブの両方の一覧が表示されます。デフォルトでクライアントドライブのサポートは無効になっています。&lt;/p&gt;
 &lt;h3 id=&#34;クライアントドライブのサポートを有効にする方法&#34;&gt;クライアントドライブのサポートを有効にする方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Cluster Managerで、 **[All Hosts]**の一覧から目的のホストを選択します。&lt;/li&gt;
+&lt;li&gt;Cluster Managerで、 [&lt;strong&gt;All Hosts&lt;/strong&gt;]の一覧から目的のホストを選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Drives]**チェックボックスをクリックします。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Client Access&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Drives&lt;/strong&gt;]チェックボックスをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;GO-Globalは、ユーザがUSBドライブにアクセスできます。フロッピーディスク、CD-ROM、DVD-ROMなどのリムーバブルドライブはクライアントドライブとしてサポートされていません。&lt;/p&gt;
 &lt;h2 id=&#34;クライアントドライブの再マッピング&#34;&gt;クライアントドライブの再マッピング&lt;/h2&gt;
@@ -650,22 +650,22 @@
 &lt;h3 id=&#34;クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法&#34;&gt;クライアントドライブに特定のドライブ文字から順番にドライブ文字を割り当てる方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Cluster Managerで、[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Client Access]**タブをクリックします。
+&lt;li&gt;[&lt;strong&gt;Client Access&lt;/strong&gt;]タブをクリックします。
 3.
-クライアントの **[Drives]**を有効にします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[Assign consecutive letters starting at:&lt;/strong&gt; &lt;strong&gt;___&lt;/strong&gt; **]**をクリックします。&lt;/li&gt;
+クライアントの [&lt;strong&gt;Drives&lt;/strong&gt;]を有効にします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Assign consecutive letters starting at:&lt;/strong&gt; &lt;strong&gt;___&lt;/strong&gt; ****]をクリックします。&lt;/li&gt;
 &lt;li&gt;編集フィールドに、シーケンスの始まりのドライブ文字を入力します。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;たとえば、クライアントコンピュータにA、C、D、およびHのドライブがあり、開始点がドライブ文字Mに設定されている場合、クライアントのドライブはそれぞれM、N、O、およびPに再マップされます。ドライブにすでに割り当てられている場合は、次に使用可能な文字が使用されます。この機能はデフォルトで無効になっています。有効にすると、デフォルトのドライブ名はMです。&lt;/p&gt;
 &lt;h3 id=&#34;クライアントのドライブ文字を固定値で増分する方法&#34;&gt;クライアントのドライブ文字を固定値で増分する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Cluster Manager で、[Tools | Server Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;クライアントの **[Drives]**を有効にします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[Increment by:&lt;/strong&gt; &lt;strong&gt;___&lt;/strong&gt; **letters]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Client Access&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;クライアントの [&lt;strong&gt;Drives&lt;/strong&gt;]を有効にします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Increment by:&lt;/strong&gt; &lt;strong&gt;___&lt;/strong&gt; &lt;strong&gt;letters&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;編集フィールドに、オフセットとなる 1 以上の数字を入力します。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;たとえば、クライアントコンピュータに上の例と同じドライブ(A、C、D、H)があり、オフセットを12に指定すると、クライアントの各ドライブには12文字後ろの文字が割り当てられます。ドライブはそれぞれM、O、P、Tに再マッピングされます。 この設定のデフォルト値は12です。&lt;/p&gt;
 &lt;h2 id=&#34;クライアントドライブを非表示にする&#34;&gt;クライアントドライブを非表示にする&lt;/h2&gt;
@@ -673,10 +673,10 @@
 &lt;h3 id=&#34;1-つ以上のサーバドライブを非表示にする方法&#34;&gt;1 つ以上のサーバドライブを非表示にする方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Cluster Managerで、[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Client Access]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;クライアントの **[Drives]**を有効にします。&lt;/li&gt;
-&lt;li&gt;**[Hide]**ボックスに、非表示にするクライアントドライブ文字を入力します。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Client Access&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;クライアントの [&lt;strong&gt;Drives&lt;/strong&gt;]を有効にします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Hide&lt;/strong&gt;]ボックスに、非表示にするクライアントドライブ文字を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;デフォルトでは、すべてのクライアントドライブがマッピングされます。[Hide]ボックスでは、ドライブを任意の順序で指定できます。Linux Client または Mac OS X Clientでクライアントドライブを非表示にする場合は、ルートドライブとフロッピードライブに加えて、ユーザのホームディレクトリが次のようにマッピングされます。例:)&lt;/p&gt;
 &lt;ul&gt;
@@ -1140,28 +1140,28 @@ Kernel32!GetEnvironmentVariableA/W()&lt;/p&gt;
 &lt;p&gt;GO-Globalの実行時に検出された問題は、ログファイルのエントリとして記述されています。各エントリは、項目番号と日時スタンプによって固有識別された、イベントやプログラムエラーの説明です。 GraphOn Technical Supportは、この情報を利用して、障害の原因を判断し解決策を決定します。&lt;/p&gt;
 &lt;p&gt;また、ログファイルのエントリにはメッセージ識別用の接頭語がついています。それにより、関連する個別ユーザのセッションやアプリケーションが判断できます。イベントが特定セッションのコンテキスト内で発生した場合、そのセッション名がメッセージの最初に表示されます(例:SuzyG on Server1)。イベントがApplication Publishing Serviceへの接続(クライアントまたはアプリケーションからの接続)のコンテキスト内で発生した場合、その接続プロセスの名称(例: pw(1244))がメッセージの接頭語に含まれます。この例(pw(1244))の場合、Program Windowプロセスと Application Publishing Service間の接続中に障害が発生しています。1244は、そのイベントが発生したプロセスのIDです。メッセージの最初に接続名apsが含まれている場合、そのイベントは Application Publishing Service で発生していますが、他のプロセスとの接続には関係ありません。&lt;/p&gt;
 &lt;h2 id=&#34;logファイルの新規保存場所の選択&#34;&gt;Logファイルの新規保存場所の選択&lt;/h2&gt;
-&lt;p&gt;デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Cluster Managerの **[Host Options]**ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。&lt;/p&gt;
+&lt;p&gt;デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Cluster Managerの [&lt;strong&gt;Host Options&lt;/strong&gt;]ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。&lt;/p&gt;
 &lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
 &lt;p&gt;Logファイルの新規保存場所を選択する方法&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Cluster Manager で、[Tools | Hosts Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Log]**をクリックします。&lt;/li&gt;
-&lt;li&gt;**[Folder]**編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Log&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Folder&lt;/strong&gt;]編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Logファイルの保存場所としてリモートシステムのパスを指定することはできません。すなわち、UNCパスやマップされたネットワークドライブを[Folder]ボックスで指定すると、&amp;ldquo;Please specify a usable Windows folder where log files may be written.&amp;rdquo; というエラーメッセージが表示されます。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Backup&lt;/strong&gt;フォルダと既存のLogファイルを、 &lt;strong&gt;Templates&lt;/strong&gt;および &lt;strong&gt;Codes&lt;/strong&gt;サブフォルダと一緒に新規保存場所に移動してください。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-33-1.png&#34; alt=&#34;6-33-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-33-1.png&#34; alt=&#34;6-33-1&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;出力レベルの設定&#34;&gt;出力レベルの設定&lt;/h2&gt;
 &lt;p&gt;GO-Globalには、以下の 6 つのLog出力レベルがあります。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;0:出力なし 1:エラー 2:エラーおよびイベント 3:エラー、イベント、および警告 4:エラー、イベント、警告、および診断メッセージ 5, 6:エラー、イベント、警告、診断メッセージ、およびトレース メッセージ
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;出力レベルの設定方法&#34;&gt;出力レベルの設定方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Cluster Manager で、[Tools | Hosts Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Log]**をクリックします。&lt;/li&gt;
-&lt;li&gt;**[Output level]**ボックスに上記の数値の 1 つを入力します。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Log&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Output level&lt;/strong&gt;]ボックスに上記の数値の 1 つを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Logの出力レベルを 5 または 6 に設定した場合、ホストで生成されるLogファイルの容量は非常に大きくなるため、パフォーマンスや拡張性に悪影響が出る場合があります。したがって、GraphOn社や代理店から特別な指示がない限り、Logの出力レベルをまたは6設定すべきではありません。&lt;/p&gt;
@@ -1172,22 +1172,22 @@ Kernel32!GetEnvironmentVariableA/W()&lt;/p&gt;
 &lt;h3 id=&#34;logファイルの削除方法&#34;&gt;Logファイルの削除方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Cluster Managerで、[Tools | Hosts Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Log]**をクリックします。&lt;/li&gt;
-&lt;li&gt;**[Maintenance]**のところで **[Delete]**を選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Log&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Maintenance&lt;/strong&gt;]のところで [&lt;strong&gt;Delete&lt;/strong&gt;]を選択します。&lt;/li&gt;
 &lt;li&gt;削除するまでのLogファイルの保存期間を指定します(日単位)。&lt;/li&gt;
 &lt;li&gt;Logファイルのサイズがどのくらいに達したら削除するか指定します(MB 単位)。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt;を再起動します。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-33-2.png&#34; alt=&#34;6-33-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-33-2.png&#34; alt=&#34;6-33-2&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;logファイルのバックアップ方法&#34;&gt;Logファイルのバックアップ方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Cluster Managerで、[Tools | Hosts Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Log]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Log&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;[Maintenance]のところで [Back up]を選択します。&lt;/li&gt;
 &lt;li&gt;どのくらいの時間が経過したらログファイルをLogフォルダのBackupサブディレクトリに移動するか指定します (日単位)。&lt;/li&gt;
 &lt;li&gt;ログファイルがどのくらいの容量に達したらLogフォルダのBackupサブディレクトリに移動するか指定します(MB 単位)。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;GO-Global Application Publishing Serviceを再起動します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Application Publishing Serviceは30分ごと、および開始されるたびに、 &lt;strong&gt;Log&lt;/strong&gt;フォルダ から指定した保存期間またはサイズに達したファイルを探し出します。その後、それらのファイルを削除するか、Logフォルダ内の &lt;strong&gt;Backup&lt;/strong&gt;サブディレクトリに移動します。ログファイルの整理中に、現行のログファイルが指定の保存期間またはサイズに達したら、Application Publishing Serviceはそのログファイルを閉じて、新規作成したログファイルをインストールします。&lt;/p&gt;

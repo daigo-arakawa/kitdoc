@@ -667,13 +667,13 @@ Email address:このサーバの担当者の電子メール アドレス
       <description>
         
         
-        &lt;p&gt;デフォルトでは、すべてのGO-GlobalセッションはGO-Globalホストに設定されたタイムゾーンで実行されます。システム管理者は、Cluster Managerの **[Use client&amp;rsquo;s time zone]**オプションを有効にすることで、GO-Globalセッションをクライアントコンピュータのタイムゾーンで実行するように選択できます。&lt;/p&gt;
+        &lt;p&gt;デフォルトでは、すべてのGO-GlobalセッションはGO-Globalホストに設定されたタイムゾーンで実行されます。システム管理者は、Cluster Managerの [&lt;strong&gt;Use client&amp;rsquo;s time zone&lt;/strong&gt;]オプションを有効にすることで、GO-Globalセッションをクライアントコンピュータのタイムゾーンで実行するように選択できます。&lt;/p&gt;
 &lt;h3 id=&#34;クライアントのタイムゾーンを有効にする方法&#34;&gt;クライアントのタイムゾーンを有効にする方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[General]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Use client&amp;rsquo;s time zone]**を有効にします。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;General&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Use client&amp;rsquo;s time zone&lt;/strong&gt;]を有効にします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
@@ -728,7 +728,7 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;li&gt;[View | Options]の順にクリックします｡&lt;/li&gt;
 &lt;li&gt;[Manual]をクリックします｡&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/4-9-1.png&#34; alt=&#34;4-9-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/4-9-1.png&#34; alt=&#34;4-9-1&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;自動的にリフレッシュするようにリフレッシュ-レートを設定する方法&#34;&gt;自動的にリフレッシュするようにリフレッシュ レートを設定する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;[View | Options]の順にクリックします｡&lt;/li&gt;
@@ -741,7 +741,7 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;h3 id=&#34;ステータスバーをオンまたはオフにする方法&#34;&gt;ステータスバーをオンまたはオフにする方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;[View | Options]の順にクリックします｡&lt;/li&gt;
-&lt;li&gt;**[Status Bar]**チェックボックスをオンまたはオフにします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Status Bar&lt;/strong&gt;]チェックボックスをオンまたはオフにします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;ブロードキャスト間隔の設定&#34;&gt;ブロードキャスト間隔の設定&lt;/h2&gt;
 &lt;p&gt;Broadcast Interval値を変更して、サーバ情報がCluster Managerに送信される頻度を指定できます。この値は各ブロードキャストの間隔(秒数)を示し、ホストのCPU、MEM、Sessions、Processes、Status Bar の更新頻度と[All Hosts]の一覧にホストが表示されるまでにかかる時間に影響します。ブロードキャストは UDPを介して送信され、そのパケットサイズは約 25 ～ 37 バイトです。&lt;/p&gt;
@@ -772,7 +772,7 @@ Email address:このサーバの担当者の電子メール アドレス
       <description>
         
         
-        &lt;p&gt;Cluster Managerの **[Host Options]**ダイアログの **[Session Startup]**タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。&lt;/p&gt;
+        &lt;p&gt;Cluster Managerの [&lt;strong&gt;Host Options&lt;/strong&gt;]ダイアログの [&lt;strong&gt;Session Startup&lt;/strong&gt;]タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。&lt;/p&gt;
 &lt;h2 id=&#34;グループポリシーを適用する&#34;&gt;グループポリシーを適用する&lt;/h2&gt;
 &lt;p&gt;GO-Globalは、マイクロソフトのグループポリシーをサポートしています。グループポリシーとその拡張機能を使用して、管理者はレジストリベースのポリシーの管理、スクリプトの割り当て、フォルダのリダイレクト、アプリケーションの管理、およびセキュリティオプションの指定を行うことができます。この機能の詳細については、以下のURLにアクセスしてください。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/windowsserver/bb310732.aspx.&#34;&gt;http://technet.microsoft.com/en-us/windowsserver/bb310732.aspx.&lt;/a&gt;&lt;/p&gt;
@@ -781,12 +781,12 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;li&gt;Cluster Manager で、[Tools | Host Options]の順にクリックします。&lt;/li&gt;
 &lt;li&gt;[Session Startup]をクリックします。&lt;/li&gt;
 &lt;li&gt;[Apply Group Policy]を選択します。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;グループポリシーを有効にすると、GO-Globalへのログオンに時間がかかることがあります。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;/img/4-10-1.png&#34; alt=&#34;4-10-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/4-10-1.png&#34; alt=&#34;4-10-1&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;進行状況メッセージの表示&#34;&gt;進行状況メッセージの表示&lt;/h2&gt;
 &lt;p&gt;ユーザの認証後、セッションのスタートアップの進行状況を報告するダイアログをユーザに表示できます。この機能を有効にすると、ユーザには以下の実行時にダイアログが表示されます。&lt;/p&gt;
 &lt;ul&gt;
@@ -800,8 +800,8 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;li&gt;Cluster Managerで、[Tools | Host Options]の順にクリックします。&lt;/li&gt;
 &lt;li&gt;[Session Startup]をクリックします。&lt;/li&gt;
 &lt;li&gt;[Display progress messages]を選択します。&lt;/li&gt;
-&lt;li&gt;メッセージを他のすべてのウィンドウの手前に表示する場合は、 **[Always in front]**を選択します。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;メッセージを他のすべてのウィンドウの手前に表示する場合は、 [&lt;strong&gt;Always in front&lt;/strong&gt;]を選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;ログオンスクリプトに、ユーザにユーザインタフェースを表示する機能がある場合は、[Always in front]オプションを有効にしないでください。有効にすると、ログオンスクリプトのユーザインタフェースの一部が進行状況メッセージの下に隠れることがあります。&lt;/p&gt;
@@ -811,11 +811,11 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;p&gt;GO-Globalは次の 2 つのタイプのログオンスクリプトをサポートしています。ホストにログオンするすべてのユーザが実行できるグローバルスクリプトと、個々のユーザが実行できるユーザ固有スクリプトです。ユーザのプロファイルをロードしてProgram Windowを起動する前に、GO-GlobalのLogon Manager は、どちらか(または両方)のタイプのスクリプトが指定されていないか確認します。指定されている場合、Logon Managerはユーザが認証されるたびに、ユーザのセキュリティコンテキスト内でスクリプトを実行します。&lt;/p&gt;
 &lt;p&gt;ユーザ固有ログオンスクリプトは、オペレーティングシステム付属の機能を使用して指定します。たとえば、Windows Server 2003のローカルユーザのログオンスクリプトは、以下のように指定します。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;**[My Computer]**を右クリックして **[Manage]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;My Computer&lt;/strong&gt;]を右クリックして [&lt;strong&gt;Manage&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;[\System Tools\Local Users and Groups\Users]の順に移動します。&lt;/li&gt;
-&lt;li&gt;ユーザを選択し、 **[Properties]**をクリックします。&lt;/li&gt;
+&lt;li&gt;ユーザを選択し、 [&lt;strong&gt;Properties&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;[Profiles]をクリックします。&lt;/li&gt;
-&lt;li&gt;**[Logon script]**ボックスに、ユーザのログオンスクリプトのファイル名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Logon script&lt;/strong&gt;]ボックスに、ユーザのログオンスクリプトのファイル名を入力します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;[Logon Script]ボックスに入力する値としてファイル名と拡張子のみを指定すると、GO-Globalは以下のディレクトリでそのファイルを以下の順序で検索します。&lt;/p&gt;
 &lt;ol&gt;
@@ -835,7 +835,7 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;li&gt;systemroot\sysvol\sysvol\domainname&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;ログオンスクリプトが上述のいずれかのディレクトリのサブディレクトリに保存されている場合、ファイル名の前にそのサブディレクトリの相対パスを入力します。たとえば、Admins\JohnG.bat のように入力します。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/4-10-2.png&#34; alt=&#34;4-10-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/4-10-2.png&#34; alt=&#34;4-10-2&#34;&gt;&lt;/p&gt;
 &lt;p&gt;システム管理者は、Cluster Managerの[Session Startup]ダイアログを使用してグローバルログオンスクリプトやユーザ固有ログオンスクリプトを指定します。&lt;/p&gt;
 &lt;h3 id=&#34;ユーザ固有ログオン-スクリプトの実行方法&#34;&gt;ユーザ固有ログオン スクリプトの実行方法&lt;/h3&gt;
 &lt;ol&gt;
@@ -855,9 +855,9 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;p&gt;認証されたユーザには、ログオンスクリプトファイルの読み取りおよび実行アクセス権が必要です。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;グローバルログオンスクリプトがマッピングに失敗した場合(ファイルの場所が正確でない、ファイルの場所が存在しない、スクリプトに問題があるなどの理由で)、クライアントの画面に次のようなメッセージが表示されます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/4-10-3.png&#34; alt=&#34;4-10-3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/4-10-3.png&#34; alt=&#34;4-10-3&#34;&gt;&lt;/p&gt;
 &lt;p&gt;ユーザ固有ログオンスクリプトがマッピングに失敗した場合(ファイルの場所が正確でない、ファイルの場所が存在しない、スクリプトに問題があるなどの理由で)、クライアントの画面に次のようなメッセージが表示されます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/4-10-4.png&#34; alt=&#34;4-10-4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/4-10-4.png&#34; alt=&#34;4-10-4&#34;&gt;&lt;/p&gt;
 &lt;p&gt;このようなエラーが発生したら、ログオンスクリプトの保存場所を確認してください。&lt;/p&gt;
 &lt;p&gt;ユーザのアカウントがドメインアカウントの場合 :&lt;/p&gt;
 &lt;ol&gt;
@@ -886,15 +886,15 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;p&gt;ある特定のホストでサポート可能なセッションの最大数は、デフォルトで50に設定されています。システム管理者は、ホストの容量に合わせてこの値を調整してください。&lt;/p&gt;
 &lt;h3 id=&#34;ホスト単位のセッションの最大数の編集方法&#34;&gt;ホスト単位のセッションの最大数の編集方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;**[All Host]**の一覧から、目的のホストを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;All Host&lt;/strong&gt;]の一覧から、目的のホストを選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Session Startup]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Maximum sessions on this host]**ボックス内の数値を編集します。これにより、ホストがサポートできるセッション数の上限が設定されます。たとえば、最大セッション数が11の場合、12番目のセッションを開始しようとするユーザはログオンを拒否されます。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Session Startup&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Maximum sessions on this host&lt;/strong&gt;]ボックス内の数値を編集します。これにより、ホストがサポートできるセッション数の上限が設定されます。たとえば、最大セッション数が11の場合、12番目のセッションを開始しようとするユーザはログオンを拒否されます。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;リレーサーバ設定では、GO-Globalはリレーサーバとその依存ホストの最大セッション設定を確認します。リレーサーバで指定された &lt;strong&gt;Maximum sessions on this host&lt;/strong&gt;は、そのリレーサーバに割り当てられているすべての依存ホストで同時に実行できるセッションの最大数です。&lt;/p&gt;
 &lt;h2 id=&#34;物理メモリおよび仮想メモリの指定&#34;&gt;物理メモリおよび仮想メモリの指定&lt;/h2&gt;
-&lt;p&gt;物理メモリおよび仮想メモリが不足した状態でログオン出来ないように、下限値を指定することができます。 **[Minimum available physical memory]**ボックスには最小物理メモリ(MB)を入力します。 **[Minimum available virtual memory]**ボックスには最小仮想メモリ(MB)を入力します。&lt;/p&gt;
+&lt;p&gt;物理メモリおよび仮想メモリが不足した状態でログオン出来ないように、下限値を指定することができます。 [&lt;strong&gt;Minimum available physical memory&lt;/strong&gt;]ボックスには最小物理メモリ(MB)を入力します。 [&lt;strong&gt;Minimum available virtual memory&lt;/strong&gt;]ボックスには最小仮想メモリ(MB)を入力します。&lt;/p&gt;
 
       </description>
     </item>
@@ -915,9 +915,9 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;ol&gt;
 &lt;li&gt;Cluster Manager で、[Tools | Host Options]の順にクリックします。&lt;/li&gt;
 &lt;li&gt;[Session Shutdown]タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Session]**を有効にします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Session&lt;/strong&gt;]を有効にします。&lt;/li&gt;
 &lt;li&gt;編集ボックスに、ユーザがログオフされるまでにホストでセッションを実行できる分数を入力します。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;セッション時間の最小値は1分、最大値は44640 分(31日)です。この機能はデフォルトでは無効になっています。&lt;/p&gt;
 &lt;h2 id=&#34;アイドル状態の制限時間の指定&#34;&gt;アイドル状態の制限時間の指定&lt;/h2&gt;
@@ -925,23 +925,23 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;h3 id=&#34;アイドル状態の制限時間の指定方法&#34;&gt;アイドル状態の制限時間の指定方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Cluster Manager で、[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Session Shutdown]**タブをクリックします。&lt;/li&gt;
-&lt;li&gt;**[Idle]**を有効にします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Session Shutdown&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Idle&lt;/strong&gt;]を有効にします。&lt;/li&gt;
 &lt;li&gt;編集ボックスに、サーバで許容されるアイドル時間の分数を入力します。&lt;/li&gt;
-&lt;li&gt;**[Action]**の一覧から、アイドル状態の制限時間に達したらユーザを切断する場合は **[Disconnect]**を、ユーザをログオフする場合は **[Log off]**をクリックします。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Action&lt;/strong&gt;]の一覧から、アイドル状態の制限時間に達したらユーザを切断する場合は [&lt;strong&gt;Disconnect&lt;/strong&gt;]を、ユーザをログオフする場合は [&lt;strong&gt;Log off&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;アイドル時間の最小値は1分、最大値は44640分(31日)です。この機能はデフォルトでは無効になっています。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/4-11-1.png&#34; alt=&#34;4-11-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/4-11-1.png&#34; alt=&#34;4-11-1&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;警告期間の指定&#34;&gt;警告期間の指定&lt;/h2&gt;
 &lt;p&gt;警告期間とは、ユーザに切断またはログオフの警告メッセージが表示されてから、セッションまたはアイドル状態の制限時間に達するまでの分数です。たとえば、警告期間が2に設定されている場合、ユーザには、セッションまたはアイドル状態の制限時間に達する2分前に警告メッセージが表示されます。この機能はデフォルトでは無効になっています。&lt;/p&gt;
 &lt;h3 id=&#34;警告期間の指定方法&#34;&gt;警告期間の指定方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Cluster Manager で、[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Session Shutdown]**をクリックします。&lt;/li&gt;
-&lt;li&gt;**[Warning period]**を有効にします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Session Shutdown&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Warning period&lt;/strong&gt;]を有効にします。&lt;/li&gt;
 &lt;li&gt;編集ボックスに、ユーザに切断またはログオフの警告メッセージが表示されてから、セッションまたはアイドル状態の制限時間に達するまでの分数を入力します。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;警告期間には、セッションまたはアイドル状態の制限時間の設定より小さな値を指定する必要があります。&lt;/p&gt;
@@ -951,10 +951,10 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;h3 id=&#34;猶予期間の指定方法&#34;&gt;猶予期間の指定方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Cluster Manager で、[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[Session Shutdown]**をクリックします。&lt;/li&gt;
-&lt;li&gt;**[Grace period]**を有効にします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Session Shutdown&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Grace period&lt;/strong&gt;]を有効にします。&lt;/li&gt;
 &lt;li&gt;編集ボックスに、ログオフの開始後、ユーザがファイルの保存やアプリケーションの終了などを行える時間を分数で指定します。&lt;/li&gt;
-&lt;li&gt;**[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
@@ -1021,10 +1021,10 @@ Email address:このサーバの担当者の電子メール アドレス
 &lt;ol&gt;
 &lt;li&gt;GO-Global Administratorのみがそのアプリケーションにアクセスできるよう、Cluster Manager のアクセス許可を設定します。&lt;/li&gt;
 &lt;li&gt;Windows Explorer内でフォルダGO-Global\Programsからcm.exeを検索します。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;cm.exe&lt;/strong&gt;を右クリックし、 **[プロパティ]**を選択します。&lt;/li&gt;
-&lt;li&gt;**[プロパティ]**ダイアログ ボックス内で **[セキュリティ]**を選択します。&lt;/li&gt;
-&lt;li&gt;**[セキュリティ]**ダイアログ ボックス内で [権限]を選択します。&lt;/li&gt;
-&lt;li&gt;**[File Permission]**ダイアログボックス内で、GO-Global Administratorsのみがそのアプリケーションを実行できるよう、アクセス許可を設定します。(Windows Explorerでのアクセス許可設定についてのヘルプを参照するには、[File Permission]ボックス内で[Help]ボタンをクリックするか、Explorerの実行中にF1キーを押してください)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cm.exe&lt;/strong&gt;を右クリックし、 [&lt;strong&gt;プロパティ&lt;/strong&gt;]を選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;プロパティ&lt;/strong&gt;]ダイアログ ボックス内で [&lt;strong&gt;セキュリティ&lt;/strong&gt;]を選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;セキュリティ&lt;/strong&gt;]ダイアログ ボックス内で [権限]を選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;File Permission&lt;/strong&gt;]ダイアログボックス内で、GO-Global Administratorsのみがそのアプリケーションを実行できるよう、アクセス許可を設定します。(Windows Explorerでのアクセス許可設定についてのヘルプを参照するには、[File Permission]ボックス内で[Help]ボタンをクリックするか、Explorerの実行中にF1キーを押してください)。&lt;/li&gt;
 &lt;li&gt;Cluster ManagerでCluster Manager(cm.exe)を登録アプリケーションとして追加します。&lt;/li&gt;
 &lt;li&gt;クライアントマシンから、GO-Global Administrator またはそのホストの管理者権限を持つユーザとして、GO-Globalホストへログオンします。これによりProgram Windowが起動します。&lt;/li&gt;
 &lt;li&gt;そのProgram Windowから、Cluster ManagerアイコンをクリックしてCluster Managerを起動します。このアイコンは、ユーザがそのホスト上での管理者権限を持つ場合にのみ、Program Window 内に表示されます。これにより、Cluster ManagerをGO-Globalホストから実行しているのと同じように、アプリケーションやユーザのアクセスを管理できます｡&lt;/li&gt;

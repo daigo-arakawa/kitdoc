@@ -269,9 +269,9 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 [&lt
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Application Publishing Service&lt;/strong&gt;と &lt;strong&gt;License Manager&lt;/strong&gt;が実行中であることを確認する方法&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Windows タスクバーの **[スタート]**ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;Windows タスクバーの [&lt;strong&gt;スタート&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
 &lt;li&gt;[コントロール パネル | 管理ツール]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[サービス]**をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;サービス&lt;/strong&gt;]をダブルクリックします。&lt;/li&gt;
 &lt;li&gt;サービスの一覧から GO-Global Application Publishing Service を選択します｡&lt;/li&gt;
 &lt;li&gt;これらのサービス の状態が「開始」で、スタートアップの種類が「自動」であることを確認します。&lt;/li&gt;
 &lt;/ol&gt;
@@ -280,11 +280,11 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 [&lt
 &lt;p&gt;&lt;strong&gt;License Retrieval Wizard&lt;/strong&gt;を利用しない場合は、予め入手したライセンスファイルをGO-GlobalのインストールパスのProgramsディレクトリにコピーして下さい。中央ライセンスサーバを使用するようにGO-Globalを設定している場合は、ライセンスファイルをライセンスサーバにコピーします。詳細については、「中央ライセンスサーバを使用するためのGO-Globalの設定」の項を参照してください。ライセンス ファイルをコピーしたら、License Managerを停止して再起動する必要があります。&lt;/p&gt;
 &lt;h3 id=&#34;license-manager-の起動方法&#34;&gt;License Manager の起動方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Windowsタスクバーの **[スタート]**ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;Windowsタスクバーの [&lt;strong&gt;スタート&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
 &lt;li&gt;[コントロール パネル | 管理ツール]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;**[サービス]**をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;サービス&lt;/strong&gt;]をダブルクリックします。&lt;/li&gt;
 &lt;li&gt;サービスの一覧から &lt;strong&gt;GO-Global License Manager&lt;/strong&gt;を選択します。&lt;/li&gt;
-&lt;li&gt;**[スタート]**ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;スタート&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/img/2-1-1.png&#34; alt=&#34;2-1-1&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -979,18 +979,18 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
 &lt;ol&gt;
 &lt;li&gt;[スタート | プログラム | 管理ツール | パフォーマンス]の順にクリックします。&lt;/li&gt;
 &lt;li&gt;+ボタンをクリックして、カウンタを追加します。&lt;/li&gt;
-&lt;li&gt;**[パフォーマンス オブジェクト]**項目で **[GO-Global Server]**を選択し、クリックします。&lt;/li&gt;
-&lt;li&gt;**[一覧からカウンタを選ぶ]**項目で目的のカウンタ(Active Sessions、Client Connections、Maximum Sessions、Server Connections)をクリックして、 **[追加]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;パフォーマンス オブジェクト&lt;/strong&gt;]項目で [&lt;strong&gt;GO-Global Server&lt;/strong&gt;]を選択し、クリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;一覧からカウンタを選ぶ&lt;/strong&gt;]項目で目的のカウンタ(Active Sessions、Client Connections、Maximum Sessions、Server Connections)をクリックして、 [&lt;strong&gt;追加&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-1.png&#34; alt=&#34;6-2-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-2-1.png&#34; alt=&#34;6-2-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;GO-Globalホストパフォーマンスカウンタ を以下に示します。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Client Connections&lt;/strong&gt; － 独立したホストまたは中継サーバ上のクライアント接続の総数。この値は、依存ホストでは常に 0 です。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Server Connections&lt;/strong&gt;－ 中継サーバーに接続している依存ホストの総数。この値は、独立ホストまたは依存ホストでは常に 0 です。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Active Sessions&lt;/strong&gt; － 独立したホストまたは依存ホストの場合、これはホスト上で実行されているセッションの数です。中継サーバの場合、これは接続されているすべての依存ホストでホストされているセッションの総数です。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Maximum Sessions&lt;/strong&gt; － Cluster Managerの **[Host Options]**ダイアログで設定した &lt;strong&gt;セッションの最大数&lt;/strong&gt;を表示します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Maximum Sessions&lt;/strong&gt; － Cluster Managerの [&lt;strong&gt;Host Options&lt;/strong&gt;]ダイアログで設定した &lt;strong&gt;セッションの最大数&lt;/strong&gt;を表示します。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-2-2.png&#34; alt=&#34;6-2-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-2-2.png&#34; alt=&#34;6-2-2&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1450,11 +1450,11 @@ d. 貼り付けたテキストの &lt;strong&gt;AllowCreateSessionOnConnect&lt;/
 &lt;li&gt;&lt;strong&gt;詳細&lt;/strong&gt;をクリックします。&lt;/li&gt;
 &lt;li&gt;[テキストサービスと入力言語]ダイアログで、[追加]をクリックします。&lt;/li&gt;
 &lt;li&gt;入力言語の追加]ダイアログで、[入力言語]のリストを展開して[ドイツ語(ドイツ)]を選択します。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;キーボードレイアウト/ IME&lt;/strong&gt;ボックスで、これがドイツ語に変更されたことを確認します。これは物理的なキーボードがドイツ語であるべきであることを示しています。物理キーボードがドイツ語ではない場合は、適切なキーボードレイアウトを選択して **[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;キーボードレイアウト/ IME&lt;/strong&gt;ボックスで、これがドイツ語に変更されたことを確認します。これは物理的なキーボードがドイツ語であるべきであることを示しています。物理キーボードがドイツ語ではない場合は、適切なキーボードレイアウトを選択して [&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;[テキストサービスと入力言語]ダイアログで、[OK]をクリックします。&lt;/li&gt;
 &lt;li&gt;[地域と言語のオプション]ダイアログで、[詳細設定]タブをクリックします。 [現在のユーザアカウントと既定のユーザプロファイルにすべての設定を適用する]チェックボックスをオンにします。&lt;/li&gt;
-&lt;li&gt;**[デフォルトユーザー設定の変更]**メッセージを読んだ後、 **[OK]**をクリックします。&lt;/li&gt;
-&lt;li&gt;[地域と言語のオプション]ダイアログで、 **[OK]**をクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;デフォルトユーザー設定の変更&lt;/strong&gt;]メッセージを読んだ後、 [&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;[地域と言語のオプション]ダイアログで、 [&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;入力ロケールが正しくインストールおよび構成されていることを確認してください。&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;この対話型セッションで &lt;strong&gt;メモ帳&lt;/strong&gt;を起動します。&lt;/li&gt;
 &lt;li&gt;英語で数文字を入力してください。&lt;/li&gt;
@@ -1676,7 +1676,7 @@ Internet Explorer: &amp;lt;a href=&amp;quot;logon.html?direct=true&amp;quot;&amp
 &lt;h3 id=&#34;ワードパッドとwindowsエクスプローラへのリンクを含むページを作成する方法&#34;&gt;ワードパッドとWindowsエクスプローラへのリンクを含むページを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;HTMLエディタで新規または既存のWebページを開きます。&lt;/li&gt;
-&lt;li&gt;エディタの **[ハイパーリンクの挿入]**オプションをクリックします。&lt;/li&gt;
+&lt;li&gt;エディタの [&lt;strong&gt;ハイパーリンクの挿入&lt;/strong&gt;]オプションをクリックします。&lt;/li&gt;
 &lt;li&gt;ワードパッドドキュメントへのハイパーリンクを入力します。&lt;a href=&#34;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:/Program%20Files/Windows%20NT/Accessories/wordpad.exe&amp;amp;args=C:/Users/Public/Public%20Documents/welcome.rtf&#34;&gt;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:\Program Files\Windows NT\Accessories\wordpad.exe&amp;amp;args=C:\Users\Public\Public Documents\welcome.rtf&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;ハイパーリンクの表示テキストを「ようこそ」のように入力します。&lt;/li&gt;
 &lt;li&gt;Windowsエクスプローラへのリンクを作成するには、手順2〜4を繰り返します。&lt;a href=&#34;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:/Windows/System32/explorer.exe&#34;&gt;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:\Windows\System32\explorer.exe&lt;/a&gt;&lt;/li&gt;
@@ -2397,27 +2397,27 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
 &lt;li&gt;GO-Globalクライアント、GO-Globalホスト、および電子メールやデータベースなどなんらかのバックエンドサービスをホストしているコンピュータは、Kerberosをサポートしている必要があります。Kerberosは、Windows 2000以降を稼動しているシステムの、Windows 2000以降の Active Directoryドメインでサポートされます。&lt;/li&gt;
 &lt;li&gt;クライアントのユーザーアカウントは、GO-Global Application Publishing Serviceによる委任をサポートしている必要があります。 &lt;strong&gt;Active Directoryユーザーとコンピュータ&lt;/strong&gt;の管理コンソールで、ユーザーを選択して **[アクション | プロパティ]**の順にクリックします。 &lt;strong&gt;アカウントタブ&lt;/strong&gt;をクリックします。 [アカウントオプション]リストボックスを下にスクロールして、 **[アカウントが機密で委任できない]**オプションが無効になっていることを確認します。 **[アカウントは委任に対して信頼されている]**オプションを有効にします。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-3-1.png&#34; alt=&#34;6-3-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-3-1.png&#34; alt=&#34;6-3-1&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Windows Server 2008の[プロパティ]ダイアログに[委任]タブが表示されない場合、これは仕様によるものです。[委任]タブは、サービスアカウントに対してサービスプリンシパル名(SPN)が作成された後にのみ表示されます。昇格したコマンドプロンプトで、&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;setspn -A HTTP / intranet.domain.local DOMAIN\Account
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;を実行します。Active DirectoryでDOMAIN\Accountを検索します。 **[委任]**タブが[プロパティ]ダイアログに表示されます。 **[このユーザを任意のサービスへの委任に対して信頼する]**を選択します(Kerberosのみ)。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-3-2.png&#34; alt=&#34;6-3-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-3-2.png&#34; alt=&#34;6-3-2&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;GO-Globalホストには、ユーザのアカウントを他のコンピュータに委任する権限が必要です。 **[Active Directory ユーザーとコンピュータ]**管理コンソールでコンピュータを選択し、 **[ アクション | プロパティ ]**の順にクリックします。プロパティ[委任]タブをクリックします。 **[任意のサービスへの委任に対してコンピュータを信頼する]**を有効にします **(Kerberos)。**これらの委任権限を適用するには、GO-Global Application Publishing Serviceをローカルシステムアカウントで実行するように設定する必要があります。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-3-3.png&#34; alt=&#34;6-3-3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-3-3.png&#34; alt=&#34;6-3-3&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Active Directory内の任意のサービス(Kerberosのみ)への **[コンピュータを委任に対して信頼する]**を有効にしたら、委任を有効にするためにGO-Globalホストを再起動する必要があります。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt;のService Principle Name(SPN)をActive Directoryに登録できるようにする必要があります。GO-Global Application Publishing Serviceは、サービスが再実行されるたびにこれを試みます。 &lt;strong&gt;setspn.exe&lt;/strong&gt;ユーティリティ(Microsoft Resource Kitに収録。Microsoft からも個別にダウンロード可能)を使用して、SPNが正しく設定されているかどうかを確認できます。下の図は、setspn.exeをGO-Globalホストで実行したときに表示されるコマンドウィンドウです。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-3-4.png&#34; alt=&#34;6-3-4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-3-4.png&#34; alt=&#34;6-3-4&#34;&gt;&lt;/p&gt;
 &lt;p&gt;adlab-ggserverを、GO-Globalホストのコンピュータ名に置き換えます。{54094C05-F977-4987-BFC9-E8B90E088973} Globally Unique Identifier(GUID)は、GO-Global Application Publishing Serviceが {54094C05-F977-4987-BFC9-E8B90E088973}/adlab-ggserver.adlab.graphon.com SPNを作成するときに使用します。&lt;/p&gt;
 &lt;p&gt;次のコマンドウィンドウは、GO-Globalホストで &lt;strong&gt;setspn.exe&lt;/strong&gt;を実行したときに表示される出力画面で、ネットワーク設定にエラーがあることを示しています。上述のすべての要件が満たされている場合、この画面は表示されません。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/6-3-5.png&#34; alt=&#34;6-3-5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/image5/6-3-5.png&#34; alt=&#34;6-3-5&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
