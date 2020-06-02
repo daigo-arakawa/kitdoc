@@ -43,7 +43,7 @@ Internet Explorer: <a href="logon.html?direct=true">Loose</a><br>
 ### ワードパッドとWindowsエクスプローラへのリンクを含むページを作成する方法
 
 1. HTMLエディタで新規または既存のWebページを開きます。
-2. エディタの **[ハイパーリンクの挿入]**オプションをクリックします。
+2. エディタの [**ハイパーリンクの挿入**]オプションをクリックします。
 3. ワードパッドドキュメントへのハイパーリンクを入力します。[http://hostname/goglobal/logon.html?mode=embed&app=C:\Program Files\Windows NT\Accessories\wordpad.exe&args=C:\Users\Public\Public Documents\welcome.rtf](http://hostname/goglobal/logon.html?mode=embed&app=C:/Program%20Files/Windows%20NT/Accessories/wordpad.exe&args=C:/Users/Public/Public%20Documents/welcome.rtf)
 4. ハイパーリンクの表示テキストを「ようこそ」のように入力します。
 5. Windowsエクスプローラへのリンクを作成するには、手順2〜4を繰り返します。[http://hostname/goglobal/logon.html?mode=embed&app=C:\Windows\System32\explorer.exe](http://hostname/goglobal/logon.html?mode=embed&app=C:/Windows/System32/explorer.exe)

@@ -12,16 +12,16 @@ GO-Globalホストパフォーマンスカウンタにより、システム管�
 
 1. [スタート | プログラム | 管理ツール | パフォーマンス]の順にクリックします。
 2. +ボタンをクリックして、カウンタを追加します。
-3. **[パフォーマンス オブジェクト]**項目で **[GO-Global Server]**を選択し、クリックします。
-4. **[一覧からカウンタを選ぶ]**項目で目的のカウンタ(Active Sessions、Client Connections、Maximum Sessions、Server Connections)をクリックして、 **[追加]**をクリックします。
+3. [**パフォーマンス オブジェクト**]項目で [**GO-Global Server**]を選択し、クリックします。
+4. [**一覧からカウンタを選ぶ**]項目で目的のカウンタ(Active Sessions、Client Connections、Maximum Sessions、Server Connections)をクリックして、 [**追加**]をクリックします。
 
-![6-2-1](/img/6-2-1.png)
+![6-2-1](/image5/6-2-1.png)
 
 GO-Globalホストパフォーマンスカウンタ を以下に示します。
 
 * **Client Connections** － 独立したホストまたは中継サーバ上のクライアント接続の総数。この値は、依存ホストでは常に 0 です。
 * **Server Connections**－ 中継サーバーに接続している依存ホストの総数。この値は、独立ホストまたは依存ホストでは常に 0 です。
 * **Active Sessions** － 独立したホストまたは依存ホストの場合、これはホスト上で実行されているセッションの数です。中継サーバの場合、これは接続されているすべての依存ホストでホストされているセッションの総数です。
-* **Maximum Sessions** － Cluster Managerの **[Host Options]**ダイアログで設定した **セッションの最大数**を表示します。
+* **Maximum Sessions** － Cluster Managerの [**Host Options**]ダイアログで設定した **セッションの最大数**を表示します。
 
-![6-2-2](/img/6-2-2.png)
+![6-2-2](/image5/6-2-2.png)

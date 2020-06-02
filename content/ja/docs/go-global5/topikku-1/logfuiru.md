@@ -15,20 +15,20 @@ GO-Globalの実行時に検出された問題は、ログファイルのエン�
 
 ## Logファイルの新規保存場所の選択
 
-デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Cluster Managerの **[Host Options]**ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。
+デフォルトでは、Logファイルは生成されると \Program Files\GraphOn\GO-Global\Log に保存されます。Cluster Managerの [**Host Options**]ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。
 
 ###
 Logファイルの新規保存場所を選択する方法
 
 1. Cluster Manager で、[Tools | Hosts Options]の順にクリックします。
-2. **[Log]**をクリックします。
-3. **[Folder]**編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。
+2. [**Log**]をクリックします。
+3. [**Folder**]編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。
 
 Logファイルの保存場所としてリモートシステムのパスを指定することはできません。すなわち、UNCパスやマップされたネットワークドライブを[Folder]ボックスで指定すると、"Please specify a usable Windows folder where log files may be written." というエラーメッセージが表示されます。
 
 >**Backup**フォルダと既存のLogファイルを、 **Templates**および **Codes**サブフォルダと一緒に新規保存場所に移動してください。
 
-![6-33-1](/img/6-33-1.png) 
+![6-33-1](/image5/6-33-1.png) 
 
 ## 出力レベルの設定
 
@@ -41,9 +41,9 @@ GO-Globalには、以下の 6 つのLog出力レベルがあります。
 ### 出力レベルの設定方法
 
 1. Cluster Manager で、[Tools | Hosts Options]の順にクリックします。
-2. **[Log]**をクリックします。
-3. **[Output level]**ボックスに上記の数値の 1 つを入力します。
-4. **[OK]**をクリックします。
+2. [**Log**]をクリックします。
+3. [**Output level**]ボックスに上記の数値の 1 つを入力します。
+4. [**OK**]をクリックします。
 
 >Logの出力レベルを 5 または 6 に設定した場合、ホストで生成されるLogファイルの容量は非常に大きくなるため、パフォーマンスや拡張性に悪影響が出る場合があります。したがって、GraphOn社や代理店から特別な指示がない限り、Logの出力レベルをまたは6設定すべきではありません。
 
@@ -56,23 +56,23 @@ GO-Globalでは、Application Publishing Serviceが開始されるたびにLog�
 ### Logファイルの削除方法
 
 1. Cluster Managerで、[Tools | Hosts Options]の順にクリックします。
-2. **[Log]**をクリックします。
-3. **[Maintenance]**のところで **[Delete]**を選択します。
+2. [**Log**]をクリックします。
+3. [**Maintenance**]のところで [**Delete**]を選択します。
 4. 削除するまでのLogファイルの保存期間を指定します(日単位)。
 5. Logファイルのサイズがどのくらいに達したら削除するか指定します(MB 単位)。
-6. **[OK]**をクリックします。
+6. [**OK**]をクリックします。
 7. **GO-Global Application Publishing Service**を再起動します。
 
-![6-33-2](/img/6-33-2.png) 
+![6-33-2](/image5/6-33-2.png) 
 
 ### Logファイルのバックアップ方法
 
 1. Cluster Managerで、[Tools | Hosts Options]の順にクリックします。
-2. **[Log]**をクリックします。
+2. [**Log**]をクリックします。
 3. [Maintenance]のところで [Back up]を選択します。
 4. どのくらいの時間が経過したらログファイルをLogフォルダのBackupサブディレクトリに移動するか指定します (日単位)。
 5. ログファイルがどのくらいの容量に達したらLogフォルダのBackupサブディレクトリに移動するか指定します(MB 単位)。
-6. **[OK]**をクリックします。
+6. [**OK**]をクリックします。
 7. GO-Global Application Publishing Serviceを再起動します。
 
 Application Publishing Serviceは30分ごと、および開始されるたびに、 **Log**フォルダ から指定した保存期間またはサイズに達したファイルを探し出します。その後、それらのファイルを削除するか、Logフォルダ内の **Backup**サブディレクトリに移動します。ログファイルの整理中に、現行のログファイルが指定の保存期間またはサイズに達したら、Application Publishing Serviceはそのログファイルを閉じて、新規作成したログファイルをインストールします。

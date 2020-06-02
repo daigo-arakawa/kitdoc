@@ -11,8 +11,8 @@ GO-Globalは、クライアントとホストベースのアプリケーショ�
 ###
 クリップボードのサポートを有効にする方法
 
-1. Cluster Managerで、 **[All Hosts]**の一覧から目的のホストを選択します。
+1. Cluster Managerで、 [**All Hosts**]の一覧から目的のホストを選択します。
 2. [Tools | Host Options]の順にクリックします。
-3. **[Client Access]**タブをクリックします。
-4. **[Clipboard]**チェックボックスをクリックします。
+3. [**Client Access**]タブをクリックします。
+4. [**Clipboard**]チェックボックスをクリックします。
 5. [**OK**] をクリックします。
