@@ -1,4 +1,9 @@
-# fontContrastプロパティを変更する
+---
+title: "fontContrastプロパティを変更する"
+linkTitle: ""
+weight: 19
+type: "docs"
+---
 
 DefaultWorkspaceProperties.xmlファイルのfontContrastプロパティの値を変更することで、フォントとテキストの明瞭さを調整できます。 fontContrastの最大値は2200、最小値は1000です。このプロパティはデフォルトで1400に設定されています。
 

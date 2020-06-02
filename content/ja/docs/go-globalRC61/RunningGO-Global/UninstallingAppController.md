@@ -1,4 +1,10 @@
-# AppControllerのアンインストール
+---
+title: "AppControllerのアンインストール"
+linkTitle: ""
+weight: 07
+type: "docs"
+---
+
 
 AppControllerのアンインストール方法はプラットフォームとブラウザによって異なります。
 

@@ -1,4 +1,9 @@
-# Windows Compatibility Assurance
+---
+title: "Windows Compatibility Assurance"
+linkTitle: ""
+weight: 15
+type: "docs"
+---
 
 To provide multi-user remote access on all versions of Windows, GO-Global must access internal functions and data structures in Windows. When a computer running the GO-Global Host starts, GO-Global analyzes some of the operating system's binary files and automatically identifies the addresses of the operating system functions and variables that GO-Global requires.
 

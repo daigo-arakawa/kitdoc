@@ -1,4 +1,9 @@
-# Automatic Client Updates
+---
+title: "Automatic Client Updates"
+linkTitle: ""
+weight: 08
+type: "docs"
+---
 
 管理者は、ユーザが新しいバージョンを実行しているGO-Globalホストに接続したときにGO-Globalクライアントを自動的に更新するようにGO-Globalを設定できます。
 

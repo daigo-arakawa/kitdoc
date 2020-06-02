@@ -1,4 +1,9 @@
-# GO-Globalスタートアップパラメータ
+---
+title: "GO-Globalスタートアップパラメータ"
+linkTitle: ""
+weight: 04
+type: "docs"
+---
 
 GO-Globalは、次のショートカットとハイパーリンクのパラメータをサポートしています。
 

@@ -68,6 +68,89 @@
     </item>
     
     <item>
+      <title>Docs: GO-Global AdminConsole</title>
+      <link>/docs/go-globalrc61/go-globaladminconsole/go-globaladminconsole/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/go-globaladminconsole/go-globaladminconsole/</guid>
+      <description>
+        
+        
+        &lt;p&gt;AdminConsoleでは、GO-Globalホストの管理、監視、GO-Globalホストへのクライアントアクセスの制御を行うことができます。AdminConsoleには、GO-Globalホストにサインインしているユーザのリストと、ユーザが実行しているアプリケーションが表示されます。AdminConsoleでは、アプリケーションの追加と削除、ユーザセッションの終了、ホスト上で実行されているプロセスの終了など、さまざまな管理タスクを実行できます。&lt;/p&gt;
+&lt;h3 id=&#34;adminconsoleにアクセスする方法&#34;&gt;AdminConsoleにアクセスする方法&lt;/h3&gt;
+&lt;p&gt;デスクトップ上のGO-Global Admin Consoleアイコンをダブルクリックします。もしくは&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Windowsタスクバーの[スタート]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[GraphOn GO-Global｜AdminConsole］をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;AdminConsoleの左側のパネルには、Application Publishing Serviceを実行しているネットワーク上のホストの一覧が表示されます。デフォルトでは、Application Publishing Serviceには、自分のマシンで実行されているホストの情報が表示されます。他のホストに接続してホストの情報を表示するには、[GO-Global Hosts]の一覧からホスト名をクリックします。
+ホストのアイコンに赤い X &lt;img src=&#34;/img/4-1-1.png&#34; alt=&#34;4-1-1&#34;&gt;が付いている場合、管理者はそのホストの管理者権限を持っていません。ホストのアイコンが赤×でグレー表示されている場合は、そのホストがApplication Publishing Serviceを実行していないか、オフになっています。いずれの場合も、管理者はAdminConsoleからそのホストにアクセスできません。AdminConsoleの左側パネルの［All Hosts]アイコンをクリックすると、ネットワーク上のすべてのアクティブなセッションのリストが表示されます。これにより、個々のホストに接続することなく、アクティブな GO-Globalセッションを表示することができます。また、特定のセッションのホストを検索するのにも便利です。
+AdminConsoleからそのホストにアクセスするには、各GO-Globalホストの管理者グループに所属している必要があります。ホストの管理者権限がない場合、アプリケーションの追加やプロセスの終了などを行うことができません。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/4-1-2.png&#34; alt=&#34;4-1-2&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GO-Global AppController</title>
+      <link>/docs/go-globalrc61/runninggo-global/go-globalappcontroller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/runninggo-global/go-globalappcontroller/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Global AppControllerは、GO-Globalのネイティブクライアントとブラウザアドオンの機能を1つのアプリケーションに統合し、コンピュータのデスクトップ、モバイル デバイス、またはWebブラウザから起動することができます。&lt;/p&gt;
+&lt;h3 id=&#34;appcontrollerをインストールする方法&#34;&gt;AppControllerをインストールする方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
+&lt;li&gt;[Location]ボックスに、[http://]と入力し、その後にホスト名とAppControllerインストールページを入力します。たとえば、http://hostname/goglobal/&lt;/li&gt;
+&lt;li&gt;AppController がインストールされていない場合は、ダウンロードするよう求められます。コンピュータのオペレーティングシステムからセットアッププログラムを実行します(GO-Global.AppController.exe、GO-Global.AppController.dmg、GO-Global.AppController.deb、GO-Global.AppController.rpm など)。&lt;/li&gt;
+&lt;li&gt;Mac OS Xの場合は、AppControllerを[アプリケーション]フォルダにドラッグします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;AppControllerをインストールすると、ブラウザ、スタートメニュー、またはショートカットから GO-Globalを実行できます。
+デフォルトでは、ダウンロード時にインストールファイル名がAppControllerからGO-Global.AppControllerに変更されます。Admin Consoleの[Branding]タブでインストーラ名が変更されている場合は、その名前がインストーラ名のGO-Globalに置き換わります。(例: Acme.AppController.exe)&lt;/p&gt;
+&lt;h3 id=&#34;コンピュータのメニューからgo-global-appcontrollerを実行する方法&#34;&gt;コンピュータのメニューからGO-Global AppControllerを実行する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;AppControllerメニューオプションを選択します。
+　a. Windowsで、Windowsタスクバーの[スタート]ボタンをクリックし、[プログラム] - [AppController]を選択します。
+　b. Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、[AppController]をクリックします。
+　c. Mac OS Xの場合は、メニューから「Go」→「Applications」を選択し、AppControllerをダブルクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログ内にホストのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。[&lt;strong&gt;Sign In&lt;/strong&gt;]ダイアログが表示されたら、次の情報を入力します。
+&lt;ul&gt;
+&lt;li&gt;[&lt;strong&gt;User Name&lt;/strong&gt;]ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Password&lt;/strong&gt;]ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/5-1-1.png&#34; alt=&#34;5-1-1&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GO-Globalでは、ログオンプロセスをシャットダウンする前に無効なログオンを3回試行することができます。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Windowsコンピュータでは、GO-Global ConnectionダイアログにGO-Globalホストへのショートカットを作成するオプションがあります。このオプションを使用すると、ホストに接続するときに[接続]ダイアログを迂回することができます。&lt;/p&gt;
+&lt;h3 id=&#34;windowsコンピュータでgo-globalホストへのショートカットを作成する方法&#34;&gt;WindowsコンピュータでGO-Globalホストへのショートカットを作成する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;上記のいずれかの方法でAppControllerを起動します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログにサーバのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;[Create desktop shortcut to this host]チェックボックスをオンにします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;windowsでappcontrollerのショートカットを作成する方法&#34;&gt;WindowsでAppControllerのショートカットを作成する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;デスクトップ上で右クリックします。&lt;/li&gt;
+&lt;li&gt;[ 新規作成 | ショートカットの作成 ]の順に作成します。&lt;/li&gt;
+&lt;li&gt;ショートカットの作成ダイアログボックスで、AppControllerの実行ファイルを参照します。たとえば、&amp;ldquo;C:¥Program Files¥GraphOn\AppController\AppController.exe&amp;quot;のようになります。&lt;/li&gt;
+&lt;li&gt;AppController.exeへのパスの後にパラメータを追加します。例えば、以下のようにします。
+&amp;ldquo;C:\Program Files\GraphOn\AppControllerAppController.exe&amp;rdquo; -h hostname -a Wordpad -r 
+&amp;ldquo;C:\UsersPublic\Public Documentstest.rtf&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;ショートカットの名前を入力し、[完了] をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: GO-Global の概要</title>
       <link>/docs/go-global5/go-global-no/go-global-no/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -357,6 +440,23 @@ c. Mac OS Xでは、[移動]メニューから[Applications]を選択し、 [&lt
     </item>
     
     <item>
+      <title>Docs: Licensing</title>
+      <link>/docs/go-globalrc61/appendix/licensing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/appendix/licensing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalのライセンスは、必要な同時ユーザ数に基づいており、永続的です。GO-Globalライセンスファイルはノードロックされています。つまり、それらはホストのMACアドレス(ホストID)で明確に識別され、そのホストにインストールされている場合にのみ使用可能です。GO-Globalホストは、ライセンスサーバやアプリケーションサーバとして設定できます。ライセンスも含むGO-Globalホストは、ライセンスサーバと呼ばれます。&lt;/p&gt;
+&lt;p&gt;一般的な小規模エンドユーザサイトは、アプリケーションサーバとライセンスサーバの両方として動作する1つのGO-Globalホストがあるという基本構成で動作します。一般的な大規模サイトでは、ライセンスがネットワーク上の中央のライセンスサーバにインストールされ、複数のGO-Globalアプリケーションサーバがネットワーク上の指定された中央のライセンスサーバからライセンスをチェックアウトするように設定されています。さらに、GO-Globalライセンスは冗長性と高可用性のためにいくつかの異なるライセンスサーバ設定をサポートします。これらはこのガイドの第2章で説明されています。&lt;/p&gt;
+&lt;p&gt;GraphOnは、ライセンスを購入するたびに、ライセンスマスタと呼ばれる固有のライセンスデータベースレコードを作成します。各ライセンスマスタには、ほとんどのセキュリティ関連トランザクションに使用される固有の製品コードと、単純な連続番号である固有のライセンスマスタIDが割り当てられています。ライセンスマスタIDは、ライセンスの簡単な参照としてライセンス管理に使用されます。製品コードはより長く、英数字であり、新しいライセンスの有効化、メンテナンス注文の更新、およびライセンス変更要求(LCR)などのより安全な機能に必要です。ライセンスマスタIDと製品コードはどちらもライセンスファイルで識別され、どちらもライセンスの恒久的な識別子です。&lt;/p&gt;
+&lt;p&gt;新しいバージョンのGO-Globalをサポートするため、または新しいMACアドレス(ホストID)を持つ新しいサーバにライセンスを移動する必要がある場合は、時間の経過とともに、更新されたライセンスファイルを発行する必要があります。各変更イベントで、GraphOnは更新されたライセンスファイルを提供し、古いライセンスファイルを無効にします。ライセンスマスターIDと製品コードは変わりません。それらは恒久的です。発行された新規または更新された各ライセンスファイルには、そのライセンスに対する一意のランダムなライセンスIDがあります。ライセンスIDもライセンスファイル内で識別されます。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Load Balancing</title>
       <link>/docs/go-global5/topikku-1/topikku/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -602,6 +702,74 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
     </item>
     
     <item>
+      <title>Docs: Load Balancing</title>
+      <link>/docs/go-globalrc61/advancedtopics/loadbalancing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/advancedtopics/loadbalancing/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。負荷分散設定を行いたい場合はkitASP作成の拡張パッケージGGEasyMonitorの項を参照ください。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Load balancing allows GO-Global sessions to be distributed across multiple hosts. Load balancing is required when the host resource requirements for a deployment exceed the capacity of a single host computer. Load balancing is done automatically and is transparent to the user. GOGlobal can also be used with any third party TCP/IP based load-balancing service.&lt;/p&gt;
+&lt;h3 id=&#34;load-balancing-requirements&#34;&gt;Load Balancing Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A GO-Global Host must be installed on each of the hosts in the cluster.&lt;/li&gt;
+&lt;li&gt;For Web deployment, if the load balancer is balancing connections to both the Web server (e.g., port 80) and the GO-Global Host (e.g., port 491), each of the GO-Global Hosts in the Admin Console have a Web server running and the Web server home directory should contain the GO-Global Web files. If the load balancer is only balancing connections to the GO-Global Host, the GO-Global Web files do not need to be located on each GO-Global Host. Web files can be installed on the machine running the Web server.&lt;/li&gt;
+&lt;li&gt;If an application saves any user specific settings in the registry (e.g., Microsoft Word), it is strongly recommend that users operate with roaming profiles rather than local profiles.Since there is no way of predicting which server the user will actually be logged onto in a balanced server farm, working with roaming profiles is the only way to ensure that user specific settings are available to the user at all times.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A GO-Global Host can be configured to operate as an independent host, a dependent host, or as a Relay Load Balancer. Please note that a Relay Load Balancer cannot be an application host.&lt;/p&gt;
+&lt;p&gt;When setting up a load-balanced Relay Load Balancer configuration, GraphOn recommends using a license server. For more information, see the following sections from Chapter 2: &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/~/edit/drafts/-L_fpq0Q-h3OMQTw08rI/go-global-5/sbano/raisensu-sbawosurutameno-go-global-no&#34;&gt;&lt;strong&gt;Configuring GO-Global to use a Central License Server&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;,&lt;/strong&gt; &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/~/drafts/-L_fpq0Q-h3OMQTw08rI/primary/go-global-5/sbano/raisensu-sba/sba-3-no&#34;&gt;&lt;strong&gt;Three-Server Redundancy&lt;/strong&gt;&lt;/a&gt;, and &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/go-global-5/sbano/raisensu-sba/raisensu-fuiruno&#34;&gt;&lt;strong&gt;License-File List Redundancy.&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;​&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;independent-hosts&#34;&gt;Independent Hosts&lt;/h2&gt;
+&lt;p&gt;Independent hosts are GO-Global Hosts that do not interact with other GO-Global Hosts running on the network. Independent hosts appear in the Admin Console on the first level of the GO-Global Hosts tree view as an independent node. The GO-Global setup program configures GO-Global Hosts to operate as independent hosts. GO-Global clients can connect to independent hosts directly by specifying the name or IP address of the server in the &lt;strong&gt;Connection&lt;/strong&gt; dialog or the location box of a Web browser. Clients can also connect to independent hosts through a third party network load balancer that distributes client connections among several servers. However, session reconnect is not supported in the latter configuration and must be disabled.&lt;/p&gt;
+&lt;h2 id=&#34;go-global-hosts&#34;&gt;&lt;strong&gt;GO-Global Hosts&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/img/7-1-1.png&#34; alt=&#34;7-1-1&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;relay-load-balancers&#34;&gt;Relay Load Balancers&lt;/h2&gt;
+&lt;p&gt;A Relay Load Balanceris a GO-Global Host that provides centralized control over one or more hosts. Relay Load Balancers maintain client connections and distribute GO-Global sessions across a set of load-balanced application hosts. Relay Load Balancers appear in the Admin Console on the first level of the list of All Hosts as nodes with one or more Dependent Hosts.&lt;/p&gt;
+&lt;h3 id=&#34;to-configure-a-go-global-host-to-operate-as-a-relay-load-balancer&#34;&gt;To configure a GO-Global Host to operate as a Relay Load Balancer&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the desired host from the list of &lt;strong&gt;All Hosts.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click Tools | Host Options.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Configuration&lt;/strong&gt;tab.&lt;/li&gt;
+&lt;li&gt;Type the name or IP address of the computer in the &lt;strong&gt;Relay Load Balancer&lt;/strong&gt; box.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;OK.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;A message box is displayed indicating that the change will not take effect until the &lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; on the Relay Load Balancer has been restarted. Click OK.&lt;/li&gt;
+&lt;li&gt;Stop and restart the &lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; from the Services option in the Control Panel.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After configuring a host to run as a Relay Load Balancerwith one or more dependent hosts, GO-Global load-balances client connections and ensures that sessions start successfully. If a session fails to start on the selected host, the Relay Load Balancer selects another host and tries again until it finds one that can support the session.&lt;/p&gt;
+&lt;p&gt;When setting up a Relay Load Balancer environment, be sure the same Log Folder path for the Relay Load Balancerexists on the dependent hosts. Otherwise, the Sign In dialog will not appear when users attempt to sign in to GO-Global. Create a log directory on the C: drive of each Relay Load Balancer (e.g., C:\Data\APS_LOGS) or use C:\Program Files\GraphOn\GO-Global\Log which already exists on the dependent host.Make sure this same path exists on the dependent host. In addition to changing the Log Folder path in the Admin Console, the \Log\Codes and \Log\Templates directories must be copied to the new location.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When a Relay Load Balanceris selected in the Admin Console, the number of processes running on all dependent hosts is not listed in the Admin Console&amp;rsquo;s status bar.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A Relay Load Balancerrequires a minimum of 512 MB of RAM. For most deployments and for best results, 1 GB with a multiprocessor server is recommended. Depending on the number of dependent hosts attached to the Relay Load Balancer, more RAM may be required.&lt;/p&gt;
+&lt;p&gt;Memory and CPU requirements for the dependent hosts are determined by the applications that are published and the number of users accessing the system. In general, a dependent host can support 12 &amp;ldquo;heavy&amp;rdquo; users/500 MHz CPU and 25 &amp;ldquo;light&amp;rdquo; users/500 MHz CPU. (&amp;ldquo;Heavy&amp;rdquo; is defined as a user running one or more large applications with continuous user interaction. &amp;ldquo;Light&amp;rdquo; is defined as a user running one application with intermittent user interaction.)&lt;/p&gt;
+&lt;h2 id=&#34;dependent-hosts&#34;&gt;Dependent Hosts&lt;/h2&gt;
+&lt;p&gt;A dependent host is a GO-Global Host that is connected to a Relay Load Balancer. GO-Global clients cannot connect directly to dependent hosts. Instead, they connect to the associated Relay Load Balancer, and the Relay Load Balancer selects one of the connected servers to host the session.&lt;/p&gt;
+&lt;h3 id=&#34;to-configure-a-go-global-host-to-operate-as-a-dependent-host&#34;&gt;To configure a GO-Global Host to operate as a dependent host&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the desired host from the list of &lt;strong&gt;All Hosts.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click Tools | Host Options.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Configuration&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;Click Application Host.&lt;/li&gt;
+&lt;li&gt;Click Dependent Host.&lt;/li&gt;
+&lt;li&gt;Type the name or IP address of the Relay Load Balancer in &lt;strong&gt;Relay Load Balancer&lt;/strong&gt; edit box.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;OK.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;A message box is displayed indicating that the change will not take effect until the &lt;strong&gt;Application Publishing Service&lt;/strong&gt; has been restarted. Click &lt;strong&gt;OK.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Stop and restart the &lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; from the Services option in the Control Panel.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When the Application Publishing Service is restarted, the dependent host will appear beneath the Relay Load Balancer in the Admin Console&amp;rsquo;s list of GO-Global Hosts. A dependent host with a yellow x indicates that the host has been &amp;ldquo;orphaned;&amp;rdquo; in other words, that its Relay Load Balancer has gone down. If a host&amp;rsquo;s icon has a red X, the administrator does not have administrative rights on the host. If the host&amp;rsquo;s icon has a red X and is grayed out, the host is no longer running the Application Publishing Service or it has been turned off. In either case, the administrator is unable to access that host from the Admin Console.&lt;/p&gt;
+&lt;p&gt;Users are authenticated on dependent hosts, not on Relay Load Balancers. As a result, dependent hosts can be located on a different network than their associated Relay Load Balancer. For example, dependent hosts can be located behind a firewall on an internal, Active Directory network, and the associated Relay Load Balancer can be located in a demilitarized zone(DMZ)that is outside the firewall. If &lt;strong&gt;Integrated Windows authentication&lt;/strong&gt; is used, clients and dependent hosts must be located on the same domain, but the Relay Load Balancer can be located on a different domain.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We recommend installing the same set of applications on each dependent host and using the same installation path.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;/img/7-1-2.png&#34; alt=&#34;7-1-2&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Mobile App Toolbar Editor</title>
       <link>/docs/go-global6/mobile-app-toolbar-editor/mobile-app-toolbar-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -615,6 +783,28 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
 &lt;h3 id=&#34;mobile-app-toolbar-editorの起動方法&#34;&gt;Mobile App Toolbar Editorの起動方法&lt;/h3&gt;
 &lt;p&gt;Programs | GraphOn GO-Global | Mobile App Console の順にクリックします。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/6-1-1.png&#34; alt=&#34;6-1-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Admin Consoleで公開されているアプリケーションが一覧表示され、それぞれがデフォルトのツールバーを使用するように設定されます。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Add、Edit、Remove、Duplicateボタンはカスタムツールバーにのみ適用され、アプリケーションには適用されません。 たとえば、[Remove]ボタンをクリックすると、選択したアプリケーションからカスタムツールバーが削除されます。 アプリケーションはAdmin Consoleで公開されたままになり、ユーザは引き続き利用できるようになります。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Mobile App Toolbar Editor</title>
+      <link>/docs/go-globalrc61/mobileapptoolbareditor/mobileapptoolbareditor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/mobileapptoolbareditor/mobileapptoolbareditor/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;mobile-app-toolbar-editor&#34;&gt;Mobile App Toolbar Editor&lt;/h2&gt;
+&lt;p&gt;Mobile App Toolbar Editorは、アプリケーションがモバイルデバイスからアクセスされたときに表示されるツールバーボタンとメニューを定義するために使用されます。ボタンとメニュー項目の両方がアプリケーション下部のツールバーに表示されます。メニュー項目には、メインツールバーのすぐ上の別のツールバーに表示されるサブメニュー項目を含めることができます。&lt;/p&gt;
+&lt;h3 id=&#34;mobile-app-toolbar-editorの起動方法&#34;&gt;Mobile App Toolbar Editorの起動方法&lt;/h3&gt;
+&lt;p&gt;Programs | GraphOn GO-Global | Mobile App Console の順にクリックします。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-1-1.png&#34; alt=&#34;6-1-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Admin Consoleで公開されているアプリケーションが一覧表示され、それぞれがデフォルトのツールバーを使用するように設定されます。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Add、Edit、Remove、Duplicateボタンはカスタムツールバーにのみ適用され、アプリケーションには適用されません。 たとえば、[Remove]ボタンをクリックすると、選択したアプリケーションからカスタムツールバーが削除されます。 アプリケーションはAdmin Consoleで公開されたままになり、ユーザは引き続き利用できるようになります。&lt;/p&gt;
@@ -731,6 +921,51 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
 &lt;blockquote&gt;
 &lt;p&gt;この章では、GO-Globalホスト上のユーザアカウントの管理方法に関する基本情報を説明します。さらに詳しい情報については、Windows のヘルプ(スタート メニューからアクセス可能)を参照してください。&lt;/p&gt;
 &lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: ユーザアカウントの管理</title>
+      <link>/docs/go-globalrc61/administeringuseraccounts/administeringuseraccounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/administeringuseraccounts/administeringuseraccounts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalホスト上のアプリケーションにアクセスするには、クライアントはホストマシンにサインインする必要があります。ユーザがGO-Globalクライアントを起動すると、ユーザ名、パスワード、およびアクセスするホスト名の入力が求められます。この情報はオプションで暗号化され、GO-Globalホスト上で実行されているApplication Publishing Serviceに渡されます。その後、Application Publishing ServiceはWindowsの標準的なマルチユーザ機能を使用してログオン操作を実行します。
+ユーザがホストにサインインし、ドメインが指定されていない場合、GO-Globalホストは最初にローカルマシン上のアカウントの認証を試み、次にマシンのドメイン、そして最後に信頼できるドメインの認証を試みます。ユーザは、この既定の動作をオーバーライドしてドメインを指定することができ、[Sign In]ダイアログの[User Name]ボックスにドメイン名の後にバックスラッシュ（\）とネットワークユーザ名を入力することでドメインを指定できます。例えば、NORTH\johngのようにです。GO-Global ホスト上のローカルユーザ名がドメインアカウントと同じユーザ名で、それぞれ異なるパスワードが設定されている場合、GO-Globalはこれらを2つの別個のアカウントとして扱います。たとえば、次のシナリオを考えてみましょう。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GO-Globalホスト上のローカルアカウント、ローカルのパスワードを持つjohng&lt;/li&gt;
+&lt;li&gt;ドメインのパスワードを持つドメインアカウントjohng&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;サインインダイアログでユーザ名、パスワードをローカルで入力して johng と入力すると、アカウントはローカルのGO-Globalホストで認証されます。[Sign In]ダイアログでパスワードをドメインでjohngと入力すると、GO-Globalはドメインでの認証を試みませんが、無効なユーザ名またはパスワードで失敗します。[Sign In]ダイアログの [User Name]フィールドでドメイン名を指定する必要があります。たとえば、NORTH\johngです。
+ユーザがサインインした後、GO-Globalはホストのオペレーティングシステムに依存して、マルチユーザ環境でアプリケーションを安全に実行するために必要なセキュリティを提供します。アプリケーションは、プライベートセッションを確保するために、クライアントユーザのセキュリティコンテキストで実行されます。すべてのマシンおよびネットワークリソースへのアクセスは、オペレーティングシステムおよび個々のユーザのセッションに付与された権限によって管理されます。
+ユーザは GO-Global ホスト上でインタラクティブに（ローカルに）ログオンできる必要があります。ローカルセキュリティポリシー、ドメインセキュリティポリシー、およびドメイン コントローラセキュリティポリシーでユーザにローカルログオン権限を割り当てます。
+この章では、GO-Globalホストでのユーザアカウントの管理に関する基本情報を説明します。詳細については、[スタート]メニューからアクセスできるWindowsヘルプを参照してください。&lt;/p&gt;
+&lt;h2 id=&#34;ユーザプロファイルの設定&#34;&gt;ユーザプロファイルの設定&lt;/h2&gt;
+&lt;p&gt;ほとんどのWindowsアプリケーションは、ユーザ固有の設定やファイルをユーザのWindowsプロファイルの下に保存します。既定では、Windowsはシステムにログオンする各ユーザに対してローカルプロファイルを作成します。ローカルプロファイルは特定のコンピュータに固有のものであり、複数のGO-Globalホストを実行している場合はうまく機能しません。複数のホスト環境を実行している場合は、移動ユーザプロファイルを設定する必要があります。移動ユーザプロファイルはリモートに保存され、そのプロファイルが有効なネットワーク接続されたコンピュータからアクセスできます。移動ユーザプロファイルを持つユーザがネットワーク接続されたコンピュータにログオンすると、最後にログオフしたときと同じようにデスクトップが表示されます。マルチホスト環境では、ユーザ固有の設定を常に利用できるようにするには、移動ユーザプロファイルを使用するしかありません。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;プロファイルは、作成されたプラットフォーム上でのみ有効です。たとえば、Windows Server 2016プロファイルは、Windows Server 2016コンピュータでのみ使用できます。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;ファイルのパーミッションを設定する&#34;&gt;ファイルのパーミッションを設定する&lt;/h2&gt;
+&lt;p&gt;システム管理者として、特定のファイルやリソースへのユーザアクセスを制限する必要があるかもしれません。ホストには複数のユーザがアクセスしていることを念頭に置いてください。特に負荷分散されたサーバ環境では、ユーザがローカルのGO-Globalホストにファイルを保存できないように、システムおよびアプリケーションフォルダを書き込み保護することをお勧めします。そうしないと、次回ユーザがGO-Globalにログオンして別のサーバに転送されたときに、ファイルおよびフォルダにアクセスできなくなります。Windowsエクスプローラを使用して、サーバ上のファイルのアクセス許可を設定する必要があります。ファイルのアクセス許可を設定することで、アプリケーション、プリンタ、およびフォルダへのユーザのアクセスを制限することができます。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Windowsエクスプローラで、ヘルプボタンを選択するか、F1を押してファイルのパーミッション設定の詳細を確認します。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;ネットワークプリンタの設定&#34;&gt;ネットワークプリンタの設定&lt;/h2&gt;
+&lt;p&gt;管理者として、GO-Globalクライアントが使用するネットワークプリンタを設定することができます。まず、ホストに直接接続するポートを GO-Globalホストに作成してから、プリンタをローカルにインストールする必要があります。これにより、プリンタへの直接アクセスが可能になります。&lt;/p&gt;
+&lt;h3 id=&#34;go-globalホストにポートを追加する方法&#34;&gt;GO-Globalホストにポートを追加する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[スタート | 設定 | プリンタ] の順にクリックします。&lt;/li&gt;
+&lt;li&gt;[プリンタの追加]をダブルクリックします。&lt;/li&gt;
+&lt;li&gt;ローカルプリンタを選択し、[次へ]をクリックします。&lt;/li&gt;
+&lt;li&gt;[新しいポートの作成] をクリックし、種類として[標準 TCP/IP ポート]を選択します。[次へ]をクリックします。&lt;/li&gt;
+&lt;li&gt;プリンタウィザードの指示に従って、プリンタのIPアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;左側のプリンタメーカを選択し、右側のプリンタモデルを選択するか、[ディスク使用]をクリックします。&lt;/li&gt;
+&lt;li&gt;ウィザードの指示に従って、適切なプリンタドライバをインストールします。&lt;/li&gt;
+&lt;/ol&gt;
 
       </description>
     </item>
@@ -888,6 +1123,100 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
     </item>
     
     <item>
+      <title>Docs: Custom Toolbarsの作成</title>
+      <link>/docs/go-globalrc61/mobileapptoolbareditor/creatingcustomtoolbars/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/mobileapptoolbareditor/creatingcustomtoolbars/</guid>
+      <description>
+        
+        
+        &lt;p&gt;ショートカットキーを確認するために、カスタムツールバーを作成しているアプリケーションのメニューを確認します。すべてのアプリケーションには独自のショートカットがあり、一方で機能するショートカットは他方で機能しない可能性があります。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-1.png&#34; alt=&#34;6-2-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Microsoft Wordやワードパッドなどのツールバーがあるアプリケーションでは、[]タブで[Alt] + [H]をクリックして使用可能なショートカットを表示します。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-2.png&#34; alt=&#34;6-2-2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;カスタムツールバーを作成するための次の手順では、ワードパッドをサンプルアプリケーションとして使用します。&lt;/p&gt;
+&lt;h3 id=&#34;ボタンの追加方法&#34;&gt;ボタンの追加方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;アプリケーションのリストからアプリケーションを選択して、[Edit]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;Add Buttonをクリックして、Add Buttonダイアログを開きます。&lt;/li&gt;
+&lt;li&gt;[Label]フィールドに新しいボタンの名前を入力します。&lt;/li&gt;
+&lt;li&gt;関連付けられているショートカットを追加します。キーボードのショートカットキーストロークを使って、これを行います。たとえば、キーボードのCtrl+Xを押すと、これが[Shortcuts]フィールドに表示されます。&lt;/li&gt;
+&lt;li&gt;[Add]をクリックします。これにより、ボタンとショートカットがツールバーリストに追加されます。&lt;/li&gt;
+&lt;li&gt;[Apply]をクリックします。このボタンは、モバイルクライアントデバイスのアプリケーションのツールバーに表示されます。ボタンやメニュー項目を追加し続けることも、[Custom Toolbars List]ボタンをクリックして別のアプリケーションにツールバーやメニュー項目を追加することもできます。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;次の例では、切り取り(Ctrl + X)、コピー(Ctrl + C)、貼り付け(Ctrl + V)、閉じる(Shift + F4)のボタンがカスタムツールバーに追加されています。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-3.png&#34; alt=&#34;6-2-3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;メニュー項目はツールバーボタンに似ていますが、最大3つのサブメニュー項目を持つことができます。&lt;/p&gt;
+&lt;h3 id=&#34;メニューアイテムの追加方法&#34;&gt;メニューアイテムの追加方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;リストからアプリケーションを選択して[Edit]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[Add Menu]ボタンをクリックして[Add Menu]ダイアログを開きます。[Label]フィールドにメニュー項目の名前を入力します。&lt;/li&gt;
+&lt;li&gt;メニューの場合、[Shortcuts]フィールドは通常空白のままです。 ただし、メニューを開いたときにアプリケーションにアクションを実行させる場合は、ショートカットフィールドにそのアクションのショートカットを入力します。&lt;/li&gt;
+&lt;li&gt;[Add]をクリックします。&lt;/li&gt;
+&lt;li&gt;[Apply]をクリックします。このメニュー項目は、クライアントデバイスのアプリケーションのツールバーに表示されます。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-4.png&#34; alt=&#34;6-2-4&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;メニューにボタンを追加する方法&#34;&gt;メニューにボタンを追加する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;ツールバーリストからメニュー項目を強調表示して、[Add Button]をクリックします。&lt;/li&gt;
+&lt;li&gt;[Add Button]ダイアログで、[Label]フィールドに新しいボタンの名前を入力します。&lt;/li&gt;
+&lt;li&gt;[Shortcuts]フィールドにアクションのショートカットを入力します。&lt;/li&gt;
+&lt;li&gt;[Add]をクリックします。&lt;/li&gt;
+&lt;li&gt;[Apply]をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;次の例では、写真、図面、およびオブジェクトを挿入するためのボタンを含む[]メニューが作成されました。ショートカットキーを使用してワードパッドにオブジェクトを挿入するには、ユーザはAlt + H、次にOをクリックします。適切なショートカットキーを使用して、ツールバーエディタでオブジェクトのサブメニューボタンを作成します。モバイルデバイスのユーザは、カスタムツールバーの[Object]ボタンをクリックして、オブジェクトをドキュメントに挿入できます。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-5.png&#34; alt=&#34;6-2-5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;メニューレベルごとに最大10項目、ボタンあたり最大5つのショートカットを追加できます。&lt;/p&gt;
+&lt;h3 id=&#34;ツールバーボタンとメニュー項目の編集の方法&#34;&gt;ツールバーボタンとメニュー項目の編集の方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;ボタンまたはメニュー項目を編集するには、リストから項目を強調表示して[edit]をクリックします。&lt;/li&gt;
+&lt;li&gt;既存のショートカットを削除するには、[Shortcuts]フィールドのテキストの上にマウスを置きます。 灰色でハイライト表示されたテキストの上に表示されているxをクリックします。&lt;/li&gt;
+&lt;li&gt;新しいショートカットを入力してください。&lt;/li&gt;
+&lt;li&gt;[Save]をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-6.png&#34; alt=&#34;6-2-6&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ボタンまたはメニュー項目を上下に移動する方法&#34;&gt;ボタンまたはメニュー項目を上下に移動する方法&lt;/h3&gt;
+&lt;p&gt;ツールバーリストの項目を強調表示して、[Move up]または[Move down]ボタンをクリックします。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-7.png&#34; alt=&#34;6-2-7&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ボタンまたはメニュー項目を削除する方法&#34;&gt;ボタンまたはメニュー項目を削除する方法&lt;/h3&gt;
+&lt;p&gt;ツールバーリストの項目を強調表示して、[delete]ボタンをクリックします。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-8.png&#34; alt=&#34;6-2-8&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;デフォルトのツールバーに戻す方法&#34;&gt;デフォルトのツールバーに戻す方法&lt;/h3&gt;
+&lt;p&gt;デフォルト設定ボタンをクリックします。これにより、カスタムツールバー設定が削除されます。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-9.png&#34; alt=&#34;6-2-9&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;アプリケーションの子プログラム用のカスタムツールバーを追加する方法&#34;&gt;アプリケーションの子プログラム用のカスタムツールバーを追加する方法&lt;/h3&gt;
+&lt;p&gt;Admin Consoleで公開されたアプリケーションの中には、アプリケーションのタスクのサブセットを実行する1つ以上の子プログラムを起動するものがあります。場合によっては、アプリケーションの主な機能が未公開の子プログラムによって提供されることがあります。このような場合、[Add]ボタンを使用して子プログラムのツールバーを追加したり、[Duplicate]ボタンを使用して既存のツールバーを子プログラムにコピーしたりできます。&lt;/p&gt;
+&lt;h3 id=&#34;子プロセス用のツールバーを作成する方法&#34;&gt;子プロセス用のツールバーを作成する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;ツールバーエディタで、[Add]をクリックします。&lt;/li&gt;
+&lt;li&gt;子プログラムの実行可能ファイルを参照します。&lt;/li&gt;
+&lt;li&gt;ファイルを選択して[Open]をクリックします。&lt;/li&gt;
+&lt;li&gt;上記のようにボタンとメニューを追加します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;ツールバーをコピーする方法&#34;&gt;ツールバーをコピーする方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;既存のツールバーをコピーして子プログラムで使用するには、コピーするアプリケーションのツールバーをリストから選択します。&lt;/li&gt;
+&lt;li&gt;[Duplicate]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;子プログラムの実行可能ファイルを参照します。&lt;/li&gt;
+&lt;li&gt;ファイルを選択して[Open]をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;カスタムツールバーの表示&#34;&gt;カスタムツールバーの表示&lt;/h3&gt;
+&lt;p&gt;モバイルデバイスでGO-Global Appを開いて作成したツールバーボタンを表示できます。たとえば、ワードパッドを起動すると、画面下部にカスタムツールバーボタンが表示されます。[Insert]をタップしてサブメニューを開きます。Xをタップしてサブメニューを閉じます。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/6-2-10.png&#34; alt=&#34;6-2-10&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ツールバーディレクトリの変更&#34;&gt;ツールバーディレクトリの変更&lt;/h3&gt;
+&lt;p&gt;ツールバーファイルはデフォルトでC:\ProgramData\GraphOn\GO-Global\MobileAppSettingsディレクトリに格納されています。GO-Globalホストが複数ある場合は、ツールバーを共有ネットワークディレクトリに保存し、すべてのホストで同じツールバーファイルを使用できます。&lt;/p&gt;
+&lt;h3 id=&#34;ツールバーが格納されているディレクトリを変更する方法&#34;&gt;ツールバーが格納されているディレクトリを変更する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[Toolbar Directory]フィールドで目的のディレクトリへのパスを参照するか入力します。&lt;/li&gt;
+&lt;li&gt;[Apply]をクリックします。&lt;/li&gt;
+&lt;li&gt;すでにツールバーを作成している場合は、既存のツールバーを新しいディレクトリにコピーするかどうかを尋ねられます。&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: GO-Global Web App</title>
       <link>/docs/go-global6/running-go-global/go-global-web-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -911,6 +1240,69 @@ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
 &lt;blockquote&gt;
 &lt;p&gt;デフォルトでは、GO-Globalは自動的にフルGO-Global Appをダウンロードして実行しようとします。 ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global Appをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。&lt;/p&gt;
 &lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GO-Global Web App</title>
+      <link>/docs/go-globalrc61/runninggo-global/go-globalwebapp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/runninggo-global/go-globalwebapp/</guid>
+      <description>
+        
+        
+        &lt;p&gt;JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。&lt;/p&gt;
+&lt;h2 id=&#34;go-global-web-appの起動&#34;&gt;GO-Global Web Appの起動&lt;/h2&gt;
+&lt;p&gt;GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Google Chrome、Apple Safariなどの一般的なWebブラウザから実行できます。&lt;/p&gt;
+&lt;h3 id=&#34;webブラウザからgo-globalを起動方法&#34;&gt;WebブラウザからGO-Globalを起動方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
+&lt;li&gt;[Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false&lt;/li&gt;
+&lt;li&gt;**[Sign In]**ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;go-global-appcontrollerを使用したwebアプリケーションの実行&#34;&gt;GO-Global AppControllerを使用したWebアプリケーションの実行&lt;/h2&gt;
+&lt;p&gt;GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。&lt;/p&gt;
+&lt;p&gt;GO-Globalは、GO-Global AppControllerのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;useApp　　useApp = trueの場合、Webアプリケーションは完全なGO-Global AppControllerを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global AppControllerを起動しようとしません。 デフォルトでuseApp = trueです。&lt;/li&gt;
+&lt;li&gt;installApp　　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、[Get the App]リンクがGO-Global Web Appのツールバーに追加されます。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLがhttp://hostname/goglobal/logon.htmlの場合など)、GO-Globalは自動的にGO-Global AppControllerのダウンロードを開始し、ユーザにプロンプトを表示します。インストールして実行します。または、installAppオプションがaddLinkに設定されている場合(たとえば、URLがhttp://hostname/goglobal/logon.html?installApp = addLinkの場合)、Webアプリケーションのツールバーに[Get the App]リンクが追加されます。ユーザがこのリンクをクリックすると、GO-Globalはダウンロードを開始し、GO-Global AppControllerの実行とインストールのプロセスを案内します。&lt;/p&gt;
+&lt;p&gt;GO-Global AppControllerをインストールして有効にすると、「埋め込み」URLパラメータを使用して、アプリケーションをブラウザウィンドウ内で実行するかブラウザウィンドウ外で実行するかを制御できます。 embedパラメータが指定されていないか、または&amp;rdquo; false&amp;quot;に設定されている場合(たとえば、URLがhttp://hostname/goglobal/logon.html?embed = falseである場合)、ユーザのアプリケーションはGO-Global AppControllerを介してブラウザのウィンドウ外で実行されます。&lt;/p&gt;
+&lt;p&gt;あるいは、埋め込みパラメータが「true」に設定されている場合(例えば、URLが http://hostname/goglobal/logon.html?embed = true)アプリケーションはWebアプリケーションを介してブラウザウィンドウ内で実行されます。この場合、GO-GlobalもGO-Global AppControllerを起動します(インストールされて有効になっている場合)が、GO-Global AppControllerはコンピュータのデバイス(プリンタやドライブなど)へのアクセスを提供する目的でのみ使用されます。セッションのアプリケーションは表示されません。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;AppControllerをブラウザウィンドウ内で実行すると、デフォルトの背景色は白になります。背景色は、HostProperties.xmlファイルのDesktopColorプロパティで指定します。色は10進数形式のRGB値として指定されます。例えば、白のデフォルトの色は10進数で16777215（16進数では0x00FFFFFF）です。例えば、背景色を青に変更するには、DesktopColorプロパティを10906937に設定します。
+GO-Global AppControllerがインストールされていないかuseApp = falseの場合、embedオプションは無視されます。それ以外の場合、embedはデフォルトでfalseに設定されています。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;埋め込みオプションが有効な場合、AppControllerは、-hostパラメータをホストのconfig.xmlファイルのhostaddressフィールドの値に設定して起動します。GO-Global インストーラは、この値をコンピュータの名前に初期化します。ユーザーが別のアドレス（パブリック DNS アドレスなど）でホストに接続する場合は、config.xml ファイルの hostaddress フィールドをこのアドレスに設定する必要があります。&lt;/p&gt;
+&lt;h3 id=&#34;ホストアドレスの値を変更する方法&#34;&gt;ホストアドレスの値を変更する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;アプリケーション公開サービスを停止します。&lt;/li&gt;
+&lt;li&gt;C:\ProgramData\GraphOnOn\GO-Globalディレクトリにconfig.xmlファイルを配置してください。&lt;/li&gt;
+&lt;li&gt;Wordpadでconfig.xmlを開き、&lt;hostaddress&gt;フィールドを探してください。&lt;/li&gt;
+&lt;li&gt;ホストアドレスの値を更新します。&lt;/li&gt;
+&lt;li&gt;編集した.xmlファイルを保存します。&lt;/li&gt;
+&lt;li&gt;Application Publishing Serviceを起動します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GO-Global Web Appを使用する場合、アプリケーションのメニューまたはツールバーからクリップボードにコピーして貼り付けることはサポートされていません。代わりに、Windowsでは、キーボードショートカットのCtrl+Cを使用してコピーし、Ctrl+Vを使用して貼り付けます。Macでは、キーボードショートカットのCommand-Cを使用してコピーし、Command-Vを使用して貼り付けます。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;accessing-the-host-or-relay-server-directly-from-the-internet&#34;&gt;Accessing the Host or Relay Server Directly from the Internet&lt;/h2&gt;
+&lt;p&gt;If users will be connecting to a GO-Global Host or relay server from the internet, the web server and host addresses in the URL must be public (internet) addresses. When there is no public web server available, GraphOn&amp;rsquo;s web server, apps.graphon.com, can be used.&lt;/p&gt;
+&lt;p&gt;In this case, a URL such as the following would be shared with users: &lt;a href=&#34;http://apps.graphon.com/goglobal/?host=hostname&#34;&gt;http://apps.graphon.com/goglobal/?host=hostname&lt;/a&gt;, where hostname is the public address of the GO-Global Host.&lt;/p&gt;
+&lt;p&gt;When using a web server other than GraphOn&amp;rsquo;s, the URL must use the public address of the web server. For example: &lt;a href=&#34;http://webservername.com/goglobal/?host=hostname&#34;&gt;http://webservername.com/goglobal/?host=hostname&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If users will be accessing a host or relay server from both the Internet and the internal network, the external and internal DNS should be configured so that the public and internal addresses of the web server are the same, and the public and internal addresses of the host are the same. Alternatively, administrators can provide external and internal users with different URLs, but this may be confusing to users.&lt;/p&gt;
+&lt;p&gt;When hosts are accessed via a third-party load balancer, the URL must include the address of the load-balancer. For example, &lt;a href=&#34;http://loadbalancer.com/goglobal/?host=hostname&amp;amp;app=Notepad&#34;&gt;http://loadbalancer.com/goglobal/?host=hostname&amp;amp;app=Notepad&lt;/a&gt;​&lt;/p&gt;
 
       </description>
     </item>
@@ -1116,6 +1508,46 @@ SERVER wilson 000C29C7B953 28001
         &lt;h1 id=&#34;rapidx-protocol-rxp&#34;&gt;RapidX Protocol (RXP)&lt;/h1&gt;
 &lt;p&gt;RXPは、GO-Globalのクライアント - ホスト間のすべてのデータ通信に使用される独自のプロトコルです。デフォルトでは、RXPはTCPポート491を介して動作しますが、互換性のある任意のデータポートを介して動作するようにすることもできます。RXPは標準のTCP / IPプロトコルスタックの一部として動作します。低帯域幅接続を処理するように設計および最適化されています。RXP表示プロトコルはほぼ完全に非同期です。つまり、ホストとクライアントがピアからの応答を待つことはめったにありません。&lt;/p&gt;
 &lt;p&gt;RXPは現在、56ビットDESから256ビットAESまでの暗号化レベルを処理するように設計されています。 TCPトランスポートが選択されると、GO-GlobalはGraphOnのDES(Data Encryption Standard)の実装を使用します。SSLトランスポートが選択されると、GO-GlobalはOpenSSLのトランスポート層セキュリティ(TLS)の実装とOpenSSLの選択された暗号の実装、例えばAdvanced Encryption Standard(AES)を使用します。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Support for Third-Party Load Balancers</title>
+      <link>/docs/go-globalrc61/advancedtopics/supportforthird-partyloadbalancers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/advancedtopics/supportforthird-partyloadbalancers/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。負荷分散設定を行いたい場合はkitASP作成の拡張パッケージGGEasyMonitorの項を参照ください。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;GO-Global&amp;rsquo;s new Farm Host and Farm Manager roles make it easy for administrators to manage farms of GO-Global Application Hosts that are accessed via third-party load balancers. Using these roles, administrators can manage and shadow sessions running across a farm, and they can configure settings on all Farm Hosts in a farm at once. And when new Farm Hosts join a farm,they automatically inherit the settings of the other hosts in the farm.&lt;/p&gt;
+&lt;p&gt;In addition, these new roles enable users who connect to GO-Global Hosts via third-party load balancers to disconnect from their sessions from one device, and reconnect to their sessions from a different device. GO-Global automatically reconnects users to their sessions, even when the load balancer fails to connect a user to the host on which the user’s session is running. For example, if a user with a session running on Host A disconnects from the session while at work, goes home, and then reconnects to the session from a home computer, GO-Global will ensure that the user is reconnected to his or her session. If the load balancer routes the user&amp;rsquo;s connection to Host B, Host B will open a connection to Host A and relay the data between the GO-Global AppController and Host A.&lt;/p&gt;
+&lt;h3 id=&#34;to-enable-these-capabilities&#34;&gt;To enable these capabilities:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a GO-Global Farm Manager:
+a. Install the GO-Global Host on a computer that is not connected to the third-party load balancer.
+b. Run the Admin Console and set the Server Role to Farm Manager.
+c. Restart the Application Publishing Service.&lt;/li&gt;
+&lt;li&gt;On each GO-Global Application Host that is accessible from the load balancer:
+a. Run the Admin Console and set the Server Role to Farm Host.
+b. Enter the address of the Farm Manager configured in step 1 in the Farm Manager address field.
+c. Restart the Application Publishing Service.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Administrators can provide High Availability for a farm by configuring a failover Farm Manager as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a failover Farm Manager:
+a. Install the GO-Global Host on another computer that is not connected to the third-party load balancer.
+b. Run the Admin Console and set the Server Role to Farm Manager.
+c. Restart the Application Publishing Service.&lt;/li&gt;
+&lt;li&gt;On each GO-Global Application Host that is accessible from the load balancer:
+a. Run the Admin Console and append a semicolon and the address of the failover Farm Manager to the address of the primary Farm Manager in the Farm Manager address field.
+b. Restart the Application Publishing Service.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The new Farm Manager and Farm Host server roles are supported by the same infrastructure and design that has supported the GO-Global Relay Server and Dependent Host roles for many years.Unlike a Relay Server, however, a Farm Manager does not relay data between GO-Global clients and hosts and is, therefore, not subject to the same scalability limits as a Relay Server. A Farm Manager keeps track of all sessions running in a farm, but unless an administrator is shadowing a session, no data from applications running in a session passes through the Farm Manager.&lt;/p&gt;
 
       </description>
     </item>
@@ -1507,6 +1939,163 @@ d. 貼り付けたテキストの &lt;strong&gt;AllowCreateSessionOnConnect&lt;/
     </item>
     
     <item>
+      <title>Docs: アプリケーションの管理</title>
+      <link>/docs/go-globalrc61/go-globaladminconsole/managingapplications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/go-globaladminconsole/managingapplications/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Admin Consoleを使用すると、アプリケーションを公開して共有できます。&lt;/p&gt;
+&lt;h2 id=&#34;アプリケーションのインストール&#34;&gt;アプリケーションのインストール&lt;/h2&gt;
+&lt;p&gt;GO-Global を介して実行されるアプリケーションをインストールする場合、ベンダ提供の関連文書を参照して、適切なマルチユーザインストール方法を確認してください。ほとんどの場合、管理者アカウントでアプリケーションをインストールする必要がありますが、各アプリケーションによってインストール要件は異なります。またインストールは、マルチユーザ展開に関するMicrosoftのガイドラインに準拠する必要があります&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GO-Globalを介してアプリケーションを展開しても、各企業が無制限のアクセス権を取得することにはなりません。同時に実行できるアプリケーションの数に関しては、ベンダのライセンス供与規定に準拠する必要があります。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;アプリケーションの公開&#34;&gt;アプリケーションの公開&lt;/h2&gt;
+&lt;p&gt;アプリケーションはAdmin Consoleを使って公開されます。Admin Consoleを介してアプリケーションを公開するときに、アプリケーションの起動方法を制御する起動パラメータを指定できます。Interactive Quick Start Guideを実行するときは、プロンプトに従ってアプリケーションを公開してください。&lt;/p&gt;
+&lt;h3 id=&#34;アプリケーションを公開する方法&#34;&gt;アプリケーションを公開する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[&lt;strong&gt;All Hosts&lt;/strong&gt;]の一覧から、目的のホストを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Add&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Location&lt;/strong&gt;]ボックスの横にある [&lt;strong&gt;Browse&lt;/strong&gt;]ボタンをクリックして、アプリケーションの実行可能ファイルを見つけて選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/4-2-1.png&#34; alt=&#34;4-2-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;デフォルトでは、ブラウズダイアログはPROGRAMDATA\Microsoft\Windows\Start Menu\Programsディレクトリに開きます。最初のアプリケーションを公開した後、ダイアログが最後に公開されたアプリケーションのディレクトリで開きます。&lt;/p&gt;
+&lt;h3 id=&#34;アプリケーション名の変更&#34;&gt;アプリケーション名の変更&lt;/h3&gt;
+&lt;p&gt;アプリケーションの .exeファイルを参照すると、そのファイル名が自動的に[Display Name]ボックス内に入力されます(アプリケーション名は Program Window に表示されます)。そのままデフォルトの表示名を使用することも、新しい名称を入力することも可能です。アプリケーションの表示名をスペースのみにすることはできません。また、バックスラッシュ()も使用できません。このフィールドは空欄のままにしないでください。&lt;/p&gt;
+&lt;h3 id=&#34;アプリケーションアイコンの変更&#34;&gt;アプリケーションアイコンの変更&lt;/h3&gt;
+&lt;p&gt;アプリケーションのデフォルトアイコン以外のアイコンを選択する場合は、[]ボタンをクリックします。&lt;/p&gt;
+&lt;h3 id=&#34;起動状態の変更&#34;&gt;起動状態の変更&lt;/h3&gt;
+&lt;p&gt;[Startup State]セクションで、アプリケーションを最大化、最小化、通常モードのいずれで起動するかを選択します。デフォルトの起動状態は通常モードです。&lt;/p&gt;
+&lt;h3 id=&#34;開始ディレクトリの変更&#34;&gt;開始ディレクトリの変更&lt;/h3&gt;
+&lt;p&gt;アプリケーションの実行可能ファイルを参照した場合は、ディレクトリのパス名が自動的に[Start Directory]ボックスに表示されます。それ以外の場合は、アプリケーションを起動するディレクトリのフルパス名を入力します。&lt;/p&gt;
+&lt;h3 id=&#34;コマンドラインオプションの指定&#34;&gt;コマンドラインオプションの指定&lt;/h3&gt;
+&lt;p&gt;[Command-Line Options]ボックスで、アプリケーションの起動パラメータを指定できます。これらのパラメータは各アプリケーションに固有のものであるため、特定の起動パラメータについてはアプリケーションのドキュメントを参照してください。&lt;/p&gt;
+&lt;h2 id=&#34;公開アプリケーションへのリンクの共有&#34;&gt;公開アプリケーションへのリンクの共有&lt;/h2&gt;
+&lt;p&gt;Admin Consoleの[Get Link]ボタンをクリックすると、選択したアプリケーションへのリンクをコピーしてユーザと共有し、そのアプリケーションにすばやくアクセスできます。&lt;/p&gt;
+&lt;h3 id=&#34;アプリケーションリンクを共有する方法&#34;&gt;アプリケーションリンクを共有する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;インストールされている &lt;strong&gt;アプリケーションのリスト&lt;/strong&gt;から、共有したいアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;インストール済みアプリケーションのリストの右側にある[Get Link]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[Application Link]ダイアログで、[Copy]ボタンをクリックしてリンクをクリップボードにコピーします。&lt;/li&gt;
+&lt;li&gt;リンクを電子メールまたはインスタントメッセージに貼り付けて、ユーザと共有します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/4-2-2.png&#34; alt=&#34;4-2-2&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Admin Consoleがチュートリアルモードで実行されている場合、[Copy]ボタンをクリックすると、次のメッセージが表示されます。[Copy]をクリックしてこのリンクをクリップボードにコピーします。それを電子メールまたはインスタントメッセージに貼り付けて、ユーザと共有できます。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;ブラウザ外でのアプリケーションの実行&#34;&gt;ブラウザ外でのアプリケーションの実行&lt;/h2&gt;
+&lt;p&gt;ユーザが公開アプリケーションへのリンクをクリックしてGO-Globalホストにサインインすると、アプリケーションが開き、Webブラウザの外部で実行されます。このデフォルト設定を無効にするには、[Run application outside the browser]のチェックを外します。これにより、パラメータ&amp;amp;embed = trueがURLに追加されます。このパラメータを追加してユーザがリンクをクリックすると、アプリケーションはユーザのWebブラウザ内で実行されます。&lt;/p&gt;
+&lt;h2 id=&#34;ホストアドレスの編集&#34;&gt;ホストアドレスの編集&lt;/h2&gt;
+&lt;p&gt;ホストアドレスは、GO-Global AppControllerまたはWeb Appがホストコンピュータへの接続に使用するアドレスを指定します。デフォルトでは、これはGO-Globalホストがインストールされているコンピュータの完全修飾ドメイン名です。クライアントが中継サーバまたはロードバランサを介してホストに接続する場合は、ホストアドレスを中継サーバまたはロードバランサの完全修飾ドメイン名に設定します。&lt;/p&gt;
+&lt;h3 id=&#34;ホストアドレスを編集する方法&#34;&gt;ホストアドレスを編集する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[Application Link]ダイアログで、[Host Address]ボックスにホストの完全修飾ドメイン名を入力します。アプリケーションリンクは自動的に更新されます。&lt;/li&gt;
+&lt;li&gt;[Copy]ボタンをクリックしてURLをコピーし、ユーザと共有します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;webサーバアドレスの編集&#34;&gt;Webサーバアドレスの編集&lt;/h2&gt;
+&lt;p&gt;Webサーバアドレスは、GO-Global Web App、GO-Global AppController、それらをサポートするファイルをユーザのブラウザに提供するために使用されるWebサーバのアドレスを指定します。デフォルトのWebサーバアドレスはapps.graphon.comです。これは、GraphOnによってホストされているWebサーバのアドレスです。あなたがあなた自身のWebサーバを使うつもりならば、GO-Global WebコンポーネントをWebサーバにインストールし、WebサーバアドレスをあなたのWebサーバのアドレスに変更してください。たとえば、WebサーバがGO-Globalホストと同じコンピュータにインストールされている場合は、Webサーバアドレスとホストアドレスを同じアドレスに設定します。&lt;/p&gt;
+&lt;h3 id=&#34;webサーバのアドレスを編集する方法&#34;&gt;Webサーバのアドレスを編集する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[Application Link]ダイアログで、[Web Server Address]ボックスにWebサーバのアドレスを入力します。アプリケーションリンクは自動的に更新されます。&lt;/li&gt;
+&lt;li&gt;[Copy]ボタンをクリックしてURLをコピーし、ユーザと共有します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ユーザが内部ネットワークとパブリックネットワークの両方からホストにアクセスする場合、ホストとWebサーバは、[Host Address]フィールドと[Web Server Address]フィールドに指定されたアドレスを介して内部ネットワークとパブリックネットワークの両方からアクセスできる必要があります。これを実現するには、内部DNSエントリがホストアドレスとWebサーバアドレスをコンピュータの内部IPアドレスにマップし、パブリックDNSエントリがホストアドレスとWebサーバアドレスをこれらのコンピュータのパブリックIPアドレスにマップする必要があります。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;デフォルトリンクプロパティの設定&#34;&gt;デフォルトリンクプロパティの設定&lt;/h2&gt;
+&lt;p&gt;デフォルトのアプリケーションリンクプロパティを[Application Link]ダイアログボックスで指定したものに設定して、ホストアドレス、Webサーバアドレス、アプリケーションをブラウザの内部で実行するか外部で実行するかを含めることができます。これらのデフォルトのリンクプロパティは、新しいアプリケーションが公開されたときに適用されます。&lt;/p&gt;
+&lt;h3 id=&#34;デフォルトのリンクプロパティを設定する方法&#34;&gt;デフォルトのリンクプロパティを設定する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[Application Link]ダイアログで、[デフォルト設定]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[Yes]をクリックして確定します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;アプリケーションの複製&#34;&gt;アプリケーションの複製&lt;/h2&gt;
+&lt;p&gt;アプリケーションの複製では、選択された登録済みアプリケーションの完全なコピーが作成されます。これは、同一のアプリケーションを異なるユーザやグループに対してさまざまな形で利用可能にする場合に便利です。たとえば、 [&lt;strong&gt;Sign In&lt;/strong&gt;]ダイアログを表示しないコマンド行オプション付きの1つのバージョンのアプリケーションと、クライアントにサインインを要求するコマンド行オプションのない別のバージョンのアプリケーションを登録できます。アプリケーションを複製する場合には、新しい表示名を選択する必要があります。&lt;/p&gt;
+&lt;h3 id=&#34;アプリケーションの複製方法&#34;&gt;アプリケーションの複製方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧から複製するアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;[Tools | Applications | Duplicate]の順にクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;－または－&lt;/p&gt;
+&lt;p&gt;[Installed Applications]の一覧の右側にある [&lt;strong&gt;Duplicate&lt;/strong&gt;]ボタンをクリックします。&lt;/p&gt;
+&lt;h2 id=&#34;アプリケーション名の変更-1&#34;&gt;アプリケーション名の変更&lt;/h2&gt;
+&lt;p&gt;アプリケーションに割り当てる表示名は、エンドユーザのProgram Windowに表示されます。アプリケーションの表示名は常時変更可能です。&lt;/p&gt;
+&lt;h3 id=&#34;アプリケーションの表示名の変更方法&#34;&gt;アプリケーションの表示名の変更方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[Installed Applications]の一覧から名前を変更するアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;[Tools | Applications | Rename]の順にクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;－または－&lt;/p&gt;
+&lt;p&gt;　　[Installed Applications]の一覧の右側にある[&lt;strong&gt;Rename&lt;/strong&gt;]ボタンをクリックします。
+　　
+3. [Rename Application]ダイアログの[New]ボックスに名前を入力します。&lt;/p&gt;
+&lt;h2 id=&#34;アプリケーションのプロパティの編集&#34;&gt;アプリケーションのプロパティの編集&lt;/h2&gt;
+&lt;p&gt;アプリケーションが公開されたら、いつでもアプリケーションのプロパティを編集できます。たとえば、アプリケーションのスタートアップ状態、実行可能ファイルの場所、アプリケーションを起動するフォルダの編集が可能です。&lt;/p&gt;
+&lt;h3 id=&#34;アプリケーションのプロパティの編集方法&#34;&gt;アプリケーションのプロパティの編集方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧からアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Properties&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;以下のいずれかの操作を行います&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;[&lt;strong&gt;Executable Path&lt;/strong&gt;]ボックス内に、新しいパス名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Start Directory&lt;/strong&gt;]ボックス内に、アプリケーションを起動するディレクトリのフルパス名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Command-Line Options&lt;/strong&gt;]ボックス内に、そのアプリケーション用のスタートアップパラメータを入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Display Name&lt;/strong&gt;]ボックス内に、そのアプリケーションの新しい表示名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Startup State&lt;/strong&gt;]セクションで、そのアプリケーションの起動モード(Maximized、Minimized、Normal)を選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Icon&lt;/strong&gt;]ボタンをクリックして、新しいアプリケーションアイコンを検索します。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/4-2-3.png&#34; alt=&#34;4-2-3&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;アプリケーションの削除&#34;&gt;アプリケーションの削除&lt;/h2&gt;
+&lt;p&gt;GO-Globalで展開したアプリケーションは、Admin Consoleで削除します。Admin Consoleでアプリケーションを削除しても、ホストからは削除されません。GO-Globalクライアントがそのアプリケーションにアクセスできなくなるだけです。&lt;/p&gt;
+&lt;h3 id=&#34;アプリケーションの削除方法&#34;&gt;アプリケーションの削除方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[Installed Applications]の一覧から削除するアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Remove&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;－または－&lt;/p&gt;
+&lt;p&gt;　　[Tools | Applications | Remove]の順にクリックします。&lt;/p&gt;
+&lt;p&gt;Admin Consoleでインストール済みアプリケーションを削除する時に、あるユーザがそのアプリケーションを実行していた場合、そのユーザのセッションは中断されません。しかし、そのユーザがそのアプリケーションを終了すると、そのアプリケーションは利用不可能になり、Program Window内にアイコンは表示されません。&lt;/p&gt;
+&lt;p&gt;Admin Consoleへのアプリケーションの登録が完了すると、 [&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧にそのアプリケーション名とパス名が表示されます。カラムのタイトルをクリックすると、一覧内の項目を昇順または降順で並べ替えできます。Admin Console内の一覧はすべて、この方法で並べ替えできます。&lt;/p&gt;
+&lt;p&gt;ODBCデータソースを使用するアプリケーションを設定する場合は、GO-Globalクライアントがそのデータソースへアクセスできるよう、ODBCドライバをシステムDSNs(データソース名)として設定する必要があります。データソースに関する詳細情報は、Windows ODBC Data Source Administratorのオンラインヘルプを参照してください。&lt;/p&gt;
+&lt;p&gt;アクセス制限により、Admin ConsoleではUNCフォーマットで指定されたパス(例 : \Machine Name\Folder Name&amp;hellip;)、またはマッピングされたネットワークドライブ上にあるパスの有効性を検証できません。公開された項目のExecutable PathまたはStart Directoryが、マッピングされたドライブを含むか、UNCパスで指定されている場合、Admin Consoleでは、それが有効であるか否かに関わらず、その指定パスを受け付けます。パスが無効な場合、またはクライアントユーザが指定された実行可能ファイルやフォルダへのアクセス権を持たない場合、公開された項目はProgram Windowに表示されません。その項目を選択して、 [&lt;strong&gt;Properties&lt;/strong&gt;]ボタンをクリックします。そこで、その項目の[Executable Path]または [Start Directory]を更新します。その項目がアンインストールまたは新規の場所に移動されていると、Application Publishing Serviceが再開された後には、Admin Console内に表示されません。&lt;/p&gt;
+&lt;p&gt;Admin Consoleでは、UNCフォーマットで指定された、またはマッピングされたドライブにある任意の項目のパスに対するグループやユーザの設定は表示できません。これが当てはまる場合、任意のアプリケーションやファイルに対して、Cluster Managerの[Application Users/Groups]画面に「User/Group settings not available.(ユーザ/グループ設定は利用できません)」というメッセージが表示されます。&lt;/p&gt;
+&lt;p&gt;マッピングされたドライブ上に存在はしていてもGO-Globalでの利用ライセンスが供与されていない項目をAdmin Console内で公開すると、その項目のアイコンがProgram Windowに表示されます。しかし、ユーザはその項目をオープンすることはできず、起動するとエラーメッセージが表示されます。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[Installed Applications]の一覧または[Application Users/Groups]の一覧内の項目上でマウスボタンを右クリックすると、最も頻繁に使用されるコマンドのショートカットメニューが表示されます。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;ユーザやグループに対するアプリケーション起動パラメータの割り当て&#34;&gt;ユーザやグループに対するアプリケーション起動パラメータの割り当て&lt;/h2&gt;
+&lt;p&gt;Admin Consoleでは、ネットワーク上またはローカルマシン上のユーザやグループに対するアプリケーションの実行方法を指定するパラメータの割り当てが可能です。ユーザやグループに対して設定されたパラメータは、ユーザやグループがそのアプリケーションを起動する度に適用されます。個人に対して設定されたアプリケーション起動パラメータは、グループやアプリケーションに対して設定されたパラメータより優先されます。クライアントがGO-Globalを介してアプリケーションを起動すると、Program Windowは、まず個別ユーザに対して割り当てられた起動パラメータを確認します。何もパラメータが割り当てられていない場合は、Program Windowがシステムから取得した順に、そのユーザが属するグループの一覧を確認します。または、Program Windowは、そのアプリケーションに割り当てられている一般的な起動パラメータを検索します。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[&lt;strong&gt;About GraphOn GO-Global&lt;/strong&gt;]ボックスで、ユーザが割り当てられているグループ、システムにおけるそのグループ一覧の順序を確認できます。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ユーザやグループ用のファイルアクセス許可は、サーバのWindows NTファイルシステム(NTFS)セキュリティ設定によって制御されます。ファイルアクセス許可は、Admin Consoleを通して設定することはできません。[Installed Applications]一覧からアプリケーションを選択すると、そのファイルやアプリケーション対してNTFSで指定されたユーザのアクセス許可が、[Application Users/Groups]一覧に表示されます。次に、特定のユーザやグループに対するアプリケーションのプロパティを編集できます。ファイルアクセス許可はNTFSで初期化されたドライブ上でのみ設定可能です。&lt;/p&gt;
+&lt;h3 id=&#34;ユーザまたはグループに対するアプリケーション起動パラメータの割り当て方法&#34;&gt;ユーザまたはグループに対するアプリケーション起動パラメータの割り当て方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧からアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Application Users/Groups&lt;/strong&gt;]の一覧からユーザまたはグループを選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Properties&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;以下のいずれかの操作を行います。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;[&lt;strong&gt;Start Directory&lt;/strong&gt;]ボックス内に、アプリケーションを起動するディレクトリ内のフル パス名を入力します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Startup State&lt;/strong&gt;]セクションで、そのアプリケーションの起動モード (Maximized、Minimized、Normal) を選択します。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Command-Line Options&lt;/strong&gt;]ボックス内に、そのアプリケーションの起動時に使用するコマンド行引数を入力します。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/4-2-4.png&#34; alt=&#34;4-2-4&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: クライアントキーボードオプションの設定</title>
       <link>/docs/go-global5/sbano/kbdotoimenoinsutru/kuraiantokbdoopushonno/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1614,6 +2203,20 @@ d. 貼り付けたテキストの &lt;strong&gt;AllowCreateSessionOnConnect&lt;/
 &lt;blockquote&gt;
 &lt;p&gt;Windows Explorerを実行中に[Help]ボタンまたはF1キーを押すと、ファイルアクセス許可の設定に関する詳細情報を参照できます。&lt;/p&gt;
 &lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: ライセンスファイルの入手</title>
+      <link>/docs/go-globalrc61/appendix/obtainingalicensefile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/appendix/obtainingalicensefile/</guid>
+      <description>
+        
+        
+        &lt;p&gt;新しいライセンスの注文が行われると、GraphOnは注文を処理して新しいライセンスマスタを作成します。ライセンス情報は、注文要求で識別された連絡先に電子メールで送信されます。ユーザは、製品コード、電子メールアドレス、ホスト名、およびホストIDを入力して、カスタマーポータルからライセンスをアクティブ化する必要があります。新しいライセンス(.lic)ファイルは添付ファイルとして電子メールで送信されます。ライセンスIDは、ライセンスファイルの名前をフォーマットするために使用されます。 (例：8d73e4k.lic、ここで8d73e4kはライセンスIDです)。 指定されたライセンスサーバに添付されたライセンスをインストールします。&lt;/p&gt;
 
       </description>
     </item>
@@ -1801,672 +2404,6 @@ Internet Explorer: &amp;lt;a href=&amp;quot;logon.html?direct=true&amp;quot;&amp
 &lt;p&gt;GO-Globalの場合は、Windowsシステムの場合は「拡張子」ボックスに.xpiと入力し、Macシステムの場合は.dmgと入力します。[MIMEの種類]ボックスにapplication / octet-streamと入力します。この変更を加えたら、Webサーバー上のWorld Wide Web発行サービスを再起動します。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;GO-Globalハイパーリンクパラメータとその指定方法についての詳細は、第5章に記載されています。&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: GO-Global スタートアップパラメータ</title>
-      <link>/docs/go-global5/go-global-clientno/go-global-suttoappuparamta/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global5/go-global-clientno/go-global-suttoappuparamta/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-Globalは、次のショートカットとハイパーリンクのパラメータをサポートしています。&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Shortcut&lt;/th&gt;
-&lt;th&gt;Parameters&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;-u&lt;/td&gt;
-&lt;td&gt;user&lt;/td&gt;
-&lt;td&gt;The name of the user’s account.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-p&lt;/td&gt;
-&lt;td&gt;password&lt;/td&gt;
-&lt;td&gt;The user’s password&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-h&lt;/td&gt;
-&lt;td&gt;host*&lt;/td&gt;
-&lt;td&gt;The network name of the GO-Global Host.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-hp&lt;/td&gt;
-&lt;td&gt;port&lt;/td&gt;
-&lt;td&gt;The port on which the GO-Global Host accepts connections. (491 by default.)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-a&lt;/td&gt;
-&lt;td&gt;app&lt;/td&gt;
-&lt;td&gt;The application to run. This may be a command-line string or the application name, as registered with the Admin Console.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-r&lt;/td&gt;
-&lt;td&gt;args&lt;/td&gt;
-&lt;td&gt;Application arguments.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-c or -nc&lt;/td&gt;
-&lt;td&gt;compression&lt;/td&gt;
-&lt;td&gt;-c enables compression. -nc disables compression. compression= “true” enables compression. compression= “false&amp;rdquo; disables compression. Compression is enabled by default.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-ac&lt;/td&gt;
-&lt;td&gt;printerconfig&lt;/td&gt;
-&lt;td&gt;Determines how printers are initialized at startup. When printerconfig =&amp;quot;all&amp;rdquo; or -ac is followed by all, all printers are automatically configured. When printerconfig = &amp;ldquo;none&amp;rdquo; or -ac is followed by none, printers are not automatically configured. When printerconfig = &amp;ldquo;default&amp;rdquo; or -ac is followed by default, the default printer is configured automatically. This is the default setting.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-f&lt;/td&gt;
-&lt;td&gt;clientframe&lt;/td&gt;
-&lt;td&gt;When set respectively to 1 or “true”, all applications running in the session will be displayed within a bounding window. When set respectively to 0 or “false”, applications will be displayed within their own individual windows.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-autoreconnect&lt;/td&gt;
-&lt;td&gt;autoreconnect&lt;/td&gt;
-&lt;td&gt;Determines how many times the client will automatically attempt to reconnect after a broken connection. When autoreconnect=n in a URL or -autoreconnect is followed by n, the client will automatically attempt to reconnect n number of times. (autoreconnect is set to 20 by default.)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-geometry&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;The width and height of the client window. For example: -geometry 800x600&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;multimonitor&lt;/td&gt;
-&lt;td&gt;When set to “true”, the session’s desktop will span all monitors. When set to “false”, applications will be confined to the primary monitor.  multimonitor = “true” by default.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;width&lt;/td&gt;
-&lt;td&gt;The width of the frame or embedded window. (800 by default.)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;height&lt;/td&gt;
-&lt;td&gt;The height of the frame or embedded window. (600 by default.)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;embed&lt;/td&gt;
-&lt;td&gt;When set to “true” applications run within the browser window. When set to “false” applications run outside the browser window.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;bInBrowser&lt;/td&gt;
-&lt;td&gt;Not supported in version 6.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;noscale&lt;/td&gt;
-&lt;td&gt;When noscale is set to &amp;ldquo;true&amp;rdquo; and the browser is resized, the resolution of the embedded GO-Global session will adjust accordingly, rather than scaling the displayed image on the client. (noscale = &amp;ldquo;false&amp;rdquo; by default.)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;useApp&lt;/td&gt;
-&lt;td&gt;When useApp= “true”, the GO-Global Web App will try to launch the full GO-Global App. When useApp=“false”, the Web App will not try to launch the GO-Global App. (useApp=“true” by default.)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;installApp&lt;/td&gt;
-&lt;td&gt;When installApp=“true”, the user will be prompted to install the full GO-Global App, if it is not already installed. If installApp=“false”, the user will NOT be prompted to install the GO-Global App and no link to install it will be displayed. When installApp=“addLink”, the Get the App link will be added to the GO-Global Web App&amp;rsquo;s toolbar if the full GO-Global App is not already installed.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-clientscale&lt;/td&gt;
-&lt;td&gt;clientscale&lt;/td&gt;
-&lt;td&gt;clientscale, followed by the percent scale factor, causes the GO-Global App on Windows to scale the applications running in the session relative to applications running locally on the client computer. For example, adding -clientscale 200 to the command-line will cause applications running in the GO-Global session to appear twice as large as applications running locally on the client computer.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-clientdpi&lt;/td&gt;
-&lt;td&gt;ClientDPIScaling Enabled&lt;/td&gt;
-&lt;td&gt;-clientdpi 1 or ClientDPIScalingEnabled=&amp;quot;true&amp;rdquo; enables the GO-Global App&amp;rsquo;s DPI scaling feature. -clientdpi 0 or ClientDPIScalingEnabled=&amp;quot;false&amp;rdquo; disables the feature. When these options are specified, they override the value of the ClientDPIScalingEnabled property in the HostProperties.xml file on the host.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-cn&lt;/td&gt;
-&lt;td&gt;computerName&lt;/td&gt;
-&lt;td&gt;When -cn 1 or computerName=1, the Windows client sends the CLIENTNAME environment variable to the host rather than the actual computer name.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;-krm&lt;/td&gt;
-&lt;td&gt;keyreportingmethod&lt;/td&gt;
-&lt;td&gt;This option instructs the client to send either unicode or keycode values to the host based on character type. -krm 0 — The client sends alpha keys as unicode and numeric keys as unicode. -krm 1 — The client sends alpha keys as keycode and numeric keys as unicode. -krm 2 — The client sends alpha keys as unicode and numeric keys as keycode. -krm 3 — The client sends alpha keys as keycode and numeric keys as keycode.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;*ログオンHTMLページでホストが指定されていない場合、GO-Globalはログオンファイルのダウンロード元のマシンを検出し、そのホストに接続します。 **[Connection]**ダイアログは表示されず、ユーザには **[Sign In]**ダイアログのみが表示されます。&lt;/p&gt;
-&lt;p&gt;host = &amp;ldquo;？&amp;ldquo;の場合ユーザはホストのアドレスの入力を求められます。アプリケーションが指定されていない場合は、Program Windowsが開きます。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;autoclose = &amp;ldquo;true&amp;quot;および bInBrowser = &amp;ldquo;true&amp;quot;の場合、ユーザのセッションが終了するとブラウザウィンドウは閉じます。 autoclose = &amp;ldquo;true&amp;quot;かつ bInBrowser = &amp;ldquo;false&amp;quot;の場合、クライアントが起動すると同時にブラウザウィンドウは閉じます。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;go-global-のショートカットの作成&#34;&gt;GO-Global のショートカットの作成&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;デスクトップ上で右クリックします。&lt;/li&gt;
-&lt;li&gt;[新規作成 | ショートカット]をクリックします。&lt;/li&gt;
-&lt;li&gt;[ショートカットの作成]ダイアログ ボックス内で、GO-Globalクライアントの実行可能ファイルを検索します。例 :&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;C:\Program Files\GraphOn\GO-Global Client\gg-client.exe
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;gg-client.exeのパスの後にパラメータを追加します。例:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;&amp;quot;C:\Program Files\GraphOn\GO-Global\Client\gg-client.exe&amp;quot; –h servername –a Wordpad –r &amp;quot;C:\Users\Public\Public Documents\test.rtf&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;ショートカットの名称を入力し、[終了]をクリックします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;mac-os-x-client-でのコマンド行引数の使用方法&#34;&gt;Mac OS X Client でのコマンド行引数の使用方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;[Terminal]を開きます。&lt;/li&gt;
-&lt;li&gt;/Applications/GO-Global.app/Contents/MacOS/ ディレクトリに切り替えます。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;./GO-Global&lt;/strong&gt;に続いてコマンド行引数を入力します。例 :&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;./GO-Global –h 196.125.101.222 -c -ac all -hp 443
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;コマンド行引数はオプションで、大文字と小文字を区別しません。 &lt;strong&gt;－r&lt;/strong&gt;以外の引数は任意の順序で付加できます。 &lt;strong&gt;－r&lt;/strong&gt;は例外的にコマンド行引数の最後に付け、 &lt;strong&gt;–a&lt;/strong&gt;引数と合わせて使用する必要があります。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;–a&lt;/strong&gt;引数を使用すると、そのアプリケーションが存在しない場合でもProgram Windowは起動されません。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;－r&lt;/strong&gt;引数で渡されるスタートアップパラメータは、各アプリケーションに固有です。スタートアップパラメータの詳細については、各アプリケーションの関連文書を参照してください。&lt;/li&gt;
-&lt;li&gt;ユーザがパスワードを持たない場合、 **－p &amp;ldquo;&amp;quot;**を使用して **[Sign In]**ダイアログをバイパスできます。ただしこの時、コマンド行でユーザ名も指定しておく必要があります｡&lt;/li&gt;
-&lt;li&gt;ユーザ名、パスワード、アプリケーション表示名、アプリケーション引数に空白がある場合には、コマンド行引数で引用符を使用する必要があります。たとえば、Adobe Acrobat Readerを起動する場合は、引数 **–a &amp;ldquo;Acrobat Reader&amp;rdquo;**とします。同様に、ユーザ名「Jim C」は、 &lt;strong&gt;–u &amp;ldquo;Jim C&amp;rdquo;&lt;/strong&gt; と指定します。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;mac-os-xでデスクトップショートカットを作成する方法&#34;&gt;Mac OS Xでデスクトップショートカットを作成する方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;アプリケーションフォルダからAutomatorを実行します。&lt;/li&gt;
-&lt;li&gt;ドキュメントのタイプとしてアプリケーションを選択します。&lt;/li&gt;
-&lt;li&gt;アクションにシェルスクリプトを実行を選択します。&lt;/li&gt;
-&lt;li&gt;ドキュメント化されたGO-Global起動パラメータのいずれかを使用して、[Run Shell Script]ダイアログに次のコマンドラインを追加します。例 :&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;/Applications/GO-Global.app/Contents/MacOS/GO-Global -h [HostName] -u [UserName] -p [Password] -a [Application] &amp;amp;
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;アプリケーションを適切な名前でデスクトップに保存します。&lt;/li&gt;
-&lt;li&gt;アプリケーションを実行すると、与えられた起動パラメータでGO-Globalが実行されます。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;GO-GlobalをWebブラウザから実行する場合は、logon.htmlページを参照するハイパーリンクに引数を追加することによってGO-Globalの起動パラメータを指定できます。これらのハイパーリンクは、文書、Webページ、電子メール、インスタントメッセージなどに挿入できます。&lt;/p&gt;
-&lt;h3 id=&#34;go-globalハイパーリンクを作成する方法&#34;&gt;GO-Globalハイパーリンクを作成する方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Webページをエディタで開きます。&lt;/li&gt;
-&lt;li&gt;エディタの[ハイパーリンクの挿入]オプションを選択します。&lt;/li&gt;
-&lt;li&gt;ホストのアドレスを入力し、続けて目的のハイパーリンクパラメータを入力します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;http://hostname/logon.html?mode=embed&amp;amp;width=1024&amp;amp;height=768&amp;amp;app=C:\Program Files\Windows NT\Accessories\wordpad.exe&amp;amp;args=C:\Users\Public\Public Documents\test.rtf
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;そのページを保存します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;パラメータはオプションで、大文字と小文字が区別されます。それらは任意の順序で追加できます。&lt;/li&gt;
-&lt;li&gt;パラメーター内のスペースは、 &amp;ldquo;％20&amp;quot;に置き換える必要があります。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;クライアントウィンドウのサイズ変更&#34;&gt;クライアントウィンドウのサイズ変更&lt;/h3&gt;
-&lt;p&gt;コマンドライン引数–fを使用すると、コマンドライン引数–geometryを使用してクライアントウィンドウのサイズを変更できます。コマンドラインで-geometryを指定しないと、クライアントウィンドウは最大化されます。GO-Globalクライアントをルーズウィンドウモードで実行した場合、-geometryは無効です。クライアントウィンドウのサイズを変更するには、GO-Globalクライアント実行可能ファイルに–geometryを追加し、その後に目的の幅と高さを続けます。&lt;/p&gt;
-&lt;p&gt;例:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Windows
-&amp;quot;C:\Program Files\GraphOn\GO-Global\Client\gg-client.exe&amp;quot; -f –geometry=800x600
-Linux
-./gg-client –h 196.125.010.222 –f –geometry=800x600
-Mac
-./GO-Global –h 196.125.010.222 –f –geometry=800x600
-&lt;/code&gt;&lt;/pre&gt;
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: GO-Globalのシステム要件</title>
-      <link>/docs/go-global6/introduction/system-requirements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/introduction/system-requirements/</guid>
-      <description>
-        
-        
-        &lt;h3 id=&#34;go-globalホスト&#34;&gt;GO-Globalホスト&lt;/h3&gt;
-&lt;p&gt;GO-Globalホストは、以下のWindowsオペレーティングシステムをサポートします。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Windows Server 2019 : Standard または Datacenter&lt;/li&gt;
-&lt;li&gt;Windows Server 2016 : Standard または Datacenter&lt;/li&gt;
-&lt;li&gt;Windows Server 2012 R2 : Standard または Datacenter&lt;/li&gt;
-&lt;li&gt;Windows Server 2008 R2 SP1 : Standard または Enterprise&lt;/li&gt;
-&lt;li&gt;Windows 10 : Professional または Enterprise&lt;/li&gt;
-&lt;li&gt;Windows 8.1 : Professional または Enterprise&lt;/li&gt;
-&lt;li&gt;Windows 7 SP1 : Professional または Ultimate または Enterprise&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;※マルチユーザ環境では、Windows Serverの利用を強く推奨します。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GO-Globalホストは、最新のWindows Updateがインストールされているコンピューターでサポートされています(該当する場合)。&lt;/li&gt;
-&lt;li&gt;Security Rollup Packageの有無に関係なくこれらの環境がサポートされます。&lt;/li&gt;
-&lt;li&gt;GO-Globalの管理者は、インストールを実行するためにホストの管理者権限が必要で、そのホストには TCP/IP ネッ トワークプロトコルが必要です。&lt;/li&gt;
-&lt;li&gt;GO-Globalは、指定されたポート番号491を使用します。ファイアウォール等がある場合は、このポート番号491を通過させるように設定してください。&lt;/li&gt;
-&lt;li&gt;GO-Globalは、VMware ESXiとMicrosoft Hyper-Vをサポートします。&lt;/li&gt;
-&lt;li&gt;GO-Global は、Device Guardが有効に設定されたWindows 10およびWindows Server 2016の環境で は利用出来ません。&lt;/li&gt;
-&lt;li&gt;ホストおよびクライアントは256 色以下の色深度では利用できません。1600万色またはそれ以上を推奨します。&lt;/li&gt;
-&lt;li&gt;GO-Globalホストが必要とするメモリとCPUは、公開されるアプリケーションとシステムにアクセスするユーザ数によって決まります。通常、GO-Globalホストは、500 MHz CPUにつき12の「ヘビー ユーザ」、または25の「ライトユー ザ」をサポートできます。(「ヘビーユーザ」とは、1つ以上の大容量アプリケーションを実行して常時対話を行うユーザです。「ライトユーザ」は、1つのアプリケーションを実行して断続的に対話を行うユーザです)。&lt;/li&gt;
-&lt;li&gt;GO-Globalはラウンドトリップタイム(RTT)が500ms以下の環境をサポートします。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;go-globalクライアント&#34;&gt;GO-Globalクライアント&lt;/h3&gt;
-&lt;p&gt;ユーザは、GO-Globalクライアントをサポートする任意のコンピュータからGO-Globalホストへ接続できます。GO-Globalのクライアントは、以下のプラットフォームをサポートします。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Windows 10 : Pro と Enterprise(32-bit/64-bit)GO-Globalは、最新のWindows Updateがインストールされているコンピューターでサポートされています(該当する場合)。&lt;/li&gt;
-&lt;li&gt;Windows 8.1 : Pro と Enterprise(32-bit/64-bit)&lt;/li&gt;
-&lt;li&gt;Windows 7 SP1 : (32-bit/64-bit)&lt;/li&gt;
-&lt;li&gt;Red Hat Enterprise Linux and 6 and 7 : (64-bit)&lt;/li&gt;
-&lt;li&gt;CentOS 6 and 7 : (64-bit)&lt;/li&gt;
-&lt;li&gt;SUSE Linux Enterprise Desktop 12 : (64-bit)&lt;/li&gt;
-&lt;li&gt;Ubuntu 16.04 LTS : (64-bit)&lt;/li&gt;
-&lt;li&gt;iOS 9.0 or later : iPad, iPhone, iPod Touch&lt;/li&gt;
-&lt;li&gt;Android 5.0 or later : ARMプロセッサのみをサポート&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;GO-Globalは以下のブラウザをサポートします。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Internet Explorer 11 : (32-bit)&lt;/li&gt;
-&lt;li&gt;Mozilla Firefox 52 and later : standard and ESR (32-bit/64-bit)&lt;/li&gt;
-&lt;li&gt;Apple Safari 9 or later : Mac OS X&lt;/li&gt;
-&lt;li&gt;Google Chrome : Windows 7, Windows 8.1, Windows 10, Chromebook&lt;/li&gt;
-&lt;li&gt;Microsoft Edge&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Logファイル</title>
-      <link>/docs/go-global6/mobile-app-toolbar-editor/log-files/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/mobile-app-toolbar-editor/log-files/</guid>
-      <description>
-        
-        
-        &lt;p&gt;ロギングが有効になっていると、Mobile App ConsoleはC:\ProgramData\GraphOn\GO-Global\MobileAppLogsディレクトリに格納されているログファイルにメッセージを記録します。ログ記録は、Mobile App Consoleの[Log ]パネルで有効または無効にできます。 ロギングはデフォルトで無効になっています。&lt;/p&gt;
-&lt;h3 id=&#34;ロギングを有効にする方法&#34;&gt;ロギングを有効にする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;ロギングを有効にするの横のチェックボックスをクリックします。&lt;/li&gt;
-&lt;li&gt;[Apply]をクリックします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;ログ記録が有効になっている場合は、[Log Directory]フィールドに目的のディレクトリへのパスを入力して[Apply]をクリックすることで、ログファイルが保存されているディレクトリを変更できます。&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Running the 30-Day Trial Version</title>
-      <link>/docs/go-global6/configuring-the-host/running-the-30-day-trial-version/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/configuring-the-host/running-the-30-day-trial-version/</guid>
-      <description>
-        
-        
-        &lt;p&gt;&lt;img src=&#34;/images/2-3-1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。GO-Globalの評価を行う際にはきっとエイエスピー営業部までお問い合わせください。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;GO-Global&amp;rsquo;s 30-day trial version can be downloaded from GraphOn&amp;rsquo;s web site. The Activation Wizard runs during the GO-Global trial installation, and is accessible from the Start menu after installing the host. It configures the computer to use a GraphOn product license, then activates GO-Global on the computer. GO-Global can be activated on a computer with a trial license only once.&lt;/p&gt;
-&lt;h3 id=&#34;to-run-the-activation-wizard&#34;&gt;To run the Activation Wizard&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;When the Activation Wizard opens, follow the prompts. Sign in using your GraphOn account. Create an account if you do not have one. Then click the &lt;strong&gt;Sign in&lt;/strong&gt; button.&lt;/li&gt;
-&lt;li&gt;If applicable, select a GraphOn customer account.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-GO-Global cloud trial licenses can only be used on computers that have direct access to the internet. If a computer does not have access to the internet (e.g., if it accesses the internet via a proxy server), the Activation Wizard will notify you that GO-Global is unable to communicate with GraphOn&amp;rsquo;s online license service. If you see this message, you can request an on-premises trial license as described below.
-&lt;/div&gt;
-
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Select the license you would like the computer to use. If there are no available licenses, click &lt;strong&gt;Start New Trial&lt;/strong&gt;. Specify a description for the license, then click &lt;strong&gt;OK.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;Accept&lt;/strong&gt;to accept the GO-Global License Agreement.&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;Activate&lt;/strong&gt; to enable GO-Global on this computer.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;After installing GO-Global and running the Activation Wizard, you must &lt;strong&gt;restart&lt;/strong&gt; the computer.&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-If a license is grayed out, it is not an active license, and cannot be used.
-&lt;/div&gt;
-
-&lt;h3 id=&#34;activating-go-global-using-an-on-premises-license&#34;&gt;Activating GO-Global using an on-premises license&lt;/h3&gt;
-&lt;p&gt;For computers without direct access to the internet, or if a cloud trial license cannot be established, GraphOn will generate an on-premises, Flexera-based trial license, which will be sent via email.&lt;/p&gt;
-&lt;h3 id=&#34;to-activate-go-global-using-an-on-premises-license&#34;&gt;To activate GO-Global using an on-premises license&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Determine the computer&amp;rsquo;s &lt;strong&gt;Host Name&lt;/strong&gt; and &lt;strong&gt;Host ID&lt;/strong&gt; (Physical Address).
-a. Open the Command Prompt window by clicking Start | (All) Programs | Accessories | Command Prompt.
-b. Type &lt;strong&gt;ipconfig /all&lt;/strong&gt; and press the &lt;strong&gt;Enter&lt;/strong&gt; key.
-c. Locate the computer&amp;rsquo;s &lt;strong&gt;Host Name&lt;/strong&gt; and &lt;strong&gt;Physical Address.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Email &lt;a href=&#34;mailto:sales@graphon.com&#34;&gt;sales@graphon.com&lt;/a&gt; with the computer&amp;rsquo;s Host Name, Host ID (Physical Address), and number of seats.&lt;/li&gt;
-&lt;li&gt;When you receive the license file from GraphOn:
-a. Copy the .lic file into c:\Program Files\GraphOn\GO-Global\Licensing directory.
-b. Start the &lt;strong&gt;GO-Global License Manager Service.&lt;/strong&gt;
-c. Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Upgrading from GO-Global 4.8.2 and 5.0</title>
-      <link>/docs/go-globalrc61/configuringthehost/upgradingfromgo-global482and50/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-globalrc61/configuringthehost/upgradingfromgo-global482and50/</guid>
-      <description>
-        
-        
-        &lt;blockquote&gt;
-&lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。アップグレード手順については弊社技術支援センターまでお問い合わせください。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Before upgrading to version 6.1, you must upgrade the GO-Global license(s) by submitting a License Change Request via the GraphOn portal. The version 6.1 host installer will not upgrade a computer that does not have a version 6.1 GO-Global license. After signing in to the portal, click License Management then click License Change Request and complete the form.
-After submitting the License Change Request form, a version 6.1 GO-Global license will be sent via email. Place the new license file in the directory where the existing version 5 license file is stored. (The default license folder for GO-Global version 5 is C:\Program Files\GraphOn\GO-Global\Programs.)
-Remove all older licenses from the Programs directory. Then restart the GO-Global License Manager.&lt;/p&gt;
-&lt;h3 id=&#34;to-restart-the-license-manager&#34;&gt;To restart the License Manager&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Click Control Panel | Administrative Tools | Services.&lt;/li&gt;
-&lt;li&gt;Select GO-Global License Manager from the list of services.&lt;/li&gt;
-&lt;li&gt;Right-click and select Restart.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Restarting the License Manager will not affect existing sessions running on the GO-Global Host.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;After restarting the License Manager, run the version 6.1 GO-Global host installer by double-clicking gg-host.exe.&lt;/p&gt;
-&lt;p&gt;When upgrading to version 6.1, you will be prompted to restart the computer two times. The host installer will resume automatically after restarting. As part of the installation process, existing versions of GO-Global are removed, but Registry settings and files are saved. These files can be found in the Program Files\GraphOn\GO-Global.backup folder and in the Registry at HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GO-Global.backup. The installer also moves the new license file(s) from the Programs directory to the Licensing directory.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Customers will be unable to upgrade their version 5 license to version 6.1 if their Support contract has expired. To renew, contact your GO-Global reseller or &lt;a href=&#34;mailto:sales@graphon.com&#34;&gt;sales@graphon.com&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: セッションとプロセスの管理</title>
-      <link>/docs/go-global5/cluster-manager/sesshontopurosesuno/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global5/cluster-manager/sesshontopurosesuno/</guid>
-      <description>
-        
-        
-        &lt;p&gt;システム管理者は、以下に説明するように、Cluster Managerを介して、セッションの暗号化とシャドウイング、およびプロセスとセッションの終了を行うことができます。&lt;/p&gt;
-&lt;h2 id=&#34;セッションの終了&#34;&gt;セッションの終了&lt;/h2&gt;
-&lt;p&gt;ユーザのセッションを終了すると、そのユーザが実行中のGO-Global展開アプリケーションがすべて終了し、そのユーザはGO-Globalホストからログオフします。&lt;/p&gt;
-&lt;h3 id=&#34;セッションの終了方法&#34;&gt;セッションの終了方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;[&lt;strong&gt;Sessions&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Sessions Name&lt;/strong&gt;]カラムから、終了するセッションを選択します。&lt;/li&gt;
-&lt;li&gt;[Tools | Sessions | Terminate]の順にクリックします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;プロセスの終了&#34;&gt;プロセスの終了&lt;/h2&gt;
-&lt;p&gt;プロセスとは、GO-Globalホスト上で実行中の処理で、クライアントによって起動されたものを示します。たとえば、クライアントが実行しているアプリケーションはプロセスです。実行中の各アプリケーションには、Windows タスクマネージャ内で固有名とプロセスIDが割り当てられます。これらのプロセス名とIDは、Cluster Manager内で複製されます。システム管理者は、Cluster Managerで任意のプロセスを終了できます。&lt;/p&gt;
-&lt;h3 id=&#34;プロセスの終了方法&#34;&gt;プロセスの終了方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;[&lt;strong&gt;Processes&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
-&lt;li&gt;終了するプロセス(1つまたは複数)を選択します。&lt;/li&gt;
-&lt;li&gt;[Tools | Processes | Terminate]の順にクリックします｡&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;ユーザにアプリケーションを終了する時間を与えずに、セッションやプロセスを終了すると、データが失われる場合があります。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;セッションシャドーウイング&#34;&gt;セッションシャドーウイング&lt;/h2&gt;
-&lt;p&gt;セッションシャドーウイング機能により、単一のセッションおよびそのアプリケーションを複数ユーザが閲覧/制御できます。これにより、テクニカルサポート担当者やシステム管理者は、顧客やユーザに対しリモート操作によるサポートを提供できます。セッションシャドーウイングは、ライブ環境でのコラボレーション作業にも活用可能です。 実行中のGO-Globalセッションに接続できるのは管理者のみですが、その場合でも、セッションを実行しているユーザのアクセス許可が必要です。&lt;/p&gt;
-&lt;h3 id=&#34;セッションシャドーウイング方法&#34;&gt;セッションシャドーウイング方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;[&lt;strong&gt;Sessions&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Sessions Name&lt;/strong&gt;]カラムから、シャドーウイングするセッションを選択します。&lt;/li&gt;
-&lt;li&gt;[Tools | Sessions | Connect]の順にクリックします｡&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;ーまたはー&lt;/p&gt;
-&lt;p&gt;[&lt;strong&gt;Sessions Name&lt;/strong&gt;]カラムで、シャドーウイングするセッションを右クリックします。&lt;/p&gt;
-&lt;p&gt;セッションを選択すると、そのセッションを実行しているユーザに対して、次のようなメッセージが表示されます。ここでは「GerryD」がシステム管理者のユーザ名です。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/image5/4-3-1.png&#34; alt=&#34;4-3-1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;ユーザが [&lt;strong&gt;Yes&lt;/strong&gt;]をクリックしてセッションへのアクセスを許可すると、即座に接続が確立され、GO-Global クライアントのセッションが新しいウィンドウで表示されます。&lt;/p&gt;
-&lt;p&gt;ユーザが [&lt;strong&gt;No&lt;/strong&gt;]をクリックしてアクセスを拒否すると、ホストに次のメッセージが表示されます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/image5/4-3-2.png&#34; alt=&#34;4-3-2&#34;&gt;&lt;/p&gt;
-&lt;p&gt;セッションが切断されているとき、セッションがシャットダウンされようとしている、またはシャットダウンプロセスにあるとき、ユーザが1分以内に応答を返さなかったときも、セッションシャドーウイングは拒否されます。また、GO-Globalの通信障害時にも接続は拒否されます。Cluster Managerの [Sessions]タブには、セッションに接続しているクライアントの数が表示されます。その[Connected Clients]カラムに2以上の値が表示されている場合、そのセッションはシャドーウイングされています。切断済みのセッションでは、接続しているクライアント数は0です。セッションから切断してシャドーウイングを終了するには、そのセッションが表示されているフレーム画面を閉じてください。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Globalセッションがシャドーウイングされているとき、ホストのカーソルはセッションが終了するまでクライアント上に留まります。セッションのシャドーウイングが終了しても動きません。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: セッションとプロセスの管理</title>
-      <link>/docs/go-global6/go-global-admin-console/managing-sessions-and-processes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/go-global-admin-console/managing-sessions-and-processes/</guid>
-      <description>
-        
-        
-        &lt;p&gt;システム管理者は、以下に説明するように、Admin Consoleを介して、セッションの暗号化とシャドウイング、プロセスとセッションの終了を行うことができます。&lt;/p&gt;
-&lt;h2 id=&#34;セッションの終了&#34;&gt;セッションの終了&lt;/h2&gt;
-&lt;p&gt;ユーザのセッションを終了すると、そのユーザが実行中のGO-Global展開アプリケーションがすべて終了し、そのユーザはGO-Globalホストからログオフします。&lt;/p&gt;
-&lt;h3 id=&#34;セッションの終了方法&#34;&gt;セッションの終了方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;[&lt;strong&gt;Sessions&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Sessions Name&lt;/strong&gt;]カラムから、終了するセッションを選択します。&lt;/li&gt;
-&lt;li&gt;[Tools | Sessions | Terminate]の順にクリックします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;プロセスの終了&#34;&gt;プロセスの終了&lt;/h2&gt;
-&lt;p&gt;プロセスとは、GO-Globalホスト上で実行中の処理で、クライアントによって起動されたものを示します。たとえば、クライアントが実行しているアプリケーションはプロセスです。実行中の各アプリケーションには、Windowsタスクマネージャ内で固有名とプロセスIDが割り当てられます。これらのプロセス名とIDは、Admin Console内で複製されます。システム管理者は、Admin Consoleで任意のプロセスを終了できます。&lt;/p&gt;
-&lt;h3 id=&#34;プロセスの終了方法&#34;&gt;プロセスの終了方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;[&lt;strong&gt;Processes&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
-&lt;li&gt;終了するプロセス(1つまたは複数)を選択します。&lt;/li&gt;
-&lt;li&gt;[Tools | Processes | Terminate]の順にクリックします｡&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;ユーザにアプリケーションを終了する時間を与えずに、セッションやプロセスを終了すると、データが失われる場合があります。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;セッションシャドーウイング&#34;&gt;セッションシャドーウイング&lt;/h2&gt;
-&lt;p&gt;セッションシャドーウイング機能により、単一のセッションおよびそのアプリケーションを複数ユーザが閲覧/制御できます。これにより、テクニカルサポート担当者やシステム管理者は、顧客やユーザに対しリモート操作によるサポートを提供できます。セッションシャドーウイングは、ライブ環境でのコラボレーション作業にも活用可能です。 実行中のGO-Globalセッションに接続できるのは管理者のみですが、その場合でも、セッションを実行しているユーザのアクセス許可が必要です。&lt;/p&gt;
-&lt;h3 id=&#34;セッションシャドーウイング方法&#34;&gt;セッションシャドーウイング方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;[&lt;strong&gt;Sessions&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Sessions Name&lt;/strong&gt;]カラムから、シャドーウイングするセッションを選択します。&lt;/li&gt;
-&lt;li&gt;[Tools | Sessions | Connect]の順にクリックします｡&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;ーまたはー&lt;/p&gt;
-&lt;p&gt;[&lt;strong&gt;Sessions Name&lt;/strong&gt;]カラムで、シャドーウイングするセッションを右クリックします。&lt;/p&gt;
-&lt;p&gt;セッションを選択すると、そのセッションを実行しているユーザに対して、次のようなメッセージが表示されます。ここでは「GerryD」がシステム管理者のユーザ名です。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/4-3-1.png&#34; alt=&#34;4-3-1&#34;&gt;
-4-3-2
-ユーザが [&lt;strong&gt;Yes&lt;/strong&gt;]をクリックしてセッションへのアクセスを許可すると、即座に接続が確立され、GO-Global クライアントのセッションが新しいウィンドウで表示されます。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/4-3-2.png&#34; alt=&#34;4-3-2&#34;&gt;&lt;/p&gt;
-&lt;p&gt;ユーザが [&lt;strong&gt;No&lt;/strong&gt;]をクリックしてアクセスを拒否すると、ホストに次のメッセージが表示されます。&lt;/p&gt;
-&lt;p&gt;セッションが切断されているとき、セッションがシャットダウンされようとしている、またはシャットダウンプロセスにあるとき、ユーザが1分以内に応答を返さなかったときも、セッションシャドーウイングは拒否されます。また、GO-Globalの通信障害時にも接続は拒否されます。&lt;/p&gt;
-&lt;p&gt;Admin Consoleの [Sessions]タブには、セッションに接続しているクライアントの数が表示されます。その[Connected Clients]カラムに2以上の値が表示されている場合、そのセッションはシャドーウイングされています。切断済みのセッションでは、接続しているクライアント数は0です。セッションから切断してシャドーウイングを終了するには、そのセッションが表示されているフレーム画面を閉じてください。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Globalセッションがシャドーウイングされているとき、ホストのカーソルはセッションが終了するまでクライアント上に留まります。セッションのシャドーウイングが終了しても動きません。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: ネットワークプリンタの設定</title>
-      <link>/docs/go-global5/yzaakauntono/untitled/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global5/yzaakauntono/untitled/</guid>
-      <description>
-        
-        
-        &lt;p&gt;システム管理者は、GO-Globalクライアントが使用できるネットワークプリンタを設定できます。まず GO-Globalホスト上にホストへ直接接続できるポートを作成し、プリンタを各ローカル環境にインストールします。これにより、プリンタへの直接アクセスが可能となります。&lt;/p&gt;
-&lt;h2 id=&#34;go-globalホストにポートを追加する方法&#34;&gt;GO-Globalホストにポートを追加する方法&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;[スタート | 設定 | プリンタ]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;プリンタの追加&lt;/strong&gt;]をダブルクリックします。&lt;/li&gt;
-&lt;li&gt;ローカルプリンタを選択し、[&lt;strong&gt;次へ&lt;/strong&gt;]をクリックします。&lt;/li&gt;
-&lt;li&gt;[新しいポートの作成]をクリックし、種類として[標準TCP/IPポート]を選択します。[次へ]をクリックします。&lt;/li&gt;
-&lt;li&gt;プリンタウィザードの指示に従って、プリンタのIPアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;左側でプリンタの製造元を選択し、右側でプリンタのモデルを選択するか、[ディスク使用]をクリックします。&lt;/li&gt;
-&lt;li&gt;[プリンタの追加]ウィザードの指示に従って、適切なプリンタドライバをインストールします。&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: ネットワークプリンタの設定</title>
-      <link>/docs/go-global6/administering-user-accounts/setting-up-a-network-printer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/administering-user-accounts/setting-up-a-network-printer/</guid>
-      <description>
-        
-        
-        &lt;p&gt;システム管理者は、GO-Globalクライアントが使用できるネットワーク プリンタを設定できます。まず GO-Globalホスト上にホストに直接接続できるポートを作成し、プリンタを各ローカル環境にインストールします。これにより、プリンタへの直接アクセスが可能となります。&lt;/p&gt;
-&lt;p&gt;GO-Globalホストにポートを追加する方法&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;[スタート | 設定 | プリンタ] の順にクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;プリンターの追加&lt;/strong&gt;をダブルクリックします。&lt;/li&gt;
-&lt;li&gt;ローカル プリンタを選択し、 &lt;strong&gt;次へ&lt;/strong&gt;をクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;新しいポートの作成&lt;/strong&gt;をクリックし、種類として[Standard TCP/IP Port]を選択します&lt;strong&gt;次へ&lt;/strong&gt;をクリックしま す。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ポート名&lt;/strong&gt;ダイアログボックスに、プリンターの UNC パス（\PRINTSERVER\LASERPRINTER など）またはプリンタ の IP アドレスを入力します。&lt;/li&gt;
-&lt;li&gt;左側でプリンタの製造元を選択し、右側でプリンタのモデルを選択するか、 &lt;strong&gt;ディスク使用&lt;/strong&gt;をクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;プリンターの追加&lt;/strong&gt;ウィザードの指示に従って、適切なプリンタドライバをインストールします。&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: 一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</title>
-      <link>/docs/go-global6/technote/technote46/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/technote/technote46/</guid>
-      <description>
-        
-        
-        &lt;p&gt;いくつかのWindowsアプリケーションは、Windowsシェルによって提供される機能およびサービス(例えばDDE)を使用する(explorer.exe)。ほとんどのアプリケーションはWindowsシェルなしで実行されますが、Windowsシェルがアプリケーションと同じセッションで実行されていないと、起動に失敗したり、正しく実行されなかったりすることがあります。デフォルトでは、WindowsシェルはGO-Globalセッションでは動作しません。アプリケーションがGO-Globalセッションで起動または正常に動作しない場合、アプリケーションはシェルに依存している可能性があります。&lt;/p&gt;
-&lt;h3 id=&#34;解決策&#34;&gt;解決策&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;GO-Globalセッションのバックグラウンドで実行するようにWindowsシェル(explorer.exe)を登録します。 
-a. レジストリエディタから、HKEY_LOCAL_MACHINEキーを展開します。 
-b. \SOFTWARE\GraphOn\Bridges\1.0.0\System\Run\LocalMachineを展開します。 
-c. DWORD値を作成し、explorer.exeという名前を付けます。値を0に設定してください。&lt;/li&gt;
-&lt;li&gt;explorer.exeおよびexplorer.exeが開始するすべての子プロセスをシステムプロセスとして登録し、最後に公開されたアプリケーションが閉じられるとGO-Globalセッションが終了するようにします。 
-a. GO-Globalセッションを開始し、GO-Globalホストにログオンします。 
-b. Admin Consoleの[Session]タブで、セッション内でexplorer.exeが実行されていることを確認します。シェルのユーザインターフェイスがどれも表示されていないことを確認します。(シェルの一部の要素は、新しいユーザが初めてホストにログオンしたときに表示されることがあります。) 
-c. HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\Bridges\1.0.0\System\Processesを展開します。 
-d. DWORD値を作成し、explorer.exeという名前を付けます。explorer.exeによって起動されたプロセスについてアドミンコンソールを確認し、これらの各プロセスに対してDWORD値を作成します。システムプロセスには、次のような実行可能ファイルが含まれる場合があります。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;ALMon.exe
-sqlmangr.exe
-soffice.exe
-reader_sl.exe
-acrobat_sl.exe
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;
-e. これらのプロセスの値を0に設定してください。 
-f. プログラムウィンドウを閉じます。GO-Globalセッションも終了することを確認してください。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Globalセッションのバックグラウンドで実行するようにWindowsシェルを登録すると、かなりのオーバーヘッドが追加されます。セッションの開始に時間がかかり、より多くのメモリを消費します。シェルの起動時に実行するように登録されている他のプロセスによっても、追加のオーバーヘッドが発生する可能性があります。&lt;/p&gt;
-&lt;p&gt;不要なプロセスがユーザーのスタートアップフォルダまたはレジストリのさまざまなRunコマンドの下に登録されないように注意する必要があります(例:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run)。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: 変更履歴</title>
-      <link>/docs/go-global5/go-global-no/geng-lv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global5/go-global-no/geng-lv/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;ggh502-patch-10-release-version-50227327&#34;&gt;GGH5.0.2 Patch 10 release (Version 5.0.2.27327)&lt;/h2&gt;
-&lt;p&gt;GGH5.0.2 Patch 9 release (Version 5.0.2.26287) からの主な変更点は次の通りです．&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ホスト環境として Windows Server 2019 のサポート&lt;/li&gt;
-&lt;li&gt;セキュアブート環境への対応&lt;/li&gt;
-&lt;li&gt;Borland のアプリケーションでセッション開始に時間がかかる問題の修正&lt;/li&gt;
-&lt;li&gt;Windows 10 (version 1803) で32 ビット版の Microsoft Office365 および Adobe Acrobat が起動した時に ホストがクラッシュする問題の修正&lt;/li&gt;
-&lt;li&gt;GG のセッション上で Oracle Forms 6i が動作した時にホストがクラッシュする問題の修正&lt;/li&gt;
-&lt;li&gt;GG のセッション上で PDFCreator が開始しない問題の修正&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;ggh502-patch-9-release-version-50226287&#34;&gt;GGH5.0.2 Patch 9 release (Version 5.0.2.26287)&lt;/h2&gt;
-&lt;p&gt;GGH5.0.2 Patch 8 release (Version 5.0.2.26121) からの主な変更点は次の通りです．&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ホスト環境として Windows 10 feature release version 1803 のサポート&lt;/li&gt;
-&lt;li&gt;iSCSI ドライブにインストールされた時APS が開始しない問題の修正&lt;/li&gt;
-&lt;li&gt;クライアントの拡大表示が100%を越えて200%未満の環境でのテキスト表示の品質不良を修正 ※ 関連情報: KGTN#2018020701, CASE#51063 ※ クライアント側のアップグレードも必要です．&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;ggh502-patch-8-release-version-50226121&#34;&gt;GGH5.0.2 Patch 8 release (Version 5.0.2.26121)&lt;/h2&gt;
-&lt;p&gt;GGH5.0.2 Patch 7 release (Version 5.0.2.25851) からの主な変更点は次の通りです．&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;稀にクライアント印刷機能が利用出来ない問題を修正&lt;/li&gt;
-&lt;li&gt;ホストからクライアントへ連続して2 分以上データが送信された時にセッションが切断される可能性を修正&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;ggh502-patch-7-release-version-50225851&#34;&gt;GGH5.0.2 Patch 7 release (Version 5.0.2.25851)&lt;/h2&gt;
-&lt;p&gt;GGH5.0.2 Patch 6 release (Version 5.0.2.25556) からの主な変更点は次の通りです．&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;2018 年1 月の更新プログラムのSpectre およびMeltdown の脆弱性の修正に対応&lt;/li&gt;
-&lt;li&gt;スクリーンに直接かつ大量に描画するアプリケーションの動作が遅い問題を修正&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;ggh502-patch-6-release-version-50225556&#34;&gt;GGH5.0.2 Patch 6 release (Version 5.0.2.25556)&lt;/h2&gt;
-&lt;p&gt;GGH5.0.2 Patch 5 release (Version 5.0.2.25362) からの主な変更点は次の通りです．&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;クライアント環境として Ubuntu Linux 16.04 LTS (64-bit) への対応&lt;/li&gt;
-&lt;li&gt;クライアント印刷で 「極めて希に」 他のプリンターへ出力される問題の修正&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;ggh502-patch-5-release-version-50225362&#34;&gt;GGH5.0.2 Patch 5 release (Version 5.0.2.25362)&lt;/h2&gt;
-&lt;p&gt;GGH5.0.2 Patch 3 release (Version 5.0.2.25148) からの主な変更点は次の通りです．&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ホスト環境として Windows Server 2016 への対応&lt;/li&gt;
-&lt;li&gt;ホスト環境として Windows 10 Fall Creators Update への対応&lt;/li&gt;
-&lt;li&gt;クライアント環境として Oracle Linux 7 への対応&lt;/li&gt;
-&lt;li&gt;PowerPoint のスライドショーが動作しない問題の修正 (CASE#49869)&lt;/li&gt;
-&lt;li&gt;PrintersApplet.exe が存在すると切断した直後にセッションが終了する問題の修正 (CASE#50015)&lt;/li&gt;
-&lt;li&gt;ＩＥ でツールチップが表示されない問題の修正 (CASE#49765)&lt;/li&gt;
-&lt;li&gt;デスクトップ機能利用時にサインアウトした時にBSOD が発生する問題の修正 (CASE#49757)&lt;/li&gt;
-&lt;li&gt;5.0.24620 でホストがBSOD する問題の修正 ※ GGH5.0.2 Patch 4 release は，限定的にリリースされたため，一般には存在しません．&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;ggh502-patch-3-release-version-50225148&#34;&gt;GGH5.0.2 Patch 3 release (Version 5.0.2.25148)&lt;/h2&gt;
-&lt;p&gt;5.0.2.24304 からの主な変更点は次の通りです．&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;DPI 非対応アプリケーションへの高解像度ディスプレイ対応 ※クライアント側に5K 以上のモニターと新しいクライアント （ソフトウエア） が必要です．&lt;/li&gt;
-&lt;li&gt;Desktop クライアントインストール時に Chrome のアドオンのページが開く問題の修正 ※サイレントモード cmd /c gg-client.desktop.exe /s /v&amp;rdquo;/qn での起動が必要です．&lt;/li&gt;
-&lt;li&gt;ホスト機能の Windows 10 Creators Update (OS Build 15063) への対応  サービス GGAPS が稀にメモリを大量消費する問題の修正&lt;/li&gt;
-&lt;li&gt;Windows 10 環境での更新プログラム KB4025342 のサポート&lt;/li&gt;
-&lt;li&gt;環境によりアップグレード時にディスプレイ・ドライバーが開始しない問題の修正&lt;/li&gt;
-&lt;li&gt;Windows 10 Creators Update 環境での Norton AntiVirus のサポート&lt;/li&gt;
-&lt;li&gt;Windows 10 Creators Update 環境での Avast Antivirus のサポート&lt;/li&gt;
-&lt;li&gt;Windows 10 Creators Update 環境での Symantec Endpoint Protection 14 のサポート  Windows 10 Creators Update 環境でクライアント・サウンドが動作しない問題の修正&lt;/li&gt;
-&lt;li&gt;Sophos Anti-Virus がインストールされた環境でログオンダイアログの表示までに２分要する問題の修正&lt;/li&gt;
-&lt;li&gt;F-Secure Server Security / F-Secure DeepGuard がインストールされた環境でクライアントの接続時にクラッシュする問題の修正&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;ggh502-patch-2-release-version-50224304&#34;&gt;GGH5.0.2 Patch 2 release (Version 5.0.2.24304)&lt;/h2&gt;
-&lt;p&gt;5.0.2.23814 からの主な変更点は次の通りです．&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;サーバー環境としての Windows 10 Creators Update (OS Build 15063) への対応．&lt;/li&gt;
-&lt;li&gt;ユーザーID とパスワードを指定してログオンした時，環境変数 CLIENTCOMPUTERNAME 等が正しくない問題 の修正&lt;/li&gt;
-&lt;li&gt;Windows クライアントインストール時に Chrome のアドオンのページが開く問題の修正 ※ gg-client.windows.exe のみの対応で， gg-client.desktop.exe ではアドオンのページが開きます．&lt;/li&gt;
-&lt;li&gt;セッションが終了しない，セッションを強制終了できない等の現象が発生する問題の修正&lt;/li&gt;
-&lt;li&gt;プリンター名のカスタマイズで変数 %I が unknown になる問題の修正&lt;/li&gt;
-&lt;li&gt;環境変数 USERNAME が設定されない問題の修正&lt;/li&gt;
-&lt;li&gt;APS ログに &amp;ldquo;Keep-alive not received&amp;hellip;&amp;rdquo; が繰り返し記録される問題の修正&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;ggh500ggh501-の主な変更点&#34;&gt;GGH5.0.0～GGH5.0.1 の主な変更点&lt;/h2&gt;
-&lt;p&gt;GGH5.0.0～GGH5.0.1の主な変更点(修正点)は、以下の通りです．&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ホスト環境での32 ビットWindows （Windows Server 2003 / Windows XP） のサポート終了．&lt;/li&gt;
-&lt;li&gt;iOS クライアントの改良 （新しいユーザー インターフェイス，操作性向上，タスク切り替え） ．&lt;/li&gt;
-&lt;li&gt;Android クライアントの改良 （新しいユーザー インターフェイス，操作性向上，タスク切り替え）．&lt;/li&gt;
-&lt;li&gt;モバイルクライアント環境 （iOS/Android） での hopTo MAX のサポート （オプション） ．&lt;/li&gt;
-&lt;li&gt;ホスト環境での自動更新機能の追加．&lt;/li&gt;
-&lt;li&gt;Windows 更新プログラムによる非互換性の低減．&lt;/li&gt;
-&lt;li&gt;クライアント環境での Mac OS X 10.11 El Capitan のサポート．&lt;/li&gt;
-&lt;li&gt;サーバー環境での安定性の向上 （Watchdog Timer でのBSOD 等） ．&lt;/li&gt;
-&lt;li&gt;Microsoft Office 2016 のサポート．&lt;/li&gt;
-&lt;/ul&gt;
 
       </description>
     </item>

@@ -1,4 +1,9 @@
-# サポートリクエストウィザード(SRW)
+---
+title: "サポートリクエストウィザード(SRW)"
+linkTitle: ""
+weight: 32
+type: "docs"
+---
 
 GO-Globalホストには、テクニカルサポートに送信できるログファイルとホストに関する情報を収集するSupport Request Wizardがあります。管理者は、[Help]メニューの[Help]をクリックして、Admin Consoleからサポートリクエストウィザードを実行できます。もしくは[ Programs | GraphOn GO-Global | Support Request Wizard ]の順にクリックします。
 

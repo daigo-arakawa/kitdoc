@@ -1,4 +1,9 @@
-# GO-Global Web App
+---
+title: "GO-Global Web App"
+linkTitle: ""
+weight: 02
+type: "docs"
+---
 
 JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。
 

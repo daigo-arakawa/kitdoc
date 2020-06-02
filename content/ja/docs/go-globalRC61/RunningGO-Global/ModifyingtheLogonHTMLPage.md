@@ -1,5 +1,9 @@
-# logon.htmlページの変更
-
+---
+title: "logon.htmlページの変更"
+linkTitle: ""
+weight: 05
+type: "docs"
+---
 GO-GlobalをWebブラウザから実行している場合は、GO-Globalのlogon.htmlページを編集して起動パラメータを指定できます。
 
 ### logon.htmlページの変更方法

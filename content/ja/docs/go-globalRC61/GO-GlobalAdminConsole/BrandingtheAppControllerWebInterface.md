@@ -1,4 +1,9 @@
-# GO-Globlal AppController Web Interfaceのブランディング
+---
+title: "GO-Globlal AppController Web Interfaceのブランディング"
+linkTitle: ""
+weight: 18
+type: "docs"
+---
 
 AppControllerは、コンピュータのデスクトップ、モバイルデバイス、またはWebブラウザから起動できる、ブランド化されていないカスタマイズ可能なアプリケーションです。AppControllerは、顧客の名前とロゴでブランド化できます。
 

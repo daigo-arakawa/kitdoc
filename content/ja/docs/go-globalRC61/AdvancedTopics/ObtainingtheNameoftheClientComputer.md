@@ -1,5 +1,9 @@
-# クライアントコンピュータの名前を取得する
-
+---
+title: "クライアントコンピュータの名前を取得する"
+linkTitle: ""
+weight: 20
+type: "docs"
+---
 GO-Globalホストではなくクライアントのコンピュータ名を必要とするアプリケーションの場合、管理者はその実行可能ファイルの名前をレジストリキー
 
 **HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GO-Global\Compatibility\GetComputerName**

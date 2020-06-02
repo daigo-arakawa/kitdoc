@@ -1,4 +1,10 @@
-# Mac OS X App
+---
+title: "Mac OS X App"
+linkTitle: ""
+weight: 03
+type: "docs"
+---
+
 
 GO-GlobalのMac OS X Appは、ネイティブのMac OS X環境とシームレスに統合できる軽量のアプリケーションです。最新のMac OS X APIを使用するように全面的に書き直され、インストールの簡素化、サウンドサポート、マルチモニタサポート、およびMac OS X Gatekeeperサポートを提供します。これにより、マルウェアから保護され、インターネットからダウンロードされたアプリケーションが不正に動作します。
 

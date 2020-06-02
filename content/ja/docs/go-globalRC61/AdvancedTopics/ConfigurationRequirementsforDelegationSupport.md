@@ -1,4 +1,9 @@
-# 委任サポートの構成要件
+---
+title: "委任サポートの構成要件"
+linkTitle: ""
+weight: 06
+type: "docs"
+---
 
 第4章で説明したように、統合Windows認証を **ホストのキャッシュパスワード**なしで使用すると、一部のネットワークリソースにアクセスするためにWindows委任が必要になる場合があります。たとえば、委任が有効になっていないと、グループポリシーが正しく適用されないことがあります。
 
@@ -23,7 +28,7 @@ setspn -A HTTP / intranet.domain.local DOMAIN\Account
 
 ![7-6-3](/img/7-6-3.png) 
 
->Active Directory内の任意のサービス(Kerberosのみ)への **[コンピュータを委任に対して信頼する]**を有効にしたら、委任を有効にするためにGO-Globalホストを再起動する必要があります。
+>Active Directory内の任意のサービス(Kerberosのみ)への [**コンピュータを委任に対して信頼する**]を有効にしたら、委任を有効にするためにGO-Globalホストを再起動する必要があります。
 
 * **GO-Global Application Publishing Service**のService Principle Name(SPN)をActive Directoryに登録できるようにする必要があります。GO-Global Application Publishing Serviceは、サービスが再実行されるたびにこれを試みます。 **setspn.exe**ユーティリティ(Microsoft Resource Kitに収録。Microsoft からも個別にダウンロード可能)を使用して、SPNが正しく設定されているかどうかを確認できます。下の図は、setspn.exeをGO-Globalホストで実行したときに表示されるコマンドウィンドウです。
 

@@ -1,4 +1,10 @@
-# GO-Global Updates
+---
+title: "GO-Global Updates"
+linkTitle: ""
+weight: 15
+type: "docs"
+---
+
 
 There are three types of GO-Global Updates:
 

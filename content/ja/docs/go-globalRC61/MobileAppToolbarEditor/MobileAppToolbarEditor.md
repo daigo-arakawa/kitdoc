@@ -1,4 +1,9 @@
-# Mobile App Toolbar Editor
+---
+title: "Mobile App Toolbar Editor"
+linkTitle: ""
+weight: 01
+type: "docs"
+---
 
 ## Mobile App Toolbar Editor
 

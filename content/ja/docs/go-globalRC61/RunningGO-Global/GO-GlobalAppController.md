@@ -1,4 +1,9 @@
-# GO-Global AppController
+---
+title: "GO-Global AppController"
+linkTitle: ""
+weight: 01
+type: "docs"
+---
 
 GO-Global AppControllerは、GO-Globalのネイティブクライアントとブラウザアドオンの機能を1つのアプリケーションに統合し、コンピュータのデスクトップ、モバイル デバイス、またはWebブラウザから起動することができます。
 
@@ -17,10 +22,10 @@ AppControllerをインストールすると、ブラウザ、スタートメニ�
 　a. Windowsで、Windowsタスクバーの[スタート]ボタンをクリックし、[プログラム] - [AppController]を選択します。
 　b. Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、[AppController]をクリックします。
 　c. Mac OS Xの場合は、メニューから「Go」→「Applications」を選択し、AppControllerをダブルクリックします。
-2. **[Connection]**ダイアログ内にホストのアドレスを入力します。
-3. **[Connect]**をクリックします。[**Sign In]**ダイアログが表示されたら、次の情報を入力します。
-   - **[User Name]**ボックスにネットワークユーザー名を入力します。
-   - **[Password]**ボックスにパスワードを入力します。
+2. [**Connection**]ダイアログ内にホストのアドレスを入力します。
+3. [**Connect**]をクリックします。[**Sign In**]ダイアログが表示されたら、次の情報を入力します。
+   - [**User Name**]ボックスにネットワークユーザー名を入力します。
+   - [**Password**]ボックスにパスワードを入力します。
 
 ![5-1-1](/img/5-1-1.png) 
 
@@ -31,9 +36,9 @@ Windowsコンピュータでは、GO-Global ConnectionダイアログにGO-Globa
 ### WindowsコンピュータでGO-Globalホストへのショートカットを作成する方法
 
 1. 上記のいずれかの方法でAppControllerを起動します。
-2. **[Connection]**ダイアログにサーバのアドレスを入力します。
+2. [**Connection**]ダイアログにサーバのアドレスを入力します。
 3. [Create desktop shortcut to this host]チェックボックスをオンにします。
-4. **[Connect]**をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。
+4. [**Connect**]をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。
 
 ### WindowsでAppControllerのショートカットを作成する方法
 

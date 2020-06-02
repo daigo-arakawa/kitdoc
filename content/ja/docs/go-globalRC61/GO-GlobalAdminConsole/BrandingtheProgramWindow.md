@@ -1,4 +1,9 @@
-# Program Windowのブランディング
+---
+title: "Program Windowのブランディング"
+linkTitle: ""
+weight: 17
+type: "docs"
+---
 
 Program Windowは、GO-Globalを介してアプリケーションを起動するためのユーザインターフェイスを含むアプリケーションです。Program Windowには、ユーザが実行を許可されているWindowsアプリケーションのリストが表示されます。
 

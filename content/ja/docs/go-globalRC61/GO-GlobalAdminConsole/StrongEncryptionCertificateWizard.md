@@ -1,13 +1,18 @@
-# 強力な暗号化証明書ウィザード
+---
+title: "強力な暗号化証明書ウィザード"
+linkTitle: ""
+weight: 06
+type: "docs"
+---
 
 強力な暗号化証明書ウィザードを使用して、管理者はGO-Globalホスト用の信頼できるSSL証明書を生成することができます。これにより、管理者はサードパーティの認証局から証明書を購入することなく、強力な暗号化とSSL/TLSセキュリティを有効にすることができます。
 
 ### SSL証明書を生成する方法
 
 1. [Tools | Host Options]をクリックします。
-2. **[Security]**タブをクリックします。
-3. **[Transport]**メニューから [SSL] を選択します。
-4. **[Generate Certigicate]**ボタンをクリックします。
+2. [**Security**]タブをクリックします。
+3. [**Transport**]メニューから [SSL] を選択します。
+4. [**Generate Certigicate**]ボタンをクリックします。
 5. [Common Name] および [Subject Alternative Name] フィールドで指定したアドレスがコンピュータに解決されていることを確認するために使用する [Validation Method] を選択します。ワイルドカード証明書およびインターネットからアクセスできないコンピューターの[DNS validation]を選択します。それ以外の場合は、[HTTP validation]を選択します。
 6. 必要に応じて、[Common Name]を編集します。これは、GO-Globalの使用時にユーザが接続するホストの正確なアドレス（Fully Qualified Doman Name）です。
 7. 必要に応じて、件名の代替名を編集します。これは、ユーザがGO-Globalを使用する際に接続するホストの代替アドレスです。
