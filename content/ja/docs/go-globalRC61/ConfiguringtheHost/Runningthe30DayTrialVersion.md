@@ -1,4 +1,9 @@
-# Running the 30-Day Trial Version
+---
+title: "Running the 30-Day Trial Version"
+linkTitle: ""
+weight: 07
+type: "docs"
+---
 
 >本項目の設定は推奨設定ではございませんのでご注意ください。GO-Globalの評価を行う際にはきっとエイエスピー営業部までお問い合わせください。
 

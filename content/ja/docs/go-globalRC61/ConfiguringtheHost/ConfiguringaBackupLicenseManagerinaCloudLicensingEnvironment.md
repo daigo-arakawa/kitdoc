@@ -1,4 +1,9 @@
-# クラウドライセンス環境でのBackup License Managerの構成
+---
+title: "クラウドライセンス環境でのBackup License Managerの構成"
+linkTitle: ""
+weight: 11
+type: "docs"
+---
 
 クラウドライセンスが採用されている場合、GraphOnのライセンスサーバへの接続が失われ、ホストが再起動された後も、ホストが予約済みシートを引き続き使用できるようにBackup License Managerを構成することをお勧めします。ホストがBackup License Managerを使用するように構成されていない場合、ユーザはホストの再起動後にセッションを開始できません。
 

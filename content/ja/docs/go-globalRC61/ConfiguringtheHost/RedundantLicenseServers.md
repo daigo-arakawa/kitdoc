@@ -1,4 +1,9 @@
-# Redundant License Servers
+---
+title: "Redundant License Servers"
+linkTitle: ""
+weight: 10
+type: "docs"
+---
 
 >本項目の設定は推奨設定ではございませんのでご注意ください。
 

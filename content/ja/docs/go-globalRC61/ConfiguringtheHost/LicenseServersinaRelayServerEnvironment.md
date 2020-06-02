@@ -1,4 +1,9 @@
-# License Servers in a Relay Server Environment
+---
+title: "License Servers in a Relay Server Environment"
+linkTitle: ""
+weight: 11
+type: "docs"
+---
 
 Prior to version 6.1, GO-Global managed licenses from Dependent Hosts by default. This required administrators to configure each Dependent Host to use a central license manager. This is no longer necessary, as version 6.1 manages licenses from the relay server by default. Administrators can add and remove Dependent Hosts from the relay server without having to make any licensing configuration changes.
 

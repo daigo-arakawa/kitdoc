@@ -1,4 +1,9 @@
-# 中央ライセンスサーバを使用するためのGO-Globalの設定
+---
+title: "中央ライセンスサーバを使用するためのGO-Globalの設定"
+linkTitle: ""
+weight: 09
+type: "docs"
+---
 
 既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。中央ライセンス サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。
 

@@ -1,4 +1,9 @@
-# Upgrading from GO-Global 4.8.2 and 5.0
+---
+title: "Upgrading from GO-Global 4.8.2 and 5.0"
+linkTitle: ""
+weight: 03
+type: "docs"
+---
 
 >本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。アップグレード手順については弊社技術支援センターまでお問い合わせください。
 
