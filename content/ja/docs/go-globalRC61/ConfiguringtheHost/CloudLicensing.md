@@ -1,5 +1,5 @@
 ---
-title: "Gクラウドライセンス"
+title: "クラウドライセンス"
 linkTitle: ""
 weight: 05
 type: "docs"

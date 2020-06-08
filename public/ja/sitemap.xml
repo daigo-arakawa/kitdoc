@@ -179,7 +179,7 @@
   
   <url>
     <loc>/docs/go-globalrc61/go-global61introduction/go-globalfeatures/</loc>
-    <lastmod>2020-06-03T00:34:18+09:00</lastmod>
+    <lastmod>2020-06-04T18:11:26+09:00</lastmod>
   </url>
   
   <url>
@@ -533,11 +533,6 @@
   </url>
   
   <url>
-    <loc>/docs/go-globalrc61/configuringthehost/cloudlicensing/</loc>
-    <lastmod>2020-06-03T01:12:48+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/docs/go-global6/configuring-the-host/iis-web-server/</loc>
     <lastmod>2020-05-27T16:35:56+09:00</lastmod>
   </url>
@@ -555,6 +550,11 @@
   <url>
     <loc>/docs/go-global5/sbano/redundant-license-servers/</loc>
     <lastmod>2020-05-26T13:46:18+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-globalrc61/configuringthehost/cloudlicensing/</loc>
+    <lastmod>2020-06-03T01:12:48+09:00</lastmod>
   </url>
   
   <url>
@@ -873,13 +873,13 @@
   </url>
   
   <url>
-    <loc>/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/</loc>
-    <lastmod>2020-06-03T01:12:48+09:00</lastmod>
+    <loc>/docs/go-global6/go-global-admin-console/akaunto/</loc>
+    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/docs/go-global6/go-global-admin-console/akaunto/</loc>
-    <lastmod>2020-05-28T00:12:53+09:00</lastmod>
+    <loc>/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/</loc>
+    <lastmod>2020-06-03T01:12:48+09:00</lastmod>
   </url>
   
   <url>

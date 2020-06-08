@@ -68,7 +68,7 @@
 &lt;li&gt;&lt;strong&gt;ビデオサポート：&lt;/strong&gt; ビデオサポートが有効になっている場合、GO-Globalセッションで実行されているアプリケーションおよびWebブラウザは、ビデオコンテンツをGO-Globalクライアントにリダイレクトします(※2)。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;URLリダイレクト：&lt;/strong&gt; この機能により、GO-Globalユーザは、ホストのデフォルトブラウザではなく、ユーザのクライアントのデフォルトブラウザで開くWebリンクをクリックできます。これにより、ユーザはGO-Globalセッションで実行されているWebコンテンツおよびビデオに効率的にアクセスできます(※2)。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;ファイルオープンリダイレクト：&lt;/strong&gt; ファイルオープンリダイレクトは、エンドユーザがクライアントで実行されているアプリケーションでホスト上のファイルを開くことができるようにすることで、エンドユーザのワークフローを合理化します。管理者は、特定のファイルタイプ(PDF、TXT、DOCXなど)の機能を有効にして、このタイプのファイルがOutlookなどのホストアプリケーションから開かれると、AutoCADやExcelなどのアプリケーションのクライアントにリダイレクトされて開かれます(※2)。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;エンドユーザーのブランド化：&lt;/strong&gt; 管理者は、Admin Consoleのブランド化ダイアログを使用して、Program Window、サインインダイアログ、およびAppControllerインストールページで、GraphOnのGO-Globalブランドを独自の会社名と画像に置き換えることができます(※2)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;エンドユーザのブランド化：&lt;/strong&gt; 管理者は、Admin Consoleのブランド化ダイアログを使用して、Program Window、サインインダイアログ、およびAppControllerインストールページで、GraphOnのGO-Globalブランドを独自の会社名と画像に置き換えることができます(※2)。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;(※1) KitASPでサポートしていない機能になります。KitASPが開発した&amp;lt;GO-Global拡張パック&amp;gt;を利用することで、Webを利用した負荷分散処理を行うことも可能になります。&lt;br&gt;
 (※2) GO-Global 6.1で追加された機能になります。&lt;/p&gt;
@@ -87,7 +87,7 @@
         
         &lt;p&gt;GO-Global の既知の制限事項は以下のとおりです。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;GO-Global はグループポリシーのログオンスクリプトまたはログオフスクリプトをサポートしていません。&lt;/li&gt;
+&lt;li&gt;GO-Globalはグループポリシーのログオンスクリプトまたはログオフスクリプトをサポートしていません。&lt;/li&gt;
 &lt;li&gt;MicrosoftのVBScriptsは、バッチファイルで実行されない限り、ログオンスクリプトとしてサポートされていません。&lt;/li&gt;
 &lt;li&gt;GO-Globalホスト上のファイルをコピーしてクライアントに貼り付け、既存のファイルを上書きしようとすると、うまくいかない場合があります。&lt;/li&gt;
 &lt;li&gt;GO-GlobalはParallels Virtuozzoをサポートしていません。&lt;/li&gt;
@@ -101,14 +101,14 @@
 &lt;li&gt;ジャーナルレコードフックはサポートされていません。そのため、アプリケーションによってはマクロの記録に失敗することがある。&lt;/li&gt;
 &lt;li&gt;クライアント側のファイルに埋め込まれたOLEオブジェクトは編集できません。OLEオブジェクトの編集に必要なアプリケーションがホスト上で利用可能な場合は、ホスト上のドライブにファイルをコピーして編集し、必要に応じてクライアントにコピーし直してください。&lt;/li&gt;
 &lt;li&gt;Windows以外のクライアントでは、クライアント上で実行されているアプリケーションとホスト上で実行されているアプリケーションの間では、テキストと画像のみをコピーして貼り付けることができます。&lt;/li&gt;
-&lt;li&gt;GO-Globalホストがrelay serverに接続されている場合、ホストの設定（公開アプリケーションなど）がrelay serverの設定に置き換わるという警告は表示されません。&lt;/li&gt;
-&lt;li&gt;セッションシャドウイングされている間は、切断されたセッションにユーザが再接続することはできません。(※1)&lt;/li&gt;
+&lt;li&gt;GO-Globalホストがrelay serverに接続されている場合、ホストの設定(公開アプリケーションなど)がrelay serverの設定に置き換わるという警告は表示されません(※1)。&lt;/li&gt;
+&lt;li&gt;セッションシャドウイングされている間は、切断されたセッションにユーザが再接続することはできません。&lt;/li&gt;
 &lt;li&gt;GO-Globalは、システムアカウント以外のアカウントでのアプリケーション公開サービスの実行をサポートしていません。&lt;/li&gt;
 &lt;li&gt;キーボードマッピングコマンドライン引数-kbは、Linuxおよび Mac OS Xでは大文字と小文字が区別されます。&lt;/li&gt;
 &lt;li&gt;GO-Globalは /3GB スイッチをサポートしていません。&lt;/li&gt;
 &lt;li&gt;pdfforgeからのPDFCreatorはサポートされていません。&lt;/li&gt;
 &lt;li&gt;MicrosoftのXPS Document Writerは、ユニバーサルプリンタドライバを使用している場合、クライアントプリンタとしてサポートされていますが、XPS Printer Driverはサポートされていません。&lt;/li&gt;
-&lt;li&gt;dependent application serverからGO-Globalを管理する場合、異なるアカウントで2つのシステムに対話的にログオンしている場合、Admin Consoleを使用してrelay serverに接続することはできません。代わりに、relay serverでAdmin Consoleを実行してください。(※1)&lt;/li&gt;
+&lt;li&gt;dependent application serverからGO-Globalを管理する場合、異なるアカウントで2つのシステムに対話的にログオンしている場合、Admin Consoleを使用してrelay serverに接続することはできません。代わりに、relay serverでAdmin Consoleを実行してください(※1)。&lt;/li&gt;
 &lt;li&gt;GO-Globalは、システムトレイと統合するアプリケーションをサポートしていません。&lt;/li&gt;
 &lt;li&gt;Admin Consoleで[Apply Group Policy]が有効になっている場合、セッションの開始に時間がかかる。&lt;/li&gt;
 &lt;li&gt;Windows統合認証を使用してユーザが認証し、サーバ側のパスワードキャッシュが無効になっている場合、ホストのテーマは適用されません。&lt;/li&gt;
@@ -129,38 +129,39 @@
         
         &lt;h2 id=&#34;go-globalホスト&#34;&gt;GO-Globalホスト&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;GO-Globalホストには、次の64ビットWindowsオペレーティングシステムのいずれかが必要です。
-　&lt;strong&gt;Windows Server 2019&lt;/strong&gt; - スタンダードとデータセンタ
-　&lt;strong&gt;Windows Server 2016&lt;/strong&gt; - スタンダードとデータセンタ
-　&lt;strong&gt;Windows Server 2012 R2&lt;/strong&gt; - スタンダードとデータセンタ
-　&lt;strong&gt;Windows 10 (バージョン1809以降)&lt;/strong&gt; - プロフェッショナルとエンタープライズ(マルチユーザ環境では、Windows Serverの利用を強く推奨します。)&lt;/li&gt;
+&lt;li&gt;GO-Globalホストには、次の64ビットWindowsオペレーティングシステムのいずれかが必要です。&lt;br&gt;
+　&lt;strong&gt;Windows Server 2019&lt;/strong&gt; - Standard/Datacenter&lt;br&gt;
+　&lt;strong&gt;Windows Server 2016&lt;/strong&gt; - Standard/Datacenter&lt;br&gt;
+　&lt;strong&gt;Windows Server 2012 R2&lt;/strong&gt; - Standard/Datacenter&lt;br&gt;
+　&lt;strong&gt;Windows 10(バージョン1809以降)&lt;/strong&gt; - Professional/Enterprise(マルチユーザ環境では、Windows Serverの利用を強く推奨します。)&lt;/li&gt;
 &lt;li&gt;GO-Globalホストは、最新のWindowsアップデートがインストールされているコンピュータでサポートされています。&lt;/li&gt;
 &lt;li&gt;インストールを実行するには、管理者がホストの管理者権限を持っている必要があり、ホストがネットワークプロトコルとしてTCP/IPを使用している必要があります。&lt;/li&gt;
 &lt;li&gt;GO-Globalは、TCPパケットのためにGraphOnの登録ポート491をリッスンします。外部ファイアウォールやホスト上のソフトウェアファイアウォールをTCPポート491を許可するように設定してください。&lt;/li&gt;
-&lt;li&gt;GO-GlobalはVMware ESXiおよびHyper-Vをサポートしています。&lt;/li&gt;
+&lt;li&gt;GO-Globalは、VMware ESXiおよびHyper-Vをサポートしています。&lt;/li&gt;
 &lt;li&gt;GO-Globalは、Device Guard を有効にしているWindows Server 2016システムをサポートしていません。&lt;/li&gt;
 &lt;li&gt;GO-Globalは、ドメインコントローラへのホストのインストールをサポートしていません。&lt;/li&gt;
 &lt;li&gt;クライアントとホストの色深度は256以上である必要があります。1,600万以上を推奨します。&lt;/li&gt;
-&lt;li&gt;GO-GlobalホストのメモリとCPUの要件は、公開されているアプリケーションとシステムにアクセスするユーザ数によって決まります。一般的に、GO-Globalホストは12 人のヘビーユーザ/500 MHz CPUと 25人のライトユーザ/500 MHz CPUをサポートすることができます。(「ヘビー」とは、1 つ以上の大規模なアプリケーションを継続的に実行しているユーザと定義されます。「ライト」とは、断続的なユーザ操作を伴う 1 つのアプリケーションを実行しているユーザと定義されます)。&lt;/li&gt;
+&lt;li&gt;GO-GlobalホストのメモリとCPUの要件は、公開されているアプリケーションとシステムにアクセスするユーザ数によって決まります。一般的に、GO-Globalホストは12人のヘビーユーザ/500 MHz CPUと 25人のライトユーザ/500 MHz CPUをサポートすることができます(「ヘビー」とは、1 つ以上の大規模なアプリケーションを継続的に実行しているユーザと定義されます。「ライト」とは、断続的なユーザ操作を伴う1つのアプリケーションを実行しているユーザと定義されます)。&lt;/li&gt;
 &lt;li&gt;GO-Globalは最大500ミリ秒の往復遅延をサポートしています。&lt;/li&gt;
 &lt;li&gt;GO-Globalでは、最低28.8kbpsのモデム速度が必要です。&lt;/li&gt;
 &lt;li&gt;GO-Globalでは、ユーザのネットワーク帯域幅ごとに16kbpsを必要とします。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;go-global-クライアント&#34;&gt;GO-Global クライアント&lt;/h2&gt;
+&lt;h2 id=&#34;go-globalクライアント&#34;&gt;GO-Globalクライアント&lt;/h2&gt;
 &lt;p&gt;GO-Globalは以下のクライアントプラットフォームをサポートしています。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Windows 10（バージョン1809以降）ProfessionalとEnterprise（32 ビット/64 ビット）、Windows 7 Professional、Ultimate、Enterprise（32 ビット/64 ビット）。GO-Global は、最新のWindowsアップデートがインストールされたコンピュータでサポートされています。&lt;/li&gt;
-&lt;li&gt;Mac OS X 10.13 以降&lt;/li&gt;
-&lt;li&gt;Red Hat Enterprise Linux 7と8（64 ビット）、CentOS 7および8（64 ビット）、SUSE Linux Enterprise Desktop 15（64 ビット）、Ubuntu 18.04 LTSと19（64 ビット）&lt;/li&gt;
+&lt;li&gt;Windows 10(バージョン1809以降)Professional/Enterprise(32ビット/64ビット)&lt;br&gt;
+Windows 7 Professional/Ultimate/Enterprise(32ビット/64ビット)。GO-Globalは、最新のWindowsアップデートがインストールされたコンピュータでサポートされています。&lt;/li&gt;
+&lt;li&gt;Mac OS X 10.13以降&lt;/li&gt;
+&lt;li&gt;Red Hat Enterprise Linux 7と8(64ビット)、CentOS 7および8(64ビット)、SUSE Linux Enterprise Desktop 15(64ビット)、Ubuntu 18.04 LTSと19(64ビット)&lt;/li&gt;
 &lt;li&gt;iOS 11.0以降&lt;/li&gt;
 &lt;li&gt;ARMプロセッサのAndroid 8.0以降&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;GO-Globalは以下のブラウザをサポートしています。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Internet Explorer 11（32ビット）&lt;/li&gt;
+&lt;li&gt;Internet Explorer 11(32ビット)&lt;/li&gt;
 &lt;li&gt;Mozilla Firefox 60以降&lt;/li&gt;
 &lt;li&gt;Mac OS XでのApple Safari 11以降&lt;/li&gt;
-&lt;li&gt;Google Chrome 67以降のWindows 7、Windows 10、Chromebookとの連携&lt;/li&gt;
+&lt;li&gt;Google Chrome 67以降のWindows 7/Windows 10/Chromebookとの連携&lt;/li&gt;
 &lt;li&gt;Microsoft Edge Chromium&lt;/li&gt;
 &lt;/ul&gt;
 

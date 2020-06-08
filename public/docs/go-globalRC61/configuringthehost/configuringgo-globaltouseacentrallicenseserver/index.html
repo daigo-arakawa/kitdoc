@@ -20,24 +20,24 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>中央ライセンスサーバを使用するためのGO-Globalの設定 | kitASP Docs</title><meta property="og:title" content="中央ライセンスサーバを使用するためのGO-Globalの設定" />
-<meta property="og:description" content="既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。中央ライセンス サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。
-GO-Global License Managerを停止する方法  [コントロールパネル | 管理ツール | サービス]をクリックします。 サービスの一覧から[GO-Global License Manager]を選択します。 [停止]ボタンをクリックします。  GO-GlobalホストでGO-Global License Managerを停止した後、中央ライセンスサーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1 はライセンスサーバの名前です。 GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:27000@LicenseServer1)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。 または GO-Globalホスト上で、GO-Globalホスト上のライセンスファイルのSERVER行の直後にUSE_SERVERを配置します。これは基本的には前述の方法と同じですが、環境変数の変更は必要ありません。
+<title>外部ライセンス管理サーバを使用するためのGO-Globalの設定 | kitASP Docs</title><meta property="og:title" content="外部ライセンス管理サーバを使用するためのGO-Globalの設定" />
+<meta property="og:description" content="既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。外部ライセンス管理サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。
+GO-Global License Managerを停止する方法  [コントロールパネル | 管理ツール | サービス]をクリックします。 サービスの一覧から [GO-Global License Manager] を選択します。 [停止] ボタンをクリックします。  GO-GlobalホストでGO-Global License Managerを停止した後、外部ライセンス管理サーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1はライセンスサーバの名前です。 GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:27000@LicenseServer1)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。 または GO-Globalホスト上で、GO-Globalホスト上のライセンスファイルのSERVER行の直後にUSE_SERVERを配置します。これは基本的には前述の方法と同じですが、環境変数の変更は必要ありません。
 たとえば、GO-Globalホスト上の永続的ライセンスファイル(license.lic など)は次のように表示されます。
-SERVER LicenseServer1 00d0b74f4023USE_SERVERファイアウォールでライセンスマネージャのポートを開く GO-Globalホストとライセンスサーバの間にファイアウォールがある場合、FLEXnet（デフォルトでは 27000）とライセンスマネージャ（BLM）のポートをファイアウォールで開く必要があります。ライセンスマネージャの場合は、ライセンスサーバ上のライセンスに特定のポートの
+SERVER LicenseServer1 00d0b74f4023USE_SERVERファイアウォールでライセンスマネージャのポートを開く GO-Globalホストとライセンスサーバの間にファイアウォールがある場合、FLEXnet(デフォルトでは27000)とライセンスマネージャ(BLM)のポートをファイアウォールで開く必要があります。ライセンスマネージャの場合は、ライセンスサーバ上のライセンスに特定のポートの
 port=&lt;port#&gt;
-を追加します。(特定のポート番号を手動で割り当てない限り、エフェメラルポート番号が使用されます)。
+を追加します(特定のポート番号を手動で割り当てない限り、エフェメラルポート番号が使用されます)。
 例:SERVER caspian 000476BA8F74 27000DAEMON BLM port=5678INCREMENT session blm 6.0 31-dec-2020 5 99E82D1B9A64 HOSTID=ANYINCREMENT any_app blm 6." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/" />
 <meta property="article:modified_time" content="2020-06-03T01:12:48+09:00" /><meta property="og:site_name" content="kitASP Docs" />
-<meta itemprop="name" content="中央ライセンスサーバを使用するためのGO-Globalの設定">
-<meta itemprop="description" content="既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。中央ライセンス サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。
-GO-Global License Managerを停止する方法  [コントロールパネル | 管理ツール | サービス]をクリックします。 サービスの一覧から[GO-Global License Manager]を選択します。 [停止]ボタンをクリックします。  GO-GlobalホストでGO-Global License Managerを停止した後、中央ライセンスサーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1 はライセンスサーバの名前です。 GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:27000@LicenseServer1)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。 または GO-Globalホスト上で、GO-Globalホスト上のライセンスファイルのSERVER行の直後にUSE_SERVERを配置します。これは基本的には前述の方法と同じですが、環境変数の変更は必要ありません。
+<meta itemprop="name" content="外部ライセンス管理サーバを使用するためのGO-Globalの設定">
+<meta itemprop="description" content="既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。外部ライセンス管理サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。
+GO-Global License Managerを停止する方法  [コントロールパネル | 管理ツール | サービス]をクリックします。 サービスの一覧から [GO-Global License Manager] を選択します。 [停止] ボタンをクリックします。  GO-GlobalホストでGO-Global License Managerを停止した後、外部ライセンス管理サーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1はライセンスサーバの名前です。 GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:27000@LicenseServer1)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。 または GO-Globalホスト上で、GO-Globalホスト上のライセンスファイルのSERVER行の直後にUSE_SERVERを配置します。これは基本的には前述の方法と同じですが、環境変数の変更は必要ありません。
 たとえば、GO-Globalホスト上の永続的ライセンスファイル(license.lic など)は次のように表示されます。
-SERVER LicenseServer1 00d0b74f4023USE_SERVERファイアウォールでライセンスマネージャのポートを開く GO-Globalホストとライセンスサーバの間にファイアウォールがある場合、FLEXnet（デフォルトでは 27000）とライセンスマネージャ（BLM）のポートをファイアウォールで開く必要があります。ライセンスマネージャの場合は、ライセンスサーバ上のライセンスに特定のポートの
+SERVER LicenseServer1 00d0b74f4023USE_SERVERファイアウォールでライセンスマネージャのポートを開く GO-Globalホストとライセンスサーバの間にファイアウォールがある場合、FLEXnet(デフォルトでは27000)とライセンスマネージャ(BLM)のポートをファイアウォールで開く必要があります。ライセンスマネージャの場合は、ライセンスサーバ上のライセンスに特定のポートの
 port=&lt;port#&gt;
-を追加します。(特定のポート番号を手動で割り当てない限り、エフェメラルポート番号が使用されます)。
+を追加します(特定のポート番号を手動で割り当てない限り、エフェメラルポート番号が使用されます)。
 例:SERVER caspian 000476BA8F74 27000DAEMON BLM port=5678INCREMENT session blm 6.0 31-dec-2020 5 99E82D1B9A64 HOSTID=ANYINCREMENT any_app blm 6.">
 <meta itemprop="dateModified" content="2020-06-03T01:12:48&#43;09:00" />
 <meta itemprop="wordCount" content="73">
@@ -45,13 +45,13 @@ port=&lt;port#&gt;
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="中央ライセンスサーバを使用するためのGO-Globalの設定"/>
-<meta name="twitter:description" content="既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。中央ライセンス サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。
-GO-Global License Managerを停止する方法  [コントロールパネル | 管理ツール | サービス]をクリックします。 サービスの一覧から[GO-Global License Manager]を選択します。 [停止]ボタンをクリックします。  GO-GlobalホストでGO-Global License Managerを停止した後、中央ライセンスサーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1 はライセンスサーバの名前です。 GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:27000@LicenseServer1)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。 または GO-Globalホスト上で、GO-Globalホスト上のライセンスファイルのSERVER行の直後にUSE_SERVERを配置します。これは基本的には前述の方法と同じですが、環境変数の変更は必要ありません。
+<meta name="twitter:title" content="外部ライセンス管理サーバを使用するためのGO-Globalの設定"/>
+<meta name="twitter:description" content="既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。外部ライセンス管理サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。
+GO-Global License Managerを停止する方法  [コントロールパネル | 管理ツール | サービス]をクリックします。 サービスの一覧から [GO-Global License Manager] を選択します。 [停止] ボタンをクリックします。  GO-GlobalホストでGO-Global License Managerを停止した後、外部ライセンス管理サーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1はライセンスサーバの名前です。 GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:27000@LicenseServer1)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。 または GO-Globalホスト上で、GO-Globalホスト上のライセンスファイルのSERVER行の直後にUSE_SERVERを配置します。これは基本的には前述の方法と同じですが、環境変数の変更は必要ありません。
 たとえば、GO-Globalホスト上の永続的ライセンスファイル(license.lic など)は次のように表示されます。
-SERVER LicenseServer1 00d0b74f4023USE_SERVERファイアウォールでライセンスマネージャのポートを開く GO-Globalホストとライセンスサーバの間にファイアウォールがある場合、FLEXnet（デフォルトでは 27000）とライセンスマネージャ（BLM）のポートをファイアウォールで開く必要があります。ライセンスマネージャの場合は、ライセンスサーバ上のライセンスに特定のポートの
+SERVER LicenseServer1 00d0b74f4023USE_SERVERファイアウォールでライセンスマネージャのポートを開く GO-Globalホストとライセンスサーバの間にファイアウォールがある場合、FLEXnet(デフォルトでは27000)とライセンスマネージャ(BLM)のポートをファイアウォールで開く必要があります。ライセンスマネージャの場合は、ライセンスサーバ上のライセンスに特定のポートの
 port=&lt;port#&gt;
-を追加します。(特定のポート番号を手動で割り当てない限り、エフェメラルポート番号が使用されます)。
+を追加します(特定のポート番号を手動で割り当てない限り、エフェメラルポート番号が使用されます)。
 例:SERVER caspian 000476BA8F74 27000DAEMON BLM port=5678INCREMENT session blm 6.0 31-dec-2020 5 99E82D1B9A64 HOSTID=ANYINCREMENT any_app blm 6."/>
 
 
@@ -73,7 +73,7 @@ port=&lt;port#&gt;
   crossorigin="anonymous"></script>
 
 
-    <title>中央ライセンスサーバを使用するためのGO-Globalの設定 | kitASP Docs</title>
+    <title>外部ライセンス管理サーバを使用するためのGO-Globalの設定 | kitASP Docs</title>
   </head>
   <body class="td-page">
     <header>
@@ -143,7 +143,7 @@ port=&lt;port#&gt;
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.c6e058b61798d34a07180177cf6a25c5be78393c6f772d45f006fc548f4726481c86f5f7af6a6c5061103de9910cbed8a393d976ddda0fe3ca0632aeb13f7cad.json"
+  data-offline-search-index-json-src="/offline-search-index.ecc60f0873af7c76791fb7f769ade9d9ebf420bfd47f2030946ad36a64c422b61223acadbfd0d42b363ef3460bd2cdaf3c08dc07caa523f35ef288a5c0d60e81.json"
   data-offline-search-base-href="/"
 >
 
@@ -173,7 +173,7 @@ port=&lt;port#&gt;
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.c6e058b61798d34a07180177cf6a25c5be78393c6f772d45f006fc548f4726481c86f5f7af6a6c5061103de9910cbed8a393d976ddda0fe3ca0632aeb13f7cad.json"
+  data-offline-search-index-json-src="/offline-search-index.ecc60f0873af7c76791fb7f769ade9d9ebf420bfd47f2030946ad36a64c422b61223acadbfd0d42b363ef3460bd2cdaf3c08dc07caa523f35ef288a5c0d60e81.json"
   data-offline-search-base-href="/"
 >
 
@@ -318,7 +318,7 @@ port=&lt;port#&gt;
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostcloudlicensing" href="/docs/go-globalrc61/configuringthehost/cloudlicensing/">Gクラウドライセンス</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostcloudlicensing" href="/docs/go-globalrc61/configuringthehost/cloudlicensing/">クラウドライセンス</a>
       
       
       
@@ -342,7 +342,7 @@ port=&lt;port#&gt;
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-globalrc61configuringthehostconfiguringgo-globaltouseacentrallicenseserver" href="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/">中央ライセンスサーバを使用するためのGO-Globalの設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-globalrc61configuringthehostconfiguringgo-globaltouseacentrallicenseserver" href="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/">外部ライセンス管理サーバを使用するためのGO-Globalの設定</a>
       
       
       
@@ -2453,7 +2453,7 @@ port=&lt;port#&gt;
 
 
 <a href="https://github.com//edit/master/content/ja/docs/go-globalRC61/ConfiguringtheHost/ConfiguringGO-GlobaltouseaCentralLicenseServer.md" target="_blank"><i class="fa fa-edit fa-fw"></i> ページの編集</a>
-<a href="https://github.com//issues/new?title=%e4%b8%ad%e5%a4%ae%e3%83%a9%e3%82%a4%e3%82%bb%e3%83%b3%e3%82%b9%e3%82%b5%e3%83%bc%e3%83%90%e3%82%92%e4%bd%bf%e7%94%a8%e3%81%99%e3%82%8b%e3%81%9f%e3%82%81%e3%81%aeGO-Global%e3%81%ae%e8%a8%ad%e5%ae%9a" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
+<a href="https://github.com//issues/new?title=%e5%a4%96%e9%83%a8%e3%83%a9%e3%82%a4%e3%82%bb%e3%83%b3%e3%82%b9%e7%ae%a1%e7%90%86%e3%82%b5%e3%83%bc%e3%83%90%e3%82%92%e4%bd%bf%e7%94%a8%e3%81%99%e3%82%8b%e3%81%9f%e3%82%81%e3%81%aeGO-Global%e3%81%ae%e8%a8%ad%e5%ae%9a" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
 
 
 <a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> プロジェクトのissueを作成</a>
@@ -2518,7 +2518,7 @@ port=&lt;port#&gt;
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/">中央ライセンスサーバを使用するためのGO-Globalの設定</a>
+	<a href="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/">外部ライセンス管理サーバを使用するためのGO-Globalの設定</a>
 </li>
 
 	</ol>
@@ -2526,26 +2526,26 @@ port=&lt;port#&gt;
 
             
 <div class="td-content">
-	<h1>中央ライセンスサーバを使用するためのGO-Globalの設定</h1>
+	<h1>外部ライセンス管理サーバを使用するためのGO-Globalの設定</h1>
 	
-	<p>既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。中央ライセンス サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。</p>
+	<p>既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。外部ライセンス管理サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。</p>
 <h3 id="go-global-license-managerを停止する方法">GO-Global License Managerを停止する方法</h3>
 <ol>
 <li>[コントロールパネル | 管理ツール | サービス]をクリックします。</li>
-<li>サービスの一覧から[GO-Global License Manager]を選択します。</li>
-<li>[停止]ボタンをクリックします。</li>
+<li>サービスの一覧から <strong>[GO-Global License Manager]</strong> を選択します。</li>
+<li><strong>[停止]</strong> ボタンをクリックします。</li>
 </ol>
-<p>GO-GlobalホストでGO-Global License Managerを停止した後、中央ライセンスサーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1 はライセンスサーバの名前です。
-GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:27000@LicenseServer1)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。
+<p>GO-GlobalホストでGO-Global License Managerを停止した後、外部ライセンス管理サーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1はライセンスサーバの名前です。
+GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:<code>27000@LicenseServer1</code>)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。
 または
 GO-Globalホスト上で、GO-Globalホスト上のライセンスファイルのSERVER行の直後にUSE_SERVERを配置します。これは基本的には前述の方法と同じですが、環境変数の変更は必要ありません。</p>
 <p>たとえば、GO-Globalホスト上の永続的ライセンスファイル(license.lic など)は次のように表示されます。</p>
 <pre><code>SERVER LicenseServer1 00d0b74f4023
 USE_SERVER
 </code></pre><h2 id="ファイアウォールでライセンスマネージャのポートを開く">ファイアウォールでライセンスマネージャのポートを開く</h2>
-<p>GO-Globalホストとライセンスサーバの間にファイアウォールがある場合、FLEXnet（デフォルトでは 27000）とライセンスマネージャ（BLM）のポートをファイアウォールで開く必要があります。ライセンスマネージャの場合は、ライセンスサーバ上のライセンスに特定のポートの</p>
+<p>GO-Globalホストとライセンスサーバの間にファイアウォールがある場合、FLEXnet(デフォルトでは27000)とライセンスマネージャ(BLM)のポートをファイアウォールで開く必要があります。ライセンスマネージャの場合は、ライセンスサーバ上のライセンスに特定のポートの</p>
 <p>port=&lt;port#&gt;</p>
-<p>を追加します。(特定のポート番号を手動で割り当てない限り、エフェメラルポート番号が使用されます)。</p>
+<p>を追加します(特定のポート番号を手動で割り当てない限り、エフェメラルポート番号が使用されます)。</p>
 <pre><code>例:
 SERVER caspian 000476BA8F74 27000
 DAEMON BLM port=5678

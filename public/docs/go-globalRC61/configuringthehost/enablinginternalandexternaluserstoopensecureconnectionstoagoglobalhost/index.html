@@ -21,20 +21,20 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>社内外のユーザによるGO-Globalホストへのセキュアな接続を可能にする | kitASP Docs</title><meta property="og:title" content="社内外のユーザによるGO-Globalホストへのセキュアな接続を可能にする" />
-<meta property="og:description" content=" ホストとは別のコンピューターにWebコンポーネントをインストールします。(WebサーバとGO-Globalホストは、同じコンピュータ上の同じポートでリッスンすることはできません。） Microsoft IISが実行されていないか、GO-Globalホスト上の接続を受け入れていないことを確認します。 [Hosts Options]ダイアログの[Security]タブの[Port]フィールドの値を443に変更します。  ホストポートの設定を変更した後、ポートパラメータに433を付加してWebに追加します。ホストへの接続に使用されるリンクは例えば、http://hostname.graphon.com/goglobal/?host=hostname.graphon.com&amp;port=443 [Hosts Options]の[Security]タブで、ホストとWebサーバのSSL証明書を取得します。Webサーバコンピュータのドメイン名とGO-Globalホストのドメイン名が同じであることを確認します。それ以外の場合、ブラウザは、WebサーバからダウンロードされたWebアプリがGO-GlobalホストへのWebSocket接続を開くのを防ぎます。 外部DNSを構成して、ホストおよびWebサーバ証明書の共通名をホストおよびWebサーバコンピュータの外部IPアドレスに解決します。 ホストとWebの共通名を解決するように内部DNSを構成します。。  " />
+<meta property="og:description" content=" ホストとは別のコンピューターにWebコンポーネントをインストールします(WebサーバとGO-Globalホストは、同じコンピュータ上の同じポートでリッスンすることはできません)。 Microsoft IISが実行されていないか、GO-Globalホスト上の接続を受け入れていないことを確認します。 [Hosts Options] ダイアログの [Security] タブの [Port] フィールドの値を443に変更します。  ホストポートの設定を変更した後、Port パラメータに433を付加してWebに追加します。ホストへの接続に使用されるリンクは例えば、http://hostname.graphon.com/goglobal/?host=hostname.graphon.com&amp;port=443 [Hosts Options] の [Security] タブで、ホストとWebサーバの SSL証明書 を取得します。Webサーバコンピュータのドメイン名とGO-Globalホストのドメイン名が同じであることを確認します。それ以外の場合、ブラウザは、WebサーバからダウンロードされたWebアプリがGO-GlobalホストへのWebSocket接続を開くのを防ぎます。 外部DNSを構成して、ホストおよびWebサーバ証明書のコモンネームをホストおよびWebサーバコンピュータの外部IPアドレスに解決します。 ホストとWebのコモンネームを解決するように内部DNSを構成します。  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/configuringthehost/enablinginternalandexternaluserstoopensecureconnectionstoagoglobalhost/" />
 <meta property="article:modified_time" content="2020-06-03T01:12:48+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="社内外のユーザによるGO-Globalホストへのセキュアな接続を可能にする">
-<meta itemprop="description" content=" ホストとは別のコンピューターにWebコンポーネントをインストールします。(WebサーバとGO-Globalホストは、同じコンピュータ上の同じポートでリッスンすることはできません。） Microsoft IISが実行されていないか、GO-Globalホスト上の接続を受け入れていないことを確認します。 [Hosts Options]ダイアログの[Security]タブの[Port]フィールドの値を443に変更します。  ホストポートの設定を変更した後、ポートパラメータに433を付加してWebに追加します。ホストへの接続に使用されるリンクは例えば、http://hostname.graphon.com/goglobal/?host=hostname.graphon.com&amp;port=443 [Hosts Options]の[Security]タブで、ホストとWebサーバのSSL証明書を取得します。Webサーバコンピュータのドメイン名とGO-Globalホストのドメイン名が同じであることを確認します。それ以外の場合、ブラウザは、WebサーバからダウンロードされたWebアプリがGO-GlobalホストへのWebSocket接続を開くのを防ぎます。 外部DNSを構成して、ホストおよびWebサーバ証明書の共通名をホストおよびWebサーバコンピュータの外部IPアドレスに解決します。 ホストとWebの共通名を解決するように内部DNSを構成します。。  ">
+<meta itemprop="description" content=" ホストとは別のコンピューターにWebコンポーネントをインストールします(WebサーバとGO-Globalホストは、同じコンピュータ上の同じポートでリッスンすることはできません)。 Microsoft IISが実行されていないか、GO-Globalホスト上の接続を受け入れていないことを確認します。 [Hosts Options] ダイアログの [Security] タブの [Port] フィールドの値を443に変更します。  ホストポートの設定を変更した後、Port パラメータに433を付加してWebに追加します。ホストへの接続に使用されるリンクは例えば、http://hostname.graphon.com/goglobal/?host=hostname.graphon.com&amp;port=443 [Hosts Options] の [Security] タブで、ホストとWebサーバの SSL証明書 を取得します。Webサーバコンピュータのドメイン名とGO-Globalホストのドメイン名が同じであることを確認します。それ以外の場合、ブラウザは、WebサーバからダウンロードされたWebアプリがGO-GlobalホストへのWebSocket接続を開くのを防ぎます。 外部DNSを構成して、ホストおよびWebサーバ証明書のコモンネームをホストおよびWebサーバコンピュータの外部IPアドレスに解決します。 ホストとWebのコモンネームを解決するように内部DNSを構成します。  ">
 <meta itemprop="dateModified" content="2020-06-03T01:12:48&#43;09:00" />
-<meta itemprop="wordCount" content="10">
+<meta itemprop="wordCount" content="21">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="社内外のユーザによるGO-Globalホストへのセキュアな接続を可能にする"/>
-<meta name="twitter:description" content=" ホストとは別のコンピューターにWebコンポーネントをインストールします。(WebサーバとGO-Globalホストは、同じコンピュータ上の同じポートでリッスンすることはできません。） Microsoft IISが実行されていないか、GO-Globalホスト上の接続を受け入れていないことを確認します。 [Hosts Options]ダイアログの[Security]タブの[Port]フィールドの値を443に変更します。  ホストポートの設定を変更した後、ポートパラメータに433を付加してWebに追加します。ホストへの接続に使用されるリンクは例えば、http://hostname.graphon.com/goglobal/?host=hostname.graphon.com&amp;port=443 [Hosts Options]の[Security]タブで、ホストとWebサーバのSSL証明書を取得します。Webサーバコンピュータのドメイン名とGO-Globalホストのドメイン名が同じであることを確認します。それ以外の場合、ブラウザは、WebサーバからダウンロードされたWebアプリがGO-GlobalホストへのWebSocket接続を開くのを防ぎます。 外部DNSを構成して、ホストおよびWebサーバ証明書の共通名をホストおよびWebサーバコンピュータの外部IPアドレスに解決します。 ホストとWebの共通名を解決するように内部DNSを構成します。。  "/>
+<meta name="twitter:description" content=" ホストとは別のコンピューターにWebコンポーネントをインストールします(WebサーバとGO-Globalホストは、同じコンピュータ上の同じポートでリッスンすることはできません)。 Microsoft IISが実行されていないか、GO-Globalホスト上の接続を受け入れていないことを確認します。 [Hosts Options] ダイアログの [Security] タブの [Port] フィールドの値を443に変更します。  ホストポートの設定を変更した後、Port パラメータに433を付加してWebに追加します。ホストへの接続に使用されるリンクは例えば、http://hostname.graphon.com/goglobal/?host=hostname.graphon.com&amp;port=443 [Hosts Options] の [Security] タブで、ホストとWebサーバの SSL証明書 を取得します。Webサーバコンピュータのドメイン名とGO-Globalホストのドメイン名が同じであることを確認します。それ以外の場合、ブラウザは、WebサーバからダウンロードされたWebアプリがGO-GlobalホストへのWebSocket接続を開くのを防ぎます。 外部DNSを構成して、ホストおよびWebサーバ証明書のコモンネームをホストおよびWebサーバコンピュータの外部IPアドレスに解決します。 ホストとWebのコモンネームを解決するように内部DNSを構成します。  "/>
 
 
 
@@ -125,7 +125,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.c6e058b61798d34a07180177cf6a25c5be78393c6f772d45f006fc548f4726481c86f5f7af6a6c5061103de9910cbed8a393d976ddda0fe3ca0632aeb13f7cad.json"
+  data-offline-search-index-json-src="/offline-search-index.ecc60f0873af7c76791fb7f769ade9d9ebf420bfd47f2030946ad36a64c422b61223acadbfd0d42b363ef3460bd2cdaf3c08dc07caa523f35ef288a5c0d60e81.json"
   data-offline-search-base-href="/"
 >
 
@@ -155,7 +155,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.c6e058b61798d34a07180177cf6a25c5be78393c6f772d45f006fc548f4726481c86f5f7af6a6c5061103de9910cbed8a393d976ddda0fe3ca0632aeb13f7cad.json"
+  data-offline-search-index-json-src="/offline-search-index.ecc60f0873af7c76791fb7f769ade9d9ebf420bfd47f2030946ad36a64c422b61223acadbfd0d42b363ef3460bd2cdaf3c08dc07caa523f35ef288a5c0d60e81.json"
   data-offline-search-base-href="/"
 >
 
@@ -300,7 +300,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostcloudlicensing" href="/docs/go-globalrc61/configuringthehost/cloudlicensing/">Gクラウドライセンス</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostcloudlicensing" href="/docs/go-globalrc61/configuringthehost/cloudlicensing/">クラウドライセンス</a>
       
       
       
@@ -324,7 +324,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostconfiguringgo-globaltouseacentrallicenseserver" href="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/">中央ライセンスサーバを使用するためのGO-Globalの設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostconfiguringgo-globaltouseacentrallicenseserver" href="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/">外部ライセンス管理サーバを使用するためのGO-Globalの設定</a>
       
       
       
@@ -2500,16 +2500,16 @@
 	<h1>社内外のユーザによるGO-Globalホストへのセキュアな接続を可能にする</h1>
 	
 	<ol>
-<li>ホストとは別のコンピューターにWebコンポーネントをインストールします。(WebサーバとGO-Globalホストは、同じコンピュータ上の同じポートでリッスンすることはできません。）</li>
+<li>ホストとは別のコンピューターにWebコンポーネントをインストールします(WebサーバとGO-Globalホストは、同じコンピュータ上の同じポートでリッスンすることはできません)。</li>
 <li>Microsoft IISが実行されていないか、GO-Globalホスト上の接続を受け入れていないことを確認します。</li>
-<li>[Hosts Options]ダイアログの[Security]タブの[Port]フィールドの値を443に変更します。</li>
+<li><strong>[Hosts Options]</strong> ダイアログの <strong>[Security]</strong> タブの <strong>[Port]</strong> フィールドの値を443に変更します。</li>
 </ol>
 <p><img src="/img/2-8-1.png" alt="2-8-1"></p>
 <ol start="4">
-<li>ホストポートの設定を変更した後、ポートパラメータに433を付加してWebに追加します。ホストへの接続に使用されるリンクは例えば、http://hostname.graphon.com/goglobal/?host=hostname.graphon.com&amp;port=443</li>
-<li>[Hosts Options]の[Security]タブで、ホストとWebサーバのSSL証明書を取得します。Webサーバコンピュータのドメイン名とGO-Globalホストのドメイン名が同じであることを確認します。それ以外の場合、ブラウザは、WebサーバからダウンロードされたWebアプリがGO-GlobalホストへのWebSocket接続を開くのを防ぎます。</li>
-<li>外部DNSを構成して、ホストおよびWebサーバ証明書の共通名をホストおよびWebサーバコンピュータの外部IPアドレスに解決します。</li>
-<li>ホストとWebの共通名を解決するように内部DNSを構成します。。</li>
+<li>ホストポートの設定を変更した後、<strong>Port</strong> パラメータに433を付加してWebに追加します。ホストへの接続に使用されるリンクは例えば、<code>http://hostname.graphon.com/goglobal/?host=hostname.graphon.com&amp;port=443</code></li>
+<li><strong>[Hosts Options]</strong> の <strong>[Security]</strong> タブで、ホストとWebサーバの <strong>SSL証明書</strong> を取得します。Webサーバコンピュータのドメイン名とGO-Globalホストのドメイン名が同じであることを確認します。それ以外の場合、ブラウザは、WebサーバからダウンロードされたWebアプリがGO-GlobalホストへのWebSocket接続を開くのを防ぎます。</li>
+<li>外部DNSを構成して、ホストおよびWebサーバ証明書のコモンネームをホストおよびWebサーバコンピュータの外部IPアドレスに解決します。</li>
+<li>ホストとWebのコモンネームを解決するように内部DNSを構成します。</li>
 </ol>
 
 	
@@ -2617,7 +2617,7 @@
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
         <a href="/docs/go-globalrc61/configuringthehost/runningthe30daytrialversion/">Running the 30-Day Trial Version</a>
       </div><div class="xPrevNextLink_next">
-        <a href="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/">中央ライセンスサーバを使用するためのGO-Globalの設定</a>
+        <a href="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/">外部ライセンス管理サーバを使用するためのGO-Globalの設定</a>
       </div></div>
   
 
