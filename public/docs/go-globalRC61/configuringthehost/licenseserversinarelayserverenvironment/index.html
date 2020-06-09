@@ -128,7 +128,7 @@ Dependent Hosts that are upgraded to version 6.1 from older versions will contin
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ecc60f0873af7c76791fb7f769ade9d9ebf420bfd47f2030946ad36a64c422b61223acadbfd0d42b363ef3460bd2cdaf3c08dc07caa523f35ef288a5c0d60e81.json"
+  data-offline-search-index-json-src="/offline-search-index.5a9b4c9e9c38dd7ca8c8ce0f2b4e6292b4280eae290a67e26efb0d85e1750ef5c4306c7ce26f4d54978270b847e70075f4c01fbfa15a58a2664083c004876868.json"
   data-offline-search-base-href="/"
 >
 
@@ -158,7 +158,7 @@ Dependent Hosts that are upgraded to version 6.1 from older versions will contin
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ecc60f0873af7c76791fb7f769ade9d9ebf420bfd47f2030946ad36a64c422b61223acadbfd0d42b363ef3460bd2cdaf3c08dc07caa523f35ef288a5c0d60e81.json"
+  data-offline-search-index-json-src="/offline-search-index.5a9b4c9e9c38dd7ca8c8ce0f2b4e6292b4280eae290a67e26efb0d85e1750ef5c4306c7ce26f4d54978270b847e70075f4c01fbfa15a58a2664083c004876868.json"
   data-offline-search-base-href="/"
 >
 
@@ -339,6 +339,12 @@ Dependent Hosts that are upgraded to version 6.1 from older versions will contin
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostlicenseserversincloudenvironments" href="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/">クラウド環境でのライセンスサーバ</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-globalrc61configuringthehostlicenseserversinarelayserverenvironment" href="/docs/go-globalrc61/configuringthehost/licenseserversinarelayserverenvironment/">License Servers in a Relay Server Environment</a>
       
       
@@ -352,12 +358,6 @@ Dependent Hosts that are upgraded to version 6.1 from older versions will contin
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostautomaticclientkeyboardsupport" href="/docs/go-globalrc61/configuringthehost/automaticclientkeyboardsupport/">自動クライアントキーボードサポート</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostlicenseserversincloudenvironments" href="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/"></a>
       
       
     </li>
@@ -2513,15 +2513,15 @@ Dependent Hosts that are upgraded to version 6.1 from older versions will contin
 	<h1>License Servers in a Relay Server Environment</h1>
 	
 	<p>Prior to version 6.1, GO-Global managed licenses from Dependent Hosts by default. This required administrators to configure each Dependent Host to use a central license manager. This is no longer necessary, as version 6.1 manages licenses from the relay server by default. Administrators can add and remove Dependent Hosts from the relay server without having to make any licensing configuration changes.</p>
-<p>Dependent Hosts that are upgraded to version 6.1 from older versions will continue to manage licenses from the Dependent Host. After upgrading, administrators can change this by editing the value of the ManageLicensesFrom property in the HostProperties.xml file from Host to Relay on all the Dependent Hosts and the relay server, as follows:</p>
+<p>Dependent Hosts that are upgraded to version 6.1 from older versions will continue to manage licenses from the Dependent Host. After upgrading, administrators can change this by editing the value of the <strong>ManageLicensesFrom</strong> property in the <strong>HostProperties.xml</strong> file from <strong>Host</strong> to <strong>Relay</strong> on all the Dependent Hosts and the relay server, as follows:</p>
 <h3 id="to-checkout-licenses-from-the-relay-server">To checkout licenses from the relay server</h3>
 <ol>
-<li>Stop the GO-Global Application Publishing Service.</li>
-<li>Locate the file HostProperties.xml in the C:\ProgramData\GraphOn\GO-Global directory.</li>
-<li>Open HostProperties.xml in WordPad and locate the ManageLicensesFrom property.</li>
-<li>Set the ManageLicensesFrom property to Relay.</li>
+<li>Stop the <strong>GO-Global Application Publishing Service.</strong></li>
+<li>Locate the file <strong>HostProperties.xml</strong> in the <code>C:\ProgramData\GraphOn\GO-Global</code> directory.</li>
+<li>Open <strong>HostProperties.xml</strong> in WordPad and locate the ManageLicensesFrom property.</li>
+<li>Set the <strong>ManageLicensesFrom</strong> property to <strong>Relay.</strong></li>
 <li>Save the file.</li>
-<li>Restart the GO-Global Application Publishing Service.</li>
+<li>Restart the <strong>GO-Global Application Publishing Service.</strong></li>
 </ol>
 <p>If this property is changed to Relay on an inDependent Host or if it is set to an invalid value,licenses will revert to being managed from the host.</p>
 
@@ -2604,6 +2604,13 @@ Dependent Hosts that are upgraded to version 6.1 from older versions will contin
   
     
       
+        
+        
+      
+    
+  
+    
+      
     
   
     
@@ -2611,12 +2618,6 @@ Dependent Hosts that are upgraded to version 6.1 from older versions will contin
         
           
           
-        
-      
-    
-  
-    
-      
         
       
     
@@ -2631,7 +2632,7 @@ Dependent Hosts that are upgraded to version 6.1 from older versions will contin
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
-        <a href="/docs/go-globalrc61/configuringthehost/redundantlicenseservers/">Redundant License Servers</a>
+        <a href="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/">クラウド環境でのライセンスサーバ</a>
       </div><div class="xPrevNextLink_next">
         <a href="/docs/go-globalrc61/configuringthehost/configuringabackuplicensemanagerinacloudlicensingenvironment/">クラウドライセンス環境でのBackup License Managerの構成</a>
       </div></div>

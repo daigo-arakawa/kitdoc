@@ -500,6 +500,52 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
     </item>
     
     <item>
+      <title>Docs: クラウド環境でのライセンスサーバ</title>
+      <link>/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/</guid>
+      <description>
+        
+        
+        &lt;p&gt;GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定の &lt;strong&gt;Elastic IPアドレス(EIP)&lt;/strong&gt; と固定のMACアドレスを持つ &lt;strong&gt;Elastic Network Interface(ENI)&lt;/strong&gt; を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。&lt;/p&gt;
+&lt;h3 id=&#34;awsでeipとeniを作成しec2インスタンスにアタッチする方法&#34;&gt;AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Elastic IP（EIP）を作成する。
+EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「&lt;strong&gt;Allocate new address&lt;/strong&gt; 」を選択します。
+詳細については、AWS EIPのドキュメントを参照してください。&lt;br&gt;
+&lt;code&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Elastic Network Interface(ENI)を作成します。&lt;br&gt;
+2.1 EC2コンソールのナビゲーションペインで、&lt;strong&gt;ネットワークインターフェース&lt;/strong&gt; を選択します。&lt;br&gt;
+2.2 &lt;strong&gt;Create Network Interface&lt;/strong&gt; をクリックします。&lt;br&gt;
+2.3 &lt;strong&gt;説明&lt;/strong&gt; を入力し、適切な可用性ゾーンからサブネットを選択します。&lt;br&gt;
+2.4 プライベートIPは自動割り当てのままにしておく。&lt;br&gt;
+2.5 ファイアウォールルールを含むセキュリティグループを選択します。&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。&lt;br&gt;
+3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。&lt;br&gt;
+3.2 手順1で作成したEIPをENIに割り当てます。&lt;br&gt;
+詳細については、AWS ENIのドキュメントを参照してください。&lt;br&gt;
+&lt;code&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。
+&lt;/div&gt;
+
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。&lt;br&gt;
+4.1 EC インスタンスから、GO-Global License Manager サービスを実行しているインスタンスを選択し、[アクション] &amp;gt; [ネットワーキング] &amp;gt; [ネットワーク インターフェイスの添付] を選択します。&lt;br&gt;
+4.2 手順 2 で作成した ENI を選択します。利用できない場合は、別のAWSインスタンスにアタッチされているか、インスタンスとは異なる可用性ゾーンに作成されている可能性があります。&lt;br&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: License Servers in a Relay Server Environment</title>
       <link>/docs/go-globalrc61/configuringthehost/licenseserversinarelayserverenvironment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -509,15 +555,15 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
         
         
         &lt;p&gt;Prior to version 6.1, GO-Global managed licenses from Dependent Hosts by default. This required administrators to configure each Dependent Host to use a central license manager. This is no longer necessary, as version 6.1 manages licenses from the relay server by default. Administrators can add and remove Dependent Hosts from the relay server without having to make any licensing configuration changes.&lt;/p&gt;
-&lt;p&gt;Dependent Hosts that are upgraded to version 6.1 from older versions will continue to manage licenses from the Dependent Host. After upgrading, administrators can change this by editing the value of the ManageLicensesFrom property in the HostProperties.xml file from Host to Relay on all the Dependent Hosts and the relay server, as follows:&lt;/p&gt;
+&lt;p&gt;Dependent Hosts that are upgraded to version 6.1 from older versions will continue to manage licenses from the Dependent Host. After upgrading, administrators can change this by editing the value of the &lt;strong&gt;ManageLicensesFrom&lt;/strong&gt; property in the &lt;strong&gt;HostProperties.xml&lt;/strong&gt; file from &lt;strong&gt;Host&lt;/strong&gt; to &lt;strong&gt;Relay&lt;/strong&gt; on all the Dependent Hosts and the relay server, as follows:&lt;/p&gt;
 &lt;h3 id=&#34;to-checkout-licenses-from-the-relay-server&#34;&gt;To checkout licenses from the relay server&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Stop the GO-Global Application Publishing Service.&lt;/li&gt;
-&lt;li&gt;Locate the file HostProperties.xml in the C:\ProgramData\GraphOn\GO-Global directory.&lt;/li&gt;
-&lt;li&gt;Open HostProperties.xml in WordPad and locate the ManageLicensesFrom property.&lt;/li&gt;
-&lt;li&gt;Set the ManageLicensesFrom property to Relay.&lt;/li&gt;
+&lt;li&gt;Stop the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Locate the file &lt;strong&gt;HostProperties.xml&lt;/strong&gt; in the &lt;code&gt;C:\ProgramData\GraphOn\GO-Global&lt;/code&gt; directory.&lt;/li&gt;
+&lt;li&gt;Open &lt;strong&gt;HostProperties.xml&lt;/strong&gt; in WordPad and locate the ManageLicensesFrom property.&lt;/li&gt;
+&lt;li&gt;Set the &lt;strong&gt;ManageLicensesFrom&lt;/strong&gt; property to &lt;strong&gt;Relay.&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Save the file.&lt;/li&gt;
-&lt;li&gt;Restart the GO-Global Application Publishing Service.&lt;/li&gt;
+&lt;li&gt;Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;If this property is changed to Relay on an inDependent Host or if it is set to an invalid value,licenses will revert to being managed from the host.&lt;/p&gt;
 
@@ -536,11 +582,11 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
         &lt;p&gt;クラウドライセンスが採用されている場合、GraphOnのライセンスサーバへの接続が失われ、ホストが再起動された後も、ホストが予約済みシートを引き続き使用できるようにBackup License Managerを構成することをお勧めします。ホストがBackup License Managerを使用するように構成されていない場合、ユーザはホストの再起動後にセッションを開始できません。&lt;/p&gt;
 &lt;h3 id=&#34;バックアップライセンスマネージャーを構成する方法&#34;&gt;バックアップライセンスマネージャーを構成する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Admin Consoleで、[Tools | Host Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;[Configuration]タブをクリックします。&lt;/li&gt;
-&lt;li&gt;[Backup License Manager(s)]フィールドに、指定したバックアップライセンスマシンの名前またはIPアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;OKをクリックします。&lt;/li&gt;
-&lt;li&gt;GO-Global Application Publishing Serviceを再起動します。&lt;/li&gt;
+&lt;li&gt;Admin Consoleで、&lt;strong&gt;[Tools | Host Options]&lt;/strong&gt; の順にクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Configuration]&lt;/strong&gt; タブをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Backup License Manager(s)]&lt;/strong&gt; フィールドに、指定したバックアップライセンスマシンの名前またはIPアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OK&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; を再起動します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/img/2-13-1.png&#34; alt=&#34;2-13-1&#34;&gt;&lt;/p&gt;
 
@@ -558,47 +604,6 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
         
         &lt;p&gt;自動クライアントキーボード機能により、管理者はGO-Globalホストを設定して、任意のクライアント キーボードで自動的に動作するように設定することができます。ユーザは、クライアントデバイスのローカルキーボード切り替え機能とクライアントの入力メソッド エディタ（IME）を使用して、その場でキーボードを切り替えることができます。GO-Globalホストにキーボードレイアウトをインストールしたり、GO-Globalクライアントにキーボード マッピングファイルをインストールする必要はありません。&lt;/p&gt;
 &lt;p&gt;クライアントの自動キーボードはデフォルトで有効になっています。自動クライアントキーボードを無効にし、クライアントキーボードを処理するためのレガシーメソッドを有効にする手順は、Appendixに記載されています。&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: </title>
-      <link>/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;クラウド環境でのライセンスサーバー&#34;&gt;クラウド環境でのライセンスサーバー&lt;/h1&gt;
-&lt;p&gt;GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定のElastic IPアドレス(EIP)と固定のMACアドレスを持つElastic Network Interface(ENI)を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。&lt;/p&gt;
-&lt;h3 id=&#34;awsでeipとeniを作成しec2インスタンスにアタッチする方法&#34;&gt;AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Elastic IP（EIP）を作成する。
-EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address」を選択します。
-詳細については、AWS EIPのドキュメントを参照してください。
-&lt;a href=&#34;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html&#34;&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Elastic Network Interface(ENI)を作成します。
-2.1 EC2コンソールのナビゲーションペインで、ネットワークインターフェースを選択します。
-2.2 Create Network Interfaceをクリックします。
-2.3 説明を入力し、適切な可用性ゾーンからサブネットを選択します。
-2.4 プライベートIPは自動割り当てのままにしておく。
-2.5 ファイアウォールルールを含むセキュリティグループを選択します。&lt;/li&gt;
-&lt;li&gt;Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。
-3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。
-3.2 手順1で作成したEIPをENIに割り当てます。
-詳細については、AWS ENIのドキュメントを参照してください。
-&lt;a href=&#34;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&#34;&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。
-4.1 EC インスタンスから、GO-Global License Manager サービスを実行しているインスタンスを選択し、[アクション] &amp;gt; [ネットワーキング] &amp;gt; [ネットワーク インターフェイスの添付] を選択します。
-4.2 手順 2 で作成した ENI を選択します。利用できない場合は、別のAWSインスタンスにアタッチされているか、インスタンスとは異なる可用性ゾーンに作成されている可能性があります。&lt;/li&gt;
-&lt;/ol&gt;
 
       </description>
     </item>

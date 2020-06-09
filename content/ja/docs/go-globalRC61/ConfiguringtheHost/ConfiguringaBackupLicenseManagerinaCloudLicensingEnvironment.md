@@ -1,7 +1,7 @@
 ---
 title: "クラウドライセンス環境でのBackup License Managerの構成"
 linkTitle: ""
-weight: 11
+weight: 13
 type: "docs"
 ---
 
@@ -9,10 +9,10 @@ type: "docs"
 
 ### バックアップライセンスマネージャーを構成する方法
 
-1. Admin Consoleで、[Tools | Host Options]の順にクリックします。
-2. [Configuration]タブをクリックします。
-3. [Backup License Manager(s)]フィールドに、指定したバックアップライセンスマシンの名前またはIPアドレスを入力します。
-4. OKをクリックします。
-5. GO-Global Application Publishing Serviceを再起動します。
+1. Admin Consoleで、**[Tools | Host Options]** の順にクリックします。
+2. **[Configuration]** タブをクリックします。
+3. **[Backup License Manager(s)]** フィールドに、指定したバックアップライセンスマシンの名前またはIPアドレスを入力します。
+4. **OK** をクリックします。
+5. **GO-Global Application Publishing Service** を再起動します。
 
 ![2-13-1](/img/2-13-1.png) 

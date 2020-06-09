@@ -30,7 +30,7 @@ port=&lt;port#&gt;
 例:SERVER caspian 000476BA8F74 27000DAEMON BLM port=5678INCREMENT session blm 6.0 31-dec-2020 5 99E82D1B9A64 HOSTID=ANYINCREMENT any_app blm 6." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/" />
-<meta property="article:modified_time" content="2020-06-03T01:12:48+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-08T12:29:35+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="外部ライセンス管理サーバを使用するためのGO-Globalの設定">
 <meta itemprop="description" content="既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。外部ライセンス管理サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。
 GO-Global License Managerを停止する方法  [コントロールパネル | 管理ツール | サービス]をクリックします。 サービスの一覧から [GO-Global License Manager] を選択します。 [停止] ボタンをクリックします。  GO-GlobalホストでGO-Global License Managerを停止した後、外部ライセンス管理サーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1はライセンスサーバの名前です。 GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:27000@LicenseServer1)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。 または GO-Globalホスト上で、GO-Globalホスト上のライセンスファイルのSERVER行の直後にUSE_SERVERを配置します。これは基本的には前述の方法と同じですが、環境変数の変更は必要ありません。
@@ -39,7 +39,7 @@ SERVER LicenseServer1 00d0b74f4023USE_SERVERファイアウォールでライ�
 port=&lt;port#&gt;
 を追加します(特定のポート番号を手動で割り当てない限り、エフェメラルポート番号が使用されます)。
 例:SERVER caspian 000476BA8F74 27000DAEMON BLM port=5678INCREMENT session blm 6.0 31-dec-2020 5 99E82D1B9A64 HOSTID=ANYINCREMENT any_app blm 6.">
-<meta itemprop="dateModified" content="2020-06-03T01:12:48&#43;09:00" />
+<meta itemprop="dateModified" content="2020-06-08T12:29:35&#43;09:00" />
 <meta itemprop="wordCount" content="73">
 
 
@@ -143,7 +143,7 @@ port=&lt;port#&gt;
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ecc60f0873af7c76791fb7f769ade9d9ebf420bfd47f2030946ad36a64c422b61223acadbfd0d42b363ef3460bd2cdaf3c08dc07caa523f35ef288a5c0d60e81.json"
+  data-offline-search-index-json-src="/offline-search-index.5a9b4c9e9c38dd7ca8c8ce0f2b4e6292b4280eae290a67e26efb0d85e1750ef5c4306c7ce26f4d54978270b847e70075f4c01fbfa15a58a2664083c004876868.json"
   data-offline-search-base-href="/"
 >
 
@@ -173,7 +173,7 @@ port=&lt;port#&gt;
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ecc60f0873af7c76791fb7f769ade9d9ebf420bfd47f2030946ad36a64c422b61223acadbfd0d42b363ef3460bd2cdaf3c08dc07caa523f35ef288a5c0d60e81.json"
+  data-offline-search-index-json-src="/offline-search-index.5a9b4c9e9c38dd7ca8c8ce0f2b4e6292b4280eae290a67e26efb0d85e1750ef5c4306c7ce26f4d54978270b847e70075f4c01fbfa15a58a2664083c004876868.json"
   data-offline-search-base-href="/"
 >
 
@@ -354,6 +354,12 @@ port=&lt;port#&gt;
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostlicenseserversincloudenvironments" href="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/">クラウド環境でのライセンスサーバ</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostlicenseserversinarelayserverenvironment" href="/docs/go-globalrc61/configuringthehost/licenseserversinarelayserverenvironment/">License Servers in a Relay Server Environment</a>
       
       
@@ -367,12 +373,6 @@ port=&lt;port#&gt;
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostautomaticclientkeyboardsupport" href="/docs/go-globalrc61/configuringthehost/automaticclientkeyboardsupport/">自動クライアントキーボードサポート</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostlicenseserversincloudenvironments" href="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/"></a>
       
       
     </li>
@@ -2725,7 +2725,7 @@ HOSTID=ANY
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 3, 2020: <a  href="https://github.com//commit/cd0b45b6c46608106fe047f0f02f8c34f57db5eb">61-3 (cd0b45b6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 8, 2020: <a  href="https://github.com//commit/f198a8d858b89b46e87398184436a78ce10c64b3">update20200608 (f198a8d8)</a>
 </div>
 </div>
 

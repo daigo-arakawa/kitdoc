@@ -20,24 +20,57 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>kitASP Docs</title><meta property="og:title" content="" />
-<meta property="og:description" content="クラウド環境でのライセンスサーバー GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定のElastic IPアドレス(EIP)と固定のMACアドレスを持つElastic Network Interface(ENI)を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。
-AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP（EIP）を作成する。 EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address」を選択します。 詳細については、AWS EIPのドキュメントを参照してください。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html Elastic Network Interface(ENI)を作成します。 2.1 EC2コンソールのナビゲーションペインで、ネットワークインターフェースを選択します。 2.2 Create Network Interfaceをクリックします。 2.3 説明を入力し、適切な可用性ゾーンからサブネットを選択します。 2.4 プライベートIPは自動割り当てのままにしておく。 2.5 ファイアウォールルールを含むセキュリティグループを選択します。 Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。 3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。 3.2 手順1で作成したEIPをENIに割り当てます。 詳細については、AWS ENIのドキュメントを参照してください。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html   ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。" />
+<title>クラウド環境でのライセンスサーバ | kitASP Docs</title><meta property="og:title" content="クラウド環境でのライセンスサーバ" />
+<meta property="og:description" content="GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定の Elastic IPアドレス(EIP) と固定のMACアドレスを持つ Elastic Network Interface(ENI) を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。
+AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP（EIP）を作成する。 EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address 」を選択します。 詳細については、AWS EIPのドキュメントを参照してください。
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html Elastic Network Interface(ENI)を作成します。
+2.1 EC2コンソールのナビゲーションペインで、ネットワークインターフェース を選択します。
+2.2 Create Network Interface をクリックします。
+2.3 説明 を入力し、適切な可用性ゾーンからサブネットを選択します。
+2.4 プライベートIPは自動割り当てのままにしておく。
+2.5 ファイアウォールルールを含むセキュリティグループを選択します。
+ Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。
+3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。
+3.2 手順1で作成したEIPをENIに割り当てます。
+詳細については、AWS ENIのドキュメントを参照してください。
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/" />
 <meta property="article:modified_time" content="2020-06-03T00:34:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
-<meta itemprop="name" content="">
-<meta itemprop="description" content="クラウド環境でのライセンスサーバー GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定のElastic IPアドレス(EIP)と固定のMACアドレスを持つElastic Network Interface(ENI)を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。
-AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP（EIP）を作成する。 EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address」を選択します。 詳細については、AWS EIPのドキュメントを参照してください。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html Elastic Network Interface(ENI)を作成します。 2.1 EC2コンソールのナビゲーションペインで、ネットワークインターフェースを選択します。 2.2 Create Network Interfaceをクリックします。 2.3 説明を入力し、適切な可用性ゾーンからサブネットを選択します。 2.4 プライベートIPは自動割り当てのままにしておく。 2.5 ファイアウォールルールを含むセキュリティグループを選択します。 Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。 3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。 3.2 手順1で作成したEIPをENIに割り当てます。 詳細については、AWS ENIのドキュメントを参照してください。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html   ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。">
+<meta itemprop="name" content="クラウド環境でのライセンスサーバ">
+<meta itemprop="description" content="GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定の Elastic IPアドレス(EIP) と固定のMACアドレスを持つ Elastic Network Interface(ENI) を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。
+AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP（EIP）を作成する。 EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address 」を選択します。 詳細については、AWS EIPのドキュメントを参照してください。
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html Elastic Network Interface(ENI)を作成します。
+2.1 EC2コンソールのナビゲーションペインで、ネットワークインターフェース を選択します。
+2.2 Create Network Interface をクリックします。
+2.3 説明 を入力し、適切な可用性ゾーンからサブネットを選択します。
+2.4 プライベートIPは自動割り当てのままにしておく。
+2.5 ファイアウォールルールを含むセキュリティグループを選択します。
+ Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。
+3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。
+3.2 手順1で作成したEIPをENIに割り当てます。
+詳細については、AWS ENIのドキュメントを参照してください。
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。">
 <meta itemprop="dateModified" content="2020-06-03T00:34:18&#43;09:00" />
-<meta itemprop="wordCount" content="89">
+<meta itemprop="wordCount" content="97">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="クラウド環境でのライセンスサーバー GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定のElastic IPアドレス(EIP)と固定のMACアドレスを持つElastic Network Interface(ENI)を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。
-AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP（EIP）を作成する。 EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address」を選択します。 詳細については、AWS EIPのドキュメントを参照してください。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html Elastic Network Interface(ENI)を作成します。 2.1 EC2コンソールのナビゲーションペインで、ネットワークインターフェースを選択します。 2.2 Create Network Interfaceをクリックします。 2.3 説明を入力し、適切な可用性ゾーンからサブネットを選択します。 2.4 プライベートIPは自動割り当てのままにしておく。 2.5 ファイアウォールルールを含むセキュリティグループを選択します。 Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。 3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。 3.2 手順1で作成したEIPをENIに割り当てます。 詳細については、AWS ENIのドキュメントを参照してください。 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html   ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。"/>
+<meta name="twitter:title" content="クラウド環境でのライセンスサーバ"/>
+<meta name="twitter:description" content="GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定の Elastic IPアドレス(EIP) と固定のMACアドレスを持つ Elastic Network Interface(ENI) を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。
+AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP（EIP）を作成する。 EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address 」を選択します。 詳細については、AWS EIPのドキュメントを参照してください。
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html Elastic Network Interface(ENI)を作成します。
+2.1 EC2コンソールのナビゲーションペインで、ネットワークインターフェース を選択します。
+2.2 Create Network Interface をクリックします。
+2.3 説明 を入力し、適切な可用性ゾーンからサブネットを選択します。
+2.4 プライベートIPは自動割り当てのままにしておく。
+2.5 ファイアウォールルールを含むセキュリティグループを選択します。
+ Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。
+3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。
+3.2 手順1で作成したEIPをENIに割り当てます。
+詳細については、AWS ENIのドキュメントを参照してください。
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。"/>
 
 
 
@@ -58,7 +91,7 @@ AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  
   crossorigin="anonymous"></script>
 
 
-    <title>kitASP Docs</title>
+    <title>クラウド環境でのライセンスサーバ | kitASP Docs</title>
   </head>
   <body class="td-page">
     <header>
@@ -128,7 +161,7 @@ AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ecc60f0873af7c76791fb7f769ade9d9ebf420bfd47f2030946ad36a64c422b61223acadbfd0d42b363ef3460bd2cdaf3c08dc07caa523f35ef288a5c0d60e81.json"
+  data-offline-search-index-json-src="/offline-search-index.5a9b4c9e9c38dd7ca8c8ce0f2b4e6292b4280eae290a67e26efb0d85e1750ef5c4306c7ce26f4d54978270b847e70075f4c01fbfa15a58a2664083c004876868.json"
   data-offline-search-base-href="/"
 >
 
@@ -158,7 +191,7 @@ AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ecc60f0873af7c76791fb7f769ade9d9ebf420bfd47f2030946ad36a64c422b61223acadbfd0d42b363ef3460bd2cdaf3c08dc07caa523f35ef288a5c0d60e81.json"
+  data-offline-search-index-json-src="/offline-search-index.5a9b4c9e9c38dd7ca8c8ce0f2b4e6292b4280eae290a67e26efb0d85e1750ef5c4306c7ce26f4d54978270b847e70075f4c01fbfa15a58a2664083c004876868.json"
   data-offline-search-base-href="/"
 >
 
@@ -339,6 +372,12 @@ AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-globalrc61configuringthehostlicenseserversincloudenvironments" href="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/">クラウド環境でのライセンスサーバ</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostlicenseserversinarelayserverenvironment" href="/docs/go-globalrc61/configuringthehost/licenseserversinarelayserverenvironment/">License Servers in a Relay Server Environment</a>
       
       
@@ -352,12 +391,6 @@ AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61configuringthehostautomaticclientkeyboardsupport" href="/docs/go-globalrc61/configuringthehost/automaticclientkeyboardsupport/">自動クライアントキーボードサポート</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-globalrc61configuringthehostlicenseserversincloudenvironments" href="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/"></a>
       
       
     </li>
@@ -2438,7 +2471,7 @@ AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  
 
 
 <a href="https://github.com//edit/master/content/ja/docs/go-globalRC61/ConfiguringtheHost/LicenseServersinCloudEnvironments.md" target="_blank"><i class="fa fa-edit fa-fw"></i> ページの編集</a>
-<a href="https://github.com//issues/new?title=" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
+<a href="https://github.com//issues/new?title=%e3%82%af%e3%83%a9%e3%82%a6%e3%83%89%e7%92%b0%e5%a2%83%e3%81%a7%e3%81%ae%e3%83%a9%e3%82%a4%e3%82%bb%e3%83%b3%e3%82%b9%e3%82%b5%e3%83%bc%e3%83%90" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
 
 
 <a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> プロジェクトのissueを作成</a>
@@ -2502,7 +2535,7 @@ AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/"></a>
+	<a href="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/">クラウド環境でのライセンスサーバ</a>
 </li>
 
 	</ol>
@@ -2510,35 +2543,40 @@ AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  
 
             
 <div class="td-content">
-	<h1></h1>
+	<h1>クラウド環境でのライセンスサーバ</h1>
 	
-	<h1 id="クラウド環境でのライセンスサーバー">クラウド環境でのライセンスサーバー</h1>
-<p>GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定のElastic IPアドレス(EIP)と固定のMACアドレスを持つElastic Network Interface(ENI)を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。</p>
+	<p>GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定の <strong>Elastic IPアドレス(EIP)</strong> と固定のMACアドレスを持つ <strong>Elastic Network Interface(ENI)</strong> を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。</p>
 <h3 id="awsでeipとeniを作成しec2インスタンスにアタッチする方法">AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法</h3>
 <ol>
 <li>Elastic IP（EIP）を作成する。
-EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address」を選択します。
-詳細については、AWS EIPのドキュメントを参照してください。
-<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html</a></li>
-<li>Elastic Network Interface(ENI)を作成します。
-2.1 EC2コンソールのナビゲーションペインで、ネットワークインターフェースを選択します。
-2.2 Create Network Interfaceをクリックします。
-2.3 説明を入力し、適切な可用性ゾーンからサブネットを選択します。
-2.4 プライベートIPは自動割り当てのままにしておく。
-2.5 ファイアウォールルールを含むセキュリティグループを選択します。</li>
-<li>Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。
-3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。
-3.2 手順1で作成したEIPをENIに割り当てます。
-詳細については、AWS ENIのドキュメントを参照してください。
-<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html</a></li>
+EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「<strong>Allocate new address</strong> 」を選択します。
+詳細については、AWS EIPのドキュメントを参照してください。<br>
+<code>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html</code></li>
+<li>Elastic Network Interface(ENI)を作成します。<br>
+2.1 EC2コンソールのナビゲーションペインで、<strong>ネットワークインターフェース</strong> を選択します。<br>
+2.2 <strong>Create Network Interface</strong> をクリックします。<br>
+2.3 <strong>説明</strong> を入力し、適切な可用性ゾーンからサブネットを選択します。<br>
+2.4 プライベートIPは自動割り当てのままにしておく。<br>
+2.5 ファイアウォールルールを含むセキュリティグループを選択します。<br></li>
+<li>Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。<br>
+3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。<br>
+3.2 手順1で作成したEIPをENIに割り当てます。<br>
+詳細については、AWS ENIのドキュメントを参照してください。<br>
+<code>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html</code></li>
 </ol>
-<blockquote>
-<p>ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。</p>
-</blockquote>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。
+</div>
+
 <ol start="4">
-<li>GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。
-4.1 EC インスタンスから、GO-Global License Manager サービスを実行しているインスタンスを選択し、[アクション] &gt; [ネットワーキング] &gt; [ネットワーク インターフェイスの添付] を選択します。
-4.2 手順 2 で作成した ENI を選択します。利用できない場合は、別のAWSインスタンスにアタッチされているか、インスタンスとは異なる可用性ゾーンに作成されている可能性があります。</li>
+<li>GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。<br>
+4.1 EC インスタンスから、GO-Global License Manager サービスを実行しているインスタンスを選択し、[アクション] &gt; [ネットワーキング] &gt; [ネットワーク インターフェイスの添付] を選択します。<br>
+4.2 手順 2 で作成した ENI を選択します。利用できない場合は、別のAWSインスタンスにアタッチされているか、インスタンスとは異なる可用性ゾーンに作成されている可能性があります。<br></li>
 </ol>
 
 	
@@ -2620,7 +2658,13 @@ EC2コンソールのナビゲーションペインから「ネットワーク�
   
     
       
+    
+  
+    
+      
         
+          
+          
         
       
     
@@ -2628,18 +2672,12 @@ EC2コンソールのナビゲーションペインから「ネットワーク�
     
       
         
-        
       
     
   
     
       
         
-        
-      
-    
-  
-    
       
     
   
@@ -2647,7 +2685,9 @@ EC2コンソールのナビゲーションペインから「ネットワーク�
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
-        <a href="/docs/go-globalrc61/configuringthehost/automaticclientkeyboardsupport/">自動クライアントキーボードサポート</a>
+        <a href="/docs/go-globalrc61/configuringthehost/redundantlicenseservers/">Redundant License Servers</a>
+      </div><div class="xPrevNextLink_next">
+        <a href="/docs/go-globalrc61/configuringthehost/licenseserversinarelayserverenvironment/">License Servers in a Relay Server Environment</a>
       </div></div>
   
 
