@@ -29,7 +29,7 @@
 GO-Globalホストにポートを追加する方法  [スタート | 設定 | プリンタ] の順にクリックします。 [プリンタの追加] をダブルクリックします。 ローカルプリンタを選択し、[次へ] をクリックします。 [新しいポートの作成] をクリックし、種類として[標準 TCP/IP ポート]を選択します。[次へ] をクリックします。 プリンタウィザードの指示に従って、プリンタのIPアドレスを入力します。 左側のプリンタメーカを選択し、右側のプリンタモデルを選択するか、[ディスク使用] をクリックします。 ウィザードの指示に従って、適切なプリンタドライバをインストールします。  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/administeringuseraccounts/administeringuseraccounts/" />
-<meta property="article:modified_time" content="2020-06-03T03:24:08+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-09T10:34:28+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="ユーザアカウントの管理">
 <meta itemprop="description" content="GO-Globalホスト上のアプリケーションにアクセスするには、クライアントはホストマシンにサインインする必要があります。ユーザがGO-Globalクライアントを起動すると、ユーザ名、パスワード、およびアクセスするホスト名の入力が求められます。この情報はオプションで暗号化され、GO-Globalホスト上で実行されているApplication Publishing Serviceに渡されます。その後、Application Publishing ServiceはWindowsの標準的なマルチユーザ機能を使用してログオン操作を実行します。 ユーザがホストにサインインし、ドメインが指定されていない場合、GO-Globalホストは最初にローカルマシン上のアカウントの認証を試み、次にマシンのドメイン、そして最後に信頼できるドメインの認証を試みます。ユーザは、この既定の動作をオーバーライドしてドメインを指定することができ、[Sign In] ダイアログの [User Name] ボックスにドメイン名の後にバックスラッシュ()とネットワークユーザ名を入力することでドメインを指定できます。例えば、NORTH\johngのようにです。 GO-Globalホスト上のローカルユーザ名がドメインアカウントと同じユーザ名で、それぞれ異なるパスワードが設定されている場合、GO-Globalはこれらを2つの別個のアカウントとして扱います。たとえば、次のシナリオを考えてみましょう。
  GO-Globalホスト上のローカルアカウント、ローカル のパスワードを持つjohng ドメイン のパスワードを持つドメインアカウントjohng  [Sign In] ダイアログでユーザ名、パスワードをローカル で入力してjohng と入力すると、アカウントはローカルのGO-Globalホストで認証されます。[Sign In] ダイアログでパスワードをドメイン でjohng と入力すると、GO-Globalはドメインでの認証を試みませんが、無効なユーザ名またはパスワードで失敗します。[Sign In] ダイアログの [User Name]フィールドでドメイン名を指定する必要があります。たとえば、NORTH\johngです。 ユーザがサインインした後、GO-Globalはホストのオペレーティングシステムに依存して、マルチユーザ環境でアプリケーションを安全に実行するために必要なセキュリティを提供します。アプリケーションは、プライベートセッションを確保するために、クライアントユーザのセキュリティコンテキストで実行されます。すべてのマシンおよびネットワークリソースへのアクセスは、オペレーティングシステムおよび個々のユーザのセッションに付与された権限によって管理されます。 ユーザは GO-Global ホスト上でインタラクティブに（ローカルに）ログオンできる必要があります。ローカルセキュリティポリシー、ドメインセキュリティポリシー、およびドメイン コントローラセキュリティポリシーでユーザにローカルログオン権限を割り当てます。 この章では、GO-Globalホストでのユーザアカウントの管理に関する基本情報を説明します。詳細については、[スタート]メニューからアクセスできるWindowsヘルプを参照してください。
@@ -37,7 +37,7 @@ GO-Globalホストにポートを追加する方法  [スタート | 設定 | �
 参照プロファイルは、作成されたプラットフォーム上でのみ有効です。たとえば、Windows Server 2016プロファイルは、Windows Server 2016コンピュータでのみ使用できます。ファイルのパーミッションを設定する システム管理者として、特定のファイルやリソースへのユーザアクセスを制限する必要があるかもしれません。ホストには複数のユーザがアクセスしていることを念頭に置いてください。特に負荷分散されたサーバ環境では、ユーザがローカルのGO-Globalホストにファイルを保存できないように、システムおよびアプリケーションフォルダを書き込み保護することをお勧めします。そうしないと、次回ユーザがGO-Globalにログオンして別のサーバに転送されたときに、ファイルおよびフォルダにアクセスできなくなります。Windowsエクスプローラを使用して、サーバ上のファイルのアクセス許可を設定する必要があります。ファイルのアクセス許可を設定することで、アプリケーション、プリンタ、およびフォルダへのユーザのアクセスを制限することができます。
 参照Windowsエクスプローラで、ヘルプ ボタンを選択するか、F1 を押してファイルのパーミッション設定の詳細を確認します。ネットワークプリンタの設定 管理者として、GO-Globalクライアントが使用するネットワークプリンタを設定することができます。まず、ホストに直接接続するポートを GO-Globalホストに作成してから、プリンタをローカルにインストールする必要があります。これにより、プリンタへの直接アクセスが可能になります。
 GO-Globalホストにポートを追加する方法  [スタート | 設定 | プリンタ] の順にクリックします。 [プリンタの追加] をダブルクリックします。 ローカルプリンタを選択し、[次へ] をクリックします。 [新しいポートの作成] をクリックし、種類として[標準 TCP/IP ポート]を選択します。[次へ] をクリックします。 プリンタウィザードの指示に従って、プリンタのIPアドレスを入力します。 左側のプリンタメーカを選択し、右側のプリンタモデルを選択するか、[ディスク使用] をクリックします。 ウィザードの指示に従って、適切なプリンタドライバをインストールします。  ">
-<meta itemprop="dateModified" content="2020-06-03T03:24:08&#43;09:00" />
+<meta itemprop="dateModified" content="2020-06-09T10:34:28&#43;09:00" />
 <meta itemprop="wordCount" content="72">
 
 
@@ -140,7 +140,7 @@ GO-Globalホストにポートを追加する方法  [スタート | 設定 | �
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.5a9b4c9e9c38dd7ca8c8ce0f2b4e6292b4280eae290a67e26efb0d85e1750ef5c4306c7ce26f4d54978270b847e70075f4c01fbfa15a58a2664083c004876868.json"
+  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
   data-offline-search-base-href="/"
 >
 
@@ -170,7 +170,7 @@ GO-Globalホストにポートを追加する方法  [スタート | 設定 | �
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.5a9b4c9e9c38dd7ca8c8ce0f2b4e6292b4280eae290a67e26efb0d85e1750ef5c4306c7ce26f4d54978270b847e70075f4c01fbfa15a58a2664083c004876868.json"
+  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
   data-offline-search-base-href="/"
 >
 
@@ -427,7 +427,7 @@ GO-Globalホストにポートを追加する方法  [スタート | 設定 | �
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61go-globaladminconsolego-globaladminconsole" href="/docs/go-globalrc61/go-globaladminconsole/go-globaladminconsole/">GO-Global AdminConsole</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61go-globaladminconsolego-globaladminconsole" href="/docs/go-globalrc61/go-globaladminconsole/go-globaladminconsole/">GO-Global Admin Console</a>
       
       
       
@@ -2651,7 +2651,7 @@ Windowsエクスプローラで、<strong>ヘルプ</strong> ボタンを選択�
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 3, 2020: <a  href="https://github.com//commit/706d40e1543f5d3dc0274d55061f19ae5d5fd180">61-5 (706d40e1)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 9, 2020: <a  href="https://github.com//commit/b0f90b3abb3a3e347e6b4999c07451c4bc2bb5a4">update20200609 (b0f90b3a)</a>
 </div>
 </div>
 

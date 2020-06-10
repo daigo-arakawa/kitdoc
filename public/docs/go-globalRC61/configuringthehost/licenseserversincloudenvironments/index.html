@@ -36,7 +36,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.htm
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/" />
-<meta property="article:modified_time" content="2020-06-03T00:34:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-09T10:34:28+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="クラウド環境でのライセンスサーバ">
 <meta itemprop="description" content="GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定の Elastic IPアドレス(EIP) と固定のMACアドレスを持つ Elastic Network Interface(ENI) を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。
 AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP（EIP）を作成する。 EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address 」を選択します。 詳細については、AWS EIPのドキュメントを参照してください。
@@ -51,7 +51,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.htm
 3.2 手順1で作成したEIPをENIに割り当てます。
 詳細については、AWS ENIのドキュメントを参照してください。
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。">
-<meta itemprop="dateModified" content="2020-06-03T00:34:18&#43;09:00" />
+<meta itemprop="dateModified" content="2020-06-09T10:34:28&#43;09:00" />
 <meta itemprop="wordCount" content="97">
 
 
@@ -161,7 +161,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENI�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.5a9b4c9e9c38dd7ca8c8ce0f2b4e6292b4280eae290a67e26efb0d85e1750ef5c4306c7ce26f4d54978270b847e70075f4c01fbfa15a58a2664083c004876868.json"
+  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
   data-offline-search-base-href="/"
 >
 
@@ -191,7 +191,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENI�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.5a9b4c9e9c38dd7ca8c8ce0f2b4e6292b4280eae290a67e26efb0d85e1750ef5c4306c7ce26f4d54978270b847e70075f4c01fbfa15a58a2664083c004876868.json"
+  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
   data-offline-search-base-href="/"
 >
 
@@ -448,7 +448,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENI�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61go-globaladminconsolego-globaladminconsole" href="/docs/go-globalrc61/go-globaladminconsole/go-globaladminconsole/">GO-Global AdminConsole</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globalrc61go-globaladminconsolego-globaladminconsole" href="/docs/go-globalrc61/go-globaladminconsole/go-globaladminconsole/">GO-Global Admin Console</a>
       
       
       
@@ -2753,7 +2753,7 @@ ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Gl
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 3, 2020: <a  href="https://github.com//commit/fac0d56289883b79f74235b4c979262afa236773">61-1 (fac0d562)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 9, 2020: <a  href="https://github.com//commit/b0f90b3abb3a3e347e6b4999c07451c4bc2bb5a4">update20200609 (b0f90b3a)</a>
 </div>
 </div>
 

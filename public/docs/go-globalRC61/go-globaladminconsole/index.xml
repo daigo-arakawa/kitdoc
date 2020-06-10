@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: GO-Global AdminConsole</title>
+      <title>Docs: GO-Global Admin Console</title>
       <link>/docs/go-globalrc61/go-globaladminconsole/go-globaladminconsole/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -22,16 +22,16 @@
       <description>
         
         
-        &lt;p&gt;AdminConsoleでは、GO-Globalホストの管理、監視、GO-Globalホストへのクライアントアクセスの制御を行うことができます。AdminConsoleには、GO-Globalホストにサインインしているユーザのリストと、ユーザが実行しているアプリケーションが表示されます。AdminConsoleでは、アプリケーションの追加と削除、ユーザセッションの終了、ホスト上で実行されているプロセスの終了など、さまざまな管理タスクを実行できます。&lt;/p&gt;
-&lt;h3 id=&#34;adminconsoleにアクセスする方法&#34;&gt;AdminConsoleにアクセスする方法&lt;/h3&gt;
-&lt;p&gt;デスクトップ上のGO-Global Admin Consoleアイコンをダブルクリックします。もしくは&lt;/p&gt;
+        &lt;p&gt;Admin Consoleでは、GO-Globalホストの管理、監視、GO-Globalホストへのクライアントアクセスの制御を行うことができます。Admin Consoleには、GO-Globalホストにサインインしているユーザのリストと、ユーザが実行しているアプリケーションが表示されます。Admin Consoleでは、アプリケーションの追加と削除、ユーザセッションの終了、ホスト上で実行されているプロセスの終了など、さまざまな管理タスクを実行できます。&lt;/p&gt;
+&lt;h3 id=&#34;admin-consoleにアクセスする方法&#34;&gt;Admin Consoleにアクセスする方法&lt;/h3&gt;
+&lt;p&gt;デスクトップ上の &lt;strong&gt;GO-Global Admin Console&lt;/strong&gt; アイコンをダブルクリックします。もしくは&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Windowsタスクバーの[スタート]ボタンをクリックします。&lt;/li&gt;
-&lt;li&gt;[GraphOn GO-Global｜AdminConsole］をクリックします。&lt;/li&gt;
+&lt;li&gt;Windowsタスクバーの &lt;strong&gt;[スタート]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;[GraphOn GO-Global｜Admin Console］をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;AdminConsoleの左側のパネルには、Application Publishing Serviceを実行しているネットワーク上のホストの一覧が表示されます。デフォルトでは、Application Publishing Serviceには、自分のマシンで実行されているホストの情報が表示されます。他のホストに接続してホストの情報を表示するには、[GO-Global Hosts]の一覧からホスト名をクリックします。
-ホストのアイコンに赤い X &lt;img src=&#34;/img/4-1-1.png&#34; alt=&#34;4-1-1&#34;&gt;が付いている場合、管理者はそのホストの管理者権限を持っていません。ホストのアイコンが赤×でグレー表示されている場合は、そのホストがApplication Publishing Serviceを実行していないか、オフになっています。いずれの場合も、管理者はAdminConsoleからそのホストにアクセスできません。AdminConsoleの左側パネルの［All Hosts]アイコンをクリックすると、ネットワーク上のすべてのアクティブなセッションのリストが表示されます。これにより、個々のホストに接続することなく、アクティブな GO-Globalセッションを表示することができます。また、特定のセッションのホストを検索するのにも便利です。
-AdminConsoleからそのホストにアクセスするには、各GO-Globalホストの管理者グループに所属している必要があります。ホストの管理者権限がない場合、アプリケーションの追加やプロセスの終了などを行うことができません。&lt;/p&gt;
+&lt;p&gt;Admin Consoleの左側のパネルには、Application Publishing Serviceを実行しているネットワーク上のホストの一覧が表示されます。デフォルトでは、Application Publishing Serviceには、自分のマシンで実行されているホストの情報が表示されます。他のホストに接続してホストの情報を表示するには、[GO-Global Hosts]の一覧からホスト名をクリックします。
+ホストのアイコンに赤い X &lt;img src=&#34;/img/4-1-1.png&#34; alt=&#34;4-1-1&#34;&gt;が付いている場合、管理者はそのホストの管理者権限を持っていません。ホストのアイコンが赤×でグレー表示されている場合は、そのホストがApplication Publishing Serviceを実行していないか、オフになっています。いずれの場合も、管理者はAdmin Consoleからそのホストにアクセスできません。Admin Consoleの左側パネルの &lt;strong&gt;[All Hosts]&lt;/strong&gt; アイコンをクリックすると、ネットワーク上のすべてのアクティブなセッションのリストが表示されます。これにより、個々のホストに接続することなく、アクティブなGO-Globalセッションを表示することができます。また、特定のセッションのホストを検索するのにも便利です。
+Admin Consoleからそのホストにアクセスするには、各GO-Globalホストの管理者グループに所属している必要があります。ホストの管理者権限がない場合、アプリケーションの追加やプロセスの終了などを行うことができません。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/4-1-2.png&#34; alt=&#34;4-1-2&#34;&gt;&lt;/p&gt;
 
       </description>
@@ -49,44 +49,56 @@ AdminConsoleからそのホストにアクセスするには、各GO-Globalホ�
         &lt;p&gt;Admin Consoleを使用すると、アプリケーションを公開して共有できます。&lt;/p&gt;
 &lt;h2 id=&#34;アプリケーションのインストール&#34;&gt;アプリケーションのインストール&lt;/h2&gt;
 &lt;p&gt;GO-Global を介して実行されるアプリケーションをインストールする場合、ベンダ提供の関連文書を参照して、適切なマルチユーザインストール方法を確認してください。ほとんどの場合、管理者アカウントでアプリケーションをインストールする必要がありますが、各アプリケーションによってインストール要件は異なります。またインストールは、マルチユーザ展開に関するMicrosoftのガイドラインに準拠する必要があります&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Globalを介してアプリケーションを展開しても、各企業が無制限のアクセス権を取得することにはなりません。同時に実行できるアプリケーションの数に関しては、ベンダのライセンス供与規定に準拠する必要があります。&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+GO-Globalを介してアプリケーションを展開しても、各企業が無制限のアクセス権を取得することにはなりません。同時に実行できるアプリケーションの数に関しては、ベンダのライセンス供与規定に準拠する必要があります。
+&lt;/div&gt;
+
 &lt;h2 id=&#34;アプリケーションの公開&#34;&gt;アプリケーションの公開&lt;/h2&gt;
-&lt;p&gt;アプリケーションはAdmin Consoleを使って公開されます。Admin Consoleを介してアプリケーションを公開するときに、アプリケーションの起動方法を制御する起動パラメータを指定できます。Interactive Quick Start Guideを実行するときは、プロンプトに従ってアプリケーションを公開してください。&lt;/p&gt;
+&lt;p&gt;アプリケーションはAdmin Consoleを使って公開されます。Admin Consoleを介してアプリケーションを公開するときに、アプリケーションの起動方法を制御する起動パラメータを指定できます。&lt;strong&gt;Interactive Quick Start Guide&lt;/strong&gt; を実行するときは、プロンプトに従ってアプリケーションを公開してください。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションを公開する方法&#34;&gt;アプリケーションを公開する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;[&lt;strong&gt;All Hosts&lt;/strong&gt;]の一覧から、目的のホストを選択します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Add&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Location&lt;/strong&gt;]ボックスの横にある [&lt;strong&gt;Browse&lt;/strong&gt;]ボタンをクリックして、アプリケーションの実行可能ファイルを見つけて選択します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;OK&lt;/strong&gt;]をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[All Hosts]&lt;/strong&gt; の一覧から、目的のホストを選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Applications]&lt;/strong&gt; タブをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Add]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Location]&lt;/strong&gt; ボックスの横にある &lt;strong&gt;[Browse]&lt;/strong&gt; ボタンをクリックして、アプリケーションの実行可能ファイルを見つけて選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[OK]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/img/4-2-1.png&#34; alt=&#34;4-2-1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;デフォルトでは、ブラウズダイアログはPROGRAMDATA\Microsoft\Windows\Start Menu\Programsディレクトリに開きます。最初のアプリケーションを公開した後、ダイアログが最後に公開されたアプリケーションのディレクトリで開きます。&lt;/p&gt;
+&lt;p&gt;デフォルトでは、ブラウズダイアログは&lt;code&gt;PROGRAMDATA\Microsoft\Windows\Start Menu\Programs&lt;/code&gt;ディレクトリに開きます。最初のアプリケーションを公開した後、ダイアログが最後に公開されたアプリケーションのディレクトリで開きます。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーション名の変更&#34;&gt;アプリケーション名の変更&lt;/h3&gt;
-&lt;p&gt;アプリケーションの .exeファイルを参照すると、そのファイル名が自動的に[Display Name]ボックス内に入力されます(アプリケーション名は Program Window に表示されます)。そのままデフォルトの表示名を使用することも、新しい名称を入力することも可能です。アプリケーションの表示名をスペースのみにすることはできません。また、バックスラッシュ()も使用できません。このフィールドは空欄のままにしないでください。&lt;/p&gt;
+&lt;p&gt;アプリケーションの .exeファイルを参照すると、そのファイル名が自動的に**[Name]** ボックス内に入力されます(アプリケーション名は Program Windowに表示されます)。そのままデフォルトの表示名を使用することも、新しい名称を入力することも可能です。アプリケーションの表示名をスペースのみにすることはできません。また、バックスラッシュ()も使用できません。このフィールドは空欄のままにしないでください。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションアイコンの変更&#34;&gt;アプリケーションアイコンの変更&lt;/h3&gt;
-&lt;p&gt;アプリケーションのデフォルトアイコン以外のアイコンを選択する場合は、[]ボタンをクリックします。&lt;/p&gt;
+&lt;p&gt;アプリケーションのデフォルトアイコン以外のアイコンを選択する場合は、&lt;strong&gt;[Icon]&lt;/strong&gt; ボタンをクリックします。&lt;/p&gt;
 &lt;h3 id=&#34;起動状態の変更&#34;&gt;起動状態の変更&lt;/h3&gt;
 &lt;p&gt;[Startup State]セクションで、アプリケーションを最大化、最小化、通常モードのいずれで起動するかを選択します。デフォルトの起動状態は通常モードです。&lt;/p&gt;
 &lt;h3 id=&#34;開始ディレクトリの変更&#34;&gt;開始ディレクトリの変更&lt;/h3&gt;
-&lt;p&gt;アプリケーションの実行可能ファイルを参照した場合は、ディレクトリのパス名が自動的に[Start Directory]ボックスに表示されます。それ以外の場合は、アプリケーションを起動するディレクトリのフルパス名を入力します。&lt;/p&gt;
+&lt;p&gt;アプリケーションの実行可能ファイルを参照した場合は、ディレクトリのパス名が自動的に &lt;strong&gt;[Start Directory]&lt;/strong&gt; ボックスに表示されます。それ以外の場合は、アプリケーションを起動するディレクトリのフルパス名を入力します。&lt;/p&gt;
 &lt;h3 id=&#34;コマンドラインオプションの指定&#34;&gt;コマンドラインオプションの指定&lt;/h3&gt;
-&lt;p&gt;[Command-Line Options]ボックスで、アプリケーションの起動パラメータを指定できます。これらのパラメータは各アプリケーションに固有のものであるため、特定の起動パラメータについてはアプリケーションのドキュメントを参照してください。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[Command-Line Options]&lt;/strong&gt; ボックスで、アプリケーションの起動パラメータを指定できます。これらのパラメータは各アプリケーションに固有のものであるため、特定の起動パラメータについてはアプリケーションのドキュメントを参照してください。&lt;/p&gt;
 &lt;h2 id=&#34;公開アプリケーションへのリンクの共有&#34;&gt;公開アプリケーションへのリンクの共有&lt;/h2&gt;
-&lt;p&gt;Admin Consoleの[Get Link]ボタンをクリックすると、選択したアプリケーションへのリンクをコピーしてユーザと共有し、そのアプリケーションにすばやくアクセスできます。&lt;/p&gt;
+&lt;p&gt;Admin Consoleの &lt;strong&gt;[Get Link]&lt;/strong&gt; ボタンをクリックすると、選択したアプリケーションへのリンクをコピーしてユーザと共有し、そのアプリケーションにすばやくアクセスできます。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションリンクを共有する方法&#34;&gt;アプリケーションリンクを共有する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;インストールされている &lt;strong&gt;アプリケーションのリスト&lt;/strong&gt;から、共有したいアプリケーションを選択します。&lt;/li&gt;
-&lt;li&gt;インストール済みアプリケーションのリストの右側にある[Get Link]ボタンをクリックします。&lt;/li&gt;
-&lt;li&gt;[Application Link]ダイアログで、[Copy]ボタンをクリックしてリンクをクリップボードにコピーします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Installed Applications&lt;/strong&gt; のリストから、共有したいアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;インストール済みアプリケーションのリストの右側にある &lt;strong&gt;[Get Link]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Application Link]&lt;/strong&gt; ダイアログで、&lt;strong&gt;[Copy]&lt;/strong&gt; ボタンをクリックしてリンクをクリップボードにコピーします。&lt;/li&gt;
 &lt;li&gt;リンクを電子メールまたはインスタントメッセージに貼り付けて、ユーザと共有します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/img/4-2-2.png&#34; alt=&#34;4-2-2&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Admin Consoleがチュートリアルモードで実行されている場合、[Copy]ボタンをクリックすると、次のメッセージが表示されます。[Copy]をクリックしてこのリンクをクリップボードにコピーします。それを電子メールまたはインスタントメッセージに貼り付けて、ユーザと共有できます。&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+Admin Consoleがチュートリアルモードで実行されている場合、&lt;strong&gt;[Copy]&lt;/strong&gt; ボタンをクリックすると、次のメッセージが表示されます。&lt;strong&gt;[Copy]&lt;/strong&gt; をクリックしてこのリンクをクリップボードにコピーします。それを電子メールまたはインスタントメッセージに貼り付けて、ユーザと共有できます。
+&lt;/div&gt;
+
 &lt;h2 id=&#34;ブラウザ外でのアプリケーションの実行&#34;&gt;ブラウザ外でのアプリケーションの実行&lt;/h2&gt;
 &lt;p&gt;ユーザが公開アプリケーションへのリンクをクリックしてGO-Globalホストにサインインすると、アプリケーションが開き、Webブラウザの外部で実行されます。このデフォルト設定を無効にするには、[Run application outside the browser]のチェックを外します。これにより、パラメータ&amp;amp;embed = trueがURLに追加されます。このパラメータを追加してユーザがリンクをクリックすると、アプリケーションはユーザのWebブラウザ内で実行されます。&lt;/p&gt;
 &lt;h2 id=&#34;ホストアドレスの編集&#34;&gt;ホストアドレスの編集&lt;/h2&gt;
