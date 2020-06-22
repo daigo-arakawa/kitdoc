@@ -21,44 +21,32 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>セッションの起動オプション | kitASP Docs</title><meta property="og:title" content="セッションの起動オプション" />
-<meta property="og:description" content="Admin Consoleの [Host Options]ダイアログの [Session Startup]タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。
+<meta property="og:description" content="Admin Consoleの [Host Options] ダイアログの [Session Startup] タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。
 グループポリシーを適用する GO-Globalは、マイクロソフトのグループポリシーをサポートしています。グループポリシーとその拡張機能を使用して、管理者はレジストリベースのポリシーの管理、スクリプトの割り当て、フォルダのリダイレクト、アプリケーションの管理、およびセキュリティオプションの指定を行うことができます。この機能の詳細については、以下のURLにアクセスしてください。
 http://technet.microsoft.com/en-us/windowsserver/bb310732.aspx.
-GO-Globalサーバでのグループポリシーの適用方法  Cluster Manager で、[Tools | Host Options]の順にクリックします。 [Session Startup]をクリックします。 [Apply Group Policy]を選択します。 [OK]をクリックします。   グループポリシーを有効にすると、GO-Globalへのログオンに時間がかかることがあります。
- 進行状況メッセージの表示 ユーザの認証後、セッションのスタートアップの進行状況を報告するダイアログをユーザに表示できます。この機能を有効にすると、ユーザには以下の実行時にダイアログが表示されます。
- 個人設定のロード グループポリシーの適用 ネットワークドライブの接続 ログオンスクリプトの実行  セッションのスタートアップの進行状況メッセージをユーザに表示する方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Startup]をクリックします。 [Display progress messages]を選択します。 メッセージを他のすべてのウィンドウの手前に表示する場合は、 [Always in front]を選択します。 [OK]をクリックします。   ログオンスクリプトに、ユーザにユーザインタフェースを表示する機能がある場合は、[Always in front]オプションを有効にしないでください。有効にすると、ログオンスクリプトのユーザインタフェースの一部が進行状況メッセージの下に隠れることがあります。
- ログオンスクリプト システム管理者はログオンスクリプトを使用して、GO-Globalユーザの操作環境を設定することができます。スクリプトは、ユーザ固有環境変数やドライブ文字のマッピングの定義など、一連の任意のタスクを実行します。
-GO-Globalは次の 2 つのタイプのログオンスクリプトをサポートしています。ホストにログオンするすべてのユーザが実行できるグローバルスクリプトと、個々のユーザが実行できるユーザ固有スクリプトです。ユーザのプロファイルをロードしてProgram Windowを起動する前に、GO-GlobalのLogon Manager は、どちらか(または両方)のタイプのスクリプトが指定されていないか確認します。指定されている場合、Logon Managerはユーザが認証されるたびに、ユーザのセキュリティコンテキスト内でスクリプトを実行します。
-ユーザー固有のログオンスクリプトは、オペレーティングシステムが提供する機能を使用して指定されます。たとえば、Windows Server 2016のローカルユーザー用のログオンスクリプトは次のように指定されます。" />
+GO-Globalサーバでのグループポリシーの適用方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Startup] をクリックします。 [Apply Group Policy] を選択します。 [OK] をクリックします。  参照グループポリシーを有効にすると、GO-Globalへのログオンに時間がかかることがあります。進行状況メッセージの表示 ユーザの認証後、セッションのスタートアップの進行状況を報告するダイアログをユーザに表示できます。この機能を有効にすると、ユーザには以下の実行時にダイアログが表示されます。
+ 個人設定のロード グループポリシーの適用 ネットワークドライブの接続 ログオンスクリプトの実行  セッションのスタートアップの進行状況メッセージをユーザに表示する方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Startup] をクリックします。 [Display progress messages] を選択します。 メッセージを他のすべてのウィンドウの手前に表示する場合は、 [Always in front] を選択します。 [OK] をクリックします。  参照ログオンスクリプトに、ユーザにユーザインタフェースを表示する機能がある場合は、 [Always in front] オプションを有効にしないでください。有効にすると、ログオンスクリプトのユーザインタフェースの一部が進行状況メッセージの下に隠れることがあります。ログオンスクリプト システム管理者はログオンスクリプトを使用して、GO-Globalユーザの操作環境を設定することができます。スクリプトは、ユーザ固有環境変数やドライブ文字のマッピングの定義など、一連の任意のタスクを実行します。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/go-globaladminconsole/sessionstartupoptions/" />
 <meta property="article:modified_time" content="2020-06-03T03:24:08+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="セッションの起動オプション">
-<meta itemprop="description" content="Admin Consoleの [Host Options]ダイアログの [Session Startup]タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。
+<meta itemprop="description" content="Admin Consoleの [Host Options] ダイアログの [Session Startup] タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。
 グループポリシーを適用する GO-Globalは、マイクロソフトのグループポリシーをサポートしています。グループポリシーとその拡張機能を使用して、管理者はレジストリベースのポリシーの管理、スクリプトの割り当て、フォルダのリダイレクト、アプリケーションの管理、およびセキュリティオプションの指定を行うことができます。この機能の詳細については、以下のURLにアクセスしてください。
 http://technet.microsoft.com/en-us/windowsserver/bb310732.aspx.
-GO-Globalサーバでのグループポリシーの適用方法  Cluster Manager で、[Tools | Host Options]の順にクリックします。 [Session Startup]をクリックします。 [Apply Group Policy]を選択します。 [OK]をクリックします。   グループポリシーを有効にすると、GO-Globalへのログオンに時間がかかることがあります。
- 進行状況メッセージの表示 ユーザの認証後、セッションのスタートアップの進行状況を報告するダイアログをユーザに表示できます。この機能を有効にすると、ユーザには以下の実行時にダイアログが表示されます。
- 個人設定のロード グループポリシーの適用 ネットワークドライブの接続 ログオンスクリプトの実行  セッションのスタートアップの進行状況メッセージをユーザに表示する方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Startup]をクリックします。 [Display progress messages]を選択します。 メッセージを他のすべてのウィンドウの手前に表示する場合は、 [Always in front]を選択します。 [OK]をクリックします。   ログオンスクリプトに、ユーザにユーザインタフェースを表示する機能がある場合は、[Always in front]オプションを有効にしないでください。有効にすると、ログオンスクリプトのユーザインタフェースの一部が進行状況メッセージの下に隠れることがあります。
- ログオンスクリプト システム管理者はログオンスクリプトを使用して、GO-Globalユーザの操作環境を設定することができます。スクリプトは、ユーザ固有環境変数やドライブ文字のマッピングの定義など、一連の任意のタスクを実行します。
-GO-Globalは次の 2 つのタイプのログオンスクリプトをサポートしています。ホストにログオンするすべてのユーザが実行できるグローバルスクリプトと、個々のユーザが実行できるユーザ固有スクリプトです。ユーザのプロファイルをロードしてProgram Windowを起動する前に、GO-GlobalのLogon Manager は、どちらか(または両方)のタイプのスクリプトが指定されていないか確認します。指定されている場合、Logon Managerはユーザが認証されるたびに、ユーザのセキュリティコンテキスト内でスクリプトを実行します。
-ユーザー固有のログオンスクリプトは、オペレーティングシステムが提供する機能を使用して指定されます。たとえば、Windows Server 2016のローカルユーザー用のログオンスクリプトは次のように指定されます。">
+GO-Globalサーバでのグループポリシーの適用方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Startup] をクリックします。 [Apply Group Policy] を選択します。 [OK] をクリックします。  参照グループポリシーを有効にすると、GO-Globalへのログオンに時間がかかることがあります。進行状況メッセージの表示 ユーザの認証後、セッションのスタートアップの進行状況を報告するダイアログをユーザに表示できます。この機能を有効にすると、ユーザには以下の実行時にダイアログが表示されます。
+ 個人設定のロード グループポリシーの適用 ネットワークドライブの接続 ログオンスクリプトの実行  セッションのスタートアップの進行状況メッセージをユーザに表示する方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Startup] をクリックします。 [Display progress messages] を選択します。 メッセージを他のすべてのウィンドウの手前に表示する場合は、 [Always in front] を選択します。 [OK] をクリックします。  参照ログオンスクリプトに、ユーザにユーザインタフェースを表示する機能がある場合は、 [Always in front] オプションを有効にしないでください。有効にすると、ログオンスクリプトのユーザインタフェースの一部が進行状況メッセージの下に隠れることがあります。ログオンスクリプト システム管理者はログオンスクリプトを使用して、GO-Globalユーザの操作環境を設定することができます。スクリプトは、ユーザ固有環境変数やドライブ文字のマッピングの定義など、一連の任意のタスクを実行します。">
 <meta itemprop="dateModified" content="2020-06-03T03:24:08&#43;09:00" />
-<meta itemprop="wordCount" content="179">
+<meta itemprop="wordCount" content="211">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="セッションの起動オプション"/>
-<meta name="twitter:description" content="Admin Consoleの [Host Options]ダイアログの [Session Startup]タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。
+<meta name="twitter:description" content="Admin Consoleの [Host Options] ダイアログの [Session Startup] タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。
 グループポリシーを適用する GO-Globalは、マイクロソフトのグループポリシーをサポートしています。グループポリシーとその拡張機能を使用して、管理者はレジストリベースのポリシーの管理、スクリプトの割り当て、フォルダのリダイレクト、アプリケーションの管理、およびセキュリティオプションの指定を行うことができます。この機能の詳細については、以下のURLにアクセスしてください。
 http://technet.microsoft.com/en-us/windowsserver/bb310732.aspx.
-GO-Globalサーバでのグループポリシーの適用方法  Cluster Manager で、[Tools | Host Options]の順にクリックします。 [Session Startup]をクリックします。 [Apply Group Policy]を選択します。 [OK]をクリックします。   グループポリシーを有効にすると、GO-Globalへのログオンに時間がかかることがあります。
- 進行状況メッセージの表示 ユーザの認証後、セッションのスタートアップの進行状況を報告するダイアログをユーザに表示できます。この機能を有効にすると、ユーザには以下の実行時にダイアログが表示されます。
- 個人設定のロード グループポリシーの適用 ネットワークドライブの接続 ログオンスクリプトの実行  セッションのスタートアップの進行状況メッセージをユーザに表示する方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Startup]をクリックします。 [Display progress messages]を選択します。 メッセージを他のすべてのウィンドウの手前に表示する場合は、 [Always in front]を選択します。 [OK]をクリックします。   ログオンスクリプトに、ユーザにユーザインタフェースを表示する機能がある場合は、[Always in front]オプションを有効にしないでください。有効にすると、ログオンスクリプトのユーザインタフェースの一部が進行状況メッセージの下に隠れることがあります。
- ログオンスクリプト システム管理者はログオンスクリプトを使用して、GO-Globalユーザの操作環境を設定することができます。スクリプトは、ユーザ固有環境変数やドライブ文字のマッピングの定義など、一連の任意のタスクを実行します。
-GO-Globalは次の 2 つのタイプのログオンスクリプトをサポートしています。ホストにログオンするすべてのユーザが実行できるグローバルスクリプトと、個々のユーザが実行できるユーザ固有スクリプトです。ユーザのプロファイルをロードしてProgram Windowを起動する前に、GO-GlobalのLogon Manager は、どちらか(または両方)のタイプのスクリプトが指定されていないか確認します。指定されている場合、Logon Managerはユーザが認証されるたびに、ユーザのセキュリティコンテキスト内でスクリプトを実行します。
-ユーザー固有のログオンスクリプトは、オペレーティングシステムが提供する機能を使用して指定されます。たとえば、Windows Server 2016のローカルユーザー用のログオンスクリプトは次のように指定されます。"/>
+GO-Globalサーバでのグループポリシーの適用方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Startup] をクリックします。 [Apply Group Policy] を選択します。 [OK] をクリックします。  参照グループポリシーを有効にすると、GO-Globalへのログオンに時間がかかることがあります。進行状況メッセージの表示 ユーザの認証後、セッションのスタートアップの進行状況を報告するダイアログをユーザに表示できます。この機能を有効にすると、ユーザには以下の実行時にダイアログが表示されます。
+ 個人設定のロード グループポリシーの適用 ネットワークドライブの接続 ログオンスクリプトの実行  セッションのスタートアップの進行状況メッセージをユーザに表示する方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Startup] をクリックします。 [Display progress messages] を選択します。 メッセージを他のすべてのウィンドウの手前に表示する場合は、 [Always in front] を選択します。 [OK] をクリックします。  参照ログオンスクリプトに、ユーザにユーザインタフェースを表示する機能がある場合は、 [Always in front] オプションを有効にしないでください。有効にすると、ログオンスクリプトのユーザインタフェースの一部が進行状況メッセージの下に隠れることがあります。ログオンスクリプト システム管理者はログオンスクリプトを使用して、GO-Globalユーザの操作環境を設定することができます。スクリプトは、ユーザ固有環境変数やドライブ文字のマッピングの定義など、一連の任意のタスクを実行します。"/>
 
 
 
@@ -149,7 +137,7 @@ GO-Globalは次の 2 つのタイプのログオンスクリプトをサポー�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -179,7 +167,7 @@ GO-Globalは次の 2 つのタイプのログオンスクリプトをサポー�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -2485,8 +2473,8 @@ GO-Globalは次の 2 つのタイプのログオンスクリプトをサポー�
     </li>
     <li><a href="#ログオンスクリプト">ログオンスクリプト</a>
       <ul>
-        <li><a href="#ユーザ固有ログオン-スクリプトの実行方法">ユーザ固有ログオン スクリプトの実行方法</a></li>
-        <li><a href="#グローバル-ログオンスクリプトの実行方法">グローバル ログオンスクリプトの実行方法</a></li>
+        <li><a href="#ユーザ固有ログオンスクリプトの実行方法">ユーザ固有ログオンスクリプトの実行方法</a></li>
+        <li><a href="#グローバルログオンスクリプトの実行方法">グローバルログオンスクリプトの実行方法</a></li>
       </ul>
     </li>
     <li><a href="#リソース制限の設定">リソース制限の設定</a>
@@ -2555,20 +2543,26 @@ GO-Globalは次の 2 つのタイプのログオンスクリプトをサポー�
 <div class="td-content">
 	<h1>セッションの起動オプション</h1>
 	
-	<p>Admin Consoleの [<strong>Host Options</strong>]ダイアログの [<strong>Session Startup</strong>]タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。</p>
+	<p>Admin Consoleの <strong>[Host Options]</strong> ダイアログの <strong>[Session Startup]</strong> タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。</p>
 <h2 id="グループポリシーを適用する">グループポリシーを適用する</h2>
 <p>GO-Globalは、マイクロソフトのグループポリシーをサポートしています。グループポリシーとその拡張機能を使用して、管理者はレジストリベースのポリシーの管理、スクリプトの割り当て、フォルダのリダイレクト、アプリケーションの管理、およびセキュリティオプションの指定を行うことができます。この機能の詳細については、以下のURLにアクセスしてください。</p>
 <p><a href="http://technet.microsoft.com/en-us/windowsserver/bb310732.aspx.">http://technet.microsoft.com/en-us/windowsserver/bb310732.aspx.</a></p>
 <h3 id="go-globalサーバでのグループポリシーの適用方法">GO-Globalサーバでのグループポリシーの適用方法</h3>
 <ol>
-<li>Cluster Manager で、[Tools | Host Options]の順にクリックします。</li>
-<li>[<strong>Session Startup</strong>]をクリックします。</li>
-<li>[<strong>Apply Group Policy</strong>]を選択します。</li>
-<li>[<strong>OK</strong>]をクリックします。</li>
+<li>Admin Consoleで、[Tools | Host Options]の順にクリックします。</li>
+<li><strong>[Session Startup]</strong> をクリックします。</li>
+<li><strong>[Apply Group Policy]</strong> を選択します。</li>
+<li><strong>[OK]</strong> をクリックします。</li>
 </ol>
-<blockquote>
-<p>グループポリシーを有効にすると、GO-Globalへのログオンに時間がかかることがあります。</p>
-</blockquote>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+グループポリシーを有効にすると、GO-Globalへのログオンに時間がかかることがあります。
+</div>
+
 <h2 id="進行状況メッセージの表示">進行状況メッセージの表示</h2>
 <p>ユーザの認証後、セッションのスタートアップの進行状況を報告するダイアログをユーザに表示できます。この機能を有効にすると、ユーザには以下の実行時にダイアログが表示されます。</p>
 <ul>
@@ -2580,14 +2574,20 @@ GO-Globalは次の 2 つのタイプのログオンスクリプトをサポー�
 <h3 id="セッションのスタートアップの進行状況メッセージをユーザに表示する方法">セッションのスタートアップの進行状況メッセージをユーザに表示する方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools | Host Options]の順にクリックします。</li>
-<li>[<strong>Session Startup</strong>]をクリックします。</li>
-<li>[<strong>Display progress messages</strong>]を選択します。</li>
-<li>メッセージを他のすべてのウィンドウの手前に表示する場合は、 [<strong>Always in front</strong>]を選択します。</li>
-<li>[<strong>OK</strong>]をクリックします。</li>
+<li><strong>[Session Startup]</strong> をクリックします。</li>
+<li><strong>[Display progress messages]</strong> を選択します。</li>
+<li>メッセージを他のすべてのウィンドウの手前に表示する場合は、 <strong>[Always in front]</strong> を選択します。</li>
+<li><strong>[OK]</strong> をクリックします。</li>
 </ol>
-<blockquote>
-<p>ログオンスクリプトに、ユーザにユーザインタフェースを表示する機能がある場合は、[Always in front]オプションを有効にしないでください。有効にすると、ログオンスクリプトのユーザインタフェースの一部が進行状況メッセージの下に隠れることがあります。</p>
-</blockquote>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+ログオンスクリプトに、ユーザにユーザインタフェースを表示する機能がある場合は、 <strong>[Always in front]</strong> オプションを有効にしないでください。有効にすると、ログオンスクリプトのユーザインタフェースの一部が進行状況メッセージの下に隠れることがあります。
+</div>
+
 <p><img src="/img/4-14-1.png" alt="4-14-1"></p>
 <h2 id="ログオンスクリプト">ログオンスクリプト</h2>
 <p>システム管理者はログオンスクリプトを使用して、GO-Globalユーザの操作環境を設定することができます。スクリプトは、ユーザ固有環境変数やドライブ文字のマッピングの定義など、一連の任意のタスクを実行します。</p>
@@ -2595,72 +2595,84 @@ GO-Globalは次の 2 つのタイプのログオンスクリプトをサポー�
 <p>ユーザー固有のログオンスクリプトは、オペレーティングシステムが提供する機能を使用して指定されます。たとえば、Windows Server 2016のローカルユーザー用のログオンスクリプトは次のように指定されます。</p>
 <ol>
 <li>[コントロールパネル]から、[ 管理ツール | コンピュータ管理 | ローカルユーザーとグループ | ユーザ]の順に移動します。</li>
-<li>ユーザを選択し、 [<strong>Properties</strong>]をクリックします。</li>
+<li>ユーザを選択し、 <strong>[Properties]</strong> をクリックします。</li>
 <li>[Profiles]をクリックします。</li>
-<li>[<strong>Logon script</strong>]ボックスに、ユーザのログオンスクリプトのファイル名を入力します。</li>
+<li><strong>[Logon script]</strong> ボックスに、ユーザのログオンスクリプトのファイル名を入力します。</li>
 </ol>
-<p>[<strong>Logon Script</strong>]ボックスに入力する値としてファイル名と拡張子のみを指定すると、GO-Globalは以下のディレクトリでそのファイルを以下の順序で検索します。</p>
+<p><strong>[Logon Script]</strong> ボックスに入力する値としてファイル名と拡張子のみを指定すると、GO-Globalは以下のディレクトリでそのファイルを以下の順序で検索します。</p>
 <ol>
-<li>ユーザのアカウントがドメインアカウントの場合 :
-　　　　a. \pdcname\NETLOGON(プライマリドメインコントローラのNETLOGON共有)
-　　　　b. \pdcname\SYSVOL\domainname(プライマリドメインコントローラのSYSVOL共有のドメインのサブディレクトリなど)
-2.ユーザのアカウントがローカルアカウントの場合 :
-　　　　a. systemroot\System32\Repl\Import\Scripts
-　　　　b. systemroot\sysvol\sysvol\domainname</li>
+<li>ユーザのアカウントがドメインアカウントの場合 :<br>
+　　　　a. \pdcname\NETLOGON(プライマリドメインコントローラのNETLOGON共有)<br>
+　　　　b. \pdcname\SYSVOL\domainname(プライマリドメインコントローラのSYSVOL共有のドメインのサブディレクトリなど)<br></li>
+<li>ユーザのアカウントがローカルアカウントの場合 :<br>
+　　　　a. systemroot\System32\Repl\Import\Scripts<br>
+　　　　b. systemroot\sysvol\sysvol\domainname<br></li>
 </ol>
 <p>ログオンスクリプトが上述のいずれかのディレクトリのサブディレクトリに保存されている場合、ファイル名の前にそのサブディレクトリの相対パスを入力します。たとえば、Admins\JohnG.bat のように入力します。</p>
 <p><img src="/img/4-14-2.png" alt="4-14-2"></p>
-<p>システム管理者は、Admin Consoleの [<strong>Session Startup</strong>]ダイアログを使用してグローバルログオンスクリプトやユーザ固有ログオンスクリプトを指定します。</p>
-<h3 id="ユーザ固有ログオン-スクリプトの実行方法">ユーザ固有ログオン スクリプトの実行方法</h3>
+<p>システム管理者は、Admin Consoleの <strong>[Session Startup]</strong> ダイアログを使用してグローバルログオンスクリプトやユーザ固有ログオンスクリプトを指定します。</p>
+<h3 id="ユーザ固有ログオンスクリプトの実行方法">ユーザ固有ログオンスクリプトの実行方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools | Host Options]の順にクリックします。</li>
-<li>[<strong>Session Startup</strong>]をクリックします。</li>
-<li>[<strong>User-specific</strong>]を選択します。</li>
-<li>[<strong>OK</strong>]をクリックします。</li>
+<li><strong>[Session Startup]</strong> をクリックします。</li>
+<li><strong>[User-specific]</strong> を選択します。</li>
+<li><strong>[OK]</strong> をクリックします。</li>
 </ol>
-<h3 id="グローバル-ログオンスクリプトの実行方法">グローバル ログオンスクリプトの実行方法</h3>
+<h3 id="グローバルログオンスクリプトの実行方法">グローバルログオンスクリプトの実行方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools | Host Options]の順にクリックします。</li>
-<li>[<strong>Session Startup</strong>]をクリックします。</li>
-<li>[<strong>Global</strong>]を選択し、グローバルスクリプトファイルのパスを指定します。</li>
-<li>[<strong>OK</strong>]をクリックします。</li>
+<li><strong>[Session Startup]</strong> をクリックします。</li>
+<li><strong>[Global]</strong> を選択し、グローバルスクリプトファイルのパスを指定します。</li>
+<li><strong>[OK]</strong> をクリックします。</li>
 </ol>
-<blockquote>
-<p>認証されたユーザには、ログオンスクリプトファイルの読み取りおよび実行アクセス権が必要です。</p>
-</blockquote>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+認証されたユーザには、ログオンスクリプトファイルの読み取りおよび実行アクセス権が必要です。
+</div>
+
 <p>ログオンスクリプトの実行に失敗すると、エラーメッセージが表示されます。ログオンスクリプトの場所を確認してください。</p>
-<p>ユーザのアカウントがドメインアカウントの場合 :
-　　　a. \pdcname\NETLOGON(プライマリドメインコントローラのNETLOGON共有)
-　　　b. \pdcname\SYSVOL\domainname(プライマリドメインコントローラのSYSVOL共有のドメインのサブディレクトリなど)</p>
-<p>ユーザのアカウントがローカルアカウントの場合 :
-a. systemroot\System32\Repl\Import\Scripts
-b. systemroot\sysvol\sysvol\domainname</p>
-<p>また、DebugView(<a href="https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx">https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx</a>)などのツールも、このようなエラー発生時における原因追跡に役立ちます。DebugViewの実行可能ファイルをサーバ上で開けば、スクリプトの保存場所が不正確なために発生したエラーを確認できます。</p>
-<blockquote>
-<p>MicrosoftのVBScriptは、バッチファイルで実行されない限り、ログオンスクリプトとしてサポートされていません。</p>
-</blockquote>
+<p>ユーザのアカウントがドメインアカウントの場合 :<br>
+　　　a. \pdcname\NETLOGON(プライマリドメインコントローラのNETLOGON共有)<br>
+　　　b. \pdcname\SYSVOL\domainname(プライマリドメインコントローラのSYSVOL共有のドメインのサブディレクトリなど)<br>
+ユーザのアカウントがローカルアカウントの場合 :<br>
+a. systemroot\System32\Repl\Import\Scripts<br>
+b. systemroot\sysvol\sysvol\domainname<br></p>
+<p>また、DebugView([https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx]などのツールも、このようなエラー発生時における原因追跡に役立ちます。DebugViewの実行可能ファイルをサーバ上で開けば、スクリプトの保存場所が不正確なために発生したエラーを確認できます。</p>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+MicrosoftのVBScriptは、バッチファイルで実行されない限り、ログオンスクリプトとしてサポートされていません。
+</div>
+
 <h2 id="リソース制限の設定">リソース制限の設定</h2>
 <p>GO-Globalでは、システム管理者はGO-Globalホストで特定のリソース制限値を超えた場合にユーザが新しいセッションを開始できないようにすることができます。システム管理者はこれらの制限値を使用して、サーバに過度な負荷がかかり、ユーザにパフォーマンス上の問題やリソースの割り当ての失敗がランダムに発生するのを防ぐことができます。</p>
 <h3 id="ユーザあたりのセッション数の制限方法">ユーザあたりのセッション数の制限方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools | Host Options]の順にクリックします。</li>
-<li>[<strong>Session Startup</strong>]をクリックします。</li>
-<li>[<strong>Maximum sessions per user</strong>]を選択し、編集ボックスに1人のユーザが実行できるセッションの最大数を入力します。</li>
-<li>[<strong>OK</strong>]をクリックします。</li>
+<li><strong>[Session Startup]</strong> をクリックします。</li>
+<li><strong>[Maximum sessions per user]</strong> を選択し、編集ボックスに1人のユーザが実行できるセッションの最大数を入力します。</li>
+<li><strong>[OK]</strong> をクリックします。</li>
 </ol>
 <h2 id="セッションの最大数の指定">セッションの最大数の指定</h2>
 <p>ホストからサポートできるセッションの最大数はデフォルトで50に設定されています。システム管理者は、この値をホストの容量に適した値に調整する必要があります。</p>
 <h3 id="ホスト単位のセッションの最大数の編集方法">ホスト単位のセッションの最大数の編集方法</h3>
 <ol>
-<li>[<strong>All Host</strong>]の一覧から、目的のホストを選択します。</li>
+<li><strong>[All Host]</strong> の一覧から、目的のホストを選択します。</li>
 <li>[Tools | Host Options]の順にクリックします。</li>
-<li>[<strong>Session Startup</strong>]タブをクリックします。</li>
-<li>[<strong>Maximum sessions on this host</strong>]ボックス内の数値を編集します。これにより、ホストがサポートできるセッション数の上限が設定されます。たとえば、最大セッション数が11の場合、12番目のセッションを開始しようとするユーザはログオンを拒否されます。</li>
-<li>[<strong>OK</strong>]をクリックします。</li>
+<li><strong>[Session Startup]</strong> タブをクリックします。</li>
+<li><strong>[Maximum sessions on this host]</strong> ボックス内の数値を編集します。これにより、ホストがサポートできるセッション数の上限が設定されます。たとえば、最大セッション数が11の場合、12番目のセッションを開始しようとするユーザはログオンを拒否されます。</li>
+<li><strong>[OK]</strong> をクリックします。</li>
 </ol>
-<p>中継サーバ設定では、GO-Globalは中継サーバとその依存ホストの最大セッション設定を確認します。中継サーバで指定された <strong>Maximum sessions on this host</strong>は、その中継サーバに割り当てられているすべての依存ホストで同時に実行できるセッションの最大数です。</p>
+<p>中継サーバ設定では、GO-Globalは中継サーバとその依存ホストの最大セッション設定を確認します。中継サーバで指定された <strong>Maximum sessions on this host</strong> は、その中継サーバに割り当てられているすべての依存ホストで同時に実行できるセッションの最大数です。</p>
 <h2 id="物理メモリおよび仮想メモリの指定">物理メモリおよび仮想メモリの指定</h2>
-<p>物理メモリおよび仮想メモリが不足した状態でログオン出来ないように、下限値を指定することができます。 [<strong>Minimum available physical memory</strong>]ボックスには最小物理メモリ(MB)を入力します。 [<strong>Minimum available virtual memory</strong>]ボックスには最小仮想メモリ(MB)を入力します。</p>
+<p>物理メモリおよび仮想メモリが不足した状態でログオン出来ないように、下限値を指定することができます。 <strong>[Minimum available physical memory]</strong> ボックスには最小物理メモリ(MB)を入力します。 <strong>[Minimum available virtual memory]</strong> ボックスには最小仮想メモリ(MB)を入力します。</p>
 
 	
 		

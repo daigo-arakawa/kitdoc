@@ -104,47 +104,53 @@ Admin Consoleからそのホストにアクセスするには、各GO-Globalホ�
 &lt;h3 id=&#34;appcontrollerをインストールする方法&#34;&gt;AppControllerをインストールする方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
-&lt;li&gt;[Location]ボックスに、[http://]と入力し、その後にホスト名とAppControllerインストールページを入力します。たとえば、http://hostname/goglobal/&lt;/li&gt;
-&lt;li&gt;AppController がインストールされていない場合は、ダウンロードするよう求められます。コンピュータのオペレーティングシステムからセットアッププログラムを実行します(GO-Global.AppController.exe、GO-Global.AppController.dmg、GO-Global.AppController.deb、GO-Global.AppController.rpm など)。&lt;/li&gt;
-&lt;li&gt;Mac OS Xの場合は、AppControllerを[アプリケーション]フォルダにドラッグします。&lt;/li&gt;
+&lt;li&gt;[Location]ボックスに、[http://]と入力し、その後にホスト名とAppControllerインストールページを入力します。たとえば、&lt;code&gt;http://hostname/goglobal/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;AppControllerがインストールされていない場合は、ダウンロードするよう求められます。コンピュータのオペレーティングシステムからセットアッププログラムを実行します( &lt;strong&gt;GO-Global.AppController.exe、GO-Global.AppController.dmg、GO-Global.AppController.deb、GO-Global.AppController.rpm&lt;/strong&gt; など)。&lt;/li&gt;
+&lt;li&gt;Mac OS Xの場合は、AppControllerを[Applications]フォルダにドラッグします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;AppControllerをインストールすると、ブラウザ、スタートメニュー、またはショートカットから GO-Globalを実行できます。
-デフォルトでは、ダウンロード時にインストールファイル名がAppControllerからGO-Global.AppControllerに変更されます。Admin Consoleの[Branding]タブでインストーラ名が変更されている場合は、その名前がインストーラ名のGO-Globalに置き換わります。(例: Acme.AppController.exe)&lt;/p&gt;
+デフォルトでは、ダウンロード時にインストールファイル名がAppControllerからGO-Global.AppControllerに変更されます。Admin Consoleの[Branding]タブでインストーラ名が変更されている場合は、その名前がインストーラ名のGO-Globalに置き換わります(例:Acme.AppController.exe)。&lt;/p&gt;
 &lt;h3 id=&#34;コンピュータのメニューからgo-global-appcontrollerを実行する方法&#34;&gt;コンピュータのメニューからGO-Global AppControllerを実行する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;AppControllerメニューオプションを選択します。
-　a. Windowsで、Windowsタスクバーの[スタート]ボタンをクリックし、[プログラム] - [AppController]を選択します。
-　b. Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、[AppController]をクリックします。
-　c. Mac OS Xの場合は、メニューから「Go」→「Applications」を選択し、AppControllerをダブルクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログ内にホストのアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。[&lt;strong&gt;Sign In&lt;/strong&gt;]ダイアログが表示されたら、次の情報を入力します。
+&lt;li&gt;AppControllerメニューオプションを選択します。&lt;br&gt;
+　a. Windowsで、Windowsタスクバーの &lt;strong&gt;[スタート]&lt;/strong&gt; ボタンをクリックし、[プログラム | AppController]を選択します。&lt;br&gt;
+　b. Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、 &lt;strong&gt;[AppController]&lt;/strong&gt; をクリックします。&lt;br&gt;
+　c. Mac OS Xの場合は、メニューから「Go」→「Applications」を選択し、&lt;strong&gt;AppController&lt;/strong&gt; をダブルクリックします。&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Connection]&lt;/strong&gt; ダイアログ内にホストのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Connect]&lt;/strong&gt; をクリックします。&lt;strong&gt;[Sign In]&lt;/strong&gt; ダイアログが表示されたら、次の情報を入力します。
 &lt;ul&gt;
-&lt;li&gt;[&lt;strong&gt;User Name&lt;/strong&gt;]ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Password&lt;/strong&gt;]ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[User Name]&lt;/strong&gt; ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Password]&lt;/strong&gt; ボックスにパスワードを入力します。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/img/5-1-1.png&#34; alt=&#34;5-1-1&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Globalでは、ログオンプロセスをシャットダウンする前に無効なログオンを3回試行することができます。&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+GO-Globalでは、ログオンプロセスをシャットダウンする前に無効なログオンを3回試行することができます。
+&lt;/div&gt;
+
 &lt;p&gt;Windowsコンピュータでは、GO-Global ConnectionダイアログにGO-Globalホストへのショートカットを作成するオプションがあります。このオプションを使用すると、ホストに接続するときに[接続]ダイアログを迂回することができます。&lt;/p&gt;
 &lt;h3 id=&#34;windowsコンピュータでgo-globalホストへのショートカットを作成する方法&#34;&gt;WindowsコンピュータでGO-Globalホストへのショートカットを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;上記のいずれかの方法でAppControllerを起動します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログにサーバのアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;[Create desktop shortcut to this host]チェックボックスをオンにします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Connection]&lt;/strong&gt; ダイアログにサーバのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Create desktop shortcut to this host]&lt;/strong&gt; チェックボックスをオンにします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Connect]&lt;/strong&gt; をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;windowsでappcontrollerのショートカットを作成する方法&#34;&gt;WindowsでAppControllerのショートカットを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;デスクトップ上で右クリックします。&lt;/li&gt;
 &lt;li&gt;[ 新規作成 | ショートカットの作成 ]の順に作成します。&lt;/li&gt;
-&lt;li&gt;ショートカットの作成ダイアログボックスで、AppControllerの実行ファイルを参照します。たとえば、&amp;ldquo;C:¥Program Files¥GraphOn\AppController\AppController.exe&amp;quot;のようになります。&lt;/li&gt;
-&lt;li&gt;AppController.exeへのパスの後にパラメータを追加します。例えば、以下のようにします。
-&amp;ldquo;C:\Program Files\GraphOn\AppControllerAppController.exe&amp;rdquo; -h hostname -a Wordpad -r 
-&amp;ldquo;C:\UsersPublic\Public Documentstest.rtf&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;ショートカットの名前を入力し、[完了] をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ショートカットの作成&lt;/strong&gt; ダイアログボックスで、AppControllerの実行ファイルを参照します。たとえば、&lt;code&gt;&amp;quot;C:¥Program Files¥GraphOn\AppController\AppController.exe&amp;quot;&lt;/code&gt;のようになります。&lt;/li&gt;
+&lt;li&gt;AppController.exeへのパスの後にパラメータを追加します。例えば、以下のようにします。&lt;br&gt;
+&lt;code&gt;&amp;quot;C:\Program Files\GraphOn\AppControllerAppController.exe&amp;quot; -h hostname -a Wordpad -r&lt;/code&gt;&lt;br&gt; 
+&lt;code&gt;&amp;quot;C:\UsersPublic\Public Documentstest.rtf&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ショートカットの名前を入力し、&lt;strong&gt;[完了]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
@@ -806,9 +812,15 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
 &lt;p&gt;Programs | GraphOn GO-Global | Mobile App Console の順にクリックします。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/6-1-1.png&#34; alt=&#34;6-1-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Admin Consoleで公開されているアプリケーションが一覧表示され、それぞれがデフォルトのツールバーを使用するように設定されます。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Add、Edit、Remove、Duplicateボタンはカスタムツールバーにのみ適用され、アプリケーションには適用されません。 たとえば、[Remove]ボタンをクリックすると、選択したアプリケーションからカスタムツールバーが削除されます。 アプリケーションはAdmin Consoleで公開されたままになり、ユーザは引き続き利用できるようになります。&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+&lt;strong&gt;Add、Edit、Remove、Duplicate&lt;/strong&gt; ボタンはカスタムツールバーにのみ適用され、アプリケーションには適用されません。 たとえば、 &lt;strong&gt;[Remove]&lt;/strong&gt; ボタンをクリックすると、選択したアプリケーションからカスタムツールバーが削除されます。 アプリケーションはAdmin Consoleで公開されたままになり、ユーザは引き続き利用できるようになります。
+&lt;/div&gt;
+
 
       </description>
     </item>
@@ -1152,83 +1164,83 @@ Windowsエクスプローラで、&lt;strong&gt;ヘルプ&lt;/strong&gt; ボタ�
         
         &lt;p&gt;ショートカットキーを確認するために、カスタムツールバーを作成しているアプリケーションのメニューを確認します。すべてのアプリケーションには独自のショートカットがあり、一方で機能するショートカットは他方で機能しない可能性があります。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/6-2-1.png&#34; alt=&#34;6-2-1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Microsoft Wordやワードパッドなどのツールバーがあるアプリケーションでは、[]タブで[Alt] + [H]をクリックして使用可能なショートカットを表示します。&lt;/p&gt;
+&lt;p&gt;Microsoft Wordやワードパッドなどのツールバーがあるアプリケーションでは、[Home]タブで[Alt] + [H]をクリックして使用可能なショートカットを表示します。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/6-2-2.png&#34; alt=&#34;6-2-2&#34;&gt;&lt;/p&gt;
 &lt;p&gt;カスタムツールバーを作成するための次の手順では、ワードパッドをサンプルアプリケーションとして使用します。&lt;/p&gt;
 &lt;h3 id=&#34;ボタンの追加方法&#34;&gt;ボタンの追加方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;アプリケーションのリストからアプリケーションを選択して、[Edit]ボタンをクリックします。&lt;/li&gt;
-&lt;li&gt;Add Buttonをクリックして、Add Buttonダイアログを開きます。&lt;/li&gt;
-&lt;li&gt;[Label]フィールドに新しいボタンの名前を入力します。&lt;/li&gt;
-&lt;li&gt;関連付けられているショートカットを追加します。キーボードのショートカットキーストロークを使って、これを行います。たとえば、キーボードのCtrl+Xを押すと、これが[Shortcuts]フィールドに表示されます。&lt;/li&gt;
-&lt;li&gt;[Add]をクリックします。これにより、ボタンとショートカットがツールバーリストに追加されます。&lt;/li&gt;
-&lt;li&gt;[Apply]をクリックします。このボタンは、モバイルクライアントデバイスのアプリケーションのツールバーに表示されます。ボタンやメニュー項目を追加し続けることも、[Custom Toolbars List]ボタンをクリックして別のアプリケーションにツールバーやメニュー項目を追加することもできます。&lt;/li&gt;
+&lt;li&gt;アプリケーションのリストからアプリケーションを選択して、 &lt;strong&gt;[Edit]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Add Button&lt;/strong&gt; をクリックして、&lt;strong&gt;Add Button&lt;/strong&gt; ダイアログを開きます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Label]&lt;/strong&gt; フィールドに新しいボタンの名前を入力します。&lt;/li&gt;
+&lt;li&gt;関連付けられているショートカットを追加します。キーボードのショートカットキーストロークを使って、これを行います。たとえば、キーボードのCtrl+Xを押すと、これが &lt;strong&gt;[Shortcuts]&lt;/strong&gt; フィールドに表示されます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Add]&lt;/strong&gt; をクリックします。これにより、ボタンとショートカットがツールバーリストに追加されます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Apply]&lt;/strong&gt; をクリックします。このボタンは、モバイルクライアントデバイスのアプリケーションのツールバーに表示されます。ボタンやメニュー項目を追加し続けることも、 &lt;strong&gt;[Custom Toolbars List]&lt;/strong&gt; ボタンをクリックして別のアプリケーションにツールバーやメニュー項目を追加することもできます。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;次の例では、切り取り(Ctrl + X)、コピー(Ctrl + C)、貼り付け(Ctrl + V)、閉じる(Shift + F4)のボタンがカスタムツールバーに追加されています。&lt;/p&gt;
+&lt;p&gt;次の例では、&lt;strong&gt;切り取り&lt;/strong&gt; (Ctrl + X)、&lt;strong&gt;コピー&lt;/strong&gt; (Ctrl + C)、&lt;strong&gt;貼り付け&lt;/strong&gt; (Ctrl + V)、&lt;strong&gt;閉じる&lt;/strong&gt; (Shift + F4)のボタンがカスタムツールバーに追加されています。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/6-2-3.png&#34; alt=&#34;6-2-3&#34;&gt;&lt;/p&gt;
 &lt;p&gt;メニュー項目はツールバーボタンに似ていますが、最大3つのサブメニュー項目を持つことができます。&lt;/p&gt;
 &lt;h3 id=&#34;メニューアイテムの追加方法&#34;&gt;メニューアイテムの追加方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;リストからアプリケーションを選択して[Edit]ボタンをクリックします。&lt;/li&gt;
-&lt;li&gt;[Add Menu]ボタンをクリックして[Add Menu]ダイアログを開きます。[Label]フィールドにメニュー項目の名前を入力します。&lt;/li&gt;
-&lt;li&gt;メニューの場合、[Shortcuts]フィールドは通常空白のままです。 ただし、メニューを開いたときにアプリケーションにアクションを実行させる場合は、ショートカットフィールドにそのアクションのショートカットを入力します。&lt;/li&gt;
-&lt;li&gt;[Add]をクリックします。&lt;/li&gt;
-&lt;li&gt;[Apply]をクリックします。このメニュー項目は、クライアントデバイスのアプリケーションのツールバーに表示されます。&lt;/li&gt;
+&lt;li&gt;リストからアプリケーションを選択して &lt;strong&gt;[Edit]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Add Menu]&lt;/strong&gt; ボタンをクリックして &lt;strong&gt;[Add Menu]&lt;/strong&gt; ダイアログを開きます。&lt;strong&gt;[Label]&lt;/strong&gt; フィールドにメニュー項目の名前を入力します。&lt;/li&gt;
+&lt;li&gt;メニューの場合、&lt;strong&gt;[Shortcuts]&lt;/strong&gt; フィールドは通常空白のままです。 ただし、メニューを開いたときにアプリケーションにアクションを実行させる場合は、ショートカットフィールドにそのアクションのショートカットを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Add]&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Apply]&lt;/strong&gt; をクリックします。このメニュー項目は、クライアントデバイスのアプリケーションのツールバーに表示されます。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/img/6-2-4.png&#34; alt=&#34;6-2-4&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;メニューにボタンを追加する方法&#34;&gt;メニューにボタンを追加する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;ツールバーリストからメニュー項目を強調表示して、[Add Button]をクリックします。&lt;/li&gt;
-&lt;li&gt;[Add Button]ダイアログで、[Label]フィールドに新しいボタンの名前を入力します。&lt;/li&gt;
-&lt;li&gt;[Shortcuts]フィールドにアクションのショートカットを入力します。&lt;/li&gt;
-&lt;li&gt;[Add]をクリックします。&lt;/li&gt;
-&lt;li&gt;[Apply]をクリックします。&lt;/li&gt;
+&lt;li&gt;ツールバーリストからメニュー項目を強調表示して、&lt;strong&gt;[Add Button]&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Add Button]&lt;/strong&gt; ダイアログで、&lt;strong&gt;[Label]&lt;/strong&gt; フィールドに新しいボタンの名前を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Shortcuts]&lt;/strong&gt; フィールドにアクションのショートカットを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Add]&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Apply]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;次の例では、写真、図面、およびオブジェクトを挿入するためのボタンを含む[]メニューが作成されました。ショートカットキーを使用してワードパッドにオブジェクトを挿入するには、ユーザはAlt + H、次にOをクリックします。適切なショートカットキーを使用して、ツールバーエディタでオブジェクトのサブメニューボタンを作成します。モバイルデバイスのユーザは、カスタムツールバーの[Object]ボタンをクリックして、オブジェクトをドキュメントに挿入できます。&lt;/p&gt;
+&lt;p&gt;次の例では、写真、図面、およびオブジェクトを挿入するためのボタンを含む &lt;strong&gt;[Insert]&lt;/strong&gt; メニューが作成されました。ショートカットキーを使用してワードパッドにオブジェクトを挿入するには、ユーザはAlt + H、次にOをクリックします。適切なショートカットキーを使用して、ツールバーエディタでオブジェクトのサブメニューボタンを作成します。モバイルデバイスのユーザは、カスタムツールバーの &lt;strong&gt;[Object]&lt;/strong&gt; ボタンをクリックして、オブジェクトをドキュメントに挿入できます。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/6-2-5.png&#34; alt=&#34;6-2-5&#34;&gt;&lt;/p&gt;
 &lt;p&gt;メニューレベルごとに最大10項目、ボタンあたり最大5つのショートカットを追加できます。&lt;/p&gt;
 &lt;h3 id=&#34;ツールバーボタンとメニュー項目の編集の方法&#34;&gt;ツールバーボタンとメニュー項目の編集の方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;ボタンまたはメニュー項目を編集するには、リストから項目を強調表示して[edit]をクリックします。&lt;/li&gt;
-&lt;li&gt;既存のショートカットを削除するには、[Shortcuts]フィールドのテキストの上にマウスを置きます。 灰色でハイライト表示されたテキストの上に表示されているxをクリックします。&lt;/li&gt;
+&lt;li&gt;ボタンまたはメニュー項目を編集するには、リストから項目を強調表示して &lt;strong&gt;[edit]&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;既存のショートカットを削除するには、 &lt;strong&gt;[Shortcuts]&lt;/strong&gt; フィールドのテキストの上にマウスを置きます。 灰色でハイライト表示されたテキストの上に表示されているxをクリックします。&lt;/li&gt;
 &lt;li&gt;新しいショートカットを入力してください。&lt;/li&gt;
-&lt;li&gt;[Save]をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Save]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/img/6-2-6.png&#34; alt=&#34;6-2-6&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;ボタンまたはメニュー項目を上下に移動する方法&#34;&gt;ボタンまたはメニュー項目を上下に移動する方法&lt;/h3&gt;
-&lt;p&gt;ツールバーリストの項目を強調表示して、[Move up]または[Move down]ボタンをクリックします。&lt;/p&gt;
+&lt;p&gt;ツールバーリストの項目を強調表示して、&lt;strong&gt;[Move up]&lt;/strong&gt; または &lt;strong&gt;[Move down]&lt;/strong&gt; ボタンをクリックします。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/6-2-7.png&#34; alt=&#34;6-2-7&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;ボタンまたはメニュー項目を削除する方法&#34;&gt;ボタンまたはメニュー項目を削除する方法&lt;/h3&gt;
-&lt;p&gt;ツールバーリストの項目を強調表示して、[delete]ボタンをクリックします。&lt;/p&gt;
+&lt;p&gt;ツールバーリストの項目を強調表示して、 &lt;strong&gt;[delete]&lt;/strong&gt; ボタンをクリックします。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/6-2-8.png&#34; alt=&#34;6-2-8&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;デフォルトのツールバーに戻す方法&#34;&gt;デフォルトのツールバーに戻す方法&lt;/h3&gt;
-&lt;p&gt;デフォルト設定ボタンをクリックします。これにより、カスタムツールバー設定が削除されます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;{Set Default}&lt;/strong&gt; ボタンをクリックします。これにより、カスタムツールバー設定が削除されます。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/6-2-9.png&#34; alt=&#34;6-2-9&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションの子プログラム用のカスタムツールバーを追加する方法&#34;&gt;アプリケーションの子プログラム用のカスタムツールバーを追加する方法&lt;/h3&gt;
-&lt;p&gt;Admin Consoleで公開されたアプリケーションの中には、アプリケーションのタスクのサブセットを実行する1つ以上の子プログラムを起動するものがあります。場合によっては、アプリケーションの主な機能が未公開の子プログラムによって提供されることがあります。このような場合、[Add]ボタンを使用して子プログラムのツールバーを追加したり、[Duplicate]ボタンを使用して既存のツールバーを子プログラムにコピーしたりできます。&lt;/p&gt;
+&lt;p&gt;Admin Consoleで公開されたアプリケーションの中には、アプリケーションのタスクのサブセットを実行する1つ以上の子プログラムを起動するものがあります。場合によっては、アプリケーションの主な機能が未公開の子プログラムによって提供されることがあります。このような場合、 &lt;strong&gt;[Add]&lt;/strong&gt; ボタンを使用して子プログラムのツールバーを追加したり、 &lt;strong&gt;[Duplicate]&lt;/strong&gt; ボタンを使用して既存のツールバーを子プログラムにコピーしたりできます。&lt;/p&gt;
 &lt;h3 id=&#34;子プロセス用のツールバーを作成する方法&#34;&gt;子プロセス用のツールバーを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;ツールバーエディタで、[Add]をクリックします。&lt;/li&gt;
+&lt;li&gt;ツールバーエディタで、 &lt;strong&gt;[Add]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;li&gt;子プログラムの実行可能ファイルを参照します。&lt;/li&gt;
-&lt;li&gt;ファイルを選択して[Open]をクリックします。&lt;/li&gt;
+&lt;li&gt;ファイルを選択して &lt;strong&gt;[Open]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;li&gt;上記のようにボタンとメニューを追加します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;ツールバーをコピーする方法&#34;&gt;ツールバーをコピーする方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;既存のツールバーをコピーして子プログラムで使用するには、コピーするアプリケーションのツールバーをリストから選択します。&lt;/li&gt;
-&lt;li&gt;[Duplicate]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Duplicate]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
 &lt;li&gt;子プログラムの実行可能ファイルを参照します。&lt;/li&gt;
-&lt;li&gt;ファイルを選択して[Open]をクリックします。&lt;/li&gt;
+&lt;li&gt;ファイルを選択して &lt;strong&gt;[Open]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;カスタムツールバーの表示&#34;&gt;カスタムツールバーの表示&lt;/h3&gt;
-&lt;p&gt;モバイルデバイスでGO-Global Appを開いて作成したツールバーボタンを表示できます。たとえば、ワードパッドを起動すると、画面下部にカスタムツールバーボタンが表示されます。[Insert]をタップしてサブメニューを開きます。Xをタップしてサブメニューを閉じます。&lt;/p&gt;
+&lt;p&gt;モバイルデバイスでGO-Global Appを開いて作成したツールバーボタンを表示できます。たとえば、ワードパッドを起動すると、画面下部にカスタムツールバーボタンが表示されます。 &lt;strong&gt;[Insert]&lt;/strong&gt; をタップしてサブメニューを開きます。 &lt;strong&gt;X&lt;/strong&gt; をタップしてサブメニューを閉じます。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/6-2-10.png&#34; alt=&#34;6-2-10&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;ツールバーディレクトリの変更&#34;&gt;ツールバーディレクトリの変更&lt;/h3&gt;
-&lt;p&gt;ツールバーファイルはデフォルトでC:\ProgramData\GraphOn\GO-Global\MobileAppSettingsディレクトリに格納されています。GO-Globalホストが複数ある場合は、ツールバーを共有ネットワークディレクトリに保存し、すべてのホストで同じツールバーファイルを使用できます。&lt;/p&gt;
+&lt;p&gt;ツールバーファイルはデフォルトで &lt;strong&gt;&lt;code&gt;C:\ProgramData\GraphOn\GO-Global\MobileAppSettings&lt;/code&gt;&lt;/strong&gt; ディレクトリに格納されています。GO-Globalホストが複数ある場合は、ツールバーを共有ネットワークディレクトリに保存し、すべてのホストで同じツールバーファイルを使用できます。&lt;/p&gt;
 &lt;h3 id=&#34;ツールバーが格納されているディレクトリを変更する方法&#34;&gt;ツールバーが格納されているディレクトリを変更する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;[Toolbar Directory]フィールドで目的のディレクトリへのパスを参照するか入力します。&lt;/li&gt;
-&lt;li&gt;[Apply]をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Toolbar Directory]&lt;/strong&gt; フィールドで目的のディレクトリへのパスを参照するか入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Apply]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;li&gt;すでにツールバーを作成している場合は、既存のツールバーを新しいディレクトリにコピーするかどうかを尋ねられます。&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -1278,50 +1290,77 @@ Windowsエクスプローラで、&lt;strong&gt;ヘルプ&lt;/strong&gt; ボタ�
 &lt;h3 id=&#34;webブラウザからgo-globalを起動方法&#34;&gt;WebブラウザからGO-Globalを起動方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
-&lt;li&gt;[Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false&lt;/li&gt;
-&lt;li&gt;**[Sign In]**ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
+&lt;li&gt;[Location box]ボックスに、http://に続けてホスト名と &lt;strong&gt;?useApp=false&lt;/strong&gt; の順に入力します。次に例を示します。&lt;code&gt;http://hostname/goglobal/?useApp=false&lt;/code&gt;または&lt;code&gt;https://hostname/goglobal/?useApp=false&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Sign In]&lt;/strong&gt; ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[User Name]&lt;/strong&gt; ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Password]&lt;/strong&gt; ボックスにパスワードを入力します。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;[Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;[Location box]ボックスに &lt;strong&gt;https://&lt;/strong&gt; を指定した場合、Admin Consoleの &lt;strong&gt;[Host Options]&lt;/strong&gt; ダイアログの[Security]タブで &lt;strong&gt;SSLトランスポート&lt;/strong&gt; を有効にし、タブで指定したSSL証明書のcommon nameをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、 &lt;strong&gt;SSL転送の選択&lt;/strong&gt; を参照してください。&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。
+&lt;/div&gt;
+
 &lt;h2 id=&#34;go-global-appcontrollerを使用したwebアプリケーションの実行&#34;&gt;GO-Global AppControllerを使用したWebアプリケーションの実行&lt;/h2&gt;
 &lt;p&gt;GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。&lt;/p&gt;
 &lt;p&gt;GO-Globalは、GO-Global AppControllerのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;useApp　　useApp = trueの場合、Webアプリケーションは完全なGO-Global AppControllerを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global AppControllerを起動しようとしません。 デフォルトでuseApp = trueです。&lt;/li&gt;
-&lt;li&gt;installApp　　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、[Get the App]リンクがGO-Global Web Appのツールバーに追加されます。&lt;/li&gt;
+&lt;li&gt;installApp　　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、 &lt;strong&gt;[Get the App]&lt;/strong&gt; リンクがGO-Global Web Appのツールバーに追加されます。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLがhttp://hostname/goglobal/logon.htmlの場合など)、GO-Globalは自動的にGO-Global AppControllerのダウンロードを開始し、ユーザにプロンプトを表示します。インストールして実行します。または、installAppオプションがaddLinkに設定されている場合(たとえば、URLがhttp://hostname/goglobal/logon.html?installApp = addLinkの場合)、Webアプリケーションのツールバーに[Get the App]リンクが追加されます。ユーザがこのリンクをクリックすると、GO-Globalはダウンロードを開始し、GO-Global AppControllerの実行とインストールのプロセスを案内します。&lt;/p&gt;
+&lt;p&gt;たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLが &lt;strong&gt;&lt;code&gt;http://hostname/goglobal/logon.html&lt;/code&gt;&lt;/strong&gt; の場合など)、GO-Globalは自動的にGO-Global AppControllerのダウンロードを開始し、ユーザにプロンプトを表示します。インストールして実行します。または、installAppオプションがaddLinkに設定されている場合(たとえば、URLが &lt;strong&gt;&lt;code&gt;http://hostname/goglobal/logon.html?installApp=addLink&lt;/code&gt;&lt;/strong&gt; の場合)、Webアプリケーションのツールバーに[Get the App]リンクが追加されます。ユーザがこのリンクをクリックすると、GO-Globalはダウンロードを開始し、GO-Global AppControllerの実行とインストールのプロセスを案内します。&lt;/p&gt;
 &lt;p&gt;GO-Global AppControllerをインストールして有効にすると、「埋め込み」URLパラメータを使用して、アプリケーションをブラウザウィンドウ内で実行するかブラウザウィンドウ外で実行するかを制御できます。 embedパラメータが指定されていないか、または&amp;rdquo; false&amp;quot;に設定されている場合(たとえば、URLがhttp://hostname/goglobal/logon.html?embed = falseである場合)、ユーザのアプリケーションはGO-Global AppControllerを介してブラウザのウィンドウ外で実行されます。&lt;/p&gt;
-&lt;p&gt;あるいは、埋め込みパラメータが「true」に設定されている場合(例えば、URLが http://hostname/goglobal/logon.html?embed = true)アプリケーションはWebアプリケーションを介してブラウザウィンドウ内で実行されます。この場合、GO-GlobalもGO-Global AppControllerを起動します(インストールされて有効になっている場合)が、GO-Global AppControllerはコンピュータのデバイス(プリンタやドライブなど)へのアクセスを提供する目的でのみ使用されます。セッションのアプリケーションは表示されません。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;AppControllerをブラウザウィンドウ内で実行すると、デフォルトの背景色は白になります。背景色は、HostProperties.xmlファイルのDesktopColorプロパティで指定します。色は10進数形式のRGB値として指定されます。例えば、白のデフォルトの色は10進数で16777215（16進数では0x00FFFFFF）です。例えば、背景色を青に変更するには、DesktopColorプロパティを10906937に設定します。
-GO-Global AppControllerがインストールされていないかuseApp = falseの場合、embedオプションは無視されます。それ以外の場合、embedはデフォルトでfalseに設定されています。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;埋め込みオプションが有効な場合、AppControllerは、-hostパラメータをホストのconfig.xmlファイルのhostaddressフィールドの値に設定して起動します。GO-Global インストーラは、この値をコンピュータの名前に初期化します。ユーザーが別のアドレス（パブリック DNS アドレスなど）でホストに接続する場合は、config.xml ファイルの hostaddress フィールドをこのアドレスに設定する必要があります。&lt;/p&gt;
+&lt;p&gt;あるいは、埋め込みパラメータが「true」に設定されている場合(例えば、URLが &lt;strong&gt;&lt;code&gt;http://hostname/goglobal/logon.html?embed=true&lt;/code&gt;&lt;/strong&gt;)アプリケーションはWebアプリケーションを介してブラウザウィンドウ内で実行されます。この場合、GO-GlobalもGO-Global AppControllerを起動します(インストールされて有効になっている場合)が、GO-Global AppControllerはコンピュータのデバイス(プリンタやドライブなど)へのアクセスを提供する目的でのみ使用されます。セッションのアプリケーションは表示されません。&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+AppControllerをブラウザウィンドウ内で実行すると、デフォルトの背景色は白になります。背景色は、 &lt;strong&gt;HostProperties.xml&lt;/strong&gt; ファイルの &lt;strong&gt;DesktopColor&lt;/strong&gt; プロパティで指定します。色は10進数形式のRGB値として指定されます。例えば、白のデフォルトの色は10進数で16777215(16進数では0x00FFFFFF)です。例えば、背景色を青に変更するには、 &lt;strong&gt;DesktopColor&lt;/strong&gt; プロパティを10906937に設定します。
+GO-Global AppControllerがインストールされていないかuseApp=falseの場合、embedオプションは無視されます。それ以外の場合、embedはデフォルトでfalseに設定されています。
+&lt;/div&gt;
+
+&lt;p&gt;埋め込みオプションが有効な場合、AppControllerは、 &lt;strong&gt;-host&lt;/strong&gt; パラメータをホストのconfig.xmlファイルの &lt;strong&gt;hostaddress&lt;/strong&gt; フィールドの値に設定して起動します。GO-Globalインストーラは、この値をコンピュータの名前に初期化します。ユーザーが別のアドレス(パブリックDNSアドレスなど)でホストに接続する場合は、config.xmlファイルの &lt;strong&gt;hostaddress&lt;/strong&gt; フィールドをこのアドレスに設定する必要があります。&lt;/p&gt;
 &lt;h3 id=&#34;ホストアドレスの値を変更する方法&#34;&gt;ホストアドレスの値を変更する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;アプリケーション公開サービスを停止します。&lt;/li&gt;
-&lt;li&gt;C:\ProgramData\GraphOnOn\GO-Globalディレクトリにconfig.xmlファイルを配置してください。&lt;/li&gt;
-&lt;li&gt;Wordpadでconfig.xmlを開き、&lt;hostaddress&gt;フィールドを探してください。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application Publishing Service&lt;/strong&gt; を停止します。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C:\ProgramData\GraphOnOn\GO-Global&lt;/code&gt;ディレクトリに &lt;strong&gt;config.xml&lt;/strong&gt; ファイルを配置してください。&lt;/li&gt;
+&lt;li&gt;Wordpadで &lt;strong&gt;config.xml&lt;/strong&gt; を開き、&lt;hostaddress&gt;フィールドを探してください。&lt;/li&gt;
 &lt;li&gt;ホストアドレスの値を更新します。&lt;/li&gt;
 &lt;li&gt;編集した.xmlファイルを保存します。&lt;/li&gt;
-&lt;li&gt;Application Publishing Serviceを起動します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application Publishing Service&lt;/strong&gt; を起動します。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Global Web Appを使用する場合、アプリケーションのメニューまたはツールバーからクリップボードにコピーして貼り付けることはサポートされていません。代わりに、Windowsでは、キーボードショートカットのCtrl+Cを使用してコピーし、Ctrl+Vを使用して貼り付けます。Macでは、キーボードショートカットのCommand-Cを使用してコピーし、Command-Vを使用して貼り付けます。&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+GO-Global Web Appを使用する場合、アプリケーションのメニューまたはツールバーからクリップボードにコピーして貼り付けることはサポートされていません。代わりに、Windowsでは、キーボードショートカットの &lt;strong&gt;Ctrl+C&lt;/strong&gt; を使用してコピーし、 &lt;strong&gt;Ctrl+V&lt;/strong&gt; を使用して貼り付けます。Macでは、キーボードショートカットの &lt;strong&gt;Command-C&lt;/strong&gt; を使用してコピーし、&lt;strong&gt;Command-V&lt;/strong&gt; を使用して貼り付けます。
+&lt;/div&gt;
+
 &lt;h2 id=&#34;accessing-the-host-or-relay-server-directly-from-the-internet&#34;&gt;Accessing the Host or Relay Server Directly from the Internet&lt;/h2&gt;
-&lt;p&gt;If users will be connecting to a GO-Global Host or relay server from the internet, the web server and host addresses in the URL must be public (internet) addresses. When there is no public web server available, GraphOn&amp;rsquo;s web server, apps.graphon.com, can be used.&lt;/p&gt;
-&lt;p&gt;In this case, a URL such as the following would be shared with users: &lt;a href=&#34;http://apps.graphon.com/goglobal/?host=hostname&#34;&gt;http://apps.graphon.com/goglobal/?host=hostname&lt;/a&gt;, where hostname is the public address of the GO-Global Host.&lt;/p&gt;
-&lt;p&gt;When using a web server other than GraphOn&amp;rsquo;s, the URL must use the public address of the web server. For example: &lt;a href=&#34;http://webservername.com/goglobal/?host=hostname&#34;&gt;http://webservername.com/goglobal/?host=hostname&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-secondary&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;注意&lt;/h4&gt;
+本項目の設定は推奨設定ではございませんのでご注意ください。
+&lt;/div&gt;
+
+&lt;p&gt;If users will be connecting to a GO-Global Host or relay server from the internet, the web server and host addresses in the URL must be public(internet)addresses. When there is no public web server available, GraphOn&amp;rsquo;s web server, &lt;strong&gt;apps.graphon.com,&lt;/strong&gt; can be used.&lt;/p&gt;
+&lt;p&gt;In this case, a URL such as the following would be shared with users:&lt;strong&gt;&lt;code&gt;http://apps.graphon.com/goglobal/?host=hostname&lt;/code&gt;&lt;/strong&gt;, where hostname is the public address of the GO-Global Host.&lt;/p&gt;
+&lt;p&gt;When using a web server other than GraphOn&amp;rsquo;s, the URL must use the public address of the web server. For example:&lt;strong&gt;&lt;code&gt;http://webservername.com/goglobal/?host=hostname&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If users will be accessing a host or relay server from both the Internet and the internal network, the external and internal DNS should be configured so that the public and internal addresses of the web server are the same, and the public and internal addresses of the host are the same. Alternatively, administrators can provide external and internal users with different URLs, but this may be confusing to users.&lt;/p&gt;
-&lt;p&gt;When hosts are accessed via a third-party load balancer, the URL must include the address of the load-balancer. For example, &lt;a href=&#34;http://loadbalancer.com/goglobal/?host=hostname&amp;amp;app=Notepad&#34;&gt;http://loadbalancer.com/goglobal/?host=hostname&amp;amp;app=Notepad&lt;/a&gt;​&lt;/p&gt;
+&lt;p&gt;When hosts are accessed via a third-party load balancer, the URL must include the address of the load-balancer. For example, &lt;strong&gt;&lt;code&gt;http://loadbalancer.com/goglobal/?host=hostname&amp;amp;app=Notepad&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1997,7 +2036,7 @@ GO-Globalを介してアプリケーションを展開しても、各企業が�
 &lt;p&gt;&lt;img src=&#34;/img/4-2-1.png&#34; alt=&#34;4-2-1&#34;&gt;&lt;/p&gt;
 &lt;p&gt;デフォルトでは、ブラウズダイアログは&lt;code&gt;PROGRAMDATA\Microsoft\Windows\Start Menu\Programs&lt;/code&gt;ディレクトリに開きます。最初のアプリケーションを公開した後、ダイアログが最後に公開されたアプリケーションのディレクトリで開きます。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーション名の変更&#34;&gt;アプリケーション名の変更&lt;/h3&gt;
-&lt;p&gt;アプリケーションの .exeファイルを参照すると、そのファイル名が自動的に**[Name]** ボックス内に入力されます(アプリケーション名は Program Windowに表示されます)。そのままデフォルトの表示名を使用することも、新しい名称を入力することも可能です。アプリケーションの表示名をスペースのみにすることはできません。また、バックスラッシュ()も使用できません。このフィールドは空欄のままにしないでください。&lt;/p&gt;
+&lt;p&gt;アプリケーションの .exeファイルを参照すると、そのファイル名が自動的に &lt;strong&gt;[Name]&lt;/strong&gt; ボックス内に入力されます(アプリケーション名は Program Windowに表示されます)。そのままデフォルトの表示名を使用することも、新しい名称を入力することも可能です。アプリケーションの表示名をスペースのみにすることはできません。また、バックスラッシュ( \ )も使用できません。このフィールドは空欄のままにしないでください。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションアイコンの変更&#34;&gt;アプリケーションアイコンの変更&lt;/h3&gt;
 &lt;p&gt;アプリケーションのデフォルトアイコン以外のアイコンを選択する場合は、&lt;strong&gt;[Icon]&lt;/strong&gt; ボタンをクリックします。&lt;/p&gt;
 &lt;h3 id=&#34;起動状態の変更&#34;&gt;起動状態の変更&lt;/h3&gt;
@@ -2026,106 +2065,125 @@ Admin Consoleがチュートリアルモードで実行されている場合、&
 &lt;/div&gt;
 
 &lt;h2 id=&#34;ブラウザ外でのアプリケーションの実行&#34;&gt;ブラウザ外でのアプリケーションの実行&lt;/h2&gt;
-&lt;p&gt;ユーザが公開アプリケーションへのリンクをクリックしてGO-Globalホストにサインインすると、アプリケーションが開き、Webブラウザの外部で実行されます。このデフォルト設定を無効にするには、[Run application outside the browser]のチェックを外します。これにより、パラメータ&amp;amp;embed = trueがURLに追加されます。このパラメータを追加してユーザがリンクをクリックすると、アプリケーションはユーザのWebブラウザ内で実行されます。&lt;/p&gt;
+&lt;p&gt;ユーザが公開アプリケーションへのリンクをクリックしてGO-Globalホストにサインインすると、アプリケーションが開き、Webブラウザの外部で実行されます。このデフォルト設定を無効にするには、&lt;strong&gt;[Run application outside the browser]&lt;/strong&gt; のチェックを外します。これにより、パラメータ &lt;strong&gt;&amp;amp;embed=true&lt;/strong&gt; がURLに追加されます。このパラメータを追加してユーザがリンクをクリックすると、アプリケーションはユーザのWebブラウザ内で実行されます。&lt;/p&gt;
 &lt;h2 id=&#34;ホストアドレスの編集&#34;&gt;ホストアドレスの編集&lt;/h2&gt;
-&lt;p&gt;ホストアドレスは、GO-Global AppControllerまたはWeb Appがホストコンピュータへの接続に使用するアドレスを指定します。デフォルトでは、これはGO-Globalホストがインストールされているコンピュータの完全修飾ドメイン名です。クライアントが中継サーバまたはロードバランサを介してホストに接続する場合は、ホストアドレスを中継サーバまたはロードバランサの完全修飾ドメイン名に設定します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ホストアドレス&lt;/strong&gt; は、GO-Global AppControllerまたはWeb Appがホストコンピュータへの接続に使用するアドレスを指定します。デフォルトでは、これはGO-Globalホストがインストールされているコンピュータの完全修飾ドメイン名です。クライアントがロードバランサ(GO-Global Relay Load Balancerやthird-party load balancerなど)を介してホストに接続する場合は、&lt;strong&gt;ホストアドレス&lt;/strong&gt; を完全修飾ドメイン名に設定します。&lt;/p&gt;
 &lt;h3 id=&#34;ホストアドレスを編集する方法&#34;&gt;ホストアドレスを編集する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;[Application Link]ダイアログで、[Host Address]ボックスにホストの完全修飾ドメイン名を入力します。アプリケーションリンクは自動的に更新されます。&lt;/li&gt;
-&lt;li&gt;[Copy]ボタンをクリックしてURLをコピーし、ユーザと共有します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Application Link]&lt;/strong&gt; ダイアログで、&lt;strong&gt;[Host Address]&lt;/strong&gt; ボックスにホストの完全修飾ドメイン名を入力します。アプリケーションリンクは自動的に更新されます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Copy]&lt;/strong&gt; ボタンをクリックしてURLをコピーし、ユーザと共有します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;webサーバアドレスの編集&#34;&gt;Webサーバアドレスの編集&lt;/h2&gt;
-&lt;p&gt;Webサーバアドレスは、GO-Global Web App、GO-Global AppController、それらをサポートするファイルをユーザのブラウザに提供するために使用されるWebサーバのアドレスを指定します。デフォルトのWebサーバアドレスはapps.graphon.comです。これは、GraphOnによってホストされているWebサーバのアドレスです。あなたがあなた自身のWebサーバを使うつもりならば、GO-Global WebコンポーネントをWebサーバにインストールし、WebサーバアドレスをあなたのWebサーバのアドレスに変更してください。たとえば、WebサーバがGO-Globalホストと同じコンピュータにインストールされている場合は、Webサーバアドレスとホストアドレスを同じアドレスに設定します。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Webサーバアドレス&lt;/strong&gt; は、GO-Global Web App、GO-Global AppController、それらをサポートするファイルをユーザのブラウザに提供するために使用されるWebサーバのアドレスを指定します。デフォルトのWebサーバアドレスは&lt;strong&gt;apps.graphon.com&lt;/strong&gt; です。これは、GraphOnによってホストされているWebサーバのアドレスです。あなたがあなた自身のWebサーバを使うつもりならば、GO-Global WebコンポーネントをWebサーバにインストールし、&lt;strong&gt;Webサーバアドレス&lt;/strong&gt; をあなたのWebサーバのアドレスに変更してください。たとえば、WebサーバがGO-Globalホストと同じコンピュータにインストールされている場合は、&lt;strong&gt;Webサーバアドレス&lt;/strong&gt; と&lt;strong&gt;ホストアドレス&lt;/strong&gt; を同じアドレスに設定します。&lt;/p&gt;
 &lt;h3 id=&#34;webサーバのアドレスを編集する方法&#34;&gt;Webサーバのアドレスを編集する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;[Application Link]ダイアログで、[Web Server Address]ボックスにWebサーバのアドレスを入力します。アプリケーションリンクは自動的に更新されます。&lt;/li&gt;
-&lt;li&gt;[Copy]ボタンをクリックしてURLをコピーし、ユーザと共有します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Application Link]&lt;/strong&gt; ダイアログで、&lt;strong&gt;[Web Server Address]&lt;/strong&gt; ボックスにWebサーバのアドレスを入力します。アプリケーションリンクは自動的に更新されます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Copy]&lt;/strong&gt; ボタンをクリックしてURLをコピーし、ユーザと共有します。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;ユーザが内部ネットワークとパブリックネットワークの両方からホストにアクセスする場合、ホストとWebサーバは、[Host Address]フィールドと[Web Server Address]フィールドに指定されたアドレスを介して内部ネットワークとパブリックネットワークの両方からアクセスできる必要があります。これを実現するには、内部DNSエントリがホストアドレスとWebサーバアドレスをコンピュータの内部IPアドレスにマップし、パブリックDNSエントリがホストアドレスとWebサーバアドレスをこれらのコンピュータのパブリックIPアドレスにマップする必要があります。&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+ユーザが内部ネットワークとパブリックネットワークの両方からホストにアクセスする場合、ホストとWebサーバは、&lt;strong&gt;[Host Address]&lt;/strong&gt; フィールドと &lt;strong&gt;[Web Server Address]&lt;/strong&gt; フィールドに指定されたアドレスを介して内部ネットワークとパブリックネットワークの両方からアクセスできる必要があります。これを実現するには、内部DNSエントリが &lt;strong&gt;ホストアドレス&lt;/strong&gt; と &lt;strong&gt;Webサーバアドレス&lt;/strong&gt; をコンピュータの内部IPアドレスにマップし、パブリックDNSエントリが &lt;strong&gt;ホストアドレス&lt;/strong&gt; と &lt;strong&gt;Webサーバアドレス&lt;/strong&gt; をこれらのコンピュータのパブリックIPアドレスにマップする必要があります。
+&lt;/div&gt;
+
 &lt;h2 id=&#34;デフォルトリンクプロパティの設定&#34;&gt;デフォルトリンクプロパティの設定&lt;/h2&gt;
-&lt;p&gt;デフォルトのアプリケーションリンクプロパティを[Application Link]ダイアログボックスで指定したものに設定して、ホストアドレス、Webサーバアドレス、アプリケーションをブラウザの内部で実行するか外部で実行するかを含めることができます。これらのデフォルトのリンクプロパティは、新しいアプリケーションが公開されたときに適用されます。&lt;/p&gt;
+&lt;p&gt;デフォルトのアプリケーションリンクプロパティを &lt;strong&gt;[Application Link]&lt;/strong&gt; ダイアログボックスで指定したものに設定して、ホストアドレス、Webサーバアドレス、アプリケーションをブラウザの内部で実行するか外部で実行するかを含めることができます。これらのデフォルトのリンクプロパティは、新しいアプリケーションが公開されたときに適用されます。&lt;/p&gt;
 &lt;h3 id=&#34;デフォルトのリンクプロパティを設定する方法&#34;&gt;デフォルトのリンクプロパティを設定する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;[Application Link]ダイアログで、[デフォルト設定]ボタンをクリックします。&lt;/li&gt;
-&lt;li&gt;[Yes]をクリックして確定します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Application Link]&lt;/strong&gt; ダイアログで、 &lt;strong&gt;[Set defaults]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Yes]&lt;/strong&gt; をクリックして確定します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;アプリケーションの複製&#34;&gt;アプリケーションの複製&lt;/h2&gt;
-&lt;p&gt;アプリケーションの複製では、選択された登録済みアプリケーションの完全なコピーが作成されます。これは、同一のアプリケーションを異なるユーザやグループに対してさまざまな形で利用可能にする場合に便利です。たとえば、 [&lt;strong&gt;Sign In&lt;/strong&gt;]ダイアログを表示しないコマンド行オプション付きの1つのバージョンのアプリケーションと、クライアントにサインインを要求するコマンド行オプションのない別のバージョンのアプリケーションを登録できます。アプリケーションを複製する場合には、新しい表示名を選択する必要があります。&lt;/p&gt;
+&lt;p&gt;アプリケーションの複製では、選択された登録済みアプリケーションの完全なコピーが作成されます。これは、同一のアプリケーションを異なるユーザやグループに対してさまざまな形で利用可能にする場合に便利です。たとえば、 &lt;strong&gt;[Sign In]&lt;/strong&gt; ダイアログを表示しないコマンド行オプション付きの1つのバージョンのアプリケーションと、クライアントにサインインを要求するコマンド行オプションのない別のバージョンのアプリケーションを登録できます。アプリケーションを複製する場合には、新しい表示名を選択する必要があります。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションの複製方法&#34;&gt;アプリケーションの複製方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;[&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧から複製するアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Installed Applications]&lt;/strong&gt; の一覧から複製するアプリケーションを選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Applications | Duplicate]の順にクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;－または－&lt;/p&gt;
-&lt;p&gt;[Installed Applications]の一覧の右側にある [&lt;strong&gt;Duplicate&lt;/strong&gt;]ボタンをクリックします。&lt;/p&gt;
+&lt;p&gt;[Installed Applications]の一覧の右側にある &lt;strong&gt;[Duplicate]&lt;/strong&gt; ボタンをクリックします。&lt;/p&gt;
 &lt;h2 id=&#34;アプリケーション名の変更-1&#34;&gt;アプリケーション名の変更&lt;/h2&gt;
 &lt;p&gt;アプリケーションに割り当てる表示名は、エンドユーザのProgram Windowに表示されます。アプリケーションの表示名は常時変更可能です。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションの表示名の変更方法&#34;&gt;アプリケーションの表示名の変更方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;[Installed Applications]の一覧から名前を変更するアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Installed Applications]&lt;/strong&gt; の一覧から名前を変更するアプリケーションを選択します。&lt;/li&gt;
 &lt;li&gt;[Tools | Applications | Rename]の順にクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;－または－&lt;/p&gt;
-&lt;p&gt;　　[Installed Applications]の一覧の右側にある[&lt;strong&gt;Rename&lt;/strong&gt;]ボタンをクリックします。
-　　
-3. [Rename Application]ダイアログの[New]ボックスに名前を入力します。&lt;/p&gt;
+&lt;p&gt;[Installed Applications]の一覧の右側にある &lt;strong&gt;[Rename]&lt;/strong&gt; ボタンをクリックします。&lt;br&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;[Rename Application]&lt;/strong&gt; ダイアログの &lt;strong&gt;[New]&lt;/strong&gt; ボックスに名前を入力します。&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;アプリケーションのプロパティの編集&#34;&gt;アプリケーションのプロパティの編集&lt;/h2&gt;
 &lt;p&gt;アプリケーションが公開されたら、いつでもアプリケーションのプロパティを編集できます。たとえば、アプリケーションのスタートアップ状態、実行可能ファイルの場所、アプリケーションを起動するフォルダの編集が可能です。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションのプロパティの編集方法&#34;&gt;アプリケーションのプロパティの編集方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧からアプリケーションを選択します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Properties&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Applications]&lt;/strong&gt; タブをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Installed Applications]&lt;/strong&gt; の一覧からアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Properties]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
 &lt;li&gt;以下のいずれかの操作を行います&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;[&lt;strong&gt;Executable Path&lt;/strong&gt;]ボックス内に、新しいパス名を入力します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Start Directory&lt;/strong&gt;]ボックス内に、アプリケーションを起動するディレクトリのフルパス名を入力します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Command-Line Options&lt;/strong&gt;]ボックス内に、そのアプリケーション用のスタートアップパラメータを入力します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Display Name&lt;/strong&gt;]ボックス内に、そのアプリケーションの新しい表示名を入力します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Startup State&lt;/strong&gt;]セクションで、そのアプリケーションの起動モード(Maximized、Minimized、Normal)を選択します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Icon&lt;/strong&gt;]ボタンをクリックして、新しいアプリケーションアイコンを検索します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Executable Path]&lt;/strong&gt; ボックス内に、新しいパス名を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Start Directory]&lt;/strong&gt; ボックス内に、アプリケーションを起動するディレクトリのフルパス名を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Command-Line Options]&lt;/strong&gt; ボックス内に、そのアプリケーション用のスタートアップパラメータを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Display Name]&lt;/strong&gt; ボックス内に、そのアプリケーションの新しい表示名を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Startup State]&lt;/strong&gt; セクションで、そのアプリケーションの起動モード(Maximized、Minimized、Normal)を選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Icon]&lt;/strong&gt; ボタンをクリックして、新しいアプリケーションアイコンを検索します。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/img/4-2-3.png&#34; alt=&#34;4-2-3&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;アプリケーションの削除&#34;&gt;アプリケーションの削除&lt;/h2&gt;
 &lt;p&gt;GO-Globalで展開したアプリケーションは、Admin Consoleで削除します。Admin Consoleでアプリケーションを削除しても、ホストからは削除されません。GO-Globalクライアントがそのアプリケーションにアクセスできなくなるだけです。&lt;/p&gt;
 &lt;h3 id=&#34;アプリケーションの削除方法&#34;&gt;アプリケーションの削除方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Applications]&lt;/strong&gt; タブをクリックします。&lt;/li&gt;
 &lt;li&gt;[Installed Applications]の一覧から削除するアプリケーションを選択します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Remove&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Remove]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;－または－&lt;/p&gt;
 &lt;p&gt;　　[Tools | Applications | Remove]の順にクリックします。&lt;/p&gt;
 &lt;p&gt;Admin Consoleでインストール済みアプリケーションを削除する時に、あるユーザがそのアプリケーションを実行していた場合、そのユーザのセッションは中断されません。しかし、そのユーザがそのアプリケーションを終了すると、そのアプリケーションは利用不可能になり、Program Window内にアイコンは表示されません。&lt;/p&gt;
-&lt;p&gt;Admin Consoleへのアプリケーションの登録が完了すると、 [&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧にそのアプリケーション名とパス名が表示されます。カラムのタイトルをクリックすると、一覧内の項目を昇順または降順で並べ替えできます。Admin Console内の一覧はすべて、この方法で並べ替えできます。&lt;/p&gt;
+&lt;p&gt;Admin Consoleへのアプリケーションの登録が完了すると、 &lt;strong&gt;[Installed Applications]&lt;/strong&gt; の一覧にそのアプリケーション名とパス名が表示されます。カラムのタイトルをクリックすると、一覧内の項目を昇順または降順で並べ替えできます。Admin Console内の一覧はすべて、この方法で並べ替えできます。&lt;/p&gt;
 &lt;p&gt;ODBCデータソースを使用するアプリケーションを設定する場合は、GO-Globalクライアントがそのデータソースへアクセスできるよう、ODBCドライバをシステムDSNs(データソース名)として設定する必要があります。データソースに関する詳細情報は、Windows ODBC Data Source Administratorのオンラインヘルプを参照してください。&lt;/p&gt;
-&lt;p&gt;アクセス制限により、Admin ConsoleではUNCフォーマットで指定されたパス(例 : \Machine Name\Folder Name&amp;hellip;)、またはマッピングされたネットワークドライブ上にあるパスの有効性を検証できません。公開された項目のExecutable PathまたはStart Directoryが、マッピングされたドライブを含むか、UNCパスで指定されている場合、Admin Consoleでは、それが有効であるか否かに関わらず、その指定パスを受け付けます。パスが無効な場合、またはクライアントユーザが指定された実行可能ファイルやフォルダへのアクセス権を持たない場合、公開された項目はProgram Windowに表示されません。その項目を選択して、 [&lt;strong&gt;Properties&lt;/strong&gt;]ボタンをクリックします。そこで、その項目の[Executable Path]または [Start Directory]を更新します。その項目がアンインストールまたは新規の場所に移動されていると、Application Publishing Serviceが再開された後には、Admin Console内に表示されません。&lt;/p&gt;
+&lt;p&gt;アクセス制限により、Admin ConsoleではUNCフォーマットで指定されたパス(例:\Machine Name\Folder Name&amp;hellip;)、またはマッピングされたネットワークドライブ上にあるパスの有効性を検証できません。公開された項目の &lt;strong&gt;Executable Path&lt;/strong&gt; または &lt;strong&gt;Start Directory&lt;/strong&gt; が、マッピングされたドライブを含むか、UNCパスで指定されている場合、Admin Consoleでは、それが有効であるか否かに関わらず、その指定パスを受け付けます。パスが無効な場合、またはクライアントユーザが指定された実行可能ファイルやフォルダへのアクセス権を持たない場合、公開された項目はProgram Windowに表示されません。その項目を選択して、 &lt;strong&gt;[Properties]&lt;/strong&gt; ボタンをクリックします。そこで、その項目の[Executable Path]または [Start Directory]を更新します。その項目がアンインストールまたは新規の場所に移動されていると、Application Publishing Serviceが再開された後には、Admin Console内に表示されません。&lt;/p&gt;
 &lt;p&gt;Admin Consoleでは、UNCフォーマットで指定された、またはマッピングされたドライブにある任意の項目のパスに対するグループやユーザの設定は表示できません。これが当てはまる場合、任意のアプリケーションやファイルに対して、Cluster Managerの[Application Users/Groups]画面に「User/Group settings not available.(ユーザ/グループ設定は利用できません)」というメッセージが表示されます。&lt;/p&gt;
 &lt;p&gt;マッピングされたドライブ上に存在はしていてもGO-Globalでの利用ライセンスが供与されていない項目をAdmin Console内で公開すると、その項目のアイコンがProgram Windowに表示されます。しかし、ユーザはその項目をオープンすることはできず、起動するとエラーメッセージが表示されます。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[Installed Applications]の一覧または[Application Users/Groups]の一覧内の項目上でマウスボタンを右クリックすると、最も頻繁に使用されるコマンドのショートカットメニューが表示されます。&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+[Installed Applications]の一覧または[Application Users/Groups]の一覧内の項目上でマウスボタンを右クリックすると、最も頻繁に使用されるコマンドのショートカットメニューが表示されます。
+&lt;/div&gt;
+
 &lt;h2 id=&#34;ユーザやグループに対するアプリケーション起動パラメータの割り当て&#34;&gt;ユーザやグループに対するアプリケーション起動パラメータの割り当て&lt;/h2&gt;
 &lt;p&gt;Admin Consoleでは、ネットワーク上またはローカルマシン上のユーザやグループに対するアプリケーションの実行方法を指定するパラメータの割り当てが可能です。ユーザやグループに対して設定されたパラメータは、ユーザやグループがそのアプリケーションを起動する度に適用されます。個人に対して設定されたアプリケーション起動パラメータは、グループやアプリケーションに対して設定されたパラメータより優先されます。クライアントがGO-Globalを介してアプリケーションを起動すると、Program Windowは、まず個別ユーザに対して割り当てられた起動パラメータを確認します。何もパラメータが割り当てられていない場合は、Program Windowがシステムから取得した順に、そのユーザが属するグループの一覧を確認します。または、Program Windowは、そのアプリケーションに割り当てられている一般的な起動パラメータを検索します。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[&lt;strong&gt;About GraphOn GO-Global&lt;/strong&gt;]ボックスで、ユーザが割り当てられているグループ、システムにおけるそのグループ一覧の順序を確認できます。&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+&lt;strong&gt;[About GraphOn GO-Global]&lt;/strong&gt; ボックスで、ユーザが割り当てられているグループ、システムにおけるそのグループ一覧の順序を確認できます。
+&lt;/div&gt;
+
 &lt;p&gt;ユーザやグループ用のファイルアクセス許可は、サーバのWindows NTファイルシステム(NTFS)セキュリティ設定によって制御されます。ファイルアクセス許可は、Admin Consoleを通して設定することはできません。[Installed Applications]一覧からアプリケーションを選択すると、そのファイルやアプリケーション対してNTFSで指定されたユーザのアクセス許可が、[Application Users/Groups]一覧に表示されます。次に、特定のユーザやグループに対するアプリケーションのプロパティを編集できます。ファイルアクセス許可はNTFSで初期化されたドライブ上でのみ設定可能です。&lt;/p&gt;
 &lt;h3 id=&#34;ユーザまたはグループに対するアプリケーション起動パラメータの割り当て方法&#34;&gt;ユーザまたはグループに対するアプリケーション起動パラメータの割り当て方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;[&lt;strong&gt;Applications&lt;/strong&gt;]タブをクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Installed Applications&lt;/strong&gt;]の一覧からアプリケーションを選択します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Application Users/Groups&lt;/strong&gt;]の一覧からユーザまたはグループを選択します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Properties&lt;/strong&gt;]ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Applications]&lt;/strong&gt; タブをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Installed Applications]&lt;/strong&gt; の一覧からアプリケーションを選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Application Users/Groups]&lt;/strong&gt; の一覧からユーザまたはグループを選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Properties]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
 &lt;li&gt;以下のいずれかの操作を行います。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;[&lt;strong&gt;Start Directory&lt;/strong&gt;]ボックス内に、アプリケーションを起動するディレクトリ内のフル パス名を入力します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Startup State&lt;/strong&gt;]セクションで、そのアプリケーションの起動モード (Maximized、Minimized、Normal) を選択します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Command-Line Options&lt;/strong&gt;]ボックス内に、そのアプリケーションの起動時に使用するコマンド行引数を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Start Directory]&lt;/strong&gt; ボックス内に、アプリケーションを起動するディレクトリ内のフル パス名を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Startup State]&lt;/strong&gt; セクションで、そのアプリケーションの起動モード (Maximized、Minimized、Normal) を選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Command-Line Options]&lt;/strong&gt; ボックス内に、そのアプリケーションの起動時に使用するコマンド行引数を入力します。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/img/4-2-4.png&#34; alt=&#34;4-2-4&#34;&gt;&lt;/p&gt;
 

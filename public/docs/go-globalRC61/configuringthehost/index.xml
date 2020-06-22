@@ -554,7 +554,16 @@ ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Gl
       <description>
         
         
-        &lt;p&gt;Prior to version 6.1, GO-Global managed licenses from Dependent Hosts by default. This required administrators to configure each Dependent Host to use a central license manager. This is no longer necessary, as version 6.1 manages licenses from the relay server by default. Administrators can add and remove Dependent Hosts from the relay server without having to make any licensing configuration changes.&lt;/p&gt;
+        
+
+&lt;div class=&#34;alert alert-secondary&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;注意&lt;/h4&gt;
+本項目の設定は推奨設定ではございませんのでご注意ください。
+&lt;/div&gt;
+
+&lt;p&gt;Prior to version 6.1, GO-Global managed licenses from Dependent Hosts by default. This required administrators to configure each Dependent Host to use a central license manager. This is no longer necessary, as version 6.1 manages licenses from the relay server by default. Administrators can add and remove Dependent Hosts from the relay server without having to make any licensing configuration changes.&lt;/p&gt;
 &lt;p&gt;Dependent Hosts that are upgraded to version 6.1 from older versions will continue to manage licenses from the Dependent Host. After upgrading, administrators can change this by editing the value of the &lt;strong&gt;ManageLicensesFrom&lt;/strong&gt; property in the &lt;strong&gt;HostProperties.xml&lt;/strong&gt; file from &lt;strong&gt;Host&lt;/strong&gt; to &lt;strong&gt;Relay&lt;/strong&gt; on all the Dependent Hosts and the relay server, as follows:&lt;/p&gt;
 &lt;h3 id=&#34;to-checkout-licenses-from-the-relay-server&#34;&gt;To checkout licenses from the relay server&lt;/h3&gt;
 &lt;ol&gt;

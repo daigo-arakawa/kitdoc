@@ -21,29 +21,26 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>強力な暗号化証明書ウィザード | kitASP Docs</title><meta property="og:title" content="強力な暗号化証明書ウィザード" />
-<meta property="og:description" content="強力な暗号化証明書ウィザードを使用して、管理者はGO-Globalホスト用の信頼できるSSL証明書を生成することができます。これにより、管理者はサードパーティの認証局から証明書を購入することなく、強力な暗号化とSSL/TLSセキュリティを有効にすることができます。
-SSL証明書を生成する方法  [Tools | Host Options]をクリックします。 [Security]タブをクリックします。 [Transport]メニューから [SSL] を選択します。 [Generate Certigicate]ボタンをクリックします。 [Common Name] および [Subject Alternative Name] フィールドで指定したアドレスがコンピュータに解決されていることを確認するために使用する [Validation Method] を選択します。ワイルドカード証明書およびインターネットからアクセスできないコンピューターの[DNS validation]を選択します。それ以外の場合は、[HTTP validation]を選択します。 必要に応じて、[Common Name]を編集します。これは、GO-Globalの使用時にユーザが接続するホストの正確なアドレス（Fully Qualified Doman Name）です。 必要に応じて、件名の代替名を編集します。これは、ユーザがGO-Globalを使用する際に接続するホストの代替アドレスです。 証明書更新通知が送信される電子メールアドレスを指定します。 生成された証明書は、インターネットインフォメーションサーバ(IIS)で使用するように自動的に構成されます。このオプションを無効にするには、[Configure IIS to use Certificate]をクリックします。 [Generate Certificate]をクリックして、信頼できる SSLを生成し、ホストにインストールします。 DNS方式を選択した場合は、[Validation Tokens]ダイアログで提供されているように、ドメイン、名前、値のDNS TXTレコードを作成します。値を選択してコピーできます。次に、[Validate]をクリックします。   強力暗号化証明書ウィザードは、Common Nameフィールドにホストコンピュータの完全修飾ドメイン名（FQDN）を入力します。Common Nameは、ユーザがGO-Globalホストへの接続に使用する正確な値（アドレス）に設定する必要があります。
- 証明書の生成に成功すると、GO-Globalホストは証明書とそのキーを以下の場所にインストールします。
-   証明書/鍵ディレクトリ 説明     C:\ProgramData\GraphOn\GO-Global\ks\certs win-acme または Posh-ACME のいずれかで正常に生成された後、証明書/キーがコピーされる場所になります。これらはそのままにして、元の命名規則に従います。   C:\ProgramData\GraphOn\GO-Global\ks 証明書/キーがコピーされ、名前が変更された場所で、GO-Globalが利用できるようになります。(gg_cert.key および gg_cert.pem)   C:\Windows\System32\config\systemprofile\AppData\Local\Posh-ACME Posh-ACMEがキャッシュされた証明書/キー、および以前のリクエストに関するその他のメタデータを保存している場所 (例: 注文データやアカウントデータ)。   C:\ProgramData\GraphOn\GO-Global\ks\win-acme-cache ここでは、win-acmeがキャッシュされた証明書/キーを保持するように設定しています。    " />
+<meta property="og:description" content="強力な暗号化証明書ウィザード を使用して、管理者はGO-Globalホスト用の信頼できるSSL証明書を生成することができます。これにより、管理者はサードパーティの認証局から証明書を購入することなく、強力な暗号化とSSL/TLSセキュリティを有効にすることができます。
+SSL証明書を生成する方法  [Tools | Host Options]をクリックします。 [Security] タブをクリックします。 [Transport]メニューから [SSL] を選択します。 [Generate Certigicate] ボタンをクリックします。 [Common Name] および [Subject Alternative Name] フィールドで指定したアドレスがコンピュータに解決されていることを確認するために使用する [Validation Method] を選択します。ワイルドカード証明書およびインターネットからアクセスできないコンピューターの [DNS] validationを選択します。それ以外の場合は、[HTTP] validation を選択します。 必要に応じて、[Common Name] を編集します。これは、GO-Globalの使用時にユーザが接続するホストの正確なアドレス(Fully Qualified Doman Name)です。 必要に応じて、件名の代替名を編集します。これは、ユーザがGO-Globalを使用する際に接続するホストの 代替アドレス です。 証明書更新通知が送信される 電子メールアドレス を指定します。 生成された証明書は、インターネットインフォメーションサーバ(IIS)で使用するように自動的に構成されます。このオプションを無効にするには、[Configure IIS to use Certificate] をクリックします。 [Generate Certificate] をクリックして、信頼できる SSLを生成し、ホストにインストールします。 DNS方式を選択した場合は、[Validation Tokens] ダイアログで提供されているように、ドメイン、名前、値のDNS TXTレコードを作成します。値を選択してコピーできます。次に、[Validate] をクリックします。  参照強力暗号化証明書ウィザードは、Common Name フィールドにホストコンピュータの 完全修飾ドメイン名(FQDN) を入力します。Common Nameは、ユーザがGO-Globalホストへの接続に使用する正確な値(アドレス)に設定する必要があります。証明書の生成に成功すると、GO-Globalホストは証明書とそのキーを以下の場所にインストールします。
+   証明書/鍵ディレクトリ 説明     C:\ProgramData\GraphOn\GO-Global\ks\certs win-acme または Posh-ACME のいずれかで正常に生成された後、証明書/キーがコピーされる場所になります。これらはそのままにして、元の命名規則に従います。   C:\ProgramData\GraphOn\GO-Global\ks 証明書/キーがコピーされ、名前が変更された場所で、GO-Globalが利用できるようになります。(gg_cert." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/go-globaladminconsole/strongencryptioncertificatewizard/" />
 <meta property="article:modified_time" content="2020-06-03T03:24:08+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="強力な暗号化証明書ウィザード">
-<meta itemprop="description" content="強力な暗号化証明書ウィザードを使用して、管理者はGO-Globalホスト用の信頼できるSSL証明書を生成することができます。これにより、管理者はサードパーティの認証局から証明書を購入することなく、強力な暗号化とSSL/TLSセキュリティを有効にすることができます。
-SSL証明書を生成する方法  [Tools | Host Options]をクリックします。 [Security]タブをクリックします。 [Transport]メニューから [SSL] を選択します。 [Generate Certigicate]ボタンをクリックします。 [Common Name] および [Subject Alternative Name] フィールドで指定したアドレスがコンピュータに解決されていることを確認するために使用する [Validation Method] を選択します。ワイルドカード証明書およびインターネットからアクセスできないコンピューターの[DNS validation]を選択します。それ以外の場合は、[HTTP validation]を選択します。 必要に応じて、[Common Name]を編集します。これは、GO-Globalの使用時にユーザが接続するホストの正確なアドレス（Fully Qualified Doman Name）です。 必要に応じて、件名の代替名を編集します。これは、ユーザがGO-Globalを使用する際に接続するホストの代替アドレスです。 証明書更新通知が送信される電子メールアドレスを指定します。 生成された証明書は、インターネットインフォメーションサーバ(IIS)で使用するように自動的に構成されます。このオプションを無効にするには、[Configure IIS to use Certificate]をクリックします。 [Generate Certificate]をクリックして、信頼できる SSLを生成し、ホストにインストールします。 DNS方式を選択した場合は、[Validation Tokens]ダイアログで提供されているように、ドメイン、名前、値のDNS TXTレコードを作成します。値を選択してコピーできます。次に、[Validate]をクリックします。   強力暗号化証明書ウィザードは、Common Nameフィールドにホストコンピュータの完全修飾ドメイン名（FQDN）を入力します。Common Nameは、ユーザがGO-Globalホストへの接続に使用する正確な値（アドレス）に設定する必要があります。
- 証明書の生成に成功すると、GO-Globalホストは証明書とそのキーを以下の場所にインストールします。
-   証明書/鍵ディレクトリ 説明     C:\ProgramData\GraphOn\GO-Global\ks\certs win-acme または Posh-ACME のいずれかで正常に生成された後、証明書/キーがコピーされる場所になります。これらはそのままにして、元の命名規則に従います。   C:\ProgramData\GraphOn\GO-Global\ks 証明書/キーがコピーされ、名前が変更された場所で、GO-Globalが利用できるようになります。(gg_cert.key および gg_cert.pem)   C:\Windows\System32\config\systemprofile\AppData\Local\Posh-ACME Posh-ACMEがキャッシュされた証明書/キー、および以前のリクエストに関するその他のメタデータを保存している場所 (例: 注文データやアカウントデータ)。   C:\ProgramData\GraphOn\GO-Global\ks\win-acme-cache ここでは、win-acmeがキャッシュされた証明書/キーを保持するように設定しています。    ">
+<meta itemprop="description" content="強力な暗号化証明書ウィザード を使用して、管理者はGO-Globalホスト用の信頼できるSSL証明書を生成することができます。これにより、管理者はサードパーティの認証局から証明書を購入することなく、強力な暗号化とSSL/TLSセキュリティを有効にすることができます。
+SSL証明書を生成する方法  [Tools | Host Options]をクリックします。 [Security] タブをクリックします。 [Transport]メニューから [SSL] を選択します。 [Generate Certigicate] ボタンをクリックします。 [Common Name] および [Subject Alternative Name] フィールドで指定したアドレスがコンピュータに解決されていることを確認するために使用する [Validation Method] を選択します。ワイルドカード証明書およびインターネットからアクセスできないコンピューターの [DNS] validationを選択します。それ以外の場合は、[HTTP] validation を選択します。 必要に応じて、[Common Name] を編集します。これは、GO-Globalの使用時にユーザが接続するホストの正確なアドレス(Fully Qualified Doman Name)です。 必要に応じて、件名の代替名を編集します。これは、ユーザがGO-Globalを使用する際に接続するホストの 代替アドレス です。 証明書更新通知が送信される 電子メールアドレス を指定します。 生成された証明書は、インターネットインフォメーションサーバ(IIS)で使用するように自動的に構成されます。このオプションを無効にするには、[Configure IIS to use Certificate] をクリックします。 [Generate Certificate] をクリックして、信頼できる SSLを生成し、ホストにインストールします。 DNS方式を選択した場合は、[Validation Tokens] ダイアログで提供されているように、ドメイン、名前、値のDNS TXTレコードを作成します。値を選択してコピーできます。次に、[Validate] をクリックします。  参照強力暗号化証明書ウィザードは、Common Name フィールドにホストコンピュータの 完全修飾ドメイン名(FQDN) を入力します。Common Nameは、ユーザがGO-Globalホストへの接続に使用する正確な値(アドレス)に設定する必要があります。証明書の生成に成功すると、GO-Globalホストは証明書とそのキーを以下の場所にインストールします。
+   証明書/鍵ディレクトリ 説明     C:\ProgramData\GraphOn\GO-Global\ks\certs win-acme または Posh-ACME のいずれかで正常に生成された後、証明書/キーがコピーされる場所になります。これらはそのままにして、元の命名規則に従います。   C:\ProgramData\GraphOn\GO-Global\ks 証明書/キーがコピーされ、名前が変更された場所で、GO-Globalが利用できるようになります。(gg_cert.">
 <meta itemprop="dateModified" content="2020-06-03T03:24:08&#43;09:00" />
-<meta itemprop="wordCount" content="63">
+<meta itemprop="wordCount" content="81">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="強力な暗号化証明書ウィザード"/>
-<meta name="twitter:description" content="強力な暗号化証明書ウィザードを使用して、管理者はGO-Globalホスト用の信頼できるSSL証明書を生成することができます。これにより、管理者はサードパーティの認証局から証明書を購入することなく、強力な暗号化とSSL/TLSセキュリティを有効にすることができます。
-SSL証明書を生成する方法  [Tools | Host Options]をクリックします。 [Security]タブをクリックします。 [Transport]メニューから [SSL] を選択します。 [Generate Certigicate]ボタンをクリックします。 [Common Name] および [Subject Alternative Name] フィールドで指定したアドレスがコンピュータに解決されていることを確認するために使用する [Validation Method] を選択します。ワイルドカード証明書およびインターネットからアクセスできないコンピューターの[DNS validation]を選択します。それ以外の場合は、[HTTP validation]を選択します。 必要に応じて、[Common Name]を編集します。これは、GO-Globalの使用時にユーザが接続するホストの正確なアドレス（Fully Qualified Doman Name）です。 必要に応じて、件名の代替名を編集します。これは、ユーザがGO-Globalを使用する際に接続するホストの代替アドレスです。 証明書更新通知が送信される電子メールアドレスを指定します。 生成された証明書は、インターネットインフォメーションサーバ(IIS)で使用するように自動的に構成されます。このオプションを無効にするには、[Configure IIS to use Certificate]をクリックします。 [Generate Certificate]をクリックして、信頼できる SSLを生成し、ホストにインストールします。 DNS方式を選択した場合は、[Validation Tokens]ダイアログで提供されているように、ドメイン、名前、値のDNS TXTレコードを作成します。値を選択してコピーできます。次に、[Validate]をクリックします。   強力暗号化証明書ウィザードは、Common Nameフィールドにホストコンピュータの完全修飾ドメイン名（FQDN）を入力します。Common Nameは、ユーザがGO-Globalホストへの接続に使用する正確な値（アドレス）に設定する必要があります。
- 証明書の生成に成功すると、GO-Globalホストは証明書とそのキーを以下の場所にインストールします。
-   証明書/鍵ディレクトリ 説明     C:\ProgramData\GraphOn\GO-Global\ks\certs win-acme または Posh-ACME のいずれかで正常に生成された後、証明書/キーがコピーされる場所になります。これらはそのままにして、元の命名規則に従います。   C:\ProgramData\GraphOn\GO-Global\ks 証明書/キーがコピーされ、名前が変更された場所で、GO-Globalが利用できるようになります。(gg_cert.key および gg_cert.pem)   C:\Windows\System32\config\systemprofile\AppData\Local\Posh-ACME Posh-ACMEがキャッシュされた証明書/キー、および以前のリクエストに関するその他のメタデータを保存している場所 (例: 注文データやアカウントデータ)。   C:\ProgramData\GraphOn\GO-Global\ks\win-acme-cache ここでは、win-acmeがキャッシュされた証明書/キーを保持するように設定しています。    "/>
+<meta name="twitter:description" content="強力な暗号化証明書ウィザード を使用して、管理者はGO-Globalホスト用の信頼できるSSL証明書を生成することができます。これにより、管理者はサードパーティの認証局から証明書を購入することなく、強力な暗号化とSSL/TLSセキュリティを有効にすることができます。
+SSL証明書を生成する方法  [Tools | Host Options]をクリックします。 [Security] タブをクリックします。 [Transport]メニューから [SSL] を選択します。 [Generate Certigicate] ボタンをクリックします。 [Common Name] および [Subject Alternative Name] フィールドで指定したアドレスがコンピュータに解決されていることを確認するために使用する [Validation Method] を選択します。ワイルドカード証明書およびインターネットからアクセスできないコンピューターの [DNS] validationを選択します。それ以外の場合は、[HTTP] validation を選択します。 必要に応じて、[Common Name] を編集します。これは、GO-Globalの使用時にユーザが接続するホストの正確なアドレス(Fully Qualified Doman Name)です。 必要に応じて、件名の代替名を編集します。これは、ユーザがGO-Globalを使用する際に接続するホストの 代替アドレス です。 証明書更新通知が送信される 電子メールアドレス を指定します。 生成された証明書は、インターネットインフォメーションサーバ(IIS)で使用するように自動的に構成されます。このオプションを無効にするには、[Configure IIS to use Certificate] をクリックします。 [Generate Certificate] をクリックして、信頼できる SSLを生成し、ホストにインストールします。 DNS方式を選択した場合は、[Validation Tokens] ダイアログで提供されているように、ドメイン、名前、値のDNS TXTレコードを作成します。値を選択してコピーできます。次に、[Validate] をクリックします。  参照強力暗号化証明書ウィザードは、Common Name フィールドにホストコンピュータの 完全修飾ドメイン名(FQDN) を入力します。Common Nameは、ユーザがGO-Globalホストへの接続に使用する正確な値(アドレス)に設定する必要があります。証明書の生成に成功すると、GO-Globalホストは証明書とそのキーを以下の場所にインストールします。
+   証明書/鍵ディレクトリ 説明     C:\ProgramData\GraphOn\GO-Global\ks\certs win-acme または Posh-ACME のいずれかで正常に生成された後、証明書/キーがコピーされる場所になります。これらはそのままにして、元の命名規則に従います。   C:\ProgramData\GraphOn\GO-Global\ks 証明書/キーがコピーされ、名前が変更された場所で、GO-Globalが利用できるようになります。(gg_cert."/>
 
 
 
@@ -134,7 +131,7 @@ SSL証明書を生成する方法  [Tools | Host Options]をクリックしま�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -164,7 +161,7 @@ SSL証明書を生成する方法  [Tools | Host Options]をクリックしま�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -2508,24 +2505,30 @@ SSL証明書を生成する方法  [Tools | Host Options]をクリックしま�
 <div class="td-content">
 	<h1>強力な暗号化証明書ウィザード</h1>
 	
-	<p>強力な暗号化証明書ウィザードを使用して、管理者はGO-Globalホスト用の信頼できるSSL証明書を生成することができます。これにより、管理者はサードパーティの認証局から証明書を購入することなく、強力な暗号化とSSL/TLSセキュリティを有効にすることができます。</p>
+	<p><strong>強力な暗号化証明書ウィザード</strong> を使用して、管理者はGO-Globalホスト用の信頼できるSSL証明書を生成することができます。これにより、管理者はサードパーティの認証局から証明書を購入することなく、強力な暗号化とSSL/TLSセキュリティを有効にすることができます。</p>
 <h3 id="ssl証明書を生成する方法">SSL証明書を生成する方法</h3>
 <ol>
 <li>[Tools | Host Options]をクリックします。</li>
-<li>[<strong>Security</strong>]タブをクリックします。</li>
-<li>[<strong>Transport</strong>]メニューから [SSL] を選択します。</li>
-<li>[<strong>Generate Certigicate</strong>]ボタンをクリックします。</li>
-<li>[Common Name] および [Subject Alternative Name] フィールドで指定したアドレスがコンピュータに解決されていることを確認するために使用する [Validation Method] を選択します。ワイルドカード証明書およびインターネットからアクセスできないコンピューターの[DNS validation]を選択します。それ以外の場合は、[HTTP validation]を選択します。</li>
-<li>必要に応じて、[Common Name]を編集します。これは、GO-Globalの使用時にユーザが接続するホストの正確なアドレス（Fully Qualified Doman Name）です。</li>
-<li>必要に応じて、件名の代替名を編集します。これは、ユーザがGO-Globalを使用する際に接続するホストの代替アドレスです。</li>
-<li>証明書更新通知が送信される電子メールアドレスを指定します。</li>
-<li>生成された証明書は、インターネットインフォメーションサーバ(IIS)で使用するように自動的に構成されます。このオプションを無効にするには、[Configure IIS to use Certificate]をクリックします。</li>
-<li>[Generate Certificate]をクリックして、信頼できる SSLを生成し、ホストにインストールします。</li>
-<li>DNS方式を選択した場合は、[Validation Tokens]ダイアログで提供されているように、ドメイン、名前、値のDNS TXTレコードを作成します。値を選択してコピーできます。次に、[Validate]をクリックします。</li>
+<li><strong>[Security]</strong> タブをクリックします。</li>
+<li>[Transport]メニューから <strong>[SSL]</strong> を選択します。</li>
+<li><strong>[Generate Certigicate]</strong> ボタンをクリックします。</li>
+<li><strong>[Common Name]</strong> および <strong>[Subject Alternative Name]</strong> フィールドで指定したアドレスがコンピュータに解決されていることを確認するために使用する <strong>[Validation Method]</strong> を選択します。ワイルドカード証明書およびインターネットからアクセスできないコンピューターの <strong>[DNS]</strong> validationを選択します。それ以外の場合は、<strong>[HTTP]</strong> validation を選択します。</li>
+<li>必要に応じて、<strong>[Common Name]</strong> を編集します。これは、GO-Globalの使用時にユーザが接続するホストの正確なアドレス(Fully Qualified Doman Name)です。</li>
+<li>必要に応じて、件名の代替名を編集します。これは、ユーザがGO-Globalを使用する際に接続するホストの <strong>代替アドレス</strong> です。</li>
+<li>証明書更新通知が送信される <strong>電子メールアドレス</strong> を指定します。</li>
+<li>生成された証明書は、インターネットインフォメーションサーバ(IIS)で使用するように自動的に構成されます。このオプションを無効にするには、<strong>[Configure IIS to use Certificate]</strong> をクリックします。</li>
+<li><strong>[Generate Certificate]</strong> をクリックして、信頼できる SSLを生成し、ホストにインストールします。</li>
+<li>DNS方式を選択した場合は、<strong>[Validation Tokens]</strong> ダイアログで提供されているように、ドメイン、名前、値のDNS TXTレコードを作成します。値を選択してコピーできます。次に、<strong>[Validate]</strong> をクリックします。</li>
 </ol>
-<blockquote>
-<p>強力暗号化証明書ウィザードは、Common Nameフィールドにホストコンピュータの完全修飾ドメイン名（FQDN）を入力します。Common Nameは、ユーザがGO-Globalホストへの接続に使用する正確な値（アドレス）に設定する必要があります。</p>
-</blockquote>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+強力暗号化証明書ウィザードは、<strong>Common Name</strong> フィールドにホストコンピュータの <strong>完全修飾ドメイン名(FQDN)</strong> を入力します。Common Nameは、ユーザがGO-Globalホストへの接続に使用する正確な値(アドレス)に設定する必要があります。
+</div>
+
 <p><img src="/img/4-6-1.png" alt="4-6-1"></p>
 <p>証明書の生成に成功すると、GO-Globalホストは証明書とそのキーを以下の場所にインストールします。</p>
 <table>

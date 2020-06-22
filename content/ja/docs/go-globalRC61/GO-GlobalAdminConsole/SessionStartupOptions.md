@@ -5,7 +5,7 @@ weight: 13
 type: "docs"
 ---
 
-Admin Consoleの [**Host Options**]ダイアログの [**Session Startup**]タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。
+Admin Consoleの **[Host Options]** ダイアログの **[Session Startup]** タブで、管理者はグループポリシー、進捗メッセージ、ログオンスクリプトなどの起動オプションを有効にできます。管理者はさまざまなリソース制限を設定することもできます。
 
 ## グループポリシーを適用する
 
@@ -15,12 +15,14 @@ GO-Globalは、マイクロソフトのグループポリシーをサポート�
 
 ### GO-Globalサーバでのグループポリシーの適用方法
 
-1. Cluster Manager で、[Tools | Host Options]の順にクリックします。
-2. [**Session Startup**]をクリックします。
-3. [**Apply Group Policy**]を選択します。
-4. [**OK**]をクリックします。
+1. Admin Consoleで、[Tools | Host Options]の順にクリックします。
+2. **[Session Startup]** をクリックします。
+3. **[Apply Group Policy]** を選択します。
+4. **[OK]** をクリックします。
 
->グループポリシーを有効にすると、GO-Globalへのログオンに時間がかかることがあります。
+{{% alert title="参照" color="info" %}}
+グループポリシーを有効にすると、GO-Globalへのログオンに時間がかかることがあります。
+{{% /alert %}}
 
 ## 進行状況メッセージの表示
 
@@ -34,12 +36,14 @@ GO-Globalは、マイクロソフトのグループポリシーをサポート�
 ### セッションのスタートアップの進行状況メッセージをユーザに表示する方法
 
 1. Admin Consoleで、[Tools | Host Options]の順にクリックします。
-2. [**Session Startup**]をクリックします。
-3. [**Display progress messages**]を選択します。
-4. メッセージを他のすべてのウィンドウの手前に表示する場合は、 [**Always in front**]を選択します。
-5. [**OK**]をクリックします。
+2. **[Session Startup]** をクリックします。
+3. **[Display progress messages]** を選択します。
+4. メッセージを他のすべてのウィンドウの手前に表示する場合は、 **[Always in front]** を選択します。
+5. **[OK]** をクリックします。
 
->ログオンスクリプトに、ユーザにユーザインタフェースを表示する機能がある場合は、[Always in front]オプションを有効にしないでください。有効にすると、ログオンスクリプトのユーザインタフェースの一部が進行状況メッセージの下に隠れることがあります。
+{{% alert title="参照" color="info" %}}
+ログオンスクリプトに、ユーザにユーザインタフェースを表示する機能がある場合は、 **[Always in front]** オプションを有効にしないでください。有効にすると、ログオンスクリプトのユーザインタフェースの一部が進行状況メッセージの下に隠れることがあります。
+{{% /alert %}}
 
 ![4-14-1](/img/4-14-1.png) 
 
@@ -52,54 +56,57 @@ GO-Globalは次の 2 つのタイプのログオンスクリプトをサポー�
 ユーザー固有のログオンスクリプトは、オペレーティングシステムが提供する機能を使用して指定されます。たとえば、Windows Server 2016のローカルユーザー用のログオンスクリプトは次のように指定されます。
 
 1. [コントロールパネル]から、[ 管理ツール | コンピュータ管理 | ローカルユーザーとグループ | ユーザ]の順に移動します。
-2. ユーザを選択し、 [**Properties**]をクリックします。
+2. ユーザを選択し、 **[Properties]** をクリックします。
 3. [Profiles]をクリックします。
-4. [**Logon script**]ボックスに、ユーザのログオンスクリプトのファイル名を入力します。
+4. **[Logon script]** ボックスに、ユーザのログオンスクリプトのファイル名を入力します。
 
-[**Logon Script**]ボックスに入力する値としてファイル名と拡張子のみを指定すると、GO-Globalは以下のディレクトリでそのファイルを以下の順序で検索します。
+**[Logon Script]** ボックスに入力する値としてファイル名と拡張子のみを指定すると、GO-Globalは以下のディレクトリでそのファイルを以下の順序で検索します。
 
-1. ユーザのアカウントがドメインアカウントの場合 :
-　　　　a. \\pdcname\NETLOGON(プライマリドメインコントローラのNETLOGON共有)
-　　　　b. \\pdcname\SYSVOL\domainname(プライマリドメインコントローラのSYSVOL共有のドメインのサブディレクトリなど)
-2.ユーザのアカウントがローカルアカウントの場合 :
-　　　　a. systemroot\System32\Repl\Import\Scripts
-　　　　b. systemroot\sysvol\sysvol\domainname
+1. ユーザのアカウントがドメインアカウントの場合 :<br>
+　　　　a. \\pdcname\NETLOGON(プライマリドメインコントローラのNETLOGON共有)<br>
+　　　　b. \\pdcname\SYSVOL\domainname(プライマリドメインコントローラのSYSVOL共有のドメインのサブディレクトリなど)<br>
+2. ユーザのアカウントがローカルアカウントの場合 :<br>
+　　　　a. systemroot\System32\Repl\Import\Scripts<br>
+　　　　b. systemroot\sysvol\sysvol\domainname<br>
 
 ログオンスクリプトが上述のいずれかのディレクトリのサブディレクトリに保存されている場合、ファイル名の前にそのサブディレクトリの相対パスを入力します。たとえば、Admins\JohnG.bat のように入力します。
 
 ![4-14-2](/img/4-14-2.png) 
 
-システム管理者は、Admin Consoleの [**Session Startup**]ダイアログを使用してグローバルログオンスクリプトやユーザ固有ログオンスクリプトを指定します。
+システム管理者は、Admin Consoleの **[Session Startup]** ダイアログを使用してグローバルログオンスクリプトやユーザ固有ログオンスクリプトを指定します。
 
-### ユーザ固有ログオン スクリプトの実行方法
-
-1. Admin Consoleで、[Tools | Host Options]の順にクリックします。
-2. [**Session Startup**]をクリックします。
-3. [**User-specific**]を選択します。
-4. [**OK**]をクリックします。
-
-### グローバル ログオンスクリプトの実行方法
+### ユーザ固有ログオンスクリプトの実行方法
 
 1. Admin Consoleで、[Tools | Host Options]の順にクリックします。
-2. [**Session Startup**]をクリックします。
-3. [**Global**]を選択し、グローバルスクリプトファイルのパスを指定します。
-4. [**OK**]をクリックします。
+2. **[Session Startup]** をクリックします。
+3. **[User-specific]** を選択します。
+4. **[OK]** をクリックします。
 
->認証されたユーザには、ログオンスクリプトファイルの読み取りおよび実行アクセス権が必要です。
+### グローバルログオンスクリプトの実行方法
+
+1. Admin Consoleで、[Tools | Host Options]の順にクリックします。
+2. **[Session Startup]** をクリックします。
+3. **[Global]** を選択し、グローバルスクリプトファイルのパスを指定します。
+4. **[OK]** をクリックします。
+
+{{% alert title="参照" color="info" %}}
+認証されたユーザには、ログオンスクリプトファイルの読み取りおよび実行アクセス権が必要です。
+{{% /alert %}}
 
 ログオンスクリプトの実行に失敗すると、エラーメッセージが表示されます。ログオンスクリプトの場所を確認してください。
 
-ユーザのアカウントがドメインアカウントの場合 :
-　　　a. \\pdcname\NETLOGON(プライマリドメインコントローラのNETLOGON共有)
-　　　b. \\pdcname\SYSVOL\domainname(プライマリドメインコントローラのSYSVOL共有のドメインのサブディレクトリなど)
+ユーザのアカウントがドメインアカウントの場合 :<br>
+　　　a. \\pdcname\NETLOGON(プライマリドメインコントローラのNETLOGON共有)<br>
+　　　b. \\pdcname\SYSVOL\domainname(プライマリドメインコントローラのSYSVOL共有のドメインのサブディレクトリなど)<br>
+ユーザのアカウントがローカルアカウントの場合 :<br>
+      a. systemroot\System32\Repl\Import\Scripts<br>
+      b. systemroot\sysvol\sysvol\domainname<br>
 
-ユーザのアカウントがローカルアカウントの場合 :
-      a. systemroot\System32\Repl\Import\Scripts
-      b. systemroot\sysvol\sysvol\domainname
+また、DebugView([https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx]などのツールも、このようなエラー発生時における原因追跡に役立ちます。DebugViewの実行可能ファイルをサーバ上で開けば、スクリプトの保存場所が不正確なために発生したエラーを確認できます。
 
-また、DebugView([https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx](https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx))などのツールも、このようなエラー発生時における原因追跡に役立ちます。DebugViewの実行可能ファイルをサーバ上で開けば、スクリプトの保存場所が不正確なために発生したエラーを確認できます。
-
->MicrosoftのVBScriptは、バッチファイルで実行されない限り、ログオンスクリプトとしてサポートされていません。
+{{% alert title="参照" color="info" %}}
+MicrosoftのVBScriptは、バッチファイルで実行されない限り、ログオンスクリプトとしてサポートされていません。
+{{% /alert %}}
 
 ## リソース制限の設定
 
@@ -108,9 +115,9 @@ GO-Globalでは、システム管理者はGO-Globalホストで特定のリソ�
 ### ユーザあたりのセッション数の制限方法
 
 1. Admin Consoleで、[Tools | Host Options]の順にクリックします。
-2. [**Session Startup**]をクリックします。
-3. [**Maximum sessions per user**]を選択し、編集ボックスに1人のユーザが実行できるセッションの最大数を入力します。
-4. [**OK**]をクリックします。
+2. **[Session Startup]** をクリックします。
+3. **[Maximum sessions per user]** を選択し、編集ボックスに1人のユーザが実行できるセッションの最大数を入力します。
+4. **[OK]** をクリックします。
 
 ## セッションの最大数の指定
 
@@ -118,14 +125,14 @@ GO-Globalでは、システム管理者はGO-Globalホストで特定のリソ�
 
 ### ホスト単位のセッションの最大数の編集方法
 
-1. [**All Host**]の一覧から、目的のホストを選択します。
+1. **[All Host]** の一覧から、目的のホストを選択します。
 2. [Tools | Host Options]の順にクリックします。
-3. [**Session Startup**]タブをクリックします。
-4. [**Maximum sessions on this host**]ボックス内の数値を編集します。これにより、ホストがサポートできるセッション数の上限が設定されます。たとえば、最大セッション数が11の場合、12番目のセッションを開始しようとするユーザはログオンを拒否されます。
-5. [**OK**]をクリックします。
+3. **[Session Startup]** タブをクリックします。
+4. **[Maximum sessions on this host]** ボックス内の数値を編集します。これにより、ホストがサポートできるセッション数の上限が設定されます。たとえば、最大セッション数が11の場合、12番目のセッションを開始しようとするユーザはログオンを拒否されます。
+5. **[OK]** をクリックします。
 
-中継サーバ設定では、GO-Globalは中継サーバとその依存ホストの最大セッション設定を確認します。中継サーバで指定された **Maximum sessions on this host**は、その中継サーバに割り当てられているすべての依存ホストで同時に実行できるセッションの最大数です。
+中継サーバ設定では、GO-Globalは中継サーバとその依存ホストの最大セッション設定を確認します。中継サーバで指定された **Maximum sessions on this host** は、その中継サーバに割り当てられているすべての依存ホストで同時に実行できるセッションの最大数です。
 
 ## 物理メモリおよび仮想メモリの指定
 
-物理メモリおよび仮想メモリが不足した状態でログオン出来ないように、下限値を指定することができます。 [**Minimum available physical memory**]ボックスには最小物理メモリ(MB)を入力します。 [**Minimum available virtual memory**]ボックスには最小仮想メモリ(MB)を入力します。
+物理メモリおよび仮想メモリが不足した状態でログオン出来ないように、下限値を指定することができます。 **[Minimum available physical memory]** ボックスには最小物理メモリ(MB)を入力します。 **[Minimum available virtual memory]** ボックスには最小仮想メモリ(MB)を入力します。

@@ -24,7 +24,9 @@ Admin Consoleは次のセッション情報を表示します。
 
 [Sessions]タブをクリックします。
 
->管理コンソールの左パネルにある [**All Hosts**]アイコンをクリックして、ネットワーク上のすべてのアクティブセッションのリストを表示します。これにより、個々のホストに接続しなくてもアクティブなGO-Globalセッションを表示できます。
+{{% alert title="参照" color="info" %}}
+管理コンソールの左パネルにある **[All Hosts]** アイコンをクリックして、ネットワーク上のすべてのアクティブセッションのリストを表示します。これにより、個々のホストに接続しなくてもアクティブなGO-Globalセッションを表示できます。
+{{% /alert %}}
 
 ## プロセス情報の閲覧
 
@@ -39,7 +41,7 @@ Admin Consoleは次のセッション情報を表示します。
 
 ### プロセス情報の閲覧方法
 
-1. [Processes] タブをクリックします。
+[Processes] タブをクリックします。
 
 ## Admin Consoleのリフレッシュ
 
@@ -47,7 +49,7 @@ Admin Consoleに表示されるセッション、プロセス、アプリケー�
 
 ### Admin Consoleのリフレッシュ方法
 
-1. [View | Refresh]の順にクリックします。
+[View | Refresh]の順にクリックします。
 
 ## リフレッシュレートの設定
 
@@ -56,7 +58,7 @@ Admin Consoleの[セッション]、[プロセス]、[アプリケーション]�
 ### 手動リフレッシュのみを行うようにリフレッシュレートを設定する方法
 
 1. [View | Options]の順にクリックします｡
-2. [Manual]をクリックします｡
+2. **[Manual]** をクリックします｡
 
 ![4-13-1](/img/4-13-1.png) 
 
@@ -64,30 +66,30 @@ Admin Consoleの[セッション]、[プロセス]、[アプリケーション]�
 
 1. [View | Options]の順にクリックします｡
 2. [Refresh every x seconds]オプションをクリックします。
-3. [seconds]ボックスに値を入力します。
+3. **[seconds]** ボックスに値を入力します。
 
 ## Status Bar
 
 Status Barは、Admin Consoleの画面下部に表示されています。マウスのポインタをメニュー内の特定項目上に移動すると、そのメニューコマンドの簡易説明がStatus Barに表示されます。Status Barは、現在アクセスされているGO-Globalホストの名称、およびそのホストのMemory使用法とCPU使用率(Windows Task Managerが算出)を表示します。
 
-Status Barの最後の2項目、 **Sessions**と **Procs**は、アクティブなGO-Globalホストで実行中のセッション数およびプロセス数です。
+Status Barの最後の2項目、 **Sessions**と **Procs** は、アクティブなGO-Globalホストで実行中のセッション数およびプロセス数です。
 
-[**All Host**]を選択すると、 [**Sessions**]数にはネットワーク上で実行中のすべてのセッションが表示され、 [**Procs**]数にはネットワーク上のすべてのプロセスが表示されます。‌
+**[All Host]** を選択すると、 **[Sessions]** 数にはネットワーク上で実行中のすべてのセッションが表示され、 **[Procs]** 数にはネットワーク上のすべてのプロセスが表示されます。‌
 
 ### ステータスバーをオンまたはオフにする方法
 
 1. [View | Options]の順にクリックします｡
-2. [**Status Bar**]チェックボックスをオンまたはオフにします。
+2. **[Status Bar]** チェックボックスをオンまたはオフにします。
 
 ## ブロードキャスト間隔の設定
 
-Broadcast Interval値を変更して、ホスト情報がAdmin Consoleに送信される頻度を指定できます。この値は各ブロードキャストの間隔(秒数)を示し、ホストのCPU、Memory、Sessions、Processes、Status Bar の更新頻度と [**All Hosts**]の一覧にホストが表示されるまでにかかる時間に影響します。ブロードキャストは UDPを介して送信され、そのパケットサイズは約 25 ～ 37 バイトです。
+Broadcast Interval値を変更して、ホスト情報がAdmin Consoleに送信される頻度を指定できます。この値は各ブロードキャストの間隔(秒数)を示し、ホストのCPU、Memory、Sessions、Processes、Status Bar の更新頻度と **[All Hosts]** の一覧にホストが表示されるまでにかかる時間に影響します。ブロードキャストはUDPを介して送信され、そのパケットサイズは約25～37バイトです。
 
 ### ブロードキャスト間隔の設定方法
 
-1. **GO-Global Application Publishing** **Service**を停止します。
-2. 次のいずれかのディレクトリで **HostProperties.xml**ファイルを見つけます。 C:\ProgramData\GraphOn
-3. ワードパッドで **HostProperties.xml**を開き、次のセクションを見つけます。
+1. **GO-Global Application Publishing Service** を停止します。
+2. 次のいずれかのディレクトリで **HostProperties.xml**ファイルを見つけます。`C:\ProgramData\GraphOn`
+3. ワードパッドで **HostProperties.xml** を開き、次のセクションを見つけます。
 
 ```
 </property> 
@@ -96,5 +98,5 @@ Broadcast Interval値を変更して、ホスト情報がAdmin Consoleに送信�
 </property>
 ```
 
-4. 値に必要なミリ秒数を入力します。(この値は1以上の整数でなければなりません。値を0に設定すると、他のGO-GlobalホストがAdmin Consoleに表示されなくなります。Broadcast Intervalのデフォルト値は300です。)
-5. **GO-Global Application Publishing** **Service**を再起動します。
+4. 値に必要なミリ秒数を入力します(この値は1以上の整数でなければなりません。値を0に設定すると、他のGO-GlobalホストがAdmin Consoleに表示されなくなります。Broadcast Intervalのデフォルト値は300です)。
+5. **GO-Global Application Publishing Service**を再起動します。

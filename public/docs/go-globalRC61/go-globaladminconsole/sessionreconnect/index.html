@@ -21,53 +21,56 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>セッションの再接続 | kitASP Docs</title><meta property="og:title" content="セッションの再接続" />
-<meta property="og:description" content="セッション再接続により、クライアント接続がなくても GO-Globalホスト上のセッションが維持されます。ユーザが意図的にホストから切断、またはクライアント接続がネットワーク障害によって切断された場合にも、そのユーザのセッションとアプリケーションは、Admin Consoleで指定されたセッションタイムアウトの期間中GO-Globalホスト上で稼働し続けます。セッションの再接続により、ユーザは前回切断した時点と全く同じ状態でGO-Globalセッションへ戻ることができます。ユーザは、GO-Globalを終了する代わりに、Program Windowで切断し、その後、切断した時と全く同じ状態でセッションに戻ることが可能です。この時、開いているアプリケーションや実行中のプロセスをシャットダウンする必要はありません｡
+<meta property="og:description" content="セッション再接続により、クライアント接続がなくてもGO-Globalホスト上のセッションが維持されます。ユーザが意図的にホストから切断、またはクライアント接続がネットワーク障害によって切断された場合にも、そのユーザのセッションとアプリケーションは、Admin Consoleで指定されたセッションタイムアウトの期間中GO-Globalホスト上で稼働し続けます。セッションの再接続により、ユーザは前回切断した時点と全く同じ状態でGO-Globalセッションへ戻ることができます。ユーザは、GO-Globalを終了する代わりに、Program Windowで切断し、その後、切断した時と全く同じ状態でセッションに戻ることが可能です。この時、開いているアプリケーションや実行中のプロセスをシャットダウンする必要はありません｡
 ネットワークへの接続が切断されたり、ユーザがGO-Globalから偶発的に切断してしまった場合、そのユーザのセッションの状態は、Admin Consoleで指定された期間中維持されます。GO-Globalでは、ユーザを通常のログオン手順で認証した後、そのユーザがアクティブなセッションを持っているか確認します。セッションがあれば、そのセッションは切断前と全く同じ状態で再開され表示されます。セッションがなければ、新しいセッションが開始されます。またユーザは、セッションを特定のクライアントから切断し、別のクライアントから再接続することもできます。
 切断されたセッションへ再接続する場合、ユーザは各自のログオン資格情報の提示を要求されます。ホストは資格情報を検証した後、切断されたセッションに再接続します。セッションがロードバランス構成に含まれているホスト上にある場合、そのセッションがロードバランスサーバ上にあることを意識することなく、ユーザは各自のセッションへルーティングされます。統合Windows認証が有効な場合、ユーザは自動的に再認証され、各自のセッションに再接続されます。
-セッション終了オプションの設定 システム管理者は、クライアントのセッションやアプリケーションが GO-Globalホスト上で実行される期間を、Admin Consoleの [Host Options]ダイアログで制御できます。クライアントの切断後、直ちにセッションを終了する場合は、 [Immediately]を選択します。これがデフォルトの設定です。ユーザがセッション内で稼働するすべてのアプリケーションを手動で閉じた時、またはシステム管理者がAdmin Consoleを使用して手動でセッションを終了した時にのみセッションを終了する場合は、 [Never]を選択します。クライアントがセッションから切断後、そのセッションの稼働を維持する期間を分単位で指定する場合は、 [After __ minutes]を選択します。クライアントの切断後にセッションの稼働を維持する期間を分単位の値で編集フィールド内に入力します。
-Admin Consoleの [Sessions]タブには、特定のセッションに接続しているクライアントの数が表示されます。切断済みのセッションでは、接続クライアント数は0です。
-セッション終了オプションの設定方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Shutdown]タブをクリックします。 [Disconnected sessions terminate]を有効にします。 以下のセッション終了オプションから 1 つ選択します。  Immediately Never After _ minutes編集ボックスに、クライアントとの切断後もセッションを継続する分数を入力します。 5. [OK]をクリックします。
-セッションの切断 セッションが終了しないように、または指定した時間が経過しても終了するように設定されている場合は、Program Windowの[File]メニューに[Disconnect]オプションが表示されます。セッションがすぐに終了するように設定されている場合、[Disconnect]オプションはProgram Windowの[File]メニューに表示されません。
+セッション終了オプションの設定 システム管理者は、クライアントのセッションやアプリケーションが GO-Globalホスト上で実行される期間を、Admin Consoleの [Host Options] ダイアログで制御できます。クライアントの切断後、直ちにセッションを終了する場合は、 [Immediately] を選択します。これがデフォルトの設定です。ユーザがセッション内で稼働するすべてのアプリケーションを手動で閉じた時、またはシステム管理者がAdmin Consoleを使用して手動でセッションを終了した時にのみセッションを終了する場合は、 [Never] を選択します。クライアントがセッションから切断後、そのセッションの稼働を維持する期間を分単位で指定する場合は、 [After __ minutes] を選択します。クライアントの切断後にセッションの稼働を維持する期間を分単位の値で編集フィールド内に入力します。
+Admin Consoleの [Sessions] タブには、特定のセッションに接続しているクライアントの数が表示されます。切断済みのセッションでは、接続クライアント数は0です。
+セッション終了オプションの設定方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Shutdown] タブをクリックします。 [Disconnected sessions terminate] を有効にします。 以下のセッション終了オプションから1つ選択します。  Immediately Never After _ minutes編集ボックスに、クライアントとの切断後もセッションを継続する分数を入力します。
+5. [OK] をクリックします。
+セッションの切断 セッションが終了しないように、または指定した時間が経過しても終了するように設定されている場合は、Program Windowの[File]メニューに [Disconnect] オプションが表示されます。セッションがすぐに終了するように設定されている場合、[Disconnect]オプションはProgram Windowの[File]メニューに表示されません。
 セッションの切断方法 Program Windowで、[ File | Disconnect ]の順にクリックします。
-セッションの終了を [Never] に設定している場合、GO-Global からの切断時に以下のメッセージがユーザに提示されます。
-セッションを指定期間 (分) (たとえば、20 分) 後に終了するよう設定している場合、GO-Global からの切断時に以下のようなメッセージがユーザに提示されます。
+セッションの終了を [Never] に設定している場合、GO-Globalからの切断時に以下のメッセージがユーザに提示されます。
+セッションを指定期間(分)(たとえば、20分)後に終了するよう設定している場合、GO-Globalからの切断時に以下のようなメッセージがユーザに提示されます。
 ユーザがセッションを切断する際に、すでに切断済みのセッションがある場合、以下のメッセージが表示されます。
- You already have a session (session_name) that is disconnected." />
+参照You already have a session (session_name) that is disconnected." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/go-globaladminconsole/sessionreconnect/" />
 <meta property="article:modified_time" content="2020-06-03T03:24:08+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="セッションの再接続">
-<meta itemprop="description" content="セッション再接続により、クライアント接続がなくても GO-Globalホスト上のセッションが維持されます。ユーザが意図的にホストから切断、またはクライアント接続がネットワーク障害によって切断された場合にも、そのユーザのセッションとアプリケーションは、Admin Consoleで指定されたセッションタイムアウトの期間中GO-Globalホスト上で稼働し続けます。セッションの再接続により、ユーザは前回切断した時点と全く同じ状態でGO-Globalセッションへ戻ることができます。ユーザは、GO-Globalを終了する代わりに、Program Windowで切断し、その後、切断した時と全く同じ状態でセッションに戻ることが可能です。この時、開いているアプリケーションや実行中のプロセスをシャットダウンする必要はありません｡
+<meta itemprop="description" content="セッション再接続により、クライアント接続がなくてもGO-Globalホスト上のセッションが維持されます。ユーザが意図的にホストから切断、またはクライアント接続がネットワーク障害によって切断された場合にも、そのユーザのセッションとアプリケーションは、Admin Consoleで指定されたセッションタイムアウトの期間中GO-Globalホスト上で稼働し続けます。セッションの再接続により、ユーザは前回切断した時点と全く同じ状態でGO-Globalセッションへ戻ることができます。ユーザは、GO-Globalを終了する代わりに、Program Windowで切断し、その後、切断した時と全く同じ状態でセッションに戻ることが可能です。この時、開いているアプリケーションや実行中のプロセスをシャットダウンする必要はありません｡
 ネットワークへの接続が切断されたり、ユーザがGO-Globalから偶発的に切断してしまった場合、そのユーザのセッションの状態は、Admin Consoleで指定された期間中維持されます。GO-Globalでは、ユーザを通常のログオン手順で認証した後、そのユーザがアクティブなセッションを持っているか確認します。セッションがあれば、そのセッションは切断前と全く同じ状態で再開され表示されます。セッションがなければ、新しいセッションが開始されます。またユーザは、セッションを特定のクライアントから切断し、別のクライアントから再接続することもできます。
 切断されたセッションへ再接続する場合、ユーザは各自のログオン資格情報の提示を要求されます。ホストは資格情報を検証した後、切断されたセッションに再接続します。セッションがロードバランス構成に含まれているホスト上にある場合、そのセッションがロードバランスサーバ上にあることを意識することなく、ユーザは各自のセッションへルーティングされます。統合Windows認証が有効な場合、ユーザは自動的に再認証され、各自のセッションに再接続されます。
-セッション終了オプションの設定 システム管理者は、クライアントのセッションやアプリケーションが GO-Globalホスト上で実行される期間を、Admin Consoleの [Host Options]ダイアログで制御できます。クライアントの切断後、直ちにセッションを終了する場合は、 [Immediately]を選択します。これがデフォルトの設定です。ユーザがセッション内で稼働するすべてのアプリケーションを手動で閉じた時、またはシステム管理者がAdmin Consoleを使用して手動でセッションを終了した時にのみセッションを終了する場合は、 [Never]を選択します。クライアントがセッションから切断後、そのセッションの稼働を維持する期間を分単位で指定する場合は、 [After __ minutes]を選択します。クライアントの切断後にセッションの稼働を維持する期間を分単位の値で編集フィールド内に入力します。
-Admin Consoleの [Sessions]タブには、特定のセッションに接続しているクライアントの数が表示されます。切断済みのセッションでは、接続クライアント数は0です。
-セッション終了オプションの設定方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Shutdown]タブをクリックします。 [Disconnected sessions terminate]を有効にします。 以下のセッション終了オプションから 1 つ選択します。  Immediately Never After _ minutes編集ボックスに、クライアントとの切断後もセッションを継続する分数を入力します。 5. [OK]をクリックします。
-セッションの切断 セッションが終了しないように、または指定した時間が経過しても終了するように設定されている場合は、Program Windowの[File]メニューに[Disconnect]オプションが表示されます。セッションがすぐに終了するように設定されている場合、[Disconnect]オプションはProgram Windowの[File]メニューに表示されません。
+セッション終了オプションの設定 システム管理者は、クライアントのセッションやアプリケーションが GO-Globalホスト上で実行される期間を、Admin Consoleの [Host Options] ダイアログで制御できます。クライアントの切断後、直ちにセッションを終了する場合は、 [Immediately] を選択します。これがデフォルトの設定です。ユーザがセッション内で稼働するすべてのアプリケーションを手動で閉じた時、またはシステム管理者がAdmin Consoleを使用して手動でセッションを終了した時にのみセッションを終了する場合は、 [Never] を選択します。クライアントがセッションから切断後、そのセッションの稼働を維持する期間を分単位で指定する場合は、 [After __ minutes] を選択します。クライアントの切断後にセッションの稼働を維持する期間を分単位の値で編集フィールド内に入力します。
+Admin Consoleの [Sessions] タブには、特定のセッションに接続しているクライアントの数が表示されます。切断済みのセッションでは、接続クライアント数は0です。
+セッション終了オプションの設定方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Shutdown] タブをクリックします。 [Disconnected sessions terminate] を有効にします。 以下のセッション終了オプションから1つ選択します。  Immediately Never After _ minutes編集ボックスに、クライアントとの切断後もセッションを継続する分数を入力します。
+5. [OK] をクリックします。
+セッションの切断 セッションが終了しないように、または指定した時間が経過しても終了するように設定されている場合は、Program Windowの[File]メニューに [Disconnect] オプションが表示されます。セッションがすぐに終了するように設定されている場合、[Disconnect]オプションはProgram Windowの[File]メニューに表示されません。
 セッションの切断方法 Program Windowで、[ File | Disconnect ]の順にクリックします。
-セッションの終了を [Never] に設定している場合、GO-Global からの切断時に以下のメッセージがユーザに提示されます。
-セッションを指定期間 (分) (たとえば、20 分) 後に終了するよう設定している場合、GO-Global からの切断時に以下のようなメッセージがユーザに提示されます。
+セッションの終了を [Never] に設定している場合、GO-Globalからの切断時に以下のメッセージがユーザに提示されます。
+セッションを指定期間(分)(たとえば、20分)後に終了するよう設定している場合、GO-Globalからの切断時に以下のようなメッセージがユーザに提示されます。
 ユーザがセッションを切断する際に、すでに切断済みのセッションがある場合、以下のメッセージが表示されます。
- You already have a session (session_name) that is disconnected.">
+参照You already have a session (session_name) that is disconnected.">
 <meta itemprop="dateModified" content="2020-06-03T03:24:08&#43;09:00" />
-<meta itemprop="wordCount" content="120">
+<meta itemprop="wordCount" content="133">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="セッションの再接続"/>
-<meta name="twitter:description" content="セッション再接続により、クライアント接続がなくても GO-Globalホスト上のセッションが維持されます。ユーザが意図的にホストから切断、またはクライアント接続がネットワーク障害によって切断された場合にも、そのユーザのセッションとアプリケーションは、Admin Consoleで指定されたセッションタイムアウトの期間中GO-Globalホスト上で稼働し続けます。セッションの再接続により、ユーザは前回切断した時点と全く同じ状態でGO-Globalセッションへ戻ることができます。ユーザは、GO-Globalを終了する代わりに、Program Windowで切断し、その後、切断した時と全く同じ状態でセッションに戻ることが可能です。この時、開いているアプリケーションや実行中のプロセスをシャットダウンする必要はありません｡
+<meta name="twitter:description" content="セッション再接続により、クライアント接続がなくてもGO-Globalホスト上のセッションが維持されます。ユーザが意図的にホストから切断、またはクライアント接続がネットワーク障害によって切断された場合にも、そのユーザのセッションとアプリケーションは、Admin Consoleで指定されたセッションタイムアウトの期間中GO-Globalホスト上で稼働し続けます。セッションの再接続により、ユーザは前回切断した時点と全く同じ状態でGO-Globalセッションへ戻ることができます。ユーザは、GO-Globalを終了する代わりに、Program Windowで切断し、その後、切断した時と全く同じ状態でセッションに戻ることが可能です。この時、開いているアプリケーションや実行中のプロセスをシャットダウンする必要はありません｡
 ネットワークへの接続が切断されたり、ユーザがGO-Globalから偶発的に切断してしまった場合、そのユーザのセッションの状態は、Admin Consoleで指定された期間中維持されます。GO-Globalでは、ユーザを通常のログオン手順で認証した後、そのユーザがアクティブなセッションを持っているか確認します。セッションがあれば、そのセッションは切断前と全く同じ状態で再開され表示されます。セッションがなければ、新しいセッションが開始されます。またユーザは、セッションを特定のクライアントから切断し、別のクライアントから再接続することもできます。
 切断されたセッションへ再接続する場合、ユーザは各自のログオン資格情報の提示を要求されます。ホストは資格情報を検証した後、切断されたセッションに再接続します。セッションがロードバランス構成に含まれているホスト上にある場合、そのセッションがロードバランスサーバ上にあることを意識することなく、ユーザは各自のセッションへルーティングされます。統合Windows認証が有効な場合、ユーザは自動的に再認証され、各自のセッションに再接続されます。
-セッション終了オプションの設定 システム管理者は、クライアントのセッションやアプリケーションが GO-Globalホスト上で実行される期間を、Admin Consoleの [Host Options]ダイアログで制御できます。クライアントの切断後、直ちにセッションを終了する場合は、 [Immediately]を選択します。これがデフォルトの設定です。ユーザがセッション内で稼働するすべてのアプリケーションを手動で閉じた時、またはシステム管理者がAdmin Consoleを使用して手動でセッションを終了した時にのみセッションを終了する場合は、 [Never]を選択します。クライアントがセッションから切断後、そのセッションの稼働を維持する期間を分単位で指定する場合は、 [After __ minutes]を選択します。クライアントの切断後にセッションの稼働を維持する期間を分単位の値で編集フィールド内に入力します。
-Admin Consoleの [Sessions]タブには、特定のセッションに接続しているクライアントの数が表示されます。切断済みのセッションでは、接続クライアント数は0です。
-セッション終了オプションの設定方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Shutdown]タブをクリックします。 [Disconnected sessions terminate]を有効にします。 以下のセッション終了オプションから 1 つ選択します。  Immediately Never After _ minutes編集ボックスに、クライアントとの切断後もセッションを継続する分数を入力します。 5. [OK]をクリックします。
-セッションの切断 セッションが終了しないように、または指定した時間が経過しても終了するように設定されている場合は、Program Windowの[File]メニューに[Disconnect]オプションが表示されます。セッションがすぐに終了するように設定されている場合、[Disconnect]オプションはProgram Windowの[File]メニューに表示されません。
+セッション終了オプションの設定 システム管理者は、クライアントのセッションやアプリケーションが GO-Globalホスト上で実行される期間を、Admin Consoleの [Host Options] ダイアログで制御できます。クライアントの切断後、直ちにセッションを終了する場合は、 [Immediately] を選択します。これがデフォルトの設定です。ユーザがセッション内で稼働するすべてのアプリケーションを手動で閉じた時、またはシステム管理者がAdmin Consoleを使用して手動でセッションを終了した時にのみセッションを終了する場合は、 [Never] を選択します。クライアントがセッションから切断後、そのセッションの稼働を維持する期間を分単位で指定する場合は、 [After __ minutes] を選択します。クライアントの切断後にセッションの稼働を維持する期間を分単位の値で編集フィールド内に入力します。
+Admin Consoleの [Sessions] タブには、特定のセッションに接続しているクライアントの数が表示されます。切断済みのセッションでは、接続クライアント数は0です。
+セッション終了オプションの設定方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 [Session Shutdown] タブをクリックします。 [Disconnected sessions terminate] を有効にします。 以下のセッション終了オプションから1つ選択します。  Immediately Never After _ minutes編集ボックスに、クライアントとの切断後もセッションを継続する分数を入力します。
+5. [OK] をクリックします。
+セッションの切断 セッションが終了しないように、または指定した時間が経過しても終了するように設定されている場合は、Program Windowの[File]メニューに [Disconnect] オプションが表示されます。セッションがすぐに終了するように設定されている場合、[Disconnect]オプションはProgram Windowの[File]メニューに表示されません。
 セッションの切断方法 Program Windowで、[ File | Disconnect ]の順にクリックします。
-セッションの終了を [Never] に設定している場合、GO-Global からの切断時に以下のメッセージがユーザに提示されます。
-セッションを指定期間 (分) (たとえば、20 分) 後に終了するよう設定している場合、GO-Global からの切断時に以下のようなメッセージがユーザに提示されます。
+セッションの終了を [Never] に設定している場合、GO-Globalからの切断時に以下のメッセージがユーザに提示されます。
+セッションを指定期間(分)(たとえば、20分)後に終了するよう設定している場合、GO-Globalからの切断時に以下のようなメッセージがユーザに提示されます。
 ユーザがセッションを切断する際に、すでに切断済みのセッションがある場合、以下のメッセージが表示されます。
- You already have a session (session_name) that is disconnected."/>
+参照You already have a session (session_name) that is disconnected."/>
 
 
 
@@ -158,7 +161,7 @@ Admin Consoleの [Sessions]タブには、特定のセッションに接続し�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -188,7 +191,7 @@ Admin Consoleの [Sessions]タブには、特定のセッションに接続し�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -2552,49 +2555,61 @@ Admin Consoleの [Sessions]タブには、特定のセッションに接続し�
 <div class="td-content">
 	<h1>セッションの再接続</h1>
 	
-	<p>セッション再接続により、クライアント接続がなくても GO-Globalホスト上のセッションが維持されます。ユーザが意図的にホストから切断、またはクライアント接続がネットワーク障害によって切断された場合にも、そのユーザのセッションとアプリケーションは、Admin Consoleで指定されたセッションタイムアウトの期間中GO-Globalホスト上で稼働し続けます。セッションの再接続により、ユーザは前回切断した時点と全く同じ状態でGO-Globalセッションへ戻ることができます。ユーザは、GO-Globalを終了する代わりに、Program Windowで切断し、その後、切断した時と全く同じ状態でセッションに戻ることが可能です。この時、開いているアプリケーションや実行中のプロセスをシャットダウンする必要はありません｡</p>
+	<p>セッション再接続により、クライアント接続がなくてもGO-Globalホスト上のセッションが維持されます。ユーザが意図的にホストから切断、またはクライアント接続がネットワーク障害によって切断された場合にも、そのユーザのセッションとアプリケーションは、Admin Consoleで指定されたセッションタイムアウトの期間中GO-Globalホスト上で稼働し続けます。セッションの再接続により、ユーザは前回切断した時点と全く同じ状態でGO-Globalセッションへ戻ることができます。ユーザは、GO-Globalを終了する代わりに、Program Windowで切断し、その後、切断した時と全く同じ状態でセッションに戻ることが可能です。この時、開いているアプリケーションや実行中のプロセスをシャットダウンする必要はありません｡</p>
 <p>ネットワークへの接続が切断されたり、ユーザがGO-Globalから偶発的に切断してしまった場合、そのユーザのセッションの状態は、Admin Consoleで指定された期間中維持されます。GO-Globalでは、ユーザを通常のログオン手順で認証した後、そのユーザがアクティブなセッションを持っているか確認します。セッションがあれば、そのセッションは切断前と全く同じ状態で再開され表示されます。セッションがなければ、新しいセッションが開始されます。またユーザは、セッションを特定のクライアントから切断し、別のクライアントから再接続することもできます。</p>
 <p>切断されたセッションへ再接続する場合、ユーザは各自のログオン資格情報の提示を要求されます。ホストは資格情報を検証した後、切断されたセッションに再接続します。セッションがロードバランス構成に含まれているホスト上にある場合、そのセッションがロードバランスサーバ上にあることを意識することなく、ユーザは各自のセッションへルーティングされます。統合Windows認証が有効な場合、ユーザは自動的に再認証され、各自のセッションに再接続されます。</p>
 <h2 id="セッション終了オプションの設定">セッション終了オプションの設定</h2>
-<p>システム管理者は、クライアントのセッションやアプリケーションが GO-Globalホスト上で実行される期間を、Admin Consoleの [<strong>Host Options</strong>]ダイアログで制御できます。クライアントの切断後、直ちにセッションを終了する場合は、 [<strong>Immediately</strong>]を選択します。これがデフォルトの設定です。ユーザがセッション内で稼働するすべてのアプリケーションを手動で閉じた時、またはシステム管理者がAdmin Consoleを使用して手動でセッションを終了した時にのみセッションを終了する場合は、 [<strong>Never</strong>]を選択します。クライアントがセッションから切断後、そのセッションの稼働を維持する期間を分単位で指定する場合は、 [<strong>After __ minutes</strong>]を選択します。クライアントの切断後にセッションの稼働を維持する期間を分単位の値で編集フィールド内に入力します。</p>
-<p>Admin Consoleの [<strong>Sessions</strong>]タブには、特定のセッションに接続しているクライアントの数が表示されます。切断済みのセッションでは、接続クライアント数は0です。</p>
+<p>システム管理者は、クライアントのセッションやアプリケーションが GO-Globalホスト上で実行される期間を、Admin Consoleの <strong>[Host Options]</strong> ダイアログで制御できます。クライアントの切断後、直ちにセッションを終了する場合は、 <strong>[Immediately]</strong> を選択します。これがデフォルトの設定です。ユーザがセッション内で稼働するすべてのアプリケーションを手動で閉じた時、またはシステム管理者がAdmin Consoleを使用して手動でセッションを終了した時にのみセッションを終了する場合は、 <strong>[Never]</strong> を選択します。クライアントがセッションから切断後、そのセッションの稼働を維持する期間を分単位で指定する場合は、 <strong>[After __ minutes]</strong> を選択します。クライアントの切断後にセッションの稼働を維持する期間を分単位の値で編集フィールド内に入力します。</p>
+<p>Admin Consoleの <strong>[Sessions]</strong> タブには、特定のセッションに接続しているクライアントの数が表示されます。切断済みのセッションでは、接続クライアント数は0です。</p>
 <h3 id="セッション終了オプションの設定方法">セッション終了オプションの設定方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools |  Host Options]の順にクリックします。</li>
-<li>[<strong>Session Shutdown</strong>]タブをクリックします。</li>
-<li>[<strong>Disconnected sessions terminate</strong>]を有効にします。</li>
-<li>以下のセッション終了オプションから 1 つ選択します。</li>
+<li><strong>[Session Shutdown]</strong> タブをクリックします。</li>
+<li><strong>[Disconnected sessions terminate]</strong> を有効にします。</li>
+<li>以下のセッション終了オプションから1つ選択します。</li>
 </ol>
 <pre><code>Immediately Never After _ minutes
-</code></pre><p>編集ボックスに、クライアントとの切断後もセッションを継続する分数を入力します。
-5. [<strong>OK</strong>]をクリックします。</p>
+</code></pre><p>編集ボックスに、クライアントとの切断後もセッションを継続する分数を入力します。<br>
+5. <strong>[OK]</strong> をクリックします。</p>
 <p><img src="/img/4-11-1.png" alt="4-11-1"></p>
 <h2 id="セッションの切断">セッションの切断</h2>
-<p>セッションが終了しないように、または指定した時間が経過しても終了するように設定されている場合は、Program Windowの[File]メニューに[Disconnect]オプションが表示されます。セッションがすぐに終了するように設定されている場合、[Disconnect]オプションはProgram Windowの[File]メニューに表示されません。</p>
+<p>セッションが終了しないように、または指定した時間が経過しても終了するように設定されている場合は、Program Windowの[File]メニューに <strong>[Disconnect]</strong> オプションが表示されます。セッションがすぐに終了するように設定されている場合、[Disconnect]オプションはProgram Windowの[File]メニューに表示されません。</p>
 <h3 id="セッションの切断方法">セッションの切断方法</h3>
 <p>Program Windowで、[ File | Disconnect ]の順にクリックします。</p>
-<p>セッションの終了を [Never] に設定している場合、GO-Global からの切断時に以下のメッセージがユーザに提示されます。</p>
+<p>セッションの終了を <strong>[Never]</strong> に設定している場合、GO-Globalからの切断時に以下のメッセージがユーザに提示されます。</p>
 <p><img src="/img/4-11-2.png" alt="4-11-2"></p>
-<p>セッションを指定期間 (分) (たとえば、20 分) 後に終了するよう設定している場合、GO-Global からの切断時に以下のようなメッセージがユーザに提示されます。</p>
+<p>セッションを指定期間(分)(たとえば、20分)後に終了するよう設定している場合、GO-Globalからの切断時に以下のようなメッセージがユーザに提示されます。</p>
 <p>ユーザがセッションを切断する際に、すでに切断済みのセッションがある場合、以下のメッセージが表示されます。</p>
 <p><img src="/img/4-11-3.png" alt="4-11-3"></p>
-<blockquote>
-<p><strong>You already have a session (session_name) that is disconnected. If you disconnect the current session, that previous session will be terminated. Do you want to continue?</strong>(すでに切断済みのセッション(セッション名)があります。現行のセッションを切断すると、その前回のセッションは終了されます。操作を継続しますか?)</p>
-</blockquote>
-<p>ユーザが [<strong>Yes</strong>]をクリックすると、切断済みのセッションは終了されます。 [<strong>No</strong>]の場合、ユーザは実行中のセッションに戻ります。</p>
-<blockquote>
-<p>ユーザーがセッションに再接続すると、コマンドライン引数-a、-r、および-acは無視されます。</p>
-</blockquote>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+<strong>You already have a session (session_name) that is disconnected. If you disconnect the current session, that previous session will be terminated. Do you want to continue?</strong> (すでに切断済みのセッション(セッション名)があります。現行のセッションを切断すると、その前回のセッションは終了されます。操作を継続しますか?)
+</div>
+
+<p>ユーザが <strong>[Yes]</strong> をクリックすると、切断済みのセッションは終了されます。 <strong>[No]</strong> の場合、ユーザは実行中のセッションに戻ります。</p>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+ユーザーがセッションに再接続すると、コマンドライン引数-a、-r、および-acは無視されます。
+</div>
+
 <h2 id="共有アカウント">共有アカウント</h2>
 <p>共有アカウントは、GO-Globalセッションを開始するために複数のユーザが同じアカウントを使用しているときに指定する必要があります。共有アカウントでGO-Globalにサインインしたユーザは、切断してからGO-Globalに再接続することはできません。これにより、ユーザは他のユーザのセッションに再接続できなくなります。</p>
-<p>共有アカウントでGO-Globalホストにログオンすると、Admin Consoleの <strong>Disconnected sessions terminate</strong>オプションは無視され、動作は <strong>HostProperties.xml</strong>ファイルの <strong>SessionTimeoutBrokenConnection</strong>プロパティによって決まります。(HostProperties.xmlは、C:\ProgramData\GraphOnにあります)。</p>
-<p>このプロパティの値が0に設定されている場合、セッションはただちに終了します。値が0より大きい場合、セッションは中断され、指定された分数の間サーバ上で実行されたままになります。後者の場合、セッションを開始したユーザだけが中断されたセッションに再接続できます。デフォルトでは、 <strong>SessionTimeoutBrokenConnection</strong>は0分に設定されています。</p>
+<p>共有アカウントでGO-Globalホストにログオンすると、Admin Consoleの <strong>Disconnected sessions terminate</strong> オプションは無視され、動作は <strong>HostProperties.xml</strong> ファイルの <strong>SessionTimeoutBrokenConnection</strong> プロパティによって決まります(HostProperties.xmlは、<code>C:\ProgramData\GraphOn</code>にあります)。</p>
+<p>このプロパティの値が0に設定されている場合、セッションはただちに終了します。値が0より大きい場合、セッションは中断され、指定された分数の間サーバ上で実行されたままになります。後者の場合、セッションを開始したユーザだけが中断されたセッションに再接続できます。デフォルトでは、 <strong>SessionTimeoutBrokenConnection</strong> は0分に設定されています。</p>
 <h3 id="共有アカウントの指定方法">共有アカウントの指定方法</h3>
 <ol>
 <li>[Tools | Host Options]の順にクリックします。</li>
-<li>[<strong>Session Shutdown</strong>]タブをクリックします。</li>
-<li>[<strong>Shared account</strong>]編集ボックスに共有アカウントのユーザ名を入力します。複数の共有アカウントが必要な場合は、アカウントのユーザ名をセミコロンで区切ります。</li>
-<li>[<strong>OK</strong>]をクリックします。</li>
+<li><strong>[Session Shutdown]</strong> タブをクリックします。</li>
+<li><strong>[Shared account]</strong> 編集ボックスに共有アカウントのユーザ名を入力します。複数の共有アカウントが必要な場合は、アカウントのユーザ名をセミコロンで区切ります。</li>
+<li><strong>[OK]</strong> をクリックします。</li>
 </ol>
 <p>そのユーザが自分のセッションから切断されている間に管理者が既存のユーザ名を共有アカウントとして指定した場合、そのセッションは終了制限に達するまでサーバ上で実行されたままになります。その後セッションは終了します。共有アカウントを指定する前に、そのアカウントを使用して接続または切断されたセッションがないことをAdmin Consoleで確認してください。</p>
 <p>GO-Globalは、共有アカウントに対するドメイン名(NORTH\johngなど)の使用をサポートしていません。</p>

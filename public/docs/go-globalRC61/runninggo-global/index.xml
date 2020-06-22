@@ -26,47 +26,53 @@
 &lt;h3 id=&#34;appcontrollerをインストールする方法&#34;&gt;AppControllerをインストールする方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
-&lt;li&gt;[Location]ボックスに、[http://]と入力し、その後にホスト名とAppControllerインストールページを入力します。たとえば、http://hostname/goglobal/&lt;/li&gt;
-&lt;li&gt;AppController がインストールされていない場合は、ダウンロードするよう求められます。コンピュータのオペレーティングシステムからセットアッププログラムを実行します(GO-Global.AppController.exe、GO-Global.AppController.dmg、GO-Global.AppController.deb、GO-Global.AppController.rpm など)。&lt;/li&gt;
-&lt;li&gt;Mac OS Xの場合は、AppControllerを[アプリケーション]フォルダにドラッグします。&lt;/li&gt;
+&lt;li&gt;[Location]ボックスに、[http://]と入力し、その後にホスト名とAppControllerインストールページを入力します。たとえば、&lt;code&gt;http://hostname/goglobal/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;AppControllerがインストールされていない場合は、ダウンロードするよう求められます。コンピュータのオペレーティングシステムからセットアッププログラムを実行します( &lt;strong&gt;GO-Global.AppController.exe、GO-Global.AppController.dmg、GO-Global.AppController.deb、GO-Global.AppController.rpm&lt;/strong&gt; など)。&lt;/li&gt;
+&lt;li&gt;Mac OS Xの場合は、AppControllerを[Applications]フォルダにドラッグします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;AppControllerをインストールすると、ブラウザ、スタートメニュー、またはショートカットから GO-Globalを実行できます。
-デフォルトでは、ダウンロード時にインストールファイル名がAppControllerからGO-Global.AppControllerに変更されます。Admin Consoleの[Branding]タブでインストーラ名が変更されている場合は、その名前がインストーラ名のGO-Globalに置き換わります。(例: Acme.AppController.exe)&lt;/p&gt;
+デフォルトでは、ダウンロード時にインストールファイル名がAppControllerからGO-Global.AppControllerに変更されます。Admin Consoleの[Branding]タブでインストーラ名が変更されている場合は、その名前がインストーラ名のGO-Globalに置き換わります(例:Acme.AppController.exe)。&lt;/p&gt;
 &lt;h3 id=&#34;コンピュータのメニューからgo-global-appcontrollerを実行する方法&#34;&gt;コンピュータのメニューからGO-Global AppControllerを実行する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;AppControllerメニューオプションを選択します。
-　a. Windowsで、Windowsタスクバーの[スタート]ボタンをクリックし、[プログラム] - [AppController]を選択します。
-　b. Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、[AppController]をクリックします。
-　c. Mac OS Xの場合は、メニューから「Go」→「Applications」を選択し、AppControllerをダブルクリックします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログ内にホストのアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。[&lt;strong&gt;Sign In&lt;/strong&gt;]ダイアログが表示されたら、次の情報を入力します。
+&lt;li&gt;AppControllerメニューオプションを選択します。&lt;br&gt;
+　a. Windowsで、Windowsタスクバーの &lt;strong&gt;[スタート]&lt;/strong&gt; ボタンをクリックし、[プログラム | AppController]を選択します。&lt;br&gt;
+　b. Linuxでは、[アプリケーション]メニューから[ネットワーク]または[インターネット]カテゴリを選択し、 &lt;strong&gt;[AppController]&lt;/strong&gt; をクリックします。&lt;br&gt;
+　c. Mac OS Xの場合は、メニューから「Go」→「Applications」を選択し、&lt;strong&gt;AppController&lt;/strong&gt; をダブルクリックします。&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Connection]&lt;/strong&gt; ダイアログ内にホストのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Connect]&lt;/strong&gt; をクリックします。&lt;strong&gt;[Sign In]&lt;/strong&gt; ダイアログが表示されたら、次の情報を入力します。
 &lt;ul&gt;
-&lt;li&gt;[&lt;strong&gt;User Name&lt;/strong&gt;]ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Password&lt;/strong&gt;]ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[User Name]&lt;/strong&gt; ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Password]&lt;/strong&gt; ボックスにパスワードを入力します。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/img/5-1-1.png&#34; alt=&#34;5-1-1&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Globalでは、ログオンプロセスをシャットダウンする前に無効なログオンを3回試行することができます。&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+GO-Globalでは、ログオンプロセスをシャットダウンする前に無効なログオンを3回試行することができます。
+&lt;/div&gt;
+
 &lt;p&gt;Windowsコンピュータでは、GO-Global ConnectionダイアログにGO-Globalホストへのショートカットを作成するオプションがあります。このオプションを使用すると、ホストに接続するときに[接続]ダイアログを迂回することができます。&lt;/p&gt;
 &lt;h3 id=&#34;windowsコンピュータでgo-globalホストへのショートカットを作成する方法&#34;&gt;WindowsコンピュータでGO-Globalホストへのショートカットを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;上記のいずれかの方法でAppControllerを起動します。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Connection&lt;/strong&gt;]ダイアログにサーバのアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;[Create desktop shortcut to this host]チェックボックスをオンにします。&lt;/li&gt;
-&lt;li&gt;[&lt;strong&gt;Connect&lt;/strong&gt;]をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Connection]&lt;/strong&gt; ダイアログにサーバのアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Create desktop shortcut to this host]&lt;/strong&gt; チェックボックスをオンにします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Connect]&lt;/strong&gt; をクリックします。ホストへのショートカットがコンピュータのデスクトップに作成されます。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;windowsでappcontrollerのショートカットを作成する方法&#34;&gt;WindowsでAppControllerのショートカットを作成する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;デスクトップ上で右クリックします。&lt;/li&gt;
 &lt;li&gt;[ 新規作成 | ショートカットの作成 ]の順に作成します。&lt;/li&gt;
-&lt;li&gt;ショートカットの作成ダイアログボックスで、AppControllerの実行ファイルを参照します。たとえば、&amp;ldquo;C:¥Program Files¥GraphOn\AppController\AppController.exe&amp;quot;のようになります。&lt;/li&gt;
-&lt;li&gt;AppController.exeへのパスの後にパラメータを追加します。例えば、以下のようにします。
-&amp;ldquo;C:\Program Files\GraphOn\AppControllerAppController.exe&amp;rdquo; -h hostname -a Wordpad -r 
-&amp;ldquo;C:\UsersPublic\Public Documentstest.rtf&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;ショートカットの名前を入力し、[完了] をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ショートカットの作成&lt;/strong&gt; ダイアログボックスで、AppControllerの実行ファイルを参照します。たとえば、&lt;code&gt;&amp;quot;C:¥Program Files¥GraphOn\AppController\AppController.exe&amp;quot;&lt;/code&gt;のようになります。&lt;/li&gt;
+&lt;li&gt;AppController.exeへのパスの後にパラメータを追加します。例えば、以下のようにします。&lt;br&gt;
+&lt;code&gt;&amp;quot;C:\Program Files\GraphOn\AppControllerAppController.exe&amp;quot; -h hostname -a Wordpad -r&lt;/code&gt;&lt;br&gt; 
+&lt;code&gt;&amp;quot;C:\UsersPublic\Public Documentstest.rtf&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ショートカットの名前を入力し、&lt;strong&gt;[完了]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
@@ -87,50 +93,77 @@
 &lt;h3 id=&#34;webブラウザからgo-globalを起動方法&#34;&gt;WebブラウザからGO-Globalを起動方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Webブラウザを起動します。&lt;/li&gt;
-&lt;li&gt;[Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false&lt;/li&gt;
-&lt;li&gt;**[Sign In]**ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
+&lt;li&gt;[Location box]ボックスに、http://に続けてホスト名と &lt;strong&gt;?useApp=false&lt;/strong&gt; の順に入力します。次に例を示します。&lt;code&gt;http://hostname/goglobal/?useApp=false&lt;/code&gt;または&lt;code&gt;https://hostname/goglobal/?useApp=false&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Sign In]&lt;/strong&gt; ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[User Name]&lt;/strong&gt; ボックスにネットワークユーザー名を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Password]&lt;/strong&gt; ボックスにパスワードを入力します。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;[Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;[Location box]ボックスに &lt;strong&gt;https://&lt;/strong&gt; を指定した場合、Admin Consoleの &lt;strong&gt;[Host Options]&lt;/strong&gt; ダイアログの[Security]タブで &lt;strong&gt;SSLトランスポート&lt;/strong&gt; を有効にし、タブで指定したSSL証明書のcommon nameをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、 &lt;strong&gt;SSL転送の選択&lt;/strong&gt; を参照してください。&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。
+&lt;/div&gt;
+
 &lt;h2 id=&#34;go-global-appcontrollerを使用したwebアプリケーションの実行&#34;&gt;GO-Global AppControllerを使用したWebアプリケーションの実行&lt;/h2&gt;
 &lt;p&gt;GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。&lt;/p&gt;
 &lt;p&gt;GO-Globalは、GO-Global AppControllerのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;useApp　　useApp = trueの場合、Webアプリケーションは完全なGO-Global AppControllerを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global AppControllerを起動しようとしません。 デフォルトでuseApp = trueです。&lt;/li&gt;
-&lt;li&gt;installApp　　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、[Get the App]リンクがGO-Global Web Appのツールバーに追加されます。&lt;/li&gt;
+&lt;li&gt;installApp　　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、 &lt;strong&gt;[Get the App]&lt;/strong&gt; リンクがGO-Global Web Appのツールバーに追加されます。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLがhttp://hostname/goglobal/logon.htmlの場合など)、GO-Globalは自動的にGO-Global AppControllerのダウンロードを開始し、ユーザにプロンプトを表示します。インストールして実行します。または、installAppオプションがaddLinkに設定されている場合(たとえば、URLがhttp://hostname/goglobal/logon.html?installApp = addLinkの場合)、Webアプリケーションのツールバーに[Get the App]リンクが追加されます。ユーザがこのリンクをクリックすると、GO-Globalはダウンロードを開始し、GO-Global AppControllerの実行とインストールのプロセスを案内します。&lt;/p&gt;
+&lt;p&gt;たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLが &lt;strong&gt;&lt;code&gt;http://hostname/goglobal/logon.html&lt;/code&gt;&lt;/strong&gt; の場合など)、GO-Globalは自動的にGO-Global AppControllerのダウンロードを開始し、ユーザにプロンプトを表示します。インストールして実行します。または、installAppオプションがaddLinkに設定されている場合(たとえば、URLが &lt;strong&gt;&lt;code&gt;http://hostname/goglobal/logon.html?installApp=addLink&lt;/code&gt;&lt;/strong&gt; の場合)、Webアプリケーションのツールバーに[Get the App]リンクが追加されます。ユーザがこのリンクをクリックすると、GO-Globalはダウンロードを開始し、GO-Global AppControllerの実行とインストールのプロセスを案内します。&lt;/p&gt;
 &lt;p&gt;GO-Global AppControllerをインストールして有効にすると、「埋め込み」URLパラメータを使用して、アプリケーションをブラウザウィンドウ内で実行するかブラウザウィンドウ外で実行するかを制御できます。 embedパラメータが指定されていないか、または&amp;rdquo; false&amp;quot;に設定されている場合(たとえば、URLがhttp://hostname/goglobal/logon.html?embed = falseである場合)、ユーザのアプリケーションはGO-Global AppControllerを介してブラウザのウィンドウ外で実行されます。&lt;/p&gt;
-&lt;p&gt;あるいは、埋め込みパラメータが「true」に設定されている場合(例えば、URLが http://hostname/goglobal/logon.html?embed = true)アプリケーションはWebアプリケーションを介してブラウザウィンドウ内で実行されます。この場合、GO-GlobalもGO-Global AppControllerを起動します(インストールされて有効になっている場合)が、GO-Global AppControllerはコンピュータのデバイス(プリンタやドライブなど)へのアクセスを提供する目的でのみ使用されます。セッションのアプリケーションは表示されません。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;AppControllerをブラウザウィンドウ内で実行すると、デフォルトの背景色は白になります。背景色は、HostProperties.xmlファイルのDesktopColorプロパティで指定します。色は10進数形式のRGB値として指定されます。例えば、白のデフォルトの色は10進数で16777215（16進数では0x00FFFFFF）です。例えば、背景色を青に変更するには、DesktopColorプロパティを10906937に設定します。
-GO-Global AppControllerがインストールされていないかuseApp = falseの場合、embedオプションは無視されます。それ以外の場合、embedはデフォルトでfalseに設定されています。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;埋め込みオプションが有効な場合、AppControllerは、-hostパラメータをホストのconfig.xmlファイルのhostaddressフィールドの値に設定して起動します。GO-Global インストーラは、この値をコンピュータの名前に初期化します。ユーザーが別のアドレス（パブリック DNS アドレスなど）でホストに接続する場合は、config.xml ファイルの hostaddress フィールドをこのアドレスに設定する必要があります。&lt;/p&gt;
+&lt;p&gt;あるいは、埋め込みパラメータが「true」に設定されている場合(例えば、URLが &lt;strong&gt;&lt;code&gt;http://hostname/goglobal/logon.html?embed=true&lt;/code&gt;&lt;/strong&gt;)アプリケーションはWebアプリケーションを介してブラウザウィンドウ内で実行されます。この場合、GO-GlobalもGO-Global AppControllerを起動します(インストールされて有効になっている場合)が、GO-Global AppControllerはコンピュータのデバイス(プリンタやドライブなど)へのアクセスを提供する目的でのみ使用されます。セッションのアプリケーションは表示されません。&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+AppControllerをブラウザウィンドウ内で実行すると、デフォルトの背景色は白になります。背景色は、 &lt;strong&gt;HostProperties.xml&lt;/strong&gt; ファイルの &lt;strong&gt;DesktopColor&lt;/strong&gt; プロパティで指定します。色は10進数形式のRGB値として指定されます。例えば、白のデフォルトの色は10進数で16777215(16進数では0x00FFFFFF)です。例えば、背景色を青に変更するには、 &lt;strong&gt;DesktopColor&lt;/strong&gt; プロパティを10906937に設定します。
+GO-Global AppControllerがインストールされていないかuseApp=falseの場合、embedオプションは無視されます。それ以外の場合、embedはデフォルトでfalseに設定されています。
+&lt;/div&gt;
+
+&lt;p&gt;埋め込みオプションが有効な場合、AppControllerは、 &lt;strong&gt;-host&lt;/strong&gt; パラメータをホストのconfig.xmlファイルの &lt;strong&gt;hostaddress&lt;/strong&gt; フィールドの値に設定して起動します。GO-Globalインストーラは、この値をコンピュータの名前に初期化します。ユーザーが別のアドレス(パブリックDNSアドレスなど)でホストに接続する場合は、config.xmlファイルの &lt;strong&gt;hostaddress&lt;/strong&gt; フィールドをこのアドレスに設定する必要があります。&lt;/p&gt;
 &lt;h3 id=&#34;ホストアドレスの値を変更する方法&#34;&gt;ホストアドレスの値を変更する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;アプリケーション公開サービスを停止します。&lt;/li&gt;
-&lt;li&gt;C:\ProgramData\GraphOnOn\GO-Globalディレクトリにconfig.xmlファイルを配置してください。&lt;/li&gt;
-&lt;li&gt;Wordpadでconfig.xmlを開き、&lt;hostaddress&gt;フィールドを探してください。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application Publishing Service&lt;/strong&gt; を停止します。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C:\ProgramData\GraphOnOn\GO-Global&lt;/code&gt;ディレクトリに &lt;strong&gt;config.xml&lt;/strong&gt; ファイルを配置してください。&lt;/li&gt;
+&lt;li&gt;Wordpadで &lt;strong&gt;config.xml&lt;/strong&gt; を開き、&lt;hostaddress&gt;フィールドを探してください。&lt;/li&gt;
 &lt;li&gt;ホストアドレスの値を更新します。&lt;/li&gt;
 &lt;li&gt;編集した.xmlファイルを保存します。&lt;/li&gt;
-&lt;li&gt;Application Publishing Serviceを起動します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application Publishing Service&lt;/strong&gt; を起動します。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Global Web Appを使用する場合、アプリケーションのメニューまたはツールバーからクリップボードにコピーして貼り付けることはサポートされていません。代わりに、Windowsでは、キーボードショートカットのCtrl+Cを使用してコピーし、Ctrl+Vを使用して貼り付けます。Macでは、キーボードショートカットのCommand-Cを使用してコピーし、Command-Vを使用して貼り付けます。&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+GO-Global Web Appを使用する場合、アプリケーションのメニューまたはツールバーからクリップボードにコピーして貼り付けることはサポートされていません。代わりに、Windowsでは、キーボードショートカットの &lt;strong&gt;Ctrl+C&lt;/strong&gt; を使用してコピーし、 &lt;strong&gt;Ctrl+V&lt;/strong&gt; を使用して貼り付けます。Macでは、キーボードショートカットの &lt;strong&gt;Command-C&lt;/strong&gt; を使用してコピーし、&lt;strong&gt;Command-V&lt;/strong&gt; を使用して貼り付けます。
+&lt;/div&gt;
+
 &lt;h2 id=&#34;accessing-the-host-or-relay-server-directly-from-the-internet&#34;&gt;Accessing the Host or Relay Server Directly from the Internet&lt;/h2&gt;
-&lt;p&gt;If users will be connecting to a GO-Global Host or relay server from the internet, the web server and host addresses in the URL must be public (internet) addresses. When there is no public web server available, GraphOn&amp;rsquo;s web server, apps.graphon.com, can be used.&lt;/p&gt;
-&lt;p&gt;In this case, a URL such as the following would be shared with users: &lt;a href=&#34;http://apps.graphon.com/goglobal/?host=hostname&#34;&gt;http://apps.graphon.com/goglobal/?host=hostname&lt;/a&gt;, where hostname is the public address of the GO-Global Host.&lt;/p&gt;
-&lt;p&gt;When using a web server other than GraphOn&amp;rsquo;s, the URL must use the public address of the web server. For example: &lt;a href=&#34;http://webservername.com/goglobal/?host=hostname&#34;&gt;http://webservername.com/goglobal/?host=hostname&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-secondary&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;注意&lt;/h4&gt;
+本項目の設定は推奨設定ではございませんのでご注意ください。
+&lt;/div&gt;
+
+&lt;p&gt;If users will be connecting to a GO-Global Host or relay server from the internet, the web server and host addresses in the URL must be public(internet)addresses. When there is no public web server available, GraphOn&amp;rsquo;s web server, &lt;strong&gt;apps.graphon.com,&lt;/strong&gt; can be used.&lt;/p&gt;
+&lt;p&gt;In this case, a URL such as the following would be shared with users:&lt;strong&gt;&lt;code&gt;http://apps.graphon.com/goglobal/?host=hostname&lt;/code&gt;&lt;/strong&gt;, where hostname is the public address of the GO-Global Host.&lt;/p&gt;
+&lt;p&gt;When using a web server other than GraphOn&amp;rsquo;s, the URL must use the public address of the web server. For example:&lt;strong&gt;&lt;code&gt;http://webservername.com/goglobal/?host=hostname&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If users will be accessing a host or relay server from both the Internet and the internal network, the external and internal DNS should be configured so that the public and internal addresses of the web server are the same, and the public and internal addresses of the host are the same. Alternatively, administrators can provide external and internal users with different URLs, but this may be confusing to users.&lt;/p&gt;
-&lt;p&gt;When hosts are accessed via a third-party load balancer, the URL must include the address of the load-balancer. For example, &lt;a href=&#34;http://loadbalancer.com/goglobal/?host=hostname&amp;amp;app=Notepad&#34;&gt;http://loadbalancer.com/goglobal/?host=hostname&amp;amp;app=Notepad&lt;/a&gt;​&lt;/p&gt;
+&lt;p&gt;When hosts are accessed via a third-party load balancer, the URL must include the address of the load-balancer. For example, &lt;strong&gt;&lt;code&gt;http://loadbalancer.com/goglobal/?host=hostname&amp;amp;app=Notepad&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -148,29 +181,29 @@ GO-Global AppControllerがインストールされていないかuseApp = false�
 &lt;h3 id=&#34;mac-os-x-appのインストール方法&#34;&gt;Mac OS X Appのインストール方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;web browserを起動します。&lt;/li&gt;
-&lt;li&gt;Locationボックスに、http://に続けてホスト名とAppControllerクライアントのインストールファイルを入力します。たとえば、http://host/goglobal/です。&lt;/li&gt;
-&lt;li&gt;指示に従ってAppController.dmgをダウンロードしてインストールします。&lt;/li&gt;
-&lt;li&gt;AppController.dmgを開き、AppController.appをアプリケーションにドラッグします。&lt;/li&gt;
+&lt;li&gt;Locationボックスに、http://に続けてホスト名とAppControllerクライアントのインストールファイルを入力します。たとえば、 &lt;strong&gt;&lt;code&gt;http://host/goglobal/&lt;/code&gt;&lt;/strong&gt; です。&lt;/li&gt;
+&lt;li&gt;指示に従って &lt;strong&gt;AppController.dmg&lt;/strong&gt; をダウンロードしてインストールします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AppController.dmg&lt;/strong&gt;を開き、&lt;strong&gt;AppController.app&lt;/strong&gt; をアプリケーションにドラッグします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;mac-os-x-appの起動方法&#34;&gt;Mac OS X Appの起動方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;メニューバーから[ Go | Applications ]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;GO-GlobalをダブルクリックをしてAppControllerを起動します。&lt;/li&gt;
-&lt;li&gt;[Connection]ダイアログにホストアドレスを入力します。&lt;/li&gt;
-&lt;li&gt;[Sign In]ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
+&lt;li&gt;GO-Globalをダブルクリックをして &lt;strong&gt;AppController&lt;/strong&gt; を起動します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Connection]&lt;/strong&gt; ダイアログにホストアドレスを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Sign In]&lt;/strong&gt; ダイアログが表示されたら、次の情報を入力します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;**[User Name]**ボックスにネットワークユーザ名を入力します。&lt;/li&gt;
-&lt;li&gt;**[Password]**ボックスにネットワークユーザのパスワードを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[User Name]&lt;/strong&gt; ボックスにネットワークユーザ名を入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Password]&lt;/strong&gt; ボックスにネットワークユーザのパスワードを入力します。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Mac OS X Appをアンインストールするには、AppController.appをアプリケーションからゴミ箱にドラッグします。&lt;/p&gt;
+&lt;p&gt;Mac OS X Appをアンインストールするには、&lt;strong&gt;AppController.app&lt;/strong&gt; をアプリケーションからゴミ箱にドラッグします。&lt;/p&gt;
 &lt;h3 id=&#34;mac-os-x-appで起動パラメータを使用する方法&#34;&gt;Mac OS X Appで起動パラメータを使用する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;ターミナルを起動します。&lt;/li&gt;
-&lt;li&gt;/Applications/AppController.app/Contents/MacOS/ とディレクトリを変更します。&lt;/li&gt;
-&lt;li&gt;./AppControllerとスタートパラーメータを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Terminal&lt;/strong&gt; を起動します。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/Applications/AppController.app/Contents/MacOS/&lt;/code&gt; とディレクトリを変更します。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;./AppController&lt;/code&gt; とスタートパラーメータを入力します。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;例：./AppController –h 196.125.101.222 –ac all –hp 443&lt;/p&gt;
+&lt;p&gt;例：&lt;code&gt;./AppController –h 196.125.101.222 –ac all –hp 443&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -195,124 +228,124 @@ GO-Global AppControllerがインストールされていないかuseApp = false�
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;-u&lt;/td&gt;
-&lt;td&gt;user&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-u&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;user&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;ユーザのアカウント名&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-p&lt;/td&gt;
-&lt;td&gt;password&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-p&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;password&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;ユーザのパスワード&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-h&lt;/td&gt;
-&lt;td&gt;host*&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-h&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;host※&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;GO-Globalホストのネットワーク名&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-hp&lt;/td&gt;
-&lt;td&gt;port&lt;/td&gt;
+&lt;td&gt;*&lt;em&gt;-hp&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;port&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;GO-Globalホストが接続を受け入れるポート(既定では491)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-a&lt;/td&gt;
-&lt;td&gt;app&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-a&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;app&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;実行するアプリケーション。これはコマンドライン文字列か、Admin Consoleに登録されているアプリケーション名です。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-r&lt;/td&gt;
-&lt;td&gt;args&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-r&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;args&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;アプリケーションの引数&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-c or -nc&lt;/td&gt;
-&lt;td&gt;compression&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-c or -nc&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;compression&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;-cは圧縮を有効にします。-ncは圧縮を無効にします。compression= &amp;ldquo;true&amp;rdquo; は圧縮を有効にし、 compression= &amp;ldquo;false&amp;rdquo; は圧縮を無効にします。圧縮はデフォルトで有効になっています。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-ac&lt;/td&gt;
-&lt;td&gt;printerconfig&lt;/td&gt;
-&lt;td&gt;起動時にプリンタがどのように初期化されるかを決定します。printerconfig = &amp;ldquo;all&amp;rdquo; または -ac の後にすべてが続く場合、すべてのプリンタが自動的に構成されます。printerconfig = &amp;ldquo;none&amp;rdquo; または -ac の後に none が続く場合、プリンタは自動的に構成されません。printerconfig = &amp;ldquo;default&amp;rdquo; または -ac の後に default が続くと、デフォルトのプリンタが自動的に構成されます。これがデフォルト設定です。&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-ac&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;printerconfig&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;起動時にプリンタがどのように初期化されるかを決定します。printerconfig = &amp;ldquo;all&amp;rdquo; または -ac の後にすべてが続く場合、すべてのプリンタが自動的に構成されます。printerconfig = &amp;ldquo;none&amp;rdquo; または -ac の後に none が続く場合、プリンタは自動的に構成されません。printerconfig = &amp;ldquo;default&amp;rdquo; または -ac の後に &lt;strong&gt;default&lt;/strong&gt; が続くと、デフォルトのプリンタが自動的に構成されます。これがデフォルト設定です。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-f&lt;/td&gt;
-&lt;td&gt;clientframe&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-f&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;clientframe&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;それぞれ1または &amp;ldquo;true &amp;ldquo;に設定すると、セッション内で実行されているすべてのアプリケーションがバウンディングウィンドウ内に表示されます。それぞれ0または &amp;ldquo;false &amp;ldquo;に設定すると、アプリケーションはそれぞれのウィンドウ内に表示されます。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-autoreconnect&lt;/td&gt;
-&lt;td&gt;autoreconnect&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-autoreconnect&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;autoreconnect&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;接続が切断された後にクライアントが自動的に再接続を試みる回数を指定します。URL に autoreconnect=n を指定した場合、または -autoreconnect の後に n を指定した場合、クライアントは自動的に n 回の再接続を試みます(デフォルトではautoreconnectは20回に設定されています)。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-geometry&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-geometry&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;クライアントウィンドウの幅と高さ。例: -geometry 800x600&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;multimonitor&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;multimonitor&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;&amp;ldquo;true&amp;quot;に設定すると、セッションのデスクトップはすべてのモニターにまたがります。&amp;ldquo;false&amp;quot;に設定すると、アプリケーションはプライマリモニタに限定されます。multimonitor = “true&amp;quot;がデフォルトの設定です。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;width&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;width&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;フレームまたは埋め込みウィンドウの幅(デフォルトでは800)。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;height&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;height&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;フレームまたは埋め込みウィンドウの高さ(デフォルトでは600)。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;embed&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;embed&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;&amp;ldquo;true&amp;quot;に設定すると、アプリケーションはブラウザウィンドウ内で実行されます。&amp;ldquo;false&amp;quot;に設定すると、アプリケーションはブラウザウィンドウの外で実行されます。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;bInBrowser&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;bInBrowser&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;バージョン6ではサポートされていません。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;noscale&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;noscale&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;noscale が &amp;ldquo;true&amp;rdquo; に設定され、ブラウザのサイズが変更されると、埋め込まれた GO-Global セッションの解像度は、クライアント上で表示されている画像を拡大縮小するのではなく、それに応じて調整されます(デフォルトでは noscale = &amp;ldquo;false&amp;rdquo; です)。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;useApp&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;useApp&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;useApp =“ true”の場合、GO-Global WebアプリはAppControllerを起動しようとします。useApp =“ false”の場合、WebアプリはAppControllerを起動しようとしません(デフォルトではuseApp =“true&amp;rdquo;)。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;td&gt;installApp&lt;/td&gt;
-&lt;td&gt;installApp =“ true”の場合、AppControllerがまだインストールされていない場合は、インストールするように求められます。 installApp =“ false”の場合、ユーザはAppControllerをインストールするように求められず、それをインストールするためのリンクは表示されません。installApp =“ addLink”の場合、AppControllerがまだインストールされていなければ、Get the AppリンクがGO-Global Web Appのツールバーに追加されます。&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;installApp&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;installApp =“ true”の場合、AppControllerがまだインストールされていない場合は、インストールするように求められます。 installApp =“ false”の場合、ユーザはAppControllerをインストールするように求められず、それをインストールするためのリンクは表示されません。installApp =“ addLink”の場合、AppControllerがまだインストールされていなければ、&lt;strong&gt;Get the App&lt;/strong&gt; リンクがGO-Global Web Appのツールバーに追加されます。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-clientscale&lt;/td&gt;
-&lt;td&gt;clientscale&lt;/td&gt;
-&lt;td&gt;clientscaleに続いてパーセントスケールファクタを指定すると、Windows上のAppControllerは、セッションで実行されているアプリケーションを、クライアントコンピュータでローカルに実行されているアプリケーションに対して相対的にスケーリングします。 たとえば、コマンドラインに-clientscale 200を追加すると、GO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータでローカルに実行されているアプリケーションの2倍の大きさで表示されます。&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-clientscale&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;clientscale&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;clientscale&lt;/strong&gt; に続いてパーセントスケールファクタを指定すると、Windows上のAppControllerは、セッションで実行されているアプリケーションを、クライアントコンピュータでローカルに実行されているアプリケーションに対して相対的にスケーリングします。たとえば、コマンドラインに &lt;strong&gt;-clientscale 200&lt;/strong&gt; を追加すると、GO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータでローカルに実行されているアプリケーションの2倍の大きさで表示されます。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-clientdpi&lt;/td&gt;
-&lt;td&gt;ClientDPIScaling Enabled&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-clientdpi&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;ClientDPIScaling Enabled&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;-clientdpi 1 または ClientDPIScalingEnabled=&amp;quot;true&amp;rdquo; では、GO-Global アプリの DPI スケーリング機能が有効になります。-clientdpi 0 または ClientDPIScalingEnabled=&amp;quot;false&amp;rdquo; は、この機能を無効にします。これらのオプションを指定すると、ホストの HostProperties.xml ファイルの ClientDPIScalingEnabled プロパティの値が上書きされます。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-cn&lt;/td&gt;
-&lt;td&gt;computerName&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-cn&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;computerName&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;cn 1 または computerName=1 の場合、Windows クライアントは、実際のコンピュータ名ではなく CLIENTNAME 環境変数をホストに送信します。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;-krm&lt;/td&gt;
-&lt;td&gt;keyreportingmethod&lt;/td&gt;
-&lt;td&gt;このオプションは、クライアントが文字タイプに基づいて unicode またはキーコード値をホストに送信するように指示します。-krm 0 クライアントは、アルファキーをunicodeとして、数値キーをunicodeとして送信します。-KRM 1 クライアントは、アルファキーをキーコードとして、数値キーをユニコードとして送信します。-KRM 2 クライアントは、アルファキーをunicode、数値キーをunicodeとして送信します。-KRM 3クライアントは、アルファキーをキーコードとして、数値キーをキーコードとして送信します。&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;-krm&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;keyreportingmethod&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;このオプションは、クライアントが文字タイプに基づいて unicode またはキーコード値をホストに送信するように指示します。&lt;br&gt;-krm 0 クライアントは、アルファキーをunicodeとして、数値キーをunicodeとして送信します。&lt;br&gt;-krm 1 クライアントは、アルファキーをキーコードとして、数値キーをユニコードとして送信します。&lt;br&gt;-krm 2 クライアントは、アルファキーをunicode、数値キーをunicodeとして送信します。&lt;br&gt;-krm 3クライアントは、アルファキーをキーコードとして、数値キーをキーコードとして送信します。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;*ログオンHTMLページでホストが指定されていない場合、GO-Globalはログオンファイルのダウンロード元のマシンを検出し、そのホストに接続します。 **[Connection]**ダイアログは表示されず、ユーザには **[Sign In]**ダイアログのみが表示されます。&lt;/p&gt;
-&lt;p&gt;host = &amp;ldquo;？&amp;ldquo;の場合ユーザはホストのアドレスの入力を求められます。アプリケーションが指定されていない場合は、Program Windowsが開きます。&lt;/p&gt;
+&lt;p&gt;※ログオンHTMLページでホストが指定されていない場合、GO-Globalはログオンファイルのダウンロード元のマシンを検出し、そのホストに接続します。 &lt;strong&gt;[Connection]&lt;/strong&gt; ダイアログは表示されず、ユーザには &lt;strong&gt;[Sign In]&lt;/strong&gt; ダイアログのみが表示されます。&lt;/p&gt;
+&lt;p&gt;host=&amp;rdquo;?&amp;ldquo;の場合ユーザはホストのアドレスの入力を求められます。アプリケーションが指定されていない場合は、Program Windowsが開きます。&lt;/p&gt;
 
       </description>
     </item>
@@ -375,9 +408,9 @@ controlArgs.set([ &amp;quot;embed&amp;quot;, &amp;quot;true&amp;quot; ]);
 &lt;p&gt;URLに起動パラメータを追加して指定することもできます。&lt;/p&gt;
 &lt;h3 id=&#34;urlパラメータの指定方法&#34;&gt;URLパラメータの指定方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Webブラウザの[Location]ボックスに、http://に続けてホスト名とAppControllerディレクトリを入力します。例:http://hostname/goglobal&lt;/li&gt;
-&lt;li&gt;クエスチョンマーク(?)をURLに追加し、その後に目的のパラメータを続けます。例:http://hostname/goglobal/?user=user1&lt;/li&gt;
-&lt;li&gt;追加のパラメータを指定するには、URLにアンパサンド(＆)を追加します。例:http://hostname/goglobal/?user=user1&amp;amp;password=password1&amp;amp; app=wordpad&lt;/li&gt;
+&lt;li&gt;Webブラウザの[Location]ボックスに、http://に続けてホスト名とAppControllerディレクトリを入力します。例: &lt;code&gt;http://hostname/goglobal&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;クエスチョンマーク &lt;strong&gt;(?)&lt;/strong&gt; をURLに追加し、その後に目的のパラメータを続けます。例: &lt;code&gt;http://hostname/goglobal/?user=user1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;追加のパラメータを指定するには、URLにアンパサンド &lt;strong&gt;(＆)&lt;/strong&gt; を追加します。例: &lt;code&gt;http://hostname/goglobal/?user=user1&amp;amp;password=password1&amp;amp;app=wordpad&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
@@ -393,24 +426,30 @@ controlArgs.set([ &amp;quot;embed&amp;quot;, &amp;quot;true&amp;quot; ]);
         
         
         &lt;p&gt;GO-Globalホストのセットアップは、C:\Program Files\GraphOn\GO-Global\Webの下にGO-Global Webファイルをインストールします。インストール中にMicrosoftインターネットインフォメーションサービス(IIS)が検出されると、GO-Global Webファイルを指す仮想ディレクトリがIISに作成されます。IISが利用できない場合、管理者は指定されたWebサーバー上でGO-Global Webフォルダの内容を手動でホストする必要があります。&lt;/p&gt;
-&lt;p&gt;管理者はHTMLページを編集してデフォルトオプションを変更したり、どのクライアントをユーザが利用できるようにしたりするかを制限できます。インストール中、初期Webページはlogon.htmlに設定されます。Webブラウザからホストにアクセスするユーザは、次のURLにアクセスする必要があります。http://hostname/go-global/&lt;/p&gt;
-&lt;p&gt;Windows用GO-Global AppControllerには、オールユーザバージョンとシングルユーザバージョンの2つのバージョンがあります。オールユーザ版のインストーラ（AppController.AllUsers.exe）は、コンピュータを使用するすべてのユーザに対してAppControllerをインストールしますが、コンピュータの管理者権限を持つユーザのみがインストールできます。オールユーザバージョンをインストールするには、URLに次のようにパラメータ「allusers=true」を追加する必要があります。例：http://hostname/goglobal/?allusers=true。&lt;/p&gt;
-&lt;p&gt;シングルユーザ版のインストーラ（AppController.exe）は、コンピュータの管理者権限を持たないユーザが実行できますが、インストーラを実行しているユーザのみがインストールされます。別のユーザが同じコンピュータ上でAppControllerを実行したい場合は、そのユーザもシングルユーザ版のインストーラーを実行する必要があります。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;通常のユーザがローカルポリシーまたはグループポリシーによってソフトウェアのインストールを阻止されている場合、GO-Global AppControllerのシングルユーザバージョンのインストールに失敗することがあります。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;管理者はHTMLページを編集してデフォルトオプションを変更したり、どのクライアントをユーザが利用できるようにしたりするかを制限できます。インストール中、初期Webページはlogon.htmlに設定されます。Webブラウザからホストにアクセスするユーザは、次のURLにアクセスする必要があります。&lt;strong&gt;&lt;code&gt;http://hostname/go-global/&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Windows用GO-Global AppControllerには、&lt;strong&gt;オールユーザ&lt;/strong&gt; バージョンと &lt;strong&gt;シングルユーザ&lt;/strong&gt; バージョンの2つのバージョンがあります。&lt;strong&gt;オールユーザ&lt;/strong&gt; 版のインストーラ &lt;strong&gt;(AppController.AllUsers.exe)&lt;/strong&gt; は、コンピュータを使用するすべてのユーザに対してAppControllerをインストールしますが、コンピュータの管理者権限を持つユーザのみがインストールできます。オールユーザバージョンをインストールするには、URLに次のようにパラメータ &lt;strong&gt;?allusers=true&lt;/strong&gt; を追加する必要があります。例: &lt;strong&gt;&lt;code&gt;http://hostname/goglobal/?allusers=true&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;シングルユーザ&lt;/strong&gt; 版のインストーラ &lt;strong&gt;(AppController.exe)&lt;/strong&gt; は、コンピュータの管理者権限を持たないユーザが実行できますが、インストーラを実行しているユーザのみがインストールされます。別のユーザが同じコンピュータ上でAppControllerを実行したい場合は、そのユーザもシングルユーザ版のインストーラーを実行する必要があります。&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+通常のユーザがローカルポリシーまたはグループポリシーによってソフトウェアのインストールを阻止されている場合、GO-Global AppControllerのシングルユーザバージョンのインストールに失敗することがあります。
+&lt;/div&gt;
+
 &lt;h2 id=&#34;urlエイリアスの作成&#34;&gt;URLエイリアスの作成&lt;/h2&gt;
-&lt;p&gt;管理者がログオンURLをパーソナライズしたい場合(たとえば、http://hostname/goglobalの代わりにhttp://hostname/wilsonを使用)、URLのエイリアスを作成できます。詳細については、次の記事を参照してください。&lt;/p&gt;
-&lt;p&gt;IISの場合：https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder&lt;/p&gt;
-&lt;p&gt;Apacheの場合：https://httpd.apache.org/docs/2.4/mod/mod_alias.html&lt;/p&gt;
+&lt;p&gt;管理者がログオンURLをパーソナライズしたい場合(例えば、 &lt;strong&gt;http://hostname/goglobal&lt;/strong&gt; の代わりに &lt;strong&gt;http://hostname/wilson&lt;/strong&gt; を使用)、URLのエイリアスを作成できます。詳細については、次の記事を参照してください。&lt;/p&gt;
+&lt;p&gt;IISの場合: &lt;strong&gt;&lt;a href=&#34;https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder&#34;&gt;https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Apacheの場合: &lt;strong&gt;&lt;a href=&#34;https://httpd.apache.org/docs/2.4/mod/mod_alias.html&#34;&gt;https://httpd.apache.org/docs/2.4/mod/mod_alias.html&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;クライアントウィンドウのサイズ変更&#34;&gt;クライアントウィンドウのサイズ変更&lt;/h2&gt;
 &lt;p&gt;コマンドライン引数–fを使用すると、コマンドライン引数–geometryを使用してクライアントウィンドウのサイズを変更できます。コマンドラインに-geometryを指定しないと、クライアントウィンドウは最大化されます。GO-Globalをルーズウィンドウモードで実行した場合、-geometryは効果がありません。クライアントウィンドウのサイズを変更するには、GO-Globalクライアント実行可能ファイルに–geometryを追加し、その後に目的の幅と高さを続けます。&lt;/p&gt;
 &lt;p&gt;例：Windows
-C:\Program Files\GraphOn\AppController\AppController.exe”&lt;/p&gt;
+&lt;code&gt;&amp;quot;C:\Program Files\GraphOn\AppController\AppController.exe&amp;quot; -f -geometry=800x600&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Linux: 
-./AppController -h 196.125.010.222 -f -geometry=800x600&lt;/p&gt;
+&lt;code&gt;./AppController -h 196.125.010.222 -f -geometry=800x600&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Mac: 
-./AppController -h 196.125.010.222 -f -geometry=800x600&lt;/p&gt;
+&lt;code&gt;./AppController -h 196.125.010.222 -f -geometry=800x600&lt;/code&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -433,9 +472,15 @@ C:\Program Files\GraphOn\AppController\AppController.exe”&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;削除&lt;/strong&gt;をクリックします。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;削除&lt;/strong&gt;をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;ユーザがGO-Globalのスクロール速度が遅い場合は、ホストのスムーズスクロールオプションを無効にしてみてください。Internet Explorerで、[ツール]メニューから[ツール]をクリックします。インターネット設定、詳細設定タブをクリックします。[設定]ボックスの[閲覧]で、[スムーズスクロールを使用する]を無効にします。&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+ユーザがGO-Globalのスクロール速度が遅い場合は、ホストのスムーズスクロールオプションを無効にしてみてください。Internet Explorerで、[ツール]メニューから[ツール | インターネット設定 | &lt;strong&gt;詳細設定タブ&lt;/strong&gt; ]をクリックします。 &lt;strong&gt;[設定]&lt;/strong&gt; ボックスの &lt;strong&gt;[閲覧]&lt;/strong&gt; で、&lt;strong&gt;[スムーズスクロールを使用する]&lt;/strong&gt; を無効にします。
+&lt;/div&gt;
+
 
       </description>
     </item>
@@ -454,27 +499,38 @@ C:\Program Files\GraphOn\AppController\AppController.exe”&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;GO-Global AppController をインストールします。(自動クライアント更新機能はWindowsコンピュータでのみ利用可能です)。&lt;/li&gt;
 &lt;li&gt;管理者コンソールで、[Tools | Host Options]をクリックします。&lt;/li&gt;
-&lt;li&gt;[Client Access] タブをクリックします。&lt;/li&gt;
-&lt;li&gt;[Automatically update clients]を有効にします。&lt;/li&gt;
-&lt;li&gt;[OK]をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Client Access]&lt;/strong&gt; タブをクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Automatically update clients]&lt;/strong&gt; を有効にします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[OK]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Mac および Linux のユーザーは、GO-AppControllerのログオンページ(http://hostname/goglobal/など)に接続し、GO-Global AppControllerをインストールすることで、更新バージョンのGO-Globalをダウンロードできます。&lt;/p&gt;
+&lt;p&gt;Mac および Linux のユーザーは、GO-AppControllerのログオンページ(&lt;code&gt;http://hostname/goglobal/&lt;/code&gt;など)に接続し、GO-Global AppControllerをインストールすることで、更新バージョンのGO-Globalをダウンロードできます。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/5-8-1.png&#34; alt=&#34;5-8-1&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Global AppControllerのオールユーザバージョンとシングルユーザバージョンでは、クライアントのアップグレード方法が異なります。オールユーザバージョンのクライアントでは、GO-Global Update Client サービスをインストールしてアップグレードを実行しますが、シングルユーザバージョンのクライアントでは、サービスを使用せずにアップグレードを実行します。シングルユーザ自動クライアント更新機能は、バージョン6.1以降でのみサポートされており、製品の以前のバージョンからバージョン6.1にアップグレードする場合はサポートされません。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Admin Consoleでクライアントの自動更新を選択し、ユーザーが Windows コンピュータからホストにサインインすると、GO-Globalはクライアントコンピュータにインストールされている GO-Global AppControllerのバージョンとホスト上の GO-Global\Web\Clients ディレクトリのバージョンを比較します。ホスト上のクライアントインストーラが新しい場合、GO-Globalはクライアントコンピュータの一時ディレクトリにインストーラをコピーします。その後、GO-Globalが終了すると、新しいバージョンがインストールされ、その後の GO-Globalセッションで使用できるようになります。新しい更新プログラムのインストールが完了すると、ユーザは画面上で更新されます。&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+GO-Global AppControllerのオールユーザバージョンとシングルユーザバージョンでは、クライアントのアップグレード方法が異なります。 &lt;strong&gt;オールユーザ&lt;/strong&gt; バージョンのクライアントでは、GO-Global Update Client サービスをインストールしてアップグレードを実行しますが、 &lt;strong&gt;シングルユーザ&lt;/strong&gt; バージョンのクライアントでは、サービスを使用せずにアップグレードを実行します。シングルユーザ自動クライアント更新機能は、バージョン6.1以降でのみサポートされており、製品の以前のバージョンからバージョン6.1にアップグレードする場合はサポートされません。
+&lt;/div&gt;
+
+&lt;p&gt;Admin Consoleで &lt;strong&gt;クライアントの自動更新&lt;/strong&gt; を選択し、ユーザーが Windows コンピュータからホストにサインインすると、GO-Globalはクライアントコンピュータにインストールされている GO-Global AppControllerのバージョンとホスト上の GO-Global\Web\Clients ディレクトリのバージョンを比較します。ホスト上のクライアントインストーラが新しい場合、GO-Globalはクライアントコンピュータの一時ディレクトリにインストーラをコピーします。その後、GO-Globalが終了すると、新しいバージョンがインストールされ、その後の GO-Globalセッションで使用できるようになります。新しい更新プログラムのインストールが完了すると、ユーザは画面上で更新されます。&lt;/p&gt;
 &lt;p&gt;要約すると、以下の条件を満たした場合にGO-Globalの新バージョンがインストールされます。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;クライアントを自動的に更新することは、Admin Consoleで有効になっています。&lt;/li&gt;
-&lt;li&gt;クライアントの新しいバージョンは、ホスト上の GO-Global\Web\Clients ディレクトリで利用可能です。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;クライアントを自動的に更新する&lt;/strong&gt; ことは、Admin Consoleで有効になっています。&lt;/li&gt;
+&lt;li&gt;クライアントの新しいバージョンは、ホスト上の &lt;code&gt;GO-Global\Web\Clients&lt;/code&gt; ディレクトリで利用可能です。&lt;/li&gt;
 &lt;li&gt;新しいクライアントインストーラがクライアントコンピュータにダウンロードされました。&lt;/li&gt;
 &lt;li&gt;ユーザはGO-Globalクライアントセッションからサインアウトしました。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Updatesフォルダのデフォルトの場所はC:\Program Files\GraphOn\GO-Global\Updateになります。それはレジストリキーで定義される: HKEY_LOCAL_MACHINE_MACHINESOFTWARE\GraphOn\AppControllerUpdates
-.&lt;/p&gt;
-&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+Updatesフォルダのデフォルトの場所はC:\Program Files\GraphOn\GO-Global\Updateになります。それはレジストリキーで定義される:HKEY_LOCAL_MACHINE_MACHINESOFTWARE\GraphOn\AppControllerUpdates
+&lt;/div&gt;
+
 
       </description>
     </item>

@@ -22,22 +22,22 @@
 
 <title>GO-Globalスタートアップパラメータ | kitASP Docs</title><meta property="og:title" content="GO-Globalスタートアップパラメータ" />
 <meta property="og:description" content="GO-Globalは、次のショートカットとハイパーリンクのパラメータをサポートしています。
-   Shortcut Parameters Description     -u user ユーザのアカウント名   -p password ユーザのパスワード   -h host* GO-Globalホストのネットワーク名   -hp port GO-Globalホストが接続を受け入れるポート(既定では491)   -a app 実行するアプリケーション。これはコマンドライン文字列か、Admin Consoleに登録されているアプリケーション名です。   -r args アプリケーションの引数   -c or -nc compression -cは圧縮を有効にします。-ncは圧縮を無効にします。compression= &ldquo;true&rdquo; は圧縮を有効にし、 compression= &ldquo;false&rdquo; は圧縮を無効にします。圧縮はデフォルトで有効になっています。   -ac printerconfig 起動時にプリンタがどのように初期化されるかを決定します。printerconfig = &ldquo;all&rdquo; または -ac の後にすべてが続く場合、すべてのプリンタが自動的に構成されます。printerconfig = &ldquo;none&rdquo; または -ac の後に none が続く場合、プリンタは自動的に構成されません。printerconfig = &ldquo;default&rdquo; または -ac の後に default が続くと、デフォルトのプリンタが自動的に構成されます。これがデフォルト設定です。   -f clientframe それぞれ1または &ldquo;true &ldquo;に設定すると、セッション内で実行されているすべてのアプリケーションがバウンディングウィンドウ内に表示されます。それぞれ0または &ldquo;false &ldquo;に設定すると、アプリケーションはそれぞれのウィンドウ内に表示されます。   -autoreconnect autoreconnect 接続が切断された後にクライアントが自動的に再接続を試みる回数を指定します。URL に autoreconnect=n を指定した場合、または -autoreconnect の後に n を指定した場合、クライアントは自動的に n 回の再接続を試みます(デフォルトではautoreconnectは20回に設定されています)。   -geometry  クライアントウィンドウの幅と高さ。例: -geometry 800x600    multimonitor &ldquo;true&quot;に設定すると、セッションのデスクトップはすべてのモニターにまたがります。&ldquo;false&quot;に設定すると、アプリケーションはプライマリモニタに限定されます。multimonitor = “true&quot;がデフォルトの設定です。    width フレームまたは埋め込みウィンドウの幅(デフォルトでは800)。    height フレームまたは埋め込みウィンドウの高さ(デフォルトでは600)。    embed &ldquo;true&quot;に設定すると、アプリケーションはブラウザウィンドウ内で実行されます。&ldquo;false&quot;に設定すると、アプリケーションはブラウザウィンドウの外で実行されます。    bInBrowser バージョン6ではサポートされていません。    noscale noscale が &ldquo;true&rdquo; に設定され、ブラウザのサイズが変更されると、埋め込まれた GO-Global セッションの解像度は、クライアント上で表示されている画像を拡大縮小するのではなく、それに応じて調整されます(デフォルトでは noscale = &ldquo;false&rdquo; です)。    useApp useApp =“ true”の場合、GO-Global WebアプリはAppControllerを起動しようとします。useApp =“ false”の場合、WebアプリはAppControllerを起動しようとしません(デフォルトではuseApp =“true&rdquo;)。    installApp installApp =“ true”の場合、AppControllerがまだインストールされていない場合は、インストールするように求められます。 installApp =“ false”の場合、ユーザはAppControllerをインストールするように求められず、それをインストールするためのリンクは表示されません。installApp =“ addLink”の場合、AppControllerがまだインストールされていなければ、Get the AppリンクがGO-Global Web Appのツールバーに追加されます。   -clientscale clientscale clientscaleに続いてパーセントスケールファクタを指定すると、Windows上のAppControllerは、セッションで実行されているアプリケーションを、クライアントコンピュータでローカルに実行されているアプリケーションに対して相対的にスケーリングします。 たとえば、コマンドラインに-clientscale 200を追加すると、GO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータでローカルに実行されているアプリケーションの2倍の大きさで表示されます。   -clientdpi ClientDPIScaling Enabled -clientdpi 1 または ClientDPIScalingEnabled=&quot;true&rdquo; では、GO-Global アプリの DPI スケーリング機能が有効になります。-clientdpi 0 または ClientDPIScalingEnabled=&quot;false&rdquo; は、この機能を無効にします。これらのオプションを指定すると、ホストの HostProperties." />
+   Shortcut Parameters Description     -u user ユーザのアカウント名   -p password ユーザのパスワード   -h host※ GO-Globalホストのネットワーク名   *-hp port GO-Globalホストが接続を受け入れるポート(既定では491)   -a app 実行するアプリケーション。これはコマンドライン文字列か、Admin Consoleに登録されているアプリケーション名です。   -r args アプリケーションの引数   -c or -nc compression -cは圧縮を有効にします。-ncは圧縮を無効にします。compression= &ldquo;true&rdquo; は圧縮を有効にし、 compression= &ldquo;false&rdquo; は圧縮を無効にします。圧縮はデフォルトで有効になっています。   -ac printerconfig 起動時にプリンタがどのように初期化されるかを決定します。printerconfig = &ldquo;all&rdquo; または -ac の後にすべてが続く場合、すべてのプリンタが自動的に構成されます。printerconfig = &ldquo;none&rdquo; または -ac の後に none が続く場合、プリンタは自動的に構成されません。printerconfig = &ldquo;default&rdquo; または -ac の後に default が続くと、デフォルトのプリンタが自動的に構成されます。これがデフォルト設定です。   -f clientframe それぞれ1または &ldquo;true &ldquo;に設定すると、セッション内で実行されているすべてのアプリケーションがバウンディングウィンドウ内に表示されます。それぞれ0または &ldquo;false &ldquo;に設定すると、アプリケーションはそれぞれのウィンドウ内に表示されます。   -autoreconnect autoreconnect 接続が切断された後にクライアントが自動的に再接続を試みる回数を指定します。URL に autoreconnect=n を指定した場合、または -autoreconnect の後に n を指定した場合、クライアントは自動的に n 回の再接続を試みます(デフォルトではautoreconnectは20回に設定されています)。   -geometry  クライアントウィンドウの幅と高さ。例: -geometry 800x600    multimonitor &ldquo;true&quot;に設定すると、セッションのデスクトップはすべてのモニターにまたがります。&ldquo;false&quot;に設定すると、アプリケーションはプライマリモニタに限定されます。multimonitor = “true&quot;がデフォルトの設定です。    width フレームまたは埋め込みウィンドウの幅(デフォルトでは800)。    height フレームまたは埋め込みウィンドウの高さ(デフォルトでは600)。    embed &ldquo;true&quot;に設定すると、アプリケーションはブラウザウィンドウ内で実行されます。&ldquo;false&quot;に設定すると、アプリケーションはブラウザウィンドウの外で実行されます。    bInBrowser バージョン6ではサポートされていません。    noscale noscale が &ldquo;true&rdquo; に設定され、ブラウザのサイズが変更されると、埋め込まれた GO-Global セッションの解像度は、クライアント上で表示されている画像を拡大縮小するのではなく、それに応じて調整されます(デフォルトでは noscale = &ldquo;false&rdquo; です)。    useApp useApp =“ true”の場合、GO-Global WebアプリはAppControllerを起動しようとします。useApp =“ false”の場合、WebアプリはAppControllerを起動しようとしません(デフォルトではuseApp =“true&rdquo;)。    installApp installApp =“ true”の場合、AppControllerがまだインストールされていない場合は、インストールするように求められます。 installApp =“ false”の場合、ユーザはAppControllerをインストールするように求められず、それをインストールするためのリンクは表示されません。installApp =“ addLink”の場合、AppControllerがまだインストールされていなければ、Get the App リンクがGO-Global Web Appのツールバーに追加されます。   -clientscale clientscale clientscale に続いてパーセントスケールファクタを指定すると、Windows上のAppControllerは、セッションで実行されているアプリケーションを、クライアントコンピュータでローカルに実行されているアプリケーションに対して相対的にスケーリングします。たとえば、コマンドラインに -clientscale 200 を追加すると、GO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータでローカルに実行されているアプリケーションの2倍の大きさで表示されます。   -clientdpi ClientDPIScaling Enabled -clientdpi 1 または ClientDPIScalingEnabled=&quot;true&rdquo; では、GO-Global アプリの DPI スケーリング機能が有効になります。-clientdpi 0 または ClientDPIScalingEnabled=&quot;false&rdquo; は、この機能を無効にします。これらのオプションを指定すると、ホストの HostProperties." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/runninggo-global/go-globalstartupparameters/" />
 <meta property="article:modified_time" content="2020-06-03T03:24:08+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="GO-Globalスタートアップパラメータ">
 <meta itemprop="description" content="GO-Globalは、次のショートカットとハイパーリンクのパラメータをサポートしています。
-   Shortcut Parameters Description     -u user ユーザのアカウント名   -p password ユーザのパスワード   -h host* GO-Globalホストのネットワーク名   -hp port GO-Globalホストが接続を受け入れるポート(既定では491)   -a app 実行するアプリケーション。これはコマンドライン文字列か、Admin Consoleに登録されているアプリケーション名です。   -r args アプリケーションの引数   -c or -nc compression -cは圧縮を有効にします。-ncは圧縮を無効にします。compression= &ldquo;true&rdquo; は圧縮を有効にし、 compression= &ldquo;false&rdquo; は圧縮を無効にします。圧縮はデフォルトで有効になっています。   -ac printerconfig 起動時にプリンタがどのように初期化されるかを決定します。printerconfig = &ldquo;all&rdquo; または -ac の後にすべてが続く場合、すべてのプリンタが自動的に構成されます。printerconfig = &ldquo;none&rdquo; または -ac の後に none が続く場合、プリンタは自動的に構成されません。printerconfig = &ldquo;default&rdquo; または -ac の後に default が続くと、デフォルトのプリンタが自動的に構成されます。これがデフォルト設定です。   -f clientframe それぞれ1または &ldquo;true &ldquo;に設定すると、セッション内で実行されているすべてのアプリケーションがバウンディングウィンドウ内に表示されます。それぞれ0または &ldquo;false &ldquo;に設定すると、アプリケーションはそれぞれのウィンドウ内に表示されます。   -autoreconnect autoreconnect 接続が切断された後にクライアントが自動的に再接続を試みる回数を指定します。URL に autoreconnect=n を指定した場合、または -autoreconnect の後に n を指定した場合、クライアントは自動的に n 回の再接続を試みます(デフォルトではautoreconnectは20回に設定されています)。   -geometry  クライアントウィンドウの幅と高さ。例: -geometry 800x600    multimonitor &ldquo;true&quot;に設定すると、セッションのデスクトップはすべてのモニターにまたがります。&ldquo;false&quot;に設定すると、アプリケーションはプライマリモニタに限定されます。multimonitor = “true&quot;がデフォルトの設定です。    width フレームまたは埋め込みウィンドウの幅(デフォルトでは800)。    height フレームまたは埋め込みウィンドウの高さ(デフォルトでは600)。    embed &ldquo;true&quot;に設定すると、アプリケーションはブラウザウィンドウ内で実行されます。&ldquo;false&quot;に設定すると、アプリケーションはブラウザウィンドウの外で実行されます。    bInBrowser バージョン6ではサポートされていません。    noscale noscale が &ldquo;true&rdquo; に設定され、ブラウザのサイズが変更されると、埋め込まれた GO-Global セッションの解像度は、クライアント上で表示されている画像を拡大縮小するのではなく、それに応じて調整されます(デフォルトでは noscale = &ldquo;false&rdquo; です)。    useApp useApp =“ true”の場合、GO-Global WebアプリはAppControllerを起動しようとします。useApp =“ false”の場合、WebアプリはAppControllerを起動しようとしません(デフォルトではuseApp =“true&rdquo;)。    installApp installApp =“ true”の場合、AppControllerがまだインストールされていない場合は、インストールするように求められます。 installApp =“ false”の場合、ユーザはAppControllerをインストールするように求められず、それをインストールするためのリンクは表示されません。installApp =“ addLink”の場合、AppControllerがまだインストールされていなければ、Get the AppリンクがGO-Global Web Appのツールバーに追加されます。   -clientscale clientscale clientscaleに続いてパーセントスケールファクタを指定すると、Windows上のAppControllerは、セッションで実行されているアプリケーションを、クライアントコンピュータでローカルに実行されているアプリケーションに対して相対的にスケーリングします。 たとえば、コマンドラインに-clientscale 200を追加すると、GO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータでローカルに実行されているアプリケーションの2倍の大きさで表示されます。   -clientdpi ClientDPIScaling Enabled -clientdpi 1 または ClientDPIScalingEnabled=&quot;true&rdquo; では、GO-Global アプリの DPI スケーリング機能が有効になります。-clientdpi 0 または ClientDPIScalingEnabled=&quot;false&rdquo; は、この機能を無効にします。これらのオプションを指定すると、ホストの HostProperties.">
+   Shortcut Parameters Description     -u user ユーザのアカウント名   -p password ユーザのパスワード   -h host※ GO-Globalホストのネットワーク名   *-hp port GO-Globalホストが接続を受け入れるポート(既定では491)   -a app 実行するアプリケーション。これはコマンドライン文字列か、Admin Consoleに登録されているアプリケーション名です。   -r args アプリケーションの引数   -c or -nc compression -cは圧縮を有効にします。-ncは圧縮を無効にします。compression= &ldquo;true&rdquo; は圧縮を有効にし、 compression= &ldquo;false&rdquo; は圧縮を無効にします。圧縮はデフォルトで有効になっています。   -ac printerconfig 起動時にプリンタがどのように初期化されるかを決定します。printerconfig = &ldquo;all&rdquo; または -ac の後にすべてが続く場合、すべてのプリンタが自動的に構成されます。printerconfig = &ldquo;none&rdquo; または -ac の後に none が続く場合、プリンタは自動的に構成されません。printerconfig = &ldquo;default&rdquo; または -ac の後に default が続くと、デフォルトのプリンタが自動的に構成されます。これがデフォルト設定です。   -f clientframe それぞれ1または &ldquo;true &ldquo;に設定すると、セッション内で実行されているすべてのアプリケーションがバウンディングウィンドウ内に表示されます。それぞれ0または &ldquo;false &ldquo;に設定すると、アプリケーションはそれぞれのウィンドウ内に表示されます。   -autoreconnect autoreconnect 接続が切断された後にクライアントが自動的に再接続を試みる回数を指定します。URL に autoreconnect=n を指定した場合、または -autoreconnect の後に n を指定した場合、クライアントは自動的に n 回の再接続を試みます(デフォルトではautoreconnectは20回に設定されています)。   -geometry  クライアントウィンドウの幅と高さ。例: -geometry 800x600    multimonitor &ldquo;true&quot;に設定すると、セッションのデスクトップはすべてのモニターにまたがります。&ldquo;false&quot;に設定すると、アプリケーションはプライマリモニタに限定されます。multimonitor = “true&quot;がデフォルトの設定です。    width フレームまたは埋め込みウィンドウの幅(デフォルトでは800)。    height フレームまたは埋め込みウィンドウの高さ(デフォルトでは600)。    embed &ldquo;true&quot;に設定すると、アプリケーションはブラウザウィンドウ内で実行されます。&ldquo;false&quot;に設定すると、アプリケーションはブラウザウィンドウの外で実行されます。    bInBrowser バージョン6ではサポートされていません。    noscale noscale が &ldquo;true&rdquo; に設定され、ブラウザのサイズが変更されると、埋め込まれた GO-Global セッションの解像度は、クライアント上で表示されている画像を拡大縮小するのではなく、それに応じて調整されます(デフォルトでは noscale = &ldquo;false&rdquo; です)。    useApp useApp =“ true”の場合、GO-Global WebアプリはAppControllerを起動しようとします。useApp =“ false”の場合、WebアプリはAppControllerを起動しようとしません(デフォルトではuseApp =“true&rdquo;)。    installApp installApp =“ true”の場合、AppControllerがまだインストールされていない場合は、インストールするように求められます。 installApp =“ false”の場合、ユーザはAppControllerをインストールするように求められず、それをインストールするためのリンクは表示されません。installApp =“ addLink”の場合、AppControllerがまだインストールされていなければ、Get the App リンクがGO-Global Web Appのツールバーに追加されます。   -clientscale clientscale clientscale に続いてパーセントスケールファクタを指定すると、Windows上のAppControllerは、セッションで実行されているアプリケーションを、クライアントコンピュータでローカルに実行されているアプリケーションに対して相対的にスケーリングします。たとえば、コマンドラインに -clientscale 200 を追加すると、GO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータでローカルに実行されているアプリケーションの2倍の大きさで表示されます。   -clientdpi ClientDPIScaling Enabled -clientdpi 1 または ClientDPIScalingEnabled=&quot;true&rdquo; では、GO-Global アプリの DPI スケーリング機能が有効になります。-clientdpi 0 または ClientDPIScalingEnabled=&quot;false&rdquo; は、この機能を無効にします。これらのオプションを指定すると、ホストの HostProperties.">
 <meta itemprop="dateModified" content="2020-06-03T03:24:08&#43;09:00" />
-<meta itemprop="wordCount" content="176">
+<meta itemprop="wordCount" content="183">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="GO-Globalスタートアップパラメータ"/>
 <meta name="twitter:description" content="GO-Globalは、次のショートカットとハイパーリンクのパラメータをサポートしています。
-   Shortcut Parameters Description     -u user ユーザのアカウント名   -p password ユーザのパスワード   -h host* GO-Globalホストのネットワーク名   -hp port GO-Globalホストが接続を受け入れるポート(既定では491)   -a app 実行するアプリケーション。これはコマンドライン文字列か、Admin Consoleに登録されているアプリケーション名です。   -r args アプリケーションの引数   -c or -nc compression -cは圧縮を有効にします。-ncは圧縮を無効にします。compression= &ldquo;true&rdquo; は圧縮を有効にし、 compression= &ldquo;false&rdquo; は圧縮を無効にします。圧縮はデフォルトで有効になっています。   -ac printerconfig 起動時にプリンタがどのように初期化されるかを決定します。printerconfig = &ldquo;all&rdquo; または -ac の後にすべてが続く場合、すべてのプリンタが自動的に構成されます。printerconfig = &ldquo;none&rdquo; または -ac の後に none が続く場合、プリンタは自動的に構成されません。printerconfig = &ldquo;default&rdquo; または -ac の後に default が続くと、デフォルトのプリンタが自動的に構成されます。これがデフォルト設定です。   -f clientframe それぞれ1または &ldquo;true &ldquo;に設定すると、セッション内で実行されているすべてのアプリケーションがバウンディングウィンドウ内に表示されます。それぞれ0または &ldquo;false &ldquo;に設定すると、アプリケーションはそれぞれのウィンドウ内に表示されます。   -autoreconnect autoreconnect 接続が切断された後にクライアントが自動的に再接続を試みる回数を指定します。URL に autoreconnect=n を指定した場合、または -autoreconnect の後に n を指定した場合、クライアントは自動的に n 回の再接続を試みます(デフォルトではautoreconnectは20回に設定されています)。   -geometry  クライアントウィンドウの幅と高さ。例: -geometry 800x600    multimonitor &ldquo;true&quot;に設定すると、セッションのデスクトップはすべてのモニターにまたがります。&ldquo;false&quot;に設定すると、アプリケーションはプライマリモニタに限定されます。multimonitor = “true&quot;がデフォルトの設定です。    width フレームまたは埋め込みウィンドウの幅(デフォルトでは800)。    height フレームまたは埋め込みウィンドウの高さ(デフォルトでは600)。    embed &ldquo;true&quot;に設定すると、アプリケーションはブラウザウィンドウ内で実行されます。&ldquo;false&quot;に設定すると、アプリケーションはブラウザウィンドウの外で実行されます。    bInBrowser バージョン6ではサポートされていません。    noscale noscale が &ldquo;true&rdquo; に設定され、ブラウザのサイズが変更されると、埋め込まれた GO-Global セッションの解像度は、クライアント上で表示されている画像を拡大縮小するのではなく、それに応じて調整されます(デフォルトでは noscale = &ldquo;false&rdquo; です)。    useApp useApp =“ true”の場合、GO-Global WebアプリはAppControllerを起動しようとします。useApp =“ false”の場合、WebアプリはAppControllerを起動しようとしません(デフォルトではuseApp =“true&rdquo;)。    installApp installApp =“ true”の場合、AppControllerがまだインストールされていない場合は、インストールするように求められます。 installApp =“ false”の場合、ユーザはAppControllerをインストールするように求められず、それをインストールするためのリンクは表示されません。installApp =“ addLink”の場合、AppControllerがまだインストールされていなければ、Get the AppリンクがGO-Global Web Appのツールバーに追加されます。   -clientscale clientscale clientscaleに続いてパーセントスケールファクタを指定すると、Windows上のAppControllerは、セッションで実行されているアプリケーションを、クライアントコンピュータでローカルに実行されているアプリケーションに対して相対的にスケーリングします。 たとえば、コマンドラインに-clientscale 200を追加すると、GO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータでローカルに実行されているアプリケーションの2倍の大きさで表示されます。   -clientdpi ClientDPIScaling Enabled -clientdpi 1 または ClientDPIScalingEnabled=&quot;true&rdquo; では、GO-Global アプリの DPI スケーリング機能が有効になります。-clientdpi 0 または ClientDPIScalingEnabled=&quot;false&rdquo; は、この機能を無効にします。これらのオプションを指定すると、ホストの HostProperties."/>
+   Shortcut Parameters Description     -u user ユーザのアカウント名   -p password ユーザのパスワード   -h host※ GO-Globalホストのネットワーク名   *-hp port GO-Globalホストが接続を受け入れるポート(既定では491)   -a app 実行するアプリケーション。これはコマンドライン文字列か、Admin Consoleに登録されているアプリケーション名です。   -r args アプリケーションの引数   -c or -nc compression -cは圧縮を有効にします。-ncは圧縮を無効にします。compression= &ldquo;true&rdquo; は圧縮を有効にし、 compression= &ldquo;false&rdquo; は圧縮を無効にします。圧縮はデフォルトで有効になっています。   -ac printerconfig 起動時にプリンタがどのように初期化されるかを決定します。printerconfig = &ldquo;all&rdquo; または -ac の後にすべてが続く場合、すべてのプリンタが自動的に構成されます。printerconfig = &ldquo;none&rdquo; または -ac の後に none が続く場合、プリンタは自動的に構成されません。printerconfig = &ldquo;default&rdquo; または -ac の後に default が続くと、デフォルトのプリンタが自動的に構成されます。これがデフォルト設定です。   -f clientframe それぞれ1または &ldquo;true &ldquo;に設定すると、セッション内で実行されているすべてのアプリケーションがバウンディングウィンドウ内に表示されます。それぞれ0または &ldquo;false &ldquo;に設定すると、アプリケーションはそれぞれのウィンドウ内に表示されます。   -autoreconnect autoreconnect 接続が切断された後にクライアントが自動的に再接続を試みる回数を指定します。URL に autoreconnect=n を指定した場合、または -autoreconnect の後に n を指定した場合、クライアントは自動的に n 回の再接続を試みます(デフォルトではautoreconnectは20回に設定されています)。   -geometry  クライアントウィンドウの幅と高さ。例: -geometry 800x600    multimonitor &ldquo;true&quot;に設定すると、セッションのデスクトップはすべてのモニターにまたがります。&ldquo;false&quot;に設定すると、アプリケーションはプライマリモニタに限定されます。multimonitor = “true&quot;がデフォルトの設定です。    width フレームまたは埋め込みウィンドウの幅(デフォルトでは800)。    height フレームまたは埋め込みウィンドウの高さ(デフォルトでは600)。    embed &ldquo;true&quot;に設定すると、アプリケーションはブラウザウィンドウ内で実行されます。&ldquo;false&quot;に設定すると、アプリケーションはブラウザウィンドウの外で実行されます。    bInBrowser バージョン6ではサポートされていません。    noscale noscale が &ldquo;true&rdquo; に設定され、ブラウザのサイズが変更されると、埋め込まれた GO-Global セッションの解像度は、クライアント上で表示されている画像を拡大縮小するのではなく、それに応じて調整されます(デフォルトでは noscale = &ldquo;false&rdquo; です)。    useApp useApp =“ true”の場合、GO-Global WebアプリはAppControllerを起動しようとします。useApp =“ false”の場合、WebアプリはAppControllerを起動しようとしません(デフォルトではuseApp =“true&rdquo;)。    installApp installApp =“ true”の場合、AppControllerがまだインストールされていない場合は、インストールするように求められます。 installApp =“ false”の場合、ユーザはAppControllerをインストールするように求められず、それをインストールするためのリンクは表示されません。installApp =“ addLink”の場合、AppControllerがまだインストールされていなければ、Get the App リンクがGO-Global Web Appのツールバーに追加されます。   -clientscale clientscale clientscale に続いてパーセントスケールファクタを指定すると、Windows上のAppControllerは、セッションで実行されているアプリケーションを、クライアントコンピュータでローカルに実行されているアプリケーションに対して相対的にスケーリングします。たとえば、コマンドラインに -clientscale 200 を追加すると、GO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータでローカルに実行されているアプリケーションの2倍の大きさで表示されます。   -clientdpi ClientDPIScaling Enabled -clientdpi 1 または ClientDPIScalingEnabled=&quot;true&rdquo; では、GO-Global アプリの DPI スケーリング機能が有効になります。-clientdpi 0 または ClientDPIScalingEnabled=&quot;false&rdquo; は、この機能を無効にします。これらのオプションを指定すると、ホストの HostProperties."/>
 
 
 
@@ -128,7 +128,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -158,7 +158,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -2513,124 +2513,124 @@
 </thead>
 <tbody>
 <tr>
-<td>-u</td>
-<td>user</td>
+<td><strong>-u</strong></td>
+<td><strong>user</strong></td>
 <td>ユーザのアカウント名</td>
 </tr>
 <tr>
-<td>-p</td>
-<td>password</td>
+<td><strong>-p</strong></td>
+<td><strong>password</strong></td>
 <td>ユーザのパスワード</td>
 </tr>
 <tr>
-<td>-h</td>
-<td>host*</td>
+<td><strong>-h</strong></td>
+<td><strong>host※</strong></td>
 <td>GO-Globalホストのネットワーク名</td>
 </tr>
 <tr>
-<td>-hp</td>
-<td>port</td>
+<td>*<em>-hp</em></td>
+<td><strong>port</strong></td>
 <td>GO-Globalホストが接続を受け入れるポート(既定では491)</td>
 </tr>
 <tr>
-<td>-a</td>
-<td>app</td>
+<td><strong>-a</strong></td>
+<td><strong>app</strong></td>
 <td>実行するアプリケーション。これはコマンドライン文字列か、Admin Consoleに登録されているアプリケーション名です。</td>
 </tr>
 <tr>
-<td>-r</td>
-<td>args</td>
+<td><strong>-r</strong></td>
+<td><strong>args</strong></td>
 <td>アプリケーションの引数</td>
 </tr>
 <tr>
-<td>-c or -nc</td>
-<td>compression</td>
+<td><strong>-c or -nc</strong></td>
+<td><strong>compression</strong></td>
 <td>-cは圧縮を有効にします。-ncは圧縮を無効にします。compression= &ldquo;true&rdquo; は圧縮を有効にし、 compression= &ldquo;false&rdquo; は圧縮を無効にします。圧縮はデフォルトで有効になっています。</td>
 </tr>
 <tr>
-<td>-ac</td>
-<td>printerconfig</td>
-<td>起動時にプリンタがどのように初期化されるかを決定します。printerconfig = &ldquo;all&rdquo; または -ac の後にすべてが続く場合、すべてのプリンタが自動的に構成されます。printerconfig = &ldquo;none&rdquo; または -ac の後に none が続く場合、プリンタは自動的に構成されません。printerconfig = &ldquo;default&rdquo; または -ac の後に default が続くと、デフォルトのプリンタが自動的に構成されます。これがデフォルト設定です。</td>
+<td><strong>-ac</strong></td>
+<td><strong>printerconfig</strong></td>
+<td>起動時にプリンタがどのように初期化されるかを決定します。printerconfig = &ldquo;all&rdquo; または -ac の後にすべてが続く場合、すべてのプリンタが自動的に構成されます。printerconfig = &ldquo;none&rdquo; または -ac の後に none が続く場合、プリンタは自動的に構成されません。printerconfig = &ldquo;default&rdquo; または -ac の後に <strong>default</strong> が続くと、デフォルトのプリンタが自動的に構成されます。これがデフォルト設定です。</td>
 </tr>
 <tr>
-<td>-f</td>
-<td>clientframe</td>
+<td><strong>-f</strong></td>
+<td><strong>clientframe</strong></td>
 <td>それぞれ1または &ldquo;true &ldquo;に設定すると、セッション内で実行されているすべてのアプリケーションがバウンディングウィンドウ内に表示されます。それぞれ0または &ldquo;false &ldquo;に設定すると、アプリケーションはそれぞれのウィンドウ内に表示されます。</td>
 </tr>
 <tr>
-<td>-autoreconnect</td>
-<td>autoreconnect</td>
+<td><strong>-autoreconnect</strong></td>
+<td><strong>autoreconnect</strong></td>
 <td>接続が切断された後にクライアントが自動的に再接続を試みる回数を指定します。URL に autoreconnect=n を指定した場合、または -autoreconnect の後に n を指定した場合、クライアントは自動的に n 回の再接続を試みます(デフォルトではautoreconnectは20回に設定されています)。</td>
 </tr>
 <tr>
-<td>-geometry</td>
+<td><strong>-geometry</strong></td>
 <td></td>
 <td>クライアントウィンドウの幅と高さ。例: -geometry 800x600</td>
 </tr>
 <tr>
 <td></td>
-<td>multimonitor</td>
+<td><strong>multimonitor</strong></td>
 <td>&ldquo;true&quot;に設定すると、セッションのデスクトップはすべてのモニターにまたがります。&ldquo;false&quot;に設定すると、アプリケーションはプライマリモニタに限定されます。multimonitor = “true&quot;がデフォルトの設定です。</td>
 </tr>
 <tr>
 <td></td>
-<td>width</td>
+<td><strong>width</strong></td>
 <td>フレームまたは埋め込みウィンドウの幅(デフォルトでは800)。</td>
 </tr>
 <tr>
 <td></td>
-<td>height</td>
+<td><strong>height</strong></td>
 <td>フレームまたは埋め込みウィンドウの高さ(デフォルトでは600)。</td>
 </tr>
 <tr>
 <td></td>
-<td>embed</td>
+<td><strong>embed</strong></td>
 <td>&ldquo;true&quot;に設定すると、アプリケーションはブラウザウィンドウ内で実行されます。&ldquo;false&quot;に設定すると、アプリケーションはブラウザウィンドウの外で実行されます。</td>
 </tr>
 <tr>
 <td></td>
-<td>bInBrowser</td>
+<td><strong>bInBrowser</strong></td>
 <td>バージョン6ではサポートされていません。</td>
 </tr>
 <tr>
 <td></td>
-<td>noscale</td>
+<td><strong>noscale</strong></td>
 <td>noscale が &ldquo;true&rdquo; に設定され、ブラウザのサイズが変更されると、埋め込まれた GO-Global セッションの解像度は、クライアント上で表示されている画像を拡大縮小するのではなく、それに応じて調整されます(デフォルトでは noscale = &ldquo;false&rdquo; です)。</td>
 </tr>
 <tr>
 <td></td>
-<td>useApp</td>
+<td><strong>useApp</strong></td>
 <td>useApp =“ true”の場合、GO-Global WebアプリはAppControllerを起動しようとします。useApp =“ false”の場合、WebアプリはAppControllerを起動しようとしません(デフォルトではuseApp =“true&rdquo;)。</td>
 </tr>
 <tr>
 <td></td>
-<td>installApp</td>
-<td>installApp =“ true”の場合、AppControllerがまだインストールされていない場合は、インストールするように求められます。 installApp =“ false”の場合、ユーザはAppControllerをインストールするように求められず、それをインストールするためのリンクは表示されません。installApp =“ addLink”の場合、AppControllerがまだインストールされていなければ、Get the AppリンクがGO-Global Web Appのツールバーに追加されます。</td>
+<td><strong>installApp</strong></td>
+<td>installApp =“ true”の場合、AppControllerがまだインストールされていない場合は、インストールするように求められます。 installApp =“ false”の場合、ユーザはAppControllerをインストールするように求められず、それをインストールするためのリンクは表示されません。installApp =“ addLink”の場合、AppControllerがまだインストールされていなければ、<strong>Get the App</strong> リンクがGO-Global Web Appのツールバーに追加されます。</td>
 </tr>
 <tr>
-<td>-clientscale</td>
-<td>clientscale</td>
-<td>clientscaleに続いてパーセントスケールファクタを指定すると、Windows上のAppControllerは、セッションで実行されているアプリケーションを、クライアントコンピュータでローカルに実行されているアプリケーションに対して相対的にスケーリングします。 たとえば、コマンドラインに-clientscale 200を追加すると、GO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータでローカルに実行されているアプリケーションの2倍の大きさで表示されます。</td>
+<td><strong>-clientscale</strong></td>
+<td><strong>clientscale</strong></td>
+<td><strong>clientscale</strong> に続いてパーセントスケールファクタを指定すると、Windows上のAppControllerは、セッションで実行されているアプリケーションを、クライアントコンピュータでローカルに実行されているアプリケーションに対して相対的にスケーリングします。たとえば、コマンドラインに <strong>-clientscale 200</strong> を追加すると、GO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータでローカルに実行されているアプリケーションの2倍の大きさで表示されます。</td>
 </tr>
 <tr>
-<td>-clientdpi</td>
-<td>ClientDPIScaling Enabled</td>
+<td><strong>-clientdpi</strong></td>
+<td><strong>ClientDPIScaling Enabled</strong></td>
 <td>-clientdpi 1 または ClientDPIScalingEnabled=&quot;true&rdquo; では、GO-Global アプリの DPI スケーリング機能が有効になります。-clientdpi 0 または ClientDPIScalingEnabled=&quot;false&rdquo; は、この機能を無効にします。これらのオプションを指定すると、ホストの HostProperties.xml ファイルの ClientDPIScalingEnabled プロパティの値が上書きされます。</td>
 </tr>
 <tr>
-<td>-cn</td>
-<td>computerName</td>
+<td><strong>-cn</strong></td>
+<td><strong>computerName</strong></td>
 <td>cn 1 または computerName=1 の場合、Windows クライアントは、実際のコンピュータ名ではなく CLIENTNAME 環境変数をホストに送信します。</td>
 </tr>
 <tr>
-<td>-krm</td>
-<td>keyreportingmethod</td>
-<td>このオプションは、クライアントが文字タイプに基づいて unicode またはキーコード値をホストに送信するように指示します。-krm 0 クライアントは、アルファキーをunicodeとして、数値キーをunicodeとして送信します。-KRM 1 クライアントは、アルファキーをキーコードとして、数値キーをユニコードとして送信します。-KRM 2 クライアントは、アルファキーをunicode、数値キーをunicodeとして送信します。-KRM 3クライアントは、アルファキーをキーコードとして、数値キーをキーコードとして送信します。</td>
+<td><strong>-krm</strong></td>
+<td><strong>keyreportingmethod</strong></td>
+<td>このオプションは、クライアントが文字タイプに基づいて unicode またはキーコード値をホストに送信するように指示します。<br>-krm 0 クライアントは、アルファキーをunicodeとして、数値キーをunicodeとして送信します。<br>-krm 1 クライアントは、アルファキーをキーコードとして、数値キーをユニコードとして送信します。<br>-krm 2 クライアントは、アルファキーをunicode、数値キーをunicodeとして送信します。<br>-krm 3クライアントは、アルファキーをキーコードとして、数値キーをキーコードとして送信します。</td>
 </tr>
 </tbody>
 </table>
-<p>*ログオンHTMLページでホストが指定されていない場合、GO-Globalはログオンファイルのダウンロード元のマシンを検出し、そのホストに接続します。 **[Connection]**ダイアログは表示されず、ユーザには **[Sign In]**ダイアログのみが表示されます。</p>
-<p>host = &ldquo;？&ldquo;の場合ユーザはホストのアドレスの入力を求められます。アプリケーションが指定されていない場合は、Program Windowsが開きます。</p>
+<p>※ログオンHTMLページでホストが指定されていない場合、GO-Globalはログオンファイルのダウンロード元のマシンを検出し、そのホストに接続します。 <strong>[Connection]</strong> ダイアログは表示されず、ユーザには <strong>[Sign In]</strong> ダイアログのみが表示されます。</p>
+<p>host=&rdquo;?&ldquo;の場合ユーザはホストのアドレスの入力を求められます。アプリケーションが指定されていない場合は、Program Windowsが開きます。</p>
 
 	
 		

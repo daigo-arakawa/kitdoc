@@ -23,24 +23,20 @@
 <title>GO-Global Web App | kitASP Docs</title><meta property="og:title" content="GO-Global Web App" />
 <meta property="og:description" content="JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。
 GO-Global Web Appの起動 GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Google Chrome、Apple Safariなどの一般的なWebブラウザから実行できます。
-WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false **[Sign In]**ダイアログが表示されたら、次の情報を入力します。   **[User Name]**ボックスにネットワークユーザー名を入力します。 **[Password]**ボックスにパスワードを入力します。  [Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。
- デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。
- GO-Global AppControllerを使用したWebアプリケーションの実行 GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。
-GO-Globalは、GO-Global AppControllerのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。
- useApp　useApp = trueの場合、Webアプリケーションは完全なGO-Global AppControllerを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global AppControllerを起動しようとしません。 デフォルトでuseApp = trueです。 installApp　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、[Get the App]リンクがGO-Global Web Appのツールバーに追加されます。  たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLがhttp://hostname/goglobal/logon." />
+WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と ?useApp=false の順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false [Sign In] ダイアログが表示されたら、次の情報を入力します。   [User Name] ボックスにネットワークユーザー名を入力します。 [Password] ボックスにパスワードを入力します。  [Location box]ボックスに https:// を指定した場合、Admin Consoleの [Host Options] ダイアログの[Security]タブで SSLトランスポート を有効にし、タブで指定したSSL証明書のcommon nameをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、 SSL転送の選択 を参照してください。
+参照デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。GO-Global AppControllerを使用したWebアプリケーションの実行 GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。
+GO-Globalは、GO-Global AppControllerのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/runninggo-global/go-globalwebapp/" />
 <meta property="article:modified_time" content="2020-06-03T03:24:08+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="GO-Global Web App">
 <meta itemprop="description" content="JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。
 GO-Global Web Appの起動 GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Google Chrome、Apple Safariなどの一般的なWebブラウザから実行できます。
-WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false **[Sign In]**ダイアログが表示されたら、次の情報を入力します。   **[User Name]**ボックスにネットワークユーザー名を入力します。 **[Password]**ボックスにパスワードを入力します。  [Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。
- デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。
- GO-Global AppControllerを使用したWebアプリケーションの実行 GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。
-GO-Globalは、GO-Global AppControllerのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。
- useApp　useApp = trueの場合、Webアプリケーションは完全なGO-Global AppControllerを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global AppControllerを起動しようとしません。 デフォルトでuseApp = trueです。 installApp　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、[Get the App]リンクがGO-Global Web Appのツールバーに追加されます。  たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLがhttp://hostname/goglobal/logon.">
+WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と ?useApp=false の順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false [Sign In] ダイアログが表示されたら、次の情報を入力します。   [User Name] ボックスにネットワークユーザー名を入力します。 [Password] ボックスにパスワードを入力します。  [Location box]ボックスに https:// を指定した場合、Admin Consoleの [Host Options] ダイアログの[Security]タブで SSLトランスポート を有効にし、タブで指定したSSL証明書のcommon nameをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、 SSL転送の選択 を参照してください。
+参照デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。GO-Global AppControllerを使用したWebアプリケーションの実行 GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。
+GO-Globalは、GO-Global AppControllerのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。">
 <meta itemprop="dateModified" content="2020-06-03T03:24:08&#43;09:00" />
-<meta itemprop="wordCount" content="314">
+<meta itemprop="wordCount" content="350">
 
 
 
@@ -48,11 +44,9 @@ GO-Globalは、GO-Global AppControllerのインストールと実行を制御す
 <meta name="twitter:title" content="GO-Global Web App"/>
 <meta name="twitter:description" content="JavaScriptとHTML5を使用して開発されたGO-Global Web Appは、Windows、Mac、Linuxコンピュータ上の一般的なWebブラウザからWindowsアプリケーションを実行することを可能にするゼロインストールクライアントです。さらに、Webアプリケーションをデプロイするために特別なホスト構成は必要ありません。Webアプリケーションは、クライアント側のパスワードキャッシュ、GO-GlobalのPreview PDFプリンタによるローカルプリンタへの印刷、およびCTRLキーを使用したローカルアプリケーションとリモートアプリケーション間のテキストのコピーアンドペーストをサポートしています。
 GO-Global Web Appの起動 GO-Globalは、Microsoft Internet Explorer、Mozilla Firefox、Google Chrome、Apple Safariなどの一般的なWebブラウザから実行できます。
-WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false **[Sign In]**ダイアログが表示されたら、次の情報を入力します。   **[User Name]**ボックスにネットワークユーザー名を入力します。 **[Password]**ボックスにパスワードを入力します。  [Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。
- デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。
- GO-Global AppControllerを使用したWebアプリケーションの実行 GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。
-GO-Globalは、GO-Global AppControllerのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。
- useApp　useApp = trueの場合、Webアプリケーションは完全なGO-Global AppControllerを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global AppControllerを起動しようとしません。 デフォルトでuseApp = trueです。 installApp　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、[Get the App]リンクがGO-Global Web Appのツールバーに追加されます。  たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLがhttp://hostname/goglobal/logon."/>
+WebブラウザからGO-Globalを起動方法  Webブラウザを起動します。 [Location box]ボックスに、http://に続けてホスト名と ?useApp=false の順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false [Sign In] ダイアログが表示されたら、次の情報を入力します。   [User Name] ボックスにネットワークユーザー名を入力します。 [Password] ボックスにパスワードを入力します。  [Location box]ボックスに https:// を指定した場合、Admin Consoleの [Host Options] ダイアログの[Security]タブで SSLトランスポート を有効にし、タブで指定したSSL証明書のcommon nameをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、 SSL転送の選択 を参照してください。
+参照デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。GO-Global AppControllerを使用したWebアプリケーションの実行 GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。
+GO-Globalは、GO-Global AppControllerのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。"/>
 
 
 
@@ -143,7 +137,7 @@ GO-Globalは、GO-Global AppControllerのインストールと実行を制御す
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -173,7 +167,7 @@ GO-Globalは、GO-Global AppControllerのインストールと実行を制御す
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -2539,50 +2533,77 @@ GO-Globalは、GO-Global AppControllerのインストールと実行を制御す
 <h3 id="webブラウザからgo-globalを起動方法">WebブラウザからGO-Globalを起動方法</h3>
 <ol>
 <li>Webブラウザを起動します。</li>
-<li>[Location box]ボックスに、http://に続けてホスト名と?useApp=falseの順に入力します。次に例を示します。http://hostname/goglobal/?useApp=falseまたはhttps://hostname/goglobal/?useApp=false</li>
-<li>**[Sign In]**ダイアログが表示されたら、次の情報を入力します。</li>
+<li>[Location box]ボックスに、http://に続けてホスト名と <strong>?useApp=false</strong> の順に入力します。次に例を示します。<code>http://hostname/goglobal/?useApp=false</code>または<code>https://hostname/goglobal/?useApp=false</code></li>
+<li><strong>[Sign In]</strong> ダイアログが表示されたら、次の情報を入力します。</li>
 </ol>
 <ul>
-<li>**[User Name]**ボックスにネットワークユーザー名を入力します。</li>
-<li>**[Password]**ボックスにパスワードを入力します。</li>
+<li><strong>[User Name]</strong> ボックスにネットワークユーザー名を入力します。</li>
+<li><strong>[Password]</strong> ボックスにパスワードを入力します。</li>
 </ul>
-<p>[Location box]ボックスにhttps://を指定した場合、Admin Consoleの[Host Options]ダイアログの[Security]タブでSSLトランスポートを有効にし、タブで指定したSSL証明書のコモンネームをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、SSL転送の選択を参照してください。</p>
-<blockquote>
-<p>デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。</p>
-</blockquote>
+<p>[Location box]ボックスに <strong>https://</strong> を指定した場合、Admin Consoleの <strong>[Host Options]</strong> ダイアログの[Security]タブで <strong>SSLトランスポート</strong> を有効にし、タブで指定したSSL証明書のcommon nameをURLで指定したホスト名と一致させる必要があります。これらはGO-Global v6の新しい要件です。以前のバージョンでは、GO-Globalのブラウザプラグインとアドオン(ほとんどのブラウザでサポートされなくなったテクノロジを使用)は、ブラウザにダウンロードされたWebページから実行された場合でもTCP転送を使用してGO-Globalホストに接続できます。しかし、GO-GlobalのWeb Appはブラウザのセキュリティ制限を受けているため、WebアプリケーションはHTTPS接続を介してロードされるときにWebSocket Secure接続を使用する必要があります。 詳細については、 <strong>SSL転送の選択</strong> を参照してください。</p>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+デフォルトでは、GO-Globalは自動的にフルGO-Global AppControllerをダウンロードして実行しようとします。ログオンURLに?useApp = falseを追加すると、GO-GlobalからGO-Global AppControllerをダウンロードできなくなり、代わりにGO-Global Web Appが実行されます。
+</div>
+
 <h2 id="go-global-appcontrollerを使用したwebアプリケーションの実行">GO-Global AppControllerを使用したWebアプリケーションの実行</h2>
 <p>GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。</p>
 <p>GO-Globalは、GO-Global AppControllerのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。</p>
 <ul>
 <li>useApp　　useApp = trueの場合、Webアプリケーションは完全なGO-Global AppControllerを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global AppControllerを起動しようとしません。 デフォルトでuseApp = trueです。</li>
-<li>installApp　　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、[Get the App]リンクがGO-Global Web Appのツールバーに追加されます。</li>
+<li>installApp　　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、 <strong>[Get the App]</strong> リンクがGO-Global Web Appのツールバーに追加されます。</li>
 </ul>
-<p>たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLがhttp://hostname/goglobal/logon.htmlの場合など)、GO-Globalは自動的にGO-Global AppControllerのダウンロードを開始し、ユーザにプロンプトを表示します。インストールして実行します。または、installAppオプションがaddLinkに設定されている場合(たとえば、URLがhttp://hostname/goglobal/logon.html?installApp = addLinkの場合)、Webアプリケーションのツールバーに[Get the App]リンクが追加されます。ユーザがこのリンクをクリックすると、GO-Globalはダウンロードを開始し、GO-Global AppControllerの実行とインストールのプロセスを案内します。</p>
+<p>たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLが <strong><code>http://hostname/goglobal/logon.html</code></strong> の場合など)、GO-Globalは自動的にGO-Global AppControllerのダウンロードを開始し、ユーザにプロンプトを表示します。インストールして実行します。または、installAppオプションがaddLinkに設定されている場合(たとえば、URLが <strong><code>http://hostname/goglobal/logon.html?installApp=addLink</code></strong> の場合)、Webアプリケーションのツールバーに[Get the App]リンクが追加されます。ユーザがこのリンクをクリックすると、GO-Globalはダウンロードを開始し、GO-Global AppControllerの実行とインストールのプロセスを案内します。</p>
 <p>GO-Global AppControllerをインストールして有効にすると、「埋め込み」URLパラメータを使用して、アプリケーションをブラウザウィンドウ内で実行するかブラウザウィンドウ外で実行するかを制御できます。 embedパラメータが指定されていないか、または&rdquo; false&quot;に設定されている場合(たとえば、URLがhttp://hostname/goglobal/logon.html?embed = falseである場合)、ユーザのアプリケーションはGO-Global AppControllerを介してブラウザのウィンドウ外で実行されます。</p>
-<p>あるいは、埋め込みパラメータが「true」に設定されている場合(例えば、URLが http://hostname/goglobal/logon.html?embed = true)アプリケーションはWebアプリケーションを介してブラウザウィンドウ内で実行されます。この場合、GO-GlobalもGO-Global AppControllerを起動します(インストールされて有効になっている場合)が、GO-Global AppControllerはコンピュータのデバイス(プリンタやドライブなど)へのアクセスを提供する目的でのみ使用されます。セッションのアプリケーションは表示されません。</p>
-<blockquote>
-<p>AppControllerをブラウザウィンドウ内で実行すると、デフォルトの背景色は白になります。背景色は、HostProperties.xmlファイルのDesktopColorプロパティで指定します。色は10進数形式のRGB値として指定されます。例えば、白のデフォルトの色は10進数で16777215（16進数では0x00FFFFFF）です。例えば、背景色を青に変更するには、DesktopColorプロパティを10906937に設定します。
-GO-Global AppControllerがインストールされていないかuseApp = falseの場合、embedオプションは無視されます。それ以外の場合、embedはデフォルトでfalseに設定されています。</p>
-</blockquote>
-<p>埋め込みオプションが有効な場合、AppControllerは、-hostパラメータをホストのconfig.xmlファイルのhostaddressフィールドの値に設定して起動します。GO-Global インストーラは、この値をコンピュータの名前に初期化します。ユーザーが別のアドレス（パブリック DNS アドレスなど）でホストに接続する場合は、config.xml ファイルの hostaddress フィールドをこのアドレスに設定する必要があります。</p>
+<p>あるいは、埋め込みパラメータが「true」に設定されている場合(例えば、URLが <strong><code>http://hostname/goglobal/logon.html?embed=true</code></strong>)アプリケーションはWebアプリケーションを介してブラウザウィンドウ内で実行されます。この場合、GO-GlobalもGO-Global AppControllerを起動します(インストールされて有効になっている場合)が、GO-Global AppControllerはコンピュータのデバイス(プリンタやドライブなど)へのアクセスを提供する目的でのみ使用されます。セッションのアプリケーションは表示されません。</p>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+AppControllerをブラウザウィンドウ内で実行すると、デフォルトの背景色は白になります。背景色は、 <strong>HostProperties.xml</strong> ファイルの <strong>DesktopColor</strong> プロパティで指定します。色は10進数形式のRGB値として指定されます。例えば、白のデフォルトの色は10進数で16777215(16進数では0x00FFFFFF)です。例えば、背景色を青に変更するには、 <strong>DesktopColor</strong> プロパティを10906937に設定します。
+GO-Global AppControllerがインストールされていないかuseApp=falseの場合、embedオプションは無視されます。それ以外の場合、embedはデフォルトでfalseに設定されています。
+</div>
+
+<p>埋め込みオプションが有効な場合、AppControllerは、 <strong>-host</strong> パラメータをホストのconfig.xmlファイルの <strong>hostaddress</strong> フィールドの値に設定して起動します。GO-Globalインストーラは、この値をコンピュータの名前に初期化します。ユーザーが別のアドレス(パブリックDNSアドレスなど)でホストに接続する場合は、config.xmlファイルの <strong>hostaddress</strong> フィールドをこのアドレスに設定する必要があります。</p>
 <h3 id="ホストアドレスの値を変更する方法">ホストアドレスの値を変更する方法</h3>
 <ol>
-<li>アプリケーション公開サービスを停止します。</li>
-<li>C:\ProgramData\GraphOnOn\GO-Globalディレクトリにconfig.xmlファイルを配置してください。</li>
-<li>Wordpadでconfig.xmlを開き、<hostaddress>フィールドを探してください。</li>
+<li><strong>Application Publishing Service</strong> を停止します。</li>
+<li><code>C:\ProgramData\GraphOnOn\GO-Global</code>ディレクトリに <strong>config.xml</strong> ファイルを配置してください。</li>
+<li>Wordpadで <strong>config.xml</strong> を開き、<hostaddress>フィールドを探してください。</li>
 <li>ホストアドレスの値を更新します。</li>
 <li>編集した.xmlファイルを保存します。</li>
-<li>Application Publishing Serviceを起動します。</li>
+<li><strong>Application Publishing Service</strong> を起動します。</li>
 </ol>
-<blockquote>
-<p>GO-Global Web Appを使用する場合、アプリケーションのメニューまたはツールバーからクリップボードにコピーして貼り付けることはサポートされていません。代わりに、Windowsでは、キーボードショートカットのCtrl+Cを使用してコピーし、Ctrl+Vを使用して貼り付けます。Macでは、キーボードショートカットのCommand-Cを使用してコピーし、Command-Vを使用して貼り付けます。</p>
-</blockquote>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+GO-Global Web Appを使用する場合、アプリケーションのメニューまたはツールバーからクリップボードにコピーして貼り付けることはサポートされていません。代わりに、Windowsでは、キーボードショートカットの <strong>Ctrl+C</strong> を使用してコピーし、 <strong>Ctrl+V</strong> を使用して貼り付けます。Macでは、キーボードショートカットの <strong>Command-C</strong> を使用してコピーし、<strong>Command-V</strong> を使用して貼り付けます。
+</div>
+
 <h2 id="accessing-the-host-or-relay-server-directly-from-the-internet">Accessing the Host or Relay Server Directly from the Internet</h2>
-<p>If users will be connecting to a GO-Global Host or relay server from the internet, the web server and host addresses in the URL must be public (internet) addresses. When there is no public web server available, GraphOn&rsquo;s web server, apps.graphon.com, can be used.</p>
-<p>In this case, a URL such as the following would be shared with users: <a href="http://apps.graphon.com/goglobal/?host=hostname">http://apps.graphon.com/goglobal/?host=hostname</a>, where hostname is the public address of the GO-Global Host.</p>
-<p>When using a web server other than GraphOn&rsquo;s, the URL must use the public address of the web server. For example: <a href="http://webservername.com/goglobal/?host=hostname">http://webservername.com/goglobal/?host=hostname</a></p>
+
+
+<div class="alert alert-secondary" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>注意</h4>
+本項目の設定は推奨設定ではございませんのでご注意ください。
+</div>
+
+<p>If users will be connecting to a GO-Global Host or relay server from the internet, the web server and host addresses in the URL must be public(internet)addresses. When there is no public web server available, GraphOn&rsquo;s web server, <strong>apps.graphon.com,</strong> can be used.</p>
+<p>In this case, a URL such as the following would be shared with users:<strong><code>http://apps.graphon.com/goglobal/?host=hostname</code></strong>, where hostname is the public address of the GO-Global Host.</p>
+<p>When using a web server other than GraphOn&rsquo;s, the URL must use the public address of the web server. For example:<strong><code>http://webservername.com/goglobal/?host=hostname</code></strong></p>
 <p>If users will be accessing a host or relay server from both the Internet and the internal network, the external and internal DNS should be configured so that the public and internal addresses of the web server are the same, and the public and internal addresses of the host are the same. Alternatively, administrators can provide external and internal users with different URLs, but this may be confusing to users.</p>
-<p>When hosts are accessed via a third-party load balancer, the URL must include the address of the load-balancer. For example, <a href="http://loadbalancer.com/goglobal/?host=hostname&amp;app=Notepad">http://loadbalancer.com/goglobal/?host=hostname&amp;app=Notepad</a>​</p>
+<p>When hosts are accessed via a third-party load balancer, the URL must include the address of the load-balancer. For example, <strong><code>http://loadbalancer.com/goglobal/?host=hostname&amp;app=Notepad</code></strong></p>
 
 	
 		

@@ -23,14 +23,13 @@
 <title>Webファイル | kitASP Docs</title><meta property="og:title" content="Webファイル" />
 <meta property="og:description" content="GO-Globalホストのセットアップは、C:\Program Files\GraphOn\GO-Global\Webの下にGO-Global Webファイルをインストールします。インストール中にMicrosoftインターネットインフォメーションサービス(IIS)が検出されると、GO-Global Webファイルを指す仮想ディレクトリがIISに作成されます。IISが利用できない場合、管理者は指定されたWebサーバー上でGO-Global Webフォルダの内容を手動でホストする必要があります。
 管理者はHTMLページを編集してデフォルトオプションを変更したり、どのクライアントをユーザが利用できるようにしたりするかを制限できます。インストール中、初期Webページはlogon.htmlに設定されます。Webブラウザからホストにアクセスするユーザは、次のURLにアクセスする必要があります。http://hostname/go-global/
-Windows用GO-Global AppControllerには、オールユーザバージョンとシングルユーザバージョンの2つのバージョンがあります。オールユーザ版のインストーラ（AppController.AllUsers.exe）は、コンピュータを使用するすべてのユーザに対してAppControllerをインストールしますが、コンピュータの管理者権限を持つユーザのみがインストールできます。オールユーザバージョンをインストールするには、URLに次のようにパラメータ「allusers=true」を追加する必要があります。例：http://hostname/goglobal/?allusers=true。
-シングルユーザ版のインストーラ（AppController.exe）は、コンピュータの管理者権限を持たないユーザが実行できますが、インストーラを実行しているユーザのみがインストールされます。別のユーザが同じコンピュータ上でAppControllerを実行したい場合は、そのユーザもシングルユーザ版のインストーラーを実行する必要があります。
- 通常のユーザがローカルポリシーまたはグループポリシーによってソフトウェアのインストールを阻止されている場合、GO-Global AppControllerのシングルユーザバージョンのインストールに失敗することがあります。
- URLエイリアスの作成 管理者がログオンURLをパーソナライズしたい場合(たとえば、http://hostname/goglobalの代わりにhttp://hostname/wilsonを使用)、URLのエイリアスを作成できます。詳細については、次の記事を参照してください。
-IISの場合：https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder
-Apacheの場合：https://httpd.apache.org/docs/2.4/mod/mod_alias.html
+Windows用GO-Global AppControllerには、オールユーザ バージョンと シングルユーザ バージョンの2つのバージョンがあります。オールユーザ 版のインストーラ (AppController.AllUsers.exe) は、コンピュータを使用するすべてのユーザに対してAppControllerをインストールしますが、コンピュータの管理者権限を持つユーザのみがインストールできます。オールユーザバージョンをインストールするには、URLに次のようにパラメータ ?allusers=true を追加する必要があります。例: http://hostname/goglobal/?allusers=true
+シングルユーザ 版のインストーラ (AppController.exe) は、コンピュータの管理者権限を持たないユーザが実行できますが、インストーラを実行しているユーザのみがインストールされます。別のユーザが同じコンピュータ上でAppControllerを実行したい場合は、そのユーザもシングルユーザ版のインストーラーを実行する必要があります。
+参照通常のユーザがローカルポリシーまたはグループポリシーによってソフトウェアのインストールを阻止されている場合、GO-Global AppControllerのシングルユーザバージョンのインストールに失敗することがあります。URLエイリアスの作成 管理者がログオンURLをパーソナライズしたい場合(例えば、 http://hostname/goglobal の代わりに http://hostname/wilson を使用)、URLのエイリアスを作成できます。詳細については、次の記事を参照してください。
+IISの場合: https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder
+Apacheの場合: https://httpd.apache.org/docs/2.4/mod/mod_alias.html
 クライアントウィンドウのサイズ変更 コマンドライン引数–fを使用すると、コマンドライン引数–geometryを使用してクライアントウィンドウのサイズを変更できます。コマンドラインに-geometryを指定しないと、クライアントウィンドウは最大化されます。GO-Globalをルーズウィンドウモードで実行した場合、-geometryは効果がありません。クライアントウィンドウのサイズを変更するには、GO-Globalクライアント実行可能ファイルに–geometryを追加し、その後に目的の幅と高さを続けます。
-例：Windows C:\Program Files\GraphOn\AppController\AppController.exe”
+例：Windows &quot;C:\Program Files\GraphOn\AppController\AppController.exe&quot; -f -geometry=800x600
 Linux: ./AppController -h 196.125.010.222 -f -geometry=800x600
 Mac: ./AppController -h 196.125.010.222 -f -geometry=800x600" />
 <meta property="og:type" content="article" />
@@ -39,18 +38,17 @@ Mac: ./AppController -h 196.125.010.222 -f -geometry=800x600" />
 <meta itemprop="name" content="Webファイル">
 <meta itemprop="description" content="GO-Globalホストのセットアップは、C:\Program Files\GraphOn\GO-Global\Webの下にGO-Global Webファイルをインストールします。インストール中にMicrosoftインターネットインフォメーションサービス(IIS)が検出されると、GO-Global Webファイルを指す仮想ディレクトリがIISに作成されます。IISが利用できない場合、管理者は指定されたWebサーバー上でGO-Global Webフォルダの内容を手動でホストする必要があります。
 管理者はHTMLページを編集してデフォルトオプションを変更したり、どのクライアントをユーザが利用できるようにしたりするかを制限できます。インストール中、初期Webページはlogon.htmlに設定されます。Webブラウザからホストにアクセスするユーザは、次のURLにアクセスする必要があります。http://hostname/go-global/
-Windows用GO-Global AppControllerには、オールユーザバージョンとシングルユーザバージョンの2つのバージョンがあります。オールユーザ版のインストーラ（AppController.AllUsers.exe）は、コンピュータを使用するすべてのユーザに対してAppControllerをインストールしますが、コンピュータの管理者権限を持つユーザのみがインストールできます。オールユーザバージョンをインストールするには、URLに次のようにパラメータ「allusers=true」を追加する必要があります。例：http://hostname/goglobal/?allusers=true。
-シングルユーザ版のインストーラ（AppController.exe）は、コンピュータの管理者権限を持たないユーザが実行できますが、インストーラを実行しているユーザのみがインストールされます。別のユーザが同じコンピュータ上でAppControllerを実行したい場合は、そのユーザもシングルユーザ版のインストーラーを実行する必要があります。
- 通常のユーザがローカルポリシーまたはグループポリシーによってソフトウェアのインストールを阻止されている場合、GO-Global AppControllerのシングルユーザバージョンのインストールに失敗することがあります。
- URLエイリアスの作成 管理者がログオンURLをパーソナライズしたい場合(たとえば、http://hostname/goglobalの代わりにhttp://hostname/wilsonを使用)、URLのエイリアスを作成できます。詳細については、次の記事を参照してください。
-IISの場合：https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder
-Apacheの場合：https://httpd.apache.org/docs/2.4/mod/mod_alias.html
+Windows用GO-Global AppControllerには、オールユーザ バージョンと シングルユーザ バージョンの2つのバージョンがあります。オールユーザ 版のインストーラ (AppController.AllUsers.exe) は、コンピュータを使用するすべてのユーザに対してAppControllerをインストールしますが、コンピュータの管理者権限を持つユーザのみがインストールできます。オールユーザバージョンをインストールするには、URLに次のようにパラメータ ?allusers=true を追加する必要があります。例: http://hostname/goglobal/?allusers=true
+シングルユーザ 版のインストーラ (AppController.exe) は、コンピュータの管理者権限を持たないユーザが実行できますが、インストーラを実行しているユーザのみがインストールされます。別のユーザが同じコンピュータ上でAppControllerを実行したい場合は、そのユーザもシングルユーザ版のインストーラーを実行する必要があります。
+参照通常のユーザがローカルポリシーまたはグループポリシーによってソフトウェアのインストールを阻止されている場合、GO-Global AppControllerのシングルユーザバージョンのインストールに失敗することがあります。URLエイリアスの作成 管理者がログオンURLをパーソナライズしたい場合(例えば、 http://hostname/goglobal の代わりに http://hostname/wilson を使用)、URLのエイリアスを作成できます。詳細については、次の記事を参照してください。
+IISの場合: https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder
+Apacheの場合: https://httpd.apache.org/docs/2.4/mod/mod_alias.html
 クライアントウィンドウのサイズ変更 コマンドライン引数–fを使用すると、コマンドライン引数–geometryを使用してクライアントウィンドウのサイズを変更できます。コマンドラインに-geometryを指定しないと、クライアントウィンドウは最大化されます。GO-Globalをルーズウィンドウモードで実行した場合、-geometryは効果がありません。クライアントウィンドウのサイズを変更するには、GO-Globalクライアント実行可能ファイルに–geometryを追加し、その後に目的の幅と高さを続けます。
-例：Windows C:\Program Files\GraphOn\AppController\AppController.exe”
+例：Windows &quot;C:\Program Files\GraphOn\AppController\AppController.exe&quot; -f -geometry=800x600
 Linux: ./AppController -h 196.125.010.222 -f -geometry=800x600
 Mac: ./AppController -h 196.125.010.222 -f -geometry=800x600">
 <meta itemprop="dateModified" content="2020-06-03T03:24:08&#43;09:00" />
-<meta itemprop="wordCount" content="32">
+<meta itemprop="wordCount" content="53">
 
 
 
@@ -58,14 +56,13 @@ Mac: ./AppController -h 196.125.010.222 -f -geometry=800x600">
 <meta name="twitter:title" content="Webファイル"/>
 <meta name="twitter:description" content="GO-Globalホストのセットアップは、C:\Program Files\GraphOn\GO-Global\Webの下にGO-Global Webファイルをインストールします。インストール中にMicrosoftインターネットインフォメーションサービス(IIS)が検出されると、GO-Global Webファイルを指す仮想ディレクトリがIISに作成されます。IISが利用できない場合、管理者は指定されたWebサーバー上でGO-Global Webフォルダの内容を手動でホストする必要があります。
 管理者はHTMLページを編集してデフォルトオプションを変更したり、どのクライアントをユーザが利用できるようにしたりするかを制限できます。インストール中、初期Webページはlogon.htmlに設定されます。Webブラウザからホストにアクセスするユーザは、次のURLにアクセスする必要があります。http://hostname/go-global/
-Windows用GO-Global AppControllerには、オールユーザバージョンとシングルユーザバージョンの2つのバージョンがあります。オールユーザ版のインストーラ（AppController.AllUsers.exe）は、コンピュータを使用するすべてのユーザに対してAppControllerをインストールしますが、コンピュータの管理者権限を持つユーザのみがインストールできます。オールユーザバージョンをインストールするには、URLに次のようにパラメータ「allusers=true」を追加する必要があります。例：http://hostname/goglobal/?allusers=true。
-シングルユーザ版のインストーラ（AppController.exe）は、コンピュータの管理者権限を持たないユーザが実行できますが、インストーラを実行しているユーザのみがインストールされます。別のユーザが同じコンピュータ上でAppControllerを実行したい場合は、そのユーザもシングルユーザ版のインストーラーを実行する必要があります。
- 通常のユーザがローカルポリシーまたはグループポリシーによってソフトウェアのインストールを阻止されている場合、GO-Global AppControllerのシングルユーザバージョンのインストールに失敗することがあります。
- URLエイリアスの作成 管理者がログオンURLをパーソナライズしたい場合(たとえば、http://hostname/goglobalの代わりにhttp://hostname/wilsonを使用)、URLのエイリアスを作成できます。詳細については、次の記事を参照してください。
-IISの場合：https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder
-Apacheの場合：https://httpd.apache.org/docs/2.4/mod/mod_alias.html
+Windows用GO-Global AppControllerには、オールユーザ バージョンと シングルユーザ バージョンの2つのバージョンがあります。オールユーザ 版のインストーラ (AppController.AllUsers.exe) は、コンピュータを使用するすべてのユーザに対してAppControllerをインストールしますが、コンピュータの管理者権限を持つユーザのみがインストールできます。オールユーザバージョンをインストールするには、URLに次のようにパラメータ ?allusers=true を追加する必要があります。例: http://hostname/goglobal/?allusers=true
+シングルユーザ 版のインストーラ (AppController.exe) は、コンピュータの管理者権限を持たないユーザが実行できますが、インストーラを実行しているユーザのみがインストールされます。別のユーザが同じコンピュータ上でAppControllerを実行したい場合は、そのユーザもシングルユーザ版のインストーラーを実行する必要があります。
+参照通常のユーザがローカルポリシーまたはグループポリシーによってソフトウェアのインストールを阻止されている場合、GO-Global AppControllerのシングルユーザバージョンのインストールに失敗することがあります。URLエイリアスの作成 管理者がログオンURLをパーソナライズしたい場合(例えば、 http://hostname/goglobal の代わりに http://hostname/wilson を使用)、URLのエイリアスを作成できます。詳細については、次の記事を参照してください。
+IISの場合: https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder
+Apacheの場合: https://httpd.apache.org/docs/2.4/mod/mod_alias.html
 クライアントウィンドウのサイズ変更 コマンドライン引数–fを使用すると、コマンドライン引数–geometryを使用してクライアントウィンドウのサイズを変更できます。コマンドラインに-geometryを指定しないと、クライアントウィンドウは最大化されます。GO-Globalをルーズウィンドウモードで実行した場合、-geometryは効果がありません。クライアントウィンドウのサイズを変更するには、GO-Globalクライアント実行可能ファイルに–geometryを追加し、その後に目的の幅と高さを続けます。
-例：Windows C:\Program Files\GraphOn\AppController\AppController.exe”
+例：Windows &quot;C:\Program Files\GraphOn\AppController\AppController.exe&quot; -f -geometry=800x600
 Linux: ./AppController -h 196.125.010.222 -f -geometry=800x600
 Mac: ./AppController -h 196.125.010.222 -f -geometry=800x600"/>
 
@@ -158,7 +155,7 @@ Mac: ./AppController -h 196.125.010.222 -f -geometry=800x600"/>
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -188,7 +185,7 @@ Mac: ./AppController -h 196.125.010.222 -f -geometry=800x600"/>
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.adde88f690dfc87e43c5246bb733ede21ddf1efce1546e040fe9c10b2cefcda5ea4780a5e37b9ed855dc3851d2cee7feb1ea8450b8dfe3bba2c51ec78fb2ca89.json"
+  data-offline-search-index-json-src="/offline-search-index.fc018698ca11651f6bb99d1959554a4a504c83f05b5230007b97279f723ccb80e03f54c007ed5ec42412707278734d8443dcf65bbe535cb59a273851fbdba683.json"
   data-offline-search-base-href="/"
 >
 
@@ -2540,24 +2537,30 @@ Mac: ./AppController -h 196.125.010.222 -f -geometry=800x600"/>
 	<h1>Webファイル</h1>
 	
 	<p>GO-Globalホストのセットアップは、C:\Program Files\GraphOn\GO-Global\Webの下にGO-Global Webファイルをインストールします。インストール中にMicrosoftインターネットインフォメーションサービス(IIS)が検出されると、GO-Global Webファイルを指す仮想ディレクトリがIISに作成されます。IISが利用できない場合、管理者は指定されたWebサーバー上でGO-Global Webフォルダの内容を手動でホストする必要があります。</p>
-<p>管理者はHTMLページを編集してデフォルトオプションを変更したり、どのクライアントをユーザが利用できるようにしたりするかを制限できます。インストール中、初期Webページはlogon.htmlに設定されます。Webブラウザからホストにアクセスするユーザは、次のURLにアクセスする必要があります。http://hostname/go-global/</p>
-<p>Windows用GO-Global AppControllerには、オールユーザバージョンとシングルユーザバージョンの2つのバージョンがあります。オールユーザ版のインストーラ（AppController.AllUsers.exe）は、コンピュータを使用するすべてのユーザに対してAppControllerをインストールしますが、コンピュータの管理者権限を持つユーザのみがインストールできます。オールユーザバージョンをインストールするには、URLに次のようにパラメータ「allusers=true」を追加する必要があります。例：http://hostname/goglobal/?allusers=true。</p>
-<p>シングルユーザ版のインストーラ（AppController.exe）は、コンピュータの管理者権限を持たないユーザが実行できますが、インストーラを実行しているユーザのみがインストールされます。別のユーザが同じコンピュータ上でAppControllerを実行したい場合は、そのユーザもシングルユーザ版のインストーラーを実行する必要があります。</p>
-<blockquote>
-<p>通常のユーザがローカルポリシーまたはグループポリシーによってソフトウェアのインストールを阻止されている場合、GO-Global AppControllerのシングルユーザバージョンのインストールに失敗することがあります。</p>
-</blockquote>
+<p>管理者はHTMLページを編集してデフォルトオプションを変更したり、どのクライアントをユーザが利用できるようにしたりするかを制限できます。インストール中、初期Webページはlogon.htmlに設定されます。Webブラウザからホストにアクセスするユーザは、次のURLにアクセスする必要があります。<strong><code>http://hostname/go-global/</code></strong></p>
+<p>Windows用GO-Global AppControllerには、<strong>オールユーザ</strong> バージョンと <strong>シングルユーザ</strong> バージョンの2つのバージョンがあります。<strong>オールユーザ</strong> 版のインストーラ <strong>(AppController.AllUsers.exe)</strong> は、コンピュータを使用するすべてのユーザに対してAppControllerをインストールしますが、コンピュータの管理者権限を持つユーザのみがインストールできます。オールユーザバージョンをインストールするには、URLに次のようにパラメータ <strong>?allusers=true</strong> を追加する必要があります。例: <strong><code>http://hostname/goglobal/?allusers=true</code></strong></p>
+<p><strong>シングルユーザ</strong> 版のインストーラ <strong>(AppController.exe)</strong> は、コンピュータの管理者権限を持たないユーザが実行できますが、インストーラを実行しているユーザのみがインストールされます。別のユーザが同じコンピュータ上でAppControllerを実行したい場合は、そのユーザもシングルユーザ版のインストーラーを実行する必要があります。</p>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+通常のユーザがローカルポリシーまたはグループポリシーによってソフトウェアのインストールを阻止されている場合、GO-Global AppControllerのシングルユーザバージョンのインストールに失敗することがあります。
+</div>
+
 <h2 id="urlエイリアスの作成">URLエイリアスの作成</h2>
-<p>管理者がログオンURLをパーソナライズしたい場合(たとえば、http://hostname/goglobalの代わりにhttp://hostname/wilsonを使用)、URLのエイリアスを作成できます。詳細については、次の記事を参照してください。</p>
-<p>IISの場合：https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder</p>
-<p>Apacheの場合：https://httpd.apache.org/docs/2.4/mod/mod_alias.html</p>
+<p>管理者がログオンURLをパーソナライズしたい場合(例えば、 <strong>http://hostname/goglobal</strong> の代わりに <strong>http://hostname/wilson</strong> を使用)、URLのエイリアスを作成できます。詳細については、次の記事を参照してください。</p>
+<p>IISの場合: <strong><a href="https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder">https://support.microsoft.com/en-us/help/308150/how-to-create-a-virtual-directory-onan-existing-web-site-to-a-folder</a></strong></p>
+<p>Apacheの場合: <strong><a href="https://httpd.apache.org/docs/2.4/mod/mod_alias.html">https://httpd.apache.org/docs/2.4/mod/mod_alias.html</a></strong></p>
 <h2 id="クライアントウィンドウのサイズ変更">クライアントウィンドウのサイズ変更</h2>
 <p>コマンドライン引数–fを使用すると、コマンドライン引数–geometryを使用してクライアントウィンドウのサイズを変更できます。コマンドラインに-geometryを指定しないと、クライアントウィンドウは最大化されます。GO-Globalをルーズウィンドウモードで実行した場合、-geometryは効果がありません。クライアントウィンドウのサイズを変更するには、GO-Globalクライアント実行可能ファイルに–geometryを追加し、その後に目的の幅と高さを続けます。</p>
 <p>例：Windows
-C:\Program Files\GraphOn\AppController\AppController.exe”</p>
+<code>&quot;C:\Program Files\GraphOn\AppController\AppController.exe&quot; -f -geometry=800x600</code></p>
 <p>Linux: 
-./AppController -h 196.125.010.222 -f -geometry=800x600</p>
+<code>./AppController -h 196.125.010.222 -f -geometry=800x600</code></p>
 <p>Mac: 
-./AppController -h 196.125.010.222 -f -geometry=800x600</p>
+<code>./AppController -h 196.125.010.222 -f -geometry=800x600</code></p>
 
 	
 		
