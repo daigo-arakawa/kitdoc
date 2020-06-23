@@ -10,14 +10,16 @@ type: "docs"
 
 ### ホストに接続しているすべてのクライアントに対してパフォーマンス自動調整を有効にする方法
 
-1. 次のディレクトリで **HostProperties.xml**ファイルを見つけます。C:\ProgramData\GraphOn\GO-Global.
-2. ワードパッドで **HostProperties.xml**を開き、次のセクションを見つけます。
-3. **ClientProcessingBatch**値を0から1に変更します。
-4. **ClientProcessingThrottleV2**値を0から1に変更します。
-5. Regeditを開き、DWORDレジストリ値を作成します。\HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GOGlobal\AppServer\ClientOffscreenSurfaces そしてその値を0に設定します。
-6. **GO-Global Application Publishing Service**を停止して開始します。
+1. 次のディレクトリで **HostProperties.xml** ファイルを見つけます。`C:\ProgramData\GraphOn\GO-Global`
+2. ワードパッドで **HostProperties.xml** を開き、次のセクションを見つけます。
+3. **ClientProcessingBatch** 値を0から1に変更します。
+4. **ClientProcessingThrottleV2** 値を0から1に変更します。
+5. Regeditを開き、DWORDレジストリ値を作成します。`\HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GOGlobal\AppServer\ClientOffscreenSurfaces`そしてその値を0に設定します。
+6. **GO-Global Application Publishing Service** を停止して開始します。
 
->変更を加える前に、必ず **HostProperties.xml**のバックアップを作成してください。
+{{% alert title="参照" color="info" %}}
+変更を加える前に、必ず **HostProperties.xml** のバックアップを作成してください。
+{{% /alert %}}
 
 ### パフォーマンス自動調整のしくみ
 

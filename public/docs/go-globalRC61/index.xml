@@ -1,0 +1,121 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kitASP Docs – GO-Global6.1RC</title>
+    <link>/docs/go-globalrc61/</link>
+    <description>Recent content in GO-Global6.1RC on kitASP Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/go-globalrc61/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 概要</title>
+      <link>/docs/go-globalrc61/go-global61introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/go-global61introduction/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: サーバーの設定</title>
+      <link>/docs/go-globalrc61/configuringthehost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/configuringthehost/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: ユーザーアカウントの管理</title>
+      <link>/docs/go-globalrc61/administeringuseraccounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/administeringuseraccounts/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GO-Global Admin Console</title>
+      <link>/docs/go-globalrc61/go-globaladminconsole/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/go-globaladminconsole/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GO-Globalの実行</title>
+      <link>/docs/go-globalrc61/runninggo-global/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/runninggo-global/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Mobile App Toolbar Editor</title>
+      <link>/docs/go-globalrc61/mobileapptoolbareditor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/mobileapptoolbareditor/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Advanced Topics</title>
+      <link>/docs/go-globalrc61/advancedtopics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/advancedtopics/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: APPENDIX</title>
+      <link>/docs/go-globalrc61/appendix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-globalrc61/appendix/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

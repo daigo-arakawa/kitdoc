@@ -27,4 +27,6 @@ http://hostname/goglobal/logon.html?printerconfig=all
 
 オプションを指定しない場合、GO-Globalは自動的にユーザのデフォルトプリンタのみを設定します。
 
->クライアントプリンタを設定するには、 **印刷スプーラサービス**がGO-Globalホスト上で実行されている必要があります。
+{{% alert title="参照" color="info" %}}
+クライアントプリンタを設定するには、 **印刷スプーラサービス**がGO-Globalホスト上で実行されている必要があります。
+{{% /alert %}}

@@ -28,7 +28,7 @@ AppController.exe -h server1 -mm 1
 GO-Globalハイパーリンクでマルチモニタパラメータをfalseに設定します。
 
 ```
-http://hostname/goglobal/logon.html?multimonitor=false
+http://hostname/goglobal/logon.html?multimonitor=false 
 ```
 
 ### GO-Globalハイパーリンク経由でマルチモニタを有効にする方法
@@ -36,6 +36,6 @@ http://hostname/goglobal/logon.html?multimonitor=false
 GO-Globalハイパーリンクでマルチモニタパラメータをtrueに設定します。
 
 ```
-http://hostname/goglobal/logon.html?multimonitor=true
+http://hostname/goglobal/logon.html?multimonitor=true 
 ```
 

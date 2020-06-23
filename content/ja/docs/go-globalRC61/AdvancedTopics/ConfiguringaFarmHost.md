@@ -8,17 +8,21 @@ type: "docs"
 
 ### ファームホストを構成する方法
 
-1. Admin Consoleで、[Tools | Host Options]の順にクリックします。
-2. [Configuration]タブをクリックします。
-3. [Application Host]をクリックします。
-4. [Farm Host]をクリックします。
-5. [Farm Manager address field]フィールドに、Farm ManagerのIPアドレスを入力します。
-6. OKをクリックします。
-7. GO-Global Application Publishing Serviceを再起動します。
+1. Admin Consoleで、 **[Tools | Host Options]** の順にクリックします。
+2. **[Configuration]** タブをクリックします。
+3. **[Application Host]** をクリックします。
+4. **[Farm Host]** をクリックします。
+5. **[Farm Manager address field]** フィールドに、Farm ManagerのIPアドレスを入力します。
+6. **OK** をクリックします。
+7. **GO-Global Application Publishing Service** を再起動します。
 
 ![7-4-1](/img/7-4-1.png) 
 
 ## License Server Configuration
+
+{{% alert title="注意" color="secondary" %}}
+本項目の設定は推奨設定ではございませんのでご注意ください。
+{{% /alert %}}
 
 When an independent host is configured to run as a Relay Load Balancer or a dependent host, GO-Global does not automatically make any changes to the host's licensing configuration. For example, if an independent host is configured to use the license server that is installed on the same computer as the host, the host will continue to use the computer's local license server after the host is connected to a Relay Load Balancer. This is the default configuration, but not typically the best licensing configuration. A Relay Load Balancer and its dependent hosts should all be configured to use the same license server(s).
 
@@ -30,7 +34,9 @@ With both of these configurations, the **Licenses** tab on the Admin Console wil
 
 Prior to version 6.1, GO-Global managed licenses from Dependent Hosts by default. With this configuration, administrators had to configure each Dependent Host to use a central license manager. Beginning with version 6.1, administrators no longer need to do this. GO-Global now manages licenses from the Relay Load Balancer by default. This enables administrators to add and remove Dependent Hosts from the Relay Load Balancer without having to make any licensing configuration changes.
 
->Dependent Hosts that are upgraded to version 6.1 from older versions will continue to manage licenses from the Dependent Host. Administrators can change this after the upgrade by editing the value of the ManageLicensesFrom property in the HostProperties.xml file from Host to Relay on all the Dependent Hosts and the Relay Load Balancer.
+{{% alert title="参照" color="info" %}}
+Dependent Hosts that are upgraded to version 6.1 from older versions will continue to manage licenses from the Dependent Host. Administrators can change this after the upgrade by editing the value of the **ManageLicensesFrom** property in the **HostProperties.xml** file from Host to Relay on all the Dependent **Hosts** and the **Relay** Load Balancer.
+{{% /alert %}}
 
 ## Administering Relay Load Balancers and Dependent Hosts on Different Networks
 
@@ -46,11 +52,15 @@ Clicking **No** will return you to the **All Hosts** node of the Admin Console. 
 4. The Admin Console starts on the Relay Load Balancer. The user can now administer the Relay Load Balancer and all of its dependent hosts.
 5. A maximum of two administration sessions can run on the Relay Load Balancer at any given time, regardless of the **Maximum sessions on this host** setting in the Admin Console and regardless of license restrictions.
 
-Dependent hosts inherit their list of published applications, server settings, and user settings from the Relay Load Balancer. Applications must be installed in the same directory on all dependent hosts. Applications do not need to be installed on the Relay Load Balancer. When a GO-Global Host is connected to a Relay Load Balancer all of its server settings are synchronized with those of the Relay Load Balancer. When any changes are made to the Relay Load Balancer's settings, they are also made to **All Hosts** connected to that Relay Load Balancer. The only settings that are allowed to vary are the maximum number of sessions and the name of the Relay Load Balancer. All other settings in the **Host Options** and **Application Properties** dialogs are grayed out and cannot be modified.
+Dependent hosts inherit their list of published applications, server settings, and user settings from the Relay Load Balancer. Applications must be installed in the same directory on all dependent hosts. Applications do not need to be installed on the Relay Load Balancer. When a GO-Global Host is connected to a Relay Load Balancer all of its server settings are synchronized with those of the Relay Load Balancer. 
 
-When setting up a Relay Load Balancer, if an application is installed but not published on the dependent host, you will need to publish the application on the Relay Load Balancer through the Admin Console. For example, if Adobe Reader 7.0 is installed on the dependent host at C:\Program Files\Adobe\Acrobat 8.0\Reader\AcroRd32.exe, open the Admin Console on the Relay Load Balancer and type this path location in the **Executable Path** box in the **Add Application** dialog.
+When any changes are made to the Relay Load Balancer's settings, they are also made to **All Hosts** connected to that Relay Load Balancer. The only settings that are allowed to vary are the maximum number of sessions and the name of the Relay Load Balancer. All other settings in the **Host Options** and **Application Properties** dialogs are grayed out and cannot be modified.
 
->Before publishing an item on a mapped drive, verify that the drive is mapped to the same drive letter and location on the dependent hosts as it is on the Relay Load Balancer.
+When setting up a Relay Load Balancer, if an application is installed but not published on the dependent host, you will need to publish the application on the Relay Load Balancer through the Admin Console. For example, if Adobe Reader 7.0 is installed on the dependent host at `C:\Program Files\Adobe\Acrobat 8.0\Reader\AcroRd32.exe,` open the Admin Console on the Relay Load Balancer and type this path **location** in the Location box in the **Add Application** dialog.
+
+{{% alert title="参照" color="info" %}}
+Before publishing an item on a mapped drive, verify that the drive is mapped to the same drive letter and location on the dependent hosts as it is on the Relay Load Balancer.
+{{% /alert %}}
 
 ## Host Selection
 
@@ -68,7 +78,7 @@ Otherwise, if the session cannot be started on any of the available hosts, the f
 
 In a Relay Load Balancer setting, GO-Global checks the maximum sessions settings on the Relay Load Balancer and its dependent hosts. The maximum sessions value on the Relay Load Balancer is the maximum number of sessions that can be run concurrently on all dependent hosts assigned to that Relay Load Balancer.
 
-To modify the Maximum sessions on this host setting, open the Admin Console on the host, click Host Options | Session Startup.
+To modify the **Maximum sessions on this host** setting, open the Admin Console on the host, click Host Options | Session Startup.
 
 ## Relay Load Balancer in a DMZ
 
@@ -92,43 +102,45 @@ The Application Publishing Service can be configured to automatically restart if
 ### To configure a Failover Application Host Manager 
 
 1. Install the GO-Global Host on a separate computer, on the same network as the Application Host Manager. This computer will be the failover Application Host Manager. All clients and Dependent Hosts (or Farm Managers) must be able to connect to the failover Application Host Manager.If clients connect to the cluster from the internet, the failover Application Host Manager must have a public address.
-2. Configure the GO-Global Host to run as an Application Host Manager:
-	a. Run the Admin Console on the computer.
-	b. Click Tools | Host Options.
-	c. Click the Configuration tab.
-	d. Click Application Host Manager.
-	e. If the primary Application Host Manager is a Relay Load Balancer, click Relay Load Balancer. If the primary Application Host Manager is a Farm Manager, click Farm Manager.
-	f. Click OK.
-	g. Restart the Application Publishing Service.
-3. Export the published applications from the primary Application Host Manager and import them into the failover Application HostManager:
-	a. On the primary Application Host Manager, run Regedit as administrator.
-	b. Select the following registry key:\HKEY_LOCAL_MACHINE\GraphOn\GO-Global\AppServer
-	c. Click File | Export…
-	d. Type a name for the file (e.g., Appserver.reg).
-	e. Click Save.
-	f. Copy the file to the failover Application Host Manager. 
-    	g. Double-click the file.
-	h. Click Yes to import the file.
-	i. Click OK. 
-4. Configure each Dependent Host so it will connect to the failover Relay Load Balancer when it is unable to connect to the primary Relay Load Balancer:
-	a. Run the Admin Console
-	b. Click Tools | Host Options.
-	c. Click the Configuration tab.
-	d. Enter the addresses of both Relay Load Balancers in the Relay Load Balancer address field, with their fully-qualified domain names. Enter the address of the primary Relay Load Balancer first, followed by a semi-colon, followed by the address of the failover Relay Load Balancer. For example: primary_relay_loadbalancer.graphon.com;failover_relay_load_balancer.graphon.com
-	e. Click OK.
-5. Specify the addresses of both the primary and the failover Relay Load Balancers in the URLs and shortcuts that are used to start the clients:
-	a. Provide users that connect via a browser with an HTML page or URL that sets the host parameter to the address of the primary relay server, followed by a semicolon, followed by the address of the failover relay server (e.g.,host=primary_relay_load-balancer_address;failover_relay_load_balancer_address).
-	b. Provide users that connect via an installed client, with a shortcut that sets the –h command line argument equal to the address of the primary relay server, followed by a semi-colon, followed by the address of the failover relay server (e.g., -h primary_relay_load_balancer_address;failover_relay_load_balancer_address).
+2. Configure the GO-Global Host to run as an Application Host Manager:<br>
+	a. Run the **Admin Console** on the computer.<br>
+	b. Click Tools | Host Options.<br>
+	c. Click the **Configuration tab.** <br>
+	d. Click **Application Host Manager.** <br>
+	e. If the primary Application Host Manager is a Relay Load Balancer, click **Relay Load Balancer.** If the primary Application Host Manager is a **Farm Manager,** click Farm Manager.<br>
+	f. Click **OK.** <br>
+	g. Restart the **Application Publishing Service.** <br>
+3. Export the published applications from the primary Application Host Manager and import them into the failover Application HostManager:<br>
+	a. On the primary Application Host Manager, run Regedit as administrator.<br>
+	b. Select the following registry key:`\HKEY_LOCAL_MACHINE\GraphOn\GO-Global\AppServer`<br>
+	c. Click **File | Export…** <br>
+	d. Type a name for the file (e.g., Appserver.reg).<br>
+	e. Click **Save.** <br>
+	f. Copy the file to the failover Application Host Manager.<br> 
+    	g. Double-click the file.<br>
+	h. Click **Yes** to import the file.<br>
+	i. Click **OK.** <br>
+4. Configure each Dependent Host so it will connect to the failover Relay Load Balancer when it is unable to connect to the primary Relay Load Balancer:<br>
+	a. Run the Admin Console<br>
+	b. Click Tools | Host Options.<br>
+	c. Click the **Configuration** tab.<br>
+	d. Enter the addresses of both Relay Load Balancers in the **Relay Load Balancer address** field, with their fully-qualified domain names. Enter the address of the primary Relay Load Balancer first, followed by a semi-colon, followed by the address of the failover Relay Load Balancer. For example: primary_relay_loadbalancer.graphon.com;failover_relay_load_balancer.graphon.com<br>
+	e. Click **OK.** <br>
+5. Specify the addresses of both the primary and the failover Relay Load Balancers in the URLs and shortcuts that are used to start the clients:<br>
+	a. Provide users that connect via a browser with an HTML page or URL that sets the **host** parameter to the address of the primary relay server, followed by a semicolon, followed by the address of the failover relay server (e.g.,host=primary_relay_load-balancer_address;failover_relay_load_balancer_address).<br>
+	b. Provide users that connect via an installed client, with a shortcut that sets the **–h** command line argument equal to the address of the primary relay server, followed by a semi-colon, followed by the address of the failover relay server (e.g., -h primary_relay_load_balancer_address;failover_relay_load_balancer_address).<br>
 
 In this configuration, if the primary Relay Load Balancer fails for any reason, dependent hosts and clients automatically reconnect to the failover server and users are generally reconnected to their sessions within 1-2 minutes of the primary Relay Load Balancer failure. This is illustrated in the diagram below.
 
 ![7-4-3](/img/7-4-3.png) 
 
-If users' sessions fail to reconnect automatically, increase the value of the autoreconnect parameter in client URLs, web pages and shortcuts to a number greater than 5 (the default).
+If users' sessions fail to reconnect automatically, increase the value of the **autoreconnect** parameter in client URLs, web pages and shortcuts to a number greater than 5 (the default).
 
 When the failover Relay Load Balancer is active (i.e., when dependent hosts are connected to the failover Relay Load Balancer), users' sessions will take longer to start. For this reason, the primary Relay Load Balancer should be re-activated when it comes back online. To re-activate the primary Relay Load Balancer, terminate the aps.exe process on the failover Relay Load Balancer using Task Manager at a time when users are unlikely to be connected to the cluster. When the aps.exe process is terminated on the failover Relay Load Balancer, dependent hosts and clients will reconnect to the primary Relay Load Balancer. Then, after the cluster's dependent hosts have reconnected to the primary Relay Load Balancer, restart the Application Publishing Service on the failover Relay Load Balancer.
 
->When the Application Publishing Service is stopped or restarted on a Relay Load Balancer via Services, GO-Global closes all the sessions that are running on the Relay Load Balancer's dependent hosts. Therefore, if you need to re-activate a primary Relay Load Balancer when there are sessions running on the cluster's dependent hosts, don't restart the Application Publishing Service on the failover Relay Load Balancer via Services; instead, terminate the aps.exe process on the failover Relay Load Balancer using Task Manager, as described above.
+{{% alert title="参照" color="info" %}}
+When the **Application Publishing Service** is stopped or restarted on a Relay Load Balancer via **Services,** GO-Global closes all the sessions that are running on the Relay Load Balancer's dependent hosts. Therefore, if you need to re-activate a primary Relay Load Balancer when there are sessions running on the cluster's dependent hosts, don't restart the Application Publishing Service on the failover Relay Load Balancer via Services; instead, terminate the aps.exe process on the failover Relay Load Balancer using Task Manager, as described above.
+{{% /alert %}}
 
 ## あるホストから別のホストへの構成設定の手動コピー
 
@@ -136,16 +148,16 @@ When the failover Relay Load Balancer is active (i.e., when dependent hosts are 
 
 ### 構成設定を手動でコピーする方法
 
-1.必要に応じて、サンプルホストですべての設定を構成します。
-2.次のレジストリキーをエクスポートします。HKEY_LOCAL_MACHINE\Software\GraphOn\GO-Global
-3.ターゲットホストでApplication Publishing Serviceを停止します。
-4.次のファイルをサンプルホストからターゲットホストにコピーします。
-	％PROGRAMDATA％\Graphon\GO-Global\HostProperties.xml
- 	％PROGRAMDATA％\Graphon\GO-Global\DefaultWorkspaceProperties.xml
-	％PROGRAMDATA％\Graphon\GO-Global\images\*.*
-5.手順2で作成した.regファイルを実行します。
-6.ターゲットホストでApplication Publishing Serviceを再起動します。
-7.他のホストについて、手順2〜6を繰り返します。
+1. 必要に応じて、サンプルホストですべての設定を構成します。
+2. 次のレジストリキーをエクスポートします。`HKEY_LOCAL_MACHINE\Software\GraphOn\GO-Global`
+3. ターゲットホストで **Application Publishing Service** を停止します。
+4. 次のファイルをサンプルホストからターゲットホストにコピーします。<br>
+	`％PROGRAMDATA％\Graphon\GO-Global\HostProperties.xml`<br>
+ 	`％PROGRAMDATA％\Graphon\GO-Global\DefaultWorkspaceProperties.xml`<br>
+	`％PROGRAMDATA％\Graphon\GO-Global\images\*.*`<br>
+5. 手順2で作成した.regファイルを実行します。
+6. ターゲットホストで **Application Publishing Service** を再起動します。
+7. 他のホストについて、手順2〜6を繰り返します。
 
 
 
