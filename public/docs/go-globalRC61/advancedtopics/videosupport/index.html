@@ -27,13 +27,13 @@ H264Videoプロパティが2に設定されている場合、ユーザはコマ�
 ビデオのサポートを有効/無効にする方法  Application Publishing Serviceを停止します。 DefaultWorkspaceProperties.xml ファイルをC:\ProgramData\GraphOn\GO-Globalディレクトリ内に配置してください。 WordpadでDefaultWorkspaceProperties.xmlを開き、次のセクションを探します。  &lt;/property&gt; &lt;property type=&quot;UINT32&quot; group=&quot;Miscellaneous&quot; id=&quot;H264Video&quot;&gt;&lt;value&gt;0&lt;/value&gt; &lt;/property&gt;0を希望の値に置き換えます(例:1、2、3)。 編集した.xmlファイルを保存します。 Application Publishing Service を起動します。  ビデオサポートは、GO-Global AppControllerログオンページに video=1 または video=0 を追加することで有効または無効にすることもできます。 例えば： http://hostname/goglobal/?video=1は、H264Videoワークスペースプロパティが2に設定されている場合にビデオサポートを有効にします。 http://hostname/goglobal/?video=0は、H264Videoワークスペースプロパティが3に設定されている場合にビデオサポートを無効にします。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/advancedtopics/videosupport/" />
-<meta property="article:modified_time" content="2020-06-03T03:24:08+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-23T18:22:07+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="ビデオサポート">
 <meta itemprop="description" content="ビデオサポートが有効になっている場合、GO-Globalセッションで実行されているアプリケーションおよびWebブラウザは、ビデオコンテンツをGO-Globalクライアントにリダイレクトします。ビデオサポートはデフォルトで無効になっています。
 管理者は、DefaultWorkspaceProperties.xml の H264Video プロパティID値を編集することにより、ビデオサポートを有効にできます。デフォルトでは、H264Videoプロパティは0に設定されており、ショートカットに追加されたコマンドライン引数や、ログオンHTMLページを開くハイパーリンクに関係なく、ビデオのサポートが無効になります。H264Videoを 1 に設定すると、コマンドライン引数に関係なくビデオサポートが有効になります。H264Videoが 2 に設定されている場合、ショートカットに -video が追加されるか、ハイパーリンクに video=1 が追加されない限り、ビデオは無効になります。H264Videoが 3 に設定されている場合、ショートカットに -novideo が追加されているか、ハイパーリンクに video=0 が追加されていない限り、ビデオは有効です。
 H264Videoプロパティが2に設定されている場合、ユーザはコマンドライン引数 -video をGO-Globalショートカットに追加することにより、ビデオサポートを有効にできます。たとえば、&quot;C:\Program Files\GraphOn\AppController\AppController.exe&quot; -h server1 -videoです。H264Videoプロパティが3に設定されている場合、ビデオサポートを無効にするには、ショートカットに -novideo を追加します。
 ビデオのサポートを有効/無効にする方法  Application Publishing Serviceを停止します。 DefaultWorkspaceProperties.xml ファイルをC:\ProgramData\GraphOn\GO-Globalディレクトリ内に配置してください。 WordpadでDefaultWorkspaceProperties.xmlを開き、次のセクションを探します。  &lt;/property&gt; &lt;property type=&quot;UINT32&quot; group=&quot;Miscellaneous&quot; id=&quot;H264Video&quot;&gt;&lt;value&gt;0&lt;/value&gt; &lt;/property&gt;0を希望の値に置き換えます(例:1、2、3)。 編集した.xmlファイルを保存します。 Application Publishing Service を起動します。  ビデオサポートは、GO-Global AppControllerログオンページに video=1 または video=0 を追加することで有効または無効にすることもできます。 例えば： http://hostname/goglobal/?video=1は、H264Videoワークスペースプロパティが2に設定されている場合にビデオサポートを有効にします。 http://hostname/goglobal/?video=0は、H264Videoワークスペースプロパティが3に設定されている場合にビデオサポートを無効にします。">
-<meta itemprop="dateModified" content="2020-06-03T03:24:08&#43;09:00" />
+<meta itemprop="dateModified" content="2020-06-23T18:22:07&#43;09:00" />
 <meta itemprop="wordCount" content="57">
 
 
@@ -134,7 +134,7 @@ H264Videoプロパティが2に設定されている場合、ユーザはコマ�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.53b22d2262b729a1b41d223d654299bfac8a7960f232313b29e7d601cf088cb33a5d8d0579cc460848d0c6de04397ad2b271897bb663b20c2293cdccb52eac3e.json"
+  data-offline-search-index-json-src="/offline-search-index.388ee2dae9d8ea60ce29c9e1d602b589047c5c7d97613aeb3d7267dad3c96adeaf5dc57007167cdf48b890551944c5c7c4219c391c7ef10d7500629fb4413abb.json"
   data-offline-search-base-href="/"
 >
 
@@ -164,7 +164,7 @@ H264Videoプロパティが2に設定されている場合、ユーザはコマ�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.53b22d2262b729a1b41d223d654299bfac8a7960f232313b29e7d601cf088cb33a5d8d0579cc460848d0c6de04397ad2b271897bb663b20c2293cdccb52eac3e.json"
+  data-offline-search-index-json-src="/offline-search-index.388ee2dae9d8ea60ce29c9e1d602b589047c5c7d97613aeb3d7267dad3c96adeaf5dc57007167cdf48b890551944c5c7c4219c391c7ef10d7500629fb4413abb.json"
   data-offline-search-base-href="/"
 >
 
@@ -2838,7 +2838,7 @@ H264Videoプロパティが2に設定されている場合、ユーザはコマ�
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 3, 2020: <a  href="https://github.com//commit/706d40e1543f5d3dc0274d55061f19ae5d5fd180">61-5 (706d40e1)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 23, 2020: <a  href="https://github.com//commit/30e48b4ed690f9db8ce711294c2a51651685c90d">update0623 (30e48b4e)</a>
 </div>
 </div>
 

@@ -33,5 +33,5 @@ Admin Consoleで **クライアントの自動更新** を選択し、ユーザ�
 * ユーザはGO-Globalクライアントセッションからサインアウトしました。
 
 {{% alert title="参照" color="info" %}}
-Updatesフォルダのデフォルトの場所はC:\Program Files\GraphOn\GO-Global\Updateになります。それはレジストリキーで定義される:HKEY_LOCAL_MACHINE_MACHINESOFTWARE\GraphOn\AppControllerUpdates 
+Updatesフォルダのデフォルトの場所は`C:\Program Files\GraphOn\GO-Global\Update`になります。それはレジストリキーで定義される:`HKEY_LOCAL_MACHINE_MACHINESOFTWARE\GraphOn\AppControllerUpdates`
 {{% /alert %}}

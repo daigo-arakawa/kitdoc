@@ -22,5 +22,5 @@ AppControllerは、コンピュータのデスクトップ、モバイルデバ�
 
 ![4-20-1](/img/4-20-1.png) 
 
-ブランディングオプションは、group="Branding"の下のC:\ProgramData\GraphOn\GO-Global\HostProperties.xmlファイルに保存されます。画像はC:\ProgramData\GraphOn\GO-Global\imagesに保存されます。
-relay serverまたはセッションマネージャを使用すると、クラスタ内のすべてのホストで設定の変更が自動的に行われます。relay serverまたはセッションマネージャを使用しない場合、ブランドオプションをコンピュータ間で手動でコピーできます。詳細については、「ホスト間での構成設定の手動コピー」を参照してください。
+ブランディングオプションは、group="Branding"の下の`C:\ProgramData\GraphOn\GO-Global\HostProperties.xml`ファイルに保存されます。画像は`C:\ProgramData\GraphOn\GO-Global\images`に保存されます。
+relay serverまたはセッションマネージャを使用すると、クラスタ内のすべてのホストで設定の変更が自動的に行われます。relay serverまたはセッションマネージャを使用しない場合、ブランドオプションをコンピュータ間で手動でコピーできます。詳細については、[あるホストから別のホストへの構成設定の手動コピー](/docs/go-globalrc61/advancedtopics/configuringafarmhost/#あるホストから別のホストへの構成設定の手動コピー)を参照してください。

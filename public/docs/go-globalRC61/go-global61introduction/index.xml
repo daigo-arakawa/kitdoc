@@ -127,7 +127,17 @@
       <description>
         
         
-        &lt;h2 id=&#34;go-globalホスト&#34;&gt;GO-Globalホスト&lt;/h2&gt;
+        
+
+&lt;div class=&#34;alert alert-green&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;情報&lt;/h4&gt;
+代理店様向けの専用ページにGO-Global製品OSバージョン別マトリックスとGO-Global製品バージョン別機能マトリックスの資料も用意しています。&lt;br&gt;
+合わせてご参照ください。
+&lt;/div&gt;
+
+&lt;h2 id=&#34;go-globalホスト&#34;&gt;GO-Globalホスト&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;GO-Globalホストには、次の64ビットWindowsオペレーティングシステムのいずれかが必要です。&lt;br&gt;
 　&lt;strong&gt;Windows Server 2019&lt;/strong&gt; - Standard/Datacenter&lt;br&gt;

@@ -111,11 +111,11 @@ GO-Globalでは、ログオンプロセスをシャットダウンする前に�
 &lt;/div&gt;
 
 &lt;h2 id=&#34;go-global-appcontrollerを使用したwebアプリケーションの実行&#34;&gt;GO-Global AppControllerを使用したWebアプリケーションの実行&lt;/h2&gt;
-&lt;p&gt;GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。&lt;/p&gt;
+&lt;p&gt;GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global AppControllerをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global AppControllerをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。&lt;/p&gt;
 &lt;p&gt;GO-Globalは、GO-Global AppControllerのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;useApp　　useApp = trueの場合、Webアプリケーションは完全なGO-Global AppControllerを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global AppControllerを起動しようとしません。 デフォルトでuseApp = trueです。&lt;/li&gt;
-&lt;li&gt;installApp　　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、 &lt;strong&gt;[Get the App]&lt;/strong&gt; リンクがGO-Global Web Appのツールバーに追加されます。&lt;/li&gt;
+&lt;li&gt;useApp　　useApp = trueの場合、Webアプリケーションは完全なGO-Global AppControllerを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global AppControllerを起動しようとしません。デフォルトでuseApp = trueです。&lt;/li&gt;
+&lt;li&gt;installApp　　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global AppControllerをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global AppControllerをインストールするように要求されず、インストールするためのリンクも表示されません。installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、 &lt;strong&gt;[Get the App]&lt;/strong&gt; リンクがGO-Global Web Appのツールバーに追加されます。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLが &lt;strong&gt;&lt;code&gt;http://hostname/goglobal/logon.html&lt;/code&gt;&lt;/strong&gt; の場合など)、GO-Globalは自動的にGO-Global AppControllerのダウンロードを開始し、ユーザにプロンプトを表示します。インストールして実行します。または、installAppオプションがaddLinkに設定されている場合(たとえば、URLが &lt;strong&gt;&lt;code&gt;http://hostname/goglobal/logon.html?installApp=addLink&lt;/code&gt;&lt;/strong&gt; の場合)、Webアプリケーションのツールバーに[Get the App]リンクが追加されます。ユーザがこのリンクをクリックすると、GO-Globalはダウンロードを開始し、GO-Global AppControllerの実行とインストールのプロセスを案内します。&lt;/p&gt;
 &lt;p&gt;GO-Global AppControllerをインストールして有効にすると、「埋め込み」URLパラメータを使用して、アプリケーションをブラウザウィンドウ内で実行するかブラウザウィンドウ外で実行するかを制御できます。 embedパラメータが指定されていないか、または&amp;rdquo; false&amp;quot;に設定されている場合(たとえば、URLがhttp://hostname/goglobal/logon.html?embed = falseである場合)、ユーザのアプリケーションはGO-Global AppControllerを介してブラウザのウィンドウ外で実行されます。&lt;/p&gt;
@@ -425,7 +425,7 @@ controlArgs.set([ &amp;quot;embed&amp;quot;, &amp;quot;true&amp;quot; ]);
       <description>
         
         
-        &lt;p&gt;GO-Globalホストのセットアップは、C:\Program Files\GraphOn\GO-Global\Webの下にGO-Global Webファイルをインストールします。インストール中にMicrosoftインターネットインフォメーションサービス(IIS)が検出されると、GO-Global Webファイルを指す仮想ディレクトリがIISに作成されます。IISが利用できない場合、管理者は指定されたWebサーバー上でGO-Global Webフォルダの内容を手動でホストする必要があります。&lt;/p&gt;
+        &lt;p&gt;GO-Globalホストのセットアップは、&lt;code&gt;C:\Program Files\GraphOn\GO-Global\Web&lt;/code&gt;の下にGO-Global Webファイルをインストールします。インストール中にMicrosoftインターネットインフォメーションサービス(IIS)が検出されると、GO-Global Webファイルを指す仮想ディレクトリがIISに作成されます。IISが利用できない場合、管理者は指定されたWebサーバー上でGO-Global Webフォルダの内容を手動でホストする必要があります。&lt;/p&gt;
 &lt;p&gt;管理者はHTMLページを編集してデフォルトオプションを変更したり、どのクライアントをユーザが利用できるようにしたりするかを制限できます。インストール中、初期Webページはlogon.htmlに設定されます。Webブラウザからホストにアクセスするユーザは、次のURLにアクセスする必要があります。&lt;strong&gt;&lt;code&gt;http://hostname/go-global/&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Windows用GO-Global AppControllerには、&lt;strong&gt;オールユーザ&lt;/strong&gt; バージョンと &lt;strong&gt;シングルユーザ&lt;/strong&gt; バージョンの2つのバージョンがあります。&lt;strong&gt;オールユーザ&lt;/strong&gt; 版のインストーラ &lt;strong&gt;(AppController.AllUsers.exe)&lt;/strong&gt; は、コンピュータを使用するすべてのユーザに対してAppControllerをインストールしますが、コンピュータの管理者権限を持つユーザのみがインストールできます。オールユーザバージョンをインストールするには、URLに次のようにパラメータ &lt;strong&gt;?allusers=true&lt;/strong&gt; を追加する必要があります。例: &lt;strong&gt;&lt;code&gt;http://hostname/goglobal/?allusers=true&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;シングルユーザ&lt;/strong&gt; 版のインストーラ &lt;strong&gt;(AppController.exe)&lt;/strong&gt; は、コンピュータの管理者権限を持たないユーザが実行できますが、インストーラを実行しているユーザのみがインストールされます。別のユーザが同じコンピュータ上でAppControllerを実行したい場合は、そのユーザもシングルユーザ版のインストーラーを実行する必要があります。&lt;/p&gt;
@@ -528,7 +528,7 @@ GO-Global AppControllerのオールユーザバージョンとシングルユー
 
 
 &lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
-Updatesフォルダのデフォルトの場所はC:\Program Files\GraphOn\GO-Global\Updateになります。それはレジストリキーで定義される:HKEY_LOCAL_MACHINE_MACHINESOFTWARE\GraphOn\AppControllerUpdates
+Updatesフォルダのデフォルトの場所は&lt;code&gt;C:\Program Files\GraphOn\GO-Global\Update&lt;/code&gt;になります。それはレジストリキーで定義される:&lt;code&gt;HKEY_LOCAL_MACHINE_MACHINESOFTWARE\GraphOn\AppControllerUpdates&lt;/code&gt;
 &lt;/div&gt;
 
 

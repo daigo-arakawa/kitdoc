@@ -22,55 +22,46 @@
 
 <title>クラウド環境でのライセンスサーバ | kitASP Docs</title><meta property="og:title" content="クラウド環境でのライセンスサーバ" />
 <meta property="og:description" content="GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定の Elastic IPアドレス(EIP) と固定のMACアドレスを持つ Elastic Network Interface(ENI) を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。
-AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP（EIP）を作成する。 EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address 」を選択します。 詳細については、AWS EIPのドキュメントを参照してください。
+AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP(EIP)を作成する。 EC2コンソールのナビゲーションペインから[NETWORK &amp; SECURITY | Elastic IPs | Allocate new address ]を選択します。 詳細については、AWS EIPのドキュメントを参照してください。
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html Elastic Network Interface(ENI)を作成します。
-2.1 EC2コンソールのナビゲーションペインで、ネットワークインターフェース を選択します。
+2.1 EC2コンソールのナビゲーションペインで、Network Interface を選択します。
 2.2 Create Network Interface をクリックします。
-2.3 説明 を入力し、適切な可用性ゾーンからサブネットを選択します。
+2.3 Description を入力し、適切な可用性ゾーンからサブネットを選択します。
 2.4 プライベートIPは自動割り当てのままにしておく。
 2.5 ファイアウォールルールを含むセキュリティグループを選択します。
  Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。
-3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。
-3.2 手順1で作成したEIPをENIに割り当てます。
-詳細については、AWS ENIのドキュメントを参照してください。
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。" />
+3.1 EIPとENIを作成したら、[Network Interface | Actions | Manage IP Addresses]を選択します。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/" />
 <meta property="article:modified_time" content="2020-06-09T10:34:28+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="クラウド環境でのライセンスサーバ">
 <meta itemprop="description" content="GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定の Elastic IPアドレス(EIP) と固定のMACアドレスを持つ Elastic Network Interface(ENI) を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。
-AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP（EIP）を作成する。 EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address 」を選択します。 詳細については、AWS EIPのドキュメントを参照してください。
+AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP(EIP)を作成する。 EC2コンソールのナビゲーションペインから[NETWORK &amp; SECURITY | Elastic IPs | Allocate new address ]を選択します。 詳細については、AWS EIPのドキュメントを参照してください。
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html Elastic Network Interface(ENI)を作成します。
-2.1 EC2コンソールのナビゲーションペインで、ネットワークインターフェース を選択します。
+2.1 EC2コンソールのナビゲーションペインで、Network Interface を選択します。
 2.2 Create Network Interface をクリックします。
-2.3 説明 を入力し、適切な可用性ゾーンからサブネットを選択します。
+2.3 Description を入力し、適切な可用性ゾーンからサブネットを選択します。
 2.4 プライベートIPは自動割り当てのままにしておく。
 2.5 ファイアウォールルールを含むセキュリティグループを選択します。
  Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。
-3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。
-3.2 手順1で作成したEIPをENIに割り当てます。
-詳細については、AWS ENIのドキュメントを参照してください。
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。">
+3.1 EIPとENIを作成したら、[Network Interface | Actions | Manage IP Addresses]を選択します。">
 <meta itemprop="dateModified" content="2020-06-09T10:34:28&#43;09:00" />
-<meta itemprop="wordCount" content="97">
+<meta itemprop="wordCount" content="111">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="クラウド環境でのライセンスサーバ"/>
 <meta name="twitter:description" content="GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定の Elastic IPアドレス(EIP) と固定のMACアドレスを持つ Elastic Network Interface(ENI) を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。
-AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP（EIP）を作成する。 EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「Allocate new address 」を選択します。 詳細については、AWS EIPのドキュメントを参照してください。
+AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法  Elastic IP(EIP)を作成する。 EC2コンソールのナビゲーションペインから[NETWORK &amp; SECURITY | Elastic IPs | Allocate new address ]を選択します。 詳細については、AWS EIPのドキュメントを参照してください。
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html Elastic Network Interface(ENI)を作成します。
-2.1 EC2コンソールのナビゲーションペインで、ネットワークインターフェース を選択します。
+2.1 EC2コンソールのナビゲーションペインで、Network Interface を選択します。
 2.2 Create Network Interface をクリックします。
-2.3 説明 を入力し、適切な可用性ゾーンからサブネットを選択します。
+2.3 Description を入力し、適切な可用性ゾーンからサブネットを選択します。
 2.4 プライベートIPは自動割り当てのままにしておく。
 2.5 ファイアウォールルールを含むセキュリティグループを選択します。
  Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。
-3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。
-3.2 手順1で作成したEIPをENIに割り当てます。
-詳細については、AWS ENIのドキュメントを参照してください。
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Global License Managerサービスを実行しているAWSインスタンスと同じ可用性ゾーンにある必要があります。Availability Zoneのサブネットを使用するか、Amazon Virtual Private Cloud (VPC)を介してAvailability Zoneにカスタムサブネットを作成することができます。GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。"/>
+3.1 EIPとENIを作成したら、[Network Interface | Actions | Manage IP Addresses]を選択します。"/>
 
 
 
@@ -161,7 +152,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENI�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.53b22d2262b729a1b41d223d654299bfac8a7960f232313b29e7d601cf088cb33a5d8d0579cc460848d0c6de04397ad2b271897bb663b20c2293cdccb52eac3e.json"
+  data-offline-search-index-json-src="/offline-search-index.388ee2dae9d8ea60ce29c9e1d602b589047c5c7d97613aeb3d7267dad3c96adeaf5dc57007167cdf48b890551944c5c7c4219c391c7ef10d7500629fb4413abb.json"
   data-offline-search-base-href="/"
 >
 
@@ -191,7 +182,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENI�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.53b22d2262b729a1b41d223d654299bfac8a7960f232313b29e7d601cf088cb33a5d8d0579cc460848d0c6de04397ad2b271897bb663b20c2293cdccb52eac3e.json"
+  data-offline-search-index-json-src="/offline-search-index.388ee2dae9d8ea60ce29c9e1d602b589047c5c7d97613aeb3d7267dad3c96adeaf5dc57007167cdf48b890551944c5c7c4219c391c7ef10d7500629fb4413abb.json"
   data-offline-search-base-href="/"
 >
 
@@ -2548,21 +2539,21 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html  参照ENI�
 	<p>GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定の <strong>Elastic IPアドレス(EIP)</strong> と固定のMACアドレスを持つ <strong>Elastic Network Interface(ENI)</strong> を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。</p>
 <h3 id="awsでeipとeniを作成しec2インスタンスにアタッチする方法">AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法</h3>
 <ol>
-<li>Elastic IP（EIP）を作成する。
-EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「<strong>Allocate new address</strong> 」を選択します。
+<li>Elastic IP(EIP)を作成する。
+EC2コンソールのナビゲーションペインから[NETWORK &amp; SECURITY | Elastic IPs | <strong>Allocate new address</strong> ]を選択します。
 詳細については、AWS EIPのドキュメントを参照してください。<br>
-<code>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html</code></li>
+<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html</a></li>
 <li>Elastic Network Interface(ENI)を作成します。<br>
-2.1 EC2コンソールのナビゲーションペインで、<strong>ネットワークインターフェース</strong> を選択します。<br>
+2.1 EC2コンソールのナビゲーションペインで、<strong>Network Interface</strong> を選択します。<br>
 2.2 <strong>Create Network Interface</strong> をクリックします。<br>
-2.3 <strong>説明</strong> を入力し、適切な可用性ゾーンからサブネットを選択します。<br>
+2.3 <strong>Description</strong> を入力し、適切な可用性ゾーンからサブネットを選択します。<br>
 2.4 プライベートIPは自動割り当てのままにしておく。<br>
 2.5 ファイアウォールルールを含むセキュリティグループを選択します。<br></li>
 <li>Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。<br>
-3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。<br>
+3.1 EIPとENIを作成したら、[Network Interface | Actions | Manage IP Addresses]を選択します。<br>
 3.2 手順1で作成したEIPをENIに割り当てます。<br>
 詳細については、AWS ENIのドキュメントを参照してください。<br>
-<code>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html</code></li>
+<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html</a></li>
 </ol>
 
 
@@ -2575,7 +2566,7 @@ ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Gl
 
 <ol start="4">
 <li>GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。<br>
-4.1 EC インスタンスから、GO-Global License Manager サービスを実行しているインスタンスを選択し、[アクション] &gt; [ネットワーキング] &gt; [ネットワーク インターフェイスの添付] を選択します。<br>
+4.1 EC インスタンスから、GO-Global License Manager サービスを実行しているインスタンスを選択し、[Actions | Networking | Attach Network Interface]を選択します。<br>
 4.2 手順 2 で作成した ENI を選択します。利用できない場合は、別のAWSインスタンスにアタッチされているか、インスタンスとは異なる可用性ゾーンに作成されている可能性があります。<br></li>
 </ol>
 

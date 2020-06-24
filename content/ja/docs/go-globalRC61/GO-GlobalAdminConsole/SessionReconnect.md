@@ -45,15 +45,13 @@ Program Windowで、[ File | Disconnect ]の順にクリックします。
 
 ![4-11-2](/img/4-11-2.png) 
 
-セッションを指定期間(分)(たとえば、20分)後に終了するよう設定している場合、GO-Globalからの切断時に以下のようなメッセージがユーザに提示されます。
-
-ユーザがセッションを切断する際に、すでに切断済みのセッションがある場合、以下のメッセージが表示されます。
+指定した時間(たとえば20分)後にセッションが終了するように設定されている場合、GO-Globalから切断すると、次のようなメッセージがユーザに表示されます。
 
 ![4-11-3](/img/4-11-3.png) 
 
-{{% alert title="参照" color="info" %}}
-**You already have a session (session_name) that is disconnected. If you disconnect the current session, that previous session will be terminated. Do you want to continue?** (すでに切断済みのセッション(セッション名)があります。現行のセッションを切断すると、その前回のセッションは終了されます。操作を継続しますか?)
-{{% /alert %}}
+ユーザがセッションを切断する際に、すでに切断済みのセッションがある場合、以下のメッセージが表示されます。<br>
+**You already have a session (session_name) that is disconnected. If you disconnect the current session, that previous session will be terminated. Do you want to continue?** <br>
+(すでに切断済みのセッション(セッション名)があります。現行のセッションを切断すると、その前回のセッションは終了されます。操作を継続しますか?) <br>
 
 ユーザが **[Yes]** をクリックすると、切断済みのセッションは終了されます。 **[No]** の場合、ユーザは実行中のセッションに戻ります。
 

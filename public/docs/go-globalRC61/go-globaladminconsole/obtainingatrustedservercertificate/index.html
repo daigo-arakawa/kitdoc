@@ -21,8 +21,8 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>信頼されたサーバ証明書の取得 | kitASP Docs</title><meta property="og:title" content="信頼されたサーバ証明書の取得" />
-<meta property="og:description" content="クライアントのオペレーティングシステムによって信頼されているCAからサーバ証明書を取得する方法については、以下の情報と選択したCAのマニュアルを参照してください。CAは、証明書署名要求(CSR) を必要とします。
-CSRを生成する方法  http://www.openssl.org/related/binaries.htmlから OpenSSLをダウンロードしま。 GO-Globalホストに OpenSSLをインストールします。 [スタート | ファイル名を指定して実行 ]の順にクリックします。 cmd と入力し、Enter キーを押します。 以下のコマンドを入力して、サーバの秘密鍵を生成します。OPENSSL_DIRとは、OpenSSLがインストールされているディレクトリへのパスです(たとえば、C:\openSSL)。 ​  [OPENSSL_DIR]\bin\openssl genrsa –out server.key 2048次のコマンドを入力します。  [OPENSSL_DIR]\bin\openssl req –sha256 –new –key server.key –out server.csrこのコマンドを実行すると、以下のように、証明書に含める属性の入力を求められます。
+<meta property="og:description" content="クライアントのオペレーティングシステムによって信頼されているCAからサーバ証明書を取得する方法については、以下の情報と選択したCAのマニュアルを参照してください。CAは、証明書署名要求(CSR)を必要とします。
+CSRを生成する方法  http://www.openssl.org/related/binaries.htmlから OpenSSL をダウンロードします。 GO-Globalホストに OpenSSLをインストールします。 [スタート | ファイル名を指定して実行 ]の順にクリックします。 cmd と入力し、Enter キーを押します。 以下のコマンドを入力して、サーバの秘密鍵を生成します。OPENSSL_DIRとは、OpenSSLがインストールされているディレクトリへのパスです(たとえば、C:\openSSL)。 ​  [OPENSSL_DIR]\bin\openssl genrsa –out server.key 2048次のコマンドを入力します。  [OPENSSL_DIR]\bin\openssl req –sha256 –new –key server.key –out server.csrこのコマンドを実行すると、以下のように、証明書に含める属性の入力を求められます。
 Country Name:JP State:都道府県名 Locality:市区町村名 Organization:会社名 Organizational Unit:部署名 Common Name:サーバ名 E-mail Address:電子メールアドレスワイルドカードSSL証明書を使用しない場合Common Nameは、GO-Globalホストのホスト名(ホストに接続するときに指定する名前)と一致している必要があります。異なる名前を使用すると、接続時にクライアントから警告が発せられます。上のコマンドの出力は、 server.csrという名前のファイルに保存されます。このファイルをCAに送信します。GO-Globalでは、OpenSSLツールキットに基づいてSSLが実装されているため、使用するツールは、Apache mod_sslパッケージなどのOpenSSLベースの製品で使用されているツールと同じです。mod_sslパッケージを使用してサーバの証明書を取得する方法については、CA の指示に従ってください。
 認証局(CA)から署名された証明書ファイルが届いた時、それを server.crt というファイル名で保存してください。このファイルと上記ステップ5で生成されたファイル server.key をGO-Globalホスト上のシステムアカウントおよびAdministratorグループのアカウントでのみアクセス可能なフォルダへコピーしてください。この時、通常のユーザアカウントでアクセス出来ないことを必ず確認してください。最後に、Admin Consoleで署名された証明書ファイルを選択してください。
 サーバ証明書の選択方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 Securityタブをクリックします。 Transportリストの中から SSLを選択します。 [SSL Certificate] ボックスに、サーバの証明書(server.crtなど)ファイルへのパスを入力または参照します。 OKをクリックします。  GO-Globalは、証明書とその鍵がPEM形式であることを要求しています。第三者のCAに証明書を要求する場合、GraphOnはPEM形式で証明書を要求することをお勧めします。これが不可能で、証明書をDER形式でしか配信できない場合は、次のコマンドを使用してPEM形式に変換できます。" />
@@ -30,20 +30,20 @@ Country Name:JP State:都道府県名 Locality:市区町村名 Organization:会�
 <meta property="og:url" content="/docs/go-globalrc61/go-globaladminconsole/obtainingatrustedservercertificate/" />
 <meta property="article:modified_time" content="2020-06-22T17:26:22+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="信頼されたサーバ証明書の取得">
-<meta itemprop="description" content="クライアントのオペレーティングシステムによって信頼されているCAからサーバ証明書を取得する方法については、以下の情報と選択したCAのマニュアルを参照してください。CAは、証明書署名要求(CSR) を必要とします。
-CSRを生成する方法  http://www.openssl.org/related/binaries.htmlから OpenSSLをダウンロードしま。 GO-Globalホストに OpenSSLをインストールします。 [スタート | ファイル名を指定して実行 ]の順にクリックします。 cmd と入力し、Enter キーを押します。 以下のコマンドを入力して、サーバの秘密鍵を生成します。OPENSSL_DIRとは、OpenSSLがインストールされているディレクトリへのパスです(たとえば、C:\openSSL)。 ​  [OPENSSL_DIR]\bin\openssl genrsa –out server.key 2048次のコマンドを入力します。  [OPENSSL_DIR]\bin\openssl req –sha256 –new –key server.key –out server.csrこのコマンドを実行すると、以下のように、証明書に含める属性の入力を求められます。
+<meta itemprop="description" content="クライアントのオペレーティングシステムによって信頼されているCAからサーバ証明書を取得する方法については、以下の情報と選択したCAのマニュアルを参照してください。CAは、証明書署名要求(CSR)を必要とします。
+CSRを生成する方法  http://www.openssl.org/related/binaries.htmlから OpenSSL をダウンロードします。 GO-Globalホストに OpenSSLをインストールします。 [スタート | ファイル名を指定して実行 ]の順にクリックします。 cmd と入力し、Enter キーを押します。 以下のコマンドを入力して、サーバの秘密鍵を生成します。OPENSSL_DIRとは、OpenSSLがインストールされているディレクトリへのパスです(たとえば、C:\openSSL)。 ​  [OPENSSL_DIR]\bin\openssl genrsa –out server.key 2048次のコマンドを入力します。  [OPENSSL_DIR]\bin\openssl req –sha256 –new –key server.key –out server.csrこのコマンドを実行すると、以下のように、証明書に含める属性の入力を求められます。
 Country Name:JP State:都道府県名 Locality:市区町村名 Organization:会社名 Organizational Unit:部署名 Common Name:サーバ名 E-mail Address:電子メールアドレスワイルドカードSSL証明書を使用しない場合Common Nameは、GO-Globalホストのホスト名(ホストに接続するときに指定する名前)と一致している必要があります。異なる名前を使用すると、接続時にクライアントから警告が発せられます。上のコマンドの出力は、 server.csrという名前のファイルに保存されます。このファイルをCAに送信します。GO-Globalでは、OpenSSLツールキットに基づいてSSLが実装されているため、使用するツールは、Apache mod_sslパッケージなどのOpenSSLベースの製品で使用されているツールと同じです。mod_sslパッケージを使用してサーバの証明書を取得する方法については、CA の指示に従ってください。
 認証局(CA)から署名された証明書ファイルが届いた時、それを server.crt というファイル名で保存してください。このファイルと上記ステップ5で生成されたファイル server.key をGO-Globalホスト上のシステムアカウントおよびAdministratorグループのアカウントでのみアクセス可能なフォルダへコピーしてください。この時、通常のユーザアカウントでアクセス出来ないことを必ず確認してください。最後に、Admin Consoleで署名された証明書ファイルを選択してください。
 サーバ証明書の選択方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 Securityタブをクリックします。 Transportリストの中から SSLを選択します。 [SSL Certificate] ボックスに、サーバの証明書(server.crtなど)ファイルへのパスを入力または参照します。 OKをクリックします。  GO-Globalは、証明書とその鍵がPEM形式であることを要求しています。第三者のCAに証明書を要求する場合、GraphOnはPEM形式で証明書を要求することをお勧めします。これが不可能で、証明書をDER形式でしか配信できない場合は、次のコマンドを使用してPEM形式に変換できます。">
 <meta itemprop="dateModified" content="2020-06-22T17:26:22&#43;09:00" />
-<meta itemprop="wordCount" content="621">
+<meta itemprop="wordCount" content="623">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="信頼されたサーバ証明書の取得"/>
-<meta name="twitter:description" content="クライアントのオペレーティングシステムによって信頼されているCAからサーバ証明書を取得する方法については、以下の情報と選択したCAのマニュアルを参照してください。CAは、証明書署名要求(CSR) を必要とします。
-CSRを生成する方法  http://www.openssl.org/related/binaries.htmlから OpenSSLをダウンロードしま。 GO-Globalホストに OpenSSLをインストールします。 [スタート | ファイル名を指定して実行 ]の順にクリックします。 cmd と入力し、Enter キーを押します。 以下のコマンドを入力して、サーバの秘密鍵を生成します。OPENSSL_DIRとは、OpenSSLがインストールされているディレクトリへのパスです(たとえば、C:\openSSL)。 ​  [OPENSSL_DIR]\bin\openssl genrsa –out server.key 2048次のコマンドを入力します。  [OPENSSL_DIR]\bin\openssl req –sha256 –new –key server.key –out server.csrこのコマンドを実行すると、以下のように、証明書に含める属性の入力を求められます。
+<meta name="twitter:description" content="クライアントのオペレーティングシステムによって信頼されているCAからサーバ証明書を取得する方法については、以下の情報と選択したCAのマニュアルを参照してください。CAは、証明書署名要求(CSR)を必要とします。
+CSRを生成する方法  http://www.openssl.org/related/binaries.htmlから OpenSSL をダウンロードします。 GO-Globalホストに OpenSSLをインストールします。 [スタート | ファイル名を指定して実行 ]の順にクリックします。 cmd と入力し、Enter キーを押します。 以下のコマンドを入力して、サーバの秘密鍵を生成します。OPENSSL_DIRとは、OpenSSLがインストールされているディレクトリへのパスです(たとえば、C:\openSSL)。 ​  [OPENSSL_DIR]\bin\openssl genrsa –out server.key 2048次のコマンドを入力します。  [OPENSSL_DIR]\bin\openssl req –sha256 –new –key server.key –out server.csrこのコマンドを実行すると、以下のように、証明書に含める属性の入力を求められます。
 Country Name:JP State:都道府県名 Locality:市区町村名 Organization:会社名 Organizational Unit:部署名 Common Name:サーバ名 E-mail Address:電子メールアドレスワイルドカードSSL証明書を使用しない場合Common Nameは、GO-Globalホストのホスト名(ホストに接続するときに指定する名前)と一致している必要があります。異なる名前を使用すると、接続時にクライアントから警告が発せられます。上のコマンドの出力は、 server.csrという名前のファイルに保存されます。このファイルをCAに送信します。GO-Globalでは、OpenSSLツールキットに基づいてSSLが実装されているため、使用するツールは、Apache mod_sslパッケージなどのOpenSSLベースの製品で使用されているツールと同じです。mod_sslパッケージを使用してサーバの証明書を取得する方法については、CA の指示に従ってください。
 認証局(CA)から署名された証明書ファイルが届いた時、それを server.crt というファイル名で保存してください。このファイルと上記ステップ5で生成されたファイル server.key をGO-Globalホスト上のシステムアカウントおよびAdministratorグループのアカウントでのみアクセス可能なフォルダへコピーしてください。この時、通常のユーザアカウントでアクセス出来ないことを必ず確認してください。最後に、Admin Consoleで署名された証明書ファイルを選択してください。
 サーバ証明書の選択方法  Admin Consoleで、[Tools | Host Options]の順にクリックします。 Securityタブをクリックします。 Transportリストの中から SSLを選択します。 [SSL Certificate] ボックスに、サーバの証明書(server.crtなど)ファイルへのパスを入力または参照します。 OKをクリックします。  GO-Globalは、証明書とその鍵がPEM形式であることを要求しています。第三者のCAに証明書を要求する場合、GraphOnはPEM形式で証明書を要求することをお勧めします。これが不可能で、証明書をDER形式でしか配信できない場合は、次のコマンドを使用してPEM形式に変換できます。"/>
@@ -137,7 +137,7 @@ Country Name:JP State:都道府県名 Locality:市区町村名 Organization:会�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.53b22d2262b729a1b41d223d654299bfac8a7960f232313b29e7d601cf088cb33a5d8d0579cc460848d0c6de04397ad2b271897bb663b20c2293cdccb52eac3e.json"
+  data-offline-search-index-json-src="/offline-search-index.388ee2dae9d8ea60ce29c9e1d602b589047c5c7d97613aeb3d7267dad3c96adeaf5dc57007167cdf48b890551944c5c7c4219c391c7ef10d7500629fb4413abb.json"
   data-offline-search-base-href="/"
 >
 
@@ -167,7 +167,7 @@ Country Name:JP State:都道府県名 Locality:市区町村名 Organization:会�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.53b22d2262b729a1b41d223d654299bfac8a7960f232313b29e7d601cf088cb33a5d8d0579cc460848d0c6de04397ad2b271897bb663b20c2293cdccb52eac3e.json"
+  data-offline-search-index-json-src="/offline-search-index.388ee2dae9d8ea60ce29c9e1d602b589047c5c7d97613aeb3d7267dad3c96adeaf5dc57007167cdf48b890551944c5c7c4219c391c7ef10d7500629fb4413abb.json"
   data-offline-search-base-href="/"
 >
 
@@ -2549,10 +2549,10 @@ Country Name:JP State:都道府県名 Locality:市区町村名 Organization:会�
 <div class="td-content">
 	<h1>信頼されたサーバ証明書の取得</h1>
 	
-	<p>クライアントのオペレーティングシステムによって信頼されているCAからサーバ証明書を取得する方法については、以下の情報と選択したCAのマニュアルを参照してください。CAは、証明書署名要求(CSR) を必要とします。</p>
+	<p>クライアントのオペレーティングシステムによって信頼されているCAからサーバ証明書を取得する方法については、以下の情報と選択したCAのマニュアルを参照してください。CAは、証明書署名要求(CSR)を必要とします。</p>
 <h3 id="csrを生成する方法">CSRを生成する方法</h3>
 <ol>
-<li><code>http://www.openssl.org/related/binaries.html</code>から <strong>OpenSSL</strong>をダウンロードしま。</li>
+<li><a href="http://www.openssl.org/related/binaries.html">http://www.openssl.org/related/binaries.html</a>から <strong>OpenSSL</strong> をダウンロードします。</li>
 <li>GO-Globalホストに <strong>OpenSSL</strong>をインストールします。</li>
 <li>[スタート | ファイル名を指定して実行 ]の順にクリックします。</li>
 <li><strong>cmd</strong> と入力し、<strong>Enter</strong> キーを押します。</li>
@@ -2588,7 +2588,7 @@ E-mail Address:電子メールアドレス
 <p>GO-Globalで中間SSL証明書を使用するときは、既存の証明書と中間証明書を連結する必要があります。次の例では、Go Daddy中間証明書を使用しています。</p>
 <ol>
 <li>GO-Globalホストで使用されている.crtファイルと.keyファイルを取り出します。</li>
-<li>Go Daddy中間証明書(GODaddyCA.crtなど)をダウンロードしてください。これは元の証明書の購入に付属しているはずですが、次のGo Daddyサイト(<code>https://certs.godaddy.com/Repository.go</code>)にもあります。</li>
+<li>Go Daddy中間証明書(GODaddyCA.crtなど)をダウンロードしてください。これは元の証明書の購入に付属しているはずですが、次の<a href="https://certs.godaddy.com/Repository.go">Go Daddyサイト</a>にもあります。</li>
 <li>あなたの.crtファイルと中間の.crtファイルを連結します(それらを次のように3番目のファイルにまとめます。test_server.crt + GODaddyCA.crt server.crtをコピーします。)</li>
 <li>新しく作成したserver.crtファイルと一致するように、手順1のキーファイルの名前をserver.keyに変更します。</li>
 <li>これら2つのファイルをGO-Globalホストにコピーします(例:<code>C:\data</code>)。</li>
@@ -2646,7 +2646,7 @@ E-mail Address:電子メールアドレス
 <p>If an SSL warning message is displayed, the Dependent Host will not be able to connect to the relay server. Resolve the issue described in the SSL warning message. Then the Dependent Host should be able to connect to the relay server.
 If no SSL warning dialog is displayed, but a different error message is displayed (e.g., No available hosts), the SSL configuration is fine. For the purposes of this test, you can disregard any error messages that do not pertain to the ability of the client to open a connection to the relay server.</p>
 <h2 id="標準認証">標準認証</h2>
-<p>標準認証は、GO-Globalホストでデフォルトのユーザ認証方式です。標準認証では、ユーザは **[Sign In]**ダイアログでユーザ名とパスワードを入力して GO-Globalにログオンします。認証されると、ユーザはホストのINTERACTIVEグループ に追加され、コンソールからホストにログオンした場合と同じアクセス権を付与されます。</p>
+<p>標準認証は、GO-Globalホストでデフォルトのユーザ認証方式です。標準認証では、ユーザは <strong>[Sign In]</strong> ダイアログでユーザ名とパスワードを入力して GO-Globalにログオンします。認証されると、ユーザはホストのINTERACTIVEグループ に追加され、コンソールからホストにログオンした場合と同じアクセス権を付与されます。</p>
 <h3 id="標準認証を有効にする方法">標準認証を有効にする方法</h3>
 <ol>
 <li>[Tools | Host Options]の順にクリックします。</li>
@@ -2657,7 +2657,7 @@ If no SSL warning dialog is displayed, but a different error message is displaye
 <h2 id="統合-windows-認証">統合 Windows 認証</h2>
 <p>統合Windows認証を使用すれば、ユーザは、ホストにログオンしてユーザ名とパスワードを再入力する必要なく GO-Globalホストに接続しセッションを開始できます。統合Windows認証のみが認証オプションとして有効となっている場合、ユーザ名とパスワードがネットワークを通じて転送されることはありません。GO-Globalは、GO-Globalクライアントと同じセキュリティコンテキストでユーザのセッションを実行します。ユーザはサーバのINTERACTIVEグループではなく、NETWORKグループに追加されます。そのため、いくつかのリソースに対してはアクセスが拒否される場合があります。</p>
 <p>統合Windows認証を使用してGO-Globalホストに接続すると、ホストに対話的にログオンした場合とほとんど同じリソースにアクセスできます。しかし、クライアントおよびホストのオペレーティングシステムやネットワークがサポートしている認証プロトコルによっては、ユーザがネットワーク上の他のコンピュータ内にあるリソースにアクセスすると、ユーザ名とパスワードの再入力を求められる場合があります。ネットワークリソースがユーザ名とパスワードを要求できないものである場合は、アクセスは拒否される場合があります。</p>
-<p>ネットワーク上の他のコンピューターにアクセスするには、認証資格情報を他のコンピューターに渡すことができるようにActive Directoryを構成する必要があります。マイクロソフトでは、認証資格情報を3つ以上のコンピューターに &ldquo;委任&quot;として渡す権利を示しています。委任は、Active Directoryネットワークで適切な設定でサポートされています。Active Directoryドメインコントローラを正しく設定する手順については、Microsoft Windowsオペレーティングシステムのマニュアルを参照してください。詳細については、第6章の <strong>「委任サポートの構成要件」</strong> を参照してください。</p>
+<p>ネットワーク上の他のコンピューターにアクセスするには、認証資格情報を他のコンピューターに渡すことができるようにActive Directoryを構成する必要があります。マイクロソフトでは、認証資格情報を3つ以上のコンピューターに &ldquo;委任&quot;として渡す権利を示しています。委任は、Active Directoryネットワークで適切な設定でサポートされています。Active Directoryドメインコントローラを正しく設定する手順については、Microsoft Windowsオペレーティングシステムのマニュアルを参照してください。詳細については、第7章の <strong><a href="/docs/go-globalrc61/advancedtopics/configurationrequirementsfordelegationsupport/">委任サポートの構成要件</a></strong> を参照してください。</p>
 
 
 <div class="alert alert-info" role="alert">
@@ -2677,7 +2677,7 @@ If no SSL warning dialog is displayed, but a different error message is displaye
 </ol>
 <p>GO-Globalでは、標準認証または統合Windows認証のいずれかが有効になっている必要があります。これらの認証方式のいずれも選択されていない状態で <strong>[OK]</strong> をクリックしダイアログを閉じると、次のエラーメッセージが表示されます。</p>
 <p><img src="/img/4-7-1.png" alt="4-7-1"></p>
-<p>標準認証と統合Windows認証が両方とも有効になっている場合、GO-Globalホストはまず統合Windows認証によってユーザのログオンを試みます。これに失敗した場合は、 **[Sign In]**ダイアログを表示してユーザ名とパスワードの入力を求め、標準認証でユーザのログオンを試みます。</p>
+<p>標準認証と統合Windows認証が両方とも有効になっている場合、GO-Globalホストはまず統合Windows認証によってユーザのログオンを試みます。これに失敗した場合は、 <strong>[Sign In]</strong> ダイアログを表示してユーザ名とパスワードの入力を求め、標準認証でユーザのログオンを試みます。</p>
 <h2 id="ホストでのパスワードキャッシュ">ホストでのパスワードキャッシュ</h2>
 <p>ユーザが標準の認証でGO-Globalホストにサインインすると( <strong>[Sign In]</strong> ダイアログ、パラメータ、またはコマンドライン引数で指定されたユーザー名とパスワードのどちらかを使用)、そのユーザはホストのINTERACTIVEグループに追加されます。一方、統合Windows認証を使用してGO-Globalホストにサインインしたユーザは、サーバのNETWORKグループに追加されます。デフォルトでは、INTERACTIVEグループのメンバは、NETWORKグループのメンバより多くのホストのリソースにアクセスできます。このため、統合Windows認証を使用してログオンしたユーザの場合、さまざまな条件により「アクセス拒否」エラーが発生することがあります。</p>
 
@@ -2690,7 +2690,7 @@ NETWORKグループのメンバがアクセスを制限されている分野に�
 </div>
 
 <p>システム管理者は、 <strong>[ホストにパスワードをキャッシュする]</strong> オプションを有効にして、これらのエラーを回避することができます。そうすることで、ユーザは接続するたびにユーザ名とパスワードを入力しなくても、完全なINTERACTIVEアクセス権でサインインできます。ユーザは、最初にホストに接続したとき、またはパスワードの変更後にパスワードの入力を求められます。パスワードは暗号化され、それぞれのプロファイルに保存されています。その後GO-Globalに接続すると、ユーザは自動的にサインインしてホストのINTERACTIVEグループに追加されます。コンソールでホストにサインインした場合と同じアクセス権が付与されます。</p>
-<p>GO-Globalは、ホストに保存されている512ビットキーを使用してRSAアルゴリズムを使用してパスワードを暗号化します。暗号化キーは、%ALLUSERSPROFILE%\GraphOn\AppController\ks\ks.datファイルに格納されています。このファイルを読み取ることができるのは、ホストのAdministratorsグループおよびSYSTEMアカウントのメンバだけです。</p>
+<p>GO-Globalは、ホストに保存されている512ビットキーを使用してRSAアルゴリズムを使用してパスワードを暗号化します。暗号化キーは、<code>%ALLUSERSPROFILE%\GraphOn\AppController\ks\ks.dat</code>ファイルに格納されています。このファイルを読み取ることができるのは、ホストのAdministratorsグループおよびSYSTEMアカウントのメンバだけです。</p>
 <h3 id="ホストでパスワードキャッシュを有効にする方法">ホストでパスワードキャッシュを有効にする方法</h3>
 <ol>
 <li>Admin Consoleで、[Tools]メニューから[Tools | Host Options]の順にクリックします。</li>
@@ -2712,7 +2712,7 @@ NETWORKグループのメンバがアクセスを制限されている分野に�
 <h2 id="クライアントでのパスワードキャッシュ">クライアントでのパスワードキャッシュ</h2>
 <p>クライアント側のパスワードキャッシュにより、GO-Globalホストのドメインのメンバではないユーザは、サーバに接続するたびにユーザ名とパスワードを入力する必要なしにGO-Globalにサインインすることができます。<strong>[Cache passwords on the client]</strong> が有効になっていると、<strong>[Sign In]</strong> ダイアログに <strong>[Remember me on this computer]</strong> チェックボックスが表示されます。ユーザがこれを有効にした場合、最初の手動認証の後、ユーザのログオン資格情報はホスト上で暗号化され、ネットワーク経由で送信され、ユーザのプライベートディレクトリのクライアントコンピュータに保存されます。</p>
 <p>ユーザがその後サーバに接続すると、キャッシュされたパスワードがホストに送信され、そこで復号化されます。<strong>[Sign In]</strong> ダイアログに、ユーザ名とパスワード、<strong>[Remember me on this computer]</strong> チェックボックスをオンにした状態で表示されます。ユーザが <strong>[Remember me on this computer]</strong> オプションを無効にすると、ユーザの資格情報はクライアントコンピュータから削除されます。</p>
-<p>GO-Globalは、ホストに格納されている512ビットキーを使用してRSAアルゴリズムを使用して、クライアントにパスワードをキャッシュします。暗号化キーは、%ALLUSERSPROFILE%\GraphOn\AppController\ks\ks.datファイルに格納されています。このファイルを読み取ることができるのは、サーバのAdministratorsグループおよびSYSTEMアカウントのメンバだけです。</p>
+<p>GO-Globalは、ホストに格納されている512ビットキーを使用してRSAアルゴリズムを使用して、クライアントにパスワードをキャッシュします。暗号化キーは、<code>%ALLUSERSPROFILE%\GraphOn\AppController\ks\ks.dat</code>ファイルに格納されています。このファイルを読み取ることができるのは、サーバのAdministratorsグループおよびSYSTEMアカウントのメンバだけです。</p>
 
 
 <div class="alert alert-info" role="alert">

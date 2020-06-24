@@ -13,6 +13,11 @@ GO-Globalは、マイクロソフトのグループポリシーをサポート�
 
 [http://technet.microsoft.com/en-us/windowsserver/bb310732.aspx.](http://technet.microsoft.com/en-us/windowsserver/bb310732.aspx.)
 
+{{% alert title="情報" color="green" %}}
+マイクロソフトから公開されている最新のリファレンスは以下になります。
+[Group Policy Settings Reference Spreadsheet Windows 1803](https://www.microsoft.com/en-us/download/details.aspx?id=56946)
+{{% /alert %}}
+
 ### GO-Globalサーバでのグループポリシーの適用方法
 
 1. Admin Consoleで、[Tools | Host Options]の順にクリックします。
@@ -102,7 +107,7 @@ GO-Globalは次の 2 つのタイプのログオンスクリプトをサポー�
       a. systemroot\System32\Repl\Import\Scripts<br>
       b. systemroot\sysvol\sysvol\domainname<br>
 
-また、DebugView([https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx]などのツールも、このようなエラー発生時における原因追跡に役立ちます。DebugViewの実行可能ファイルをサーバ上で開けば、スクリプトの保存場所が不正確なために発生したエラーを確認できます。
+また、DebugView([https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx](https://technet.microsoft.com/en-us/sysinternals/bb896647.aspx)などのツールも、このようなエラー発生時における原因追跡に役立ちます。DebugViewの実行可能ファイルをサーバ上で開けば、スクリプトの保存場所が不正確なために発生したエラーを確認できます。
 
 {{% alert title="参照" color="info" %}}
 MicrosoftのVBScriptは、バッチファイルで実行されない限り、ログオンスクリプトとしてサポートされていません。

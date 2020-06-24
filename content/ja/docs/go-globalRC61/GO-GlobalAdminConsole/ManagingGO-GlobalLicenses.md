@@ -52,4 +52,4 @@ GO-Globalのトライアルライセンスでは、ライセンスマスターID
 {{% /alert %}}
 
 
-GO-Globalライセンスの詳細については、Appendixを参照してください。
+GO-Globalライセンスの詳細については、[Appendix](/docs/go-globalrc61/appendix/licensing/)を参照してください。

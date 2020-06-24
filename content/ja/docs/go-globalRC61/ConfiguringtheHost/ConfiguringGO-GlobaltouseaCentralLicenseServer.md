@@ -40,3 +40,12 @@ INCREMENT session blm 6.0 31-dec-2020 5 99E82D1B9A64 HOSTID=ANY
 INCREMENT any_app blm 6.0 31-dec-2020 uncounted D1D222D031C4
 HOSTID=ANY
 ```
+
+{{% alert title="情報" color="green" %}}
+本項目の設定は以下の技術ノートを参照ください。
+
+KGTN 2010102003<br>
+KGTN 2013031903<br>
+KGTN 2017081801<br>
+
+{{% /alert %}}

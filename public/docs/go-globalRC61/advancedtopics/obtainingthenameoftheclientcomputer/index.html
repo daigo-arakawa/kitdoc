@@ -31,7 +31,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GO-Global\Compatibility\GetComputerName
 UserEnv!CreateEnvironmentBlock()Kernel32!ExpandEnvironmentStringsA/W()Kernel32!GetEnvironmentStringsA/W()Kernel32!GetEnvironmentVariableA/W() " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-globalrc61/advancedtopics/obtainingthenameoftheclientcomputer/" />
-<meta property="article:modified_time" content="2020-06-03T03:24:08+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-23T18:22:07+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="クライアントコンピュータの名前を取得する">
 <meta itemprop="description" content="GO-Globalホストではなくクライアントのコンピュータ名を必要とするアプリケーションの場合、管理者はその実行可能ファイルの名前をレジストリキー
 HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GO-Global\Compatibility\GetComputerName
@@ -41,7 +41,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\GO-Global\Compatibility\GetComputerName
 クライアントコンピュータ名の取得方法  レジストリエディタ (regedit.exe) を実行します。 レジストリエディタ で、 HKEY_LOCAL_MACHINE キーを展開します。 次の GetComputerName キーを検索します。 [SOFTWARE\GraphOn\GO-Global\Compatibility\GetComputerName] この実行可能ファイルの DWORDエントリを作成します (例 : pw.exe)。 新しいエントリの値を 0x00000001に設定します。 レジストリエディタを終了します。  さらに、公開されたアプリケーションの実行環境の一部として存在する CLIENTCOMPUTERNAME という名前の環境変数があります。この環境変数には、クライアントのコンピュータ名が含まれています。CLIENTCOMPUTERIPADDRESS、CLIENTNETWORKADDRESS環境変数は、同様の機能を実行します。前者にはクライアントコンピュータのローカルIPアドレスが含まれ、後者にはクライアントコンピュータのパブリックIPアドレスが含まれます
 クライアントがセッションに再接続すると、CLIENTCOMPUTERNAME、CLIENTCOMPUTERIPADDRESS、CLIENTNETWORKADDRESS 環境変数は、環境変数を取得するためのAPI呼び出しを行うと、既存の各プロセスで更新されます。セッションプロセスがこれらのAPIの1つを呼び出す前に、別のプロセスがセッションプロセスの環境変数を取得しようとした場合、これらの環境変数の値は更新されて表示されません。更新をトリガーする正確なAPI呼び出しは次のとおりです。
 UserEnv!CreateEnvironmentBlock()Kernel32!ExpandEnvironmentStringsA/W()Kernel32!GetEnvironmentStringsA/W()Kernel32!GetEnvironmentVariableA/W() ">
-<meta itemprop="dateModified" content="2020-06-03T03:24:08&#43;09:00" />
+<meta itemprop="dateModified" content="2020-06-23T18:22:07&#43;09:00" />
 <meta itemprop="wordCount" content="41">
 
 
@@ -146,7 +146,7 @@ UserEnv!CreateEnvironmentBlock()Kernel32!ExpandEnvironmentStringsA/W()Kernel32
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.53b22d2262b729a1b41d223d654299bfac8a7960f232313b29e7d601cf088cb33a5d8d0579cc460848d0c6de04397ad2b271897bb663b20c2293cdccb52eac3e.json"
+  data-offline-search-index-json-src="/offline-search-index.388ee2dae9d8ea60ce29c9e1d602b589047c5c7d97613aeb3d7267dad3c96adeaf5dc57007167cdf48b890551944c5c7c4219c391c7ef10d7500629fb4413abb.json"
   data-offline-search-base-href="/"
 >
 
@@ -176,7 +176,7 @@ UserEnv!CreateEnvironmentBlock()Kernel32!ExpandEnvironmentStringsA/W()Kernel32
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.53b22d2262b729a1b41d223d654299bfac8a7960f232313b29e7d601cf088cb33a5d8d0579cc460848d0c6de04397ad2b271897bb663b20c2293cdccb52eac3e.json"
+  data-offline-search-index-json-src="/offline-search-index.388ee2dae9d8ea60ce29c9e1d602b589047c5c7d97613aeb3d7267dad3c96adeaf5dc57007167cdf48b890551944c5c7c4219c391c7ef10d7500629fb4413abb.json"
   data-offline-search-base-href="/"
 >
 
@@ -2843,7 +2843,7 @@ Kernel32!GetEnvironmentVariableA/W()
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 3, 2020: <a  href="https://github.com//commit/706d40e1543f5d3dc0274d55061f19ae5d5fd180">61-5 (706d40e1)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 23, 2020: <a  href="https://github.com//commit/30e48b4ed690f9db8ce711294c2a51651685c90d">update0623 (30e48b4e)</a>
 </div>
 </div>
 

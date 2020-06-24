@@ -5,7 +5,7 @@ weight: 05
 type: "docs"
 ---
 
-システム管理者は、**[Host Options]** ダイアログの**[Security]** タブを使用して、クライアントとGO-Globalホスト間の通信の転送モードとクライアントとホスト間で転送されるデータの暗号化レベルを選択できます。また、ホストのポート設定を修正したり、統合Windows認証やパスワードのキャッシュを有効にすることも可能です。
+システム管理者は、**[Host Options]** ダイアログの **[Security]** タブを使用して、クライアントとGO-Globalホスト間の通信の転送モードとクライアントとホスト間で転送されるデータの暗号化レベルを選択できます。また、ホストのポート設定を修正したり、統合Windows認証やパスワードのキャッシュを有効にすることも可能です。
 
 
 ## サーバポート設定の変更
@@ -26,7 +26,7 @@ HTTPS接続を受け入れるように設定されたコンピュータにWebサ
 
 ![4-5-1](/img/4-5-1.png) 
 
-ホストポートの設定を変更したら、GO-Globalハイパーリンクからportパラメータを変更する必要があります。portパラメータに続けて新しいポート番号を使用します。 例えば、 ` **http://hostname/goglobal/logon.html?port=1667`
+ホストポートの設定を変更したら、GO-Globalハイパーリンクからportパラメータを変更する必要があります。portパラメータに続けて新しいポート番号を使用します。 例えば、 **`http://hostname/goglobal/logon.html?port=1667`**
 
 ショートカットからGO-Globalを実行しているユーザは、ショートカットに-hp引数(新しいポート番号が続く)を追加する必要があります。たとえば、`"C:\Program Files\GraphOn\AppController\AppController.exe" -h server1 -hp 1667`のようになります。
 
@@ -35,7 +35,7 @@ HTTPS接続を受け入れるように設定されたコンピュータにWebサ
 どちらの方法でも新しいポート番号が指定されていない場合、ユーザはGO-Globalにサインインできません。
 
 {{% alert title="参照" color="info" %}}
-ホストポートを変更した後、デフォルトポート491以外のポートでクライアント印刷を機能させるには、 **Print Spooler**サービスと **GO-Global Application Publishing**サービスを再起動する必要があります。
+ホストポートを変更した後、デフォルトポート491以外のポートでクライアント印刷を機能させるには、 **Print Spooler** サービスと **GO-Global Application Publishing** サービスを再起動する必要があります。
 {{% /alert %}}
 
 ## セッションの暗号化
@@ -72,7 +72,7 @@ SSL転送が選択されている場合は、接続が安全なときにセキ�
 
 ## SSL転送の選択
 
-GO-Globalは、WindowsとGO-Globalホスト間の通信方法として、Transmission Control Protocol(TCP)と Secure Socket Layer(SSL)の両方をサポートしています。SSL転送を選択する場合は、SSL証明書ファイルを指定する必要があります。GO-Globalのクライアントとホスト間の通信を保護するには、SSL証明書が必要です。強力な暗号化証明書ウィザードを使用して、GO-Globalホストの信頼できるSSL証明書を生成できます。これにより、管理者はサードパーティの認証局から証明書を購入しなくても、強力な暗号化とSSL/TLSセキュリティを有効にできます。詳細については、以下のセクション **「強力な暗号化証明書ウィザード」** を参照してください。証明書は、VerisignやThawteなどの信頼されている認証局(CA)から入手できます。また、独自に認証局を作成して、その認証局からサーバ証明書に署名することもできます。ワイルドカードSSL証明書もサポートされます。詳細については、 **信頼できる証明書からの証明書の取得** を参照してください。
+GO-Globalは、WindowsとGO-Globalホスト間の通信方法として、Transmission Control Protocol(TCP)と Secure Socket Layer(SSL)の両方をサポートしています。SSL転送を選択する場合は、SSL証明書ファイルを指定する必要があります。GO-Globalのクライアントとホスト間の通信を保護するには、SSL証明書が必要です。強力な暗号化証明書ウィザードを使用して、GO-Globalホストの信頼できるSSL証明書を生成できます。これにより、管理者はサードパーティの認証局から証明書を購入しなくても、強力な暗号化とSSL/TLSセキュリティを有効にできます。詳細については、以下のセクション **[強力な暗号化証明書ウィザード](/docs/go-globalrc61/go-globaladminconsole/strongencryptioncertificatewizard/)** を参照してください。証明書は、VerisignやThawteなどの信頼されている認証局(CA)から入手できます。また、独自に認証局を作成して、その認証局からサーバ証明書に署名することもできます。ワイルドカードSSL証明書もサポートされます。詳細については、 **[信頼されたサーバー証明書の取得](/docs/go-globalrc61/go-globaladminconsole/obtainingatrustedservercertificate/)** を参照してください。
 
 ### SSL転送を選択する方法
 
@@ -88,12 +88,16 @@ GO-Globalは、WindowsとGO-Globalホスト間の通信方法として、Transmi
 
 When a Relay Load Balancer is used:
 
+{{% alert title="注意" color="secondary" %}}
+本項目の設定は推奨設定ではございませんのでご注意ください。
+{{% /alert %}}
+
 - The certificate must be installed on the Relay Load Balancer but does not need to be installed on the Dependent Hosts.
 - On the Dependent Hosts, the value in the **Relay Load Balancer** address field on the **Configuration** tab of the **Host Options** dialog must match the certificate's Common Name.
 
 ファームマネージャを使用する場合：
 
 - 証明書は、ファームマネージャと各ファームホストにインストールする必要があります。
-- ファームホストでは、**ファームマネージャのアドレスフィールド**の値が証明書のコモンネームと一致する必要があります。
+- ファームホストでは、 **ファームマネージャのアドレスフィールド** の値が証明書のコモンネームと一致する必要があります。
 
 

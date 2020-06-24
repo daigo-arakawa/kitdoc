@@ -4,6 +4,9 @@ linkTitle: ""
 weight: 04
 type: "docs"
 ---
+{{% alert title="情報" color="green" %}}
+GO-Globalホストのインストールの詳細につきましては弊社提供のメディアにございますDocuments_kitASPフォルダ内のGGH6.*インストール手順書をご参照ください。
+{{% /alert %}}
 
 
 GO-Globalは自己解凍型の実行ファイルとして提供され、**gg-host.exe**をダブルクリックすることでインストールできます。ホストセットアッププログラムを実行する際には、コンピュータの管理者グループのメンバであるアカウントでログインする必要があります。
@@ -22,7 +25,7 @@ GO-Globalは自己解凍型の実行ファイルとして提供され、**gg-hos
 2. サービスの一覧から [GO-Global Application Publishing Service]を選択します。
 3. 右クリックして、[再起動]を選択します。
 
-ホストをインストールしてコンピュータを再起動した後、Webブラウザを選択してGO-Globalの**Interactive Quick Start Guide**を開きます。このガイドでは、Admin Consoleを通じてアプリケーションを公開する方法、アプリケーションへのリンクを共有する方法を説明しています。GO-Global AppControllerのログオンページに**?help=ac**を追加することで、**Interactive Quick Guide**をいつでも開くことができます。たとえば、`http://hostname/goglobal/?help=ac`のように設定します。
+ホストをインストールしてコンピュータを再起動した後、Webブラウザを選択してGO-Globalの **Interactive Quick Start Guide** を開きます。このガイドでは、Admin Consoleを通じてアプリケーションを公開する方法、アプリケーションへのリンクを共有する方法を説明しています。GO-Global AppControllerのログオンページに **?help=ac** を追加することで、**Interactive Quick Guide**をいつでも開くことができます。たとえば、`http://hostname/goglobal/?help=ac`のように設定します。
 
 {{% alert title="参照" color="info" %}}
 ライセンスファイル`(C:\Program Files\GraphOn\GO-Global\Licensing\*.lic)`の最小権限は以下の通りです。

@@ -4,6 +4,10 @@ linkTitle: ""
 weight: 04
 type: "docs"
 ---
+{{% alert title="情報" color="green" %}}
+代理店様向けの専用ページにGO-Global製品OSバージョン別マトリックスとGO-Global製品バージョン別機能マトリックスの資料も用意しています。<br>
+合わせてご参照ください。
+{{% /alert %}}
 
 ## GO-Globalホスト
 - GO-Globalホストには、次の64ビットWindowsオペレーティングシステムのいずれかが必要です。<br>

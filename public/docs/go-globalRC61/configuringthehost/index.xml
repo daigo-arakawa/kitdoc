@@ -115,7 +115,16 @@ Customers will be unable to upgrade their version 5 license to version 6.1 if th
       <description>
         
         
-        &lt;p&gt;GO-Globalは自己解凍型の実行ファイルとして提供され、&lt;strong&gt;gg-host.exe&lt;/strong&gt;をダブルクリックすることでインストールできます。ホストセットアッププログラムを実行する際には、コンピュータの管理者グループのメンバであるアカウントでログインする必要があります。
+        
+
+&lt;div class=&#34;alert alert-green&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;情報&lt;/h4&gt;
+GO-Globalホストのインストールの詳細につきましては弊社提供のメディアにございますDocuments_kitASPフォルダ内のGGH6.*インストール手順書をご参照ください。
+&lt;/div&gt;
+
+&lt;p&gt;GO-Globalは自己解凍型の実行ファイルとして提供され、&lt;strong&gt;gg-host.exe&lt;/strong&gt;をダブルクリックすることでインストールできます。ホストセットアッププログラムを実行する際には、コンピュータの管理者グループのメンバであるアカウントでログインする必要があります。
 既定では、GO-Globalホストセットアップは、コアホストコンポーネント、Webコンポーネント(ブラウザログオンのためにホストを設定するために必要なすべてのファイルを含む)、ライセンスコンポーネントのすべてをインストールします。&lt;strong&gt;[Customize]&lt;/strong&gt; ボタンをクリックして、インストールしたくないコンポーネントのチェックを外すことで、インストールをカスタマイズすることができます。それ以外の場合は、&lt;strong&gt;[Install]&lt;/strong&gt; ボタンをクリックします。GO-Globalを有効にするには、GO-Globalのライセンスファイルを既定のライセンスフォルダにコピーしてください。ライセンスサーバを使用するように GO-Globalを設定するには、外部ライセンス管理サーバを使用するようにGO-Globalを設定するを参照してください。
 後でライセンスファイルをコピーする場合は、ファイルをコピーした後にGO-Global License Managerを再起動し、次に GO-Global Application Publishing Serviceを再起動する必要があります。&lt;/p&gt;
 &lt;h3 id=&#34;go-global-license-managerを再起動する方法&#34;&gt;GO-Global License Managerを再起動する方法&lt;/h3&gt;
@@ -130,7 +139,7 @@ Customers will be unable to upgrade their version 5 license to version 6.1 if th
 &lt;li&gt;サービスの一覧から [GO-Global Application Publishing Service]を選択します。&lt;/li&gt;
 &lt;li&gt;右クリックして、[再起動]を選択します。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;ホストをインストールしてコンピュータを再起動した後、Webブラウザを選択してGO-Globalの&lt;strong&gt;Interactive Quick Start Guide&lt;/strong&gt;を開きます。このガイドでは、Admin Consoleを通じてアプリケーションを公開する方法、アプリケーションへのリンクを共有する方法を説明しています。GO-Global AppControllerのログオンページに**?help=ac**を追加することで、**Interactive Quick Guide**をいつでも開くことができます。たとえば、&lt;code&gt;http://hostname/goglobal/?help=ac&lt;/code&gt;のように設定します。&lt;/p&gt;
+&lt;p&gt;ホストをインストールしてコンピュータを再起動した後、Webブラウザを選択してGO-Globalの &lt;strong&gt;Interactive Quick Start Guide&lt;/strong&gt; を開きます。このガイドでは、Admin Consoleを通じてアプリケーションを公開する方法、アプリケーションへのリンクを共有する方法を説明しています。GO-Global AppControllerのログオンページに &lt;strong&gt;?help=ac&lt;/strong&gt; を追加することで、&lt;strong&gt;Interactive Quick Guide&lt;/strong&gt;をいつでも開くことができます。たとえば、&lt;code&gt;http://hostname/goglobal/?help=ac&lt;/code&gt;のように設定します。&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -273,8 +282,8 @@ c. &lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; を再�
 &lt;li&gt;必要に応じて、競合するライセンスマネージャーがある場合は、&lt;SERVER&gt;行のホストIDの後にポート番号を追加します。たとえば、以下のようになります。SERVER 2016ITL1 000C2931282E 27009(これにより、ライセンスマネージャがポート27009を使用するように指示されます)これ以外の変更を行うと、ライセンスが破損して無効になる可能性があることに注意してください。&lt;/li&gt;
 &lt;li&gt;GO-Globalライセンスサーバ上で&lt;strong&gt;サービス&lt;/strong&gt; を開き、&lt;strong&gt;GO-Global License Manager&lt;/strong&gt; を再起動します。&lt;/li&gt;
 &lt;li&gt;ライセンス サーバーを使用しているすべての GO-Global ホストで:&lt;br&gt;
-a. ホストで GO-Globalセッションが実行されていないことを確認します。
-b. &lt;strong&gt;サービス&lt;/strong&gt; を開き、&lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; を再起動します(これにより、すべてのユーザセッションが終了します)。&lt;/li&gt;
+a. ホストで GO-Globalセッションが実行されていないことを確認します。&lt;br&gt;
+b. &lt;strong&gt;サービス&lt;/strong&gt; を開き、&lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; を再起動します(これにより、すべてのユーザセッションが終了します)。&lt;br&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;ホスト以外のシステムにwebファイルをインストールする方法&#34;&gt;ホスト以外のシステムにWebファイルをインストールする方法&lt;/h2&gt;
 &lt;p&gt;GO-Global WebファイルをGO-Globalホスト以外のシステムにインストールすることができます。&lt;/p&gt;
@@ -400,6 +409,19 @@ INCREMENT session blm 6.0 31-dec-2020 5 99E82D1B9A64 HOSTID=ANY
 INCREMENT any_app blm 6.0 31-dec-2020 uncounted D1D222D031C4
 HOSTID=ANY
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;alert alert-green&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;情報&lt;/h4&gt;
+&lt;p&gt;本項目の設定は以下の技術ノートを参照ください。&lt;/p&gt;
+&lt;p&gt;KGTN 2010102003&lt;br&gt;
+KGTN 2013031903&lt;br&gt;
+KGTN 2017081801&lt;br&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+
       </description>
     </item>
     
@@ -511,21 +533,21 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
         &lt;p&gt;GO-Globalライセンスファイルは、GO-Global License Manager Serviceが実行されているコンピュータのMACアドレスにバインドされます。Amazon Web Services (AWS) などのクラウド環境では、仮想コンピュータのMACアドレスが変更されることがあります。GO-Global License Manager Serviceを実行しているコンピュータのMAC アドレスが変更されると、サービスがライセンスをチェックアウトできなくなり、GO-Globalセッションの開始に失敗します。これを防ぐには、GO-Global License Manager Serviceを実行している仮想コンピューターに固定のMACアドレスを設定する必要があります。AWS環境では、固定の &lt;strong&gt;Elastic IPアドレス(EIP)&lt;/strong&gt; と固定のMACアドレスを持つ &lt;strong&gt;Elastic Network Interface(ENI)&lt;/strong&gt; を作成し、GO-Global License Manager Serviceを実行している仮想コンピュータ(EC2 インスタンス)にENIをアタッチすることで、これを行うことができます。&lt;/p&gt;
 &lt;h3 id=&#34;awsでeipとeniを作成しec2インスタンスにアタッチする方法&#34;&gt;AWSでEIPとENIを作成し、EC2インスタンスにアタッチする方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Elastic IP（EIP）を作成する。
-EC2コンソールのナビゲーションペインから「ネットワークとセキュリティ」→「Elastic IPs」と進み、「&lt;strong&gt;Allocate new address&lt;/strong&gt; 」を選択します。
+&lt;li&gt;Elastic IP(EIP)を作成する。
+EC2コンソールのナビゲーションペインから[NETWORK &amp;amp; SECURITY | Elastic IPs | &lt;strong&gt;Allocate new address&lt;/strong&gt; ]を選択します。
 詳細については、AWS EIPのドキュメントを参照してください。&lt;br&gt;
-&lt;code&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html&lt;/code&gt;&lt;/li&gt;
+&lt;a href=&#34;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html&#34;&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Elastic Network Interface(ENI)を作成します。&lt;br&gt;
-2.1 EC2コンソールのナビゲーションペインで、&lt;strong&gt;ネットワークインターフェース&lt;/strong&gt; を選択します。&lt;br&gt;
+2.1 EC2コンソールのナビゲーションペインで、&lt;strong&gt;Network Interface&lt;/strong&gt; を選択します。&lt;br&gt;
 2.2 &lt;strong&gt;Create Network Interface&lt;/strong&gt; をクリックします。&lt;br&gt;
-2.3 &lt;strong&gt;説明&lt;/strong&gt; を入力し、適切な可用性ゾーンからサブネットを選択します。&lt;br&gt;
+2.3 &lt;strong&gt;Description&lt;/strong&gt; を入力し、適切な可用性ゾーンからサブネットを選択します。&lt;br&gt;
 2.4 プライベートIPは自動割り当てのままにしておく。&lt;br&gt;
 2.5 ファイアウォールルールを含むセキュリティグループを選択します。&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;Elastic IP(EIP)をElastic Network Interface(ENI)に割り当てます。&lt;br&gt;
-3.1 EIPとENIを作成したら、「ネットワークインターフェース」→「アクション」→「IPアドレスの管理」と進みます。&lt;br&gt;
+3.1 EIPとENIを作成したら、[Network Interface | Actions | Manage IP Addresses]を選択します。&lt;br&gt;
 3.2 手順1で作成したEIPをENIに割り当てます。&lt;br&gt;
 詳細については、AWS ENIのドキュメントを参照してください。&lt;br&gt;
-&lt;code&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&lt;/code&gt;&lt;/li&gt;
+&lt;a href=&#34;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&#34;&gt;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 
@@ -538,7 +560,7 @@ ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Gl
 
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;GO-Global License Managerサービスを実行しているインスタンスにENIをアタッチします。&lt;br&gt;
-4.1 EC インスタンスから、GO-Global License Manager サービスを実行しているインスタンスを選択し、[アクション] &amp;gt; [ネットワーキング] &amp;gt; [ネットワーク インターフェイスの添付] を選択します。&lt;br&gt;
+4.1 EC インスタンスから、GO-Global License Manager サービスを実行しているインスタンスを選択し、[Actions | Networking | Attach Network Interface]を選択します。&lt;br&gt;
 4.2 手順 2 で作成した ENI を選択します。利用できない場合は、別のAWSインスタンスにアタッチされているか、インスタンスとは異なる可用性ゾーンに作成されている可能性があります。&lt;br&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -612,7 +634,7 @@ ENIをインスタンスに割り当てるには、ENIのサブネットがGO-Gl
         
         
         &lt;p&gt;自動クライアントキーボード機能により、管理者はGO-Globalホストを設定して、任意のクライアント キーボードで自動的に動作するように設定することができます。ユーザは、クライアントデバイスのローカルキーボード切り替え機能とクライアントの入力メソッド エディタ（IME）を使用して、その場でキーボードを切り替えることができます。GO-Globalホストにキーボードレイアウトをインストールしたり、GO-Globalクライアントにキーボード マッピングファイルをインストールする必要はありません。&lt;/p&gt;
-&lt;p&gt;クライアントの自動キーボードはデフォルトで有効になっています。自動クライアントキーボードを無効にし、クライアントキーボードを処理するためのレガシーメソッドを有効にする手順は、Appendixに記載されています。&lt;/p&gt;
+&lt;p&gt;クライアントの自動キーボードはデフォルトで有効になっています。自動クライアントキーボードを無効にし、クライアントキーボードを処理するためのレガシーメソッドを有効にする手順は、&lt;a href=&#34;/docs/go-globalrc61/appendix/disablingautomaticclientkeyboard/&#34;&gt;Appendix&lt;/a&gt;に記載されています。&lt;/p&gt;
 
       </description>
     </item>

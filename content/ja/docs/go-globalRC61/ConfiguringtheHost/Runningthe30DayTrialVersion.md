@@ -53,8 +53,8 @@ If a license is grayed out, it is not an active license, and cannot be used.
 3. 必要に応じて、競合するライセンスマネージャーがある場合は、<SERVER>行のホストIDの後にポート番号を追加します。たとえば、以下のようになります。SERVER 2016ITL1 000C2931282E 27009(これにより、ライセンスマネージャがポート27009を使用するように指示されます)これ以外の変更を行うと、ライセンスが破損して無効になる可能性があることに注意してください。
 4. GO-Globalライセンスサーバ上で**サービス** を開き、**GO-Global License Manager** を再起動します。
 5. ライセンス サーバーを使用しているすべての GO-Global ホストで:<br>
-a. ホストで GO-Globalセッションが実行されていないことを確認します。
-b. **サービス** を開き、**GO-Global Application Publishing Service** を再起動します(これにより、すべてのユーザセッションが終了します)。
+a. ホストで GO-Globalセッションが実行されていないことを確認します。<br>
+b. **サービス** を開き、**GO-Global Application Publishing Service** を再起動します(これにより、すべてのユーザセッションが終了します)。<br>
 
 ## ホスト以外のシステムにWebファイルをインストールする方法
 
