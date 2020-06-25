@@ -1,5 +1,8 @@
-## ウィンドウ枠の幅とパディングの変更
-
++++
+title = "ウィンドウ枠の幅とパディングの変更"
+description = ""
+weight = 14
++++
 ウィンドウの境界線の幅とパディングは、Default WorkspaceProperties.xmlファイルのborderWidthおよびpaddedBorderWidthプロパティの値を変更することで調整できます。
 
 | 0           | Uses current hard-coded default values (borderWidth=1; paddedBorderWidth=4)                                                                              |

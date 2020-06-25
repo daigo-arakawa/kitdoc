@@ -19,7 +19,7 @@ Load balancing allows GO-Global sessions to be distributed across multiple hosts
 
 A GO-Global Host can be configured to operate as an independent host, a dependent host, or as a Relay Load Balancer. Please note that a Relay Load Balancer cannot be an application host.
 
-When setting up a load-balanced Relay Load Balancer configuration, GraphOn recommends using a license server. For more information, see the following sections from Chapter 2: [**Configuring GO-Global to use a Central License Server**](https://kitasp-goglobal.gitbook.io/kitasp-documentaion/~/edit/drafts/-L_fpq0Q-h3OMQTw08rI/go-global-5/sbano/raisensu-sbawosurutameno-go-global-no) **,** [**Three-Server Redundancy**](https://kitasp-goglobal.gitbook.io/kitasp-documentaion/~/drafts/-L_fpq0Q-h3OMQTw08rI/primary/go-global-5/sbano/raisensu-sba/sba-3-no), and [**License-File List Redundancy.**](https://kitasp-goglobal.gitbook.io/kitasp-documentaion/go-global-5/sbano/raisensu-sba/raisensu-fuiruno) **​**
+When setting up a load-balanced Relay Load Balancer configuration, GraphOn recommends using a license server. For more information, see the following sections from Chapter 2: [**Configuring GO-Global to use a Central License Server**](/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/) , [**Three-Server Redundancy**](/docs/go-globalrc61/configuringthehost/redundantlicenseservers/#three-server-redundancy) , and [**License-File List Redundancy.**](/docs/go-globalrc61/configuringthehost/redundantlicenseservers/#license-file-list-redundancy)
 
 ## Independent Hosts
 

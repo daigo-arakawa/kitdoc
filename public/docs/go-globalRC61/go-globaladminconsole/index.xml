@@ -1346,6 +1346,22 @@ MicrosoftのVBScriptは、バッチファイルで実行されない限り、ロ
 &lt;li&gt;&lt;strong&gt;[OK]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 
+
+&lt;div class=&#34;alert alert-green&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;情報&lt;/h4&gt;
+&lt;p&gt;本項目の設定は以下の技術ノートを参照ください。&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;KGTN 2018082102&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;KGTN 2015090801&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;KGTN 2012062903&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;KGTN 2010091703&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
       </description>
     </item>
     

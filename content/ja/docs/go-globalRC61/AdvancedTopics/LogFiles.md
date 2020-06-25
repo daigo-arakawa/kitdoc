@@ -13,15 +13,25 @@ GO-Globalの実行時に検出された問題は、ログファイルのエン�
 
 また、ログファイルのエントリにはメッセージ識別用の接頭語がついています。それにより、関連する個別ユーザのセッションやアプリケーションが判断できます。イベントが特定セッションのコンテキスト内で発生した場合、そのセッション名がメッセージの最初に表示されます(例:SuzyG on Server1)。イベントがApplication Publishing Serviceへの接続(クライアントまたはアプリケーションからの接続)のコンテキスト内で発生した場合、その接続プロセスの名称(例: pw(1244))がメッセージの接頭語に含まれます。この例(pw(1244))の場合、Program Windowプロセスと Application Publishing Service間の接続中に障害が発生しています。1244は、そのイベントが発生したプロセスのIDです。メッセージの最初に接続名apsが含まれている場合、そのイベントは Application Publishing Service で発生していますが、他のプロセスとの接続には関係ありません。
 
+{{% alert title="情報" color="green" %}}
+本項目の設定は以下の技術ノートを参照ください。<br>
+
+* KGTN 2019112701<br>
+* KGTN 2019112702<br>
+* KGTN 2019112703<br>
+* KGTN 2019112705<br>
+* KGTN 2019112704<br>
+{{% /alert %}}
+
 ## Logファイルの新規保存場所の選択
 
-デフォルトでは、Logファイルは生成されると`\Program Files\GraphOn\GO-Global\Log` に保存されます。Admin Consoleの **{Host Options}** ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。
+デフォルトでは、Logファイルは生成されると`\Program Files\GraphOn\GO-Global\Log` に保存されます。Admin Consoleの **{Host Options]** ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。
 
 ### Logファイルの新規保存場所を選択する方法
 
 1. Admin Consoleで、[Tools | Hosts Options]の順にクリックします。
-2. **[Log}** をクリックします。
-3. **[Folder}** 編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。
+2. **[Log]** をクリックします。
+3. **[Folder]** 編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。
 
 Logファイルの保存場所としてリモートシステムのパスを指定することはできません。すなわち、UNCパスやマップされたネットワークドライブを[Folder]ボックスで指定すると、**"Please specify a usable Windows folder where log files may be written."** というエラーメッセージが表示されます。
 
@@ -45,9 +55,9 @@ GO-Globalには、以下の 6 つのLog出力レベルがあります。
 ### 出力レベルの設定方法
 
 1. Admin Consoleで、[Tools | Hosts Options]の順にクリックします。
-2. **[Log}** をクリックします。
-3. **[Output level}** ボックスに上記の数値の 1 つを入力します。
-4. **[OK}** をクリックします。
+2. **[Log]** をクリックします。
+3. **[Output level]** ボックスに上記の数値の 1 つを入力します。
+4. **[OK]** をクリックします。
 
 {{% alert title="参照" color="info" %}}
 Logの出力レベルを5または6に設定した場合、ホストで生成されるLogファイルの容量は非常に大きくなるため、パフォーマンスや拡張性に悪影響が出る場合があります。したがって、GraphOn社や代理店から特別な指示がない限り、Logの出力レベルを5または6に設定すべきではありません。
@@ -62,21 +72,21 @@ GO-Globalでは、Application Publishing Serviceが開始されるたびに **Lo
 ### Logファイルの削除方法
 
 1. Admin Consoleで、[Tools | Hosts Options]の順にクリックします。
-2. **[Log}** をクリックします。
-3. **[Maintenance}** のところで **[Delete}** を選択します。
+2. **[Log]** をクリックします。
+3. **[Maintenance]** のところで **[Delete]** を選択します。
 4. 削除するまでのLogファイルの保存期間を指定します(日単位)。
 5. Logファイルのサイズがどのくらいに達したら削除するか指定します(MB 単位)。
-6. **[OK}** をクリックします。
-7. O-Global Application Publishing Serviceを再起動します。
+6. **[OK]** をクリックします。
+7. Go-Global Application Publishing Serviceを再起動します。
 
 ### Logファイルのバックアップ方法
 
 1. Admin Consoleで、[Tools | Hosts Options]の順にクリックします。
-2. **[Log}** をクリックします。
+2. **[Log]** をクリックします。
 3. [Maintenance]のところで [Back up]を選択します。
 4. どのくらいの時間が経過したらログファイルをLogフォルダのBackupサブディレクトリに移動するか指定します (日単位)。
 5. ログファイルがどのくらいの容量に達したらLogフォルダのBackupサブディレクトリに移動するか指定します(MB 単位)。
-6. **[OK}** をクリックします。
+6. **[OK]** をクリックします。
 7. GO-Global Application Publishing Serviceを再起動します。
 
 Application Publishing Serviceは30分ごと、および開始されるたびに、 **Log**フォルダ から指定した保存期間またはサイズに達したファイルを探し出します。その後、それらのファイルを削除するか、Logフォルダ内の **Backup**サブディレクトリに移動します。ログファイルの整理中に、現行のログファイルが指定の保存期間またはサイズに達したら、Application Publishing Serviceはそのログファイルを閉じて、新規作成したログファイルをインストールします。

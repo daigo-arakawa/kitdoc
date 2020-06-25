@@ -20,8 +20,8 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>kitASP Docs</title><meta property="og:title" content="" />
-<meta property="og:description" content="クライアント印刷技術の概要 GO-Globalのクライアント印刷機能により、ホスト上のGO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータまたはデバイスからアクセス可能なプリンタに印刷できます。この資料はこの機能の技術的な概要を提供したものです。
+<title>クライアント印刷技術の概要 | kitASP Docs</title><meta property="og:title" content="クライアント印刷技術の概要" />
+<meta property="og:description" content="GO-Globalのクライアント印刷機能により、ホスト上のGO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータまたはデバイスからアクセス可能なプリンタに印刷できます。この資料はこの機能の技術的な概要を提供したものです。
 プロキシプリンタの作成と削除 ユーザがGO-Globalホストにサインインしてクライアント印刷機能が有効になると、Application Publishing Serviceはホストコンピュータ上にユーザのクライアントコンピューターまたはデバイスからアクセス可能なプリンタのプロキシとして機能するプリンターを作成します。プロキシプリンタと呼ばれるこれらのホスト側プリンタは、ホストコンピュータの[デバイスとプリンタ]アプレットの下に表示されます。管理者にはプロキシプリンタへのフルコントロール権限が与えられます。通常のユーザには、自分のプロキシプリンタへの印刷権限と自分のプロキシプリンタの管理権限が付与されています。
 デフォルトでは、GO-Globalはクライアントコンピュータ上のユーザのデフォルトプリンタ用のプロキシプリンタのみを作成します。あるいは、–ac allはGO-Globalクライアントのコマンドラインで指定されるか、printConfig = allはブラウザからクライアントを実行するために使用されるURLで指定され、プロキシプリンタはクライアントコンピュータ上のユーザが利用できるすべてのプリンタに対して作成されます。同様に、 クライアントのコマンドラインで–ac noneが指定されているか、printConfig = noneがクライアントのURLに追加されている場合、ユーザのセッションにプロキシプリンタは作成されません。このオプションは、ユーザのセッションのクライアント印刷機能を事実上無効にします。
 プロキシプリンタ名のデフォルトの形式は、([ClientComputerName])の[ClientPrinterName]です。この形式は、 本ドキュメントの「クライアントプリンタの命名のカスタマイズ」セクションの説明に従って変更できます。
@@ -31,15 +31,13 @@
  関連付けられたクライアントプリンタは、ユニバーサルプリンタドライバを使用するようにプログラムWindowsプリンタアプレットを介して以前に設定されています。 GO-Global Map Printer Drivers.xmlファイルには、クライアントプリンタのプリンタドライバの名前をUniversal Printer Driverにマップするエントリが含まれています。 [Windows Printer Drivers]オプションが選択されていないか、製造元のプリンタドライバの選択条件が満たされていません。  それ以外の場合、製造元のプリンタドライバの選択条件もユニバーサルプリンタドライバの選択条件も満たされないと、クライアントプリンタにプロキシプリンタは作成されず、ユーザはクライアントプリンタに印刷できなくなります。
 製造元のプリンタドライバのインストールと管理、およびクライアントプリンタドライバの名前のサーバープリンタドライバへのマッピングは複雑なため、製造元のプリンタでしか利用できない高度な機能が必要な場合を除き、管理者はユニバーサルプリンタドライバのみを有効にすることをお勧めします。ドライバ。特定のプリンタの高度な機能にアクセスする必要がある場合は、管理者がWindowsのプリンタドライバオプションを有効にすることをお勧めしますが、ユーザが必要とする高度な機能を提供するプリンタの製造元のプリンタドライバのみをホストにインストールします。
 プリンター設定 Application Publishing Serviceは、プロキシプリンタを作成するときに、ユーザーの%APPDATA%\Roaming\GraphOn\GO-Globalディレクトリをチェックインして、クライアントプリンタのカスタマイズ設定が前回のセッションから保存されているかどうかを確認します。クライアントプリンタの設定ファイルが見つかった場合、Application Publishing Serviceはそのファイルに保存されている設定でプロキシプリンタを作成します。または、設定ファイルが見つからない場合、Application Publishing Serviceは選択したドライバで指定されている既定の設定でプロキシプリンタを作成します。管理者は、 本ドキュメントの「マップされたプリンタ用のデフォルトプリンタ設定ファイルを作成する」セクションの手順に従って、プリンタドライバのデフォルト設定を含むファイルを作成できます。
- プロキシプリンタがユニバーサルプリンタドライバを使用するように設定されている場合、そのプリンタのデフォルト設定はC:\Windows\System32\spool\drivers\x64\3\UniversalRemotePrinter.ppdファイルによって制御されます。とりわけ、このファイルはユニバーサルプリンタドライバの余白を制御します。アプリケーションによっては、印刷出力をページの中央に配置するためにこのファイルを変更する必要があります。これについては、管理者ガイドの印刷可能領域の調整セクションで説明されています。
- ユーザは[ファイル]メニューの[印刷]をクリックして、プリンタの設定をカスタマイズできます。GO-Global Printers Appletを実行するためのプログラムウィンドウ内のプリンタ。プリンタアプレットからプリンタの設定を変更しても、アプリケーションとセッションの間は維持されます。または、アプリケーションの[印刷]ダイアログボックスでプリンタの設定に加えた変更は、通常アプリケーションインスタンスにのみ適用され、アプリケーションを閉じると失われます。
- ユーザがURLまたは特定のアプリケーションへのショートカットキーを使用してプログラムウィンドウを迂回する場合、管理者はそれを独立したアプリケーションとして公開することによってプリンタアプレットへのアクセスを提供できます。
- プリンターの列挙 ユーザがアプリケーションの[印刷]ダイアログを開くと、アプリケーションはオペレーティングシステムに対して1つ以上の呼び出しを行って、利用可能なプリンタを列挙します。 GO-Globalは、プリンタを列挙するアプリケーション要求を傍受し、(a)ユーザが利用できるホスト側プリンタ、および(b)アプリケーションが実行されているセッション用に作成されたプロキシプリンタを返します。" />
+参照プロキシプリンタがユニバーサルプリンタドライバを使用するように設定されている場合、そのプリンタのデフォルト設定はC:\Windows\System32\spool\drivers\x64\3\UniversalRemotePrinter.ppdファイルによって制御されます。とりわけ、このファイルはユニバーサルプリンタドライバの余白を制御します。アプリケーションによっては、印刷出力をページの中央に配置するためにこのファイルを変更する必要があります。これについては、管理者ガイドの印刷可能領域の調整セクションで説明されています。ユーザは[ファイル]メニューの[印刷]をクリックして、プリンタの設定をカスタマイズできます。GO-Global Printers Appletを実行するためのプログラムウィンドウ内のプリンタ。プリンタアプレットからプリンタの設定を変更しても、アプリケーションとセッションの間は維持されます。または、アプリケーションの[印刷]ダイアログボックスでプリンタの設定に加えた変更は、通常アプリケーションインスタンスにのみ適用され、アプリケーションを閉じると失われます。
+参照ユーザがURLまたは特定のアプリケーションへのショートカットキーを使用してプログラムウィンドウを迂回する場合、管理者はそれを独立したアプリケーションとして公開することによってプリンタアプレットへのアクセスを提供できます。プリンタの列挙 ユーザがアプリケーションの[印刷]ダイアログを開くと、アプリケーションはオペレーティングシステムに対して1つ以上の呼び出しを行って、利用可能なプリンタを列挙します。 GO-Globalは、プリンタを列挙するアプリケーション要求を傍受し、(a)ユーザが利用できるホスト側プリンタ、および(b)アプリケーションが実行されているセッション用に作成されたプロキシプリンタを返します。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/technote/technote201/" />
 <meta property="article:modified_time" content="2020-05-28T01:18:07+09:00" /><meta property="og:site_name" content="kitASP Docs" />
-<meta itemprop="name" content="">
-<meta itemprop="description" content="クライアント印刷技術の概要 GO-Globalのクライアント印刷機能により、ホスト上のGO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータまたはデバイスからアクセス可能なプリンタに印刷できます。この資料はこの機能の技術的な概要を提供したものです。
+<meta itemprop="name" content="クライアント印刷技術の概要">
+<meta itemprop="description" content="GO-Globalのクライアント印刷機能により、ホスト上のGO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータまたはデバイスからアクセス可能なプリンタに印刷できます。この資料はこの機能の技術的な概要を提供したものです。
 プロキシプリンタの作成と削除 ユーザがGO-Globalホストにサインインしてクライアント印刷機能が有効になると、Application Publishing Serviceはホストコンピュータ上にユーザのクライアントコンピューターまたはデバイスからアクセス可能なプリンタのプロキシとして機能するプリンターを作成します。プロキシプリンタと呼ばれるこれらのホスト側プリンタは、ホストコンピュータの[デバイスとプリンタ]アプレットの下に表示されます。管理者にはプロキシプリンタへのフルコントロール権限が与えられます。通常のユーザには、自分のプロキシプリンタへの印刷権限と自分のプロキシプリンタの管理権限が付与されています。
 デフォルトでは、GO-Globalはクライアントコンピュータ上のユーザのデフォルトプリンタ用のプロキシプリンタのみを作成します。あるいは、–ac allはGO-Globalクライアントのコマンドラインで指定されるか、printConfig = allはブラウザからクライアントを実行するために使用されるURLで指定され、プロキシプリンタはクライアントコンピュータ上のユーザが利用できるすべてのプリンタに対して作成されます。同様に、 クライアントのコマンドラインで–ac noneが指定されているか、printConfig = noneがクライアントのURLに追加されている場合、ユーザのセッションにプロキシプリンタは作成されません。このオプションは、ユーザのセッションのクライアント印刷機能を事実上無効にします。
 プロキシプリンタ名のデフォルトの形式は、([ClientComputerName])の[ClientPrinterName]です。この形式は、 本ドキュメントの「クライアントプリンタの命名のカスタマイズ」セクションの説明に従って変更できます。
@@ -49,18 +47,16 @@
  関連付けられたクライアントプリンタは、ユニバーサルプリンタドライバを使用するようにプログラムWindowsプリンタアプレットを介して以前に設定されています。 GO-Global Map Printer Drivers.xmlファイルには、クライアントプリンタのプリンタドライバの名前をUniversal Printer Driverにマップするエントリが含まれています。 [Windows Printer Drivers]オプションが選択されていないか、製造元のプリンタドライバの選択条件が満たされていません。  それ以外の場合、製造元のプリンタドライバの選択条件もユニバーサルプリンタドライバの選択条件も満たされないと、クライアントプリンタにプロキシプリンタは作成されず、ユーザはクライアントプリンタに印刷できなくなります。
 製造元のプリンタドライバのインストールと管理、およびクライアントプリンタドライバの名前のサーバープリンタドライバへのマッピングは複雑なため、製造元のプリンタでしか利用できない高度な機能が必要な場合を除き、管理者はユニバーサルプリンタドライバのみを有効にすることをお勧めします。ドライバ。特定のプリンタの高度な機能にアクセスする必要がある場合は、管理者がWindowsのプリンタドライバオプションを有効にすることをお勧めしますが、ユーザが必要とする高度な機能を提供するプリンタの製造元のプリンタドライバのみをホストにインストールします。
 プリンター設定 Application Publishing Serviceは、プロキシプリンタを作成するときに、ユーザーの%APPDATA%\Roaming\GraphOn\GO-Globalディレクトリをチェックインして、クライアントプリンタのカスタマイズ設定が前回のセッションから保存されているかどうかを確認します。クライアントプリンタの設定ファイルが見つかった場合、Application Publishing Serviceはそのファイルに保存されている設定でプロキシプリンタを作成します。または、設定ファイルが見つからない場合、Application Publishing Serviceは選択したドライバで指定されている既定の設定でプロキシプリンタを作成します。管理者は、 本ドキュメントの「マップされたプリンタ用のデフォルトプリンタ設定ファイルを作成する」セクションの手順に従って、プリンタドライバのデフォルト設定を含むファイルを作成できます。
- プロキシプリンタがユニバーサルプリンタドライバを使用するように設定されている場合、そのプリンタのデフォルト設定はC:\Windows\System32\spool\drivers\x64\3\UniversalRemotePrinter.ppdファイルによって制御されます。とりわけ、このファイルはユニバーサルプリンタドライバの余白を制御します。アプリケーションによっては、印刷出力をページの中央に配置するためにこのファイルを変更する必要があります。これについては、管理者ガイドの印刷可能領域の調整セクションで説明されています。
- ユーザは[ファイル]メニューの[印刷]をクリックして、プリンタの設定をカスタマイズできます。GO-Global Printers Appletを実行するためのプログラムウィンドウ内のプリンタ。プリンタアプレットからプリンタの設定を変更しても、アプリケーションとセッションの間は維持されます。または、アプリケーションの[印刷]ダイアログボックスでプリンタの設定に加えた変更は、通常アプリケーションインスタンスにのみ適用され、アプリケーションを閉じると失われます。
- ユーザがURLまたは特定のアプリケーションへのショートカットキーを使用してプログラムウィンドウを迂回する場合、管理者はそれを独立したアプリケーションとして公開することによってプリンタアプレットへのアクセスを提供できます。
- プリンターの列挙 ユーザがアプリケーションの[印刷]ダイアログを開くと、アプリケーションはオペレーティングシステムに対して1つ以上の呼び出しを行って、利用可能なプリンタを列挙します。 GO-Globalは、プリンタを列挙するアプリケーション要求を傍受し、(a)ユーザが利用できるホスト側プリンタ、および(b)アプリケーションが実行されているセッション用に作成されたプロキシプリンタを返します。">
+参照プロキシプリンタがユニバーサルプリンタドライバを使用するように設定されている場合、そのプリンタのデフォルト設定はC:\Windows\System32\spool\drivers\x64\3\UniversalRemotePrinter.ppdファイルによって制御されます。とりわけ、このファイルはユニバーサルプリンタドライバの余白を制御します。アプリケーションによっては、印刷出力をページの中央に配置するためにこのファイルを変更する必要があります。これについては、管理者ガイドの印刷可能領域の調整セクションで説明されています。ユーザは[ファイル]メニューの[印刷]をクリックして、プリンタの設定をカスタマイズできます。GO-Global Printers Appletを実行するためのプログラムウィンドウ内のプリンタ。プリンタアプレットからプリンタの設定を変更しても、アプリケーションとセッションの間は維持されます。または、アプリケーションの[印刷]ダイアログボックスでプリンタの設定に加えた変更は、通常アプリケーションインスタンスにのみ適用され、アプリケーションを閉じると失われます。
+参照ユーザがURLまたは特定のアプリケーションへのショートカットキーを使用してプログラムウィンドウを迂回する場合、管理者はそれを独立したアプリケーションとして公開することによってプリンタアプレットへのアクセスを提供できます。プリンタの列挙 ユーザがアプリケーションの[印刷]ダイアログを開くと、アプリケーションはオペレーティングシステムに対して1つ以上の呼び出しを行って、利用可能なプリンタを列挙します。 GO-Globalは、プリンタを列挙するアプリケーション要求を傍受し、(a)ユーザが利用できるホスト側プリンタ、および(b)アプリケーションが実行されているセッション用に作成されたプロキシプリンタを返します。">
 <meta itemprop="dateModified" content="2020-05-28T01:18:07&#43;09:00" />
-<meta itemprop="wordCount" content="117">
+<meta itemprop="wordCount" content="118">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="クライアント印刷技術の概要 GO-Globalのクライアント印刷機能により、ホスト上のGO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータまたはデバイスからアクセス可能なプリンタに印刷できます。この資料はこの機能の技術的な概要を提供したものです。
+<meta name="twitter:title" content="クライアント印刷技術の概要"/>
+<meta name="twitter:description" content="GO-Globalのクライアント印刷機能により、ホスト上のGO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータまたはデバイスからアクセス可能なプリンタに印刷できます。この資料はこの機能の技術的な概要を提供したものです。
 プロキシプリンタの作成と削除 ユーザがGO-Globalホストにサインインしてクライアント印刷機能が有効になると、Application Publishing Serviceはホストコンピュータ上にユーザのクライアントコンピューターまたはデバイスからアクセス可能なプリンタのプロキシとして機能するプリンターを作成します。プロキシプリンタと呼ばれるこれらのホスト側プリンタは、ホストコンピュータの[デバイスとプリンタ]アプレットの下に表示されます。管理者にはプロキシプリンタへのフルコントロール権限が与えられます。通常のユーザには、自分のプロキシプリンタへの印刷権限と自分のプロキシプリンタの管理権限が付与されています。
 デフォルトでは、GO-Globalはクライアントコンピュータ上のユーザのデフォルトプリンタ用のプロキシプリンタのみを作成します。あるいは、–ac allはGO-Globalクライアントのコマンドラインで指定されるか、printConfig = allはブラウザからクライアントを実行するために使用されるURLで指定され、プロキシプリンタはクライアントコンピュータ上のユーザが利用できるすべてのプリンタに対して作成されます。同様に、 クライアントのコマンドラインで–ac noneが指定されているか、printConfig = noneがクライアントのURLに追加されている場合、ユーザのセッションにプロキシプリンタは作成されません。このオプションは、ユーザのセッションのクライアント印刷機能を事実上無効にします。
 プロキシプリンタ名のデフォルトの形式は、([ClientComputerName])の[ClientPrinterName]です。この形式は、 本ドキュメントの「クライアントプリンタの命名のカスタマイズ」セクションの説明に従って変更できます。
@@ -70,10 +66,8 @@
  関連付けられたクライアントプリンタは、ユニバーサルプリンタドライバを使用するようにプログラムWindowsプリンタアプレットを介して以前に設定されています。 GO-Global Map Printer Drivers.xmlファイルには、クライアントプリンタのプリンタドライバの名前をUniversal Printer Driverにマップするエントリが含まれています。 [Windows Printer Drivers]オプションが選択されていないか、製造元のプリンタドライバの選択条件が満たされていません。  それ以外の場合、製造元のプリンタドライバの選択条件もユニバーサルプリンタドライバの選択条件も満たされないと、クライアントプリンタにプロキシプリンタは作成されず、ユーザはクライアントプリンタに印刷できなくなります。
 製造元のプリンタドライバのインストールと管理、およびクライアントプリンタドライバの名前のサーバープリンタドライバへのマッピングは複雑なため、製造元のプリンタでしか利用できない高度な機能が必要な場合を除き、管理者はユニバーサルプリンタドライバのみを有効にすることをお勧めします。ドライバ。特定のプリンタの高度な機能にアクセスする必要がある場合は、管理者がWindowsのプリンタドライバオプションを有効にすることをお勧めしますが、ユーザが必要とする高度な機能を提供するプリンタの製造元のプリンタドライバのみをホストにインストールします。
 プリンター設定 Application Publishing Serviceは、プロキシプリンタを作成するときに、ユーザーの%APPDATA%\Roaming\GraphOn\GO-Globalディレクトリをチェックインして、クライアントプリンタのカスタマイズ設定が前回のセッションから保存されているかどうかを確認します。クライアントプリンタの設定ファイルが見つかった場合、Application Publishing Serviceはそのファイルに保存されている設定でプロキシプリンタを作成します。または、設定ファイルが見つからない場合、Application Publishing Serviceは選択したドライバで指定されている既定の設定でプロキシプリンタを作成します。管理者は、 本ドキュメントの「マップされたプリンタ用のデフォルトプリンタ設定ファイルを作成する」セクションの手順に従って、プリンタドライバのデフォルト設定を含むファイルを作成できます。
- プロキシプリンタがユニバーサルプリンタドライバを使用するように設定されている場合、そのプリンタのデフォルト設定はC:\Windows\System32\spool\drivers\x64\3\UniversalRemotePrinter.ppdファイルによって制御されます。とりわけ、このファイルはユニバーサルプリンタドライバの余白を制御します。アプリケーションによっては、印刷出力をページの中央に配置するためにこのファイルを変更する必要があります。これについては、管理者ガイドの印刷可能領域の調整セクションで説明されています。
- ユーザは[ファイル]メニューの[印刷]をクリックして、プリンタの設定をカスタマイズできます。GO-Global Printers Appletを実行するためのプログラムウィンドウ内のプリンタ。プリンタアプレットからプリンタの設定を変更しても、アプリケーションとセッションの間は維持されます。または、アプリケーションの[印刷]ダイアログボックスでプリンタの設定に加えた変更は、通常アプリケーションインスタンスにのみ適用され、アプリケーションを閉じると失われます。
- ユーザがURLまたは特定のアプリケーションへのショートカットキーを使用してプログラムウィンドウを迂回する場合、管理者はそれを独立したアプリケーションとして公開することによってプリンタアプレットへのアクセスを提供できます。
- プリンターの列挙 ユーザがアプリケーションの[印刷]ダイアログを開くと、アプリケーションはオペレーティングシステムに対して1つ以上の呼び出しを行って、利用可能なプリンタを列挙します。 GO-Globalは、プリンタを列挙するアプリケーション要求を傍受し、(a)ユーザが利用できるホスト側プリンタ、および(b)アプリケーションが実行されているセッション用に作成されたプロキシプリンタを返します。"/>
+参照プロキシプリンタがユニバーサルプリンタドライバを使用するように設定されている場合、そのプリンタのデフォルト設定はC:\Windows\System32\spool\drivers\x64\3\UniversalRemotePrinter.ppdファイルによって制御されます。とりわけ、このファイルはユニバーサルプリンタドライバの余白を制御します。アプリケーションによっては、印刷出力をページの中央に配置するためにこのファイルを変更する必要があります。これについては、管理者ガイドの印刷可能領域の調整セクションで説明されています。ユーザは[ファイル]メニューの[印刷]をクリックして、プリンタの設定をカスタマイズできます。GO-Global Printers Appletを実行するためのプログラムウィンドウ内のプリンタ。プリンタアプレットからプリンタの設定を変更しても、アプリケーションとセッションの間は維持されます。または、アプリケーションの[印刷]ダイアログボックスでプリンタの設定に加えた変更は、通常アプリケーションインスタンスにのみ適用され、アプリケーションを閉じると失われます。
+参照ユーザがURLまたは特定のアプリケーションへのショートカットキーを使用してプログラムウィンドウを迂回する場合、管理者はそれを独立したアプリケーションとして公開することによってプリンタアプレットへのアクセスを提供できます。プリンタの列挙 ユーザがアプリケーションの[印刷]ダイアログを開くと、アプリケーションはオペレーティングシステムに対して1つ以上の呼び出しを行って、利用可能なプリンタを列挙します。 GO-Globalは、プリンタを列挙するアプリケーション要求を傍受し、(a)ユーザが利用できるホスト側プリンタ、および(b)アプリケーションが実行されているセッション用に作成されたプロキシプリンタを返します。"/>
 
 
 
@@ -94,7 +88,7 @@
   crossorigin="anonymous"></script>
 
 
-    <title>kitASP Docs</title>
+    <title>クライアント印刷技術の概要 | kitASP Docs</title>
   </head>
   <body class="td-page">
     <header>
@@ -164,7 +158,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.388ee2dae9d8ea60ce29c9e1d602b589047c5c7d97613aeb3d7267dad3c96adeaf5dc57007167cdf48b890551944c5c7c4219c391c7ef10d7500629fb4413abb.json"
+  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
   data-offline-search-base-href="/"
 >
 
@@ -194,7 +188,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.388ee2dae9d8ea60ce29c9e1d602b589047c5c7d97613aeb3d7267dad3c96adeaf5dc57007167cdf48b890551944c5c7c4219c391c7ef10d7500629fb4413abb.json"
+  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
   data-offline-search-base-href="/"
 >
 
@@ -1000,646 +994,6 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/go-global5/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">GO-Global5</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docsgo-global5">
-      
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/go-global5/go-global-no/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">GO-Globalの概要</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docsgo-global5go-global-no">
-      
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-nogo-global-no" href="/docs/go-global5/go-global-no/go-global-no/">GO-Global の概要</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-noxin-neng" href="/docs/go-global5/go-global-no/xin-neng/">新機能</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-nogeng-lv" href="/docs/go-global5/go-global-no/geng-lv/">変更履歴</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-nogo-global-no-1" href="/docs/go-global5/go-global-no/go-global-no-1/">GO-Globalの機能</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-noshisutemu" href="/docs/go-global5/go-global-no/shisutemu/">システム要件</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/go-global5/sbano/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">サーバーの設定</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docsgo-global5sbano">
-      
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanountitled" href="/docs/go-global5/sbano/untitled/">GO-Globalホストのインストール</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanoburauza-roguonno-go-global-server-no" href="/docs/go-global5/sbano/burauza-roguonno-go-global-server-no/">Webクライアント用のGO-Globalホストの設定</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanogo-global-webpjino" href="/docs/go-global5/sbano/go-global-webpjino/">GO-Global Webページの変更</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanogo-global-server-noshisutemuheno-web-fuirunoinsutru" href="/docs/go-global5/sbano/go-global-server-noshisutemuheno-web-fuirunoinsutru/">GO-Globalホスト以外のシステムへのWebファイルのインストール</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanoredundant-license-servers" href="/docs/go-global5/sbano/redundant-license-servers/">Redundant License Servers</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanoconfiguring-go-global-to-use-a-central-license-server" href="/docs/go-global5/sbano/configuring-go-global-to-use-a-central-license-server/">セントラルライセンスサーバを使用するためのGO-Globalの構成</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanokuraianto-kbdoime-saptono" href="/docs/go-global5/sbano/kuraianto-kbdoime-saptono/">クライアントキーボード/IME 用サポートの設定</a>
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/go-global5/sbano/kbdotoimenoinsutru/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">キーボードとIMEの追加インストール</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docsgo-global5sbanokbdotoimenoinsutru">
-      
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanokbdotoimenoinsutrugo-globaldesarerukbdo-ime" href="/docs/go-global5/sbano/kbdotoimenoinsutru/go-globaldesarerukbdo-ime/">GO-Globalで使用されるキーボード/ IME識別子</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanokbdotoimenoinsutrukuraiantokbdoopushonno" href="/docs/go-global5/sbano/kbdotoimenoinsutru/kuraiantokbdoopushonno/">クライアントキーボードオプションの設定</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanokbdotoimenoinsutrukuraiantokbdosapto" href="/docs/go-global5/sbano/kbdotoimenoinsutru/kuraiantokbdosapto/">自動クライアントキーボードサポート</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanotma" href="/docs/go-global5/sbano/tma/">テーマ</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/go-global5/yzaakauntono/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">ユーザーアカウントの管理</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docsgo-global5yzaakauntono">
-      
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5yzaakauntonoyza-akauntono" href="/docs/go-global5/yzaakauntono/yza-akauntono/">ユーザアカウントの管理</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5yzaakauntonoyza-purofuiruno" href="/docs/go-global5/yzaakauntono/yza-purofuiruno/">ユーザプロファイルの設定</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5yzaakauntonountitled" href="/docs/go-global5/yzaakauntono/untitled/">ネットワークプリンタの設定</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5yzaakauntonoyza-purofuirunofuiru-akusesuno" href="/docs/go-global5/yzaakauntono/yza-purofuiruno/fuiru-akusesuno/"></a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/go-global5/cluster-manager/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Customer Manager</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docsgo-global5cluster-manager">
-      
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managercluster-manager" href="/docs/go-global5/cluster-manager/cluster-manager/">Customer Manager</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managerapurikshonno-2" href="/docs/go-global5/cluster-manager/apurikshonno-2/">アプリケーションの管理</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managersesshontopurosesuno" href="/docs/go-global5/cluster-manager/sesshontopurosesuno/">セッションとプロセスの管理</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managersekyurite-opushon" href="/docs/go-global5/cluster-manager/sekyurite-opushon/">セキュリティオプション</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-10" href="/docs/go-global5/cluster-manager/untitled-10/">パスワードの変更</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managersesshonno-1" href="/docs/go-global5/cluster-manager/sesshonno-1/">セッションの再接続</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-13" href="/docs/go-global5/cluster-manager/untitled-13/">共有アカウント</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-12" href="/docs/go-global5/cluster-manager/untitled-12/">クライアントのタイムゾーン</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-11" href="/docs/go-global5/cluster-manager/untitled-11/">サーバ活動の監視</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-20" href="/docs/go-global5/cluster-manager/untitled-20/">セッション起動オプション</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-23" href="/docs/go-global5/cluster-manager/untitled-23/">セッションのシャットダウンオプション</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managerautomatic-host-updates" href="/docs/go-global5/cluster-manager/automatic-host-updates/">Automatic Host Updates</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-27" href="/docs/go-global5/cluster-manager/untitled-27/">クライアントマシンからのGO-Globalホストの管理</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-26" href="/docs/go-global5/cluster-manager/untitled-26/">Cluster Managerのキーボードショートカット</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/go-global5/go-global-clientno/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">GO-Globalの実行</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docsgo-global5go-global-clientno">
-      
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnogo-globalno" href="/docs/go-global5/go-global-clientno/go-globalno/">GO-Globalの実行</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoweb-akusesu-no-go-global-server-no" href="/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/">WebブラウザからGO-Globalを起動する</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnogo-global-suttoappuparamta" href="/docs/go-global5/go-global-clientno/go-global-suttoappuparamta/">GO-Global スタートアップパラメータ</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnochromewo" href="/docs/go-global5/go-global-clientno/chromewo/">Chrome拡張機能を実行</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnogo-globalnoaninsutru" href="/docs/go-global5/go-global-clientno/go-globalnoaninsutru/">GO-Globalのアンインストール</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoautomatic-client-updates" href="/docs/go-global5/go-global-clientno/automatic-client-updates/">Automatic Client Updates</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoupdating-the-activex-control-and-the-plug-in" href="/docs/go-global5/go-global-clientno/updating-the-activex-control-and-the-plug-in/">Updating the ActiveX Control and the Plug-in</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/go-global5/topikku-1/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">上級者用トピック</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docsgo-global5topikku-1">
-      
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1topikku" href="/docs/go-global5/topikku-1/topikku/">Load Balancing</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1go-global-server-pafumansu-kaunta" href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/">GO-Globalホストパフォーマンスカウンタ</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1saptono" href="/docs/go-global5/topikku-1/saptono/">委任サポートの設定要件</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1untitled-1" href="/docs/go-global5/topikku-1/untitled-1/">クライアントの印刷処理</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintadoraibahenoakusesuno" href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/">プリンタドライバへのアクセスの指定</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintano" href="/docs/go-global5/topikku-1/purintano/">プリンタの構成</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintaapuretto" href="/docs/go-global5/topikku-1/purintaapuretto/">プリンタアプレット</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1deforutopurintano" href="/docs/go-global5/topikku-1/deforutopurintano/">デフォルトプリンタの設定</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintawosuru" href="/docs/go-global5/topikku-1/purintawosuru/">プリンタ設定を編集する</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1tesutopjiwosuru" href="/docs/go-global5/topikku-1/tesutopjiwosuru/">テストページを印刷する</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintanodoraibawo" href="/docs/go-global5/topikku-1/purintanodoraibawo/">プリンタのドライバを変更</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintnorisetto" href="/docs/go-global5/topikku-1/purintnorisetto/">プリンター設定のリセット</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintdoraibumappingu" href="/docs/go-global5/topikku-1/purintdoraibumappingu/">プリンタードライブマッピング</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-purintanokasutamaizu" href="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/">クライアントプリンタ名のカスタマイズ</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kurippubdonosapto" href="/docs/go-global5/topikku-1/kurippubdonosapto/">クリップボードのサポート</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonosaundo" href="/docs/go-global5/topikku-1/kuraiantonosaundo/">クライアントのサウンド</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1shiriaru-ptooyobiparareru-pto" href="/docs/go-global5/topikku-1/shiriaru-ptooyobiparareru-pto/">シリアルポートおよびパラレルポート</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonofuiru-akusesu" href="/docs/go-global5/topikku-1/kuraiantonofuiru-akusesu/">クライアントのファイルアクセス</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1mappingusaretadoraibu" href="/docs/go-global5/topikku-1/mappingusaretadoraibu/">マッピングされたドライブ</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1maruchimonita" href="/docs/go-global5/topikku-1/maruchimonita/">マルチモニタ</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-2" href="/docs/go-global5/topikku-1/no-2/">最大色深度の設定</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-1" href="/docs/go-global5/topikku-1/no-1/">画像圧縮の無効化</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-konpytano" href="/docs/go-global5/topikku-1/kuraianto-konpytano/">クライアントコンピュータ名の取得</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1apurikshon-sukuriputonosapto" href="/docs/go-global5/topikku-1/apurikshon-sukuriputonosapto/">アプリケーションスクリプトのサポート</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1nasesshonpurosesu" href="/docs/go-global5/topikku-1/nasesshonpurosesu/">Advanced Session Process Configuration</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purokishinotonneringu" href="/docs/go-global5/topikku-1/purokishinotonneringu/">プロキシのトンネリング</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1ipv6nosapto" href="/docs/go-global5/topikku-1/ipv6nosapto/">IPv6のサポート</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1smart-cardnosapto" href="/docs/go-global5/topikku-1/smart-cardnosapto/">Smart cardのサポート</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1paenosaptowonisuru" href="/docs/go-global5/topikku-1/paenosaptowonisuru/">PAEのサポートを有効にする</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1pafumansu" href="/docs/go-global5/topikku-1/pafumansu/">パフォーマンス自動調整</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1automatic-windows-update-and-hotfix-compatibility" href="/docs/go-global5/topikku-1/automatic-windows-update-and-hotfix-compatibility/">Automatic Windows Update and Hotfix Compatibility</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1sairentoinsutru" href="/docs/go-global5/topikku-1/sairentoinsutru/">サイレントインストール</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1logfuiru" href="/docs/go-global5/topikku-1/logfuiru/">Logファイル</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1support-request-wizard" href="/docs/go-global5/topikku-1/support-request-wizard/">Support Request Wizard</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1dpisukringu" href="/docs/go-global5/topikku-1/dpisukringu/">DPIスケーリング</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/go-global6/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">GO-Global6</a>
   </li>
   <ul>
@@ -2385,55 +1739,831 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote164" href="/docs/go-global6/technote/technote164/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote164" href="/docs/go-global6/technote/technote164/">OVERVIEW OF COMMUNICATION BETWEEN GO-GLOBAL CLIENTS, RELAY SERVERS, DEPENDENT APPLICATION SERVERS, AND THE ADMIN CONSOLE</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote167" href="/docs/go-global6/technote/technote167/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote167" href="/docs/go-global6/technote/technote167/">IOSとの通信</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote168" href="/docs/go-global6/technote/technote168/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote168" href="/docs/go-global6/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote179" href="/docs/go-global6/technote/technote179/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote179" href="/docs/go-global6/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global6technotetechnote201" href="/docs/go-global6/technote/technote201/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global6technotetechnote201" href="/docs/go-global6/technote/technote201/">クライアント印刷技術の概要</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote205" href="/docs/go-global6/technote/technote205/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote205" href="/docs/go-global6/technote/technote205/">暗号化に関するFAQ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote206" href="/docs/go-global6/technote/technote206/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote206" href="/docs/go-global6/technote/technote206/">問題：最後のアプリケーションが終了したときにGO-Globalセッションを閉じることができない</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote207" href="/docs/go-global6/technote/technote207/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote207" href="/docs/go-global6/technote/technote207/">ウィンドウ枠の幅とパディングの変更</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote208" href="/docs/go-global6/technote/technote208/"></a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global6technotetechnote208" href="/docs/go-global6/technote/technote208/">Androidデバイスでクラッシュレポートを生成する</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/go-global-for-windows-6tips/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">GO-Global6.* TIPS</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgo-global-for-windows-6tips">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/go-global-for-windows-6tips/technote/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">TIPS</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgo-global-for-windows-6tipstechnote">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote41" href="/docs/go-global-for-windows-6tips/technote/technote41/">LMGRD UTILITY IS CONSUMING 100% CPU WHEN THREE-SERVER REDUNDANCY IS USED</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote159" href="/docs/go-global-for-windows-6tips/technote/technote159/">クライアントファイルキャッシュの期限</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">IOSクライアントでのSSL証明書の使用</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote164" href="/docs/go-global-for-windows-6tips/technote/technote164/">OVERVIEW OF COMMUNICATION BETWEEN GO-GLOBAL CLIENTS, RELAY SERVERS, DEPENDENT APPLICATION SERVERS, AND THE ADMIN CONSOLE</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">IOSとの通信</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote201" href="/docs/go-global-for-windows-6tips/technote/technote201/">クライアント印刷技術の概要</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote205" href="/docs/go-global-for-windows-6tips/technote/technote205/">暗号化に関するFAQ</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションが終了したときにGO-Globalセッションを閉じることができない</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote207" href="/docs/go-global-for-windows-6tips/technote/technote207/">ウィンドウ枠の幅とパディングの変更</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote208" href="/docs/go-global-for-windows-6tips/technote/technote208/">Androidデバイスでクラッシュレポートを生成する</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/go-global5/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">GO-Global5</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgo-global5">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/go-global5/go-global-no/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">GO-Globalの概要</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgo-global5go-global-no">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-nogo-global-no" href="/docs/go-global5/go-global-no/go-global-no/">GO-Global の概要</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-noxin-neng" href="/docs/go-global5/go-global-no/xin-neng/">新機能</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-nogeng-lv" href="/docs/go-global5/go-global-no/geng-lv/">変更履歴</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-nogo-global-no-1" href="/docs/go-global5/go-global-no/go-global-no-1/">GO-Globalの機能</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-noshisutemu" href="/docs/go-global5/go-global-no/shisutemu/">システム要件</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/go-global5/sbano/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">サーバーの設定</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgo-global5sbano">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanountitled" href="/docs/go-global5/sbano/untitled/">GO-Globalホストのインストール</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanoburauza-roguonno-go-global-server-no" href="/docs/go-global5/sbano/burauza-roguonno-go-global-server-no/">Webクライアント用のGO-Globalホストの設定</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanogo-global-webpjino" href="/docs/go-global5/sbano/go-global-webpjino/">GO-Global Webページの変更</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanogo-global-server-noshisutemuheno-web-fuirunoinsutru" href="/docs/go-global5/sbano/go-global-server-noshisutemuheno-web-fuirunoinsutru/">GO-Globalホスト以外のシステムへのWebファイルのインストール</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanoredundant-license-servers" href="/docs/go-global5/sbano/redundant-license-servers/">Redundant License Servers</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanoconfiguring-go-global-to-use-a-central-license-server" href="/docs/go-global5/sbano/configuring-go-global-to-use-a-central-license-server/">セントラルライセンスサーバを使用するためのGO-Globalの構成</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanokuraianto-kbdoime-saptono" href="/docs/go-global5/sbano/kuraianto-kbdoime-saptono/">クライアントキーボード/IME 用サポートの設定</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/go-global5/sbano/kbdotoimenoinsutru/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">キーボードとIMEの追加インストール</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgo-global5sbanokbdotoimenoinsutru">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanokbdotoimenoinsutrugo-globaldesarerukbdo-ime" href="/docs/go-global5/sbano/kbdotoimenoinsutru/go-globaldesarerukbdo-ime/">GO-Globalで使用されるキーボード/ IME識別子</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanokbdotoimenoinsutrukuraiantokbdoopushonno" href="/docs/go-global5/sbano/kbdotoimenoinsutru/kuraiantokbdoopushonno/">クライアントキーボードオプションの設定</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanokbdotoimenoinsutrukuraiantokbdosapto" href="/docs/go-global5/sbano/kbdotoimenoinsutru/kuraiantokbdosapto/">自動クライアントキーボードサポート</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5sbanotma" href="/docs/go-global5/sbano/tma/">テーマ</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/go-global5/yzaakauntono/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">ユーザーアカウントの管理</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgo-global5yzaakauntono">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5yzaakauntonoyza-akauntono" href="/docs/go-global5/yzaakauntono/yza-akauntono/">ユーザアカウントの管理</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5yzaakauntonoyza-purofuiruno" href="/docs/go-global5/yzaakauntono/yza-purofuiruno/">ユーザプロファイルの設定</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5yzaakauntonountitled" href="/docs/go-global5/yzaakauntono/untitled/">ネットワークプリンタの設定</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5yzaakauntonoyza-purofuirunofuiru-akusesuno" href="/docs/go-global5/yzaakauntono/yza-purofuiruno/fuiru-akusesuno/"></a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/go-global5/cluster-manager/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Customer Manager</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgo-global5cluster-manager">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managercluster-manager" href="/docs/go-global5/cluster-manager/cluster-manager/">Customer Manager</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managerapurikshonno-2" href="/docs/go-global5/cluster-manager/apurikshonno-2/">アプリケーションの管理</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managersesshontopurosesuno" href="/docs/go-global5/cluster-manager/sesshontopurosesuno/">セッションとプロセスの管理</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managersekyurite-opushon" href="/docs/go-global5/cluster-manager/sekyurite-opushon/">セキュリティオプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-10" href="/docs/go-global5/cluster-manager/untitled-10/">パスワードの変更</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managersesshonno-1" href="/docs/go-global5/cluster-manager/sesshonno-1/">セッションの再接続</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-13" href="/docs/go-global5/cluster-manager/untitled-13/">共有アカウント</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-12" href="/docs/go-global5/cluster-manager/untitled-12/">クライアントのタイムゾーン</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-11" href="/docs/go-global5/cluster-manager/untitled-11/">サーバ活動の監視</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-20" href="/docs/go-global5/cluster-manager/untitled-20/">セッション起動オプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-23" href="/docs/go-global5/cluster-manager/untitled-23/">セッションのシャットダウンオプション</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-managerautomatic-host-updates" href="/docs/go-global5/cluster-manager/automatic-host-updates/">Automatic Host Updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-27" href="/docs/go-global5/cluster-manager/untitled-27/">クライアントマシンからのGO-Globalホストの管理</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5cluster-manageruntitled-26" href="/docs/go-global5/cluster-manager/untitled-26/">Cluster Managerのキーボードショートカット</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/go-global5/go-global-clientno/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">GO-Globalの実行</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgo-global5go-global-clientno">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnogo-globalno" href="/docs/go-global5/go-global-clientno/go-globalno/">GO-Globalの実行</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoweb-akusesu-no-go-global-server-no" href="/docs/go-global5/go-global-clientno/web-akusesu-no-go-global-server-no/">WebブラウザからGO-Globalを起動する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnogo-global-suttoappuparamta" href="/docs/go-global5/go-global-clientno/go-global-suttoappuparamta/">GO-Global スタートアップパラメータ</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnochromewo" href="/docs/go-global5/go-global-clientno/chromewo/">Chrome拡張機能を実行</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnogo-globalnoaninsutru" href="/docs/go-global5/go-global-clientno/go-globalnoaninsutru/">GO-Globalのアンインストール</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoautomatic-client-updates" href="/docs/go-global5/go-global-clientno/automatic-client-updates/">Automatic Client Updates</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5go-global-clientnoupdating-the-activex-control-and-the-plug-in" href="/docs/go-global5/go-global-clientno/updating-the-activex-control-and-the-plug-in/">Updating the ActiveX Control and the Plug-in</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/go-global5/topikku-1/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">上級者用トピック</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgo-global5topikku-1">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1topikku" href="/docs/go-global5/topikku-1/topikku/">Load Balancing</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1go-global-server-pafumansu-kaunta" href="/docs/go-global5/topikku-1/go-global-server-pafumansu-kaunta/">GO-Globalホストパフォーマンスカウンタ</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1saptono" href="/docs/go-global5/topikku-1/saptono/">委任サポートの設定要件</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1untitled-1" href="/docs/go-global5/topikku-1/untitled-1/">クライアントの印刷処理</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintadoraibahenoakusesuno" href="/docs/go-global5/topikku-1/purintadoraibahenoakusesuno/">プリンタドライバへのアクセスの指定</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintano" href="/docs/go-global5/topikku-1/purintano/">プリンタの構成</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintaapuretto" href="/docs/go-global5/topikku-1/purintaapuretto/">プリンタアプレット</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1deforutopurintano" href="/docs/go-global5/topikku-1/deforutopurintano/">デフォルトプリンタの設定</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintawosuru" href="/docs/go-global5/topikku-1/purintawosuru/">プリンタ設定を編集する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1tesutopjiwosuru" href="/docs/go-global5/topikku-1/tesutopjiwosuru/">テストページを印刷する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintanodoraibawo" href="/docs/go-global5/topikku-1/purintanodoraibawo/">プリンタのドライバを変更</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintnorisetto" href="/docs/go-global5/topikku-1/purintnorisetto/">プリンター設定のリセット</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purintdoraibumappingu" href="/docs/go-global5/topikku-1/purintdoraibumappingu/">プリンタードライブマッピング</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-purintanokasutamaizu" href="/docs/go-global5/topikku-1/kuraianto-purintanokasutamaizu/">クライアントプリンタ名のカスタマイズ</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kurippubdonosapto" href="/docs/go-global5/topikku-1/kurippubdonosapto/">クリップボードのサポート</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonosaundo" href="/docs/go-global5/topikku-1/kuraiantonosaundo/">クライアントのサウンド</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1shiriaru-ptooyobiparareru-pto" href="/docs/go-global5/topikku-1/shiriaru-ptooyobiparareru-pto/">シリアルポートおよびパラレルポート</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraiantonofuiru-akusesu" href="/docs/go-global5/topikku-1/kuraiantonofuiru-akusesu/">クライアントのファイルアクセス</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1mappingusaretadoraibu" href="/docs/go-global5/topikku-1/mappingusaretadoraibu/">マッピングされたドライブ</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1maruchimonita" href="/docs/go-global5/topikku-1/maruchimonita/">マルチモニタ</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-2" href="/docs/go-global5/topikku-1/no-2/">最大色深度の設定</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1no-1" href="/docs/go-global5/topikku-1/no-1/">画像圧縮の無効化</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1kuraianto-konpytano" href="/docs/go-global5/topikku-1/kuraianto-konpytano/">クライアントコンピュータ名の取得</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1apurikshon-sukuriputonosapto" href="/docs/go-global5/topikku-1/apurikshon-sukuriputonosapto/">アプリケーションスクリプトのサポート</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1nasesshonpurosesu" href="/docs/go-global5/topikku-1/nasesshonpurosesu/">Advanced Session Process Configuration</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1purokishinotonneringu" href="/docs/go-global5/topikku-1/purokishinotonneringu/">プロキシのトンネリング</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1ipv6nosapto" href="/docs/go-global5/topikku-1/ipv6nosapto/">IPv6のサポート</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1smart-cardnosapto" href="/docs/go-global5/topikku-1/smart-cardnosapto/">Smart cardのサポート</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1paenosaptowonisuru" href="/docs/go-global5/topikku-1/paenosaptowonisuru/">PAEのサポートを有効にする</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1pafumansu" href="/docs/go-global5/topikku-1/pafumansu/">パフォーマンス自動調整</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1automatic-windows-update-and-hotfix-compatibility" href="/docs/go-global5/topikku-1/automatic-windows-update-and-hotfix-compatibility/">Automatic Windows Update and Hotfix Compatibility</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1sairentoinsutru" href="/docs/go-global5/topikku-1/sairentoinsutru/">サイレントインストール</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1logfuiru" href="/docs/go-global5/topikku-1/logfuiru/">Logファイル</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1support-request-wizard" href="/docs/go-global5/topikku-1/support-request-wizard/">Support Request Wizard</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global5topikku-1dpisukringu" href="/docs/go-global5/topikku-1/dpisukringu/">DPIスケーリング</a>
       
       
     </li>
@@ -2474,7 +2604,7 @@
 
 
 <a href="https://github.com//edit/master/content/ja/docs/go-global6/technote/technote201.md" target="_blank"><i class="fa fa-edit fa-fw"></i> ページの編集</a>
-<a href="https://github.com//issues/new?title=" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
+<a href="https://github.com//issues/new?title=%e3%82%af%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%83%88%e5%8d%b0%e5%88%b7%e6%8a%80%e8%a1%93%e3%81%ae%e6%a6%82%e8%a6%81" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
 
 
 <a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> プロジェクトのissueを作成</a>
@@ -2488,13 +2618,13 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#クライアント印刷技術の概要">クライアント印刷技術の概要</a>
+    <li>
       <ul>
         <li><a href="#プロキシプリンタの作成と削除">プロキシプリンタの作成と削除</a></li>
         <li><a href="#プリンタドライバの選択">プリンタドライバの選択</a></li>
         <li><a href="#プリンター設定">プリンター設定</a></li>
-        <li><a href="#プリンターの列挙">プリンターの列挙</a></li>
-        <li><a href="#ユニバーサルプリンタードライバーで印刷する">ユニバーサルプリンタードライバーで印刷する</a></li>
+        <li><a href="#プリンタの列挙">プリンタの列挙</a></li>
+        <li><a href="#ユニバーサルプリンタードライバで印刷する">ユニバーサルプリンタードライバで印刷する</a></li>
         <li><a href="#プリンタの製造元からプリンタドライバで印刷する">プリンタの製造元からプリンタドライバで印刷する</a></li>
         <li><a href="#ホスト側プリンタへの印刷">ホスト側プリンタへの印刷</a></li>
       </ul>
@@ -2544,7 +2674,7 @@
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/go-global6/technote/technote201/"></a>
+	<a href="/docs/go-global6/technote/technote201/">クライアント印刷技術の概要</a>
 </li>
 
 	</ol>
@@ -2552,10 +2682,9 @@
 
             
 <div class="td-content">
-	<h1></h1>
+	<h1>クライアント印刷技術の概要</h1>
 	
-	<h2 id="クライアント印刷技術の概要">クライアント印刷技術の概要</h2>
-<p>GO-Globalのクライアント印刷機能により、ホスト上のGO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータまたはデバイスからアクセス可能なプリンタに印刷できます。この資料はこの機能の技術的な概要を提供したものです。</p>
+	<p>GO-Globalのクライアント印刷機能により、ホスト上のGO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータまたはデバイスからアクセス可能なプリンタに印刷できます。この資料はこの機能の技術的な概要を提供したものです。</p>
 <h3 id="プロキシプリンタの作成と削除">プロキシプリンタの作成と削除</h3>
 <p>ユーザがGO-Globalホストにサインインしてクライアント印刷機能が有効になると、Application Publishing Serviceはホストコンピュータ上にユーザのクライアントコンピューターまたはデバイスからアクセス可能なプリンタのプロキシとして機能するプリンターを作成します。プロキシプリンタと呼ばれるこれらのホスト側プリンタは、ホストコンピュータの[デバイスとプリンタ]アプレットの下に表示されます。管理者にはプロキシプリンタへのフルコントロール権限が与えられます。通常のユーザには、自分のプロキシプリンタへの印刷権限と自分のプロキシプリンタの管理権限が付与されています。</p>
 <p>デフォルトでは、GO-Globalはクライアントコンピュータ上のユーザのデフォルトプリンタ用のプロキシプリンタのみを作成します。あるいは、–ac allはGO-Globalクライアントのコマンドラインで指定されるか、printConfig = allはブラウザからクライアントを実行するために使用されるURLで指定され、プロキシプリンタはクライアントコンピュータ上のユーザが利用できるすべてのプリンタに対して作成されます。同様に、 クライアントのコマンドラインで–ac noneが指定されているか、printConfig = noneがクライアントのURLに追加されている場合、ユーザのセッションにプロキシプリンタは作成されません。このオプションは、ユーザのセッションのクライアント印刷機能を事実上無効にします。</p>
@@ -2578,17 +2707,29 @@
 <p>製造元のプリンタドライバのインストールと管理、およびクライアントプリンタドライバの名前のサーバープリンタドライバへのマッピングは複雑なため、製造元のプリンタでしか利用できない高度な機能が必要な場合を除き、管理者はユニバーサルプリンタドライバのみを有効にすることをお勧めします。ドライバ。特定のプリンタの高度な機能にアクセスする必要がある場合は、管理者がWindowsのプリンタドライバオプションを有効にすることをお勧めしますが、ユーザが必要とする高度な機能を提供するプリンタの製造元のプリンタドライバのみをホストにインストールします。</p>
 <h3 id="プリンター設定">プリンター設定</h3>
 <p>Application Publishing Serviceは、プロキシプリンタを作成するときに、ユーザーの%APPDATA%\Roaming\GraphOn\GO-Globalディレクトリをチェックインして、クライアントプリンタのカスタマイズ設定が前回のセッションから保存されているかどうかを確認します。クライアントプリンタの設定ファイルが見つかった場合、Application Publishing Serviceはそのファイルに保存されている設定でプロキシプリンタを作成します。または、設定ファイルが見つからない場合、Application Publishing Serviceは選択したドライバで指定されている既定の設定でプロキシプリンタを作成します。管理者は、 本ドキュメントの「マップされたプリンタ用のデフォルトプリンタ設定ファイルを作成する」セクションの手順に従って、プリンタドライバのデフォルト設定を含むファイルを作成できます。</p>
-<blockquote>
-<p>プロキシプリンタがユニバーサルプリンタドライバを使用するように設定されている場合、そのプリンタのデフォルト設定はC:\Windows\System32\spool\drivers\x64\3\UniversalRemotePrinter.ppdファイルによって制御されます。とりわけ、このファイルはユニバーサルプリンタドライバの余白を制御します。アプリケーションによっては、印刷出力をページの中央に配置するためにこのファイルを変更する必要があります。これについては、管理者ガイドの印刷可能領域の調整セクションで説明されています。</p>
-</blockquote>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+プロキシプリンタがユニバーサルプリンタドライバを使用するように設定されている場合、そのプリンタのデフォルト設定はC:\Windows\System32\spool\drivers\x64\3\UniversalRemotePrinter.ppdファイルによって制御されます。とりわけ、このファイルはユニバーサルプリンタドライバの余白を制御します。アプリケーションによっては、印刷出力をページの中央に配置するためにこのファイルを変更する必要があります。これについては、管理者ガイドの印刷可能領域の調整セクションで説明されています。
+</div>
+
 <p>ユーザは[ファイル]メニューの[印刷]をクリックして、プリンタの設定をカスタマイズできます。GO-Global Printers Appletを実行するためのプログラムウィンドウ内のプリンタ。プリンタアプレットからプリンタの設定を変更しても、アプリケーションとセッションの間は維持されます。または、アプリケーションの[印刷]ダイアログボックスでプリンタの設定に加えた変更は、通常アプリケーションインスタンスにのみ適用され、アプリケーションを閉じると失われます。</p>
-<blockquote>
-<p>ユーザがURLまたは特定のアプリケーションへのショートカットキーを使用してプログラムウィンドウを迂回する場合、管理者はそれを独立したアプリケーションとして公開することによってプリンタアプレットへのアクセスを提供できます。</p>
-</blockquote>
-<h3 id="プリンターの列挙">プリンターの列挙</h3>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+ユーザがURLまたは特定のアプリケーションへのショートカットキーを使用してプログラムウィンドウを迂回する場合、管理者はそれを独立したアプリケーションとして公開することによってプリンタアプレットへのアクセスを提供できます。
+</div>
+
+<h3 id="プリンタの列挙">プリンタの列挙</h3>
 <p>ユーザがアプリケーションの[印刷]ダイアログを開くと、アプリケーションはオペレーティングシステムに対して1つ以上の呼び出しを行って、利用可能なプリンタを列挙します。 GO-Globalは、プリンタを列挙するアプリケーション要求を傍受し、(a)ユーザが利用できるホスト側プリンタ、および(b)アプリケーションが実行されているセッション用に作成されたプロキシプリンタを返します。</p>
 <p>他のセッションに属する代理プリンタはフィルタリングされ、ユーザ(例えば管理者)が他の代理プリンタに対する権利を持っていても、ユーザは自分のセッションに属する代理プリンタだけを見ることができる。</p>
-<h3 id="ユニバーサルプリンタードライバーで印刷する">ユニバーサルプリンタードライバーで印刷する</h3>
+<h3 id="ユニバーサルプリンタードライバで印刷する">ユニバーサルプリンタードライバで印刷する</h3>
 <p>ユニバーサルプリンタドライバを使用して文書を印刷するプロセスを次の図に示します。</p>
 <p>プロセスの手順は次のとおりです。</p>
 <p><img src="/images/9-201-1.png" alt="9-201-1"></p>
@@ -2596,22 +2737,30 @@
 <li>アプリケーションは印刷ジョブを開始し、Windows APIを呼び出してドキュメントをプリンタにレンダリングします。</li>
 <li>Microsoft PostScriptプリンタドライバは、アプリケーションのグラフィックコマンドをPostScript(PS)に変換し、PostScriptデータをプリントスプーラのプロキシプリンタのポートに送信します。</li>
 <li>GO-Globalポートモニタは、Microsoft PostScriptプリンタドライバがプロキシプリンタのポートに送信したデータを受信します。</li>
-<li>クライアントがWindowsまたはMacの場合、またはドキュメントがGO-GlobalのPreview PDFプリンタに印刷されている場合 
-a. GO-GlobalポートモニタはPostScriptデータをホスト上の一時ファイルに書き込みます。 
-b. ポートモニタは、すべての印刷ジョブデータを受信すると、VeryPDF PostScript to PDFコンバータを使用してPostScriptファイルをPDFファイルに変換します。 
-c. 印刷ジョブがPDFファイルに変換されると、ポートモニタはApplication Publishing Serviceを介してそのPDFファイルをGO-Globalクライアントに送信します。 
-d. GO-Globalポートモニタは、ホストから一時的なPostScriptファイルとPDFファイルを削除します。 
-e. GO-GlobalクライアントはPDFファイルを受信し、それをクライアントコンピュータの一時ファイルに保存します。 
-f. ドキュメントがGO-GlobalのPreview PDFプリンタで印刷された場合、クライアントはクライアントコンピュータのデフォルトのPDFビューアでPDFファイルを開きます。 
-g. あるいは、文書がクライアントプリンタに印刷された場合、GO-GlobalクライアントはPDFファイルをプリンタに送信します。Mac OS Xでは、クライアントはオペレーティングシステムの組み込みサポートを使用してPDFファイルをプリンタに送信します。Windowsでは、クライアントは、GO-Globalクライアントに含まれているVeryPDFのpdfprint.exeユーティリティを使用してPDFファイルを印刷します。</li>
+<li>クライアントがWindowsまたはMacの場合、またはドキュメントがGO-GlobalのPreview PDFプリンタに印刷されている場合<br>
+a. GO-GlobalポートモニタはPostScriptデータをホスト上の一時ファイルに書き込みます。<br>
+b. ポートモニタは、すべての印刷ジョブデータを受信すると、VeryPDF PostScript to PDFコンバータを使用してPostScriptファイルをPDFファイルに変換します。<br> 
+c. 印刷ジョブがPDFファイルに変換されると、ポートモニタはApplication Publishing Serviceを介してそのPDFファイルをGO-Globalクライアントに送信します。<br> 
+d. GO-Globalポートモニタは、ホストから一時的なPostScriptファイルとPDFファイルを削除します。<br> 
+e. GO-GlobalクライアントはPDFファイルを受信し、それをクライアントコンピュータの一時ファイルに保存します。<br> 
+f. ドキュメントがGO-GlobalのPreview PDFプリンタで印刷された場合、クライアントはクライアントコンピュータのデフォルトのPDFビューアでPDFファイルを開きます。<br> 
+g. あるいは、文書がクライアントプリンタに印刷された場合、GO-GlobalクライアントはPDFファイルをプリンタに送信します。Mac OS Xでは、クライアントはオペレーティングシステムの組み込みサポートを使用してPDFファイルをプリンタに送信します。Windowsでは、クライアントは、GO-Globalクライアントに含まれているVeryPDFのpdfprint.exeユーティリティを使用してPDFファイルを印刷します。<br></li>
 </ol>
-<blockquote>
-<p>クライアントがWindows上で実行されていて、ホストのHostProperties.xmlファイルのEnablePrintOptionsプロパティーの値がtrueである場合、クライアントはHostProperties.xmlファイルのPrintOptionsプロパティーで指定されているコマンド行オプションをpdfprint.exeに追加します。 ​ h. クライアントは一時PDFファイルを削除します。</p>
-</blockquote>
+<p>
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+クライアントがWindows上で実行されていて、ホストのHostProperties.xmlファイルのEnablePrintOptionsプロパティーの値がtrueである場合、クライアントはHostProperties.xmlファイルのPrintOptionsプロパティーで指定されているコマンド行オプションをpdfprint.exeに追加します。
+</div>
+
+<br>
+h. クライアントは一時PDFファイルを削除します。<br></p>
 <ol start="5">
-<li>それ以外の場合、クライアントがLinux上で実行されていて、文書がクライアントプリンタに印刷されている場合 
-a. GO-Globalポートモニタは、Application Publishing Serviceを介してPostScriptデータをクライアントに転送します。 
-b. GO-GlobalクライアントはPostScriptデータをプリンタに送信します。</li>
+<li>それ以外の場合、クライアントがLinux上で実行されていて、文書がクライアントプリンタに印刷されている場合<br> 
+a. GO-Globalポートモニタは、Application Publishing Serviceを介してPostScriptデータをクライアントに転送します。<br> 
+b. GO-GlobalクライアントはPostScriptデータをプリンタに送信します。<br></li>
 </ol>
 <h3 id="プリンタの製造元からプリンタドライバで印刷する">プリンタの製造元からプリンタドライバで印刷する</h3>
 <p>プロキシプリンタがプリンタ製造元のプリンタドライバを使用するように設定されている場合、このプロセスは、ユニバーサルプリンタドライバを使用してLinuxクライアント上のプリンタにドキュメントを印刷するプロセスと似ています。この場合：</p>
@@ -2736,9 +2885,9 @@ b. GO-GlobalクライアントはPostScriptデータをプリンタに送信し�
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
-        <a href="/docs/go-global6/technote/technote179/"></a>
+        <a href="/docs/go-global6/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
       </div><div class="xPrevNextLink_next">
-        <a href="/docs/go-global6/technote/technote205/"></a>
+        <a href="/docs/go-global6/technote/technote205/">暗号化に関するFAQ</a>
       </div></div>
   
 

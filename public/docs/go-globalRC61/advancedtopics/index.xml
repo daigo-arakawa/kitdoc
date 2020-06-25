@@ -39,7 +39,7 @@
 &lt;li&gt;If an application saves any user specific settings in the registry (e.g., Microsoft Word), it is strongly recommend that users operate with roaming profiles rather than local profiles.Since there is no way of predicting which server the user will actually be logged onto in a balanced server farm, working with roaming profiles is the only way to ensure that user specific settings are available to the user at all times.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A GO-Global Host can be configured to operate as an independent host, a dependent host, or as a Relay Load Balancer. Please note that a Relay Load Balancer cannot be an application host.&lt;/p&gt;
-&lt;p&gt;When setting up a load-balanced Relay Load Balancer configuration, GraphOn recommends using a license server. For more information, see the following sections from Chapter 2: &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/~/edit/drafts/-L_fpq0Q-h3OMQTw08rI/go-global-5/sbano/raisensu-sbawosurutameno-go-global-no&#34;&gt;&lt;strong&gt;Configuring GO-Global to use a Central License Server&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;,&lt;/strong&gt; &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/~/drafts/-L_fpq0Q-h3OMQTw08rI/primary/go-global-5/sbano/raisensu-sba/sba-3-no&#34;&gt;&lt;strong&gt;Three-Server Redundancy&lt;/strong&gt;&lt;/a&gt;, and &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/go-global-5/sbano/raisensu-sba/raisensu-fuiruno&#34;&gt;&lt;strong&gt;License-File List Redundancy.&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;​&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When setting up a load-balanced Relay Load Balancer configuration, GraphOn recommends using a license server. For more information, see the following sections from Chapter 2: &lt;a href=&#34;/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/&#34;&gt;&lt;strong&gt;Configuring GO-Global to use a Central License Server&lt;/strong&gt;&lt;/a&gt; , &lt;a href=&#34;/docs/go-globalrc61/configuringthehost/redundantlicenseservers/#three-server-redundancy&#34;&gt;&lt;strong&gt;Three-Server Redundancy&lt;/strong&gt;&lt;/a&gt; , and &lt;a href=&#34;/docs/go-globalrc61/configuringthehost/redundantlicenseservers/#license-file-list-redundancy&#34;&gt;&lt;strong&gt;License-File List Redundancy.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;independent-hosts&#34;&gt;Independent Hosts&lt;/h2&gt;
 &lt;p&gt;Independent hosts are GO-Global Hosts that do not interact with other GO-Global Hosts running on the network. Independent hosts appear in the Admin Console on the first level of the GO-Global Hosts tree view as an independent node. The GO-Global setup program configures GO-Global Hosts to operate as independent hosts. GO-Global clients can connect to independent hosts directly by specifying the name or IP address of the server in the &lt;strong&gt;Connection&lt;/strong&gt; dialog or the location box of a Web browser. Clients can also connect to independent hosts through a third party network load balancer that distributes client connections among several servers. However, session reconnect is not supported in the latter configuration and must be disabled.&lt;/p&gt;
 &lt;h2 id=&#34;go-global-hosts&#34;&gt;GO-Global Hosts&lt;/h2&gt;
@@ -200,8 +200,8 @@ b. Restart the &lt;strong&gt;Application Publishing Service.&lt;/strong&gt; &lt;
 &lt;/div&gt;
 
 &lt;p&gt;When an independent host is configured to run as a Relay Load Balancer or a dependent host, GO-Global does not automatically make any changes to the host&amp;rsquo;s licensing configuration. For example, if an independent host is configured to use the license server that is installed on the same computer as the host, the host will continue to use the computer&amp;rsquo;s local license server after the host is connected to a Relay Load Balancer. This is the default configuration, but not typically the best licensing configuration. A Relay Load Balancer and its dependent hosts should all be configured to use the same license server(s).&lt;/p&gt;
-&lt;p&gt;If high-availability is not required, GraphOn recommends configuring the dependent hosts to use the license server on the Relay Load Balancer as a Central License Server. (See &lt;strong&gt;Configuring GO-Global to use a Central License Server&lt;/strong&gt; and ensure that the dependent hosts are able to connect to the license server&amp;rsquo;s port on the Relay Load Balancer.)&lt;/p&gt;
-&lt;p&gt;If high-availability is required, GraphOn recommends configuring the Relay Load Balancer and its dependent hosts to use a set of &lt;strong&gt;Three-Server Redundant License Servers.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If high-availability is not required, GraphOn recommends configuring the dependent hosts to use the license server on the Relay Load Balancer as a Central License Server. (See &lt;a href=&#34;/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/&#34;&gt;&lt;strong&gt;Configuring GO-Global to use a Central License Server&lt;/strong&gt;&lt;/a&gt; and ensure that the dependent hosts are able to connect to the license server&amp;rsquo;s port on the Relay Load Balancer.)&lt;/p&gt;
+&lt;p&gt;If high-availability is required, GraphOn recommends configuring the Relay Load Balancer and its dependent hosts to use a set of &lt;a href=&#34;/docs/go-globalrc61/configuringthehost/redundantlicenseservers/&#34;&gt;&lt;strong&gt;Three-Server Redundant License Servers.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;With both of these configurations, the &lt;strong&gt;Licenses&lt;/strong&gt; tab on the Admin Console will report the same license information, regardless of which computer is selected.&lt;/p&gt;
 &lt;p&gt;Prior to version 6.1, GO-Global managed licenses from Dependent Hosts by default. With this configuration, administrators had to configure each Dependent Host to use a central license manager. Beginning with version 6.1, administrators no longer need to do this. GO-Global now manages licenses from the Relay Load Balancer by default. This enables administrators to add and remove Dependent Hosts from the Relay Load Balancer without having to make any licensing configuration changes.&lt;/p&gt;
 
@@ -1604,13 +1604,30 @@ c. 要求に成功すると、GO-GlobalはRXP接続を初期化し、セッシ�
 &lt;p&gt;全てのログファイルは、クライアントマシン関連でもホストマシン関連でも、GO-Globalホスト上のLog フォルダ(例:&lt;code&gt;D:\Program Files\GraphOn\GO-Global\Log&lt;/code&gt;)に保存されます。Logフォルダには、 &lt;strong&gt;Backup&lt;/strong&gt;、 &lt;strong&gt;Codes&lt;/strong&gt;、 &lt;strong&gt;Templates&lt;/strong&gt; の3つのサブフォルダがあります。これらのサブフォルダを削除しないよう注意してください。GO-Globalのメッセージは、接頭語 aps の後にApplication Publishing Serviceが開始された日付と時刻(ミリ秒未満は四捨五入)が続く形でログファイルに記録されます(例: aps_2013-04-04_09-55-47-636.html)。Application Publishing Serviceが開始されるたびに、新しいログファイルが作成されます。最新の日時スタンプのログファイルに、現行または最後の Application Publishing Serviceインスタンスでのメッセージが含まれています。&lt;/p&gt;
 &lt;p&gt;GO-Globalの実行時に検出された問題は、ログファイルのエントリとして記述されています。各エントリは、項目番号と日時スタンプによって固有識別された、イベントやプログラムエラーの説明です。 GraphOn Technical Supportは、この情報を利用して、障害の原因を判断し解決策を決定します。&lt;/p&gt;
 &lt;p&gt;また、ログファイルのエントリにはメッセージ識別用の接頭語がついています。それにより、関連する個別ユーザのセッションやアプリケーションが判断できます。イベントが特定セッションのコンテキスト内で発生した場合、そのセッション名がメッセージの最初に表示されます(例:SuzyG on Server1)。イベントがApplication Publishing Serviceへの接続(クライアントまたはアプリケーションからの接続)のコンテキスト内で発生した場合、その接続プロセスの名称(例: pw(1244))がメッセージの接頭語に含まれます。この例(pw(1244))の場合、Program Windowプロセスと Application Publishing Service間の接続中に障害が発生しています。1244は、そのイベントが発生したプロセスのIDです。メッセージの最初に接続名apsが含まれている場合、そのイベントは Application Publishing Service で発生していますが、他のプロセスとの接続には関係ありません。&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-green&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;情報&lt;/h4&gt;
+&lt;p&gt;本項目の設定は以下の技術ノートを参照ください。&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;KGTN 2019112701&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;KGTN 2019112702&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;KGTN 2019112703&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;KGTN 2019112705&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;KGTN 2019112704&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
 &lt;h2 id=&#34;logファイルの新規保存場所の選択&#34;&gt;Logファイルの新規保存場所の選択&lt;/h2&gt;
-&lt;p&gt;デフォルトでは、Logファイルは生成されると&lt;code&gt;\Program Files\GraphOn\GO-Global\Log&lt;/code&gt; に保存されます。Admin Consoleの &lt;strong&gt;{Host Options}&lt;/strong&gt; ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。&lt;/p&gt;
+&lt;p&gt;デフォルトでは、Logファイルは生成されると&lt;code&gt;\Program Files\GraphOn\GO-Global\Log&lt;/code&gt; に保存されます。Admin Consoleの &lt;strong&gt;{Host Options]&lt;/strong&gt; ダイアログを使用すれば、Logファイルの新規保存場所を選択できます。&lt;/p&gt;
 &lt;h3 id=&#34;logファイルの新規保存場所を選択する方法&#34;&gt;Logファイルの新規保存場所を選択する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Admin Consoleで、[Tools | Hosts Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[Log}&lt;/strong&gt; をクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[Folder}&lt;/strong&gt; 編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Log]&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Folder]&lt;/strong&gt; 編集ボックスに新しいディレクトリへのパスを入力するか、その保存場所を閲覧します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Logファイルの保存場所としてリモートシステムのパスを指定することはできません。すなわち、UNCパスやマップされたネットワークドライブを[Folder]ボックスで指定すると、&lt;strong&gt;&amp;ldquo;Please specify a usable Windows folder where log files may be written.&amp;quot;&lt;/strong&gt; というエラーメッセージが表示されます。&lt;/p&gt;
 
@@ -1633,9 +1650,9 @@ c. 要求に成功すると、GO-GlobalはRXP接続を初期化し、セッシ�
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;出力レベルの設定方法&#34;&gt;出力レベルの設定方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Admin Consoleで、[Tools | Hosts Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[Log}&lt;/strong&gt; をクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[Output level}&lt;/strong&gt; ボックスに上記の数値の 1 つを入力します。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[OK}&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Log]&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Output level]&lt;/strong&gt; ボックスに上記の数値の 1 つを入力します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[OK]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;/ol&gt;
 
 
@@ -1652,21 +1669,21 @@ Logの出力レベルを5または6に設定した場合、ホストで生成さ
 &lt;h3 id=&#34;logファイルの削除方法&#34;&gt;Logファイルの削除方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Admin Consoleで、[Tools | Hosts Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[Log}&lt;/strong&gt; をクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[Maintenance}&lt;/strong&gt; のところで &lt;strong&gt;[Delete}&lt;/strong&gt; を選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Log]&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Maintenance]&lt;/strong&gt; のところで &lt;strong&gt;[Delete]&lt;/strong&gt; を選択します。&lt;/li&gt;
 &lt;li&gt;削除するまでのLogファイルの保存期間を指定します(日単位)。&lt;/li&gt;
 &lt;li&gt;Logファイルのサイズがどのくらいに達したら削除するか指定します(MB 単位)。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[OK}&lt;/strong&gt; をクリックします。&lt;/li&gt;
-&lt;li&gt;O-Global Application Publishing Serviceを再起動します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[OK]&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;Go-Global Application Publishing Serviceを再起動します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;logファイルのバックアップ方法&#34;&gt;Logファイルのバックアップ方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Admin Consoleで、[Tools | Hosts Options]の順にクリックします。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[Log}&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[Log]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;li&gt;[Maintenance]のところで [Back up]を選択します。&lt;/li&gt;
 &lt;li&gt;どのくらいの時間が経過したらログファイルをLogフォルダのBackupサブディレクトリに移動するか指定します (日単位)。&lt;/li&gt;
 &lt;li&gt;ログファイルがどのくらいの容量に達したらLogフォルダのBackupサブディレクトリに移動するか指定します(MB 単位)。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[OK}&lt;/strong&gt; をクリックします。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[OK]&lt;/strong&gt; をクリックします。&lt;/li&gt;
 &lt;li&gt;GO-Global Application Publishing Serviceを再起動します。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Application Publishing Serviceは30分ごと、および開始されるたびに、 &lt;strong&gt;Log&lt;/strong&gt;フォルダ から指定した保存期間またはサイズに達したファイルを探し出します。その後、それらのファイルを削除するか、Logフォルダ内の &lt;strong&gt;Backup&lt;/strong&gt;サブディレクトリに移動します。ログファイルの整理中に、現行のログファイルが指定の保存期間またはサイズに達したら、Application Publishing Serviceはそのログファイルを閉じて、新規作成したログファイルをインストールします。&lt;/p&gt;
@@ -1701,6 +1718,19 @@ Logの出力レベルを5または6に設定した場合、ホストで生成さ
 
 &lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
 KitASPからの連絡で必要に応じて採取をしてください。
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-green&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;情報&lt;/h4&gt;
+&lt;p&gt;本項目の設定は以下の技術ノートを参照ください。&lt;/p&gt;
+&lt;p&gt;KGTN 2013122703&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;代理店様向けの専用ページにkitASP障害情報採取ツール_kitCollectToolの資料も用意しています。&lt;br&gt;
+合わせてご参照ください。&lt;/p&gt;
+
 &lt;/div&gt;
 
 

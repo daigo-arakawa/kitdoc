@@ -1,5 +1,6 @@
-+++
-title = "GO-Global5"
-description = ""
-weight = 2
-+++
+--- 
+title: "GO-Global5" 
+linkTitle: "" 
+weight: 04 
+type: "docs" 
+---

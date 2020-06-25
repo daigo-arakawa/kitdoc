@@ -1,5 +1,8 @@
-## Androidデバイスでクラッシュレポートを生成する
-
++++
+title = "Androidデバイスでクラッシュレポートを生成する"
+description = ""
+weight = 15
++++
 1. WindowsマシンのWindows用SDKプラットフォームツールを次からダウンロードします。 [https://developer.android.com/studio/releases/platform-tools。](https://developer.android.com/studio/releases/platform-tools%E3%80%82) プラットフォームツールはAndroid SDKのコンポーネントであり、adb、fastboot、systrayなどのさまざまなツールが含まれています。
 2. USBケーブルを使用して、AndroidデバイスをWindowsマシンに接続し、WindowsマシンからAndroidデバイスにアクセスできることを確認します。
 3. Androidデバイスから、[設定]に移動し、[開発者オプション]をクリックします。 [開発設定を許可する]確認メッセージで[OK]をクリックします。 USBデバッグを有効にします。 [USBデバッグの確認メッセージを許可する]で[OK]をクリックします。

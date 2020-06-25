@@ -1,21 +1,24 @@
-## サンドボックスホワイトリストエントリの手動設定
-
++++
+title = "サンドボックスホワイトリストエントリの手動設定"
+description = ""
+weight = 10
++++
 GO-Globalのサンドボックス機能により、管理者はGO-Globalホスト上のファイルおよびプログラムへのユーザーアクセスを制限できます。これらの制限はユーザにのみ適用され、管理者または管理者グループのメンバには適用されません。この記事では、C:\ProgramData\GraphOn\WorksacePropertyDefinitions.xmlファイルを手動で編集して、ファイルおよびプログラムをサンドボックスホワイトリストに追加する方法について説明します。
 サンドボックス機能を有効にするには、まずレジストリでサンドボックスドライバーを有効にする必要があります。
 
 ### サンドボックスのドライバーを有効にする
 
-1.[HKLM \ Software GraphOn \ GO Global \ AppServer]レジストリキーを見つけます。
-2.SandBoxという名前のDWORDレジストリ値を見つけます。
-3.値を0から1に変更します。
-4.コンピュータを再起動します。
+1. [HKLM \ Software GraphOn \ GO Global \ AppServer]レジストリキーを見つけます。
+2. SandBoxという名前のDWORDレジストリ値を見つけます。
+3. 値を0から1に変更します。
+4. コンピュータを再起動します。
 
 ホワイトリストエントリを指定する前に、ファイルやプログラムのサンドボックス機能を有効にする必要があります。
 
 ### ファイルのサンドボックスを有効にする
-1.Application Publishing Service.を停止します。
-2.WorkspacePropertyDefinitions.xmlを開きます。
-3.filesSandboxEnabledプロパティIDを見つけて、値をtrueに設定します。
+1. Application Publishing Service.を停止します。
+2. WorkspacePropertyDefinitions.xmlを開きます。
+3. filesSandboxEnabledプロパティIDを見つけて、値をtrueに設定します。
 
 ```
 <propertygroup id="UserSandbox">
@@ -27,8 +30,8 @@ GO-Globalのサンドボックス機能により、管理者はGO-Globalホス�
 <constraints/>
 ```
 
-4.ファイルを保存します。
-5.Application Publishing Service.を再起動します。
+4. ファイルを保存します。
+5. Application Publishing Service.を再起動します。
 
 ### プログラムのサンドボックスを有効にする
 
@@ -57,11 +60,15 @@ GO-Globalのサンドボックス機能により、管理者はGO-Globalホス�
 * 関連付けられたプログラムを含む文書をデスクトップフォルダに配置する (例:C:\Users\Public\Desktop\ExampleDoc.doc)
 * 関連付けられたプログラムを含む文書へのショートカットをデスクトップフォルダに配置する(例:C:\Users\ExampleUser\Desktop\ExampleDoc.lnk)
 
->デスクトップフォルダにないホワイトリストファイルの関連プログラムは、自動的にプログラムホワイトリストに追加されません。
+{{% alert title="参照" color="info" %}}
+デスクトップフォルダにないホワイトリストファイルの関連プログラムは、自動的にプログラムホワイトリストに追加されません。
+{{% /alert %}}
 
 以下に説明するように、WorkspacePropertyDefinitions.xmlファイルを編集したら、変更内容をDefaultWorkspaceProperties.xmlファイルに伝播する必要があります。 GO-Global Application Publishing Serviceを停止し、C:\ProgramData\GraphOn\DefaultWorkspaceProperties.xmlファイルを削除してから、GO-Global Application Publishing Serviceを再起動します。これにより、DefaultWorkspaceProperties.xmlファイルがWorkspacePropertyDefinitions.xmlファイルから再作成されます。
 
->サンドボックス機能が有効になっていると、ホワイトリストに登録されているプログラムのみが実行を許可されます。既定のサンドボックス構成では、ユーザはコマンドプロンプト(cmd.exe)を実行できますが、プログラムがホワイトリストに追加されていない限り、cmd.exeからプログラムを起動することはできません。これはログオンスクリプトをサポートするための仕様です。
+{{% alert title="参照" color="info" %}}
+サンドボックス機能が有効になっていると、ホワイトリストに登録されているプログラムのみが実行を許可されます。既定のサンドボックス構成では、ユーザはコマンドプロンプト(cmd.exe)を実行できますが、プログラムがホワイトリストに追加されていない限り、cmd.exeからプログラムを起動することはできません。これはログオンスクリプトをサポートするための仕様です。
+{{% /alert %}}
 
 ### OEMのお客様への考慮事項
 

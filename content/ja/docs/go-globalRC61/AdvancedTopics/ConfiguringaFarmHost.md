@@ -26,9 +26,9 @@ type: "docs"
 
 When an independent host is configured to run as a Relay Load Balancer or a dependent host, GO-Global does not automatically make any changes to the host's licensing configuration. For example, if an independent host is configured to use the license server that is installed on the same computer as the host, the host will continue to use the computer's local license server after the host is connected to a Relay Load Balancer. This is the default configuration, but not typically the best licensing configuration. A Relay Load Balancer and its dependent hosts should all be configured to use the same license server(s).
 
-If high-availability is not required, GraphOn recommends configuring the dependent hosts to use the license server on the Relay Load Balancer as a Central License Server. (See **Configuring GO-Global to use a Central License Server** and ensure that the dependent hosts are able to connect to the license server's port on the Relay Load Balancer.)
+If high-availability is not required, GraphOn recommends configuring the dependent hosts to use the license server on the Relay Load Balancer as a Central License Server. (See [**Configuring GO-Global to use a Central License Server**](/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/) and ensure that the dependent hosts are able to connect to the license server's port on the Relay Load Balancer.)
 
-If high-availability is required, GraphOn recommends configuring the Relay Load Balancer and its dependent hosts to use a set of **Three-Server Redundant License Servers.**
+If high-availability is required, GraphOn recommends configuring the Relay Load Balancer and its dependent hosts to use a set of [**Three-Server Redundant License Servers.**](/docs/go-globalrc61/configuringthehost/redundantlicenseservers/)
 
 With both of these configurations, the **Licenses** tab on the Admin Console will report the same license information, regardless of which computer is selected.
 

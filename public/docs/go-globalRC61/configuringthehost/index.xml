@@ -73,6 +73,22 @@ When upgrading to version 6.1, you will be prompted to restart the computer. The
 本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。アップグレード手順については弊社技術支援センターまでお問い合わせください。
 &lt;/div&gt;
 
+
+
+&lt;div class=&#34;alert alert-green&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;情報&lt;/h4&gt;
+&lt;p&gt;5.0から6.0へのアップグレードの設定は以下の技術ノートを参照ください。&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;KGTN 2018120801&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;KGTN 2019061901&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;KGTN 2019061904&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;KGTN 2019081402&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
 &lt;p&gt;Before upgrading to version 6.1, you must upgrade the GO-Global license(s) by submitting a &lt;strong&gt;License Change Request&lt;/strong&gt; via the GraphOn portal. The version 6.1 host installer will not upgrade a computer that does not have a version 6.1 GO-Global license. After signing in to the portal, click &lt;strong&gt;License Management&lt;/strong&gt; then click &lt;strong&gt;License Change Request&lt;/strong&gt; and complete the form.
 After submitting the &lt;strong&gt;License Change Request&lt;/strong&gt; form, a version 6.1 GO-Global license will be sent via email. Place the new license file in the directory where the existing version 5 license file is stored. (The default license folder for GO-Global version 5 is &lt;code&gt;C:\Program Files\GraphOn\GO-Global\Programs.&lt;/code&gt;)
 Remove all older licenses from the Programs directory. Then restart the &lt;strong&gt;GO-Global License Manager.&lt;/strong&gt;&lt;/p&gt;

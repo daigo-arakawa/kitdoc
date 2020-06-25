@@ -4,9 +4,17 @@ linkTitle: ""
 weight: 03
 type: "docs"
 ---
-
 {{% alert title="注意" color="secondary" %}}
 本項目の設定は推奨設定ではございませんのでご注意ください。ライセンスのアップグレード申請を行う際にはきっとエイエスピー営業部までお問い合わせください。アップグレード手順については弊社技術支援センターまでお問い合わせください。
+{{% /alert %}}
+
+{{% alert title="情報" color="green" %}}
+5.0から6.0へのアップグレードの設定は以下の技術ノートを参照ください。<br>
+
+* KGTN 2018120801<br>
+* KGTN 2019061901<br>
+* KGTN 2019061904<br>
+* KGTN 2019081402<br>
 {{% /alert %}}
 
 Before upgrading to version 6.1, you must upgrade the GO-Global license(s) by submitting a **License Change Request** via the GraphOn portal. The version 6.1 host installer will not upgrade a computer that does not have a version 6.1 GO-Global license. After signing in to the portal, click **License Management** then click **License Change Request** and complete the form.

@@ -742,7 +742,7 @@ b.Provide users that connect via an installed client, with a shortcut that sets 
 &lt;li&gt;If an application saves any user specific settings in the registry (e.g., Microsoft Word), it is strongly recommend that users operate with roaming profiles rather than local profiles.Since there is no way of predicting which server the user will actually be logged onto in a balanced server farm, working with roaming profiles is the only way to ensure that user specific settings are available to the user at all times.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A GO-Global Host can be configured to operate as an independent host, a dependent host, or as a Relay Load Balancer. Please note that a Relay Load Balancer cannot be an application host.&lt;/p&gt;
-&lt;p&gt;When setting up a load-balanced Relay Load Balancer configuration, GraphOn recommends using a license server. For more information, see the following sections from Chapter 2: &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/~/edit/drafts/-L_fpq0Q-h3OMQTw08rI/go-global-5/sbano/raisensu-sbawosurutameno-go-global-no&#34;&gt;&lt;strong&gt;Configuring GO-Global to use a Central License Server&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;,&lt;/strong&gt; &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/~/drafts/-L_fpq0Q-h3OMQTw08rI/primary/go-global-5/sbano/raisensu-sba/sba-3-no&#34;&gt;&lt;strong&gt;Three-Server Redundancy&lt;/strong&gt;&lt;/a&gt;, and &lt;a href=&#34;https://kitasp-goglobal.gitbook.io/kitasp-documentaion/go-global-5/sbano/raisensu-sba/raisensu-fuiruno&#34;&gt;&lt;strong&gt;License-File List Redundancy.&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;​&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When setting up a load-balanced Relay Load Balancer configuration, GraphOn recommends using a license server. For more information, see the following sections from Chapter 2: &lt;a href=&#34;/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/&#34;&gt;&lt;strong&gt;Configuring GO-Global to use a Central License Server&lt;/strong&gt;&lt;/a&gt; , &lt;a href=&#34;/docs/go-globalrc61/configuringthehost/redundantlicenseservers/#three-server-redundancy&#34;&gt;&lt;strong&gt;Three-Server Redundancy&lt;/strong&gt;&lt;/a&gt; , and &lt;a href=&#34;/docs/go-globalrc61/configuringthehost/redundantlicenseservers/#license-file-list-redundancy&#34;&gt;&lt;strong&gt;License-File List Redundancy.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;independent-hosts&#34;&gt;Independent Hosts&lt;/h2&gt;
 &lt;p&gt;Independent hosts are GO-Global Hosts that do not interact with other GO-Global Hosts running on the network. Independent hosts appear in the Admin Console on the first level of the GO-Global Hosts tree view as an independent node. The GO-Global setup program configures GO-Global Hosts to operate as independent hosts. GO-Global clients can connect to independent hosts directly by specifying the name or IP address of the server in the &lt;strong&gt;Connection&lt;/strong&gt; dialog or the location box of a Web browser. Clients can also connect to independent hosts through a third party network load balancer that distributes client connections among several servers. However, session reconnect is not supported in the latter configuration and must be disabled.&lt;/p&gt;
 &lt;h2 id=&#34;go-global-hosts&#34;&gt;GO-Global Hosts&lt;/h2&gt;
@@ -901,6 +901,44 @@ GO-Global version5から6へのアップグレード手順は以下の技術ノ�
 Customers will be unable to upgrade their version 5 license to version 6 if their Support contract has expired. To renew, contact your GO-Global reseller or &lt;a href=&#34;mailto:sales@graphon.com&#34;&gt;sales@graphon.com&lt;/a&gt;.
 &lt;/div&gt;
 
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: クライアントプリンタの設定後にスクリプトを実行する</title>
+      <link>/docs/go-global-for-windows-6tips/technote/technote25/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global-for-windows-6tips/technote/technote25/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Program WindowsはPW_InitializePrintersEarlyというDWORDレジストリ変数をサポートしています。これによりGO-Globalはクライアントプリンタの設定後にスクリプトを実行することができます。 管理者はこの変数を手動でレジストリに追加する必要があります。&lt;/p&gt;
+&lt;h3 id=&#34;クライアントプリンタを設定した後にスクリプトを実行する方法&#34;&gt;クライアントプリンタを設定した後にスクリプトを実行する方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;レジストリエディタ(regedit.exe)を実行します。&lt;/li&gt;
+&lt;li&gt;レジストリエディタから、HKEY_LOCAL_MACHINEキーを展開します。&lt;/li&gt;
+&lt;li&gt;Locate the AppServer key: [SOFTWARE\GraphOn\Bridges\1.0.0\AppServer]&lt;/li&gt;
+&lt;li&gt;PW_InitializePrintersEarlyという名前の新しいDWORD値を作成します。&lt;/li&gt;
+&lt;li&gt;PW_InitializePrintersEarlyを右クリックして[変更]を選択します。&lt;/li&gt;
+&lt;li&gt;値のデータフィールドに1を入力します。&lt;/li&gt;
+&lt;li&gt;レジストリエディタを閉じます。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;レジストリ変数PW_InitializePrintersEarlyがない場合、または0(ゼロ)に設定されている場合、プログラムウィンドウは従来どおりに動作します。つまり、印刷コンポーネントをセットアップする前に補助アプリケーションを起動します。ただし、PW_InitializePrintersEarly値がレジストリに存在し、0以外の値が割り当てられている場合、プログラムウィンドウは、印刷コンポーネントを設定した後で補助アプリケーションを起動します。管理者は自分のスクリプトを「補助アプリケーション」として確立し、PW_InitializePrintersEarlyをレジストリに追加し、それをゼロ以外の値に設定する必要があります。 1が推奨されます。&lt;/p&gt;
+&lt;p&gt;補助アプリケーションを確立するには、管理者は2つのレジストリ変数をそれぞれ独自のキーの下に手動で追加する必要があります。1つ目はGraphOnキーの下に配置するDWORD、2つ目はMicrosoftキーの下に配置するストリングです。&lt;/p&gt;
+&lt;p&gt;候補として2組のキーを提供します。&lt;/p&gt;
+&lt;p&gt;The first pair:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;GraphOn: HKEY_CURRENT_USER
+SOFTWARE\\GraphOn\\Bridges\\1.0.0\\System\\Run\\CurrentUser
+Microsoft: HKEY_CURRENT_USERSOFTWARE
+SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The second pair:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;GraphOn: HKEY_LOCAL_MACHINE
+SOFTWARE\\GraphOn\\Bridges\\1.0.0\\System\\Run\\LocalMachine
+Microsoft: HKEY_LOCAL_MACHINE
+SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;GO-Globalの検索アルゴリズムを満たすには、管理者は上記で指定したいずれかのGraphOnキーの下にDWORD変数を追加する必要があります。その変数の名前は任意ですので例えばPrinterScriptという名前でも構いません。その値は無関係です。次に管理者は、対応するMicrosoftキーの下に同じ名前(この例ではPrinterScript)の文字列変数を追加し、その値を目的のアプリケーションの完全修飾パスにする必要があります。&lt;/p&gt;
 
       </description>
     </item>
@@ -1562,16 +1600,22 @@ GO-Global Web Appを使用する場合、アプリケーションのメニュー
     
     <item>
       <title>Docs: LMGRD UTILITY IS CONSUMING 100% CPU WHEN THREE-SERVER REDUNDANCY IS USED</title>
-      <link>/docs/go-global6/technote/technote41/</link>
+      <link>/docs/go-global-for-windows-6tips/technote/technote41/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global6/technote/technote41/</guid>
+      <guid>/docs/go-global-for-windows-6tips/technote/technote41/</guid>
       <description>
         
         
-        &lt;blockquote&gt;
-&lt;p&gt;本項目の設定は推奨設定ではございませんのでご注意ください。&lt;/p&gt;
-&lt;/blockquote&gt;
+        
+
+&lt;div class=&#34;alert alert-secondary&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;注意&lt;/h4&gt;
+本項目の設定は推奨設定ではございませんのでご注意ください。
+&lt;/div&gt;
+
 &lt;h3 id=&#34;resolution&#34;&gt;Resolution:&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Stop the GO-Global Application Publishing Service and the GO-Global License Manager on all three redundant GOGlobal Hosts.&lt;/li&gt;
@@ -1585,8 +1629,63 @@ SERVER wilson 000C29C7B953 28001
 &lt;li&gt;Add an environment variable for each server, using commas to separate the servers. For example, LM_LICENSE_FILE = 28001@piper,28001@harpua,28001@wilson&lt;/li&gt;
 &lt;li&gt;Restart the Application Publishing Service and the License Manager on the &amp;ldquo;master&amp;rdquo; server first (piper, in the example above), then on the secondary and tertiary servers (e.g., harpua and wilson, respectively).&lt;/li&gt;
 &lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
 &lt;p&gt;Registering the Windows Shell to run in the background of a GO-Global session adds significant overhead. Sessions will take longer to start and will consume more memory. Additional overhead can also result from other processes that are registered to run when the Shell starts up.&lt;/p&gt;
 &lt;p&gt;Care should be taken to ensure that unnecessary processes are not registered in users&amp;rsquo; Startup folders or under the various Run commands in the Registry (e.g., HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run).&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: LMGRD UTILITY IS CONSUMING 100% CPU WHEN THREE-SERVER REDUNDANCY IS USED</title>
+      <link>/docs/go-global6/technote/technote41/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global6/technote/technote41/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;alert alert-secondary&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;注意&lt;/h4&gt;
+本項目の設定は推奨設定ではございませんのでご注意ください。
+&lt;/div&gt;
+
+&lt;h3 id=&#34;resolution&#34;&gt;Resolution:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Stop the GO-Global Application Publishing Service and the GO-Global License Manager on all three redundant GOGlobal Hosts.&lt;/li&gt;
+&lt;li&gt;Add the same port number on each server line in the license file. For example.And please use the same license file on all three hosts.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;SERVER piper 000C29750Ac6 28001
+SERVER harpua 0002A5C8219D 28001
+SERVER wilson 000C29C7B953 28001
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Please use the same license file on all three hosts.&lt;/li&gt;
+&lt;li&gt;Add an environment variable for each server, using commas to separate the servers. For example, LM_LICENSE_FILE = 28001@piper,28001@harpua,28001@wilson&lt;/li&gt;
+&lt;li&gt;Restart the Application Publishing Service and the License Manager on the &amp;ldquo;master&amp;rdquo; server first (piper, in the example above), then on the secondary and tertiary servers (e.g., harpua and wilson, respectively).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+&lt;p&gt;Registering the Windows Shell to run in the background of a GO-Global session adds significant overhead. Sessions will take longer to start and will consume more memory. Additional overhead can also result from other processes that are registered to run when the Shell starts up.&lt;/p&gt;
+&lt;p&gt;Care should be taken to ensure that unnecessary processes are not registered in users&amp;rsquo; Startup folders or under the various Run commands in the Registry (e.g., HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run).&lt;/p&gt;
+
+&lt;/div&gt;
+
 
       </description>
     </item>
@@ -2432,116 +2531,6 @@ Admin Consoleがチュートリアルモードで実行されている場合、&
 &lt;p&gt;GO-Global incorporates an open-source, publicly available SSL software encryption module from the OpenSSL project. GO-Global&amp;rsquo;s use of OpenSSL and other encryption technologies has been reviewed by the United States Department of Commerce and classified under the Export Commodity Control Number (ECCN) 5D002. The ECCN 5D002 classification allows GraphOn and its resellers to export and re-export GO-Global with support for up to 256-bit encryption, implemented by OpenSSL, to government and non-government entities, with the exception of USA embargoed countries, and except when GO-Global will be used in the design, development, production or use of nuclear, chemical or biological weapons or missiles.&lt;/p&gt;
 &lt;p&gt;Commodity Classification Automated Tracking System (CCATS) is an alphanumeric code assigned by the United States Bureau of Industry and Security (BIS) to products that it has classified under the Export Administration Regulations (EAR). GraphOn&amp;rsquo;s CCATS number is G066799.&lt;/p&gt;
 &lt;p&gt;For further inquiries regarding GraphOn&amp;rsquo;s CCATS number or ECCN classification, or for a copy of GraphOn&amp;rsquo;s export license, please contact &lt;a href=&#34;mailto:sales@graphon.com&#34;&gt;sales@graphon.com&lt;/a&gt;.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: GO-Global Appを利用したWebアプリケーションの実行</title>
-      <link>/docs/go-global6/running-go-global/running-the-go-global-web-app/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global6/running-go-global/running-the-go-global-web-app/</guid>
-      <description>
-        
-        
-        &lt;p&gt;GO-Global Web Appを使用すると、ユーザは自分のコンピュータに何もインストールせずにブラウザからアプリケーションを実行できます。しかし、そこに Webアプリケーションのみを実行した場合のいくつかの制限事項があります。 たとえば、Webアプリケーションのみを実行している場合、クライアントファイルアクセス、シリアルポートとパラレルポート、スマートカード、クライアントサウンド、クライアントプリンタへの直接印刷、ルーズウィンドウモードでのGO-Globalの実行などの機能はサポートまたは利用できません。これらの制限は、完全なGO-Global Appをダウンロードしてインストールすることで簡単に克服できます。 Windows、Linux、Macコンピュータに完全なGO-Global Appをインストールすると、WebブラウザからGO-Globalを実行するユーザはこれらすべての機能にアクセスできるようになります。&lt;/p&gt;
-&lt;p&gt;GO-Globalは、GO-Global Appのインストールと実行を制御するための2つのURLパラメータを提供します。 これらのパラメータは以下のとおりです。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;useApp　　useApp = trueの場合、Webアプリケーションは完全なGO-Global Appを起動しようとします。useApp = falseの場合、WebアプリケーションはGO-Global Appを起動しようとしません。 デフォルトでuseApp = trueです。&lt;/li&gt;
-&lt;li&gt;installApp　　installApp = trueの場合、まだインストールされていない場合、ユーザは完全なGO-Global Appをインストールするように求められます。 installApp = falseの場合、ユーザはGO-Global Appをインストールするように要求されず、インストールするためのリンクも表示されません。 installApp = addLinkのとき、完全なGO-Global Appがまだインストールされていない場合は、[Get the App]リンクがGO-Global Web Appのツールバーに追加されます。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;たとえば、URLにこれらのパラメータのどちらも指定されていない場合（URLがhttp://hostname/goglobal/logon.htmlの場合など)、GO-Globalは自動的にGO-Global Appのダウンロードを開始し、ユーザにプロンプトを表示します。インストールして実行します。または、installAppオプションがaddLinkに設定されている場合(たとえば、URLがhttp://hostname/goglobal/logon.html?installApp = addLinkの場合)、Webアプリケーションのツールバーに[Get the App]リンクが追加されます。ユーザがこのリンクをクリックすると、GO-Globalはダウンロードを開始し、GO-Global Appの実行とインストールのプロセスを案内します。&lt;/p&gt;
-&lt;p&gt;GO-Global Appをインストールして有効にすると、「埋め込み」URLパラメータを使用して、アプリケーションをブラウザウィンドウ内で実行するかブラウザウィンドウ外で実行するかを制御できます。 embedパラメータが指定されていないか、または&amp;rdquo; false&amp;quot;に設定されている場合(たとえば、URLがhttp://hostname/goglobal/logon.html?embed = falseである場合)、ユーザのアプリケーションはGO-Global Appを介してブラウザのウィンドウ外で実行されます。&lt;/p&gt;
-&lt;p&gt;あるいは、埋め込みパラメータが「true」に設定されている場合(例えば、URLが http://hostname/goglobal/logon.html?embed = true)アプリケーションはWebアプリケーションを介してブラウザウィンドウ内で実行されます。この場合、GO-GlobalもGO-Global Appを起動します(インストールされて有効になっている場合)が、GO-Global Appはコンピュータのデバイス(プリンタやドライブなど)へのアクセスを提供する目的でのみ使用されます。セッションのアプリケーションは表示されません。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;GO-Global Appがブラウザウィンドウ内で実行されている場合、デフォルトの背景色は白です。背景色は、HostProperties.xmlファイルのDesktopColorプロパティで指定されています。 色は10進数形式のRGB値として指定されます。たとえば、デフォルトの白の色は10進数で16777215です(16進数で0x00FFFFFF)。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;GO-Global AppがインストールされていないかuseApp = falseの場合、embedオプションは無視されます。それ以外の場合、embedはデフォルトでfalseに設定されています。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Webアプリケーションを使用しているときは、アプリケーションのメニューまたはツールバーからクリップボードにコピーアンドペーストすることはできません。 代わりに、Windowsでは、コピーにはCTRL + C、貼り付けにはCTRL + Vを使用します。 Macでは、コピーするにはキーボードショートカットCommand-C、貼り付けるにはCommand-Vを使用します。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;accessing-the-host-or-relay-server-directly-from-the-internet&#34;&gt;Accessing the Host or Relay Server Directly from the Internet&lt;/h2&gt;
-&lt;p&gt;If users will be connecting to a GO-Global Host or relay server from the internet, the web server and host addresses in the URL must be public (internet) addresses. When there is no public web server available, GraphOn&amp;rsquo;s web server, apps.graphon.com, can be used.&lt;/p&gt;
-&lt;p&gt;In this case, a URL such as the following would be shared with users: &lt;a href=&#34;http://apps.graphon.com/goglobal/?host=hostname&#34;&gt;http://apps.graphon.com/goglobal/?host=hostname&lt;/a&gt;, where hostname is the public address of the GO-Global Host.&lt;/p&gt;
-&lt;p&gt;When using a web server other than GraphOn&amp;rsquo;s, the URL must use the public address of the web server. For example: &lt;a href=&#34;http://webservername.com/goglobal/?host=hostname&#34;&gt;http://webservername.com/goglobal/?host=hostname&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;If users will be accessing a host or relay server from both the Internet and the internal network, the external and internal DNS should be configured so that the public and internal addresses of the web server are the same, and the public and internal addresses of the host are the same. Alternatively, administrators can provide external and internal users with different URLs, but this may be confusing to users.&lt;/p&gt;
-&lt;p&gt;When hosts are accessed via a third-party load balancer, the URL must include the address of the load-balancer. For example, &lt;a href=&#34;http://loadbalancer.com/goglobal/?host=hostname&amp;amp;app=Notepad&#34;&gt;http://loadbalancer.com/goglobal/?host=hostname&amp;amp;app=Notepad&lt;/a&gt;​&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: GO-Global Webページの変更</title>
-      <link>/docs/go-global5/sbano/go-global-webpjino/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global5/sbano/go-global-webpjino/</guid>
-      <description>
-        
-        
-        &lt;p&gt;上記のHTMLページをそのまま使用して、サポートされているオペレーティングシステムとブラウザからGO-Globalのインストールと実行を行うことができます。これらのページをカスタマイズしたり、特定のニーズに合わせて新しいページを作成したりすることもできます。変更は、ページの外観、テキスト、画像を変更する単純で表面的な変更になります。あるいは、Webアプリケーションによって動的に生成されるページのように変更が複雑になることもあります。次の例は、GO-GlobalのWebページをカスタマイズする方法のいくつかを示しています。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;例1：既存のページからプラットフォームと設定のオプションを削除する&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;linuxクライアントへのリンクを削除する方法&#34;&gt;Linuxクライアントへのリンクを削除する方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;テキストエディタでallclients.htmlまたはclients.htmlを編集します。&lt;/li&gt;
-&lt;li&gt;ファイルから次の行を削除します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;h3&amp;gt;Linux&amp;lt;/h3&amp;gt;
-&amp;lt;p&amp;gt;
-&amp;lt;a href=&amp;quot;installLinux.html&amp;quot;&amp;gt;Linux Client&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;
-Plug-in: &amp;lt;a href=&amp;quot;logon.html?direct=true&amp;quot;&amp;gt;Loose&amp;lt;/a&amp;gt; | &amp;lt;a href=&amp;quot;logon.html?direct=true&amp;amp;embed=true&amp;quot;&amp;gt;Embedded&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;
-&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;ファイルを保存します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;internet-explorerを実行しているユーザに埋め込みウィンドウオプションが表示されないようにする方法&#34;&gt;Internet Explorerを実行しているユーザに埋め込みウィンドウオプションが表示されないようにする方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;allclients.htmlまたはclients.htmlを編集します。&lt;/li&gt;
-&lt;li&gt;次の行を修正してください。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;Firefox: &amp;lt;a href=&amp;quot;logon.html?direct=true&amp;quot;&amp;gt;Loose&amp;lt;/a&amp;gt; | &amp;lt;a href=&amp;quot;logon.html?direct=true&amp;amp;embed=true&amp;quot;&amp;gt;Embedded&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;
-Internet Explorer: &amp;lt;a href=&amp;quot;logon.html?direct=true&amp;quot;&amp;gt;Loose&amp;lt;/a&amp;gt; | &amp;lt;a href=&amp;quot;logon.html?direct=true&amp;amp;embed=true&amp;quot;&amp;gt;Embedded&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;
-to:
-Firefox: &amp;lt;a href=&amp;quot;logon.html?direct=true&amp;quot;&amp;gt;Loose&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;
-Internet Explorer: &amp;lt;a href=&amp;quot;logon.html?direct=true&amp;quot;&amp;gt;Loose&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;ファイルを保存します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;例2：特定のアプリケーションへのリンクを含むWebページを作成する&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;ワードパッドとwindowsエクスプローラへのリンクを含むページを作成する方法&#34;&gt;ワードパッドとWindowsエクスプローラへのリンクを含むページを作成する方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;HTMLエディタで新規または既存のWebページを開きます。&lt;/li&gt;
-&lt;li&gt;エディタの [&lt;strong&gt;ハイパーリンクの挿入&lt;/strong&gt;]オプションをクリックします。&lt;/li&gt;
-&lt;li&gt;ワードパッドドキュメントへのハイパーリンクを入力します。&lt;a href=&#34;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:/Program%20Files/Windows%20NT/Accessories/wordpad.exe&amp;amp;args=C:/Users/Public/Public%20Documents/welcome.rtf&#34;&gt;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:\Program Files\Windows NT\Accessories\wordpad.exe&amp;amp;args=C:\Users\Public\Public Documents\welcome.rtf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ハイパーリンクの表示テキストを「ようこそ」のように入力します。&lt;/li&gt;
-&lt;li&gt;Windowsエクスプローラへのリンクを作成するには、手順2〜4を繰り返します。&lt;a href=&#34;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:/Windows/System32/explorer.exe&#34;&gt;http://hostname/goglobal/logon.html?mode=embed&amp;amp;app=C:\Windows\System32\explorer.exe&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ファイルを保存してWebサーバのパスに追加します。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;この例では、GO-Globalオプションはlogon.htmlページへのハイパーリンクで指定されています。ユーザーがこれらのリンクをクリックすると、logon.htmlはハイパーリンクからこれらのオプションを読み取り、指定されたオプションを使用して適切なクライアントをロードします。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;例3：特定のアプリケーションをロードするページを作成する&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Logon.htmlを使用すると、ユーザは独自のハイパーリンクを作成し、好みのGO-Globalオプションを指定できます。場合によっては、ユーザにこの機能を持たせたくない場合があります。たとえば、ユーザがホストコンピュータ上のアプリケーションやファイルを開かないようにして、代わりに特定のアプリケーションに固定されたオプションのセットをロードするページを提供したくない場合があります。&lt;/p&gt;
-&lt;p&gt;アプリケーションを指定するときは、Cluster Managerに表示される表示名、またはアプリケーションへの完全修飾パスを使用できます。&lt;/p&gt;
-&lt;h3 id=&#34;ユーザに特定のオプションを指定した特定のアプリケーションの実行のみを許可する方法&#34;&gt;ユーザに特定のオプションを指定した特定のアプリケーションの実行のみを許可する方法&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;logon.htmlをテキストエディタで開きます。&lt;/li&gt;
-&lt;li&gt;Uncomment (remove the two &amp;ldquo;/&amp;rdquo; characters from) the following line: // controlArgs.set([ &amp;ldquo;app&amp;rdquo;, &amp;ldquo;testapp1&amp;rdquo; ]);&lt;/li&gt;
-&lt;li&gt;testapp1を、Cluster Managerに表示されるアプリケーションの表示名に置き換えます。 例：var app = &amp;ldquo;Wordpad&amp;rdquo;; もしくはアプリケーションへの完全修飾パスを入力してください。 例：&amp;ldquo;C:\Program Files\Windows NT\Accessories\wordpad.exe&amp;rdquo;;&lt;/li&gt;
-&lt;li&gt;ファイルを保存します。&lt;/li&gt;
-&lt;li&gt;必要に応じて、ファイルの名前を変更してください。(例：wordpad.html)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;完全修飾パスを使用する場合は、アプリケーションがCluster Managerを介して公開されたかどうかにかかわらず、アプリケーション固有の引数をvar argsパラメーターを使用して指定する必要があります。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Microsoftインターネットインフォメーションサービス(IIS)6.0がWindows Server 2008を実行しているGO-Globalホストにインストールされている場合、プラグインは、サーバ上のMIMEタイプが登録されていない拡張子を持つドキュメントを提供するようにIISを変更しない限り実行されません。詳細については、マイクロソフトサポート技術情報326965を参照してください。&lt;a href=&#34;https://support.microsoft.com/en-us/kb/326965#%2Fen-us%2Fkb%2F326965&#34;&gt;https://support.microsoft.com/en-us/kb/326965#%2Fen-us%2Fkb%2F326965&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;GO-Globalの場合は、Windowsシステムの場合は「拡張子」ボックスに.xpiと入力し、Macシステムの場合は.dmgと入力します。[MIMEの種類]ボックスにapplication / octet-streamと入力します。この変更を加えたら、Webサーバー上のWorld Wide Web発行サービスを再起動します。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;GO-Globalハイパーリンクパラメータとその指定方法についての詳細は、第5章に記載されています。&lt;/p&gt;
 
       </description>
     </item>

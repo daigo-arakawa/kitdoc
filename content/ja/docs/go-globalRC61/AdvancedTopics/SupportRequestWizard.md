@@ -12,3 +12,12 @@ GO-Globalホストには、テクニカルサポートに送信できるログ�
 {{% alert title="参照" color="info" %}}
 KitASPからの連絡で必要に応じて採取をしてください。
 {{% /alert %}}
+
+{{% alert title="情報" color="green" %}}
+本項目の設定は以下の技術ノートを参照ください。
+
+KGTN 2013122703<br>
+
+代理店様向けの専用ページにkitASP障害情報採取ツール_kitCollectToolの資料も用意しています。<br>
+合わせてご参照ください。
+{{% /alert %}}
