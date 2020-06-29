@@ -73,6 +73,10 @@
   </url>
   
   <url>
+    <loc>/docs/deployment-guide/host-requirements/hostrequirements/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/appendix/licensing/</loc>
     <lastmod>2020-05-26T13:46:18+09:00</lastmod>
   </url>
@@ -113,8 +117,24 @@
   </url>
   
   <url>
+    <loc>/docs/deployment-guide/application-design-considerations/applicationdesignconsiderations/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/deployment-guide/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/deployment-guide/introduction/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/deployment-guide/capacity-planning/capacityplanning/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote25/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -199,7 +219,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote41/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -245,6 +265,10 @@
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/managingapplications/</loc>
     <lastmod>2020-06-22T17:26:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/deployment-guide/application-design-considerations/</loc>
   </url>
   
   <url>
@@ -313,6 +337,10 @@
   </url>
   
   <url>
+    <loc>/docs/deployment-guide/host-requirements/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/mobile-app-toolbar-editor/log-files/</loc>
     <lastmod>2020-03-05T15:26:56+09:00</lastmod>
   </url>
@@ -339,7 +367,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote46/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -424,7 +452,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote128/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -488,6 +516,10 @@
   </url>
   
   <url>
+    <loc>/docs/deployment-guide/capacity-planning/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global5/topikku-1/untitled-1/</loc>
     <lastmod>2020-05-27T10:44:17+09:00</lastmod>
   </url>
@@ -525,6 +557,10 @@
   <url>
     <loc>/docs/go-global6/appendix/creating-your-own-certificate-authority/</loc>
     <lastmod>2020-05-28T00:50:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/deployment-guide/</loc>
   </url>
   
   <url>
@@ -569,7 +605,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote159/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -649,7 +685,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote163/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -724,7 +760,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote164/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -814,7 +850,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote167/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -904,7 +940,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote168/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -1014,7 +1050,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote179/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -1034,7 +1070,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote201/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -1119,7 +1155,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote205/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -1169,7 +1205,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote206/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -1194,7 +1230,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote207/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -1224,7 +1260,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote208/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -1279,6 +1315,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote210/</loc>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>
@@ -1303,6 +1340,7 @@
   
   <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote211/</loc>
+    <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
   
   <url>

@@ -14,7 +14,7 @@ kitASP docsは株式会社きっとエイエスピーで取り扱っている各
 * GO-Global for Windows 6
 * GO-Global for Windows 6.* TIPS
 * GO-Global for Windows 5
-* Deployment Guide(準備中)
+* Deployment Guide
 * 拡張パッケージ(準備中)
 
 {{% pageinfo %}}
