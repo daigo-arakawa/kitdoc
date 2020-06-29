@@ -906,7 +906,7 @@ Customers will be unable to upgrade their version 5 license to version 6 if thei
     </item>
     
     <item>
-      <title>Docs: クライアントプリンタの設定後にスクリプトを実行する</title>
+      <title>Docs: クライアントプリンタの設定後にスクリプトを実行</title>
       <link>/docs/go-global-for-windows-6tips/technote/technote25/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -914,18 +914,18 @@ Customers will be unable to upgrade their version 5 license to version 6 if thei
       <description>
         
         
-        &lt;p&gt;Program WindowsはPW_InitializePrintersEarlyというDWORDレジストリ変数をサポートしています。これによりGO-Globalはクライアントプリンタの設定後にスクリプトを実行することができます。 管理者はこの変数を手動でレジストリに追加する必要があります。&lt;/p&gt;
-&lt;h3 id=&#34;クライアントプリンタを設定した後にスクリプトを実行する方法&#34;&gt;クライアントプリンタを設定した後にスクリプトを実行する方法&lt;/h3&gt;
+        &lt;p&gt;Program Windowsは &lt;strong&gt;PW_InitializePrintersEarly&lt;/strong&gt; というDWORDレジストリ変数をサポートしています。これによりGO-Globalはクライアントプリンタの設定後にスクリプトを実行することができます。管理者はこの変数を手動でレジストリに追加する必要があります。&lt;/p&gt;
+&lt;h3 id=&#34;クライアントプリンタを設定した後にスクリプトを実行する方法&#34;&gt;&lt;strong&gt;クライアントプリンタを設定した後にスクリプトを実行する方法&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;レジストリエディタ(regedit.exe)を実行します。&lt;/li&gt;
 &lt;li&gt;レジストリエディタから、HKEY_LOCAL_MACHINEキーを展開します。&lt;/li&gt;
-&lt;li&gt;Locate the AppServer key: [SOFTWARE\GraphOn\Bridges\1.0.0\AppServer]&lt;/li&gt;
-&lt;li&gt;PW_InitializePrintersEarlyという名前の新しいDWORD値を作成します。&lt;/li&gt;
-&lt;li&gt;PW_InitializePrintersEarlyを右クリックして[変更]を選択します。&lt;/li&gt;
-&lt;li&gt;値のデータフィールドに1を入力します。&lt;/li&gt;
+&lt;li&gt;Locate the AppServer key:&lt;code&gt;[SOFTWARE\GraphOn\Bridges\1.0.0\AppServer]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PW_InitializePrintersEarly&lt;/strong&gt; という名前の新しいDWORD値を作成します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PW_InitializePrintersEarly&lt;/strong&gt; を右クリックして &lt;strong&gt;[変更]&lt;/strong&gt; を選択します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;値のデータフィールド&lt;/strong&gt; に1を入力します。&lt;/li&gt;
 &lt;li&gt;レジストリエディタを閉じます。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;レジストリ変数PW_InitializePrintersEarlyがない場合、または0(ゼロ)に設定されている場合、プログラムウィンドウは従来どおりに動作します。つまり、印刷コンポーネントをセットアップする前に補助アプリケーションを起動します。ただし、PW_InitializePrintersEarly値がレジストリに存在し、0以外の値が割り当てられている場合、プログラムウィンドウは、印刷コンポーネントを設定した後で補助アプリケーションを起動します。管理者は自分のスクリプトを「補助アプリケーション」として確立し、PW_InitializePrintersEarlyをレジストリに追加し、それをゼロ以外の値に設定する必要があります。 1が推奨されます。&lt;/p&gt;
+&lt;p&gt;レジストリ変数 &lt;strong&gt;PW_InitializePrintersEarly&lt;/strong&gt; がない場合、または0(ゼロ)に設定されている場合、Program Windowsは従来どおりに動作します。つまり、印刷コンポーネントをセットアップする前に補助アプリケーションを起動します。ただし、 &lt;strong&gt;PW_InitializePrintersEarly&lt;/strong&gt; 値がレジストリに存在し、0以外の値が割り当てられている場合、Program Windowsは、印刷コンポーネントを設定した後で補助アプリケーションを起動します。管理者は自分のスクリプトを&amp;quot;補助アプリケーション&amp;quot;として確立し、 &lt;strong&gt;PW_InitializePrintersEarly&lt;/strong&gt; をレジストリに追加し、それをゼロ以外の値に設定する必要があり1が推奨されます。&lt;/p&gt;
 &lt;p&gt;補助アプリケーションを確立するには、管理者は2つのレジストリ変数をそれぞれ独自のキーの下に手動で追加する必要があります。1つ目はGraphOnキーの下に配置するDWORD、2つ目はMicrosoftキーの下に配置するストリングです。&lt;/p&gt;
 &lt;p&gt;候補として2組のキーを提供します。&lt;/p&gt;
 &lt;p&gt;The first pair:&lt;/p&gt;
@@ -1616,9 +1616,9 @@ GO-Global Web Appを使用する場合、アプリケーションのメニュー
 本項目の設定は推奨設定ではございませんのでご注意ください。
 &lt;/div&gt;
 
-&lt;h3 id=&#34;resolution&#34;&gt;Resolution:&lt;/h3&gt;
+&lt;h3 id=&#34;resolution&#34;&gt;&lt;strong&gt;Resolution:&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Stop the GO-Global Application Publishing Service and the GO-Global License Manager on all three redundant GOGlobal Hosts.&lt;/li&gt;
+&lt;li&gt;Stop the &lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; and the &lt;strong&gt;GO-Global License Manager&lt;/strong&gt; on all three redundant GO-Global Hosts.&lt;/li&gt;
 &lt;li&gt;Add the same port number on each server line in the license file. For example.And please use the same license file on all three hosts.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;SERVER piper 000C29750Ac6 28001
@@ -1627,7 +1627,7 @@ SERVER wilson 000C29C7B953 28001
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Please use the same license file on all three hosts.&lt;/li&gt;
 &lt;li&gt;Add an environment variable for each server, using commas to separate the servers. For example, LM_LICENSE_FILE = 28001@piper,28001@harpua,28001@wilson&lt;/li&gt;
-&lt;li&gt;Restart the Application Publishing Service and the License Manager on the &amp;ldquo;master&amp;rdquo; server first (piper, in the example above), then on the secondary and tertiary servers (e.g., harpua and wilson, respectively).&lt;/li&gt;
+&lt;li&gt;Restart the &lt;strong&gt;Application Publishing Service&lt;/strong&gt; and the &lt;strong&gt;License Manager&lt;/strong&gt; on the &amp;ldquo;master&amp;rdquo; server first (piper, in the example above), then on the secondary and tertiary servers (e.g., harpua and wilson, respectively).&lt;/li&gt;
 &lt;/ol&gt;
 
 
@@ -1636,7 +1636,7 @@ SERVER wilson 000C29C7B953 28001
 
 &lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
 &lt;p&gt;Registering the Windows Shell to run in the background of a GO-Global session adds significant overhead. Sessions will take longer to start and will consume more memory. Additional overhead can also result from other processes that are registered to run when the Shell starts up.&lt;/p&gt;
-&lt;p&gt;Care should be taken to ensure that unnecessary processes are not registered in users&amp;rsquo; Startup folders or under the various Run commands in the Registry (e.g., HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run).&lt;/p&gt;
+&lt;p&gt;Care should be taken to ensure that unnecessary processes are not registered in users&amp;rsquo; Startup folders or under the various Run commands in the Registry (e.g., &lt;code&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run&lt;/code&gt;).&lt;/p&gt;
 
 &lt;/div&gt;
 

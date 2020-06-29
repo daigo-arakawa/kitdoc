@@ -1,15 +1,15 @@
 +++
-title = "IOSとの通信"
+title = "iOSとの通信"
 description = ""
 weight = 8
 +++
-### クライアントとホストが同じLAN上にあるときの通信
+### **クライアントとホストが同じLAN上にあるときの通信**
 
 以下の図は、GO-Global App(iOS上で実行)とホストが同じLAN上にある場合の通信を示しています。 ユーザデータグラムプロトコル(UDP)通信はGO-Globalがネットワーク上にあるホストを自動的に発見するために使用されます。
 
 ![9-167-1](/images/9-167-1.png) 
 
-### Communication with a Relay Server
+### **Communication with a Relay Server**
 
 {{% alert title="注意" color="secondary" %}}
 本項目の設定は推奨設定ではございませんのでご注意ください。

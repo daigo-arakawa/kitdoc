@@ -20,27 +20,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>サンドボックスホワイトリストエントリの手動設定 | kitASP Docs</title><meta property="og:title" content="サンドボックスホワイトリストエントリの手動設定" />
-<meta property="og:description" content="GO-Globalのサンドボックス機能により、管理者はGO-Globalホスト上のファイルおよびプログラムへのユーザーアクセスを制限できます。これらの制限はユーザにのみ適用され、管理者または管理者グループのメンバには適用されません。この記事では、C:\ProgramData\GraphOn\WorksacePropertyDefinitions.xmlファイルを手動で編集して、ファイルおよびプログラムをサンドボックスホワイトリストに追加する方法について説明します。 サンドボックス機能を有効にするには、まずレジストリでサンドボックスドライバーを有効にする必要があります。
-サンドボックスのドライバーを有効にする  [HKLM \ Software GraphOn \ GO Global \ AppServer]レジストリキーを見つけます。 SandBoxという名前のDWORDレジストリ値を見つけます。 値を0から1に変更します。 コンピュータを再起動します。  ホワイトリストエントリを指定する前に、ファイルやプログラムのサンドボックス機能を有効にする必要があります。
-ファイルのサンドボックスを有効にする  Application Publishing Service.を停止します。 WorkspacePropertyDefinitions.xmlを開きます。 filesSandboxEnabledプロパティIDを見つけて、値をtrueに設定します。  &lt;propertygroup id=&quot;UserSandbox&quot;&gt;&lt;property id=&quot;filesSandboxEnabled&quot;&gt;&lt;label&gt;User sandbox&lt;/label&gt;&lt;description&gt;Enables the user sandbox feature.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service.を再起動します。  プログラムのサンドボックスを有効にする  Application Publishing Service.を停止します。 WorkspacePropertyDefinitions.xmlを開きます。 programsSandboxEnabledプロパティIDを見つけて、値をtrueに設定します。  &lt;property id=&quot;programsSandboxEnabled&quot;&gt;&lt;label&gt;Programs&lt;/label&gt;&lt;description&gt;Users may only run programs specified in the Programs white list.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service." />
+<title>手動によるサンドボックスホワイトリストエントリの設定 | kitASP Docs</title><meta property="og:title" content="手動によるサンドボックスホワイトリストエントリの設定" />
+<meta property="og:description" content="GO-Globalのサンドボックス機能により、管理者はGO-Globalホスト上のファイルおよびプログラムへのユーザアクセスを制限できます。これらの制限はユーザにのみ適用され、管理者または管理者グループのメンバには適用されません。この記事では、C:\ProgramData\GraphOn\WorksacePropertyDefinitions.xmlファイルを手動で編集して、ファイルおよびプログラムをサンドボックスホワイトリストに追加する方法について説明します。 サンドボックス機能を有効にするには、まずレジストリでサンドボックスドライバを有効にする必要があります。
+サンドボックスのドライバを有効にする方法  [HKLM\Software\GraphOn\GO-Global\AppServer]レジストリキーを見つけます。 SandBox という名前のDWORDレジストリ値を見つけます。 値を0から1に変更します。 コンピュータを再起動します。  ホワイトリストエントリを指定する前に、ファイルやプログラムのサンドボックス機能を有効にする必要があります。
+ファイルのサンドボックスを有効にする方法  Application Publishing Service を停止します。 WorkspacePropertyDefinitions.xml を開きます。 filesSandboxEnabled プロパティIDを見つけて、値をtrueに設定します。  &lt;propertygroup id=&quot;UserSandbox&quot;&gt;&lt;property id=&quot;filesSandboxEnabled&quot;&gt;&lt;label&gt;User sandbox&lt;/label&gt;&lt;description&gt;Enables the user sandbox feature.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service を再起動します。  プログラムのサンドボックスを有効にする方法  Application Publishing Service を停止します。 WorkspacePropertyDefinitions.xmlを開きます。 programsSandboxEnabled プロパティIDを見つけて、値をtrueに設定します。  &lt;property id=&quot;programsSandboxEnabled&quot;&gt;&lt;label&gt;Programs&lt;/label&gt;&lt;description&gt;Users may only run programs specified in the Programs white list.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service を再起動します。  ホワイトリスト ファイル は、完全修飾ディレクトリパスで指定されます。サンドボックスを使用すると、サブディレクトリを含め、ファイルのホワイトリストに記載されているディレクトリ内のすべてのファイルにアクセスできます。すべてのサブディレクトリを含むワークスペースプロファイルディレクトリ%USERPROFILE%は、セッションの開始時にファイルのホワイトリストに自動的に追加されます。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global-for-windows-6tips/technote/technote179/" />
-<meta property="og:site_name" content="kitASP Docs" />
-<meta itemprop="name" content="サンドボックスホワイトリストエントリの手動設定">
-<meta itemprop="description" content="GO-Globalのサンドボックス機能により、管理者はGO-Globalホスト上のファイルおよびプログラムへのユーザーアクセスを制限できます。これらの制限はユーザにのみ適用され、管理者または管理者グループのメンバには適用されません。この記事では、C:\ProgramData\GraphOn\WorksacePropertyDefinitions.xmlファイルを手動で編集して、ファイルおよびプログラムをサンドボックスホワイトリストに追加する方法について説明します。 サンドボックス機能を有効にするには、まずレジストリでサンドボックスドライバーを有効にする必要があります。
-サンドボックスのドライバーを有効にする  [HKLM \ Software GraphOn \ GO Global \ AppServer]レジストリキーを見つけます。 SandBoxという名前のDWORDレジストリ値を見つけます。 値を0から1に変更します。 コンピュータを再起動します。  ホワイトリストエントリを指定する前に、ファイルやプログラムのサンドボックス機能を有効にする必要があります。
-ファイルのサンドボックスを有効にする  Application Publishing Service.を停止します。 WorkspacePropertyDefinitions.xmlを開きます。 filesSandboxEnabledプロパティIDを見つけて、値をtrueに設定します。  &lt;propertygroup id=&quot;UserSandbox&quot;&gt;&lt;property id=&quot;filesSandboxEnabled&quot;&gt;&lt;label&gt;User sandbox&lt;/label&gt;&lt;description&gt;Enables the user sandbox feature.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service.を再起動します。  プログラムのサンドボックスを有効にする  Application Publishing Service.を停止します。 WorkspacePropertyDefinitions.xmlを開きます。 programsSandboxEnabledプロパティIDを見つけて、値をtrueに設定します。  &lt;property id=&quot;programsSandboxEnabled&quot;&gt;&lt;label&gt;Programs&lt;/label&gt;&lt;description&gt;Users may only run programs specified in the Programs white list.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service.">
-
-<meta itemprop="wordCount" content="196">
+<meta property="article:modified_time" content="2020-06-25T18:07:48+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta itemprop="name" content="手動によるサンドボックスホワイトリストエントリの設定">
+<meta itemprop="description" content="GO-Globalのサンドボックス機能により、管理者はGO-Globalホスト上のファイルおよびプログラムへのユーザアクセスを制限できます。これらの制限はユーザにのみ適用され、管理者または管理者グループのメンバには適用されません。この記事では、C:\ProgramData\GraphOn\WorksacePropertyDefinitions.xmlファイルを手動で編集して、ファイルおよびプログラムをサンドボックスホワイトリストに追加する方法について説明します。 サンドボックス機能を有効にするには、まずレジストリでサンドボックスドライバを有効にする必要があります。
+サンドボックスのドライバを有効にする方法  [HKLM\Software\GraphOn\GO-Global\AppServer]レジストリキーを見つけます。 SandBox という名前のDWORDレジストリ値を見つけます。 値を0から1に変更します。 コンピュータを再起動します。  ホワイトリストエントリを指定する前に、ファイルやプログラムのサンドボックス機能を有効にする必要があります。
+ファイルのサンドボックスを有効にする方法  Application Publishing Service を停止します。 WorkspacePropertyDefinitions.xml を開きます。 filesSandboxEnabled プロパティIDを見つけて、値をtrueに設定します。  &lt;propertygroup id=&quot;UserSandbox&quot;&gt;&lt;property id=&quot;filesSandboxEnabled&quot;&gt;&lt;label&gt;User sandbox&lt;/label&gt;&lt;description&gt;Enables the user sandbox feature.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service を再起動します。  プログラムのサンドボックスを有効にする方法  Application Publishing Service を停止します。 WorkspacePropertyDefinitions.xmlを開きます。 programsSandboxEnabled プロパティIDを見つけて、値をtrueに設定します。  &lt;property id=&quot;programsSandboxEnabled&quot;&gt;&lt;label&gt;Programs&lt;/label&gt;&lt;description&gt;Users may only run programs specified in the Programs white list.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service を再起動します。  ホワイトリスト ファイル は、完全修飾ディレクトリパスで指定されます。サンドボックスを使用すると、サブディレクトリを含め、ファイルのホワイトリストに記載されているディレクトリ内のすべてのファイルにアクセスできます。すべてのサブディレクトリを含むワークスペースプロファイルディレクトリ%USERPROFILE%は、セッションの開始時にファイルのホワイトリストに自動的に追加されます。">
+<meta itemprop="dateModified" content="2020-06-25T18:07:48&#43;09:00" />
+<meta itemprop="wordCount" content="203">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="サンドボックスホワイトリストエントリの手動設定"/>
-<meta name="twitter:description" content="GO-Globalのサンドボックス機能により、管理者はGO-Globalホスト上のファイルおよびプログラムへのユーザーアクセスを制限できます。これらの制限はユーザにのみ適用され、管理者または管理者グループのメンバには適用されません。この記事では、C:\ProgramData\GraphOn\WorksacePropertyDefinitions.xmlファイルを手動で編集して、ファイルおよびプログラムをサンドボックスホワイトリストに追加する方法について説明します。 サンドボックス機能を有効にするには、まずレジストリでサンドボックスドライバーを有効にする必要があります。
-サンドボックスのドライバーを有効にする  [HKLM \ Software GraphOn \ GO Global \ AppServer]レジストリキーを見つけます。 SandBoxという名前のDWORDレジストリ値を見つけます。 値を0から1に変更します。 コンピュータを再起動します。  ホワイトリストエントリを指定する前に、ファイルやプログラムのサンドボックス機能を有効にする必要があります。
-ファイルのサンドボックスを有効にする  Application Publishing Service.を停止します。 WorkspacePropertyDefinitions.xmlを開きます。 filesSandboxEnabledプロパティIDを見つけて、値をtrueに設定します。  &lt;propertygroup id=&quot;UserSandbox&quot;&gt;&lt;property id=&quot;filesSandboxEnabled&quot;&gt;&lt;label&gt;User sandbox&lt;/label&gt;&lt;description&gt;Enables the user sandbox feature.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service.を再起動します。  プログラムのサンドボックスを有効にする  Application Publishing Service.を停止します。 WorkspacePropertyDefinitions.xmlを開きます。 programsSandboxEnabledプロパティIDを見つけて、値をtrueに設定します。  &lt;property id=&quot;programsSandboxEnabled&quot;&gt;&lt;label&gt;Programs&lt;/label&gt;&lt;description&gt;Users may only run programs specified in the Programs white list.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service."/>
+<meta name="twitter:title" content="手動によるサンドボックスホワイトリストエントリの設定"/>
+<meta name="twitter:description" content="GO-Globalのサンドボックス機能により、管理者はGO-Globalホスト上のファイルおよびプログラムへのユーザアクセスを制限できます。これらの制限はユーザにのみ適用され、管理者または管理者グループのメンバには適用されません。この記事では、C:\ProgramData\GraphOn\WorksacePropertyDefinitions.xmlファイルを手動で編集して、ファイルおよびプログラムをサンドボックスホワイトリストに追加する方法について説明します。 サンドボックス機能を有効にするには、まずレジストリでサンドボックスドライバを有効にする必要があります。
+サンドボックスのドライバを有効にする方法  [HKLM\Software\GraphOn\GO-Global\AppServer]レジストリキーを見つけます。 SandBox という名前のDWORDレジストリ値を見つけます。 値を0から1に変更します。 コンピュータを再起動します。  ホワイトリストエントリを指定する前に、ファイルやプログラムのサンドボックス機能を有効にする必要があります。
+ファイルのサンドボックスを有効にする方法  Application Publishing Service を停止します。 WorkspacePropertyDefinitions.xml を開きます。 filesSandboxEnabled プロパティIDを見つけて、値をtrueに設定します。  &lt;propertygroup id=&quot;UserSandbox&quot;&gt;&lt;property id=&quot;filesSandboxEnabled&quot;&gt;&lt;label&gt;User sandbox&lt;/label&gt;&lt;description&gt;Enables the user sandbox feature.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service を再起動します。  プログラムのサンドボックスを有効にする方法  Application Publishing Service を停止します。 WorkspacePropertyDefinitions.xmlを開きます。 programsSandboxEnabled プロパティIDを見つけて、値をtrueに設定します。  &lt;property id=&quot;programsSandboxEnabled&quot;&gt;&lt;label&gt;Programs&lt;/label&gt;&lt;description&gt;Users may only run programs specified in the Programs white list.&lt;/description&gt;&lt;type&gt;BOOL&lt;/type&gt;&lt;defaultvalue&gt;true&lt;/defaultvalue&gt;&lt;constraints/&gt;ファイルを保存します。 Application Publishing Service を再起動します。  ホワイトリスト ファイル は、完全修飾ディレクトリパスで指定されます。サンドボックスを使用すると、サブディレクトリを含め、ファイルのホワイトリストに記載されているディレクトリ内のすべてのファイルにアクセスできます。すべてのサブディレクトリを含むワークスペースプロファイルディレクトリ%USERPROFILE%は、セッションの開始時にファイルのホワイトリストに自動的に追加されます。"/>
 
 
 
@@ -61,7 +61,7 @@
   crossorigin="anonymous"></script>
 
 
-    <title>サンドボックスホワイトリストエントリの手動設定 | kitASP Docs</title>
+    <title>手動によるサンドボックスホワイトリストエントリの設定 | kitASP Docs</title>
   </head>
   <body class="td-page">
     <header>
@@ -131,7 +131,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -161,7 +161,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -1812,7 +1812,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行する</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行</a>
       
       
       
@@ -1824,13 +1824,13 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-Globalセッションで実行されます</a>
       
       
       
@@ -1842,7 +1842,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">IOSクライアントでのSSL証明書の使用</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">iOSクライアントでのSSL証明書の使用</a>
       
       
       
@@ -1854,19 +1854,19 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">IOSとの通信</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">iOSとの通信</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシとログオンスクリプトの進捗メッセージ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">手動によるサンドボックスホワイトリストエントリの設定</a>
       
       
       
@@ -1884,7 +1884,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションが終了したときにGO-Globalセッションを閉じることができない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションを終了したときにGO-Globalセッションが閉じることができない</a>
       
       
       
@@ -1897,6 +1897,18 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote208" href="/docs/go-global-for-windows-6tips/technote/technote208/">Androidデバイスでクラッシュレポートを生成する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote210" href="/docs/go-global-for-windows-6tips/technote/technote210/">ホストインストーラがインターネットインフォメーションサービス(IIS)を構成してGO-GLOBAL WEB APPをホストするのに失敗する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote211" href="/docs/go-global-for-windows-6tips/technote/technote211/">Universalプリンタドライバを使用して印刷できないユーザについて</a>
       
       
     </li>
@@ -2577,7 +2589,7 @@
 
 
 <a href="https://github.com//edit/master/content/ja/docs/GO-Global%20for%20Windows%206TIPS/technote/technote179.md" target="_blank"><i class="fa fa-edit fa-fw"></i> ページの編集</a>
-<a href="https://github.com//issues/new?title=%e3%82%b5%e3%83%b3%e3%83%89%e3%83%9c%e3%83%83%e3%82%af%e3%82%b9%e3%83%9b%e3%83%af%e3%82%a4%e3%83%88%e3%83%aa%e3%82%b9%e3%83%88%e3%82%a8%e3%83%b3%e3%83%88%e3%83%aa%e3%81%ae%e6%89%8b%e5%8b%95%e8%a8%ad%e5%ae%9a" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
+<a href="https://github.com//issues/new?title=%e6%89%8b%e5%8b%95%e3%81%ab%e3%82%88%e3%82%8b%e3%82%b5%e3%83%b3%e3%83%89%e3%83%9c%e3%83%83%e3%82%af%e3%82%b9%e3%83%9b%e3%83%af%e3%82%a4%e3%83%88%e3%83%aa%e3%82%b9%e3%83%88%e3%82%a8%e3%83%b3%e3%83%88%e3%83%aa%e3%81%ae%e8%a8%ad%e5%ae%9a" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
 
 
 <a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> プロジェクトのissueを作成</a>
@@ -2593,12 +2605,12 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#サンドボックスのドライバーを有効にする">サンドボックスのドライバーを有効にする</a></li>
-        <li><a href="#ファイルのサンドボックスを有効にする">ファイルのサンドボックスを有効にする</a></li>
-        <li><a href="#プログラムのサンドボックスを有効にする">プログラムのサンドボックスを有効にする</a></li>
-        <li><a href="#oemのお客様への考慮事項">OEMのお客様への考慮事項</a></li>
-        <li><a href="#ファイルのホワイトリストを編集する方法">ファイルのホワイトリストを編集する方法</a></li>
-        <li><a href="#プログラムのホワイトリストを編集する方法">プログラムのホワイトリストを編集する方法</a></li>
+        <li><a href="#サンドボックスのドライバを有効にする方法"><strong>サンドボックスのドライバを有効にする方法</strong></a></li>
+        <li><a href="#ファイルのサンドボックスを有効にする方法"><strong>ファイルのサンドボックスを有効にする方法</strong></a></li>
+        <li><a href="#プログラムのサンドボックスを有効にする方法"><strong>プログラムのサンドボックスを有効にする方法</strong></a></li>
+        <li><a href="#oemのお客様への考慮事項"><strong>OEMのお客様への考慮事項</strong></a></li>
+        <li><a href="#ファイルのホワイトリストを編集する方法"><strong>ファイルのホワイトリストを編集する方法</strong></a></li>
+        <li><a href="#プログラムのホワイトリストを編集する方法"><strong>プログラムのホワイトリストを編集する方法</strong></a></li>
       </ul>
     </li>
   </ul>
@@ -2646,7 +2658,7 @@
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/go-global-for-windows-6tips/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
+	<a href="/docs/go-global-for-windows-6tips/technote/technote179/">手動によるサンドボックスホワイトリストエントリの設定</a>
 </li>
 
 	</ol>
@@ -2654,23 +2666,23 @@
 
             
 <div class="td-content">
-	<h1>サンドボックスホワイトリストエントリの手動設定</h1>
+	<h1>手動によるサンドボックスホワイトリストエントリの設定</h1>
 	
-	<p>GO-Globalのサンドボックス機能により、管理者はGO-Globalホスト上のファイルおよびプログラムへのユーザーアクセスを制限できます。これらの制限はユーザにのみ適用され、管理者または管理者グループのメンバには適用されません。この記事では、C:\ProgramData\GraphOn\WorksacePropertyDefinitions.xmlファイルを手動で編集して、ファイルおよびプログラムをサンドボックスホワイトリストに追加する方法について説明します。
-サンドボックス機能を有効にするには、まずレジストリでサンドボックスドライバーを有効にする必要があります。</p>
-<h3 id="サンドボックスのドライバーを有効にする">サンドボックスのドライバーを有効にする</h3>
+	<p>GO-Globalのサンドボックス機能により、管理者はGO-Globalホスト上のファイルおよびプログラムへのユーザアクセスを制限できます。これらの制限はユーザにのみ適用され、管理者または管理者グループのメンバには適用されません。この記事では、<code>C:\ProgramData\GraphOn\WorksacePropertyDefinitions.xml</code>ファイルを手動で編集して、ファイルおよびプログラムをサンドボックスホワイトリストに追加する方法について説明します。
+サンドボックス機能を有効にするには、まずレジストリでサンドボックスドライバを有効にする必要があります。</p>
+<h3 id="サンドボックスのドライバを有効にする方法"><strong>サンドボックスのドライバを有効にする方法</strong></h3>
 <ol>
-<li>[HKLM \ Software GraphOn \ GO Global \ AppServer]レジストリキーを見つけます。</li>
-<li>SandBoxという名前のDWORDレジストリ値を見つけます。</li>
+<li><code>[HKLM\Software\GraphOn\GO-Global\AppServer]</code>レジストリキーを見つけます。</li>
+<li><strong>SandBox</strong> という名前のDWORDレジストリ値を見つけます。</li>
 <li>値を0から1に変更します。</li>
 <li>コンピュータを再起動します。</li>
 </ol>
 <p>ホワイトリストエントリを指定する前に、ファイルやプログラムのサンドボックス機能を有効にする必要があります。</p>
-<h3 id="ファイルのサンドボックスを有効にする">ファイルのサンドボックスを有効にする</h3>
+<h3 id="ファイルのサンドボックスを有効にする方法"><strong>ファイルのサンドボックスを有効にする方法</strong></h3>
 <ol>
-<li>Application Publishing Service.を停止します。</li>
-<li>WorkspacePropertyDefinitions.xmlを開きます。</li>
-<li>filesSandboxEnabledプロパティIDを見つけて、値をtrueに設定します。</li>
+<li><strong>Application Publishing Service</strong> を停止します。</li>
+<li><strong>WorkspacePropertyDefinitions.xml</strong> を開きます。</li>
+<li><strong>filesSandboxEnabled</strong> プロパティIDを見つけて、値をtrueに設定します。</li>
 </ol>
 <pre><code>&lt;propertygroup id=&quot;UserSandbox&quot;&gt;
 &lt;property id=&quot;filesSandboxEnabled&quot;&gt;
@@ -2681,13 +2693,13 @@
 &lt;constraints/&gt;
 </code></pre><ol start="4">
 <li>ファイルを保存します。</li>
-<li>Application Publishing Service.を再起動します。</li>
+<li><strong>Application Publishing Service</strong> を再起動します。</li>
 </ol>
-<h3 id="プログラムのサンドボックスを有効にする">プログラムのサンドボックスを有効にする</h3>
+<h3 id="プログラムのサンドボックスを有効にする方法"><strong>プログラムのサンドボックスを有効にする方法</strong></h3>
 <ol>
-<li>Application Publishing Service.を停止します。</li>
-<li>WorkspacePropertyDefinitions.xmlを開きます。</li>
-<li>programsSandboxEnabledプロパティIDを見つけて、値をtrueに設定します。</li>
+<li><strong>Application Publishing Service</strong> を停止します。</li>
+<li><strong>WorkspacePropertyDefinitions.xml</strong>を開きます。</li>
+<li><strong>programsSandboxEnabled</strong> プロパティIDを見つけて、値をtrueに設定します。</li>
 </ol>
 <pre><code>&lt;property id=&quot;programsSandboxEnabled&quot;&gt;
 &lt;label&gt;Programs&lt;/label&gt;
@@ -2697,15 +2709,15 @@
 &lt;constraints/&gt;
 </code></pre><ol start="4">
 <li>ファイルを保存します。</li>
-<li>Application Publishing Service.を再起動します。</li>
+<li><strong>Application Publishing Service</strong> を再起動します。</li>
 </ol>
-<p>ホワイトリストファイルは、完全修飾ディレクトリパスで指定されます。サンドボックスを使用すると、サブディレクトリを含め、ファイルのホワイトリストに記載されているディレクトリ内のすべてのファイルにアクセスできます。すべてのサブディレクトリを含むワークスペースプロファイルディレクトリ％USERPROFILE％は、セッションの開始時にファイルのホワイトリストに自動的に追加されます。</p>
-<p>ホワイトリストに登録されたプログラムは、完全修飾実行ファイルパスで指定されます。サンドボックスを使用すると、ユーザはプログラムのホワイトリストに記載されているすべてのプログラムを実行できます。パブリックデスクトップ%PUBLIC%\Desktop、またはプライベートワークスペースデスクトップ%USERPROFILE%\Desktopのいずれかのプログラムは、セッションの開始時に自動的にプログラムのホワイトリストに追加されます。これらのデスクトップにプログラムを追加する方法は4つあります。</p>
+<p>ホワイトリスト <strong>ファイル</strong> は、完全修飾ディレクトリパスで指定されます。サンドボックスを使用すると、サブディレクトリを含め、ファイルのホワイトリストに記載されているディレクトリ内のすべてのファイルにアクセスできます。すべてのサブディレクトリを含むワークスペースプロファイルディレクトリ<code>%USERPROFILE%</code>は、セッションの開始時にファイルのホワイトリストに自動的に追加されます。</p>
+<p>ホワイトリストに登録された <strong>プログラム</strong> は、完全修飾実行ファイルパスで指定されます。サンドボックスを使用すると、ユーザはプログラムのホワイトリストに記載されているすべてのプログラムを実行できます。パブリックデスクトップ<code>%PUBLIC%\Desktop</code>、またはプライベートワークスペースデスクトップ<code>%USERPROFILE%\Desktop</code>のいずれかのプログラムは、セッションの開始時に自動的にプログラムのホワイトリストに追加されます。これらのデスクトップにプログラムを追加する方法は4つあります。</p>
 <ul>
-<li>実際のプログラム実行可能モジュールをデスクトップフォルダに置きます。(例:C:\Users\Public\Desktop\ExampleApp.exe)</li>
-<li>デスクトップフォルダにプログラム実行可能モジュールへのショートカットを配置する。 (例:C:\Users\ExampleUser\Desktop\ExampleApp.lnk)</li>
-<li>関連付けられたプログラムを含む文書をデスクトップフォルダに配置する (例:C:\Users\Public\Desktop\ExampleDoc.doc)</li>
-<li>関連付けられたプログラムを含む文書へのショートカットをデスクトップフォルダに配置する(例:C:\Users\ExampleUser\Desktop\ExampleDoc.lnk)</li>
+<li>実際のプログラム実行可能モジュールをデスクトップフォルダに置きます(例:<code>C:\Users\Public\Desktop\ExampleApp.exe</code>)。</li>
+<li>デスクトップフォルダにプログラム実行可能モジュールへのショートカットを配置する(例:<code>C:\Users\ExampleUser\Desktop\ExampleApp.lnk</code>)。</li>
+<li>関連付けられたプログラムを含む文書をデスクトップフォルダに配置する (例:<code>C:\Users\Public\Desktop\ExampleDoc.doc</code>)。</li>
+<li>関連付けられたプログラムを含む文書へのショートカットをデスクトップフォルダに配置する(例:@C:\Users\ExampleUser\Desktop\ExampleDoc.lnk`)。</li>
 </ul>
 
 
@@ -2716,7 +2728,7 @@
 デスクトップフォルダにないホワイトリストファイルの関連プログラムは、自動的にプログラムホワイトリストに追加されません。
 </div>
 
-<p>以下に説明するように、WorkspacePropertyDefinitions.xmlファイルを編集したら、変更内容をDefaultWorkspaceProperties.xmlファイルに伝播する必要があります。 GO-Global Application Publishing Serviceを停止し、C:\ProgramData\GraphOn\DefaultWorkspaceProperties.xmlファイルを削除してから、GO-Global Application Publishing Serviceを再起動します。これにより、DefaultWorkspaceProperties.xmlファイルがWorkspacePropertyDefinitions.xmlファイルから再作成されます。</p>
+<p>以下に説明するように、WorkspacePropertyDefinitions.xmlファイルを編集したら、変更内容をDefaultWorkspaceProperties.xmlファイルに伝播する必要があります。<strong>GO-Global Application Publishing Service</strong> を停止し、<code>C:\ProgramData\GraphOn\DefaultWorkspaceProperties.xml</code>ファイルを削除してから、<strong>GO-Global Application Publishing Service</strong> を再起動します。これにより、DefaultWorkspaceProperties.xmlファイルがWorkspacePropertyDefinitions.xmlファイルから再作成されます。</p>
 
 
 <div class="alert alert-info" role="alert">
@@ -2726,17 +2738,17 @@
 サンドボックス機能が有効になっていると、ホワイトリストに登録されているプログラムのみが実行を許可されます。既定のサンドボックス構成では、ユーザはコマンドプロンプト(cmd.exe)を実行できますが、プログラムがホワイトリストに追加されていない限り、cmd.exeからプログラムを起動することはできません。これはログオンスクリプトをサポートするための仕様です。
 </div>
 
-<h3 id="oemのお客様への考慮事項">OEMのお客様への考慮事項</h3>
+<h3 id="oemのお客様への考慮事項"><strong>OEMのお客様への考慮事項</strong></h3>
 <p>OEMのお客様は、WorkspacePropertyDefinitions.xmlファイル内の既定のプロパティ値を自分の製品に適した値に編集する必要があります。このファイルはOEMのインストールに含まれるべきです。インストール後、Application Publishing ServiceはWorkspacePropertyDefinitions.xmlファイルの値からDefaultWorkspaceProperties.xmlファイルを生成します。Application Publishing Serviceは、DefaultWorkspaceProperties.xmlファイルから設定を取得します。</p>
 <p>システム管理者は、DefaultWorkspaceProperties.xmlを次のように編集して追加の変更を加えることができます。</p>
 <ol>
-<li>Application Publishing Service.を停止します。</li>
-<li>DefaultWorkspaceProperties.xmlを開きます。</li>
+<li><strong>Application Publishing Service</strong> を停止します。</li>
+<li><strong>DefaultWorkspaceProperties.xml</strong> を開きます。</li>
 <li>ファイルを保存します。</li>
-<li>Application Publishing Service.を再起動します。</li>
+<li><strong>Application Publishing Service</strong> を再起動します。</li>
 </ol>
-<h3 id="ファイルのホワイトリストを編集する方法">ファイルのホワイトリストを編集する方法</h3>
-<p>C:\ProgramData\GraphOn\WorkspacePropertyDefinitions.xmlファイルで、&ldquo;filesWhiteList&quot;プロパティを探します。</p>
+<h3 id="ファイルのホワイトリストを編集する方法"><strong>ファイルのホワイトリストを編集する方法</strong></h3>
+<p><code>C:\ProgramData\GraphOn\WorkspacePropertyDefinitions.xml</code>ファイルで、&ldquo;filesWhiteList&quot;プロパティを探します。</p>
 <pre><code>&lt;property id = &quot;filesWhiteList&quot;&gt;
 &lt;label&gt;Files&lt;/label&gt;
 &lt;description&gt;Files and directories that users are allowed to access from the workspace.&lt;/description&gt;
@@ -2756,8 +2768,8 @@
 &lt;/defaultvalue&gt;
 &lt;constraints&gt;&lt;/constraints&gt;
 &lt;/property&gt;
-</code></pre><h3 id="プログラムのホワイトリストを編集する方法">プログラムのホワイトリストを編集する方法</h3>
-<p>C:\ProgramData\GraphOn\WorkspacePropertyDefinitions.xmlファイルで、&ldquo;programsWhiteList&quot;プロパティを探します。</p>
+</code></pre><h3 id="プログラムのホワイトリストを編集する方法"><strong>プログラムのホワイトリストを編集する方法</strong></h3>
+<p><code>C:\ProgramData\GraphOn\WorkspacePropertyDefinitions.xml</code>ファイルで、&ldquo;programsWhiteList&quot;プロパティを探します。</p>
 <pre><code>&lt;property id = &quot;programsWhiteList&quot;&gt;
 &lt;label&gt;Programs&lt;/label&gt;
 &lt;description&gt;Programs that users are allowed to run from the workspace.&lt;/description&gt;
@@ -2885,11 +2897,23 @@
       
     
   
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
 
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
-        <a href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
+        <a href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシとログオンスクリプトの進捗メッセージ</a>
       </div><div class="xPrevNextLink_next">
         <a href="/docs/go-global-for-windows-6tips/technote/technote201/">クライアント印刷技術の概要</a>
       </div></div>
@@ -2957,7 +2981,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 25, 2020: <a  href="https://github.com//commit/57d34077db2d469cc5f325470055eef416f7d9ec">update0625 (57d34077)</a>
 </div>
 </div>
 

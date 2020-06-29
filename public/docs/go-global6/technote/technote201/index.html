@@ -35,7 +35,7 @@
 参照ユーザがURLまたは特定のアプリケーションへのショートカットキーを使用してプログラムウィンドウを迂回する場合、管理者はそれを独立したアプリケーションとして公開することによってプリンタアプレットへのアクセスを提供できます。プリンタの列挙 ユーザがアプリケーションの[印刷]ダイアログを開くと、アプリケーションはオペレーティングシステムに対して1つ以上の呼び出しを行って、利用可能なプリンタを列挙します。 GO-Globalは、プリンタを列挙するアプリケーション要求を傍受し、(a)ユーザが利用できるホスト側プリンタ、および(b)アプリケーションが実行されているセッション用に作成されたプロキシプリンタを返します。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/technote/technote201/" />
-<meta property="article:modified_time" content="2020-05-28T01:18:07+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-25T18:07:48+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="クライアント印刷技術の概要">
 <meta itemprop="description" content="GO-Globalのクライアント印刷機能により、ホスト上のGO-Globalセッションで実行されているアプリケーションは、クライアントコンピュータまたはデバイスからアクセス可能なプリンタに印刷できます。この資料はこの機能の技術的な概要を提供したものです。
 プロキシプリンタの作成と削除 ユーザがGO-Globalホストにサインインしてクライアント印刷機能が有効になると、Application Publishing Serviceはホストコンピュータ上にユーザのクライアントコンピューターまたはデバイスからアクセス可能なプリンタのプロキシとして機能するプリンターを作成します。プロキシプリンタと呼ばれるこれらのホスト側プリンタは、ホストコンピュータの[デバイスとプリンタ]アプレットの下に表示されます。管理者にはプロキシプリンタへのフルコントロール権限が与えられます。通常のユーザには、自分のプロキシプリンタへの印刷権限と自分のプロキシプリンタの管理権限が付与されています。
@@ -49,7 +49,7 @@
 プリンター設定 Application Publishing Serviceは、プロキシプリンタを作成するときに、ユーザーの%APPDATA%\Roaming\GraphOn\GO-Globalディレクトリをチェックインして、クライアントプリンタのカスタマイズ設定が前回のセッションから保存されているかどうかを確認します。クライアントプリンタの設定ファイルが見つかった場合、Application Publishing Serviceはそのファイルに保存されている設定でプロキシプリンタを作成します。または、設定ファイルが見つからない場合、Application Publishing Serviceは選択したドライバで指定されている既定の設定でプロキシプリンタを作成します。管理者は、 本ドキュメントの「マップされたプリンタ用のデフォルトプリンタ設定ファイルを作成する」セクションの手順に従って、プリンタドライバのデフォルト設定を含むファイルを作成できます。
 参照プロキシプリンタがユニバーサルプリンタドライバを使用するように設定されている場合、そのプリンタのデフォルト設定はC:\Windows\System32\spool\drivers\x64\3\UniversalRemotePrinter.ppdファイルによって制御されます。とりわけ、このファイルはユニバーサルプリンタドライバの余白を制御します。アプリケーションによっては、印刷出力をページの中央に配置するためにこのファイルを変更する必要があります。これについては、管理者ガイドの印刷可能領域の調整セクションで説明されています。ユーザは[ファイル]メニューの[印刷]をクリックして、プリンタの設定をカスタマイズできます。GO-Global Printers Appletを実行するためのプログラムウィンドウ内のプリンタ。プリンタアプレットからプリンタの設定を変更しても、アプリケーションとセッションの間は維持されます。または、アプリケーションの[印刷]ダイアログボックスでプリンタの設定に加えた変更は、通常アプリケーションインスタンスにのみ適用され、アプリケーションを閉じると失われます。
 参照ユーザがURLまたは特定のアプリケーションへのショートカットキーを使用してプログラムウィンドウを迂回する場合、管理者はそれを独立したアプリケーションとして公開することによってプリンタアプレットへのアクセスを提供できます。プリンタの列挙 ユーザがアプリケーションの[印刷]ダイアログを開くと、アプリケーションはオペレーティングシステムに対して1つ以上の呼び出しを行って、利用可能なプリンタを列挙します。 GO-Globalは、プリンタを列挙するアプリケーション要求を傍受し、(a)ユーザが利用できるホスト側プリンタ、および(b)アプリケーションが実行されているセッション用に作成されたプロキシプリンタを返します。">
-<meta itemprop="dateModified" content="2020-05-28T01:18:07&#43;09:00" />
+<meta itemprop="dateModified" content="2020-06-25T18:07:48&#43;09:00" />
 <meta itemprop="wordCount" content="118">
 
 
@@ -158,7 +158,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -188,7 +188,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -1839,7 +1839,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行する</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行</a>
       
       
       
@@ -1851,13 +1851,13 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-Globalセッションで実行されます</a>
       
       
       
@@ -1869,7 +1869,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">IOSクライアントでのSSL証明書の使用</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">iOSクライアントでのSSL証明書の使用</a>
       
       
       
@@ -1881,19 +1881,19 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">IOSとの通信</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">iOSとの通信</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシとログオンスクリプトの進捗メッセージ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">手動によるサンドボックスホワイトリストエントリの設定</a>
       
       
       
@@ -1911,7 +1911,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションが終了したときにGO-Globalセッションを閉じることができない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションを終了したときにGO-Globalセッションが閉じることができない</a>
       
       
       
@@ -1924,6 +1924,18 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote208" href="/docs/go-global-for-windows-6tips/technote/technote208/">Androidデバイスでクラッシュレポートを生成する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote210" href="/docs/go-global-for-windows-6tips/technote/technote210/">ホストインストーラがインターネットインフォメーションサービス(IIS)を構成してGO-GLOBAL WEB APPをホストするのに失敗する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote211" href="/docs/go-global-for-windows-6tips/technote/technote211/">Universalプリンタドライバを使用して印刷できないユーザについて</a>
       
       
     </li>
@@ -2953,7 +2965,7 @@ b. GO-GlobalクライアントはPostScriptデータをプリンタに送信し�
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 28, 2020: <a  href="https://github.com//commit/79c4d1030c471d9a5d4ef0e7a9e7a6f2c0da79e4">gg5-1 (79c4d103)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 25, 2020: <a  href="https://github.com//commit/57d34077db2d469cc5f325470055eef416f7d9ec">update0625 (57d34077)</a>
 </div>
 </div>
 

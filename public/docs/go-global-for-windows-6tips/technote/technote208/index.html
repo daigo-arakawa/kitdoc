@@ -21,23 +21,26 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Androidデバイスでクラッシュレポートを生成する | kitASP Docs</title><meta property="og:title" content="Androidデバイスでクラッシュレポートを生成する" />
-<meta property="og:description" content="WindowsマシンのWindows用SDKプラットフォームツールを次からダウンロードします。 https://developer.android.com/studio/releases/platform-tools。 プラットフォームツールはAndroid SDKのコンポーネントであり、adb、fastboot、systrayなどのさまざまなツールが含まれています。 USBケーブルを使用して、AndroidデバイスをWindowsマシンに接続し、WindowsマシンからAndroidデバイスにアクセスできることを確認します。 Androidデバイスから、[設定]に移動し、[開発者オプション]をクリックします。 [開発設定を許可する]確認メッセージで[OK]をクリックします。 USBデバッグを有効にします。 [USBデバッグの確認メッセージを許可する]で[OK]をクリックします。 Windowsマシンで管理者としてコマンドプロンプトを開き、SDKプラットフォームツールパッケージが解凍されたディレクトリを参照します。(例：c： platform tools) 次のコマンドを実行します。  adb logcat AndroidRuntime：E *：I このコマンドは、実行時エラーやその他の警告を記録します。 6. Androidデバイスで[USBデバッグの確認を許可する]メッセージで[OK]をクリックします。 RSAキーフィンガープリントが表示されたら、[OK]をクリックします。 7. GO-Globalホストに接続し、クラッシュを再現します。 8. GO-Globalがクラッシュしたら、コンソールからテキスト全体をコピーしてテキストドキュメントに貼り付け、分析のためにKitASPのサポートにメールで送信します。
-クライアントがクラッシュすると、アプリケーションの起動時に「GO GLOBAL ANDROID：64ビット」または「GO-GLOBAL ANDROID：32ビット」というエントリが出力に含まれます。これが表示されない場合は、他の構成の問題がある可能性があります。" />
+<meta property="og:description" content=" Windowsマシンの Windows用SDKプラットフォームツール を次からダウンロードします。https://developer.android.com/studio/releases/platform-toolsプラットフォームツールはAndroid SDKのコンポーネントであり、adb、fastboot、systrayなどのさまざまなツールが含まれています。 USBケーブルを使用して、AndroidデバイスをWindowsマシンに接続し、WindowsマシンからAndroidデバイスにアクセスできることを確認します。 Androidデバイスから、 [設定] に移動し、 [開発者オプション] をクリックします。 [開発設定を許可する] 確認メッセージで [OK] をクリックします。USBデバッグを有効にします。 [USBデバッグの確認メッセージを許可する] で [OK] をクリックします。 Windowsマシンで管理者としてコマンドプロンプトを開き、 SDKプラットフォームツールパッケージ が解凍されたディレクトリを参照します(例えば c:platform tools)。 次のコマンドを実行します。  adb logcat AndroidRuntime：E *：I このコマンドは、実行時エラーやその他の警告を記録します。 6. Androidデバイスで [USBデバッグの確認を許可する] メッセージで [OK] をクリックします。RSAキーフィンガープリントが表示されたら、 [OK] をクリックします。 7. GO-Globalホストに接続し、クラッシュを再現します。 8. GO-Globalがクラッシュしたら、コンソールからテキスト全体をコピーしてテキストドキュメントに貼り付け、分析のためにKitASPのサポートにメールで送信します。
+クライアントがクラッシュすると、アプリケーションの起動時に &ldquo;GO GLOBAL ANDROID:64ビット&rdquo; または &ldquo;GO-GLOBAL ANDROID:32ビット&rdquo; というエントリが出力に含まれます。これが表示されない場合は、他の構成の問題がある可能性があります。
+参照レイアウトの画面バッファサイズが大きいことが重要です。これにより、ログがクラッシュを検出するのに十分なだけ遡ります(たとえば、900x900)。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global-for-windows-6tips/technote/technote208/" />
-<meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-25T18:07:48+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="Androidデバイスでクラッシュレポートを生成する">
-<meta itemprop="description" content="WindowsマシンのWindows用SDKプラットフォームツールを次からダウンロードします。 https://developer.android.com/studio/releases/platform-tools。 プラットフォームツールはAndroid SDKのコンポーネントであり、adb、fastboot、systrayなどのさまざまなツールが含まれています。 USBケーブルを使用して、AndroidデバイスをWindowsマシンに接続し、WindowsマシンからAndroidデバイスにアクセスできることを確認します。 Androidデバイスから、[設定]に移動し、[開発者オプション]をクリックします。 [開発設定を許可する]確認メッセージで[OK]をクリックします。 USBデバッグを有効にします。 [USBデバッグの確認メッセージを許可する]で[OK]をクリックします。 Windowsマシンで管理者としてコマンドプロンプトを開き、SDKプラットフォームツールパッケージが解凍されたディレクトリを参照します。(例：c： platform tools) 次のコマンドを実行します。  adb logcat AndroidRuntime：E *：I このコマンドは、実行時エラーやその他の警告を記録します。 6. Androidデバイスで[USBデバッグの確認を許可する]メッセージで[OK]をクリックします。 RSAキーフィンガープリントが表示されたら、[OK]をクリックします。 7. GO-Globalホストに接続し、クラッシュを再現します。 8. GO-Globalがクラッシュしたら、コンソールからテキスト全体をコピーしてテキストドキュメントに貼り付け、分析のためにKitASPのサポートにメールで送信します。
-クライアントがクラッシュすると、アプリケーションの起動時に「GO GLOBAL ANDROID：64ビット」または「GO-GLOBAL ANDROID：32ビット」というエントリが出力に含まれます。これが表示されない場合は、他の構成の問題がある可能性があります。">
-
-<meta itemprop="wordCount" content="29">
+<meta itemprop="description" content=" Windowsマシンの Windows用SDKプラットフォームツール を次からダウンロードします。https://developer.android.com/studio/releases/platform-toolsプラットフォームツールはAndroid SDKのコンポーネントであり、adb、fastboot、systrayなどのさまざまなツールが含まれています。 USBケーブルを使用して、AndroidデバイスをWindowsマシンに接続し、WindowsマシンからAndroidデバイスにアクセスできることを確認します。 Androidデバイスから、 [設定] に移動し、 [開発者オプション] をクリックします。 [開発設定を許可する] 確認メッセージで [OK] をクリックします。USBデバッグを有効にします。 [USBデバッグの確認メッセージを許可する] で [OK] をクリックします。 Windowsマシンで管理者としてコマンドプロンプトを開き、 SDKプラットフォームツールパッケージ が解凍されたディレクトリを参照します(例えば c:platform tools)。 次のコマンドを実行します。  adb logcat AndroidRuntime：E *：I このコマンドは、実行時エラーやその他の警告を記録します。 6. Androidデバイスで [USBデバッグの確認を許可する] メッセージで [OK] をクリックします。RSAキーフィンガープリントが表示されたら、 [OK] をクリックします。 7. GO-Globalホストに接続し、クラッシュを再現します。 8. GO-Globalがクラッシュしたら、コンソールからテキスト全体をコピーしてテキストドキュメントに貼り付け、分析のためにKitASPのサポートにメールで送信します。
+クライアントがクラッシュすると、アプリケーションの起動時に &ldquo;GO GLOBAL ANDROID:64ビット&rdquo; または &ldquo;GO-GLOBAL ANDROID:32ビット&rdquo; というエントリが出力に含まれます。これが表示されない場合は、他の構成の問題がある可能性があります。
+参照レイアウトの画面バッファサイズが大きいことが重要です。これにより、ログがクラッシュを検出するのに十分なだけ遡ります(たとえば、900x900)。">
+<meta itemprop="dateModified" content="2020-06-25T18:07:48&#43;09:00" />
+<meta itemprop="wordCount" content="51">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Androidデバイスでクラッシュレポートを生成する"/>
-<meta name="twitter:description" content="WindowsマシンのWindows用SDKプラットフォームツールを次からダウンロードします。 https://developer.android.com/studio/releases/platform-tools。 プラットフォームツールはAndroid SDKのコンポーネントであり、adb、fastboot、systrayなどのさまざまなツールが含まれています。 USBケーブルを使用して、AndroidデバイスをWindowsマシンに接続し、WindowsマシンからAndroidデバイスにアクセスできることを確認します。 Androidデバイスから、[設定]に移動し、[開発者オプション]をクリックします。 [開発設定を許可する]確認メッセージで[OK]をクリックします。 USBデバッグを有効にします。 [USBデバッグの確認メッセージを許可する]で[OK]をクリックします。 Windowsマシンで管理者としてコマンドプロンプトを開き、SDKプラットフォームツールパッケージが解凍されたディレクトリを参照します。(例：c： platform tools) 次のコマンドを実行します。  adb logcat AndroidRuntime：E *：I このコマンドは、実行時エラーやその他の警告を記録します。 6. Androidデバイスで[USBデバッグの確認を許可する]メッセージで[OK]をクリックします。 RSAキーフィンガープリントが表示されたら、[OK]をクリックします。 7. GO-Globalホストに接続し、クラッシュを再現します。 8. GO-Globalがクラッシュしたら、コンソールからテキスト全体をコピーしてテキストドキュメントに貼り付け、分析のためにKitASPのサポートにメールで送信します。
-クライアントがクラッシュすると、アプリケーションの起動時に「GO GLOBAL ANDROID：64ビット」または「GO-GLOBAL ANDROID：32ビット」というエントリが出力に含まれます。これが表示されない場合は、他の構成の問題がある可能性があります。"/>
+<meta name="twitter:description" content=" Windowsマシンの Windows用SDKプラットフォームツール を次からダウンロードします。https://developer.android.com/studio/releases/platform-toolsプラットフォームツールはAndroid SDKのコンポーネントであり、adb、fastboot、systrayなどのさまざまなツールが含まれています。 USBケーブルを使用して、AndroidデバイスをWindowsマシンに接続し、WindowsマシンからAndroidデバイスにアクセスできることを確認します。 Androidデバイスから、 [設定] に移動し、 [開発者オプション] をクリックします。 [開発設定を許可する] 確認メッセージで [OK] をクリックします。USBデバッグを有効にします。 [USBデバッグの確認メッセージを許可する] で [OK] をクリックします。 Windowsマシンで管理者としてコマンドプロンプトを開き、 SDKプラットフォームツールパッケージ が解凍されたディレクトリを参照します(例えば c:platform tools)。 次のコマンドを実行します。  adb logcat AndroidRuntime：E *：I このコマンドは、実行時エラーやその他の警告を記録します。 6. Androidデバイスで [USBデバッグの確認を許可する] メッセージで [OK] をクリックします。RSAキーフィンガープリントが表示されたら、 [OK] をクリックします。 7. GO-Globalホストに接続し、クラッシュを再現します。 8. GO-Globalがクラッシュしたら、コンソールからテキスト全体をコピーしてテキストドキュメントに貼り付け、分析のためにKitASPのサポートにメールで送信します。
+クライアントがクラッシュすると、アプリケーションの起動時に &ldquo;GO GLOBAL ANDROID:64ビット&rdquo; または &ldquo;GO-GLOBAL ANDROID:32ビット&rdquo; というエントリが出力に含まれます。これが表示されない場合は、他の構成の問題がある可能性があります。
+参照レイアウトの画面バッファサイズが大きいことが重要です。これにより、ログがクラッシュを検出するのに十分なだけ遡ります(たとえば、900x900)。"/>
 
 
 
@@ -128,7 +131,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -158,7 +161,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -1809,7 +1812,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行する</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行</a>
       
       
       
@@ -1821,13 +1824,13 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-Globalセッションで実行されます</a>
       
       
       
@@ -1839,7 +1842,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">IOSクライアントでのSSL証明書の使用</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">iOSクライアントでのSSL証明書の使用</a>
       
       
       
@@ -1851,19 +1854,19 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">IOSとの通信</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">iOSとの通信</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシとログオンスクリプトの進捗メッセージ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">手動によるサンドボックスホワイトリストエントリの設定</a>
       
       
       
@@ -1881,7 +1884,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションが終了したときにGO-Globalセッションを閉じることができない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションを終了したときにGO-Globalセッションが閉じることができない</a>
       
       
       
@@ -1894,6 +1897,18 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global-for-windows-6tipstechnotetechnote208" href="/docs/go-global-for-windows-6tips/technote/technote208/">Androidデバイスでクラッシュレポートを生成する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote210" href="/docs/go-global-for-windows-6tips/technote/technote210/">ホストインストーラがインターネットインフォメーションサービス(IIS)を構成してGO-GLOBAL WEB APPをホストするのに失敗する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote211" href="/docs/go-global-for-windows-6tips/technote/technote211/">Universalプリンタドライバを使用して印刷できないユーザについて</a>
       
       
     </li>
@@ -2639,18 +2654,28 @@
 	<h1>Androidデバイスでクラッシュレポートを生成する</h1>
 	
 	<ol>
-<li>WindowsマシンのWindows用SDKプラットフォームツールを次からダウンロードします。 <a href="https://developer.android.com/studio/releases/platform-tools%E3%80%82">https://developer.android.com/studio/releases/platform-tools。</a> プラットフォームツールはAndroid SDKのコンポーネントであり、adb、fastboot、systrayなどのさまざまなツールが含まれています。</li>
+<li>Windowsマシンの <strong>Windows用SDKプラットフォームツール</strong> を次からダウンロードします。<a href="https://developer.android.com/studio/releases/platform-tools">https://developer.android.com/studio/releases/platform-tools</a>プラットフォームツールはAndroid SDKのコンポーネントであり、adb、fastboot、systrayなどのさまざまなツールが含まれています。</li>
 <li>USBケーブルを使用して、AndroidデバイスをWindowsマシンに接続し、WindowsマシンからAndroidデバイスにアクセスできることを確認します。</li>
-<li>Androidデバイスから、[設定]に移動し、[開発者オプション]をクリックします。 [開発設定を許可する]確認メッセージで[OK]をクリックします。 USBデバッグを有効にします。 [USBデバッグの確認メッセージを許可する]で[OK]をクリックします。</li>
-<li>Windowsマシンで管理者としてコマンドプロンプトを開き、SDKプラットフォームツールパッケージが解凍されたディレクトリを参照します。(例：c： platform tools)</li>
+<li>Androidデバイスから、 <strong>[設定]</strong> に移動し、 <strong>[開発者オプション]</strong> をクリックします。 <strong>[開発設定を許可する]</strong> 確認メッセージで <strong>[OK]</strong> をクリックします。USBデバッグを有効にします。 <strong>[USBデバッグの確認メッセージを許可する]</strong> で <strong>[OK]</strong> をクリックします。</li>
+<li>Windowsマシンで管理者としてコマンドプロンプトを開き、 <strong>SDKプラットフォームツールパッケージ</strong> が解凍されたディレクトリを参照します(例えば c:platform tools)。</li>
 <li>次のコマンドを実行します。</li>
 </ol>
 <pre><code>adb logcat AndroidRuntime：E *：I 
 </code></pre><p>このコマンドは、実行時エラーやその他の警告を記録します。
-6. Androidデバイスで[USBデバッグの確認を許可する]メッセージで[OK]をクリックします。 RSAキーフィンガープリントが表示されたら、[OK]をクリックします。
+6. Androidデバイスで <strong>[USBデバッグの確認を許可する]</strong> メッセージで <strong>[OK]</strong> をクリックします。RSAキーフィンガープリントが表示されたら、 <strong>[OK]</strong> をクリックします。
 7. GO-Globalホストに接続し、クラッシュを再現します。
 8. GO-Globalがクラッシュしたら、コンソールからテキスト全体をコピーしてテキストドキュメントに貼り付け、分析のためにKitASPのサポートにメールで送信します。</p>
-<p>クライアントがクラッシュすると、アプリケーションの起動時に「GO GLOBAL ANDROID：64ビット」または「GO-GLOBAL ANDROID：32ビット」というエントリが出力に含まれます。これが表示されない場合は、他の構成の問題がある可能性があります。</p>
+<p>クライアントがクラッシュすると、アプリケーションの起動時に <strong>&ldquo;GO GLOBAL ANDROID:64ビット&rdquo;</strong> または <strong>&ldquo;GO-GLOBAL ANDROID:32ビット&rdquo;</strong> というエントリが出力に含まれます。これが表示されない場合は、他の構成の問題がある可能性があります。</p>
+<p><img src="/images/9-208-1.png" alt="9-208-1"></p>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+レイアウトの画面バッファサイズが大きいことが重要です。これにより、ログがクラッシュを検出するのに十分なだけ遡ります(たとえば、900x900)。
+</div>
+
 
 	
 		
@@ -2761,11 +2786,28 @@
       
     
   
+    
+      
+        
+          
+          
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
 
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
         <a href="/docs/go-global-for-windows-6tips/technote/technote207/">ウィンドウ枠の幅とパディングの変更</a>
+      </div><div class="xPrevNextLink_next">
+        <a href="/docs/go-global-for-windows-6tips/technote/technote210/">ホストインストーラがインターネットインフォメーションサービス(IIS)を構成してGO-GLOBAL WEB APPをホストするのに失敗する</a>
       </div></div>
   
 
@@ -2831,7 +2873,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 25, 2020: <a  href="https://github.com//commit/57d34077db2d469cc5f325470055eef416f7d9ec">update0625 (57d34077)</a>
 </div>
 </div>
 

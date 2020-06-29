@@ -22,58 +22,58 @@
 
 <title>暗号化に関するFAQ | kitASP Docs</title><meta property="og:title" content="暗号化に関するFAQ" />
 <meta property="og:description" content="GO-Globalには暗号化機能があります。それは管理者が2つの異なる暗号化方法の1つを使用してGO-Globalホストとそのクライアントの間で転送されるデータを暗号化することを可能にします。
-管理者がAdmin ConsoleでTCP転送を選択すると、クライアントとホスト間で非対称RSAアルゴリズムを使用して56ビットのDESキーが交換されます。RSAキーは512ビットです。
-あるいは、管理者がAdmin ConsoleでSSLトランスポートを選択すると、GO-GlobalはOpenSSLを使用してキー交換を実行します。この場合、キーのビット長は、ホストコンピュータにインストールされている証明書によって決まります。GO-Globalは、最大2048ビットの長さの鍵を持つ証明書をサポートしています。GO-GlobalはSSLv2およびSSLv3プロトコルを無効にし、利用可能な最も高いTLSバージョンとの鍵交換をネゴシエートします。
-以下は、GO-Global暗号化に関してよくある質問です。
-SSLとTCPトランスポートの違いは何ですか？ 主な違いは、SSLがMITM（Man-In-The-Middle）攻撃を防ぐのに対して、TCPトランスポートを使った56ビット暗号化は防げないことです。MITM攻撃、およびSSLがそれらをどのように防御するかを理解するために、オンラインの参考文献を参考にすることをお勧めします。
+管理者がAdmin Consoleで TCP転送 を選択すると、クライアントとホスト間で非対称RSAアルゴリズムを使用して56ビットのDESキーが交換されます。RSAキーは512ビットです。
+あるいは、管理者がAdmin Consoleで SSLトランスポート を選択すると、GO-GlobalはOpenSSLを使用してキー交換を実行します。この場合、キーのビット長は、ホストコンピュータにインストールされている証明書によって決まります。GO-Globalは、最大2048ビットの長さの鍵を持つ証明書をサポートしています。GO-GlobalはSSLv2およびSSLv3プロトコルを無効にし、利用可能な最も高いTLSバージョンとの鍵交換をネゴシエートします。
+以下は、 GO-Global暗号化に関してよくある質問 です。
+SSLとTCPトランスポートの違いは何ですか? 主な違いは、SSLがMITM（Man-In-The-Middle）攻撃を防ぐのに対して、TCPトランスポートを使った56ビット暗号化は防げないことです。MITM攻撃、およびSSLがそれらをどのように防御するかを理解するために、オンラインの参考文献を参考にすることをお勧めします。
 二次的な、それほど重要ではない違いは、SSLトランスポートが選択されているときGO-GlobalがOpenSSLのデータ暗号化標準（DES）実装を使用してGO-Globalセッションのデータを暗号化することです。以下は、GO-GlobalのTCPおよびSSLトランスポートが選択されている場合の暗号化キーの交換方法とセッションのデータの暗号化方法の概要です。
 TCPトランスポートが選択されている場合、攻撃者はMITM攻撃を実行し、GO-Globalクライアントとホストの間で転送されるすべてのデータを復号化することが可能です。これを行うために、攻撃者はクライアントからの接続要求を傍受し、ホストになりすまします。その後、攻撃者はクライアントとの間で暗号化キーの交換を行い、その後クライアントが送信したすべてのデータを復号化することができます。攻撃を完了するために、攻撃者はホストへの接続を開き、クライアントになりすまします。攻撃者はホストとの暗号化キー交換を実行します。その後、攻撃者はホストが送信したすべてのデータを復号化できます。その後、攻撃者はクライアントとホストの間で双方向にデータを中継し、すべてのデータが暗号化されていないことを確認できます。
 TCPトランスポートが選択されている場合、GO-Globalは、非対称RSA公開鍵交換アルゴリズムを使用してDES暗号で使用される56ビット対称鍵を交換します。クライアントは512ビットの非対称公開非公開鍵ペアを生成し、その公開鍵をホストに送信します。次に、ホストは、GO-Globalセッションのデータを暗号化および復号化するためにDES暗号で使用される56ビットの対称鍵を生成します。次に、ホストはクライアントの512ビットRSA公開鍵を使用して56ビット対称鍵を暗号化し、暗号化された56ビット対称鍵をクライアントに送信します。その後、クライアントは、512ビットのRSA秘密鍵を使用して56ビットの対称鍵を復号化します。その後、クライアントとホストは、56ビット対称鍵とDES暗号を使用して、接続を介して送信されるデータを暗号化および復号化します。
 RSAアルゴリズムは、56ビット対称鍵を安全に暗号化する方法を提供しますが、それ自体では、クライアントが接続しようとしているコンピュータと直接通信していることを保証する方法は提供しません。たとえば、クライアントは、ホストまたはMITMのどちらから56ビット対称鍵を受信しているのかを判断できません。同様に、ホストは、56ビットの対称鍵をクライアントに送信しているのか、それともMITMに送信しているのかを判断できません。SSLはこの問題を解決し、クライアントとホストが56ビット対称鍵を交換するための安全な方法を提供します。
 SSLトランスポートが選択されると、GO-GlobalはOpenSSLを使用してGO-Globalクライアントとホスト間の接続を確立します。OpenSSLでは、56ビット対称鍵の暗号化に使用される非対称公開鍵と秘密鍵は、それぞれSSL証明書とSSL鍵です。クライアントが接続すると、ホストは自分のSSL証明書(その公開鍵)をクライアントに送信します。証明書は、MITMによる改ざんを防ぐために署名されています。次に、クライアントは証明書を調べて、クライアントコンピュータが信頼している認証局(CA)によって発行されたものかどうかを確認します。証明書が有効であり、クライアントが信頼するCAによって発行されたものである場合、クライアントはMITMがないことを確認できます。次にOpenSSLは56ビットの対称鍵を生成し、それをホストの証明書(その公開鍵)を使用して暗号化し、暗号化された対称鍵をホストに送信します。その後、OpenSSLは56ビットの対称鍵を使用してGO-Globalセッションのデータを暗号化および復号化します。
-高度な暗号化レベルのライセンスを使用する場合、高度な暗号化を有効にするためにSSL証明書が必要ですか？ はい。GO-Globalには、強力な暗号の独自の実装はありません。OpenSSLの強力な暗号の実装を使用しています。
-SSLキー暗号強度(1028ビットまたは2048ビット)は、Admin Consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか？ SSL証明書内の非対称鍵および鍵ファイル(1024ビットまたは2048ビット)は、暗号化および復号化に使用される対称鍵(56ビット、256ビットなど)の暗号化および復号化にのみ使用されます。選択した暗号を使用したセッションのデータは常に、[Host Options]ダイアログの[Security]タブの[Encryption]ドロップダウンで指定されたキーの長さと暗号を使用して暗号化および復号化されます。
-AES-256ビット暗号化とVPN製品で使用されている暗号化との違いは何ですか？ AES-256ビット暗号化は、VPN製品で一般的に使用されています。 AES-256は、最も機密性の高い機密文書およびデータを保護するために安全性の高い環境で使用される最も一般的な対称アルゴリズムです。
-GO-Globalはエンドツーエンドの暗号化をサポートしていますか？ GO-Globalは、independent hostとクライアントの間でエンドツーエンドの暗号化を使用します。GO-Globalが1つ以上のdependent hostを持つrelay serverとして動作するように設定されている場合、GO-Globalはリンク暗号化を提供します。具体的には、relay server上のApplication Publishing Serviceは、クライアントから受信したデータを復号化し、そのデータをdependent hostに転送する前に再暗号化します。同様に、dependent hostから受信したデータを復号化し、クライアントに転送する前に再暗号化します。" />
+高度な暗号化レベルのライセンスを使用する場合、高度な暗号化を有効にするためにSSL証明書が必要ですか? はい。GO-Globalには、強力な暗号の独自の実装はありません。OpenSSLの強力な暗号の実装を使用しています。
+SSLキー暗号強度(1028ビットまたは2048ビット)は、Admin Consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか? SSL証明書内の非対称鍵および鍵ファイル(1024ビットまたは2048ビット)は、暗号化および復号化に使用される対称鍵(56ビット、256ビットなど)の暗号化および復号化にのみ使用されます。選択した暗号を使用したセッションのデータは常に、[Host Options]ダイアログの[Security]タブの[Encryption]ドロップダウンで指定されたキーの長さと暗号を使用して暗号化および復号化されます。
+AES-256ビット暗号化とVPN製品で使用されている暗号化との違いは何ですか? AES-256ビット暗号化は、VPN製品で一般的に使用されています。 AES-256は、最も機密性の高い機密文書およびデータを保護するために安全性の高い環境で使用される最も一般的な対称アルゴリズムです。
+GO-Globalはエンドツーエンドの暗号化をサポートしていますか? GO-Globalは、independent hostとクライアントの間でエンドツーエンドの暗号化を使用します。GO-Globalが1つ以上のdependent hostを持つrelay serverとして動作するように設定されている場合、GO-Globalはリンク暗号化を提供します。具体的には、relay server上のApplication Publishing Serviceは、クライアントから受信したデータを復号化し、そのデータをdependent hostに転送する前に再暗号化します。同様に、dependent hostから受信したデータを復号化し、クライアントに転送する前に再暗号化します。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global-for-windows-6tips/technote/technote205/" />
-<meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-25T18:07:48+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="暗号化に関するFAQ">
 <meta itemprop="description" content="GO-Globalには暗号化機能があります。それは管理者が2つの異なる暗号化方法の1つを使用してGO-Globalホストとそのクライアントの間で転送されるデータを暗号化することを可能にします。
-管理者がAdmin ConsoleでTCP転送を選択すると、クライアントとホスト間で非対称RSAアルゴリズムを使用して56ビットのDESキーが交換されます。RSAキーは512ビットです。
-あるいは、管理者がAdmin ConsoleでSSLトランスポートを選択すると、GO-GlobalはOpenSSLを使用してキー交換を実行します。この場合、キーのビット長は、ホストコンピュータにインストールされている証明書によって決まります。GO-Globalは、最大2048ビットの長さの鍵を持つ証明書をサポートしています。GO-GlobalはSSLv2およびSSLv3プロトコルを無効にし、利用可能な最も高いTLSバージョンとの鍵交換をネゴシエートします。
-以下は、GO-Global暗号化に関してよくある質問です。
-SSLとTCPトランスポートの違いは何ですか？ 主な違いは、SSLがMITM（Man-In-The-Middle）攻撃を防ぐのに対して、TCPトランスポートを使った56ビット暗号化は防げないことです。MITM攻撃、およびSSLがそれらをどのように防御するかを理解するために、オンラインの参考文献を参考にすることをお勧めします。
+管理者がAdmin Consoleで TCP転送 を選択すると、クライアントとホスト間で非対称RSAアルゴリズムを使用して56ビットのDESキーが交換されます。RSAキーは512ビットです。
+あるいは、管理者がAdmin Consoleで SSLトランスポート を選択すると、GO-GlobalはOpenSSLを使用してキー交換を実行します。この場合、キーのビット長は、ホストコンピュータにインストールされている証明書によって決まります。GO-Globalは、最大2048ビットの長さの鍵を持つ証明書をサポートしています。GO-GlobalはSSLv2およびSSLv3プロトコルを無効にし、利用可能な最も高いTLSバージョンとの鍵交換をネゴシエートします。
+以下は、 GO-Global暗号化に関してよくある質問 です。
+SSLとTCPトランスポートの違いは何ですか? 主な違いは、SSLがMITM（Man-In-The-Middle）攻撃を防ぐのに対して、TCPトランスポートを使った56ビット暗号化は防げないことです。MITM攻撃、およびSSLがそれらをどのように防御するかを理解するために、オンラインの参考文献を参考にすることをお勧めします。
 二次的な、それほど重要ではない違いは、SSLトランスポートが選択されているときGO-GlobalがOpenSSLのデータ暗号化標準（DES）実装を使用してGO-Globalセッションのデータを暗号化することです。以下は、GO-GlobalのTCPおよびSSLトランスポートが選択されている場合の暗号化キーの交換方法とセッションのデータの暗号化方法の概要です。
 TCPトランスポートが選択されている場合、攻撃者はMITM攻撃を実行し、GO-Globalクライアントとホストの間で転送されるすべてのデータを復号化することが可能です。これを行うために、攻撃者はクライアントからの接続要求を傍受し、ホストになりすまします。その後、攻撃者はクライアントとの間で暗号化キーの交換を行い、その後クライアントが送信したすべてのデータを復号化することができます。攻撃を完了するために、攻撃者はホストへの接続を開き、クライアントになりすまします。攻撃者はホストとの暗号化キー交換を実行します。その後、攻撃者はホストが送信したすべてのデータを復号化できます。その後、攻撃者はクライアントとホストの間で双方向にデータを中継し、すべてのデータが暗号化されていないことを確認できます。
 TCPトランスポートが選択されている場合、GO-Globalは、非対称RSA公開鍵交換アルゴリズムを使用してDES暗号で使用される56ビット対称鍵を交換します。クライアントは512ビットの非対称公開非公開鍵ペアを生成し、その公開鍵をホストに送信します。次に、ホストは、GO-Globalセッションのデータを暗号化および復号化するためにDES暗号で使用される56ビットの対称鍵を生成します。次に、ホストはクライアントの512ビットRSA公開鍵を使用して56ビット対称鍵を暗号化し、暗号化された56ビット対称鍵をクライアントに送信します。その後、クライアントは、512ビットのRSA秘密鍵を使用して56ビットの対称鍵を復号化します。その後、クライアントとホストは、56ビット対称鍵とDES暗号を使用して、接続を介して送信されるデータを暗号化および復号化します。
 RSAアルゴリズムは、56ビット対称鍵を安全に暗号化する方法を提供しますが、それ自体では、クライアントが接続しようとしているコンピュータと直接通信していることを保証する方法は提供しません。たとえば、クライアントは、ホストまたはMITMのどちらから56ビット対称鍵を受信しているのかを判断できません。同様に、ホストは、56ビットの対称鍵をクライアントに送信しているのか、それともMITMに送信しているのかを判断できません。SSLはこの問題を解決し、クライアントとホストが56ビット対称鍵を交換するための安全な方法を提供します。
 SSLトランスポートが選択されると、GO-GlobalはOpenSSLを使用してGO-Globalクライアントとホスト間の接続を確立します。OpenSSLでは、56ビット対称鍵の暗号化に使用される非対称公開鍵と秘密鍵は、それぞれSSL証明書とSSL鍵です。クライアントが接続すると、ホストは自分のSSL証明書(その公開鍵)をクライアントに送信します。証明書は、MITMによる改ざんを防ぐために署名されています。次に、クライアントは証明書を調べて、クライアントコンピュータが信頼している認証局(CA)によって発行されたものかどうかを確認します。証明書が有効であり、クライアントが信頼するCAによって発行されたものである場合、クライアントはMITMがないことを確認できます。次にOpenSSLは56ビットの対称鍵を生成し、それをホストの証明書(その公開鍵)を使用して暗号化し、暗号化された対称鍵をホストに送信します。その後、OpenSSLは56ビットの対称鍵を使用してGO-Globalセッションのデータを暗号化および復号化します。
-高度な暗号化レベルのライセンスを使用する場合、高度な暗号化を有効にするためにSSL証明書が必要ですか？ はい。GO-Globalには、強力な暗号の独自の実装はありません。OpenSSLの強力な暗号の実装を使用しています。
-SSLキー暗号強度(1028ビットまたは2048ビット)は、Admin Consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか？ SSL証明書内の非対称鍵および鍵ファイル(1024ビットまたは2048ビット)は、暗号化および復号化に使用される対称鍵(56ビット、256ビットなど)の暗号化および復号化にのみ使用されます。選択した暗号を使用したセッションのデータは常に、[Host Options]ダイアログの[Security]タブの[Encryption]ドロップダウンで指定されたキーの長さと暗号を使用して暗号化および復号化されます。
-AES-256ビット暗号化とVPN製品で使用されている暗号化との違いは何ですか？ AES-256ビット暗号化は、VPN製品で一般的に使用されています。 AES-256は、最も機密性の高い機密文書およびデータを保護するために安全性の高い環境で使用される最も一般的な対称アルゴリズムです。
-GO-Globalはエンドツーエンドの暗号化をサポートしていますか？ GO-Globalは、independent hostとクライアントの間でエンドツーエンドの暗号化を使用します。GO-Globalが1つ以上のdependent hostを持つrelay serverとして動作するように設定されている場合、GO-Globalはリンク暗号化を提供します。具体的には、relay server上のApplication Publishing Serviceは、クライアントから受信したデータを復号化し、そのデータをdependent hostに転送する前に再暗号化します。同様に、dependent hostから受信したデータを復号化し、クライアントに転送する前に再暗号化します。">
-
-<meta itemprop="wordCount" content="32">
+高度な暗号化レベルのライセンスを使用する場合、高度な暗号化を有効にするためにSSL証明書が必要ですか? はい。GO-Globalには、強力な暗号の独自の実装はありません。OpenSSLの強力な暗号の実装を使用しています。
+SSLキー暗号強度(1028ビットまたは2048ビット)は、Admin Consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか? SSL証明書内の非対称鍵および鍵ファイル(1024ビットまたは2048ビット)は、暗号化および復号化に使用される対称鍵(56ビット、256ビットなど)の暗号化および復号化にのみ使用されます。選択した暗号を使用したセッションのデータは常に、[Host Options]ダイアログの[Security]タブの[Encryption]ドロップダウンで指定されたキーの長さと暗号を使用して暗号化および復号化されます。
+AES-256ビット暗号化とVPN製品で使用されている暗号化との違いは何ですか? AES-256ビット暗号化は、VPN製品で一般的に使用されています。 AES-256は、最も機密性の高い機密文書およびデータを保護するために安全性の高い環境で使用される最も一般的な対称アルゴリズムです。
+GO-Globalはエンドツーエンドの暗号化をサポートしていますか? GO-Globalは、independent hostとクライアントの間でエンドツーエンドの暗号化を使用します。GO-Globalが1つ以上のdependent hostを持つrelay serverとして動作するように設定されている場合、GO-Globalはリンク暗号化を提供します。具体的には、relay server上のApplication Publishing Serviceは、クライアントから受信したデータを復号化し、そのデータをdependent hostに転送する前に再暗号化します。同様に、dependent hostから受信したデータを復号化し、クライアントに転送する前に再暗号化します。">
+<meta itemprop="dateModified" content="2020-06-25T18:07:48&#43;09:00" />
+<meta itemprop="wordCount" content="38">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="暗号化に関するFAQ"/>
 <meta name="twitter:description" content="GO-Globalには暗号化機能があります。それは管理者が2つの異なる暗号化方法の1つを使用してGO-Globalホストとそのクライアントの間で転送されるデータを暗号化することを可能にします。
-管理者がAdmin ConsoleでTCP転送を選択すると、クライアントとホスト間で非対称RSAアルゴリズムを使用して56ビットのDESキーが交換されます。RSAキーは512ビットです。
-あるいは、管理者がAdmin ConsoleでSSLトランスポートを選択すると、GO-GlobalはOpenSSLを使用してキー交換を実行します。この場合、キーのビット長は、ホストコンピュータにインストールされている証明書によって決まります。GO-Globalは、最大2048ビットの長さの鍵を持つ証明書をサポートしています。GO-GlobalはSSLv2およびSSLv3プロトコルを無効にし、利用可能な最も高いTLSバージョンとの鍵交換をネゴシエートします。
-以下は、GO-Global暗号化に関してよくある質問です。
-SSLとTCPトランスポートの違いは何ですか？ 主な違いは、SSLがMITM（Man-In-The-Middle）攻撃を防ぐのに対して、TCPトランスポートを使った56ビット暗号化は防げないことです。MITM攻撃、およびSSLがそれらをどのように防御するかを理解するために、オンラインの参考文献を参考にすることをお勧めします。
+管理者がAdmin Consoleで TCP転送 を選択すると、クライアントとホスト間で非対称RSAアルゴリズムを使用して56ビットのDESキーが交換されます。RSAキーは512ビットです。
+あるいは、管理者がAdmin Consoleで SSLトランスポート を選択すると、GO-GlobalはOpenSSLを使用してキー交換を実行します。この場合、キーのビット長は、ホストコンピュータにインストールされている証明書によって決まります。GO-Globalは、最大2048ビットの長さの鍵を持つ証明書をサポートしています。GO-GlobalはSSLv2およびSSLv3プロトコルを無効にし、利用可能な最も高いTLSバージョンとの鍵交換をネゴシエートします。
+以下は、 GO-Global暗号化に関してよくある質問 です。
+SSLとTCPトランスポートの違いは何ですか? 主な違いは、SSLがMITM（Man-In-The-Middle）攻撃を防ぐのに対して、TCPトランスポートを使った56ビット暗号化は防げないことです。MITM攻撃、およびSSLがそれらをどのように防御するかを理解するために、オンラインの参考文献を参考にすることをお勧めします。
 二次的な、それほど重要ではない違いは、SSLトランスポートが選択されているときGO-GlobalがOpenSSLのデータ暗号化標準（DES）実装を使用してGO-Globalセッションのデータを暗号化することです。以下は、GO-GlobalのTCPおよびSSLトランスポートが選択されている場合の暗号化キーの交換方法とセッションのデータの暗号化方法の概要です。
 TCPトランスポートが選択されている場合、攻撃者はMITM攻撃を実行し、GO-Globalクライアントとホストの間で転送されるすべてのデータを復号化することが可能です。これを行うために、攻撃者はクライアントからの接続要求を傍受し、ホストになりすまします。その後、攻撃者はクライアントとの間で暗号化キーの交換を行い、その後クライアントが送信したすべてのデータを復号化することができます。攻撃を完了するために、攻撃者はホストへの接続を開き、クライアントになりすまします。攻撃者はホストとの暗号化キー交換を実行します。その後、攻撃者はホストが送信したすべてのデータを復号化できます。その後、攻撃者はクライアントとホストの間で双方向にデータを中継し、すべてのデータが暗号化されていないことを確認できます。
 TCPトランスポートが選択されている場合、GO-Globalは、非対称RSA公開鍵交換アルゴリズムを使用してDES暗号で使用される56ビット対称鍵を交換します。クライアントは512ビットの非対称公開非公開鍵ペアを生成し、その公開鍵をホストに送信します。次に、ホストは、GO-Globalセッションのデータを暗号化および復号化するためにDES暗号で使用される56ビットの対称鍵を生成します。次に、ホストはクライアントの512ビットRSA公開鍵を使用して56ビット対称鍵を暗号化し、暗号化された56ビット対称鍵をクライアントに送信します。その後、クライアントは、512ビットのRSA秘密鍵を使用して56ビットの対称鍵を復号化します。その後、クライアントとホストは、56ビット対称鍵とDES暗号を使用して、接続を介して送信されるデータを暗号化および復号化します。
 RSAアルゴリズムは、56ビット対称鍵を安全に暗号化する方法を提供しますが、それ自体では、クライアントが接続しようとしているコンピュータと直接通信していることを保証する方法は提供しません。たとえば、クライアントは、ホストまたはMITMのどちらから56ビット対称鍵を受信しているのかを判断できません。同様に、ホストは、56ビットの対称鍵をクライアントに送信しているのか、それともMITMに送信しているのかを判断できません。SSLはこの問題を解決し、クライアントとホストが56ビット対称鍵を交換するための安全な方法を提供します。
 SSLトランスポートが選択されると、GO-GlobalはOpenSSLを使用してGO-Globalクライアントとホスト間の接続を確立します。OpenSSLでは、56ビット対称鍵の暗号化に使用される非対称公開鍵と秘密鍵は、それぞれSSL証明書とSSL鍵です。クライアントが接続すると、ホストは自分のSSL証明書(その公開鍵)をクライアントに送信します。証明書は、MITMによる改ざんを防ぐために署名されています。次に、クライアントは証明書を調べて、クライアントコンピュータが信頼している認証局(CA)によって発行されたものかどうかを確認します。証明書が有効であり、クライアントが信頼するCAによって発行されたものである場合、クライアントはMITMがないことを確認できます。次にOpenSSLは56ビットの対称鍵を生成し、それをホストの証明書(その公開鍵)を使用して暗号化し、暗号化された対称鍵をホストに送信します。その後、OpenSSLは56ビットの対称鍵を使用してGO-Globalセッションのデータを暗号化および復号化します。
-高度な暗号化レベルのライセンスを使用する場合、高度な暗号化を有効にするためにSSL証明書が必要ですか？ はい。GO-Globalには、強力な暗号の独自の実装はありません。OpenSSLの強力な暗号の実装を使用しています。
-SSLキー暗号強度(1028ビットまたは2048ビット)は、Admin Consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか？ SSL証明書内の非対称鍵および鍵ファイル(1024ビットまたは2048ビット)は、暗号化および復号化に使用される対称鍵(56ビット、256ビットなど)の暗号化および復号化にのみ使用されます。選択した暗号を使用したセッションのデータは常に、[Host Options]ダイアログの[Security]タブの[Encryption]ドロップダウンで指定されたキーの長さと暗号を使用して暗号化および復号化されます。
-AES-256ビット暗号化とVPN製品で使用されている暗号化との違いは何ですか？ AES-256ビット暗号化は、VPN製品で一般的に使用されています。 AES-256は、最も機密性の高い機密文書およびデータを保護するために安全性の高い環境で使用される最も一般的な対称アルゴリズムです。
-GO-Globalはエンドツーエンドの暗号化をサポートしていますか？ GO-Globalは、independent hostとクライアントの間でエンドツーエンドの暗号化を使用します。GO-Globalが1つ以上のdependent hostを持つrelay serverとして動作するように設定されている場合、GO-Globalはリンク暗号化を提供します。具体的には、relay server上のApplication Publishing Serviceは、クライアントから受信したデータを復号化し、そのデータをdependent hostに転送する前に再暗号化します。同様に、dependent hostから受信したデータを復号化し、クライアントに転送する前に再暗号化します。"/>
+高度な暗号化レベルのライセンスを使用する場合、高度な暗号化を有効にするためにSSL証明書が必要ですか? はい。GO-Globalには、強力な暗号の独自の実装はありません。OpenSSLの強力な暗号の実装を使用しています。
+SSLキー暗号強度(1028ビットまたは2048ビット)は、Admin Consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか? SSL証明書内の非対称鍵および鍵ファイル(1024ビットまたは2048ビット)は、暗号化および復号化に使用される対称鍵(56ビット、256ビットなど)の暗号化および復号化にのみ使用されます。選択した暗号を使用したセッションのデータは常に、[Host Options]ダイアログの[Security]タブの[Encryption]ドロップダウンで指定されたキーの長さと暗号を使用して暗号化および復号化されます。
+AES-256ビット暗号化とVPN製品で使用されている暗号化との違いは何ですか? AES-256ビット暗号化は、VPN製品で一般的に使用されています。 AES-256は、最も機密性の高い機密文書およびデータを保護するために安全性の高い環境で使用される最も一般的な対称アルゴリズムです。
+GO-Globalはエンドツーエンドの暗号化をサポートしていますか? GO-Globalは、independent hostとクライアントの間でエンドツーエンドの暗号化を使用します。GO-Globalが1つ以上のdependent hostを持つrelay serverとして動作するように設定されている場合、GO-Globalはリンク暗号化を提供します。具体的には、relay server上のApplication Publishing Serviceは、クライアントから受信したデータを復号化し、そのデータをdependent hostに転送する前に再暗号化します。同様に、dependent hostから受信したデータを復号化し、クライアントに転送する前に再暗号化します。"/>
 
 
 
@@ -164,7 +164,7 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -194,7 +194,7 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -1845,7 +1845,7 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行する</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行</a>
       
       
       
@@ -1857,13 +1857,13 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-Globalセッションで実行されます</a>
       
       
       
@@ -1875,7 +1875,7 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">IOSクライアントでのSSL証明書の使用</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">iOSクライアントでのSSL証明書の使用</a>
       
       
       
@@ -1887,19 +1887,19 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">IOSとの通信</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">iOSとの通信</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシとログオンスクリプトの進捗メッセージ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">手動によるサンドボックスホワイトリストエントリの設定</a>
       
       
       
@@ -1917,7 +1917,7 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションが終了したときにGO-Globalセッションを閉じることができない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションを終了したときにGO-Globalセッションが閉じることができない</a>
       
       
       
@@ -1930,6 +1930,18 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote208" href="/docs/go-global-for-windows-6tips/technote/technote208/">Androidデバイスでクラッシュレポートを生成する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote210" href="/docs/go-global-for-windows-6tips/technote/technote210/">ホストインストーラがインターネットインフォメーションサービス(IIS)を構成してGO-GLOBAL WEB APPをホストするのに失敗する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote211" href="/docs/go-global-for-windows-6tips/technote/technote211/">Universalプリンタドライバを使用して印刷できないユーザについて</a>
       
       
     </li>
@@ -2626,11 +2638,11 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
   <ul>
     <li>
       <ul>
-        <li><a href="#sslとtcpトランスポートの違いは何ですか">SSLとTCPトランスポートの違いは何ですか？</a></li>
-        <li><a href="#高度な暗号化レベルのライセンスを使用する場合高度な暗号化を有効にするためにssl証明書が必要ですか">高度な暗号化レベルのライセンスを使用する場合、高度な暗号化を有効にするためにSSL証明書が必要ですか？</a></li>
-        <li><a href="#sslキー暗号強度1028ビットまたは2048ビットはadmin-consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか">SSLキー暗号強度(1028ビットまたは2048ビット)は、Admin Consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか？</a></li>
-        <li><a href="#aes-256ビット暗号化とvpn製品で使用されている暗号化との違いは何ですか">AES-256ビット暗号化とVPN製品で使用されている暗号化との違いは何ですか？</a></li>
-        <li><a href="#go-globalはエンドツーエンドの暗号化をサポートしていますか">GO-Globalはエンドツーエンドの暗号化をサポートしていますか？</a></li>
+        <li><a href="#sslとtcpトランスポートの違いは何ですか"><strong>SSLとTCPトランスポートの違いは何ですか?</strong></a></li>
+        <li><a href="#高度な暗号化レベルのライセンスを使用する場合高度な暗号化を有効にするためにssl証明書が必要ですか"><strong>高度な暗号化レベルのライセンスを使用する場合、高度な暗号化を有効にするためにSSL証明書が必要ですか?</strong></a></li>
+        <li><a href="#sslキー暗号強度1028ビットまたは2048ビットはadmin-consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか"><strong>SSLキー暗号強度(1028ビットまたは2048ビット)は、Admin Consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか?</strong></a></li>
+        <li><a href="#aes-256ビット暗号化とvpn製品で使用されている暗号化との違いは何ですか"><strong>AES-256ビット暗号化とVPN製品で使用されている暗号化との違いは何ですか?</strong></a></li>
+        <li><a href="#go-globalはエンドツーエンドの暗号化をサポートしていますか"><strong>GO-Globalはエンドツーエンドの暗号化をサポートしていますか?</strong></a></li>
       </ul>
     </li>
   </ul>
@@ -2689,10 +2701,10 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
 	<h1>暗号化に関するFAQ</h1>
 	
 	<p>GO-Globalには暗号化機能があります。それは管理者が2つの異なる暗号化方法の1つを使用してGO-Globalホストとそのクライアントの間で転送されるデータを暗号化することを可能にします。</p>
-<p>管理者がAdmin ConsoleでTCP転送を選択すると、クライアントとホスト間で非対称RSAアルゴリズムを使用して56ビットのDESキーが交換されます。RSAキーは512ビットです。</p>
-<p>あるいは、管理者がAdmin ConsoleでSSLトランスポートを選択すると、GO-GlobalはOpenSSLを使用してキー交換を実行します。この場合、キーのビット長は、ホストコンピュータにインストールされている証明書によって決まります。GO-Globalは、最大2048ビットの長さの鍵を持つ証明書をサポートしています。GO-GlobalはSSLv2およびSSLv3プロトコルを無効にし、利用可能な最も高いTLSバージョンとの鍵交換をネゴシエートします。</p>
-<p>以下は、GO-Global暗号化に関してよくある質問です。</p>
-<h3 id="sslとtcpトランスポートの違いは何ですか">SSLとTCPトランスポートの違いは何ですか？</h3>
+<p>管理者がAdmin Consoleで <strong>TCP転送</strong> を選択すると、クライアントとホスト間で非対称RSAアルゴリズムを使用して56ビットのDESキーが交換されます。RSAキーは512ビットです。</p>
+<p>あるいは、管理者がAdmin Consoleで <strong>SSLトランスポート</strong> を選択すると、GO-GlobalはOpenSSLを使用してキー交換を実行します。この場合、キーのビット長は、ホストコンピュータにインストールされている証明書によって決まります。GO-Globalは、最大2048ビットの長さの鍵を持つ証明書をサポートしています。GO-GlobalはSSLv2およびSSLv3プロトコルを無効にし、利用可能な最も高いTLSバージョンとの鍵交換をネゴシエートします。</p>
+<p>以下は、 <strong>GO-Global暗号化に関してよくある質問</strong> です。</p>
+<h3 id="sslとtcpトランスポートの違いは何ですか"><strong>SSLとTCPトランスポートの違いは何ですか?</strong></h3>
 <p>主な違いは、SSLがMITM（Man-In-The-Middle）攻撃を防ぐのに対して、TCPトランスポートを使った56ビット暗号化は防げないことです。MITM攻撃、およびSSLがそれらをどのように防御するかを理解するために、オンラインの参考文献を参考にすることをお勧めします。</p>
 <p>二次的な、それほど重要ではない違いは、SSLトランスポートが選択されているときGO-GlobalがOpenSSLのデータ暗号化標準（DES）実装を使用してGO-Globalセッションのデータを暗号化することです。以下は、GO-GlobalのTCPおよびSSLトランスポートが選択されている場合の暗号化キーの交換方法とセッションのデータの暗号化方法の概要です。</p>
 <p>TCPトランスポートが選択されている場合、攻撃者はMITM攻撃を実行し、GO-Globalクライアントとホストの間で転送されるすべてのデータを復号化することが可能です。これを行うために、攻撃者はクライアントからの接続要求を傍受し、ホストになりすまします。その後、攻撃者はクライアントとの間で暗号化キーの交換を行い、その後クライアントが送信したすべてのデータを復号化することができます。攻撃を完了するために、攻撃者はホストへの接続を開き、クライアントになりすまします。攻撃者はホストとの暗号化キー交換を実行します。その後、攻撃者はホストが送信したすべてのデータを復号化できます。その後、攻撃者はクライアントとホストの間で双方向にデータを中継し、すべてのデータが暗号化されていないことを確認できます。</p>
@@ -2700,13 +2712,13 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
 <p>RSAアルゴリズムは、56ビット対称鍵を安全に暗号化する方法を提供しますが、それ自体では、クライアントが接続しようとしているコンピュータと直接通信していることを保証する方法は提供しません。たとえば、クライアントは、ホストまたはMITMのどちらから56ビット対称鍵を受信しているのかを判断できません。同様に、ホストは、56ビットの対称鍵をクライアントに送信しているのか、それともMITMに送信しているのかを判断できません。SSLはこの問題を解決し、クライアントとホストが56ビット対称鍵を交換するための安全な方法を提供します。</p>
 <p><img src="/images/9-205-1.png" alt="9-205-1"></p>
 <p>SSLトランスポートが選択されると、GO-GlobalはOpenSSLを使用してGO-Globalクライアントとホスト間の接続を確立します。OpenSSLでは、56ビット対称鍵の暗号化に使用される非対称公開鍵と秘密鍵は、それぞれSSL証明書とSSL鍵です。クライアントが接続すると、ホストは自分のSSL証明書(その公開鍵)をクライアントに送信します。証明書は、MITMによる改ざんを防ぐために署名されています。次に、クライアントは証明書を調べて、クライアントコンピュータが信頼している認証局(CA)によって発行されたものかどうかを確認します。証明書が有効であり、クライアントが信頼するCAによって発行されたものである場合、クライアントはMITMがないことを確認できます。次にOpenSSLは56ビットの対称鍵を生成し、それをホストの証明書(その公開鍵)を使用して暗号化し、暗号化された対称鍵をホストに送信します。その後、OpenSSLは56ビットの対称鍵を使用してGO-Globalセッションのデータを暗号化および復号化します。</p>
-<h3 id="高度な暗号化レベルのライセンスを使用する場合高度な暗号化を有効にするためにssl証明書が必要ですか">高度な暗号化レベルのライセンスを使用する場合、高度な暗号化を有効にするためにSSL証明書が必要ですか？</h3>
+<h3 id="高度な暗号化レベルのライセンスを使用する場合高度な暗号化を有効にするためにssl証明書が必要ですか"><strong>高度な暗号化レベルのライセンスを使用する場合、高度な暗号化を有効にするためにSSL証明書が必要ですか?</strong></h3>
 <p>はい。GO-Globalには、強力な暗号の独自の実装はありません。OpenSSLの強力な暗号の実装を使用しています。</p>
-<h3 id="sslキー暗号強度1028ビットまたは2048ビットはadmin-consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか">SSLキー暗号強度(1028ビットまたは2048ビット)は、Admin Consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか？</h3>
+<h3 id="sslキー暗号強度1028ビットまたは2048ビットはadmin-consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか"><strong>SSLキー暗号強度(1028ビットまたは2048ビット)は、Admin Consoleで指定されたセッション暗号化暗号レベルにどのように影響しますか?</strong></h3>
 <p>SSL証明書内の非対称鍵および鍵ファイル(1024ビットまたは2048ビット)は、暗号化および復号化に使用される対称鍵(56ビット、256ビットなど)の暗号化および復号化にのみ使用されます。選択した暗号を使用したセッションのデータは常に、[Host Options]ダイアログの[Security]タブの[Encryption]ドロップダウンで指定されたキーの長さと暗号を使用して暗号化および復号化されます。</p>
-<h3 id="aes-256ビット暗号化とvpn製品で使用されている暗号化との違いは何ですか">AES-256ビット暗号化とVPN製品で使用されている暗号化との違いは何ですか？</h3>
+<h3 id="aes-256ビット暗号化とvpn製品で使用されている暗号化との違いは何ですか"><strong>AES-256ビット暗号化とVPN製品で使用されている暗号化との違いは何ですか?</strong></h3>
 <p>AES-256ビット暗号化は、VPN製品で一般的に使用されています。 AES-256は、最も機密性の高い機密文書およびデータを保護するために安全性の高い環境で使用される最も一般的な対称アルゴリズムです。</p>
-<h3 id="go-globalはエンドツーエンドの暗号化をサポートしていますか">GO-Globalはエンドツーエンドの暗号化をサポートしていますか？</h3>
+<h3 id="go-globalはエンドツーエンドの暗号化をサポートしていますか"><strong>GO-Globalはエンドツーエンドの暗号化をサポートしていますか?</strong></h3>
 <p>GO-Globalは、independent hostとクライアントの間でエンドツーエンドの暗号化を使用します。GO-Globalが1つ以上のdependent hostを持つrelay serverとして動作するように設定されている場合、GO-Globalはリンク暗号化を提供します。具体的には、relay server上のApplication Publishing Serviceは、クライアントから受信したデータを復号化し、そのデータをdependent hostに転送する前に再暗号化します。同様に、dependent hostから受信したデータを復号化し、クライアントに転送する前に再暗号化します。</p>
 
 	
@@ -2818,13 +2830,25 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
       
     
   
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
 
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
         <a href="/docs/go-global-for-windows-6tips/technote/technote201/">クライアント印刷技術の概要</a>
       </div><div class="xPrevNextLink_next">
-        <a href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションが終了したときにGO-Globalセッションを閉じることができない</a>
+        <a href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションを終了したときにGO-Globalセッションが閉じることができない</a>
       </div></div>
   
 
@@ -2890,7 +2914,7 @@ GO-Globalはエンドツーエンドの暗号化をサポートしています�
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 25, 2020: <a  href="https://github.com//commit/57d34077db2d469cc5f325470055eef416f7d9ec">update0625 (57d34077)</a>
 </div>
 </div>
 

@@ -20,27 +20,27 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>グループポリシーとログオンスクリプトの進捗メッセージ | kitASP Docs</title><meta property="og:title" content="グループポリシーとログオンスクリプトの進捗メッセージ" />
-<meta property="og:description" content="グループポリシーが有効になっている場合、またはログオンスクリプトが実行されている場合は、ログオンプロセスが非常に早く行われるため、これらの操作に関連する進行状況メッセージがユーザーに表示されません。
-AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x00018481に変更すると、各起動メッセージが表示されてからさらに4秒が経過するため、グループポリシーとログオンスクリプトの進行状況メッセージがユーザーに表示されます。
- GO-Global Application Publishing Serviceを停止します。 レジストリエディタ(regedit.exe)を実行します。 レジストリエディタから、HKEY_LOCAL_MACHINEキーを展開します。 SessionStartupProgressDisplayキーを見つけます。[SOFTWARE\GraphOn\GO-Global\AppServer.] SessionStartupProgressDisplay値を18481に設定します。 レジストリエディタを閉じます。 GO-Global Application Publishing Serviceを起動します。  " />
+<title>グループポリシとログオンスクリプトの進捗メッセージ | kitASP Docs</title><meta property="og:title" content="グループポリシとログオンスクリプトの進捗メッセージ" />
+<meta property="og:description" content="グループポリシが有効になっている場合、またはログオンスクリプトが実行されている場合は、ログオンプロセスが非常に早く行われるため、これらの操作に関連する進行状況メッセージがユーザに表示されません。
+AppServer キーの下のレジストリ値 SessionStartupProgressDisplay を0x00018481に変更すると、各起動メッセージが表示されてからさらに4秒が経過するため、グループポリシーとログオンスクリプトの進行状況メッセージがユーザに表示されます。
+ GO-Global Application Publishing Service を停止します。 レジストリエディタ(regedit.exe)を実行します。 レジストリエディタから、 HKEY_LOCAL_MACHINE キーを展開します。 SessionStartupProgressDisplay キーを見つけます。SOFTWARE\GraphOn\GO-Global\AppServer SessionStartupProgressDisplay 値を18481に設定します。 レジストリエディタを閉じます。 GO-Global Application Publishing Service を起動します。  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global-for-windows-6tips/technote/technote168/" />
-<meta property="og:site_name" content="kitASP Docs" />
-<meta itemprop="name" content="グループポリシーとログオンスクリプトの進捗メッセージ">
-<meta itemprop="description" content="グループポリシーが有効になっている場合、またはログオンスクリプトが実行されている場合は、ログオンプロセスが非常に早く行われるため、これらの操作に関連する進行状況メッセージがユーザーに表示されません。
-AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x00018481に変更すると、各起動メッセージが表示されてからさらに4秒が経過するため、グループポリシーとログオンスクリプトの進行状況メッセージがユーザーに表示されます。
- GO-Global Application Publishing Serviceを停止します。 レジストリエディタ(regedit.exe)を実行します。 レジストリエディタから、HKEY_LOCAL_MACHINEキーを展開します。 SessionStartupProgressDisplayキーを見つけます。[SOFTWARE\GraphOn\GO-Global\AppServer.] SessionStartupProgressDisplay値を18481に設定します。 レジストリエディタを閉じます。 GO-Global Application Publishing Serviceを起動します。  ">
-
-<meta itemprop="wordCount" content="15">
+<meta property="article:modified_time" content="2020-06-25T18:07:48+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta itemprop="name" content="グループポリシとログオンスクリプトの進捗メッセージ">
+<meta itemprop="description" content="グループポリシが有効になっている場合、またはログオンスクリプトが実行されている場合は、ログオンプロセスが非常に早く行われるため、これらの操作に関連する進行状況メッセージがユーザに表示されません。
+AppServer キーの下のレジストリ値 SessionStartupProgressDisplay を0x00018481に変更すると、各起動メッセージが表示されてからさらに4秒が経過するため、グループポリシーとログオンスクリプトの進行状況メッセージがユーザに表示されます。
+ GO-Global Application Publishing Service を停止します。 レジストリエディタ(regedit.exe)を実行します。 レジストリエディタから、 HKEY_LOCAL_MACHINE キーを展開します。 SessionStartupProgressDisplay キーを見つけます。SOFTWARE\GraphOn\GO-Global\AppServer SessionStartupProgressDisplay 値を18481に設定します。 レジストリエディタを閉じます。 GO-Global Application Publishing Service を起動します。  ">
+<meta itemprop="dateModified" content="2020-06-25T18:07:48&#43;09:00" />
+<meta itemprop="wordCount" content="24">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="グループポリシーとログオンスクリプトの進捗メッセージ"/>
-<meta name="twitter:description" content="グループポリシーが有効になっている場合、またはログオンスクリプトが実行されている場合は、ログオンプロセスが非常に早く行われるため、これらの操作に関連する進行状況メッセージがユーザーに表示されません。
-AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x00018481に変更すると、各起動メッセージが表示されてからさらに4秒が経過するため、グループポリシーとログオンスクリプトの進行状況メッセージがユーザーに表示されます。
- GO-Global Application Publishing Serviceを停止します。 レジストリエディタ(regedit.exe)を実行します。 レジストリエディタから、HKEY_LOCAL_MACHINEキーを展開します。 SessionStartupProgressDisplayキーを見つけます。[SOFTWARE\GraphOn\GO-Global\AppServer.] SessionStartupProgressDisplay値を18481に設定します。 レジストリエディタを閉じます。 GO-Global Application Publishing Serviceを起動します。  "/>
+<meta name="twitter:title" content="グループポリシとログオンスクリプトの進捗メッセージ"/>
+<meta name="twitter:description" content="グループポリシが有効になっている場合、またはログオンスクリプトが実行されている場合は、ログオンプロセスが非常に早く行われるため、これらの操作に関連する進行状況メッセージがユーザに表示されません。
+AppServer キーの下のレジストリ値 SessionStartupProgressDisplay を0x00018481に変更すると、各起動メッセージが表示されてからさらに4秒が経過するため、グループポリシーとログオンスクリプトの進行状況メッセージがユーザに表示されます。
+ GO-Global Application Publishing Service を停止します。 レジストリエディタ(regedit.exe)を実行します。 レジストリエディタから、 HKEY_LOCAL_MACHINE キーを展開します。 SessionStartupProgressDisplay キーを見つけます。SOFTWARE\GraphOn\GO-Global\AppServer SessionStartupProgressDisplay 値を18481に設定します。 レジストリエディタを閉じます。 GO-Global Application Publishing Service を起動します。  "/>
 
 
 
@@ -61,7 +61,7 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
   crossorigin="anonymous"></script>
 
 
-    <title>グループポリシーとログオンスクリプトの進捗メッセージ | kitASP Docs</title>
+    <title>グループポリシとログオンスクリプトの進捗メッセージ | kitASP Docs</title>
   </head>
   <body class="td-page">
     <header>
@@ -131,7 +131,7 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -161,7 +161,7 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -1812,7 +1812,7 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行する</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行</a>
       
       
       
@@ -1824,13 +1824,13 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-Globalセッションで実行されます</a>
       
       
       
@@ -1842,7 +1842,7 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">IOSクライアントでのSSL証明書の使用</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">iOSクライアントでのSSL証明書の使用</a>
       
       
       
@@ -1854,19 +1854,19 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">IOSとの通信</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">iOSとの通信</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシとログオンスクリプトの進捗メッセージ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">手動によるサンドボックスホワイトリストエントリの設定</a>
       
       
       
@@ -1884,7 +1884,7 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションが終了したときにGO-Globalセッションを閉じることができない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションを終了したときにGO-Globalセッションが閉じることができない</a>
       
       
       
@@ -1897,6 +1897,18 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote208" href="/docs/go-global-for-windows-6tips/technote/technote208/">Androidデバイスでクラッシュレポートを生成する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote210" href="/docs/go-global-for-windows-6tips/technote/technote210/">ホストインストーラがインターネットインフォメーションサービス(IIS)を構成してGO-GLOBAL WEB APPをホストするのに失敗する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote211" href="/docs/go-global-for-windows-6tips/technote/technote211/">Universalプリンタドライバを使用して印刷できないユーザについて</a>
       
       
     </li>
@@ -2577,7 +2589,7 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
 
 
 <a href="https://github.com//edit/master/content/ja/docs/GO-Global%20for%20Windows%206TIPS/technote/technote168.md" target="_blank"><i class="fa fa-edit fa-fw"></i> ページの編集</a>
-<a href="https://github.com//issues/new?title=%e3%82%b0%e3%83%ab%e3%83%bc%e3%83%97%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc%e3%81%a8%e3%83%ad%e3%82%b0%e3%82%aa%e3%83%b3%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88%e3%81%ae%e9%80%b2%e6%8d%97%e3%83%a1%e3%83%83%e3%82%bb%e3%83%bc%e3%82%b8" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
+<a href="https://github.com//issues/new?title=%e3%82%b0%e3%83%ab%e3%83%bc%e3%83%97%e3%83%9d%e3%83%aa%e3%82%b7%e3%81%a8%e3%83%ad%e3%82%b0%e3%82%aa%e3%83%b3%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88%e3%81%ae%e9%80%b2%e6%8d%97%e3%83%a1%e3%83%83%e3%82%bb%e3%83%bc%e3%82%b8" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
 
 
 <a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> プロジェクトのissueを作成</a>
@@ -2631,7 +2643,7 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
+	<a href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシとログオンスクリプトの進捗メッセージ</a>
 </li>
 
 	</ol>
@@ -2639,18 +2651,18 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
 
             
 <div class="td-content">
-	<h1>グループポリシーとログオンスクリプトの進捗メッセージ</h1>
+	<h1>グループポリシとログオンスクリプトの進捗メッセージ</h1>
 	
-	<p>グループポリシーが有効になっている場合、またはログオンスクリプトが実行されている場合は、ログオンプロセスが非常に早く行われるため、これらの操作に関連する進行状況メッセージがユーザーに表示されません。</p>
-<p>AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x00018481に変更すると、各起動メッセージが表示されてからさらに4秒が経過するため、グループポリシーとログオンスクリプトの進行状況メッセージがユーザーに表示されます。</p>
+	<p>グループポリシが有効になっている場合、またはログオンスクリプトが実行されている場合は、ログオンプロセスが非常に早く行われるため、これらの操作に関連する進行状況メッセージがユーザに表示されません。</p>
+<p><strong>AppServer</strong> キーの下のレジストリ値 <strong>SessionStartupProgressDisplay</strong> を0x00018481に変更すると、各起動メッセージが表示されてからさらに4秒が経過するため、グループポリシーとログオンスクリプトの進行状況メッセージがユーザに表示されます。</p>
 <ol>
-<li>GO-Global Application Publishing Serviceを停止します。</li>
+<li><strong>GO-Global Application Publishing Service</strong> を停止します。</li>
 <li>レジストリエディタ(regedit.exe)を実行します。</li>
-<li>レジストリエディタから、HKEY_LOCAL_MACHINEキーを展開します。</li>
-<li>SessionStartupProgressDisplayキーを見つけます。[SOFTWARE\GraphOn\GO-Global\AppServer.]</li>
-<li>SessionStartupProgressDisplay値を18481に設定します。</li>
+<li>レジストリエディタから、 <strong>HKEY_LOCAL_MACHINE</strong> キーを展開します。</li>
+<li><strong>SessionStartupProgressDisplay</strong> キーを見つけます。<code>SOFTWARE\GraphOn\GO-Global\AppServer</code></li>
+<li><strong>SessionStartupProgressDisplay</strong> 値を18481に設定します。</li>
 <li>レジストリエディタを閉じます。</li>
-<li>GO-Global Application Publishing Serviceを起動します。</li>
+<li><strong>GO-Global Application Publishing Service</strong> を起動します。</li>
 </ol>
 
 	
@@ -2759,13 +2771,25 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
       
     
   
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
 
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
-        <a href="/docs/go-global-for-windows-6tips/technote/technote167/">IOSとの通信</a>
+        <a href="/docs/go-global-for-windows-6tips/technote/technote167/">iOSとの通信</a>
       </div><div class="xPrevNextLink_next">
-        <a href="/docs/go-global-for-windows-6tips/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
+        <a href="/docs/go-global-for-windows-6tips/technote/technote179/">手動によるサンドボックスホワイトリストエントリの設定</a>
       </div></div>
   
 
@@ -2831,7 +2855,7 @@ AppServerキーの下のレジストリ値SessionStartupProgressDisplayを0x0001
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 25, 2020: <a  href="https://github.com//commit/57d34077db2d469cc5f325470055eef416f7d9ec">update0625 (57d34077)</a>
 </div>
 </div>
 

@@ -7,7 +7,7 @@ weight = 7
 本項目の設定は推奨設定ではございませんのでご注意ください。
 {{% /alert %}}
 
-1. When the Application Publishing Service (APS) starts up on a relay server, it listens for connections on the port specified in the Admin Guide. Both clients and dependent application servers connect to the relay server using this port.
+1. When the **Application Publishing Service** (APS) starts up on a relay server, it listens for connections on the port specified in the Admin Guide. Both clients and dependent application servers connect to the relay server using this port.
 2. The security settings specified in the Admin Console (e.g., SSL, encryption, etc.) are used for all connections to the relay server with one exception. Connections made from the relay server itself (i.e., from the Admin Console running on the relay server) use the TCP transport regardless of what transport mode is set in the Admin Console.
 3. The relay server only accepts connections; it does not make any outgoing connections. For example, it does not open connections to dependent application servers. As such, no ports have to be opened on the internal firewall. This is a key aspect of the design.
 4. When the APS starts on a dependent application server, the dependent application server opens a connection to the APS running on its associated relay server and registers itself with the relay server.

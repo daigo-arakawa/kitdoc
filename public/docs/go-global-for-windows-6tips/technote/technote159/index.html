@@ -22,22 +22,22 @@
 
 <title>クライアントファイルキャッシュの期限 | kitASP Docs</title><meta property="og:title" content="クライアントファイルキャッシュの期限" />
 <meta property="og:description" content="デフォルトでは、GO-Globalはファイルの内容をキャッシュし、60秒ごとに変更をチェックします。ファイルがGO-Globalの外部でローカルに変更されていて、60秒が経過する前にファイルが閉じられると、変更はGO-Globalに登録されません。DefaultWorkspaceProperties.xmlファイルの2つのプロパティを編集して、クライアントファイルのキャッシュタイムアウトを変更できます。
- **fileCacheAttribTimeout:**GO-Globalがファイル属性を無効にするまでのタイムアウト(ミリ秒) **fileCacheDirListTimeout:**GO-Globalがフォルダリストを無効にするまでのタイムアウト(ミリ秒)  fileCachAttribTimeoutおよびfileCacheDirListTimeoutを設定する方法  次のディレクトリでDefaultWorkspaceProperties.xmlファイルを見つけます。C:\ProgramData\GraphOn ワードパッドでDefaultWorkspaceProperties.xmlを開き、次のセクションを見つけます  &lt;property id=&quot;fileCacheAttribTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;&lt;property id=&quot;fileCacheDirListTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;値に必要なミリ秒数を入力します。(この値は1以上の整数でなければなりません。両方のプロパティーのデフォルト値は60000です。)  " />
+ fileCacheAttribTimeout: GO-Globalがファイル属性を無効にするまでのタイムアウト(ミリ秒) fileCacheDirListTimeout: GO-Globalがフォルダリストを無効にするまでのタイムアウト(ミリ秒)  fileCachAttribTimeoutおよびfileCacheDirListTimeoutを設定する方法  次のディレクトリで DefaultWorkspaceProperties.xml ファイルを見つけます。C:\ProgramData\GraphOn ワードパッドで DefaultWorkspaceProperties.xml を開き、次のセクションを見つけます  &lt;property id=&quot;fileCacheAttribTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;&lt;property id=&quot;fileCacheDirListTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;値に必要なミリ秒数を入力します(この値は1以上の整数でなければなりません。両方のプロパティーのデフォルト値は60000です)。  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global-for-windows-6tips/technote/technote159/" />
-<meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-25T18:07:48+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="クライアントファイルキャッシュの期限">
 <meta itemprop="description" content="デフォルトでは、GO-Globalはファイルの内容をキャッシュし、60秒ごとに変更をチェックします。ファイルがGO-Globalの外部でローカルに変更されていて、60秒が経過する前にファイルが閉じられると、変更はGO-Globalに登録されません。DefaultWorkspaceProperties.xmlファイルの2つのプロパティを編集して、クライアントファイルのキャッシュタイムアウトを変更できます。
- **fileCacheAttribTimeout:**GO-Globalがファイル属性を無効にするまでのタイムアウト(ミリ秒) **fileCacheDirListTimeout:**GO-Globalがフォルダリストを無効にするまでのタイムアウト(ミリ秒)  fileCachAttribTimeoutおよびfileCacheDirListTimeoutを設定する方法  次のディレクトリでDefaultWorkspaceProperties.xmlファイルを見つけます。C:\ProgramData\GraphOn ワードパッドでDefaultWorkspaceProperties.xmlを開き、次のセクションを見つけます  &lt;property id=&quot;fileCacheAttribTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;&lt;property id=&quot;fileCacheDirListTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;値に必要なミリ秒数を入力します。(この値は1以上の整数でなければなりません。両方のプロパティーのデフォルト値は60000です。)  ">
-
-<meta itemprop="wordCount" content="19">
+ fileCacheAttribTimeout: GO-Globalがファイル属性を無効にするまでのタイムアウト(ミリ秒) fileCacheDirListTimeout: GO-Globalがフォルダリストを無効にするまでのタイムアウト(ミリ秒)  fileCachAttribTimeoutおよびfileCacheDirListTimeoutを設定する方法  次のディレクトリで DefaultWorkspaceProperties.xml ファイルを見つけます。C:\ProgramData\GraphOn ワードパッドで DefaultWorkspaceProperties.xml を開き、次のセクションを見つけます  &lt;property id=&quot;fileCacheAttribTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;&lt;property id=&quot;fileCacheDirListTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;値に必要なミリ秒数を入力します(この値は1以上の整数でなければなりません。両方のプロパティーのデフォルト値は60000です)。  ">
+<meta itemprop="dateModified" content="2020-06-25T18:07:48&#43;09:00" />
+<meta itemprop="wordCount" content="25">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="クライアントファイルキャッシュの期限"/>
 <meta name="twitter:description" content="デフォルトでは、GO-Globalはファイルの内容をキャッシュし、60秒ごとに変更をチェックします。ファイルがGO-Globalの外部でローカルに変更されていて、60秒が経過する前にファイルが閉じられると、変更はGO-Globalに登録されません。DefaultWorkspaceProperties.xmlファイルの2つのプロパティを編集して、クライアントファイルのキャッシュタイムアウトを変更できます。
- **fileCacheAttribTimeout:**GO-Globalがファイル属性を無効にするまでのタイムアウト(ミリ秒) **fileCacheDirListTimeout:**GO-Globalがフォルダリストを無効にするまでのタイムアウト(ミリ秒)  fileCachAttribTimeoutおよびfileCacheDirListTimeoutを設定する方法  次のディレクトリでDefaultWorkspaceProperties.xmlファイルを見つけます。C:\ProgramData\GraphOn ワードパッドでDefaultWorkspaceProperties.xmlを開き、次のセクションを見つけます  &lt;property id=&quot;fileCacheAttribTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;&lt;property id=&quot;fileCacheDirListTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;値に必要なミリ秒数を入力します。(この値は1以上の整数でなければなりません。両方のプロパティーのデフォルト値は60000です。)  "/>
+ fileCacheAttribTimeout: GO-Globalがファイル属性を無効にするまでのタイムアウト(ミリ秒) fileCacheDirListTimeout: GO-Globalがフォルダリストを無効にするまでのタイムアウト(ミリ秒)  fileCachAttribTimeoutおよびfileCacheDirListTimeoutを設定する方法  次のディレクトリで DefaultWorkspaceProperties.xml ファイルを見つけます。C:\ProgramData\GraphOn ワードパッドで DefaultWorkspaceProperties.xml を開き、次のセクションを見つけます  &lt;property id=&quot;fileCacheAttribTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;&lt;property id=&quot;fileCacheDirListTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;&lt;value&gt;60000&lt;/value&gt;&lt;/property&gt;値に必要なミリ秒数を入力します(この値は1以上の整数でなければなりません。両方のプロパティーのデフォルト値は60000です)。  "/>
 
 
 
@@ -128,7 +128,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -158,7 +158,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -1809,7 +1809,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行する</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行</a>
       
       
       
@@ -1821,13 +1821,13 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-Globalセッションで実行されます</a>
       
       
       
@@ -1839,7 +1839,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">IOSクライアントでのSSL証明書の使用</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">iOSクライアントでのSSL証明書の使用</a>
       
       
       
@@ -1851,19 +1851,19 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">IOSとの通信</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">iOSとの通信</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシとログオンスクリプトの進捗メッセージ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">手動によるサンドボックスホワイトリストエントリの設定</a>
       
       
       
@@ -1881,7 +1881,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションが終了したときにGO-Globalセッションを閉じることができない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションを終了したときにGO-Globalセッションが閉じることができない</a>
       
       
       
@@ -1894,6 +1894,18 @@
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote208" href="/docs/go-global-for-windows-6tips/technote/technote208/">Androidデバイスでクラッシュレポートを生成する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote210" href="/docs/go-global-for-windows-6tips/technote/technote210/">ホストインストーラがインターネットインフォメーションサービス(IIS)を構成してGO-GLOBAL WEB APPをホストするのに失敗する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote211" href="/docs/go-global-for-windows-6tips/technote/technote211/">Universalプリンタドライバを使用して印刷できないユーザについて</a>
       
       
     </li>
@@ -2590,7 +2602,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#filecachattribtimeoutおよびfilecachedirlisttimeoutを設定する方法">fileCachAttribTimeoutおよびfileCacheDirListTimeoutを設定する方法</a></li>
+        <li><a href="#filecachattribtimeoutおよびfilecachedirlisttimeoutを設定する方法"><strong>fileCachAttribTimeoutおよびfileCacheDirListTimeoutを設定する方法</strong></a></li>
       </ul>
     </li>
   </ul>
@@ -2650,13 +2662,13 @@
 	
 	<p>デフォルトでは、GO-Globalはファイルの内容をキャッシュし、60秒ごとに変更をチェックします。ファイルがGO-Globalの外部でローカルに変更されていて、60秒が経過する前にファイルが閉じられると、変更はGO-Globalに登録されません。DefaultWorkspaceProperties.xmlファイルの2つのプロパティを編集して、クライアントファイルのキャッシュタイムアウトを変更できます。</p>
 <ul>
-<li>**fileCacheAttribTimeout:**GO-Globalがファイル属性を無効にするまでのタイムアウト(ミリ秒)</li>
-<li>**fileCacheDirListTimeout:**GO-Globalがフォルダリストを無効にするまでのタイムアウト(ミリ秒)</li>
+<li><strong>fileCacheAttribTimeout:</strong> GO-Globalがファイル属性を無効にするまでのタイムアウト(ミリ秒)</li>
+<li><strong>fileCacheDirListTimeout:</strong> GO-Globalがフォルダリストを無効にするまでのタイムアウト(ミリ秒)</li>
 </ul>
-<h3 id="filecachattribtimeoutおよびfilecachedirlisttimeoutを設定する方法">fileCachAttribTimeoutおよびfileCacheDirListTimeoutを設定する方法</h3>
+<h3 id="filecachattribtimeoutおよびfilecachedirlisttimeoutを設定する方法"><strong>fileCachAttribTimeoutおよびfileCacheDirListTimeoutを設定する方法</strong></h3>
 <ol>
-<li>次のディレクトリでDefaultWorkspaceProperties.xmlファイルを見つけます。C:\ProgramData\GraphOn</li>
-<li>ワードパッドでDefaultWorkspaceProperties.xmlを開き、次のセクションを見つけます</li>
+<li>次のディレクトリで <strong>DefaultWorkspaceProperties.xml</strong> ファイルを見つけます。<code>C:\ProgramData\GraphOn</code></li>
+<li>ワードパッドで <strong>DefaultWorkspaceProperties.xml</strong> を開き、次のセクションを見つけます</li>
 </ol>
 <pre><code>&lt;property id=&quot;fileCacheAttribTimeout&quot; group=&quot;ClientAccess&quot; type=&quot;UINT32&quot;&gt;
 &lt;value&gt;60000&lt;/value&gt;
@@ -2665,7 +2677,7 @@
 &lt;value&gt;60000&lt;/value&gt;
 &lt;/property&gt;
 </code></pre><ol start="3">
-<li>値に必要なミリ秒数を入力します。(この値は1以上の整数でなければなりません。両方のプロパティーのデフォルト値は60000です。)</li>
+<li>値に必要なミリ秒数を入力します(この値は1以上の整数でなければなりません。両方のプロパティーのデフォルト値は60000です)。</li>
 </ol>
 
 	
@@ -2712,6 +2724,18 @@
         
           
           
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
         
       
     
@@ -2774,9 +2798,9 @@
   
 
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
-        <a href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</a>
+        <a href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-Globalセッションで実行されます</a>
       </div><div class="xPrevNextLink_next">
-        <a href="/docs/go-global-for-windows-6tips/technote/technote163/">IOSクライアントでのSSL証明書の使用</a>
+        <a href="/docs/go-global-for-windows-6tips/technote/technote163/">iOSクライアントでのSSL証明書の使用</a>
       </div></div>
   
 
@@ -2842,7 +2866,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 25, 2020: <a  href="https://github.com//commit/57d34077db2d469cc5f325470055eef416f7d9ec">update0625 (57d34077)</a>
 </div>
 </div>
 

@@ -25,11 +25,11 @@
 iOSクライアントにチェーン全体を提供するサーバ証明書を作成する方法  証明書チェーンに含まれるすべての.crtファイルと、GO-Globalホストで使用されている.keyファイルを取得します。 .crtとすべての中間およびルート.crtファイルを連結します。(次のようにそれらを単一のファイルに結合します：test_server.crt &#43; intermediate.crt &#43; root.crt server.crt)  参照0個以上の中間ファイルと1個以上のルートファイルが存在する場合があります。.crtファイルが自己署名されている場合、.crtファイルの名前をserver.crtに変更するだけです。手順1のキーファイルの名前をserver.keyに変更して、新しく作成したserver.crtファイルと一致するようにします。 これらの2つのファイルをGO-Globalホスト(c:\Dataなど)にコピーします。 Admin Consoleを起動します。[ツール|ホストオプション|セキュリティ]タブをクリックします。 トランスポートをSSLに変更し、暗号化ライセンスが高い場合は、暗号化レベルを256ビットAESに上げます。そうでない場合は、56ビットのままにします。 c:\dataでSSL証明書server.crtを参照し、[OK]をクリックします。同じプレフィックスの.crtファイルと.keyファイルがある場合、この時点でエラーメッセージは表示されません。 テスト目的で接続が安全な場合にユーザに通知を有効にします。 [OK]をクリックします。 iOSデバイスからGO-Globalセッションを開始します。  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global6/technote/technote163/" />
-<meta property="article:modified_time" content="2020-05-26T13:46:18+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-25T18:07:48+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="IOSクライアントでのSSL証明書の使用">
 <meta itemprop="description" content="iOSクライアントがサーバ証明書を信頼するためには、中間証明書とすべてのルート証明書を含む、SSL証明書チェーン全体を信頼できなければなりません。
 iOSクライアントにチェーン全体を提供するサーバ証明書を作成する方法  証明書チェーンに含まれるすべての.crtファイルと、GO-Globalホストで使用されている.keyファイルを取得します。 .crtとすべての中間およびルート.crtファイルを連結します。(次のようにそれらを単一のファイルに結合します：test_server.crt &#43; intermediate.crt &#43; root.crt server.crt)  参照0個以上の中間ファイルと1個以上のルートファイルが存在する場合があります。.crtファイルが自己署名されている場合、.crtファイルの名前をserver.crtに変更するだけです。手順1のキーファイルの名前をserver.keyに変更して、新しく作成したserver.crtファイルと一致するようにします。 これらの2つのファイルをGO-Globalホスト(c:\Dataなど)にコピーします。 Admin Consoleを起動します。[ツール|ホストオプション|セキュリティ]タブをクリックします。 トランスポートをSSLに変更し、暗号化ライセンスが高い場合は、暗号化レベルを256ビットAESに上げます。そうでない場合は、56ビットのままにします。 c:\dataでSSL証明書server.crtを参照し、[OK]をクリックします。同じプレフィックスの.crtファイルと.keyファイルがある場合、この時点でエラーメッセージは表示されません。 テスト目的で接続が安全な場合にユーザに通知を有効にします。 [OK]をクリックします。 iOSデバイスからGO-Globalセッションを開始します。  ">
-<meta itemprop="dateModified" content="2020-05-26T13:46:18&#43;09:00" />
+<meta itemprop="dateModified" content="2020-06-25T18:07:48&#43;09:00" />
 <meta itemprop="wordCount" content="20">
 
 
@@ -128,7 +128,7 @@ iOSクライアントにチェーン全体を提供するサーバ証明書を�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -158,7 +158,7 @@ iOSクライアントにチェーン全体を提供するサーバ証明書を�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -1809,7 +1809,7 @@ iOSクライアントにチェーン全体を提供するサーバ証明書を�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行する</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行</a>
       
       
       
@@ -1821,13 +1821,13 @@ iOSクライアントにチェーン全体を提供するサーバ証明書を�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-Globalセッションで実行されます</a>
       
       
       
@@ -1839,7 +1839,7 @@ iOSクライアントにチェーン全体を提供するサーバ証明書を�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">IOSクライアントでのSSL証明書の使用</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">iOSクライアントでのSSL証明書の使用</a>
       
       
       
@@ -1851,19 +1851,19 @@ iOSクライアントにチェーン全体を提供するサーバ証明書を�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">IOSとの通信</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">iOSとの通信</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシとログオンスクリプトの進捗メッセージ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">手動によるサンドボックスホワイトリストエントリの設定</a>
       
       
       
@@ -1881,7 +1881,7 @@ iOSクライアントにチェーン全体を提供するサーバ証明書を�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションが終了したときにGO-Globalセッションを閉じることができない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションを終了したときにGO-Globalセッションが閉じることができない</a>
       
       
       
@@ -1894,6 +1894,18 @@ iOSクライアントにチェーン全体を提供するサーバ証明書を�
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote208" href="/docs/go-global-for-windows-6tips/technote/technote208/">Androidデバイスでクラッシュレポートを生成する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote210" href="/docs/go-global-for-windows-6tips/technote/technote210/">ホストインストーラがインターネットインフォメーションサービス(IIS)を構成してGO-GLOBAL WEB APPをホストするのに失敗する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote211" href="/docs/go-global-for-windows-6tips/technote/technote211/">Universalプリンタドライバを使用して印刷できないユーザについて</a>
       
       
     </li>
@@ -2849,7 +2861,7 @@ iOSクライアントにチェーン全体を提供するサーバ証明書を�
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 May 26, 2020: <a  href="https://github.com//commit/50889830a56565416c75a2ac0721eef7ee0cf423">gg5 (50889830)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 25, 2020: <a  href="https://github.com//commit/57d34077db2d469cc5f325470055eef416f7d9ec">update0625 (57d34077)</a>
 </div>
 </div>
 

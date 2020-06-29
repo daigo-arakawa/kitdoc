@@ -20,63 +20,63 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない | kitASP Docs</title><meta property="og:title" content="一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない" />
+<title>いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない | kitASP Docs</title><meta property="og:title" content="いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない" />
 <meta property="og:description" content="いくつかのWindowsアプリケーションは、Windowsシェルによって提供される機能およびサービス(例えばDDE)を使用する(explorer.exe)。ほとんどのアプリケーションはWindowsシェルなしで実行されますが、Windowsシェルがアプリケーションと同じセッションで実行されていないと、起動に失敗したり、正しく実行されなかったりすることがあります。デフォルトでは、WindowsシェルはGO-Globalセッションでは動作しません。アプリケーションがGO-Globalセッションで起動または正常に動作しない場合、アプリケーションはシェルに依存している可能性があります。
 解決策  GO-Globalセッションのバックグラウンドで実行するようにWindowsシェル(explorer.exe)を登録します。
-a. レジストリエディタから、HKEY_LOCAL_MACHINEキーを展開します。
+a. レジストリエディタから、 HKEY_LOCAL_MACHINE キーを展開します。
 b. \SOFTWARE\GraphOn\Bridges\1.0.0\System\Run\LocalMachineを展開します。
-c. DWORD値を作成し、explorer.exeという名前を付けます。値を0に設定してください。
+c. DWORD値を作成し、 explorer.exe という名前を付けます。値を0に設定してください。
  explorer.exeおよびexplorer.exeが開始するすべての子プロセスをシステムプロセスとして登録し、最後に公開されたアプリケーションが閉じられるとGO-Globalセッションが終了するようにします。
 a. GO-Globalセッションを開始し、GO-Globalホストにログオンします。
-b. Admin Consoleの[Session]タブで、セッション内でexplorer.exeが実行されていることを確認します。シェルのユーザインターフェイスがどれも表示されていないことを確認します(シェルの一部の要素は、新しいユーザが初めてホストにログオンしたときに表示されることがあります)。
-c. HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\Bridges\1.0.0\System\Processesを展開します。
-d. DWORD値を作成し、explorer.exeという名前を付けます。explorer.exeによって起動されたプロセスについてアドミンコンソールを確認し、これらの各プロセスに対してDWORD値を作成します。システムプロセスには、次のような実行可能ファイルが含まれる場合があります。
+b. Admin Consoleの [Session] タブで、セッション内でexplorer.exeが実行されていることを確認します。シェルのユーザインターフェイスがどれも表示されていないことを確認します(シェルの一部の要素は、新しいユーザが初めてホストにログオンしたときに表示されることがあります)。
+c. `HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\Bridges\1.0.0\System\Processes@を展開します。
+d. DWORD値を作成し、explorer.exeという名前を付けます。 explorer.exe によって起動されたプロセスについてアドミンコンソールを確認し、これらの各プロセスに対してDWORD値を作成します。システムプロセスには、次のような実行可能ファイルが含まれる場合があります。
   ALMon.exesqlmangr.exesoffice.exereader_sl.exeacrobat_sl.exe
 e. これらのプロセスの値を0に設定してください。
-f. プログラムウィンドウを閉じます。GO-Globalセッションも終了することを確認してください。
+f. Program Windowsを閉じます。GO-Globalセッションも終了することを確認してください。
 参照GO-Globalセッションのバックグラウンドで実行するようにWindowsシェルを登録すると、かなりのオーバーヘッドが追加されます。セッションの開始に時間がかかり、より多くのメモリを消費します。シェルの起動時に実行するように登録されている他のプロセスによっても、追加のオーバーヘッドが発生する可能性があります。
 不要なプロセスがユーザーのスタートアップフォルダまたはレジストリのさまざまなRunコマンドの下に登録されないように注意する必要があります(例:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run)。
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/go-global-for-windows-6tips/technote/technote46/" />
-<meta property="og:site_name" content="kitASP Docs" />
-<meta itemprop="name" content="一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない">
+<meta property="article:modified_time" content="2020-06-25T18:07:48+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta itemprop="name" content="いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない">
 <meta itemprop="description" content="いくつかのWindowsアプリケーションは、Windowsシェルによって提供される機能およびサービス(例えばDDE)を使用する(explorer.exe)。ほとんどのアプリケーションはWindowsシェルなしで実行されますが、Windowsシェルがアプリケーションと同じセッションで実行されていないと、起動に失敗したり、正しく実行されなかったりすることがあります。デフォルトでは、WindowsシェルはGO-Globalセッションでは動作しません。アプリケーションがGO-Globalセッションで起動または正常に動作しない場合、アプリケーションはシェルに依存している可能性があります。
 解決策  GO-Globalセッションのバックグラウンドで実行するようにWindowsシェル(explorer.exe)を登録します。
-a. レジストリエディタから、HKEY_LOCAL_MACHINEキーを展開します。
+a. レジストリエディタから、 HKEY_LOCAL_MACHINE キーを展開します。
 b. \SOFTWARE\GraphOn\Bridges\1.0.0\System\Run\LocalMachineを展開します。
-c. DWORD値を作成し、explorer.exeという名前を付けます。値を0に設定してください。
+c. DWORD値を作成し、 explorer.exe という名前を付けます。値を0に設定してください。
  explorer.exeおよびexplorer.exeが開始するすべての子プロセスをシステムプロセスとして登録し、最後に公開されたアプリケーションが閉じられるとGO-Globalセッションが終了するようにします。
 a. GO-Globalセッションを開始し、GO-Globalホストにログオンします。
-b. Admin Consoleの[Session]タブで、セッション内でexplorer.exeが実行されていることを確認します。シェルのユーザインターフェイスがどれも表示されていないことを確認します(シェルの一部の要素は、新しいユーザが初めてホストにログオンしたときに表示されることがあります)。
-c. HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\Bridges\1.0.0\System\Processesを展開します。
-d. DWORD値を作成し、explorer.exeという名前を付けます。explorer.exeによって起動されたプロセスについてアドミンコンソールを確認し、これらの各プロセスに対してDWORD値を作成します。システムプロセスには、次のような実行可能ファイルが含まれる場合があります。
+b. Admin Consoleの [Session] タブで、セッション内でexplorer.exeが実行されていることを確認します。シェルのユーザインターフェイスがどれも表示されていないことを確認します(シェルの一部の要素は、新しいユーザが初めてホストにログオンしたときに表示されることがあります)。
+c. `HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\Bridges\1.0.0\System\Processes@を展開します。
+d. DWORD値を作成し、explorer.exeという名前を付けます。 explorer.exe によって起動されたプロセスについてアドミンコンソールを確認し、これらの各プロセスに対してDWORD値を作成します。システムプロセスには、次のような実行可能ファイルが含まれる場合があります。
   ALMon.exesqlmangr.exesoffice.exereader_sl.exeacrobat_sl.exe
 e. これらのプロセスの値を0に設定してください。
-f. プログラムウィンドウを閉じます。GO-Globalセッションも終了することを確認してください。
+f. Program Windowsを閉じます。GO-Globalセッションも終了することを確認してください。
 参照GO-Globalセッションのバックグラウンドで実行するようにWindowsシェルを登録すると、かなりのオーバーヘッドが追加されます。セッションの開始に時間がかかり、より多くのメモリを消費します。シェルの起動時に実行するように登録されている他のプロセスによっても、追加のオーバーヘッドが発生する可能性があります。
 不要なプロセスがユーザーのスタートアップフォルダまたはレジストリのさまざまなRunコマンドの下に登録されないように注意する必要があります(例:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run)。
 ">
-
-<meta itemprop="wordCount" content="31">
+<meta itemprop="dateModified" content="2020-06-25T18:07:48&#43;09:00" />
+<meta itemprop="wordCount" content="40">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない"/>
+<meta name="twitter:title" content="いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない"/>
 <meta name="twitter:description" content="いくつかのWindowsアプリケーションは、Windowsシェルによって提供される機能およびサービス(例えばDDE)を使用する(explorer.exe)。ほとんどのアプリケーションはWindowsシェルなしで実行されますが、Windowsシェルがアプリケーションと同じセッションで実行されていないと、起動に失敗したり、正しく実行されなかったりすることがあります。デフォルトでは、WindowsシェルはGO-Globalセッションでは動作しません。アプリケーションがGO-Globalセッションで起動または正常に動作しない場合、アプリケーションはシェルに依存している可能性があります。
 解決策  GO-Globalセッションのバックグラウンドで実行するようにWindowsシェル(explorer.exe)を登録します。
-a. レジストリエディタから、HKEY_LOCAL_MACHINEキーを展開します。
+a. レジストリエディタから、 HKEY_LOCAL_MACHINE キーを展開します。
 b. \SOFTWARE\GraphOn\Bridges\1.0.0\System\Run\LocalMachineを展開します。
-c. DWORD値を作成し、explorer.exeという名前を付けます。値を0に設定してください。
+c. DWORD値を作成し、 explorer.exe という名前を付けます。値を0に設定してください。
  explorer.exeおよびexplorer.exeが開始するすべての子プロセスをシステムプロセスとして登録し、最後に公開されたアプリケーションが閉じられるとGO-Globalセッションが終了するようにします。
 a. GO-Globalセッションを開始し、GO-Globalホストにログオンします。
-b. Admin Consoleの[Session]タブで、セッション内でexplorer.exeが実行されていることを確認します。シェルのユーザインターフェイスがどれも表示されていないことを確認します(シェルの一部の要素は、新しいユーザが初めてホストにログオンしたときに表示されることがあります)。
-c. HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\Bridges\1.0.0\System\Processesを展開します。
-d. DWORD値を作成し、explorer.exeという名前を付けます。explorer.exeによって起動されたプロセスについてアドミンコンソールを確認し、これらの各プロセスに対してDWORD値を作成します。システムプロセスには、次のような実行可能ファイルが含まれる場合があります。
+b. Admin Consoleの [Session] タブで、セッション内でexplorer.exeが実行されていることを確認します。シェルのユーザインターフェイスがどれも表示されていないことを確認します(シェルの一部の要素は、新しいユーザが初めてホストにログオンしたときに表示されることがあります)。
+c. `HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\Bridges\1.0.0\System\Processes@を展開します。
+d. DWORD値を作成し、explorer.exeという名前を付けます。 explorer.exe によって起動されたプロセスについてアドミンコンソールを確認し、これらの各プロセスに対してDWORD値を作成します。システムプロセスには、次のような実行可能ファイルが含まれる場合があります。
   ALMon.exesqlmangr.exesoffice.exereader_sl.exeacrobat_sl.exe
 e. これらのプロセスの値を0に設定してください。
-f. プログラムウィンドウを閉じます。GO-Globalセッションも終了することを確認してください。
+f. Program Windowsを閉じます。GO-Globalセッションも終了することを確認してください。
 参照GO-Globalセッションのバックグラウンドで実行するようにWindowsシェルを登録すると、かなりのオーバーヘッドが追加されます。セッションの開始に時間がかかり、より多くのメモリを消費します。シェルの起動時に実行するように登録されている他のプロセスによっても、追加のオーバーヘッドが発生する可能性があります。
 不要なプロセスがユーザーのスタートアップフォルダまたはレジストリのさまざまなRunコマンドの下に登録されないように注意する必要があります(例:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run)。
 "/>
@@ -100,7 +100,7 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
   crossorigin="anonymous"></script>
 
 
-    <title>一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない | kitASP Docs</title>
+    <title>いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない | kitASP Docs</title>
   </head>
   <body class="td-page">
     <header>
@@ -170,7 +170,7 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -200,7 +200,7 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.8094801c909bf58f4c7792eb5123206f2206379b6b90f931297cf61148fedb0e4f47bf16d4c2c32dd2b9277a35f1f32dd821caf1a68255f05b7ff4b5f607d98a.json"
+  data-offline-search-index-json-src="/offline-search-index.3120d81871ff80e9813089f77a17d542537e53647f1f06383f92b3cf88eee63cae37e68c4e7dc533557cfe9c49c299f91a63da9de278f794f0e0ddcddbe387d9.json"
   data-offline-search-base-href="/"
 >
 
@@ -1851,7 +1851,7 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行する</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote25" href="/docs/go-global-for-windows-6tips/technote/technote25/">クライアントプリンタの設定後にスクリプトを実行</a>
       
       
       
@@ -1863,13 +1863,13 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsgo-global-for-windows-6tipstechnotetechnote46" href="/docs/go-global-for-windows-6tips/technote/technote46/">いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote128" href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-Globalセッションで実行されます</a>
       
       
       
@@ -1881,7 +1881,7 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">IOSクライアントでのSSL証明書の使用</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote163" href="/docs/go-global-for-windows-6tips/technote/technote163/">iOSクライアントでのSSL証明書の使用</a>
       
       
       
@@ -1893,19 +1893,19 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">IOSとの通信</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote167" href="/docs/go-global-for-windows-6tips/technote/technote167/">iOSとの通信</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシーとログオンスクリプトの進捗メッセージ</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote168" href="/docs/go-global-for-windows-6tips/technote/technote168/">グループポリシとログオンスクリプトの進捗メッセージ</a>
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">サンドボックスホワイトリストエントリの手動設定</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote179" href="/docs/go-global-for-windows-6tips/technote/technote179/">手動によるサンドボックスホワイトリストエントリの設定</a>
       
       
       
@@ -1923,7 +1923,7 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションが終了したときにGO-Globalセッションを閉じることができない</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote206" href="/docs/go-global-for-windows-6tips/technote/technote206/">問題：最後のアプリケーションを終了したときにGO-Globalセッションが閉じることができない</a>
       
       
       
@@ -1936,6 +1936,18 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
       
       
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote208" href="/docs/go-global-for-windows-6tips/technote/technote208/">Androidデバイスでクラッシュレポートを生成する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote210" href="/docs/go-global-for-windows-6tips/technote/technote210/">ホストインストーラがインターネットインフォメーションサービス(IIS)を構成してGO-GLOBAL WEB APPをホストするのに失敗する</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-global-for-windows-6tipstechnotetechnote211" href="/docs/go-global-for-windows-6tips/technote/technote211/">Universalプリンタドライバを使用して印刷できないユーザについて</a>
       
       
     </li>
@@ -2616,7 +2628,7 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
 
 
 <a href="https://github.com//edit/master/content/ja/docs/GO-Global%20for%20Windows%206TIPS/technote/technote46.md" target="_blank"><i class="fa fa-edit fa-fw"></i> ページの編集</a>
-<a href="https://github.com//issues/new?title=%e4%b8%80%e9%83%a8%e3%81%ae%e3%82%a2%e3%83%97%e3%83%aa%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%8cGO-GLOBAL%e3%82%bb%e3%83%83%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%a7%e9%81%a9%e5%88%87%e3%81%ab%e8%b5%b7%e5%8b%95%e3%81%be%e3%81%9f%e3%81%af%e5%ae%9f%e8%a1%8c%e3%81%a7%e3%81%8d%e3%81%aa%e3%81%84" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
+<a href="https://github.com//issues/new?title=%e3%81%84%e3%81%8f%e3%81%a4%e3%81%8b%e3%81%ae%e3%82%a2%e3%83%97%e3%83%aa%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%8cGO-Global%e3%82%bb%e3%83%83%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%a7%e9%81%a9%e5%88%87%e3%81%ab%e8%b5%b7%e5%8b%95%e3%81%be%e3%81%9f%e3%81%af%e5%ae%9f%e8%a1%8c%e3%81%a7%e3%81%8d%e3%81%aa%e3%81%84" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
 
 
 <a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> プロジェクトのissueを作成</a>
@@ -2670,7 +2682,7 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/go-global-for-windows-6tips/technote/technote46/">一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</a>
+	<a href="/docs/go-global-for-windows-6tips/technote/technote46/">いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない</a>
 </li>
 
 	</ol>
@@ -2678,20 +2690,20 @@ f. プログラムウィンドウを閉じます。GO-Globalセッションも�
 
             
 <div class="td-content">
-	<h1>一部のアプリケーションがGO-GLOBALセッションで適切に起動または実行できない</h1>
+	<h1>いくつかのアプリケーションがGO-Globalセッションで適切に起動または実行できない</h1>
 	
 	<p>いくつかのWindowsアプリケーションは、Windowsシェルによって提供される機能およびサービス(例えばDDE)を使用する(explorer.exe)。ほとんどのアプリケーションはWindowsシェルなしで実行されますが、Windowsシェルがアプリケーションと同じセッションで実行されていないと、起動に失敗したり、正しく実行されなかったりすることがあります。デフォルトでは、WindowsシェルはGO-Globalセッションでは動作しません。アプリケーションがGO-Globalセッションで起動または正常に動作しない場合、アプリケーションはシェルに依存している可能性があります。</p>
-<h3 id="解決策">解決策</h3>
+<h3 id="解決策"><strong>解決策</strong></h3>
 <ol>
 <li>GO-Globalセッションのバックグラウンドで実行するようにWindowsシェル(explorer.exe)を登録します。<br>
-a. レジストリエディタから、HKEY_LOCAL_MACHINEキーを展開します。<br>
-b. \SOFTWARE\GraphOn\Bridges\1.0.0\System\Run\LocalMachineを展開します。<br> 
-c. DWORD値を作成し、explorer.exeという名前を付けます。値を0に設定してください。<br></li>
+a. レジストリエディタから、 <strong>HKEY_LOCAL_MACHINE</strong> キーを展開します。<br>
+b. <code>\SOFTWARE\GraphOn\Bridges\1.0.0\System\Run\LocalMachine</code>を展開します。<br> 
+c. DWORD値を作成し、 <strong>explorer.exe</strong> という名前を付けます。値を0に設定してください。<br></li>
 <li>explorer.exeおよびexplorer.exeが開始するすべての子プロセスをシステムプロセスとして登録し、最後に公開されたアプリケーションが閉じられるとGO-Globalセッションが終了するようにします。<br> 
 a. GO-Globalセッションを開始し、GO-Globalホストにログオンします。<br>
-b. Admin Consoleの[Session]タブで、セッション内でexplorer.exeが実行されていることを確認します。シェルのユーザインターフェイスがどれも表示されていないことを確認します(シェルの一部の要素は、新しいユーザが初めてホストにログオンしたときに表示されることがあります)。<br> 
-c. HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\Bridges\1.0.0\System\Processesを展開します。<br>
-d. DWORD値を作成し、explorer.exeという名前を付けます。explorer.exeによって起動されたプロセスについてアドミンコンソールを確認し、これらの各プロセスに対してDWORD値を作成します。システムプロセスには、次のような実行可能ファイルが含まれる場合があります。<br></li>
+b. Admin Consoleの <strong>[Session]</strong> タブで、セッション内でexplorer.exeが実行されていることを確認します。シェルのユーザインターフェイスがどれも表示されていないことを確認します(シェルの一部の要素は、新しいユーザが初めてホストにログオンしたときに表示されることがあります)。<br> 
+c. `HKEY_LOCAL_MACHINE\SOFTWARE\GraphOn\Bridges\1.0.0\System\Processes@を展開します。<br>
+d. DWORD値を作成し、explorer.exeという名前を付けます。 <strong>explorer.exe</strong> によって起動されたプロセスについてアドミンコンソールを確認し、これらの各プロセスに対してDWORD値を作成します。システムプロセスには、次のような実行可能ファイルが含まれる場合があります。<br></li>
 </ol>
 <pre><code>ALMon.exe
 sqlmangr.exe
@@ -2700,7 +2712,7 @@ reader_sl.exe
 acrobat_sl.exe
 </code></pre><br>
     e. これらのプロセスの値を0に設定してください。<br>
-    f. プログラムウィンドウを閉じます。GO-Globalセッションも終了することを確認してください。<br>
+    f. Program Windowsを閉じます。GO-Globalセッションも終了することを確認してください。<br>
 
 
 <div class="alert alert-info" role="alert">
@@ -2708,7 +2720,7 @@ acrobat_sl.exe
 
 <h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
 <p>GO-Globalセッションのバックグラウンドで実行するようにWindowsシェルを登録すると、かなりのオーバーヘッドが追加されます。セッションの開始に時間がかかり、より多くのメモリを消費します。シェルの起動時に実行するように登録されている他のプロセスによっても、追加のオーバーヘッドが発生する可能性があります。</p>
-<p>不要なプロセスがユーザーのスタートアップフォルダまたはレジストリのさまざまなRunコマンドの下に登録されないように注意する必要があります(例:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run)。</p>
+<p>不要なプロセスがユーザーのスタートアップフォルダまたはレジストリのさまざまなRunコマンドの下に登録されないように注意する必要があります(例:<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</code>)。</p>
 
 </div>
 
@@ -2743,6 +2755,18 @@ acrobat_sl.exe
         
           
           
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
         
       
     
@@ -2819,7 +2843,7 @@ acrobat_sl.exe
   <div class="xPrevNextLink"><div class="xPrevNextLink_prev">
         <a href="/docs/go-global-for-windows-6tips/technote/technote41/">LMGRD UTILITY IS CONSUMING 100% CPU WHEN THREE-SERVER REDUNDANCY IS USED</a>
       </div><div class="xPrevNextLink_next">
-        <a href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-GLOBAL SESSIONで実行されます</a>
+        <a href="/docs/go-global-for-windows-6tips/technote/technote128/">APPLICATIONは、一度に1つだけのGO-Globalセッションで実行されます</a>
       </div></div>
   
 
@@ -2885,7 +2909,7 @@ acrobat_sl.exe
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 January 1, 0001
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 25, 2020: <a  href="https://github.com//commit/57d34077db2d469cc5f325470055eef416f7d9ec">update0625 (57d34077)</a>
 </div>
 </div>
 
