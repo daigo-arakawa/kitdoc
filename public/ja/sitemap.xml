@@ -74,6 +74,7 @@
   
   <url>
     <loc>/docs/deployment-guide/host-requirements/hostrequirements/</loc>
+    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
   </url>
   
   <url>
@@ -118,18 +119,22 @@
   
   <url>
     <loc>/docs/deployment-guide/application-design-considerations/applicationdesignconsiderations/</loc>
+    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/deployment-guide/introduction/</loc>
+    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/deployment-guide/introduction/introduction/</loc>
+    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
   </url>
   
   <url>
     <loc>/docs/deployment-guide/capacity-planning/capacityplanning/</loc>
+    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
   </url>
   
   <url>
@@ -269,6 +274,7 @@
   
   <url>
     <loc>/docs/deployment-guide/application-design-considerations/</loc>
+    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
   </url>
   
   <url>
@@ -338,6 +344,7 @@
   
   <url>
     <loc>/docs/deployment-guide/host-requirements/</loc>
+    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
   </url>
   
   <url>
@@ -517,6 +524,7 @@
   
   <url>
     <loc>/docs/deployment-guide/capacity-planning/</loc>
+    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
   </url>
   
   <url>
@@ -561,6 +569,7 @@
   
   <url>
     <loc>/docs/deployment-guide/</loc>
+    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
   </url>
   
   <url>
@@ -1390,7 +1399,7 @@
   
   <url>
     <loc>/docs/</loc>
-    <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="no"

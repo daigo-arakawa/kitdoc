@@ -103,8 +103,8 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;このプロセスの詳細は以下のページで説明されています。&lt;/p&gt;
-&lt;p&gt;** 1.ユーザリソース要件の決定** 
-ユーザのリソース要件は、通常、ユーザがサーバ上で実行するアプリケーションによって決まります。アプリケーションサプライヤがGO-Globalを使用してアプリケーションをテストした場合、それらはそのアプリケーションのユーザごとのリソース要件を提供できる可能性があります。それ以外の場合、ユーザの要件を判断するための最善の方法は、一般的なユーザがサーバ上で実行する操作をシミュレートするマルチユーザテストを実行することです。&lt;/p&gt;
+&lt;h2 id=&#34;1ユーザリソース要件の決定&#34;&gt;&lt;strong&gt;1.ユーザリソース要件の決定&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;ユーザのリソース要件は、通常、ユーザがサーバ上で実行するアプリケーションによって決まります。アプリケーションサプライヤがGO-Globalを使用してアプリケーションをテストした場合、それらはそのアプリケーションのユーザごとのリソース要件を提供できる可能性があります。それ以外の場合、ユーザの要件を判断するための最善の方法は、一般的なユーザがサーバ上で実行する操作をシミュレートするマルチユーザテストを実行することです。&lt;/p&gt;
 &lt;h3 id=&#34;特定のアプリケーションセットに対するユーザごとのリソース要件を判断する方法&#34;&gt;特定のアプリケーションセットに対するユーザごとのリソース要件を判断する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -159,162 +159,188 @@
 &lt;p&gt;次のように、データからユーザごとのリソース要件を決定します。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;　　a.ユーザ辺りの平均プロセッサー使用率&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;AverageProcessorUtilizationPerUser =（AveragePercentProcessorTime * NumberOfProcessors）/ 10
-ここで、AveragePercentProcessorTimeは、 Processor \％Processorの平均値です。 一般的なユーザ操作がシミュレートされた期間中の合計カウンタ NumberOfProcessorsは、コンピュータに取り付けられているプロセッサの数です。
-
-    b.ユーザごとに必要な物理メモリ 
-
+&lt;p&gt;　　a. ユーザ辺りの平均プロセッサー使用率
+&lt;code&gt;AverageProcessorUtilizationPerUser =（AveragePercentProcessorTime * NumberOfProcessors）/ 10&lt;/code&gt;
+ここで、AveragePercentProcessorTimeは、 Processor \％Processorの平均値です。 一般的なユーザ操作がシミュレートされた期間中の合計カウンタ NumberOfProcessorsは、コンピュータに取り付けられているプロセッサの数です。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;b. ユーザごとに必要な物理メモリ 
+    ```
 PhysicalMemoryPerUser =（InitialAvailableBytes - MinimumAvailableBytes）/ 10
+    ``` 
 InitialAvailableBytesとMinimumAvailableBytesは、それぞれ Memory Available Bytesカウンタの初期値と最小値です。
 
-    c.ユーザごとに必要なコミット済みメモリ
-
+c. ユーザごとに必要なコミット済みメモリ
+    ```
 CommittedMemoryPerUser =（MaximumCommittedBytes - InitialCommittedBytes）/ 10 
-MaximumCommittedBytesとInitialCommittedBytesは、それぞれ Memory  Committed Bytesカウンタの最大値と初期値です。
+    ```	
+    MaximumCommittedBytesとInitialCommittedBytesは、それぞれ Memory  Committed Bytesカウンタの最大値と初期値です。
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;　　d.ユーザごとに必要なページプールメモリ　&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;PagedPoolMemoryPerUser =（MaximumPagedPoolBytes - InitialPagedPoolBytes）/ 10
-MaximumPagedPoolBytesとInitialPagedPoolBytesは、それぞれ Memory Pool Paged Bytesカウンタの最大値と初期値です。
-
-   e.ユーザごとに必要なシステムPTEの数 
-
+&lt;p&gt;　　d. ユーザごとに必要なページプールメモリ　
+&lt;code&gt;PagedPoolMemoryPerUser =（MaximumPagedPoolBytes - InitialPagedPoolBytes）/ 10&lt;/code&gt;	
+MaximumPagedPoolBytesとInitialPagedPoolBytesは、それぞれ Memory Pool Paged Bytesカウンタの最大値と初期値です。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;e. ユーザごとに必要なシステムPTEの数 
+    ```
 SystemPTEsPerUser =（InitialFreeSystemPTEs - MinimumFreeSystemPTEs）/ 10
-InitialFreeSystemPTEおよびMinimumFreeSystemPTEは、それぞれ Memory Free System Page Tableエントリエントリの初期値および最小値です。
+    ```	
+    InitialFreeSystemPTEおよびMinimumFreeSystemPTEは、それぞれ Memory Free System Page Tableエントリエントリの初期値および最小値です。
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;2.利用可能なリソースの決定
-目的のアプリケーションのセットに対するユーザの要件がわかったら、次のステップは、アプリケーションの実行に使用されるコンピュータの利用可能なリソースを測定することです。これは次のようにして行うことができます。&lt;/p&gt;
+&lt;h2 id=&#34;2利用可能なリソースの決定&#34;&gt;&lt;strong&gt;2.利用可能なリソースの決定&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;目的のアプリケーションのセットに対するユーザの要件がわかったら、次のステップは、アプリケーションの実行に使用されるコンピュータの利用可能なリソースを測定することです。これは次のようにして行うことができます。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
 &lt;p&gt;まだインストールされていない場合は、サーバコンピュータにGO-Globalをインストールします。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;コンピュータを再起動してください。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;Windowsパフォーマンスモニタを使用して、次のパフォーマンスカウンタの初期値を取得します。&lt;/p&gt;
-&lt;p&gt;\Memory\Available Bytes&lt;/p&gt;
-&lt;p&gt;\Memory\Committed Bytes&lt;/p&gt;
-&lt;p&gt;\Memory\Commit Limit&lt;/p&gt;
-&lt;p&gt;\Memory\Pool Paged Bytes&lt;/p&gt;
-&lt;p&gt;\Memory\Free System Page Table Entries&lt;/p&gt;
+&lt;p&gt;a. \Memory\Available Bytes&lt;/p&gt;
+&lt;p&gt;b. \Memory\Committed Bytes&lt;/p&gt;
+&lt;p&gt;c. \Memory\Commit Limit&lt;/p&gt;
+&lt;p&gt;d. \Memory\Pool Paged Bytes&lt;/p&gt;
+&lt;p&gt;e. \Memory\Free System Page Table Entries&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;このデータを使用して、コンピュータで利用可能な次のリソースを計算します。&lt;/p&gt;
-&lt;p&gt;a.利用可能な処理能力:&lt;/p&gt;
-&lt;p&gt;AvailableProcessorUtilization = (NumberOfProcessors  ProcessorSpeed  MaximumPercentUtilizationAllowed) / BaseProcessorSpeed   &lt;br&gt;
-NumberOfProcessorsはサーバにインストールされているプロセッサの数、ProcessorSpeedはサーバのプロセッサのMHz単位の速度、BaseProcessorSpeedは上記のステップ1.8.aでAverageProcessorUtilizationPerUserを決定するために使用されるプロセッサの速度です。MaximumPercentUtilizationは、通常の操作中に発生するはずのプロセッサ使用率の最大パーセンテージです。 MaximumPercentUtilizationの推奨値は0.80（80％）です。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   b.利用可能な物理メモリ:
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;AvailablePhysicalMemory = InitialAvailableBytes - MinimumAvailableBytesAllowed
-ここで、InitialAvailableBytesは Memory  Available Bytesカウンタの初期値で、MinimumAvailableBytesAllowedは通常の操作中に使用可能な物理メモリの最小バイト数です。 MinimumAvailableBytesAllowedの推奨値は41943040バイト(40 MB)です。&lt;/p&gt;
-&lt;p&gt;　  c.利用可能なコミット済みメモリ(すなわち、ディスクページングファイル内の利用可能なスペース):&lt;/p&gt;
-&lt;p&gt;AvailableCommittedMemory = CommitLimit - InitialCommittedBytes - MinimumAvailableCommittedBytesAllowed
-ここで、CommitLimitとInitialCommittedBytesは、それぞれ Memory Commit LimitとMemory  Committed Bytesカウンタの値です。MinimumAvailableCommittedBytesAllowedは、通常の操作中に使用可能なコミット済みメモリの最小バイト数です。MinimumAvailableCommittedBytesAllowedの推奨値は、コミット限度の0.20倍です。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   d.利用可能なページプールメモリ:
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;AvailablePagedPoolMemory = SizeOfPagedPool - InitialPagedPoolBytes - MinimumAvailablePagedPoolBytesAllowed
-SizeOfPagedPoolはバイト単位のページプールのサイズ(通常、Windows 2000サーバでは0x0A000000(167772160)バイト)で、InitialPagedPoolBytesは Memory Pool Paged Bytesカウンタの初期値です。MinimumAvailablePagedPoolBytesAllowedは、通常の操作中に利用可能であるべきページプールの最小バイト数です。MinimumAvailablePagedPoolBytesAllowedの推奨値は1048576バイト(10 MB)です。&lt;/p&gt;
-&lt;p&gt;ページプールの実際のサイズは、次のようにカーネルデバッガを使用して決定できます。&lt;/p&gt;
-&lt;p&gt;デバッガに侵入します。&lt;/p&gt;
-&lt;p&gt;!vmと入力します。次にENTERを押します。&lt;/p&gt;
-&lt;p&gt;コンピュータの仮想メモリに関する情報が表示されます。ページプールのサイズは、PagedPool Maximumとして表示されます。&lt;/p&gt;
-&lt;p&gt;カーネルデバッガの使用方法については、マイクロソフトサポート技術情報の記事151981を参照してください。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   e.利用可能なシステムPTE:
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;AvailableSystemPTEs = InitialFreeSystemPTEs - MinimumAvailableSystemPTEsAllowed
-ここで、InitialFreeSystemPTEsはMemory Free System Page Tableエントリエントリの値であり、MinimumAvailableSystemPTEsAllowedは通常の操作中に利用可能であるべきSystemPTEの最小数です。 MinimumAvailableSystemPTEsAllowedの推奨値は4000です。&lt;/p&gt;
-&lt;p&gt;3.ユーザー制限の計算
-ステップ1と2で取得した値を使用して、コンピュータのユーザ制限を次のように見積もることができます。&lt;/p&gt;
-&lt;p&gt;1.各コンピュータのリソースでサポートできる最大ユーザ数を計算します。&lt;/p&gt;
-&lt;p&gt;　　a.コンピュータのプロセッサでサポートできる最大ユーザ数を計算します。&lt;/p&gt;
-&lt;p&gt;ProcessorUserLimit = AvailableProcessorUtilization / AverageProcessorUtilizationPerUser
-b.コンピュータの利用可能な物理メモリでサポートできる最大ユーザー数を計算します。&lt;/p&gt;
-&lt;p&gt;PhysicalMemoryUserLimit = AvailablePhysicalMemory / PhysicalMemoryPerUser
-c.コンピュータの使用可能なコミット済みメモリでサポートできる最大ユーザ数を計算します。&lt;/p&gt;
-&lt;p&gt;CommittedMemoryUserLimit = AvailableCommittedMemory / CommittedMemoryPerUser
-d.コンピュータの利用可能なページプールメモリでサポートできる最大ユーザ数を計算します。&lt;/p&gt;
-&lt;p&gt;PagePoolMemoryUserLimit = AvailablePagedPoolMemory / PagedPoolMemoryPerUser
-e.コンピュータの利用可能なシステムPTEでサポートできる最大ユーザ数を計算します。&lt;/p&gt;
-&lt;p&gt;SystemPTEUserLimit = AvailableSystemPTEs / SystemPTEsPerUser
-2.以下の式を使用して、コンピュータの最大ユーザ数を計算します。&lt;/p&gt;
-&lt;p&gt;MaximumNumberOfUsers = Minimum ( ProcessorUserLimit, PhysicalMemoryUserLimit, CommittedMemoryUserLimit, PagePoolMemoryUserLimit, SystemPTEUserLimit)
-3.最大ユーザー数が必要数より少ない場合は、制限されているリソースの可用性を高めるためにコンピュータの構成を変更します。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    a.プロセッサ使用率がリソースを制限している場合は、サーバの数を増やすか、またはより高速のプロセッサやより多数のプロセッサを搭載したサーバを使用します。
-
-    b.物理メモリがリソースを制限している場合は、コンピュータにメモリを増設します。 Windows 2000サーバにインストールできる最大メモリ容量は4 GBです。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;　　c.コミットメモリがリソースを制限している場合は、ディスクページングファイルのサイズを大きくします。&lt;/p&gt;
-&lt;p&gt;マイコンピュータを右クリックして、プロパティを選択します。詳細をクリックします。パフォーマンスオプション変化する。ページングファイルの最大サイズを増やします。設定をクリックします。&lt;/p&gt;
-&lt;p&gt;ディスクページングファイルの推奨サイズは、通常、コンピュータに搭載されている物理メモリの2倍以下です。ページングファイルのサイズを推奨サイズより大きくするときは注意してください。コミットされたメモリの量が物理メモリの量をはるかに超えることが許可されている場合、システムはページングファイルからデータを取得するために過剰な数のディスクI / O操作を実行し始める可能性があります。これはシステムのパフォーマンスを著しく低下させる可能性があります。&lt;/p&gt;
-&lt;p&gt;次の情報は、Windowsレジストリを開いて操作することを含みます。ここで説明した以外の操作を実行すると、設定エラーが発生し、システムが使用できなくなる可能性があります。レジストリで作業するときはいつでも細心の注意を払ってください。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;      d.ページプールメモリがリソースを制限している場合は、ページプールのサイズを大きくします。
-
-         i.スタートを選択します。実行します。
-
-        ii.regeditと入力し、Enterキーを押します。
-
-       iii.次のレジストリ値を選択してください。 \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\SystemPages.
-
-      iV.編集を選択します。修正します。
-
-      V.値のデータフィールドに0を入力します。これにより、システムPTEの数がシステムのデフォルト値まで減少し、ページプールのサイズが大きくなります。
-
-      vi.OKをクリックしてください。
-
-     vii.コンピュータを再起動してください。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;次のように、ユーザがホストにログオンするために必要なページプールメモリの最小量を指定します。&lt;/p&gt;
-&lt;p&gt;1.サーバ上でレジストリエディタ(regedit)を実行します。&lt;/p&gt;
-&lt;p&gt;2.次のレジストリ値を選択します。\HKEY_LOCAL_MACHINE\Software\GraphOn\Bridges\1.0.0\AppServer\SessionPaged PoolMemory.&lt;/p&gt;
-&lt;p&gt;3.[ 編集 | 修正 ]をクリックします。修正します。&lt;/p&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;16進数を選択します。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;[値のデータ]フィールドに、セッションを開始するために必要なバイト数を入力します(例：10000)。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;OKをクリックします。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   e.システムPTEの数が制限リソースである場合は、システムPTEの数が最大になるようにシステムが構成されていることを確認してください。
-
-        i.次のレジストリ値をダブルクリックします。\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\SystemPages.
-
-     ii.16進数を選択します。
-
-    iii.値を確認してください。FFFFFFFFです。GO-Global Setup Programは、製品のインストール時にこのフィールドをこの値に設定します。その後値が変更された場合は、FFFFFFFFに再設定してください。
-
-  iv.PagedPoolSize値(やはりMemory Managementキーの下にあります)の値を確認してください。それはゼロ(0)であるはずです。 
-
-  v.システムがシステムPTEの数を最大にするように構成されている場合は、コンピューターに取り付けられているハードウェア装置の要件を確認してください。RAIDディスクコントローラやビデオカードなどの一部のデバイスは、多数のSystem PTEを消費する可能性があります。そのようなデバイスがサーバにインストールされている場合はそれが必要であることを確認し、必要でない場合はそのデバイスをアンインストールします。
-
-vi.上記のステップ3.3で設定を変更した場合は、影響を受ける利用可能なリソース、リソースユーザの制限、およびサーバコンピュータの最大ユーザ制限を再計算してください。
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a. 利用可能な処理能力:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;AvailableProcessorUtilization = (NumberOfProcessors  ProcessorSpeed  MaximumPercentUtilizationAllowed) / BaseProcessorSpeed      
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;NumberOfProcessorsはサーバにインストールされているプロセッサの数、ProcessorSpeedはサーバのプロセッサのMHz単位の速度、BaseProcessorSpeedは上記のステップ1.8.aでAverageProcessorUtilizationPerUserを決定するために使用されるプロセッサの速度です。MaximumPercentUtilizationは、通常の操作中に発生するはずのプロセッサ使用率の最大パーセンテージです。 MaximumPercentUtilizationの推奨値は0.80（80％）です。&lt;/p&gt;
+&lt;p&gt;b. 利用可能な物理メモリ:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;AvailablePhysicalMemory = InitialAvailableBytes - MinimumAvailableBytesAllowed
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ここで、InitialAvailableBytesは Memory Available Bytesカウンタの初期値で、MinimumAvailableBytesAllowedは通常の操作中に使用可能な物理メモリの最小バイト数です。MinimumAvailableBytesAllowedの推奨値は41943040バイト(40 MB)です。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;4.結果を確認する
-手順1〜3で概説した手順の結果は、特定のGO-Globalホストでサポートできる最大ユーザ数の見積もりです。この結果に達するためにいくつかの仮定がなされている。たとえば、マルチユーザリソース要件テスト中に実行される操作は、実環境で製品を使用するときに実際のユーザが実行する操作を表していると想定されます。テストで測定されたシステムリソースの1つによってユーザ数が制限されることも想定されています。&lt;/p&gt;
+&lt;p&gt;　 c. 利用可能なコミット済みメモリ(すなわち、ディスクページングファイル内の利用可能なスペース):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;AvailableCommittedMemory = CommitLimit - InitialCommittedBytes - MinimumAvailableCommittedBytesAllowed
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ここで、CommitLimitとInitialCommittedBytesは、それぞれ Memory Commit LimitとMemory Committed Bytesカウンタの値です。MinimumAvailableCommittedBytesAllowedは、通常の操作中に使用可能なコミット済みメモリの最小バイト数です。MinimumAvailableCommittedBytesAllowedの推奨値は、コミット限度の0.20倍です。&lt;/p&gt;
+&lt;p&gt;d. 利用可能なページプールメモリ:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;AvailablePagedPoolMemory = SizeOfPagedPool - InitialPagedPoolBytes - MinimumAvailablePagedPoolBytesAllowed
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;SizeOfPagedPoolはバイト単位のページプールのサイズ(通常、Windows 2000サーバでは0x0A000000(167772160)バイト)で、InitialPagedPoolBytesは Memory Pool Paged Bytesカウンタの初期値です。MinimumAvailablePagedPoolBytesAllowedは、通常の操作中に利用可能であるべきページプールの最小バイト数です。MinimumAvailablePagedPoolBytesAllowedの推奨値は1048576バイト(10 MB)です。&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+&lt;p&gt;ページプールの実際のサイズは、次のようにカーネルデバッガを使用して決定できます。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;デバッガに侵入します。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;!vmと入力します。次にENTERを押します。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;コンピュータの仮想メモリに関する情報が表示されます。ページプールのサイズは、PagedPool Maximumとして表示されます。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;カーネルデバッガの使用方法については、マイクロソフトサポート技術情報の記事151981を参照してください。&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;e. 利用可能なシステムPTE:
+```
+AvailableSystemPTEs = InitialFreeSystemPTEs - MinimumAvailableSystemPTEsAllowed
+```
+ここで、InitialFreeSystemPTEsはMemory Free System Page Tableエントリエントリの値であり、MinimumAvailableSystemPTEsAllowedは通常の操作中に利用可能であるべきSystemPTEの最小数です。 MinimumAvailableSystemPTEsAllowedの推奨値は4000です。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;3ユーザ制限の計算&#34;&gt;&lt;strong&gt;3.ユーザ制限の計算&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;ステップ1と2で取得した値を使用して、コンピュータのユーザ制限を次のように見積もることができます。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;各コンピュータのリソースでサポートできる最大ユーザ数を計算します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;a. コンピュータのプロセッサでサポートできる最大ユーザ数を計算します。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ProcessorUserLimit = AvailableProcessorUtilization / AverageProcessorUtilizationPerUser
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;b. コンピュータの利用可能な物理メモリでサポートできる最大ユーザー数を計算します。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PhysicalMemoryUserLimit = AvailablePhysicalMemory / PhysicalMemoryPerUser
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;c. コンピュータの使用可能なコミット済みメモリでサポートできる最大ユーザ数を計算します。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CommittedMemoryUserLimit = AvailableCommittedMemory / CommittedMemoryPerUser
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;d. コンピュータの利用可能なページプールメモリでサポートできる最大ユーザ数を計算します。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PagePoolMemoryUserLimit = AvailablePagedPoolMemory / PagedPoolMemoryPerUser
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;e. コンピュータの利用可能なシステムPTEでサポートできる最大ユーザ数を計算します。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;SystemPTEUserLimit = AvailableSystemPTEs / SystemPTEsPerUser
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;以下の式を使用して、コンピュータの最大ユーザ数を計算します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;MaximumNumberOfUsers = Minimum ( ProcessorUserLimit, PhysicalMemoryUserLimit, CommittedMemoryUserLimit, PagePoolMemoryUserLimit, SystemPTEUserLimit)
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;最大ユーザ数が必要数より少ない場合は、制限されているリソースの可用性を高めるためにコンピュータの構成を変更します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;a. プロセッサ使用率がリソースを制限している場合は、サーバの数を増やすか、またはより高速のプロセッサやより多数のプロセッサを搭載したサーバを使用します。&lt;/p&gt;
+&lt;p&gt;b. 物理メモリがリソースを制限している場合は、コンピュータにメモリを増設します。 Windows 2000サーバにインストールできる最大メモリ容量は4 GBです。&lt;/p&gt;
+&lt;p&gt;c. コミットメモリがリソースを制限している場合は、ディスクページングファイルのサイズを大きくします。&lt;/p&gt;
+&lt;p&gt;ⅰ. マイコンピュータを右クリックして、プロパティを選択します。&lt;br&gt;
+ⅱ. 詳細をクリックします。&lt;br&gt;
+ⅲ. パフォーマンスオプション変化する。&lt;br&gt;
+ⅳ. ページングファイルの最大サイズを増やします。&lt;br&gt;
+ⅴ. 設定をクリックします。&lt;br&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;警告&lt;/h4&gt;
+&lt;p&gt;ディスクページングファイルの推奨サイズは、通常、コンピュータに搭載されている物理メモリの2倍以下です。ページングファイルのサイズを推奨サイズより大きくするときは注意してください。コミットされたメモリの量が物理メモリの量をはるかに超えることが許可されている場合、システムはページングファイルからデータを取得するために過剰な数のディスクI / O操作を実行し始める可能性があります。これはシステムのパフォーマンスを著しく低下させる可能性があります。&lt;/p&gt;
+&lt;p&gt;次の情報は、Windowsレジストリを開いて操作することを含みます。ここで説明した以外の操作を実行すると、設定エラーが発生し、システムが使用できなくなる可能性があります。レジストリで作業するときはいつでも細心の注意を払ってください。&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;d. ページプールメモリがリソースを制限している場合は、ページプールのサイズを大きくします。&lt;/p&gt;
+&lt;p&gt;ⅰ. スタートを選択します。実行します。&lt;br&gt;
+ⅱ. regeditと入力し、Enterキーを押します。&lt;br&gt;
+ⅲ. 次のレジストリ値を選択してください。\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\SystemPages.&lt;br&gt;
+ⅳ. 編集を選択します。修正します。&lt;br&gt;
+ⅴ. 値のデータフィールドに0を入力します。これにより、システムPTEの数がシステムのデフォルト値まで減少し、ページプールのサイズが大きくなります。&lt;br&gt;
+ⅵ. OKをクリックしてください。&lt;br&gt;
+ⅶ. コンピュータを再起動してください。&lt;br&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+&lt;p&gt;次のように、ユーザがホストにログオンするために必要なページプールメモリの最小量を指定します。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;サーバ上でレジストリエディタ(regedit)を実行します。&lt;/li&gt;
+&lt;li&gt;次のレジストリ値を選択します。\HKEY_LOCAL_MACHINE\Software\GraphOn\Bridges\1.0.0\AppServer\SessionPaged PoolMemory.&lt;/li&gt;
+&lt;li&gt;[編集 | 修正]をクリックします。修正します。&lt;/li&gt;
+&lt;li&gt;16進数を選択します。&lt;/li&gt;
+&lt;li&gt;[値のデータ]フィールドに、セッションを開始するために必要なバイト数を入力します(例：10000)。&lt;/li&gt;
+&lt;li&gt;OKをクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;e. システムPTEの数が制限リソースである場合は、システムPTEの数が最大になるようにシステムが構成されていることを確認してください。&lt;/p&gt;
+&lt;p&gt;ⅰ. 次のレジストリ値をダブルクリックします。\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\SystemPages.&lt;br&gt;
+ⅱ. 16進数を選択します。&lt;br&gt;
+ⅲ. 値を確認してください。FFFFFFFFです。GO-Global Setup Programは、製品のインストール時にこのフィールドをこの値に設定します。その後値が変更された場合は、FFFFFFFFに再設定してください。&lt;br&gt;
+ⅳ. PagedPoolSize値(やはりMemory Managementキーの下にあります)の値を確認してください。それはゼロ(0)であるはずです。 &lt;br&gt;
+ⅴ. システムがシステムPTEの数を最大にするように構成されている場合は、コンピューターに取り付けられているハードウェア装置の要件を確認してください。RAIDディスクコントローラやビデオカードなどの一部のデバイスは、多数のSystem PTEを消費する可能性があります。そのようなデバイスがサーバにインストールされている場合はそれが必要であることを確認し、必要でない場合はそのデバイスをアンインストールします。&lt;br&gt;
+ⅵ. 上記のステップ3.3で設定を変更した場合は、影響を受ける利用可能なリソース、リソースユーザの制限、およびサーバコンピュータの最大ユーザ制限を再計算してください。&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;4結果を確認する&#34;&gt;&lt;strong&gt;4.結果を確認する&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;手順1〜3で概説した手順の結果は、特定のGO-Globalホストでサポートできる最大ユーザ数の見積もりです。この結果に達するためにいくつかの仮定がなされている。たとえば、マルチユーザリソース要件テスト中に実行される操作は、実環境で製品を使用するときに実際のユーザが実行する操作を表していると想定されます。テストで測定されたシステムリソースの1つによってユーザ数が制限されることも想定されています。&lt;/p&gt;
 &lt;p&gt;これらの前提の正確性と最終結果を確実にするために、サーバ構成は、通常は上で計算したユーザ数へのパイロット展開の一環として、実稼働環境でテストする必要があります。この展開中は、Windowsパフォーマンスモニタを使用してシステムリソースを監視する必要があります。また、ユーザは自分が観察した問題の性質と時間を報告するように求められます。上記のリソースのパフォーマンスカウンタに加えて、次のパフォーマンスカウンタも監視する必要があります。&lt;/p&gt;
-&lt;p&gt;System  Processor Queue Length：Processor Queue Lengthは、使用可能だが他のアクティブスレッドのために実行できないアクティブスレッドの数です。プロセッサのボトルネックを明確に示す指標の1つは、プロセッサあたり1〜3スレッドを超える持続的なプロセッサキュー長です。一般に、プロセッサ使用率が高い場合はプロセッサキューの長さが長くなりますが、プロセッサ使用率が90％をかなり下回る場合にはプロセッサキューの長さが長くなることがあります。&lt;/p&gt;
-&lt;p&gt;Memory  Pages / sec： Pages / secパフォーマンスカウンタは、ハードページフォルトを解決するためにディスクから読み書きされたページ数を測定します。ハードページフォールトは、メモリをディスクページングファイルから読み書きする必要があるときに発生します。 CPU使用率が低くても、ハードページフォールトの数が多いと、システム全体のパフォーマンスが低下する可能性があります。&lt;/p&gt;
-&lt;p&gt;トラブルシューティング
-問題が報告された場合：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;System Processor Queue Length:&lt;/strong&gt; Processor Queue Lengthは、使用可能だが他のアクティブスレッドのために実行できないアクティブスレッドの数です。プロセッサのボトルネックを明確に示す指標の1つは、プロセッサあたり1〜3スレッドを超える持続的なプロセッサキュー長です。一般に、プロセッサ使用率が高い場合はプロセッサキューの長さが長くなりますが、プロセッサ使用率が90％をかなり下回る場合にはプロセッサキューの長さが長くなることがあります。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Memory Pages/sec:&lt;/strong&gt; Pages/secパフォーマンスカウンタは、ハードページフォルトを解決するためにディスクから読み書きされたページ数を測定します。ハードページフォールトは、メモリをディスクページングファイルから読み書きする必要があるときに発生します。 CPU使用率が低くても、ハードページフォールトの数が多いと、システム全体のパフォーマンスが低下する可能性があります。&lt;/p&gt;
+&lt;h2 id=&#34;トラブルシューティング&#34;&gt;トラブルシューティング&lt;/h2&gt;
+&lt;p&gt;問題が報告された場合：&lt;/p&gt;
 &lt;p&gt;1.問題が発生したときにWindowsパフォーマンスログのデータを調べて、問題の原因となっているリソースを特定します。&lt;/p&gt;
-&lt;p&gt;　a.ユーザがパフォーマンスの低下を報告した場合は、次の点を確認してください。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;     i. %プロセッサ使用率：90%を超えると、コンピュータのプロセッサがボトルネックになる可能性があります。 
-
-    ii.プロセッサキュの長さ：長期間にわたってプロセッサあたり1〜3スレッドを超える場合、コンピュータのプロセッサがボトルネックになる可能性があります。
-
-   iii.利用可能なバイト数：この値が小さい場合(例えば、インストールされている物理メモリの10％未満)、Pages / secカウンタを確認してください。Pages / secの値が通常よりもかなり高い場合、システムは頻繁にディスクとの間でメモリを交換しています。この問題は一般に、不十分な物理メモリがあることが原因で発生します。
-
- b.ユーザがサーバに接続できないことを報告した場合、またはアプリケーションの実行中にエラーを報告した場合は、次の点を確認してください。 
-
-    i.Available Bytes：Available Physical Memoryが20MB未満の場合、GO-Globalは新しいユーザがサーバに接続するのを防ぎます。
-
-   ii.Committed Bytes：このカウンタの値がCommit Limitに近いと、すべてのセッションでランダムエラーが発生する可能性があります。また、Committed Memoryの高い値は、多くの場合、高いディスクページング(Pages / second)値およびパフォーマンスの低下と同時に発生します。
-
-  iii.ページプールバイト数：最大値(Windows 2000サーバでは0x0A000000(167772160)バイト)に近い場合、システムはページプールメモリを使い果たしている可能性があります。この場合、実行中のすべてのセッションでランダムエラーが発生します。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;　 iv.空きシステムページテーブルエントリ：空きシステムPTEの数が2000未満の場合、GO-Globalは新規ユーザがサーバに接続できないようにします。空きシステムPTEの数が1000を下回ると、実行中のすべてのセッションでランダムエラーが発生します。&lt;/p&gt;
-&lt;p&gt;2.問題の原因となっているリソースを特定したら、&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;a.ステップ3.3で説明されているようにリソースの可用性を高めることを試みます
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a. ユーザがパフォーマンスの低下を報告した場合は、次の点を確認してください。&lt;/p&gt;
+&lt;p&gt;ⅰ. %プロセッサ使用率：90%を超えると、コンピュータのプロセッサがボトルネックになる可能性があります。 &lt;br&gt;
+ⅱ. プロセッサキュの長さ：長期間にわたってプロセッサあたり1〜3スレッドを超える場合、コンピュータのプロセッサがボトルネックになる可能性があります。&lt;br&gt;
+ⅲ. 利用可能なバイト数：この値が小さい場合(例えば、インストールされている物理メモリの10％未満)、Pages / secカウンタを確認してください。Pages / secの値が通常よりもかなり高い場合、システムは頻繁にディスクとの間でメモリを交換しています。この問題は一般に、不十分な物理メモリがあることが原因で発生します。&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;b. ユーザがサーバに接続できないことを報告した場合、またはアプリケーションの実行中にエラーを報告した場合は、次の点を確認してください。&lt;/p&gt;
+&lt;p&gt;ⅰ. Available Bytes：Available Physical Memoryが20MB未満の場合、GO-Globalは新しいユーザがサーバに接続するのを防ぎます。&lt;br&gt;
+ⅱ. Committed Bytes：このカウンタの値がCommit Limitに近いと、すべてのセッションでランダムエラーが発生する可能性があります。また、Committed Memoryの高い値は、多くの場合、高いディスクページング(Pages / second)値およびパフォーマンスの低下と同時に発生します。&lt;br&gt;
+ⅲ. ページプールバイト数：最大値(Windows 2000サーバでは0x0A000000(167772160)バイト)に近い場合、システムはページプールメモリを使い果たしている可能性があります。この場合、実行中のすべてのセッションでランダムエラーが発生します。&lt;br&gt;
+ⅳ. 空きシステムページテーブルエントリ：空きシステムPTEの数が2000未満の場合、GO-Globalは新規ユーザがサーバに接続できないようにします。空きシステムPTEの数が1000を下回ると、実行中のすべてのセッションでランダムエラーが発生します。&lt;br&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;問題の原因となっているリソースを特定したら、&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;a. ステップ3.3で説明されているようにリソースの可用性を高めることを試みます&lt;/p&gt;
 &lt;p&gt;－または－&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;b.指定されたリソースの最大ユーザ数を安全な値に減らします。
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;b. 指定されたリソースの最大ユーザ数を安全な値に減らします。&lt;/p&gt;
 
       </description>
     </item>
