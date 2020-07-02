@@ -41,10 +41,10 @@ GO-Globalホストからサポートできるユーザの数は、以下のよ�
   コミットされたメモリ：ディスクページングファイルで予約されているスペースのメモリ量。
   ページプールメモリ：ページプール内に割り当てられたメモリの量。オペレーティングシステムや他のカーネルモードモジュールのデータを格納するために使用されるカーネルモードメモリの領域。
   システムページテーブルエントリ(PTE)：システムページテーブルエントリ(PTE)領域、カーネルスタックを格納するためにオペレーティングシステムによって使用されるカーネルモードメモリの領域、およびデバイスドライバ(たとえば、 RAIDハードディスクコントローラ、ビデオカードなど) デバイス固有のデータのビューをカーネルアドレス空間にマッピングするため。
-  特定のサーバから効率的に実行できるユーザーの数を判断する方法   平均的なユーザーに必要な上記の各リソースの量を決定します。" />
+  特定のサーバから効率的に実行できるユーザーの数を判断する方法  平均的なユーザーに必要な上記の各リソースの量を決定します。 各リソースのうち最初にサーバコンピュータで使用可能な量を決定します。 手順1と2からの情報を使用してユーザ制限を計算します。 実稼働環境で計算結果を確認してください。  このプロセスの詳細は以下のページで説明されています。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/deployment-guide/capacity-planning/capacityplanning/" />
-<meta property="article:modified_time" content="2020-06-29T17:59:23+09:00" /><meta property="og:site_name" content="kitASP Docs" />
+<meta property="article:modified_time" content="2020-06-30T17:47:54+09:00" /><meta property="og:site_name" content="kitASP Docs" />
 <meta itemprop="name" content="キャパシティプランニング">
 <meta itemprop="description" content="概要 GO-Globalは、Windowsサーバ上の複数のユーザをサポートします。マルチユーザシステムは、シングルユーザシステムよりも多くのシステムリソースを必要とします。このセクションでは、ユーザを最適なパフォーマンスでサポートするためのハードウェア構成を決定するのに役立つ、システムサイズのガイドラインをいくつか示します。ほとんどの企業は、自分のユーザを一般ユーザとパワーユーザのどちらにも分類できると考えています。
   一般的なユーザ 一般的なユーザーは通常1つか2つのアプリケーションを使用します。通常は一度に1つだけです。実際のプログラムデータは、クライアントとサーバ間で転送されることはほとんどなく、ユーザがOLE(Object Linking and Embedding)を使用することはめったにありません。
@@ -66,9 +66,9 @@ GO-Globalホストからサポートできるユーザの数は、以下のよ�
   コミットされたメモリ：ディスクページングファイルで予約されているスペースのメモリ量。
   ページプールメモリ：ページプール内に割り当てられたメモリの量。オペレーティングシステムや他のカーネルモードモジュールのデータを格納するために使用されるカーネルモードメモリの領域。
   システムページテーブルエントリ(PTE)：システムページテーブルエントリ(PTE)領域、カーネルスタックを格納するためにオペレーティングシステムによって使用されるカーネルモードメモリの領域、およびデバイスドライバ(たとえば、 RAIDハードディスクコントローラ、ビデオカードなど) デバイス固有のデータのビューをカーネルアドレス空間にマッピングするため。
-  特定のサーバから効率的に実行できるユーザーの数を判断する方法   平均的なユーザーに必要な上記の各リソースの量を決定します。">
-<meta itemprop="dateModified" content="2020-06-29T17:59:23&#43;09:00" />
-<meta itemprop="wordCount" content="445">
+  特定のサーバから効率的に実行できるユーザーの数を判断する方法  平均的なユーザーに必要な上記の各リソースの量を決定します。 各リソースのうち最初にサーバコンピュータで使用可能な量を決定します。 手順1と2からの情報を使用してユーザ制限を計算します。 実稼働環境で計算結果を確認してください。  このプロセスの詳細は以下のページで説明されています。">
+<meta itemprop="dateModified" content="2020-06-30T17:47:54&#43;09:00" />
+<meta itemprop="wordCount" content="430">
 
 
 
@@ -94,7 +94,7 @@ GO-Globalホストからサポートできるユーザの数は、以下のよ�
   コミットされたメモリ：ディスクページングファイルで予約されているスペースのメモリ量。
   ページプールメモリ：ページプール内に割り当てられたメモリの量。オペレーティングシステムや他のカーネルモードモジュールのデータを格納するために使用されるカーネルモードメモリの領域。
   システムページテーブルエントリ(PTE)：システムページテーブルエントリ(PTE)領域、カーネルスタックを格納するためにオペレーティングシステムによって使用されるカーネルモードメモリの領域、およびデバイスドライバ(たとえば、 RAIDハードディスクコントローラ、ビデオカードなど) デバイス固有のデータのビューをカーネルアドレス空間にマッピングするため。
-  特定のサーバから効率的に実行できるユーザーの数を判断する方法   平均的なユーザーに必要な上記の各リソースの量を決定します。"/>
+  特定のサーバから効率的に実行できるユーザーの数を判断する方法  平均的なユーザーに必要な上記の各リソースの量を決定します。 各リソースのうち最初にサーバコンピュータで使用可能な量を決定します。 手順1と2からの情報を使用してユーザ制限を計算します。 実稼働環境で計算結果を確認してください。  このプロセスの詳細は以下のページで説明されています。"/>
 
 
 
@@ -148,16 +148,6 @@ GO-Globalホストからサポートできるユーザの数は、以下のよ�
 				<a class="nav-link" href="/blog/" ><span>Blog</span></a>
 			</li>
 			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
-				<a class="nav-link" href="/community/" ><span>Community</span></a>
-			</li>
-			
 			
 			
 			<li class="nav-item dropdown d-none d-lg-block">
@@ -185,7 +175,7 @@ GO-Globalホストからサポートできるユーザの数は、以下のよ�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.3c4e83cddeffe5edb0c85b17da8cb113e74d14d34d0e8efeea273e2f06ddb36230233fcf9103a09c47ab8aa87a23f77963125c88d250d0f457f508df4bc41a52.json"
+  data-offline-search-index-json-src="/offline-search-index.c8f992fc050817e54673336667212a8b9312d3eeb6f2a6d3f93d2852100002221b0683a1df4166e0d38ab73a2d48f16f2de8fd32685ab609c34ccd8a4f84f309.json"
   data-offline-search-base-href="/"
 >
 
@@ -215,7 +205,7 @@ GO-Globalホストからサポートできるユーザの数は、以下のよ�
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.3c4e83cddeffe5edb0c85b17da8cb113e74d14d34d0e8efeea273e2f06ddb36230233fcf9103a09c47ab8aa87a23f77963125c88d250d0f457f508df4bc41a52.json"
+  data-offline-search-index-json-src="/offline-search-index.c8f992fc050817e54673336667212a8b9312d3eeb6f2a6d3f93d2852100002221b0683a1df4166e0d38ab73a2d48f16f2de8fd32685ab609c34ccd8a4f84f309.json"
   data-offline-search-base-href="/"
 >
 
@@ -2750,6 +2740,12 @@ GO-Globalホストからサポートできるユーザの数は、以下のよ�
 
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsdeployment-guideappendixchecklist" href="/docs/deployment-guide/appendix/checklist/">GO-Global Host  DEPLOYMENT CHECKLIST</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -2935,18 +2931,10 @@ GO-Globalホストからサポートできるユーザの数は、以下のよ�
 </ul>
 <h3 id="特定のサーバから効率的に実行できるユーザーの数を判断する方法">特定のサーバから効率的に実行できるユーザーの数を判断する方法</h3>
 <ol>
-<li>
-<p>平均的なユーザーに必要な上記の各リソースの量を決定します。</p>
-</li>
-<li>
-<p>各リソースのうち最初にサーバコンピュータで使用可能な量を決定します。</p>
-</li>
-<li>
-<p>手順1と2からの情報を使用してユーザ制限を計算します。</p>
-</li>
-<li>
-<p>実稼働環境で計算結果を確認してください。</p>
-</li>
+<li>平均的なユーザーに必要な上記の各リソースの量を決定します。</li>
+<li>各リソースのうち最初にサーバコンピュータで使用可能な量を決定します。</li>
+<li>手順1と2からの情報を使用してユーザ制限を計算します。</li>
+<li>実稼働環境で計算結果を確認してください。</li>
 </ol>
 <p>このプロセスの詳細は以下のページで説明されています。</p>
 <h2 id="1ユーザリソース要件の決定"><strong>1.ユーザリソース要件の決定</strong></h2>
@@ -2957,101 +2945,68 @@ GO-Globalホストからサポートできるユーザの数は、以下のよ�
 <p>サーバコンピュータを再起動します。</p>
 </li>
 <li>
-<p>Windowsパフォーマンスモニタを使用してシステムリソースの記録を開始する。</p>
+<p>Windowsパフォーマンスモニタを使用してシステムリソースの記録を開始する。<br>
+a. 別のWindowsコンピュータで、Windowsパフォーマンスモニタを起動します。<br>
+b. Performance Logs とAlerts\Counter Logsを右クリックします。<br>
+c. 新規ログ設定を選択します。<br>
+d. ログの名前を入力してください。<br>
+e. 追加をクリックします。<br>
+f. [コンピュータからカウンタを選択する]フィールドにサーバコンピュータの名前を入力します。<br>
+g. 以下のカウンタを追加してください。<br></p>
+<ol>
+<li>\Processor% Processor Time</li>
+<li>\Memory\Available Bytes</li>
+<li>\Memory\Committed Bytes</li>
+<li>\Memory\Pool Paged Bytes</li>
+<li>\Memory\Free System Page Table Entries</li>
+</ol>
 </li>
 </ol>
-<p>a. 別のWindowsコンピュータで、Windowsパフォーマンスモニタを起動します。</p>
-<p>b. Performance Logs とAlerts\Counter Logsを右クリックします。</p>
-<p>c. 新規ログ設定を選択します。</p>
-<p>d. ログの名前を入力してください。</p>
-<p>e. 追加をクリックします。</p>
-<p>f. [コンピュータからカウンタを選択する]フィールドにサーバコンピュータの名前を入力します。</p>
-<p>g. 以下のカウンタを追加してください。</p>
-<pre><code>1. \Processor\% Processor Time
-
-2. \Memory\Available Bytes
-
-3. \Memory\Committed Bytes
-
-4. \Memory\Pool Paged Bytes
-
-5. \Memory\Free System Page Table Entries
-</code></pre>
-<p>h. サンプル間隔を10秒に設定します。</p>
-<p>i. ログファイルタブを選択します。</p>
-<p>j. ログファイルの種類をテキストファイル .CSVに変更します。</p>
-<p>k. OKをクリックします。</p>
-<p>l. 新しいログのアイコンを右クリックして、「開始」を選択します。</p>
+<p>h. サンプル間隔を10秒に設定します。<br>
+i. ログファイルタブを選択します。<br>
+j. ログファイルの種類をテキストファイル .CSVに変更します。<br>
+k. OKをクリックします。<br>
+l. 新しいログのアイコンを右クリックして、「開始」を選択します。<br></p>
 <ol start="3">
-<li>
-<p>GO-Globalホストに10人のユーザをログオンさせます。各ユーザは別々のクライアントコンピュータで実行する必要があります。</p>
-</li>
-<li>
-<p>各セッションで、通常のセッション中にユーザが実行すると予想されるすべてのプログラムを起動します。各セッションで、一般的なユーザのアプリケーションとのやり取りをシミュレートします。これは、各セッションを実行しているライブユーザ、またはサードパーティの自動テストツールを使用して各クライアントで記録および再生されるスクリプトを使用して行うことができます。</p>
-</li>
-<li>
-<p>15〜30分間テストを実行します。</p>
-</li>
-<li>
-<p>パフォーマンスモニタログを停止します。</p>
-</li>
-<li>
-<p>ログのアイコンを右クリックして、「停止」を選択します。</p>
-</li>
-<li>
-<p>Microsoft Excelなどのスプレッドシートプログラムでログファイルを開き、結果をグラフ化します。</p>
-</li>
-<li>
-<p>次のように、データからユーザごとのリソース要件を決定します。</p>
-</li>
+<li>GO-Globalホストに10人のユーザをログオンさせます。各ユーザは別々のクライアントコンピュータで実行する必要があります。</li>
+<li>各セッションで、通常のセッション中にユーザが実行すると予想されるすべてのプログラムを起動します。各セッションで、一般的なユーザのアプリケーションとのやり取りをシミュレートします。これは、各セッションを実行しているライブユーザ、またはサードパーティの自動テストツールを使用して各クライアントで記録および再生されるスクリプトを使用して行うことができます。</li>
+<li>15〜30分間テストを実行します。</li>
+<li>パフォーマンスモニタログを停止します。</li>
+<li>ログのアイコンを右クリックして、「停止」を選択します。</li>
+<li>Microsoft Excelなどのスプレッドシートプログラムでログファイルを開き、結果をグラフ化します。</li>
+<li>次のように、データからユーザごとのリソース要件を決定します。<br>
+a. ユーザ辺りの平均プロセッサー使用率<br></li>
 </ol>
-<p>　　a. ユーザ辺りの平均プロセッサー使用率
-<code>AverageProcessorUtilizationPerUser =（AveragePercentProcessorTime * NumberOfProcessors）/ 10</code>
-ここで、AveragePercentProcessorTimeは、 Processor \％Processorの平均値です。 一般的なユーザ操作がシミュレートされた期間中の合計カウンタ NumberOfProcessorsは、コンピュータに取り付けられているプロセッサの数です。</p>
-<pre><code>b. ユーザごとに必要な物理メモリ 
-    ```
-PhysicalMemoryPerUser =（InitialAvailableBytes - MinimumAvailableBytes）/ 10
-    ``` 
-InitialAvailableBytesとMinimumAvailableBytesは、それぞれ Memory Available Bytesカウンタの初期値と最小値です。
-
-c. ユーザごとに必要なコミット済みメモリ
-    ```
-CommittedMemoryPerUser =（MaximumCommittedBytes - InitialCommittedBytes）/ 10 
-    ```	
-    MaximumCommittedBytesとInitialCommittedBytesは、それぞれ Memory  Committed Bytesカウンタの最大値と初期値です。
-</code></pre>
-<p>　　d. ユーザごとに必要なページプールメモリ　
-<code>PagedPoolMemoryPerUser =（MaximumPagedPoolBytes - InitialPagedPoolBytes）/ 10</code>	
-MaximumPagedPoolBytesとInitialPagedPoolBytesは、それぞれ Memory Pool Paged Bytesカウンタの最大値と初期値です。</p>
-<pre><code>e. ユーザごとに必要なシステムPTEの数 
-    ```
-SystemPTEsPerUser =（InitialFreeSystemPTEs - MinimumFreeSystemPTEs）/ 10
-    ```	
-    InitialFreeSystemPTEおよびMinimumFreeSystemPTEは、それぞれ Memory Free System Page Tableエントリエントリの初期値および最小値です。
-</code></pre>
+<pre><code>AverageProcessorUtilizationPerUser =（AveragePercentProcessorTime * NumberOfProcessors）/ 10
+</code></pre><p>ここで、AveragePercentProcessorTimeは、Processor\％Processorの平均値です。一般的なユーザ操作がシミュレートされた期間中の合計カウンタ NumberOfProcessorsは、コンピュータに取り付けられているプロセッサの数です。<br>
+b. ユーザごとに必要な物理メモリ<br></p>
+<pre><code>PhysicalMemoryPerUser =（InitialAvailableBytes - MinimumAvailableBytes）/ 10
+</code></pre><p>InitialAvailableBytesとMinimumAvailableBytesは、それぞれ Memory Available Bytesカウンタの初期値と最小値です。<br>
+c. ユーザごとに必要なコミット済みメモリ<br></p>
+<pre><code>CommittedMemoryPerUser =（MaximumCommittedBytes - InitialCommittedBytes）/ 10 
+</code></pre><p>MaximumCommittedBytesとInitialCommittedBytesは、それぞれ Memory  Committed Bytesカウンタの最大値と初期値です。<br>
+d. ユーザごとに必要なページプールメモリ　</p>
+<pre><code>PagedPoolMemoryPerUser =（MaximumPagedPoolBytes - InitialPagedPoolBytes）/ 10
+</code></pre><p>MaximumPagedPoolBytesとInitialPagedPoolBytesは、それぞれ Memory Pool Paged Bytesカウンタの最大値と初期値です。<br>
+e. ユーザごとに必要なシステムPTEの数</p>
+<pre><code>SystemPTEsPerUser =（InitialFreeSystemPTEs - MinimumFreeSystemPTEs）/ 10
+</code></pre><p>InitialFreeSystemPTEおよびMinimumFreeSystemPTEは、それぞれ Memory Free System Page Tableエントリエントリの初期値および最小値です。<br></p>
 <h2 id="2利用可能なリソースの決定"><strong>2.利用可能なリソースの決定</strong></h2>
 <p>目的のアプリケーションのセットに対するユーザの要件がわかったら、次のステップは、アプリケーションの実行に使用されるコンピュータの利用可能なリソースを測定することです。これは次のようにして行うことができます。</p>
 <ol>
-<li>
-<p>まだインストールされていない場合は、サーバコンピュータにGO-Globalをインストールします。</p>
-</li>
-<li>
-<p>コンピュータを再起動してください。</p>
-</li>
-<li>
-<p>Windowsパフォーマンスモニタを使用して、次のパフォーマンスカウンタの初期値を取得します。</p>
-<p>a. \Memory\Available Bytes</p>
-<p>b. \Memory\Committed Bytes</p>
-<p>c. \Memory\Commit Limit</p>
-<p>d. \Memory\Pool Paged Bytes</p>
-<p>e. \Memory\Free System Page Table Entries</p>
-</li>
-<li>
-<p>このデータを使用して、コンピュータで利用可能な次のリソースを計算します。</p>
-<p>a. 利用可能な処理能力:</p>
+<li>まだインストールされていない場合は、サーバコンピュータにGO-Globalをインストールします。</li>
+<li>コンピュータを再起動してください。</li>
+<li>Windowsパフォーマンスモニタを使用して、次のパフォーマンスカウンタの初期値を取得します。
+a. \Memory\Available Bytes<br>
+b. \Memory\Committed Bytes<br>
+c. \Memory\Commit Limit<br>
+d. \Memory\Pool Paged Bytes<br>
+e. \Memory\Free System Page Table Entries<br></li>
+<li>このデータを使用して、コンピュータで利用可能な次のリソースを計算します。
+a. 利用可能な処理能力:
 <pre><code>AvailableProcessorUtilization = (NumberOfProcessors  ProcessorSpeed  MaximumPercentUtilizationAllowed) / BaseProcessorSpeed      
-</code></pre><p>NumberOfProcessorsはサーバにインストールされているプロセッサの数、ProcessorSpeedはサーバのプロセッサのMHz単位の速度、BaseProcessorSpeedは上記のステップ1.8.aでAverageProcessorUtilizationPerUserを決定するために使用されるプロセッサの速度です。MaximumPercentUtilizationは、通常の操作中に発生するはずのプロセッサ使用率の最大パーセンテージです。 MaximumPercentUtilizationの推奨値は0.80（80％）です。</p>
-<p>b. 利用可能な物理メモリ:</p>
+</code></pre><p>NumberOfProcessorsはサーバにインストールされているプロセッサの数、ProcessorSpeedはサーバのプロセッサのMHz単位の速度、BaseProcessorSpeedは上記のステップ1.8.aでAverageProcessorUtilizationPerUserを決定するために使用されるプロセッサの速度です。MaximumPercentUtilizationは、通常の操作中に発生するはずのプロセッサ使用率の最大パーセンテージです。 MaximumPercentUtilizationの推奨値は0.80（80％）です。
+b. 利用可能な物理メモリ:</p>
 <pre><code>AvailablePhysicalMemory = InitialAvailableBytes - MinimumAvailableBytesAllowed
 </code></pre><p>ここで、InitialAvailableBytesは Memory Available Bytesカウンタの初期値で、MinimumAvailableBytesAllowedは通常の操作中に使用可能な物理メモリの最小バイト数です。MinimumAvailableBytesAllowedの推奨値は41943040バイト(40 MB)です。</p>
 </li>
@@ -3062,7 +3017,7 @@ SystemPTEsPerUser =（InitialFreeSystemPTEs - MinimumFreeSystemPTEs）/ 10
 <p>d. 利用可能なページプールメモリ:</p>
 <pre><code>AvailablePagedPoolMemory = SizeOfPagedPool - InitialPagedPoolBytes - MinimumAvailablePagedPoolBytesAllowed
 </code></pre><p>SizeOfPagedPoolはバイト単位のページプールのサイズ(通常、Windows 2000サーバでは0x0A000000(167772160)バイト)で、InitialPagedPoolBytesは Memory Pool Paged Bytesカウンタの初期値です。MinimumAvailablePagedPoolBytesAllowedは、通常の操作中に利用可能であるべきページプールの最小バイト数です。MinimumAvailablePagedPoolBytesAllowedの推奨値は1048576バイト(10 MB)です。</p>
-
+<p>
 
 <div class="alert alert-info" role="alert">
 
@@ -3070,32 +3025,24 @@ SystemPTEsPerUser =（InitialFreeSystemPTEs - MinimumFreeSystemPTEs）/ 10
 <h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
 <p>ページプールの実際のサイズは、次のようにカーネルデバッガを使用して決定できます。</p>
 <ol>
-<li>
-<p>デバッガに侵入します。</p>
-</li>
-<li>
-<p>!vmと入力します。次にENTERを押します。</p>
-</li>
-<li>
-<p>コンピュータの仮想メモリに関する情報が表示されます。ページプールのサイズは、PagedPool Maximumとして表示されます。</p>
-</li>
+<li>デバッガに侵入します。</li>
+<li>!vmと入力します。次にENTERを押します。</li>
+<li>コンピュータの仮想メモリに関する情報が表示されます。ページプールのサイズは、PagedPool Maximumとして表示されます。
+カーネルデバッガの使用方法については、マイクロソフトサポート技術情報の記事151981を参照してください。</li>
 </ol>
-<p>カーネルデバッガの使用方法については、マイクロソフトサポート技術情報の記事151981を参照してください。</p>
 
 </div>
 
-<pre><code>e. 利用可能なシステムPTE:
-```
-AvailableSystemPTEs = InitialFreeSystemPTEs - MinimumAvailableSystemPTEsAllowed
-```
-ここで、InitialFreeSystemPTEsはMemory Free System Page Tableエントリエントリの値であり、MinimumAvailableSystemPTEsAllowedは通常の操作中に利用可能であるべきSystemPTEの最小数です。 MinimumAvailableSystemPTEsAllowedの推奨値は4000です。
-</code></pre>
+<br>
+e. 利用可能なシステムPTE:<br>
+<code>&lt;br&gt; AvailableSystemPTEs = InitialFreeSystemPTEs - MinimumAvailableSystemPTEsAllowed&lt;br&gt;</code><br>
+ここで、InitialFreeSystemPTEsはMemory Free System Page Tableエントリエントリの値であり、MinimumAvailableSystemPTEsAllowedは通常の操作中に利用可能であるべきSystemPTEの最小数です。 MinimumAvailableSystemPTEsAllowedの推奨値は4000です。</p>
 <h2 id="3ユーザ制限の計算"><strong>3.ユーザ制限の計算</strong></h2>
 <p>ステップ1と2で取得した値を使用して、コンピュータのユーザ制限を次のように見積もることができます。</p>
 <ol>
-<li>各コンピュータのリソースでサポートできる最大ユーザ数を計算します。</li>
+<li>各コンピュータのリソースでサポートできる最大ユーザ数を計算します。
+a. コンピュータのプロセッサでサポートできる最大ユーザ数を計算します。</li>
 </ol>
-<p>a. コンピュータのプロセッサでサポートできる最大ユーザ数を計算します。</p>
 <pre><code>ProcessorUserLimit = AvailableProcessorUtilization / AverageProcessorUtilizationPerUser
 </code></pre><p>b. コンピュータの利用可能な物理メモリでサポートできる最大ユーザー数を計算します。</p>
 <pre><code>PhysicalMemoryUserLimit = AvailablePhysicalMemory / PhysicalMemoryPerUser
@@ -3110,11 +3057,11 @@ AvailableSystemPTEs = InitialFreeSystemPTEs - MinimumAvailableSystemPTEsAllowed
 </ol>
 <pre><code>MaximumNumberOfUsers = Minimum ( ProcessorUserLimit, PhysicalMemoryUserLimit, CommittedMemoryUserLimit, PagePoolMemoryUserLimit, SystemPTEUserLimit)
 </code></pre><ol start="3">
-<li>最大ユーザ数が必要数より少ない場合は、制限されているリソースの可用性を高めるためにコンピュータの構成を変更します。</li>
+<li>最大ユーザ数が必要数より少ない場合は、制限されているリソースの可用性を高めるためにコンピュータの構成を変更します。
+a. プロセッサ使用率がリソースを制限している場合は、サーバの数を増やすか、またはより高速のプロセッサやより多数のプロセッサを搭載したサーバを使用します。
+b. 物理メモリがリソースを制限している場合は、コンピュータにメモリを増設します。 Windows 2000サーバにインストールできる最大メモリ容量は4 GBです。
+c. コミットメモリがリソースを制限している場合は、ディスクページングファイルのサイズを大きくします。</li>
 </ol>
-<p>a. プロセッサ使用率がリソースを制限している場合は、サーバの数を増やすか、またはより高速のプロセッサやより多数のプロセッサを搭載したサーバを使用します。</p>
-<p>b. 物理メモリがリソースを制限している場合は、コンピュータにメモリを増設します。 Windows 2000サーバにインストールできる最大メモリ容量は4 GBです。</p>
-<p>c. コミットメモリがリソースを制限している場合は、ディスクページングファイルのサイズを大きくします。</p>
 <p>ⅰ. マイコンピュータを右クリックして、プロパティを選択します。<br>
 ⅱ. 詳細をクリックします。<br>
 ⅲ. パフォーマンスオプション変化する。<br>
@@ -3157,8 +3104,9 @@ AvailableSystemPTEs = InitialFreeSystemPTEs - MinimumAvailableSystemPTEsAllowed
 
 </div>
 
-<p>e. システムPTEの数が制限リソースである場合は、システムPTEの数が最大になるようにシステムが構成されていることを確認してください。</p>
-<p>ⅰ. 次のレジストリ値をダブルクリックします。\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\SystemPages.<br>
+<p>e. システムPTEの数が制限リソースである場合は、システムPTEの数が最大になるようにシステムが構成されていることを確認してください。<br>
+<br>
+ⅰ. 次のレジストリ値をダブルクリックします。\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\SystemPages.<br>
 ⅱ. 16進数を選択します。<br>
 ⅲ. 値を確認してください。FFFFFFFFです。GO-Global Setup Programは、製品のインストール時にこのフィールドをこの値に設定します。その後値が変更された場合は、FFFFFFFFに再設定してください。<br>
 ⅳ. PagedPoolSize値(やはりMemory Managementキーの下にあります)の値を確認してください。それはゼロ(0)であるはずです。 <br>
@@ -3267,7 +3215,7 @@ AvailableSystemPTEs = InitialFreeSystemPTEs - MinimumAvailableSystemPTEsAllowed
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 29, 2020: <a  href="https://github.com//commit/8c7a5e6fbeb1cbae41e64d02599431db7c163560">update0629-1 (8c7a5e6f)</a>
+	<div class="text-muted mt-5 pt-3 border-top">最終更新 June 30, 2020: <a  href="https://github.com//commit/3c8b3c26e5b47528061271e5b170639851ee6114">update0630 (3c8b3c26)</a>
 </div>
 </div>
 

@@ -134,7 +134,7 @@
   
   <url>
     <loc>/docs/deployment-guide/capacity-planning/capacityplanning/</loc>
-    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
+    <lastmod>2020-06-30T17:47:54+09:00</lastmod>
   </url>
   
   <url>
@@ -570,6 +570,10 @@
   <url>
     <loc>/docs/deployment-guide/</loc>
     <lastmod>2020-06-29T17:59:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/deployment-guide/appendix/checklist/</loc>
   </url>
   
   <url>
@@ -1659,11 +1663,6 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-03-03T14:08:37+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/community/</loc>
     <lastmod>2020-03-03T14:08:37+09:00</lastmod>
   </url>
   

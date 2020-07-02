@@ -65,5 +65,45 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: GO-Global Host  DEPLOYMENT CHECKLIST</title>
+      <link>/docs/deployment-guide/appendix/checklist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/deployment-guide/appendix/checklist/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ハードウェアの設定&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; オペレーティングシステムの設定&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 国際的なキーボードサポートの追加(オプション)&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; サーバをネットワークに接続する&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ホストのDNSレコードを追加する&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Webサーバのインストール(オプション)&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; アプリケーションのインストール&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; アプリケーションの設定(オプション)&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Windowsのユーザポリシとサーバポリシの作成/変更&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ローカルセキュリティポリシ、ドメインセキュリティポリシで、ユーザアカウントに&amp;quot;ローカルログオン権&amp;quot;があることを確認&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ドメインコントローラのセキュリティポリシ&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; GO-Globalホストのソフトウェアインストール&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; GO-Globalライセンスファイルのインストール&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ホストを再起動&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 管理者権限を持つユーザアカウントでログイン&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 管理者コンソールを使用してアプリケーションを公開&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 管理者コンソールにサーバオプションを追加(オプション)&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; データ暗号化&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; クライアントドライブ&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; クライアントのクリップボード&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; クライアントプリンタ&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 認証&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 接続のトランスポートモード(SSLまたはTCP)&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ホストとアプリケーションの保護&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; クライアントソフトウェアのデプロイ&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

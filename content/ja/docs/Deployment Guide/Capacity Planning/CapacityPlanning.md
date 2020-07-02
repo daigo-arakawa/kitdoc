@@ -63,11 +63,8 @@ GO-Globalホストからサポートできるユーザの数は、以下のよ�
 ### 特定のサーバから効率的に実行できるユーザーの数を判断する方法
 
 1. 平均的なユーザーに必要な上記の各リソースの量を決定します。
-
 2. 各リソースのうち最初にサーバコンピュータで使用可能な量を決定します。
-
 3. 手順1と2からの情報を使用してユーザ制限を計算します。
-
 4. 実稼働環境で計算結果を確認してください。
 
 このプロセスの詳細は以下のページで説明されています。
@@ -78,115 +75,78 @@ GO-Globalホストからサポートできるユーザの数は、以下のよ�
 ### 特定のアプリケーションセットに対するユーザごとのリソース要件を判断する方法
 
 1. サーバコンピュータを再起動します。
-
-2. Windowsパフォーマンスモニタを使用してシステムリソースの記録を開始する。
-
-a. 別のWindowsコンピュータで、Windowsパフォーマンスモニタを起動します。
-
-b. Performance Logs とAlerts\Counter Logsを右クリックします。
-
-c. 新規ログ設定を選択します。
-
-d. ログの名前を入力してください。
-
-e. 追加をクリックします。
-
-f. [コンピュータからカウンタを選択する]フィールドにサーバコンピュータの名前を入力します。
-
-g. 以下のカウンタを追加してください。
+2. Windowsパフォーマンスモニタを使用してシステムリソースの記録を開始する。<br>
+a. 別のWindowsコンピュータで、Windowsパフォーマンスモニタを起動します。<br>
+b. Performance Logs とAlerts\Counter Logsを右クリックします。<br>
+c. 新規ログ設定を選択します。<br>
+d. ログの名前を入力してください。<br>
+e. 追加をクリックします。<br>
+f. [コンピュータからカウンタを選択する]フィールドにサーバコンピュータの名前を入力します。<br>
+g. 以下のカウンタを追加してください。<br>
 
 	1. \Processor\% Processor Time
-
 	2. \Memory\Available Bytes
-
 	3. \Memory\Committed Bytes
-
 	4. \Memory\Pool Paged Bytes
-
 	5. \Memory\Free System Page Table Entries
 
-h. サンプル間隔を10秒に設定します。
-
-i. ログファイルタブを選択します。
-
-j. ログファイルの種類をテキストファイル .CSVに変更します。
-
-k. OKをクリックします。
-
-l. 新しいログのアイコンを右クリックして、「開始」を選択します。
+  h. サンプル間隔を10秒に設定します。<br>
+  i. ログファイルタブを選択します。<br>
+  j. ログファイルの種類をテキストファイル .CSVに変更します。<br>
+  k. OKをクリックします。<br>
+  l. 新しいログのアイコンを右クリックして、「開始」を選択します。<br>
 
 3. GO-Globalホストに10人のユーザをログオンさせます。各ユーザは別々のクライアントコンピュータで実行する必要があります。
-
 4. 各セッションで、通常のセッション中にユーザが実行すると予想されるすべてのプログラムを起動します。各セッションで、一般的なユーザのアプリケーションとのやり取りをシミュレートします。これは、各セッションを実行しているライブユーザ、またはサードパーティの自動テストツールを使用して各クライアントで記録および再生されるスクリプトを使用して行うことができます。
-
 5. 15〜30分間テストを実行します。
-
 6. パフォーマンスモニタログを停止します。
-
 7. ログのアイコンを右クリックして、「停止」を選択します。
-
 8. Microsoft Excelなどのスプレッドシートプログラムでログファイルを開き、結果をグラフ化します。
-
-9. 次のように、データからユーザごとのリソース要件を決定します。
-
-　　a. ユーザ辺りの平均プロセッサー使用率
-        ```
-	AverageProcessorUtilizationPerUser =（AveragePercentProcessorTime * NumberOfProcessors）/ 10
-	```
-        ここで、AveragePercentProcessorTimeは、 Processor \％Processorの平均値です。 一般的なユーザ操作がシミュレートされた期間中の合計カウンタ NumberOfProcessorsは、コンピュータに取り付けられているプロセッサの数です。
-
-    b. ユーザごとに必要な物理メモリ 
-        ```
-	PhysicalMemoryPerUser =（InitialAvailableBytes - MinimumAvailableBytes）/ 10
-        ``` 
-	InitialAvailableBytesとMinimumAvailableBytesは、それぞれ Memory Available Bytesカウンタの初期値と最小値です。
-
-    c. ユーザごとに必要なコミット済みメモリ
-        ```
-	CommittedMemoryPerUser =（MaximumCommittedBytes - InitialCommittedBytes）/ 10 
-        ```	
-        MaximumCommittedBytesとInitialCommittedBytesは、それぞれ Memory  Committed Bytesカウンタの最大値と初期値です。
-
-　　d. ユーザごとに必要なページプールメモリ　
-        ```
-	PagedPoolMemoryPerUser =（MaximumPagedPoolBytes - InitialPagedPoolBytes）/ 10
-        ```	
-        MaximumPagedPoolBytesとInitialPagedPoolBytesは、それぞれ Memory Pool Paged Bytesカウンタの最大値と初期値です。
-
-    e. ユーザごとに必要なシステムPTEの数 
-        ```
-	SystemPTEsPerUser =（InitialFreeSystemPTEs - MinimumFreeSystemPTEs）/ 10
-        ```	
-        InitialFreeSystemPTEおよびMinimumFreeSystemPTEは、それぞれ Memory Free System Page Tableエントリエントリの初期値および最小値です。
+9. 次のように、データからユーザごとのリソース要件を決定します。<br>
+a. ユーザ辺りの平均プロセッサー使用率<br>
+```
+AverageProcessorUtilizationPerUser =（AveragePercentProcessorTime * NumberOfProcessors）/ 10
+```
+ここで、AveragePercentProcessorTimeは、Processor\％Processorの平均値です。一般的なユーザ操作がシミュレートされた期間中の合計カウンタ NumberOfProcessorsは、コンピュータに取り付けられているプロセッサの数です。<br>
+b. ユーザごとに必要な物理メモリ<br>
+```
+PhysicalMemoryPerUser =（InitialAvailableBytes - MinimumAvailableBytes）/ 10
+``` 
+InitialAvailableBytesとMinimumAvailableBytesは、それぞれ Memory Available Bytesカウンタの初期値と最小値です。<br>
+c. ユーザごとに必要なコミット済みメモリ<br>
+```
+CommittedMemoryPerUser =（MaximumCommittedBytes - InitialCommittedBytes）/ 10 
+```	
+MaximumCommittedBytesとInitialCommittedBytesは、それぞれ Memory  Committed Bytesカウンタの最大値と初期値です。<br>
+d. ユーザごとに必要なページプールメモリ　
+```
+PagedPoolMemoryPerUser =（MaximumPagedPoolBytes - InitialPagedPoolBytes）/ 10
+```	
+MaximumPagedPoolBytesとInitialPagedPoolBytesは、それぞれ Memory Pool Paged Bytesカウンタの最大値と初期値です。<br>
+e. ユーザごとに必要なシステムPTEの数 
+```
+SystemPTEsPerUser =（InitialFreeSystemPTEs - MinimumFreeSystemPTEs）/ 10
+```	
+InitialFreeSystemPTEおよびMinimumFreeSystemPTEは、それぞれ Memory Free System Page Tableエントリエントリの初期値および最小値です。<br>
 
 ## **2.利用可能なリソースの決定**
 
 目的のアプリケーションのセットに対するユーザの要件がわかったら、次のステップは、アプリケーションの実行に使用されるコンピュータの利用可能なリソースを測定することです。これは次のようにして行うことができます。
 
 1. まだインストールされていない場合は、サーバコンピュータにGO-Globalをインストールします。
-
 2. コンピュータを再起動してください。
-
 3. Windowsパフォーマンスモニタを使用して、次のパフォーマンスカウンタの初期値を取得します。
-
-   a. \Memory\Available Bytes
-
-   b. \Memory\Committed Bytes
-
-   c. \Memory\Commit Limit
-
-   d. \Memory\Pool Paged Bytes
-
-   e. \Memory\Free System Page Table Entries
-
+   a. \Memory\Available Bytes<br>
+   b. \Memory\Committed Bytes<br>
+   c. \Memory\Commit Limit<br>
+   d. \Memory\Pool Paged Bytes<br>
+   e. \Memory\Free System Page Table Entries<br>
 4. このデータを使用して、コンピュータで利用可能な次のリソースを計算します。
-
    a. 利用可能な処理能力:
    ```
    AvailableProcessorUtilization = (NumberOfProcessors  ProcessorSpeed  MaximumPercentUtilizationAllowed) / BaseProcessorSpeed      
    ```
    NumberOfProcessorsはサーバにインストールされているプロセッサの数、ProcessorSpeedはサーバのプロセッサのMHz単位の速度、BaseProcessorSpeedは上記のステップ1.8.aでAverageProcessorUtilizationPerUserを決定するために使用されるプロセッサの速度です。MaximumPercentUtilizationは、通常の操作中に発生するはずのプロセッサ使用率の最大パーセンテージです。 MaximumPercentUtilizationの推奨値は0.80（80％）です。
-
    b. 利用可能な物理メモリ:
    ```
    AvailablePhysicalMemory = InitialAvailableBytes - MinimumAvailableBytesAllowed
@@ -209,18 +169,15 @@ l. 新しいログのアイコンを右クリックして、「開始」を選�
 ページプールの実際のサイズは、次のようにカーネルデバッガを使用して決定できます。
 
 1. デバッガに侵入します。
-
 2. !vmと入力します。次にENTERを押します。
-
 3. コンピュータの仮想メモリに関する情報が表示されます。ページプールのサイズは、PagedPool Maximumとして表示されます。
-
 カーネルデバッガの使用方法については、マイクロソフトサポート技術情報の記事151981を参照してください。
 {{% /alert %}}
-
-    e. 利用可能なシステムPTE:
-    ```
-    AvailableSystemPTEs = InitialFreeSystemPTEs - MinimumAvailableSystemPTEsAllowed
-    ```
+<br>
+    e. 利用可能なシステムPTE:<br>
+    ```<br>
+    AvailableSystemPTEs = InitialFreeSystemPTEs - MinimumAvailableSystemPTEsAllowed<br>
+    ```<br>
     ここで、InitialFreeSystemPTEsはMemory Free System Page Tableエントリエントリの値であり、MinimumAvailableSystemPTEsAllowedは通常の操作中に利用可能であるべきSystemPTEの最小数です。 MinimumAvailableSystemPTEsAllowedの推奨値は4000です。
 
 ## **3.ユーザ制限の計算**
@@ -228,7 +185,6 @@ l. 新しいログのアイコンを右クリックして、「開始」を選�
 ステップ1と2で取得した値を使用して、コンピュータのユーザ制限を次のように見積もることができます。
 
 1. 各コンピュータのリソースでサポートできる最大ユーザ数を計算します。
-
 a. コンピュータのプロセッサでサポートできる最大ユーザ数を計算します。
 ```
 ProcessorUserLimit = AvailableProcessorUtilization / AverageProcessorUtilizationPerUser
@@ -254,11 +210,8 @@ SystemPTEUserLimit = AvailableSystemPTEs / SystemPTEsPerUser
 MaximumNumberOfUsers = Minimum ( ProcessorUserLimit, PhysicalMemoryUserLimit, CommittedMemoryUserLimit, PagePoolMemoryUserLimit, SystemPTEUserLimit)
 ```
 3. 最大ユーザ数が必要数より少ない場合は、制限されているリソースの可用性を高めるためにコンピュータの構成を変更します。
-
 a. プロセッサ使用率がリソースを制限している場合は、サーバの数を増やすか、またはより高速のプロセッサやより多数のプロセッサを搭載したサーバを使用します。
-
 b. 物理メモリがリソースを制限している場合は、コンピュータにメモリを増設します。 Windows 2000サーバにインストールできる最大メモリ容量は4 GBです。
-
 c. コミットメモリがリソースを制限している場合は、ディスクページングファイルのサイズを大きくします。
 
 ⅰ. マイコンピュータを右クリックして、プロパティを選択します。<br>
@@ -293,8 +246,8 @@ d. ページプールメモリがリソースを制限している場合は、�
 6. OKをクリックします。
 {{% /alert %}}
 
-e. システムPTEの数が制限リソースである場合は、システムPTEの数が最大になるようにシステムが構成されていることを確認してください。
-
+e. システムPTEの数が制限リソースである場合は、システムPTEの数が最大になるようにシステムが構成されていることを確認してください。<br>
+<br>
 ⅰ. 次のレジストリ値をダブルクリックします。\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\SystemPages.<br>
 ⅱ. 16進数を選択します。<br>
 ⅲ. 値を確認してください。FFFFFFFFです。GO-Global Setup Programは、製品のインストール時にこのフィールドをこの値に設定します。その後値が変更された場合は、FFFFFFFFに再設定してください。<br>
