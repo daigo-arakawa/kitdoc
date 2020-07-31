@@ -73,8 +73,19 @@
   </url>
   
   <url>
-    <loc>/docs/deployment-guide/host-requirements/hostrequirements/</loc>
-    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasylog/introducingexpackrag/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasylogon/introducingexpackrag/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasymonitor/introducingexpackrag/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/introduction/introducingexpackrag/</loc>
   </url>
   
   <url>
@@ -118,23 +129,8 @@
   </url>
   
   <url>
-    <loc>/docs/deployment-guide/application-design-considerations/applicationdesignconsiderations/</loc>
-    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/docs/deployment-guide/introduction/</loc>
     <lastmod>2020-06-29T17:59:23+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/deployment-guide/introduction/introduction/</loc>
-    <lastmod>2020-06-29T17:59:23+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/docs/deployment-guide/capacity-planning/capacityplanning/</loc>
-    <lastmod>2020-06-30T17:47:54+09:00</lastmod>
   </url>
   
   <url>
@@ -173,6 +169,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/introduction/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/advanced-topics/go-global-host-performance-counters/</loc>
     <lastmod>2020-05-28T00:50:53+09:00</lastmod>
   </url>
@@ -185,6 +185,14 @@
   <url>
     <loc>/docs/go-globalrc61/mobileapptoolbareditor/creatingcustomtoolbars/</loc>
     <lastmod>2020-06-22T17:26:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/introduction/history/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasylogon/</loc>
   </url>
   
   <url>
@@ -318,6 +326,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasymonitor/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/running-go-global/running-the-go-global-web-app/</loc>
     <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
@@ -345,6 +357,10 @@
   <url>
     <loc>/docs/deployment-guide/host-requirements/</loc>
     <lastmod>2020-06-29T17:59:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/introduction/future/</loc>
   </url>
   
   <url>
@@ -473,6 +489,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasylog/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/</loc>
     <lastmod>2020-06-03T03:24:08+09:00</lastmod>
   </url>
@@ -510,6 +530,10 @@
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/managinggo-globallicenses/</loc>
     <lastmod>2020-06-24T17:55:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/introduction/license/</loc>
   </url>
   
   <url>
@@ -573,7 +597,12 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/gghx-systemprocess/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/deployment-guide/appendix/checklist/</loc>
+    <lastmod>2020-07-02T16:34:35+09:00</lastmod>
   </url>
   
   <url>
@@ -677,6 +706,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/introduction/matrix/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/configuring-the-host/running-go-global-through-apache-http-server/</loc>
     <lastmod>2020-05-28T14:13:11+09:00</lastmod>
   </url>
@@ -689,6 +722,14 @@
   <url>
     <loc>/docs/go-globalrc61/appendix/encryptionandexportationregulations/</loc>
     <lastmod>2020-06-03T03:24:08+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggapsmanager/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/</loc>
   </url>
   
   <url>
@@ -769,6 +810,10 @@
   <url>
     <loc>/docs/go-globalrc61/runninggo-global/uninstallingappcontroller/</loc>
     <lastmod>2020-06-22T17:26:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasymonitorconnectioncchchecheck/</loc>
   </url>
   
   <url>
@@ -857,6 +902,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggaxdelete4g/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/technote/technote167/</loc>
     <lastmod>2020-06-25T18:07:48+09:00</lastmod>
   </url>
@@ -924,6 +973,10 @@
   <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/two-factorauthentication/</loc>
     <lastmod>2020-06-22T17:26:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggexplic/</loc>
   </url>
   
   <url>
@@ -1002,6 +1055,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/gghealthcheck2/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-globalrc61/configuringthehost/redundantlicenseservers/</loc>
     <lastmod>2020-06-08T12:29:35+09:00</lastmod>
   </url>
@@ -1067,6 +1124,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggnetworkcheck/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-globalrc61/go-globaladminconsole/clienttimezone/</loc>
     <lastmod>2020-06-22T17:26:22+09:00</lastmod>
   </url>
@@ -1122,6 +1183,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggservicemonitor/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/advanced-topics/specifying-the-maximum-color-depth-for-go-global-sessions/</loc>
     <lastmod>2020-05-28T00:50:53+09:00</lastmod>
   </url>
@@ -1174,6 +1239,10 @@
   <url>
     <loc>/docs/go-global6/technote/technote205/</loc>
     <lastmod>2020-06-25T18:07:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggsessionmanager/</loc>
   </url>
   
   <url>
@@ -1242,6 +1311,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggsessionmonitor/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global-for-windows-6tips/technote/technote207/</loc>
     <lastmod>2020-06-29T12:54:16+09:00</lastmod>
   </url>
@@ -1282,6 +1355,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/gmservice/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/go-global-admin-console/</loc>
     <lastmod>2020-05-28T00:12:53+09:00</lastmod>
   </url>
@@ -1309,6 +1386,10 @@
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/mappeddrives/</loc>
     <lastmod>2020-06-03T03:24:08+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasyprinnters/</loc>
   </url>
   
   <url>
@@ -1342,6 +1423,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasyprintspooler/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-globalrc61/advancedtopics/specifyingthemaximumcolordepthforgo-globalsessions/</loc>
     <lastmod>2020-06-23T18:22:07+09:00</lastmod>
   </url>
@@ -1359,6 +1444,10 @@
   <url>
     <loc>/docs/go-global5/topikku-1/shiriaru-ptooyobiparareru-pto/</loc>
     <lastmod>2020-05-27T10:44:17+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasynotify/</loc>
   </url>
   
   <url>
@@ -1389,6 +1478,14 @@
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/modifyingthefontcontrastproperty/</loc>
     <lastmod>2020-06-23T18:22:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasydefaultprinter/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasynews/</loc>
   </url>
   
   <url>
@@ -1447,6 +1544,14 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasypassword/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggtoolsessioncount/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-globalrc61/advancedtopics/applicationscriptsupport/</loc>
     <lastmod>2020-06-23T18:22:07+09:00</lastmod>
   </url>
@@ -1467,6 +1572,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggsleepapp/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/advanced-topics/silent-installation/</loc>
     <lastmod>2020-03-05T15:26:56+09:00</lastmod>
   </url>
@@ -1474,6 +1583,10 @@
   <url>
     <loc>/docs/go-global5/topikku-1/no-1/</loc>
     <lastmod>2020-05-27T10:44:17+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasylogoff/</loc>
   </url>
   
   <url>
@@ -1489,6 +1602,10 @@
   <url>
     <loc>/docs/go-globalrc61/advancedtopics/proxytunneling/</loc>
     <lastmod>2020-06-23T18:22:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasyenableeudc/</loc>
   </url>
   
   <url>
@@ -1512,6 +1629,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggpdfprint/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global6/mobile-app-toolbar-editor/</loc>
     <lastmod>2020-03-04T10:47:30+09:00</lastmod>
   </url>
@@ -1527,6 +1648,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/gmfileproc/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-globalrc61/advancedtopics/videosupport/</loc>
     <lastmod>2020-06-23T18:22:07+09:00</lastmod>
   </url>
@@ -1534,6 +1659,10 @@
   <url>
     <loc>/docs/go-global5/topikku-1/purokishinotonneringu/</loc>
     <lastmod>2020-05-27T10:44:17+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggcreatesession/</loc>
   </url>
   
   <url>
@@ -1557,6 +1686,10 @@
   </url>
   
   <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/gmlogontest/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/go-global5/topikku-1/paenosaptowonisuru/</loc>
     <lastmod>2020-05-27T10:44:17+09:00</lastmod>
   </url>
@@ -1569,6 +1702,10 @@
   <url>
     <loc>/docs/go-global6/advanced-topics/</loc>
     <lastmod>2020-03-04T10:47:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggpramedit/</loc>
   </url>
   
   <url>
@@ -1589,6 +1726,10 @@
   <url>
     <loc>/docs/go-global5/topikku-1/automatic-windows-update-and-hotfix-compatibility/</loc>
     <lastmod>2020-05-27T10:44:17+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasyudpcheck/</loc>
   </url>
   
   <url>
