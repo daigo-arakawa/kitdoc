@@ -1,5 +1,5 @@
 ---
-title: "GO-Global6.1RC"
+title: "GO-Global 6.1RC"
 linkTitle: ""
 weight: 01
 type: "docs"

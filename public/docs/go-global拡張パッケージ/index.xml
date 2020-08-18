@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kitASP Docs – GO-Global拡張パッケージ</title>
+    <title>kitASP Docs – GO-Global 拡張パッケージ</title>
     <link>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/</link>
-    <description>Recent content in GO-Global拡張パッケージ on kitASP Docs</description>
+    <description>Recent content in GO-Global 拡張パッケージ on kitASP Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/index.xml" rel="self" type="application/rss+xml" />
@@ -209,11 +209,11 @@
     </item>
     
     <item>
-      <title>Docs: GGEasyPrinnters</title>
-      <link>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasyprinnters/</link>
+      <title>Docs: GGEasyPrinters</title>
+      <link>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasyprinters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasyprinnters/</guid>
+      <guid>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasyprinters/</guid>
       <description>
         
         
@@ -243,20 +243,91 @@
       <description>
         
         
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: GGEasyDefaultPrinter</title>
-      <link>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasydefaultprinter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasydefaultprinter/</guid>
-      <description>
-        
-        
-        
+        &lt;h2 id=&#34;変更履歴&#34;&gt;変更履歴&lt;/h2&gt;
+&lt;p&gt;[2020-05-01: 1.0.0]&lt;br&gt;
+・初版&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;機能&#34;&gt;機能&lt;/h3&gt;
+&lt;p&gt;通常GO-Globalサーバのコンソールから起動されるアプリケーションで、そのサーバ上に存在する全てのGO-Globalセッションにメッセージを表示します。&lt;/p&gt;
+&lt;h3 id=&#34;設置方法&#34;&gt;設置方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;GO-GlobalサーバでGGEasyNotify.exeを実行してインストールを行います。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;設定ファイルGGEasyNotify.iniのdefaultセクションで、以下のパラメタを設定して下さい。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;設定項目&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;logLevel&lt;/td&gt;
+&lt;td&gt;ログファイルの出力先フォルダーを指定&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;logd&lt;/td&gt;
+&lt;td&gt;ログの出力レベル（1～9）を指定、既定値は4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;apsPort&lt;/td&gt;
+&lt;td&gt;GGの接続ポートの番号を指定、既定値は491&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;appName&lt;/td&gt;
+&lt;td&gt;メッセージを表示するGGのアプリケーション名、既定値はappNews&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;起動オプションは以下の通りになります。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;設定項目&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;logLevel&lt;/td&gt;
+&lt;td&gt;引数でメッセージを表示するGG上のアプリケーション名を指定 ※未指定時は設定ファイルにあるアプリケーション名を使用されます。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;logd&lt;/td&gt;
+&lt;td&gt;引数で起動するアプリケーションへのパラメタを指定 ※パラメタ全体を “” で囲って１つの文字列として指定して下さい。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;記載方法は以下の通りになります。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;[default]
+logLevel         = 4
+logd             = Logs
+apsPort          = 491
+; appName        = notepad
+;-
+; [使い方の例]
+; GGEasyNotify.exe -appArgs &amp;quot;-id msg3 午後5時 1時間&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/expackimage/GGEasyNotify1.png&#34; alt=&#34;GGEasyNotify1&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-green&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;情報&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;KGTN 2020050101&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
       </description>
     </item>
     
@@ -269,7 +340,207 @@
       <description>
         
         
+        &lt;h2 id=&#34;変更履歴&#34;&gt;変更履歴&lt;/h2&gt;
+&lt;p&gt;[2020-04-30: 1.0.0]&lt;br&gt;
+・初版&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;機能&#34;&gt;機能&lt;/h3&gt;
+&lt;p&gt;GGEasyNewsは、GGEasyNotifyから起動されるアプリケーションで、GO-Globalのセッション上にパラメタで指定された情報を画面に表示します。利用に当たっては、Admin Consoleで名称GGNewsとしてアプリケーション登録する必要があります。&lt;/p&gt;
+&lt;h3 id=&#34;設置方法&#34;&gt;設置方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;GO-GlobalサーバでGGEasyNotify.exeを実行してインストールを行います。&lt;/li&gt;
+&lt;li&gt;Admin ConsoleにてGGEasyNewsを登録します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;設定ファイルGGEasyNews.iniのdefaultセクションで、以下のパラメタを設定して下さい。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;設定項目&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;message&lt;/td&gt;
+&lt;td&gt;既定のメッセージ （該当するメッセージが無い時に表示）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;autoClose&lt;/td&gt;
+&lt;td&gt;メッセージを自動的に閉じる場合の秒数、0 は継続して表示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;メッセージID&amp;gt;&lt;/td&gt;
+&lt;td&gt;GGの接続ポートの番号を指定、既定値は491&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;appName&lt;/td&gt;
+&lt;td&gt;表示するメッセージ、%s (3個まで) は文字列の置換が行われます&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;起動オプションは以下の通りになります。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;設定項目&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;-id　　　&lt;/td&gt;
+&lt;td&gt;表示する設定ファイルの &amp;lt;メッセージID&amp;gt; を引数として指定&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;lt;文字列&amp;gt;&lt;/td&gt;
+&lt;td&gt;置換が指定されたメッセージに与える文字列 （3個まで）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;記載方法は以下の通りになります。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;[default]
+message          = 既定のメッセージです。
+msg1             = 印刷スプーラーを再起動しました。これにより再ログオンするまでクライアント側のプリンターを選択できません。
+msg2             = これはメッセージ２です。
+msg3             = サービスを %s より %s 停止します。
+;-
+; autoClose      = 30
+;-
+; [使い方の例]
+; GGEasyNews.exe -id msg3 &amp;quot;午後5時&amp;quot; &amp;quot;1時間&amp;quot;
+;-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/expackimage/GGEasyNews1.png&#34; alt=&#34;GGEasyNews1&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-green&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;情報&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;KGTN 2020043001&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: GGEasyDefaultPrinter</title>
+      <link>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasydefaultprinter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasydefaultprinter/</guid>
+      <description>
         
+        
+        &lt;h2 id=&#34;変更履歴&#34;&gt;変更履歴&lt;/h2&gt;
+&lt;p&gt;[2017-06-28: 1.0.0]&lt;br&gt;
+・UDPのポート通信をチェックするツール&lt;br&gt;
+・初版&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;機能&#34;&gt;機能&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;/expackimage/GGEasyUDPCheck1.png&#34; alt=&#34;GGEasyUDPCheck1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Admin Consoleの左側に表示されるサーバの一覧(GO-Global Hosts)は，各GO-Globalサーバが送信するUDP:491(マルチキャスト通信)のメッセージをAdmin Consoleが受信した時に表示されます。
+上記のように批評の場合はWindowsファイアウォール等でUDP:491 がブロックされていることが考えられますので、このツールを利用してUDP:491の受信状況(到達状況)を確認してください。&lt;/p&gt;
+&lt;h3 id=&#34;設置方法&#34;&gt;設置方法&lt;/h3&gt;
+&lt;p&gt;調査したいサーバにGGEasyUDPCheck.exeを配置。&lt;/p&gt;
+&lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;利用者がコマンドプロンプトでGGEasyUDPCheck.exeを配置したところで実行すれば動作します。&lt;br&gt;
+例:C:¥Program Files\GGEasyUDPCheck.exe&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;画面およびログファイルには，次のような受信情報が記録されます。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[2017-06-13 12:45:08] Name = DESKTOP-P7UNP59, Addr = 192.168.1.160
+[2017-06-13 12:45:09] Name = WS2012R2-Isumi1, Addr = 192.168.1.63
+…
+※ Name = &amp;lt;受信したGG サーバーの名前&amp;gt;
+※ Addr = &amp;lt;受信したGG サーバーのIP アドレス&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;計測時間を経過すると受信処理は終了し，次のようなサマリー情報(重複を排除しGO-Globalサーバの名前でソート)が表示されます。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[2017-06-13 12:45:23] --- Summary ---
+[2017-06-13 12:45:23] [1] Name = DESKTOP-P7UNP59, Addr = 192.168.1.160 (10)
+[2017-06-13 12:45:23] [2] Name = WS2012R2-Isumi1, Addr = 192.168.1.63 (10)
+[2017-06-13 12:45:23] --- End ---
+※ 括弧内の数値は受信した回数
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;GGEasyUDPCheck.iniのdefaultセクションで，以下のパラメタを設定して下さい。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;設定項目&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;logd&lt;/td&gt;
+&lt;td&gt;ログの出力フォルダ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;logLevel&lt;/td&gt;
+&lt;td&gt;ログ出力レベル(1～9)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rxpPort&lt;/td&gt;
+&lt;td&gt;GO-Globalサーバのポート番号(既定値:491)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;interval&lt;/td&gt;
+&lt;td&gt;計測時間(既定値:30秒)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pvSleep&lt;/td&gt;
+&lt;td&gt;受信処理のスリープ時間(既定値:500ミリ秒)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;コマンドプロンプトで以下の引数を設定することで.iniファイルの設定を上書きすることが出来ます。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;引数　　&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;-logLevel&lt;/td&gt;
+&lt;td&gt;ログ出力レベル&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-rxpPort&lt;/td&gt;
+&lt;td&gt;GGサーバーのポート番号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-interval&lt;/td&gt;
+&lt;td&gt;計測時間&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;例:C:¥Program Files\GGEasyUDPCheck.exe -interval 300&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-green&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;情報&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;KGTN 2017061301&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
       </description>
     </item>
     
