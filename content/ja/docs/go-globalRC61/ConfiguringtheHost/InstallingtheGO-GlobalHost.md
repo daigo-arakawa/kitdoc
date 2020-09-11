@@ -16,14 +16,36 @@ GO-Globalは自己解凍型の実行ファイルとして提供され、**gg-hos
 ### GO-Global License Managerを再起動する方法
 
 1. [コントロールパネル | 管理ツール | サービス]をクリックします。
+
+![kit2-9-1](/img/kit2-9-1.png)
+![kit2-9-2](/img/kit2-9-2.png)
+![kit2-9-3](/img/kit2-9-3.png)
+
 2. サービスの一覧から [GO-Global License Manager]を選択します。
+
+![kit2-9-4](/img/kit2-9-4.png)
+![kit2-9-5](/img/kit2-9-5.png)
+
 3. 右クリックして、[再起動]を選択します。
+
+![kit2-9-6](/img/kit2-9-6.png)
 
 ### GO-Global Application Publishing Serviceを再起動する方法
 
 1. [コントロールパネル | 管理ツール | サービス]をクリックします。
+
+![kit2-9-7](/img/kit2-9-7.png)
+![kit2-9-8](/img/kit2-9-8.png)
+![kit2-9-9](/img/kit2-9-9.png)
+
 2. サービスの一覧から [GO-Global Application Publishing Service]を選択します。
+
+![kit2-9-10](/img/kit2-9-10.png)
+![kit2-9-11](/img/kit2-9-11.png)
+
 3. 右クリックして、[再起動]を選択します。
+
+![kit2-9-12](/img/kit2-9-12.png)
 
 ホストをインストールしてコンピュータを再起動した後、Webブラウザを選択してGO-Globalの **Interactive Quick Start Guide** を開きます。このガイドでは、Admin Consoleを通じてアプリケーションを公開する方法、アプリケーションへのリンクを共有する方法を説明しています。GO-Global AppControllerのログオンページに **?help=ac** を追加することで、**Interactive Quick Guide**をいつでも開くことができます。たとえば、`http://hostname/goglobal/?help=ac`のように設定します。
 

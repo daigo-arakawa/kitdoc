@@ -110,7 +110,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce071c6f16aadd29c213976a0a678b84db94cb1cd0de630c846445733b72503c32e5a5c5a537ed504d22031c7d5641a2e67e1c6eb459df3e61243f06673ef214.json"
+  data-offline-search-index-json-src="/offline-search-index.3fee6ff7dfda86189188b45d55d69ca6d39a124eff96cc0ccb1b5f5fa92ff99d080b0add5d6e8ddba441f4d07c7fb828a2292e5039eae7afc6a0b8ebcae8b9d7.json"
   data-offline-search-base-href="/"
 >
 
@@ -140,7 +140,7 @@
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce071c6f16aadd29c213976a0a678b84db94cb1cd0de630c846445733b72503c32e5a5c5a537ed504d22031c7d5641a2e67e1c6eb459df3e61243f06673ef214.json"
+  data-offline-search-index-json-src="/offline-search-index.3fee6ff7dfda86189188b45d55d69ca6d39a124eff96cc0ccb1b5f5fa92ff99d080b0add5d6e8ddba441f4d07c7fb828a2292e5039eae7afc6a0b8ebcae8b9d7.json"
   data-offline-search-base-href="/"
 >
 
@@ -2808,12 +2808,6 @@
       
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globale68ba1e5bcb5e38391e38383e382b1e383bce382b8ggeasylogintroducingexpackrag" href="/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasylog/introducingexpackrag/">GO-Global拡張パッケージの概要</a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -3485,6 +3479,18 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#変更履歴">変更履歴</a>
+      <ul>
+        <li><a href="#機能">機能</a></li>
+        <li><a href="#設置方法">設置方法</a></li>
+        <li><a href="#使用方法">使用方法</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -3528,7 +3534,48 @@
 	<h1>GGEasylog</h1>
         
 	
-	
+	<h2 id="変更履歴">変更履歴</h2>
+<p>[2017-03-07: 1.0.0]<br>
+・初版<br></p>
+<h3 id="機能">機能</h3>
+<p><img src="/expackimage/GGEasylog1.png" alt="GGEasylog1"></p>
+<p>アプリケーション(.EXE)のラッパー・プログラムで，これを介してアプリケーションが起動されると，アプリケーションの起動日時・終了日時・ユーザーID・クライアント端末の名前・クライアント端末のIPアドレスがログに記録するツール。</p>
+<h3 id="設置方法">設置方法</h3>
+<p>アプリケーションの操作記録を行いたいサーバにGGEasylogフォルダを配置。</p>
+<h3 id="使用方法">使用方法</h3>
+<ol>
+<li>GGEasylogフォルダ内にあるGGEasylog.iniにアプリケーションのパスを記載します。
+例）Internet Explorerの場合
+path = C:\Program Files (x86)\Internet Explorer\iexplore.exe
+args = <a href="http://www.yahoo.co.jp">http://www.yahoo.co.jp</a></li>
+<li>AdminConsoleの[Executable Path]ボックス内にGGEasyLog を指定し，コマンドラインのオプションで ?app &lt;アプリケーションの名称&gt; を指定します。アイコンを本来のアプリケーションのアイコンに変更します。</li>
+<li>GGにログオン後，登録したアプリケーションを起動します。先ず、GGEasyLog が起動され、GGEasyLogはログに起動日時を記録し、次にアプリケーション(この例ではIE)を起動します。この時タスクバーには、ラッパーのGGEasyLogは現れません。</li>
+<li>アプリケーションを閉じます。GGEasyLogはアプリケーションの終了を認識し，終了日時を記録します。</li>
+<li>ログに記載されているStart行 が開始日時、Ended行が終了日時です。Appはアプリケーションの名称、PID はプロセスID、USER はユーザーID、CNAME はクライアント端末の名前、IPADDR はクライアント端末のIPアドレスです。</li>
+</ol>
+
+
+<div class="alert alert-info" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>参照</h4>
+アプリケーションの操作記録を行いたいサーバが複数ある場合はそれぞれのサーバで作業を行ってください。
+</div>
+
+
+
+<div class="alert alert-green" role="alert">
+
+
+<h4 class="alert-heading"><i class="fa fa-info-circle" aria-hidden="true"></i>情報</h4>
+<ul>
+<li>KGTN 2017012301</li>
+<li>KGTN 2017021101</li>
+</ul>
+
+</div>
+
+
         <div class="section-index">
     
     
@@ -3562,15 +3609,6 @@
         
             
         
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasylog/introducingexpackrag/">GO-Global拡張パッケージの概要</a>
-                    </h5>
-                    <p></p>
-                </div>
             
         
             

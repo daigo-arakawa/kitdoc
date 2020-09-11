@@ -94,11 +94,30 @@ The administrator of the tokyo server should set **LM_LICENSE_FILE** to: 27000@t
 ### To change or set the LM_LICENSE_FILE variable
 
 1. To view or change the current Environment Variables, right-click **My Computer** and select **Properties.**
+
+![kit2-20-1](/img/kit2-20-1.png)
+
 2. Select the **Advanced** tab and click **Environment Variables** below.
+
+![kit2-20-2](/img/kit2-20-2.png)
+
 3. Under **System variables,** select LM_LICENSE_FILE and click **Edit.**
+
+![kit2-20-3](/img/kit2-20-3.png)
+
 4. Change the **Variable value** from `C:\Program Files\GraphOn\GO-Global\Licensing` to reflect the new redundant servers. Separate the license server names with a semicolon(;).GO-Global will attempt the first server in the list. If that fails for any reason, the second server is tried.
+
+![kit2-20-4](/img/kit2-20-4.png)
+![kit2-20-5](/img/kit2-20-5.png)
+
 5. Restart the **GO-Global Application Publishing Service.**
 
-As with three-server redundancy, we recommend running **lmtools** to verify the status of the redundant license servers once all servers are up and running.
+![kit2-20-6](/img/kit2-20-6.png)
+![kit2-20-7](/img/kit2-20-7.png)
+![kit2-20-8](/img/kit2-20-8.png)
+![kit2-20-9](/img/kit2-20-9.png)
+![kit2-20-10](/img/kit2-20-10.png)
+![kit2-20-11](/img/kit2-20-11.png)
 
+As with three-server redundancy, we recommend running **lmtools** to verify the status of the redundant license servers once all servers are up and running.
 

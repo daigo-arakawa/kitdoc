@@ -118,7 +118,7 @@ GO-Global supports two methods of redundancy:"/>
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce071c6f16aadd29c213976a0a678b84db94cb1cd0de630c846445733b72503c32e5a5c5a537ed504d22031c7d5641a2e67e1c6eb459df3e61243f06673ef214.json"
+  data-offline-search-index-json-src="/offline-search-index.3fee6ff7dfda86189188b45d55d69ca6d39a124eff96cc0ccb1b5f5fa92ff99d080b0add5d6e8ddba441f4d07c7fb828a2292e5039eae7afc6a0b8ebcae8b9d7.json"
   data-offline-search-base-href="/"
 >
 
@@ -148,7 +148,7 @@ GO-Global supports two methods of redundancy:"/>
   aria-label="サイトを検索..."
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.ce071c6f16aadd29c213976a0a678b84db94cb1cd0de630c846445733b72503c32e5a5c5a537ed504d22031c7d5641a2e67e1c6eb459df3e61243f06673ef214.json"
+  data-offline-search-index-json-src="/offline-search-index.3fee6ff7dfda86189188b45d55d69ca6d39a124eff96cc0ccb1b5f5fa92ff99d080b0add5d6e8ddba441f4d07c7fb828a2292e5039eae7afc6a0b8ebcae8b9d7.json"
   data-offline-search-base-href="/"
 >
 
@@ -2816,12 +2816,6 @@ GO-Global supports two methods of redundancy:"/>
       
       
       
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgo-globale68ba1e5bcb5e38391e38383e382b1e383bce382b8ggeasylogintroducingexpackrag" href="/docs/go-global%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/ggeasylog/introducingexpackrag/">GO-Global拡張パッケージの概要</a>
-      
-      
     </li>
   </ul>
 </ul>
@@ -3633,11 +3627,30 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
 <h3 id="to-change-or-set-the-lm_license_file-variable">To change or set the LM_LICENSE_FILE variable</h3>
 <ol>
 <li>To view or change the current Environment Variables, right-click <strong>My Computer</strong> and select <strong>Properties.</strong></li>
+</ol>
+<p><img src="/img/kit2-20-1.png" alt="kit2-20-1"></p>
+<ol start="2">
 <li>Select the <strong>Advanced</strong> tab and click <strong>Environment Variables</strong> below.</li>
+</ol>
+<p><img src="/img/kit2-20-2.png" alt="kit2-20-2"></p>
+<ol start="3">
 <li>Under <strong>System variables,</strong> select LM_LICENSE_FILE and click <strong>Edit.</strong></li>
+</ol>
+<p><img src="/img/kit2-20-3.png" alt="kit2-20-3"></p>
+<ol start="4">
 <li>Change the <strong>Variable value</strong> from <code>C:\Program Files\GraphOn\GO-Global\Licensing</code> to reflect the new redundant servers. Separate the license server names with a semicolon(;).GO-Global will attempt the first server in the list. If that fails for any reason, the second server is tried.</li>
+</ol>
+<p><img src="/img/kit2-20-4.png" alt="kit2-20-4">
+<img src="/img/kit2-20-5.png" alt="kit2-20-5"></p>
+<ol start="5">
 <li>Restart the <strong>GO-Global Application Publishing Service.</strong></li>
 </ol>
+<p><img src="/img/kit2-20-6.png" alt="kit2-20-6">
+<img src="/img/kit2-20-7.png" alt="kit2-20-7">
+<img src="/img/kit2-20-8.png" alt="kit2-20-8">
+<img src="/img/kit2-20-9.png" alt="kit2-20-9">
+<img src="/img/kit2-20-10.png" alt="kit2-20-10">
+<img src="/img/kit2-20-11.png" alt="kit2-20-11"></p>
 <p>As with three-server redundancy, we recommend running <strong>lmtools</strong> to verify the status of the redundant license servers once all servers are up and running.</p>
 
 	

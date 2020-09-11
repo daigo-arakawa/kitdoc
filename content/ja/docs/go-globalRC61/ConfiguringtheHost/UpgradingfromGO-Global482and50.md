@@ -24,8 +24,19 @@ Remove all older licenses from the Programs directory. Then restart the **GO-Glo
 ### To restart the License Manager
 
 1. Click Control Panel | Administrative Tools | Services.
+
+![kit2-8-1](/img/kit2-8-1.png)
+![kit2-8-2](/img/kit2-8-2.png)
+![kit2-8-3](/img/kit2-8-3.png)
+
 2. Select **GO-Global License Manager** from the list of services.
+
+![kit2-8-4](/img/kit2-8-4.png)
+![kit2-8-5](/img/kit2-8-5.png)
+
 3. Right-click and select **Restart.**
+
+![kit2-8-6](/img/kit2-8-6.png)
 
 {{% alert title="参考" color="info" %}}
 Restarting the License Manager will not affect existing sessions running on the GO-Global Host.

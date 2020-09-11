@@ -95,9 +95,19 @@ Remove all older licenses from the Programs directory. Then restart the &lt;stro
 &lt;h3 id=&#34;to-restart-the-license-manager&#34;&gt;To restart the License Manager&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Click Control Panel | Administrative Tools | Services.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-8-1.png&#34; alt=&#34;kit2-8-1&#34;&gt;
+&lt;img src=&#34;/img/kit2-8-2.png&#34; alt=&#34;kit2-8-2&#34;&gt;
+&lt;img src=&#34;/img/kit2-8-3.png&#34; alt=&#34;kit2-8-3&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Select &lt;strong&gt;GO-Global License Manager&lt;/strong&gt; from the list of services.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-8-4.png&#34; alt=&#34;kit2-8-4&#34;&gt;
+&lt;img src=&#34;/img/kit2-8-5.png&#34; alt=&#34;kit2-8-5&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Right-click and select &lt;strong&gt;Restart.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-8-6.png&#34; alt=&#34;kit2-8-6&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -146,15 +156,35 @@ GO-Globalホストのインストールの詳細につきましては弊社提�
 &lt;h3 id=&#34;go-global-license-managerを再起動する方法&#34;&gt;GO-Global License Managerを再起動する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;[コントロールパネル | 管理ツール | サービス]をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-9-1.png&#34; alt=&#34;kit2-9-1&#34;&gt;
+&lt;img src=&#34;/img/kit2-9-2.png&#34; alt=&#34;kit2-9-2&#34;&gt;
+&lt;img src=&#34;/img/kit2-9-3.png&#34; alt=&#34;kit2-9-3&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;サービスの一覧から [GO-Global License Manager]を選択します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-9-4.png&#34; alt=&#34;kit2-9-4&#34;&gt;
+&lt;img src=&#34;/img/kit2-9-5.png&#34; alt=&#34;kit2-9-5&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;右クリックして、[再起動]を選択します。&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-9-6.png&#34; alt=&#34;kit2-9-6&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;go-global-application-publishing-serviceを再起動する方法&#34;&gt;GO-Global Application Publishing Serviceを再起動する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;[コントロールパネル | 管理ツール | サービス]をクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-9-7.png&#34; alt=&#34;kit2-9-7&#34;&gt;
+&lt;img src=&#34;/img/kit2-9-8.png&#34; alt=&#34;kit2-9-8&#34;&gt;
+&lt;img src=&#34;/img/kit2-9-9.png&#34; alt=&#34;kit2-9-9&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;サービスの一覧から [GO-Global Application Publishing Service]を選択します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-9-10.png&#34; alt=&#34;kit2-9-10&#34;&gt;
+&lt;img src=&#34;/img/kit2-9-11.png&#34; alt=&#34;kit2-9-11&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;右クリックして、[再起動]を選択します。&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-9-12.png&#34; alt=&#34;kit2-9-12&#34;&gt;&lt;/p&gt;
 &lt;p&gt;ホストをインストールしてコンピュータを再起動した後、Webブラウザを選択してGO-Globalの &lt;strong&gt;Interactive Quick Start Guide&lt;/strong&gt; を開きます。このガイドでは、Admin Consoleを通じてアプリケーションを公開する方法、アプリケーションへのリンクを共有する方法を説明しています。GO-Global AppControllerのログオンページに &lt;strong&gt;?help=ac&lt;/strong&gt; を追加することで、&lt;strong&gt;Interactive Quick Guide&lt;/strong&gt;をいつでも開くことができます。たとえば、&lt;code&gt;http://hostname/goglobal/?help=ac&lt;/code&gt;のように設定します。&lt;/p&gt;
 
 
@@ -205,8 +235,13 @@ GO-Globalホストのインストールの詳細につきましては弊社提�
 &lt;h3 id=&#34;ライセンス認証ウィザードを実行する方法&#34;&gt;ライセンス認証ウィザードを実行する方法&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;[スタート]メニューから、[GraphOn GO-Global | Activation Wizard]の順にクリックします。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-10-1.png&#34; alt=&#34;kit2-10-1&#34;&gt;
+&lt;img src=&#34;/img/kit2-10-2.png&#34; alt=&#34;kit2-10-2&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;アクティベーションウィザードが開いたら、プロンプトに従います。GraphOnアカウントを使用してサインインします。アカウントがない場合は作成します。次に、&lt;strong&gt;[Sign in]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-10-3.png&#34; alt=&#34;kit2-10-3&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -218,10 +253,22 @@ GO-Globalクラウドライセンスは、インターネットに直接アク�
 
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;必要に応じて、GraphOnカスタマアカウントを選択します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-10-4.png&#34; alt=&#34;kit2-10-4&#34;&gt;
+&lt;img src=&#34;/img/kit2-10-5.png&#34; alt=&#34;kit2-10-5&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;コンピュータで使用するライセンスを選択します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-10-6.png&#34; alt=&#34;kit2-10-6&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;&lt;strong&gt;[Accept]&lt;/strong&gt; をクリックして、GO-Globalの使用許諾契約に同意します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-10-7.png&#34; alt=&#34;kit2-10-7&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;&lt;strong&gt;[Activate]&lt;/strong&gt; をクリックして、このコンピュータでGO-Globalを有効にします。&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-10-8.png&#34; alt=&#34;kit2-10-8&#34;&gt;
+&lt;img src=&#34;/img/kit2-10-9.png&#34; alt=&#34;kit2-10-9&#34;&gt;&lt;/p&gt;
 &lt;p&gt;GO-Globalをインストールしてアクティブ化ウィザードを実行した後、コンピュータを再起動する必要があります。&lt;/p&gt;
 
       </description>
@@ -249,8 +296,13 @@ GO-Globalクラウドライセンスは、インターネットに直接アク�
 &lt;h3 id=&#34;to-run-the-activation-wizard&#34;&gt;To run the Activation Wizard&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;From the Start Menu, click GraphOn GO-Global | Activation Wizard.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-11-1.png&#34; alt=&#34;kit2-11-1&#34;&gt;
+&lt;img src=&#34;/img/kit2-11-2.png&#34; alt=&#34;kit2-11-2&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;When the Activation Wizard opens, follow the prompts. Sign in using your GraphOn account. Create an account if you do not have one. Then click the &lt;strong&gt;Sign in&lt;/strong&gt; button.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-11-3.png&#34; alt=&#34;kit2-11-3&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -262,7 +314,14 @@ GO-Global cloud trial licenses can only be used on computers that have direct ac
 
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;If applicable, select a GraphOn customer account.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-11-4.png&#34; alt=&#34;kit2-11-4&#34;&gt;
+&lt;img src=&#34;/img/kit2-11-5.png&#34; alt=&#34;kit2-11-5&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Select the license you would like the computer to use. If there are no available licenses, click &lt;strong&gt;Start New Trial.&lt;/strong&gt; Specify a description for the license, then click &lt;strong&gt;OK.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-11-6.png&#34; alt=&#34;kit2-11-6&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;Click &lt;strong&gt;Accept&lt;/strong&gt; to accept the GO-Global License Agreement.&lt;/li&gt;
 &lt;li&gt;Click &lt;strong&gt;Activate&lt;/strong&gt; to enable GO-Global on this computer.&lt;/li&gt;
 &lt;/ol&gt;
@@ -279,15 +338,24 @@ If a license is grayed out, it is not an active license, and cannot be used.
 &lt;h2 id=&#34;オンプレミスのトライアルライセンスを使用してgo-globalをアクティブにする方法&#34;&gt;オンプレミスのトライアルライセンスを使用してGO-Globalをアクティブにする方法&lt;/h2&gt;
 &lt;p&gt;インターネットに直接アクセスできないコンピュータの場合、またはクラウドのトライアルライセンスが確立できない場合、GraphOnはオンプレミスのFlexeraベースのトライアルライセンスを作成し、電子メールで送信します。オンプレミスライセンスを使用してGO-Globalを起動するには&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;コンピュータのホスト名とホストID(物理アドレス)を決定します。&lt;br&gt;
-a. [スタート | すべてのプログラム | アクセサリ | コマンドプロンプト] をクリックして、コマンドプロンプトウィンドウを開きます。&lt;br&gt; 
-b. &lt;code&gt;ipconfig /all&lt;/code&gt; と入力し、Enter キーを押します。&lt;br&gt;
-c. &lt;strong&gt;コンピュータのホスト名&lt;/strong&gt;と&lt;strong&gt;物理アドレス(NIC)&lt;/strong&gt; を探します。&lt;br&gt;&lt;/li&gt;
-&lt;li&gt;コンピュータのホスト名、ホストID(物理アドレス)、ユーザ数を明記してKitASPにメールを送信します。&lt;br&gt;&lt;/li&gt;
-&lt;li&gt;KitASPからライセンスファイルが届いたら&lt;br&gt;
+&lt;li&gt;
+&lt;p&gt;コンピュータのホスト名とホストID(物理アドレス)を決定します。&lt;br&gt;
+a. [スタート | すべてのプログラム | アクセサリ | コマンドプロンプト] をクリックして、コマンドプロンプトウィンドウを開きます。&lt;br&gt;&lt;br&gt;
+&lt;img src=&#34;/img/kit2-11-8.png&#34; alt=&#34;kit2-11-8&#34;&gt;&lt;br&gt;&lt;br&gt;
+b. &lt;code&gt;ipconfig /all&lt;/code&gt; と入力し、Enter キーを押します。&lt;br&gt;&lt;br&gt;
+&lt;img src=&#34;/img/kit2-11-9.png&#34; alt=&#34;kit2-11-9&#34;&gt;&lt;br&gt;&lt;br&gt;
+c. &lt;strong&gt;コンピュータのホスト名&lt;/strong&gt; と &lt;strong&gt;物理アドレス(NIC)&lt;/strong&gt; を探します。&lt;br&gt;&lt;br&gt;
+&lt;img src=&#34;/img/kit2-11-10.png&#34; alt=&#34;kit2-11-10&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;コンピュータのホスト名、ホストID(物理アドレス)、ユーザ数を明記してKitASPにメールを送信します。&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;KitASPからライセンスファイルが届いたら&lt;br&gt;
 a. .licファイルを&lt;code&gt;C:\Program Files\GraphOn\GO-Global\Licensing&lt;/code&gt; ディレクトリにコピーしてください。&lt;br&gt; 
 b. &lt;strong&gt;GO-Global License Manager Service&lt;/strong&gt; を起動してください。&lt;br&gt;
-c. &lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; を再起動します。&lt;br&gt;&lt;/li&gt;
+c. &lt;strong&gt;GO-Global Application Publishing Service&lt;/strong&gt; を再起動します。&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;恒久的なオンプレミスライセンスのインストール&#34;&gt;恒久的なオンプレミスライセンスのインストール&lt;/h2&gt;
 &lt;p&gt;管理者は、現在クラウドやオンプレミスのトライアルライセンスを使用しているシステムに、オンプレミスの恒久的なライセンスをインストールすることができます。恒久的なライセンスの注文が入ると、GraphOnは注文を処理して新しいライセンスマスターを作成します。ライセンス情報は、注文リクエストに記載された連絡先にメールで送信されます。管理者はカスタマーポータルから製品コード、メールアドレス、ホスト名、ホストIDを入力してライセンスを有効化する必要があります。新しいライセンス(.lic)ファイルが添付ファイルとして電子メールで送信されます。ライセンスIDは、ライセンスファイルの名前のフォーマットに使用されます(例:&lt;strong&gt;8d73e4k.lic&lt;/strong&gt; 、8d73e4kはライセンスID)。ライセンスファイルの添付ファイルは、指定されたライセンスサーバにインストールする必要があります。&lt;/p&gt;
@@ -527,11 +595,30 @@ INCREMENT any_app blm 6.0 permanent 5 6DB6F3E402DF HOSTID=ANY \
 &lt;h3 id=&#34;to-change-or-set-the-lm_license_file-variable&#34;&gt;To change or set the LM_LICENSE_FILE variable&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;To view or change the current Environment Variables, right-click &lt;strong&gt;My Computer&lt;/strong&gt; and select &lt;strong&gt;Properties.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-20-1.png&#34; alt=&#34;kit2-20-1&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Select the &lt;strong&gt;Advanced&lt;/strong&gt; tab and click &lt;strong&gt;Environment Variables&lt;/strong&gt; below.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-20-2.png&#34; alt=&#34;kit2-20-2&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Under &lt;strong&gt;System variables,&lt;/strong&gt; select LM_LICENSE_FILE and click &lt;strong&gt;Edit.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-20-3.png&#34; alt=&#34;kit2-20-3&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Change the &lt;strong&gt;Variable value&lt;/strong&gt; from &lt;code&gt;C:\Program Files\GraphOn\GO-Global\Licensing&lt;/code&gt; to reflect the new redundant servers. Separate the license server names with a semicolon(;).GO-Global will attempt the first server in the list. If that fails for any reason, the second server is tried.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-20-4.png&#34; alt=&#34;kit2-20-4&#34;&gt;
+&lt;img src=&#34;/img/kit2-20-5.png&#34; alt=&#34;kit2-20-5&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;Restart the &lt;strong&gt;GO-Global Application Publishing Service.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-20-6.png&#34; alt=&#34;kit2-20-6&#34;&gt;
+&lt;img src=&#34;/img/kit2-20-7.png&#34; alt=&#34;kit2-20-7&#34;&gt;
+&lt;img src=&#34;/img/kit2-20-8.png&#34; alt=&#34;kit2-20-8&#34;&gt;
+&lt;img src=&#34;/img/kit2-20-9.png&#34; alt=&#34;kit2-20-9&#34;&gt;
+&lt;img src=&#34;/img/kit2-20-10.png&#34; alt=&#34;kit2-20-10&#34;&gt;
+&lt;img src=&#34;/img/kit2-20-11.png&#34; alt=&#34;kit2-20-11&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As with three-server redundancy, we recommend running &lt;strong&gt;lmtools&lt;/strong&gt; to verify the status of the redundant license servers once all servers are up and running.&lt;/p&gt;
 
       </description>

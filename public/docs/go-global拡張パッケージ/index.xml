@@ -61,7 +61,48 @@
       <description>
         
         
-        
+        &lt;h2 id=&#34;変更履歴&#34;&gt;変更履歴&lt;/h2&gt;
+&lt;p&gt;[2017-03-07: 1.0.0]&lt;br&gt;
+・初版&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;機能&#34;&gt;機能&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;/expackimage/GGEasylog1.png&#34; alt=&#34;GGEasylog1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;アプリケーション(.EXE)のラッパー・プログラムで，これを介してアプリケーションが起動されると，アプリケーションの起動日時・終了日時・ユーザーID・クライアント端末の名前・クライアント端末のIPアドレスがログに記録するツール。&lt;/p&gt;
+&lt;h3 id=&#34;設置方法&#34;&gt;設置方法&lt;/h3&gt;
+&lt;p&gt;アプリケーションの操作記録を行いたいサーバにGGEasylogフォルダを配置。&lt;/p&gt;
+&lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;GGEasylogフォルダ内にあるGGEasylog.iniにアプリケーションのパスを記載します。
+例）Internet Explorerの場合
+path = C:\Program Files (x86)\Internet Explorer\iexplore.exe
+args = &lt;a href=&#34;http://www.yahoo.co.jp&#34;&gt;http://www.yahoo.co.jp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AdminConsoleの[Executable Path]ボックス内にGGEasyLog を指定し，コマンドラインのオプションで ?app &amp;lt;アプリケーションの名称&amp;gt; を指定します。アイコンを本来のアプリケーションのアイコンに変更します。&lt;/li&gt;
+&lt;li&gt;GGにログオン後，登録したアプリケーションを起動します。先ず、GGEasyLog が起動され、GGEasyLogはログに起動日時を記録し、次にアプリケーション(この例ではIE)を起動します。この時タスクバーには、ラッパーのGGEasyLogは現れません。&lt;/li&gt;
+&lt;li&gt;アプリケーションを閉じます。GGEasyLogはアプリケーションの終了を認識し，終了日時を記録します。&lt;/li&gt;
+&lt;li&gt;ログに記載されているStart行 が開始日時、Ended行が終了日時です。Appはアプリケーションの名称、PID はプロセスID、USER はユーザーID、CNAME はクライアント端末の名前、IPADDR はクライアント端末のIPアドレスです。&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;参照&lt;/h4&gt;
+アプリケーションの操作記録を行いたいサーバが複数ある場合はそれぞれのサーバで作業を行ってください。
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-green&#34; role=&#34;alert&#34;&gt;
+
+
+&lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;情報&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;KGTN 2017012301&lt;/li&gt;
+&lt;li&gt;KGTN 2017021101&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
       </description>
     </item>
     

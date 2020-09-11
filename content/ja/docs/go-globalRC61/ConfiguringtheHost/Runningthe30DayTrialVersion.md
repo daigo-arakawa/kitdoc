@@ -13,14 +13,27 @@ GO-Global’s 30-day trial version can be downloaded from GraphOn’s website. T
 ### To run the Activation Wizard
 
 1. From the Start Menu, click GraphOn GO-Global | Activation Wizard.
+
+![kit2-11-1](/img/kit2-11-1.png)
+![kit2-11-2](/img/kit2-11-2.png)
+
 2. When the Activation Wizard opens, follow the prompts. Sign in using your GraphOn account. Create an account if you do not have one. Then click the **Sign in** button. 
+
+![kit2-11-3](/img/kit2-11-3.png)
 
 {{% alert title="参照" color="info" %}}
 GO-Global cloud trial licenses can only be used on computers that have direct access to the internet. If a computer does not have access to the internet (e.g., if it accesses the internet via a proxy server), the Activation Wizard will notify you that GO-Global is unable to communicate with GraphOn’s online license service. If you see this message, you can request an on-premises trial license as described below.
 {{% /alert %}}
 
 3. If applicable, select a GraphOn customer account.
+
+![kit2-11-4](/img/kit2-11-4.png)
+![kit2-11-5](/img/kit2-11-5.png)
+
 4. Select the license you would like the computer to use. If there are no available licenses, click **Start New Trial.** Specify a description for the license, then click **OK.**
+
+![kit2-11-6](/img/kit2-11-6.png)
+
 5. Click **Accept** to accept the GO-Global License Agreement.
 6. Click **Activate** to enable GO-Global on this computer.
 
@@ -34,9 +47,13 @@ If a license is grayed out, it is not an active license, and cannot be used.
 
 インターネットに直接アクセスできないコンピュータの場合、またはクラウドのトライアルライセンスが確立できない場合、GraphOnはオンプレミスのFlexeraベースのトライアルライセンスを作成し、電子メールで送信します。オンプレミスライセンスを使用してGO-Globalを起動するには
 1. コンピュータのホスト名とホストID(物理アドレス)を決定します。<br>
-	a. [スタート | すべてのプログラム | アクセサリ | コマンドプロンプト] をクリックして、コマンドプロンプトウィンドウを開きます。<br> 
-	b. `ipconfig /all` と入力し、Enter キーを押します。<br>
-	c. **コンピュータのホスト名**と**物理アドレス(NIC)** を探します。<br> 
+	a. [スタート | すべてのプログラム | アクセサリ | コマンドプロンプト] をクリックして、コマンドプロンプトウィンドウを開きます。<br><br>
+![kit2-11-8](/img/kit2-11-8.png)<br><br>
+	b. `ipconfig /all` と入力し、Enter キーを押します。<br><br>
+![kit2-11-9](/img/kit2-11-9.png)<br><br>
+	c. **コンピュータのホスト名** と **物理アドレス(NIC)** を探します。<br><br>
+![kit2-11-10](/img/kit2-11-10.png)
+
 2. コンピュータのホスト名、ホストID(物理アドレス)、ユーザ数を明記してKitASPにメールを送信します。<br> 
 3. KitASPからライセンスファイルが届いたら<br>
 	a. .licファイルを`C:\Program Files\GraphOn\GO-Global\Licensing` ディレクトリにコピーしてください。<br> 
