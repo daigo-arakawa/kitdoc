@@ -448,6 +448,11 @@ httpd -k start
 &lt;li&gt;Microsoft IISが実行されていないか、GO-Globalホスト上の接続を受け入れていないことを確認します。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;[Hosts Options]&lt;/strong&gt; ダイアログの &lt;strong&gt;[Security]&lt;/strong&gt; タブの &lt;strong&gt;[Port]&lt;/strong&gt; フィールドの値を443に変更します。&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/kit2-15-1.png&#34; alt=&#34;kit2-15-1&#34;&gt;
+&lt;img src=&#34;/img/kit2-15-2.png&#34; alt=&#34;kit2-15-2&#34;&gt;
+&lt;img src=&#34;/img/kit2-15-3.png&#34; alt=&#34;kit2-15-3&#34;&gt;
+&lt;img src=&#34;/img/kit2-15-4.png&#34; alt=&#34;kit2-15-4&#34;&gt;
+&lt;img src=&#34;/img/kit2-15-5.png&#34; alt=&#34;kit2-15-5&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/2-8-1.png&#34; alt=&#34;2-8-1&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;ホストポートの設定を変更した後、&lt;strong&gt;Port&lt;/strong&gt; パラメータに433を付加してWebに追加します。ホストへの接続に使用されるリンクは例えば、&lt;code&gt;http://hostname.graphon.com/goglobal/?host=hostname.graphon.com&amp;amp;port=443&lt;/code&gt;&lt;/li&gt;
@@ -471,9 +476,20 @@ httpd -k start
         &lt;p&gt;既定では、GO-Global License Manager serviceはGO-Globalホストと共にインストールされ、GO-GlobalホストはGO-Globalホストと同じコンピュータ上にあるGO-Global License Managerを使用するように構成されています。または、1つ以上のGO-Globalホストを構成して、別のコンピュータで実行されている中央のGO-Global License Managerを使用するように構成することもできます。次のいずれかの方法を使用して、別のコンピュータでGO-GlobalホストがGO-Global License Managerを使用するようにGO-Globalホストを構成できます。開始前に GO-GlobalホストでGO-Global License Managerを停止することをお勧めします。外部ライセンス管理サーバのすべてのセカンダリサーバでライセンスマネージャを無効にする必要があります。&lt;/p&gt;
 &lt;h3 id=&#34;go-global-license-managerを停止する方法&#34;&gt;GO-Global License Managerを停止する方法&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;[コントロールパネル | 管理ツール | サービス]をクリックします。&lt;/li&gt;
-&lt;li&gt;サービスの一覧から &lt;strong&gt;[GO-Global License Manager]&lt;/strong&gt; を選択します。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[停止]&lt;/strong&gt; ボタンをクリックします。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[コントロールパネル | 管理ツール | サービス]をクリックします。
+&lt;img src=&#34;/img/kit2-16-1.png&#34; alt=&#34;kit2-16-1&#34;&gt;
+&lt;img src=&#34;/img/kit2-16-2.png&#34; alt=&#34;kit2-16-2&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;サービスの一覧から &lt;strong&gt;[GO-Global License Manager]&lt;/strong&gt; を選択します。
+&lt;img src=&#34;/img/kit2-16-3.png&#34; alt=&#34;kit2-16-3&#34;&gt;
+&lt;img src=&#34;/img/kit2-16-4.png&#34; alt=&#34;kit2-16-4&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;[停止]&lt;/strong&gt; ボタンをクリックします。&lt;br&gt;
+&lt;img src=&#34;/img/kit2-16-5.png&#34; alt=&#34;kit2-16-5&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;GO-GlobalホストでGO-Global License Managerを停止した後、外部ライセンス管理サーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1はライセンスサーバの名前です。
 GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:&lt;code&gt;27000@LicenseServer1&lt;/code&gt;)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。

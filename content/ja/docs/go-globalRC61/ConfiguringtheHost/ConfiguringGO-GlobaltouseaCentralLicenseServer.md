@@ -10,8 +10,15 @@ type: "docs"
 ### GO-Global License Managerを停止する方法
 
 1. [コントロールパネル | 管理ツール | サービス]をクリックします。
+![kit2-16-1](/img/kit2-16-1.png)
+![kit2-16-2](/img/kit2-16-2.png)
+
 2. サービスの一覧から **[GO-Global License Manager]** を選択します。
-3. **[停止]** ボタンをクリックします。
+![kit2-16-3](/img/kit2-16-3.png)
+![kit2-16-4](/img/kit2-16-4.png)
+
+3. **[停止]** ボタンをクリックします。<br>
+![kit2-16-5](/img/kit2-16-5.png)
 
 GO-GlobalホストでGO-Global License Managerを停止した後、外部ライセンス管理サーバを構成する次のいずれかの方法で作業を進めることができます。以下の例では、License Server 1はライセンスサーバの名前です。
 GO-Globalホスト上で、LM_LICENSE_FILE環境変数にライセンスファイルへのパスの代わりにport@host(例:`27000@LicenseServer1`)を指定します。FLEXnet PublisherのLMTOOLS.EXEは、License Server 1のライセンスファイルが正しく読み込まれていることを報告します。
