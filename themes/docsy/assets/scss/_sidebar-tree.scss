@@ -45,6 +45,8 @@
 
         .active {
             font-weight: $font-weight-bold;
+            background-color: #328fce;
+            border-radius: 7px;
         }
 
         a {
@@ -70,6 +72,8 @@
 
         &.active {
             font-weight: $font-weight-bold;
+            background-color: #328fce;
+            border-radius: 7px;
         }
     }
 

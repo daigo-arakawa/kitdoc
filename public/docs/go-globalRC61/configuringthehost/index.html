@@ -35,18 +35,13 @@
 
 
 
-<link rel="preload" href="/scss/main.min.f21157ec000245e2476f04afab93fe14ffc30b660ac966a4adcd8a8b0fd1982b.css" as="style">
-<link href="/scss/main.min.f21157ec000245e2476f04afab93fe14ffc30b660ac966a4adcd8a8b0fd1982b.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
 
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
-<script
-  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
-  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
   crossorigin="anonymous"></script>
 
 
@@ -73,48 +68,16 @@
 				<a class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
 			</li>
 			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
-				<a class="nav-link" href="/blog/" ><span>Blog</span></a>
-			</li>
 			
-			
-			
-			<li class="nav-item dropdown d-none d-lg-block">
-				
-
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	6.0.1
-</a>
-<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	
-	<a class="dropdown-item" href="/no/">5.0.2</a>
-	
-</div>
-			</li>
 			
 		</ul>
 	</div>
 	<div class="navbar-nav d-none d-lg-block">
-
-
-<input
-  type="search"
-  class="form-control td-search-input"
-  placeholder="&#xf002; サイトを検索..."
-  aria-label="サイトを検索..."
-  autocomplete="off"
-  
-  data-offline-search-index-json-src="/offline-search-index.bd9ed8e5ddc9fd353e1ad21aaf17ae7654688507c9df25213b398541a7f0ca4cec560f7c7553683f31b1e3b903bc5a1a42498740ed952036afe3e2c12b84f28d.json"
-  data-offline-search-base-href="/"
->
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 サイトを検索..." aria-label="サイトを検索..." autocomplete="off">
 
 </div>
+	<div class="navbar-nav d-none d-lg-block"><a class="nav-link"href="https://www.kitasp.com/">きっとエイエスピーのホームページへ</a></div>
+
 </nav>
 
     </header>
@@ -131,18 +94,7 @@
 <div id="td-sidebar-menu" class="td-sidebar__inner">
   <form class="td-sidebar__search d-flex align-items-center">
     
-
-
-<input
-  type="search"
-  class="form-control td-search-input"
-  placeholder="&#xf002; サイトを検索..."
-  aria-label="サイトを検索..."
-  autocomplete="off"
-  
-  data-offline-search-index-json-src="/offline-search-index.bd9ed8e5ddc9fd353e1ad21aaf17ae7654688507c9df25213b398541a7f0ca4cec560f7c7553683f31b1e3b903bc5a1a42498740ed952036afe3e2c12b84f28d.json"
-  data-offline-search-base-href="/"
->
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 サイトを検索..." aria-label="サイトを検索..." autocomplete="off">
 
 
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
@@ -3459,28 +3411,6 @@
 
 
 
-
-<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-
-
-
-
-
-<a href="https://github.com//edit/master/content/ja/docs/go-globalRC61/ConfiguringtheHost/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> ページの編集</a>
-<a href="https://github.com//issues/new?title=%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e8%a8%ad%e5%ae%9a" target="_blank"><i class="fab fa-github fa-fw"></i> ドキュメントのissueを作成</a>
-
-
-<a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> プロジェクトのissueを作成</a>
-
-</div>
-
-
-
-
-
-
-
-
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
@@ -3529,7 +3459,9 @@
     
     
     <hr class="panel-line">
-        
+    <div class="waku">
+                
+    
             
         
             
@@ -3557,11 +3489,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/go-globallicensing/">GO-Globalライセンス</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -3638,11 +3569,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/upgradingfromgo-global60to61/">Upgrading from GO-Global 6.0 to 6.1</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -3699,11 +3629,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/upgradingfromgo-global482and50/">Upgrading from GO-Global 4.8.2 and 5.0</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -3758,11 +3687,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/installingthego-globalhost/">GO-Globalホストのインストール</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -3823,11 +3751,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/cloudlicensing/">クラウドライセンス</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -3872,11 +3799,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/runningtheactivationwizard/">アクティベーションウィザードの実行</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -3907,11 +3833,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/runningthe30daytrialversion/">Running the 30-Day Trial Version</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -3970,11 +3895,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/enablinginternalandexternaluserstoopensecureconnectionstoagoglobalhost/">社内外のユーザによるGO-Globalホストへのセキュアな接続を可能にする</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -4009,11 +3933,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/configuringgo-globaltouseacentrallicenseserver/">外部ライセンス管理サーバを使用するためのGO-Globalの設定</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -4022,11 +3945,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/redundantlicenseservers/">Redundant License Servers</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -4067,11 +3989,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/licenseserversincloudenvironments/">クラウド環境でのライセンスサーバ</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -4090,11 +4011,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/licenseserversinarelayserverenvironment/">License Servers in a Relay Server Environment</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -4127,11 +4047,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/configuringabackuplicensemanagerinacloudlicensingenvironment/">クラウドライセンス環境でのBackup License Managerの構成</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -4164,11 +4083,10 @@
             
         
             
-                <div class="entry">
+                <div class="in">
                     <h5>
                         <a href="/docs/go-globalrc61/configuringthehost/automaticclientkeyboardsupport/">自動クライアントキーボードサポート</a>
                     </h5>
-                    <p></p>
                 </div>
             
         
@@ -4345,6 +4263,7 @@
             
         
     
+    </div>
 </div>
 
 	
@@ -4422,60 +4341,8 @@
     <div class="row">
       <div class="col-6 col-sm-4 text-xs-center order-sm-2">
         
-        
-        
-<ul class="list-inline mb-0">
-  
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User mailing list" aria-label="User mailing list">
-    <a class="text-white" target="_blank" href="https://example.org/mail">
-      <i class="fa fa-envelope"></i>
-    </a>
-  </li>
-  
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
-    <a class="text-white" target="_blank" href="https://example.org/twitter">
-      <i class="fab fa-twitter"></i>
-    </a>
-  </li>
-  
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Stack Overflow" aria-label="Stack Overflow">
-    <a class="text-white" target="_blank" href="https://example.org/stack">
-      <i class="fab fa-stack-overflow"></i>
-    </a>
-  </li>
-  
-</ul>
-
-        
-        
       </div>
       <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
-        
-        
-        
-<ul class="list-inline mb-0">
-  
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
-    <a class="text-white" target="_blank" href="https://github.com/google/docsy">
-      <i class="fab fa-github"></i>
-    </a>
-  </li>
-  
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
-    <a class="text-white" target="_blank" href="https://example.org/slack">
-      <i class="fab fa-slack"></i>
-    </a>
-  </li>
-  
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Developer mailing list" aria-label="Developer mailing list">
-    <a class="text-white" target="_blank" href="https://example.org/mail">
-      <i class="fa fa-envelope"></i>
-    </a>
-  </li>
-  
-</ul>
-
-        
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
@@ -4501,9 +4368,7 @@
 
 
 
-
-
-<script src="/js/main.min.3587468abafd7ee678f61330f7c574ba0376f12451f11e076f2283f1e0504095.js" integrity="sha256-NYdGirr9fuZ49hMw98V0ugN28SRR8R4HbyKD8eBQQJU=" crossorigin="anonymous"></script>
+<script src="/js/main.min.29b0315468c00226fa6f4556a9cebc0ac4fe1ce1457a01b22c0a06b329877383.js" integrity="sha256-KbAxVGjAAib6b0VWqc68CsT&#43;HOFFegGyLAoGsymHc4M=" crossorigin="anonymous"></script>
 
 
 

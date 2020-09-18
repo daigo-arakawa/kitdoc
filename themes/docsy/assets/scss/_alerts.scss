@@ -9,7 +9,8 @@
     @each $color, $value in $theme-colors {
         &-#{$color} {
             & .alert-heading {
-                color: $value;
+                background: $value;
+                color: white;
             }
         }
     }
